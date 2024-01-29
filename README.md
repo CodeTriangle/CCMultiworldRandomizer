@@ -1,6 +1,6 @@
 # Client for CrossCode Archipelago Integration
 
-This is still under *heavy* development, though it does work if you're willing to edit some files manually.
+This is still under heavy development, though it works and will, for the most part, be pretty stable.
 
 # Discord server
 
@@ -10,9 +10,7 @@ This is still under *heavy* development, though it does work if you're willing t
 
 ## How to generate your own multiworld with crosscode seeds
 
-Either:
-1. Download the [CrossCode development branch](https://github.com/CodeTriangle/Archipelago) and follow the [instructions for running from source](https://github.com/CodeTriangle/Archipelago/blob/crosscode-dev/docs/running%20from%20source.md).
-2. Download the APWorld file from the [releases page of the CrossCode development branch](https://github.com/CodeTriangle/Archipelago/releases/latest) and put it into `lib/worlds` in your Archipelago folder. **This integration requires Archipelago 0.4.2 to roll the seed**.
+Download the APWorld file from the [releases page of the CrossCode development branch](https://github.com/CodeTriangle/Archipelago/releases/latest) and put it into `lib/worlds` in your Archipelago folder. **This integration requires Archipelago 0.4.2 to roll the seed**.
 
 Then put your yamls in the `Players` directory and run the `Generate` program. If you need a yaml to build off of, we have some in the discord.
 
@@ -22,7 +20,7 @@ Either host it on archipelago.gg using the usual process or self-host. You shoul
 
 ## How to join a multiworld with crosscode seeds
 
-Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* [CCMultiworldRandomizer release](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and place it into the `assets/mods` directory.
+Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* [CCMultiworldRandomizer release](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and place it into the `assets/mods` directory. **Make sure you get the `.ccmod` file and not the source code zip for all mods downloaded.**
 
 You will also need the following dependency mods:
 * [CC-Open-World](https://github.com/buanjautista/cc-open-world/releases/latest) (version 0.1.7 or greater): this is to prevent softlocks when you inevitably sequence-break the game.
@@ -47,7 +45,7 @@ First off, thank you for beta testing! I truly appreciate it.
 Second off, please make sure you are using the most recent version of both the mod and the APWorld. I will not provide support for outdated versions of either.
 
 With that out of the way, here's what to do:
-1. Join our [testing discord server](https://discord.gg/ZSWfgQdfG).
+1. Join our [testing discord server](https://discord.gg/ZSWfgQdfGr).
 2. Make sure you can see the #bug-report forum.
 3. Create a new thread in that forum, following all the rules for posting. These include but are not limited to:
    * Software versions of all software involved.

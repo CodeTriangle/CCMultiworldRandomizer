@@ -5,11 +5,16 @@
 		"chests.json",
 		"cutscenes.json",
 		"quests.json",
-		"items.json"
+		"items.json",
+		"vars.json"
+	],
+	"addons": [
+		"quest_rando"
 	],
 	"version": "5",
 	"modes": [ "linear", "open" ],
 	"defaultMode": "open",
+	"dungeons": [ "cold-dng", "heat-dng", "shock-dng", "wave-dng", "tree-dng" ],
 	"shops": {
 		"rookieHarborItems": {
 			"scale": 1,
@@ -4263,7 +4268,7 @@
 		]
 	},
 	"mwconstants": {
-		"BASE_ID": 300000,
-		"BASE_NORMAL_LOCATION_ID": 300100
+		"BASE_ID": 3235824000,
+		"BASE_NORMAL_LOCATION_ID": 3235824100
 	}
 }

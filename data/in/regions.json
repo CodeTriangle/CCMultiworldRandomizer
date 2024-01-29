@@ -1,543 +1,568 @@
 {
 	"regions": {
-		"linear": [
-			{
-				"from": "2",
-				"to": "3",
-				"condition": [
-					[ "item", "Green Leaf Shade", 1 ]
-				]
-			},
-			{
-				"from": "3",
-				"to": "4",
-				"condition": [
-					[ "item", "Mine Pass", 1 ],
-					[ "item", "Guild Pass", 1 ]
-				]
-			},
-			{
-				"from": "3",
-				"to": "3.1",
-				"condition": [
-					[ "item", "Mine Pass", 1 ]
-				]
-			},
-			{
-				"from": "4",
-				"to": "5",
-				"condition": [
-					[ "item", "Mine Key", 1 ]
-				]
-			},
-			{
-				"from": "5",
-				"to": "6",
-				"condition": [
-					[ "item", "Mine Key", 2 ]
-				]
-			},
-			{
-				"from": "6",
-				"to": "7",
-				"condition": [
-					[ "item", "Mine Key", 3 ]
-				]
-			},
-			{
-				"from": "7",
-				"to": "8",
-				"condition": [
-					[ "item", "Mine Key", 6 ]
-				]
-			},
-			{
-				"from": "7",
-				"to": "9",
-				"condition": [
-					[ "item", "Thief's Key", 1 ],
-					[ "item", "Heat", 1 ]
-				]
-			},
-			{
-				"from": "9",
-				"to": "10",
-				"condition": [
-					[ "item", "Mine Key", 10 ]
-				]
-			},
-			{
-				"from": "10",
-				"to": "11",
-				"condition": [
-					[ "item", "Mine Master Key", 1 ],
-					[ "item", "Blue Ice Shade", 1 ]
-				]
-			},
-			{
-				"from": "11",
-				"to": "12",
-				"condition": [
-					[ "item", "Maroon Cave Pass", 1 ]
-				]
-			},
-			{
-				"from": "12",
-				"to": "13",
-				"condition": [
-					[ "item", "Yellow Sand Shade", 1 ],
-					[ "item", "Heat", 1 ]
-				]
-			},
-			{
-				"from": "13",
-				"to": "14",
-				"condition": [
-					[ "item", "Faj'ro Key", 1 ]
-				]
-			},
-			{
-				"from": "14",
-				"to": "15",
-				"condition": [
-					[ "item", "Faj'ro Key", 3 ]
-				]
-			},
-			{
-				"from": "15",
-				"to": "16",
-				"condition": [
-					[ "item", "Faj'ro Key", 4 ]
-				]
-			},
-			{
-				"from": "16",
-				"to": "17",
-				"condition": [
-					[ "item", "Cold", 1 ]
-				]
-			},
-			{
-				"from": "17",
-				"to": "17.5",
-				"condition": [
-					[ "item", "White Key", 1 ]
-				]
-			},
-			{
-				"from": "17.5",
-				"to": "18",
-				"condition": [
-					[ "item", "Faj'ro Key", 9 ]
-				]
-			},
-			{
-				"from": "17.5",
-				"to": "19",
-				"condition": [
-					[ "item", "Faj'ro Master Key", 1 ]
-				]
-			},
-			{
-				"from": "19",
-				"to": "20",
-				"condition": [
-					[ "item", "Red Flame Shade", 1 ]
-				]
-			},
-			{
-				"from": "20",
-				"to": "21",
-				"condition": [
-					[ "item", "Green Seed Shade", 1 ]
-				]
-			},
-			{
-				"from": "21",
-				"to": "23"
-			},
-			{
-				"from": "21",
-				"to": "24",
-				"condition": [
-					[ "item", "Pond Slums Pass", 1 ]
-				]
-			},
-			{
-				"from": "23",
-				"to": "25",
-				"condition": [
-					[ "item", "Zir'vitar Key", 2 ]
-				]
-			},
-			{
-				"from": "23",
-				"to": "26",
-				"condition": [
-					[ "item", "So'najiz Key", 4 ]
-				]
-			},
-			{
-				"from": "26",
-				"to": "27",
-				"condition": [
-					[ "item", "Radiant Key", 1 ],
-					[ "item", "So'najiz Key", 5 ]
-				]
-			},
-			{
-				"from": "23",
-				"to": "28",
-				"condition": [
-					[ "item", "Azure Drop Shade", 1 ],
-					[ "item", "Purple Bolt Shade", 1 ],
-					[ "item", "Wave", 1 ],
-					[ "item", "Shock", 1 ]
-				]
-			},
-			{
-				"from": "28",
-				"to": "29",
-				"condition": [
-					[ "item", "Krys'kajo Key", 2 ]
-				]
-			},
-			{
-				"from": "28",
-				"to": "30",
-				"condition": [
-					[ "item", "Kajo Master Key", 1 ]
-				]
-			},
-			{
-				"from": "30",
-				"to": "31",
-				"condition": [
-					[ "item", "Star Shade", 1 ]
-				]
-			},
-			{
-				"from": "31",
-				"to": "32",
-				"condition": [
-					[ "item", "Old Dojo Key", 1 ]
-				]
-			},
-			{
-				"from": "32",
-				"to": "33",
-				"condition": [
-					[ "item", "Meteor Shade", 1 ]
-				]
-			},
-			{
-				"from": "31",
-				"to": "22"
-			}
-		],
-		"open": [
-			{
-				"from": "open2",
-				"to": "open3",
-				"condition": [
-					[ "item", "Green Leaf Shade", 1 ]
-				]
-			},
-			{
-				"from": "open3",
-				"to": "open4.1",
-				"condition": [
-					[ "item", "Mine Pass", 1 ]
-				]
-			},
-			{
-				"from": "open3",
-				"to": "open3.1",
-				"condition": [
-					[ "item", "Mine Pass", 1 ]
-				]
-			},
-			{
-				"from": "open4.1",
-				"to": "open4.2",
-				"condition": [
-					[ "item", "Mine Key", 1 ]
-				]
-			},
-			{
-				"from": "open4.2",
-				"to": "open4.3",
-				"condition": [
-					[ "item", "Mine Key", 2 ]
-				]
-			},
-			{
-				"from": "open4.3",
-				"to": "open4.4",
-				"condition": [
-					[ "item", "Mine Key", 3 ]
-				]
-			},
-			{
-				"from": "open4.4",
-				"to": "open4.5",
-				"condition": [
-					[ "item", "Mine Key", 6 ]
-				]
-			},
-			{
-				"from": "open4.3",
-				"to": "open4.6",
-				"condition": [
-					[ "item", "Heat", 1 ]
-				]
-			},
-			{
-				"from": "open4.6",
-				"to": "open4.7",
-				"condition": [
-					[ "item", "Mine Key", 10 ]
-				]
-			},
-			{
-				"from": "open4.1",
-				"to": "open4.8",
-				"condition": [
-					[ "item", "Mine Master Key", 1 ]
-				]
-			},
-			{
-				"from": "open3",
-				"to": "open5",
-				"condition": [
-					[ "item", "Blue Ice Shade", 1 ]
-				]
-			},
-			{
-				"from": "open5",
-				"to": "open6",
-				"condition": [
-					[ "item", "Maroon Cave Pass", 1 ]
-				]
-			},
-			{
-				"from": "open5",
-				"to": "open7.1",
-				"condition": [
-					[ "item", "Yellow Sand Shade", 1 ],
-					[ "item", "Heat", 1 ]
-				]
-			},
-			{
-				"from": "open7.1",
-				"to": "open7.2",
-				"condition": [
-					[ "item", "Faj'ro Key", 1 ]
-				]
-			},
-			{
-				"from": "open7.2",
-				"to": "open7.3",
-				"condition": [
-					[ "item", "Faj'ro Key", 3 ]
-				]
-			},
-			{
-				"from": "open7.3",
-				"to": "open7.4",
-				"condition": [
-					[ "item", "Faj'ro Key", 4 ]
-				]
-			},
-			{
-				"from": "open7.4",
-				"to": "open7.5",
-				"condition": [
-					[ "item", "Cold", 1 ]
-				]
-			},
-			{
-				"from": "open7.5",
-				"to": "open7.6",
-				"condition": [
-					[ "item", "White Key", 1 ]
-				]
-			},
-			{
-				"from": "open7.6",
-				"to": "open7.7",
-				"condition": [
-					[ "item", "Faj'ro Key", 9 ]
-				]
-			},
-			{
-				"from": "open7.6",
-				"to": "open7.8",
-				"condition": [
-					[ "item", "Faj'ro Master Key", 1 ]
-				]
-			},
-			{
-				"from": "open2",
-				"to": "open8",
-				"condition": [
-					[ "item", "Red Flame Shade", 1 ]
-				]
-			},
-			{
-				"from": "open2",
-				"to": "open9",
-				"condition": [
-					[ "item", "Red Flame Shade", 1 ]
-				]
-			},
-			{
-				"from": "open2",
-				"to": "open20",
-				"condition": [
-					[ "item", "Meteor Shade", 1 ]
-				]
-			},
-			{
-				"from": "open9",
-				"to": "open9.1",
-				"condition": [
-					[ "item", "Green Seed Shade", 1 ]
-				]
-			},
-			{
-				"from": "open9",
-				"to": "open10",
-				"condition": [
-					[ "item", "Green Seed Shade", 1 ]
-				]
-			},
-			{
-				"from": "open10",
-				"to": "open11",
-				"condition": [
-					[ "item", "Pond Slums Pass", 1 ]
-				]
-			},
-			{
-				"from": "open10",
-				"to": "open12",
-				"condition": [
-					[ "item", "Heat", 1 ],
-					[ "item", "Cold", 1 ]
-				]
-			},
-			{
-				"from": "open12",
-				"to": "open13.1",
-				"condition": [
-					[ "item", "Zir'vitar Key", 2 ]
-				]
-			},
-			{
-				"from": "open13.1",
-				"to": "open13.2",
-				"condition": [
-					[ "item", "Wave", 1 ]
-				]
-			},
-			{
-				"from": "open12",
-				"to": "open14.1",
-				"condition": [
-					[ "item", "So'najiz Key", 4 ]
-				]
-			},
-			{
-				"from": "open14.1",
-				"to": "open14.2",
-				"condition": [
-					[ "item", "So'najiz Key", 5 ]
-				]
-			},
-			{
-				"from": "open14.2",
-				"to": "open14.3",
-				"condition": [
-					[ "item", "Shock", 1 ]
-				]
-			},
-			{
-				"from": "open12",
-				"to": "open15.1",
-				"condition": [
-					[ "item", "Azure Drop Shade", 1 ],
-					[ "item", "Purple Bolt Shade", 1 ],
-					[ "item", "Wave", 1 ],
-					[ "item", "Shock", 1 ]
-				]
-			},
-			{
-				"from": "open15.1",
-				"to": "open15.2",
-				"condition": [
-					[ "item", "Krys'kajo Key", 2 ]
-				]
-			},
-			{
-				"from": "open15.2",
-				"to": "open15.3",
-				"condition": [
-					[ "item", "Kajo Master Key", 1 ]
-				]
-			},
-			{
-				"from": "open9",
-				"to": "open16",
-				"condition": [
-					[ "item", "Star Shade", 1 ]
-				]
-			},
-			{
-				"from": "open16",
-				"to": "open17",
-				"condition": [
-					[ "item", "Old Dojo Key", 1 ]
-				]
-			},
-			{
-				"from": "open16",
-				"to": "open16.1",
-				"condition": [
-					[ "item", "Meteor Shade", 1 ],
-					[ "item", "Shock", 1 ]
-				]
-			},
-			{
-				"from": "open16",
-				"to": "open18"
-			},
-			{
-				"from": "open16.1",
-				"to": "open19",
-				"condition": [
-					[ "item", "Heat", 1 ],
-					[ "item", "Cold", 1 ],
-					[ "item", "Shock", 1 ],
-					[ "item", "Wave", 1 ],
-					[ "cutscene", "Temple Mine Shade Statue"],
-					[ "cutscene", "Faj'ro Shade Statue"],
-					[ "cutscene", "Zir'vitar Shade Statue"],
-					[ "cutscene", "So'najiz Shade Statue"]
-				]
-			}
-		]
-	},
-	"excludedRegions": {
-		"linear": [ "1" ],
-		"open": [ "open1" ]
-	},
-	"startingRegion": {
-		"linear": "2",
-		"open": "open2"
-	},
-	"goalRegion": {
-		"linear": "32",
-		"open": "open19"
+		"linear": {
+			"connections": [
+				{
+					"from": "2",
+					"to": "3",
+					"condition": [
+						[ "item", "Green Leaf Shade", 1 ]
+					]
+				},
+				{
+					"from": "3",
+					"to": "4",
+					"condition": [
+						[ "item", "Mine Pass", 1 ],
+						[ "item", "Guild Pass", 1 ]
+					]
+				},
+				{
+					"from": "3",
+					"to": "3.1",
+					"condition": [
+						[ "item", "Mine Pass", 1 ]
+					]
+				},
+				{
+					"from": "4",
+					"to": "5",
+					"condition": [
+						[ "item", "Mine Key", 1 ]
+					]
+				},
+				{
+					"from": "5",
+					"to": "6",
+					"condition": [
+						[ "item", "Mine Key", 2 ]
+					]
+				},
+				{
+					"from": "6",
+					"to": "7",
+					"condition": [
+						[ "item", "Mine Key", 3 ]
+					]
+				},
+				{
+					"from": "7",
+					"to": "8",
+					"condition": [
+						[ "item", "Mine Key", 4 ]
+					]
+				},
+				{
+					"from": "7",
+					"to": "9",
+					"condition": [
+						[ "item", "Thief's Key", 1 ],
+						[ "item", "Heat", 1 ]
+					]
+				},
+				{
+					"from": "9",
+					"to": "10",
+					"condition": [
+						[ "item", "Mine Key", 5 ]
+					]
+				},
+				{
+					"from": "10",
+					"to": "11",
+					"condition": [
+						[ "item", "Mine Master Key", 1 ],
+						[ "item", "Blue Ice Shade", 1 ]
+					]
+				},
+				{
+					"from": "11",
+					"to": "12",
+					"condition": [
+						[ "item", "Maroon Cave Pass", 1 ]
+					]
+				},
+				{
+					"from": "12",
+					"to": "13",
+					"condition": [
+						[ "item", "Yellow Sand Shade", 1 ],
+						[ "item", "Heat", 1 ]
+					]
+				},
+				{
+					"from": "13",
+					"to": "14",
+					"condition": [
+						[ "item", "Faj'ro Key", 1 ]
+					]
+				},
+				{
+					"from": "14",
+					"to": "15",
+					"condition": [
+						[ "item", "Faj'ro Key", 3 ]
+					]
+				},
+				{
+					"from": "15",
+					"to": "16",
+					"condition": [
+						[ "item", "Faj'ro Key", 4 ]
+					]
+				},
+				{
+					"from": "16",
+					"to": "17",
+					"condition": [
+						[ "item", "Cold", 1 ]
+					]
+				},
+				{
+					"from": "17",
+					"to": "17.5",
+					"condition": [
+						[ "item", "White Key", 1 ]
+					]
+				},
+				{
+					"from": "17.5",
+					"to": "18",
+					"condition": [
+						[ "item", "Faj'ro Key", 9 ]
+					]
+				},
+				{
+					"from": "17.5",
+					"to": "19",
+					"condition": [
+						[ "item", "Faj'ro Master Key", 1 ]
+					]
+				},
+				{
+					"from": "19",
+					"to": "20",
+					"condition": [
+						[ "item", "Red Flame Shade", 1 ]
+					]
+				},
+				{
+					"from": "20",
+					"to": "21",
+					"condition": [
+						[ "item", "Green Seed Shade", 1 ]
+					]
+				},
+				{
+					"from": "21",
+					"to": "23",
+					"condition": []
+				},
+				{
+					"from": "21",
+					"to": "24",
+					"condition": [
+						[ "item", "Pond Slums Pass", 1 ]
+					]
+				},
+				{
+					"from": "23",
+					"to": "25",
+					"condition": [
+						[ "item", "Zir'vitar Key", 2 ]
+					]
+				},
+				{
+					"from": "23",
+					"to": "26",
+					"condition": [
+						[ "item", "So'najiz Key", 1 ]
+					]
+				},
+				{
+					"from": "26",
+					"to": "26.5",
+					"condition": [
+						[ "item", "So'najiz Key", 3 ]
+					]
+				},
+				{
+					"from": "26",
+					"to": "27",
+					"condition": [
+						[ "item", "Radiant Key", 1 ],
+						[ "item", "So'najiz Key", 4 ],
+						[ "item", "Shock" ]
+					]
+				},
+				{
+					"from": "23",
+					"to": "28",
+					"condition": [
+						[ "item", "Azure Drop Shade", 1 ],
+						[ "item", "Purple Bolt Shade", 1 ],
+						[ "item", "Wave", 1 ],
+						[ "item", "Shock", 1 ]
+					]
+				},
+				{
+					"from": "28",
+					"to": "29",
+					"condition": [
+						[ "item", "Krys'kajo Key", 2 ]
+					]
+				},
+				{
+					"from": "28",
+					"to": "30",
+					"condition": [
+						[ "item", "Kajo Master Key", 1 ]
+					]
+				},
+				{
+					"from": "30",
+					"to": "31",
+					"condition": [
+						[ "item", "Star Shade", 1 ]
+					]
+				},
+				{
+					"from": "31",
+					"to": "32",
+					"condition": [
+						[ "item", "Old Dojo Key", 1 ]
+					]
+				},
+				{
+					"from": "32",
+					"to": "33",
+					"condition": [
+						[ "item", "Meteor Shade", 1 ]
+					]
+				},
+				{
+					"from": "31",
+					"to": "22"
+				}
+			],
+			"exclude": [ "1" ],
+			"start": "2",
+			"goal": "32"
+		},
+		"open": {
+			"connections": [
+				{
+					"from": "open2",
+					"to": "open3",
+					"condition": [
+						[ "item", "Green Leaf Shade", 1 ]
+					]
+				},
+				{
+					"from": "open3",
+					"to": "open4.1",
+					"condition": [
+						[ "item", "Mine Pass", 1 ]
+					]
+				},
+				{
+					"from": "open3",
+					"to": "open3.1",
+					"condition": [
+						[ "item", "Mine Pass", 1 ]
+					]
+				},
+				{
+					"from": "open4.1",
+					"to": "open4.2",
+					"condition": [
+						[ "item", "Mine Key", 1 ]
+					]
+				},
+				{
+					"from": "open4.2",
+					"to": "open4.3",
+					"condition": [
+						[ "item", "Mine Key", 2 ]
+					]
+				},
+				{
+					"from": "open4.3",
+					"to": "open4.4",
+					"condition": [
+						[ "item", "Mine Key", 3 ]
+					]
+				},
+				{
+					"from": "open4.4",
+					"to": "open4.5",
+					"condition": [
+						[ "item", "Mine Key", 4 ]
+					]
+				},
+				{
+					"from": "open4.3",
+					"to": "open4.6",
+					"condition": [
+						[ "item", "Heat", 1 ]
+					]
+				},
+				{
+					"from": "open4.6",
+					"to": "open4.7",
+					"condition": [
+						[ "item", "Mine Key", 5 ]
+					]
+				},
+				{
+					"from": "open4.1",
+					"to": "open4.8",
+					"condition": [
+						[ "item", "Mine Master Key", 1 ]
+					]
+				},
+				{
+					"from": "open3",
+					"to": "open5",
+					"condition": [
+						[ "item", "Blue Ice Shade", 1 ]
+					]
+				},
+				{
+					"from": "open5",
+					"to": "open6",
+					"condition": [
+						[ "item", "Maroon Cave Pass", 1 ]
+					]
+				},
+				{
+					"from": "open5",
+					"to": "open7.1",
+					"condition": [
+						[ "item", "Yellow Sand Shade", 1 ],
+						[ "item", "Heat", 1 ]
+					]
+				},
+				{
+					"from": "open7.1",
+					"to": "open7.2",
+					"condition": [
+						[ "item", "Faj'ro Key", 1 ]
+					]
+				},
+				{
+					"from": "open7.2",
+					"to": "open7.3",
+					"condition": [
+						[ "item", "Faj'ro Key", 3 ]
+					]
+				},
+				{
+					"from": "open7.3",
+					"to": "open7.4",
+					"condition": [
+						[ "item", "Faj'ro Key", 4 ]
+					]
+				},
+				{
+					"from": "open7.4",
+					"to": "open7.5",
+					"condition": [
+						[ "item", "Cold", 1 ]
+					]
+				},
+				{
+					"from": "open7.5",
+					"to": "open7.6",
+					"condition": [
+						[ "item", "White Key", 1 ]
+					]
+				},
+				{
+					"from": "open7.6",
+					"to": "open7.7",
+					"condition": [
+						[ "item", "Faj'ro Key", 9 ]
+					]
+				},
+				{
+					"from": "open7.6",
+					"to": "open7.8",
+					"condition": [
+						[ "item", "Faj'ro Master Key", 1 ]
+					]
+				},
+				{
+					"from": "open2",
+					"to": "open8",
+					"condition": [
+						[ "item", "Red Flame Shade", 1 ]
+					]
+				},
+				{
+					"from": "open2",
+					"to": "open9",
+					"condition": [
+						[ "item", "Red Flame Shade", 1 ]
+					]
+				},
+				{
+					"from": "open2",
+					"to": "open20",
+					"condition": [
+						[ "item", "Meteor Shade", 1 ]
+					]
+				},
+				{
+					"from": "open9",
+					"to": "open9.1",
+					"condition": [
+						[ "item", "Green Seed Shade", 1 ]
+					]
+				},
+				{
+					"from": "open9",
+					"to": "open10",
+					"condition": [
+						[ "item", "Green Seed Shade", 1 ]
+					]
+				},
+				{
+					"from": "open10",
+					"to": "open11",
+					"condition": [
+						[ "item", "Pond Slums Pass", 1 ]
+					]
+				},
+				{
+					"from": "open10",
+					"to": "open12",
+					"condition": [
+						[ "item", "Heat", 1 ],
+						[ "item", "Cold", 1 ]
+					]
+				},
+				{
+					"from": "open10",
+					"to": "open13.1",
+					"condition": [
+						[ "item", "Zir'vitar Key", 2 ],
+						[ "any_element" ]
+					]
+				},
+				{
+					"from": "open13.1",
+					"to": "open13.2",
+					"condition": [
+						[ "item", "Wave", 1 ]
+					]
+				},
+				{
+					"from": "open10",
+					"to": "open14.1",
+					"condition": [
+						[ "item", "So'najiz Key", 1 ],
+						[ "any_element" ]
+					]
+				},
+				{
+					"from": "open10",
+					"to": "open14.2",
+					"condition": [
+						[ "item", "So'najiz Key", 3 ],
+						[ "item", "Heat" ]
+					]
+				},
+				{
+					"from": "open14.2",
+					"to": "open14.3",
+					"condition": [
+						[ "item", "Cold" ]
+					]
+				},
+				{
+					"from": "open14.3",
+					"to": "open14.4",
+					"condition": [
+						[ "item", "So'najiz Key", 4 ],
+						[ "item", "Radiant Key", 1 ]
+					]
+				},
+				{
+					"from": "open14.4",
+					"to": "open14.5",
+					"condition": [
+						[ "item", "Shock" ]
+					]
+				},
+				{
+					"from": "open12",
+					"to": "open15.1",
+					"condition": [
+						[ "item", "Azure Drop Shade", 1 ],
+						[ "item", "Purple Bolt Shade", 1 ],
+						[ "item", "Wave", 1 ],
+						[ "item", "Shock", 1 ]
+					]
+				},
+				{
+					"from": "open15.1",
+					"to": "open15.2",
+					"condition": [
+						[ "item", "Krys'kajo Key", 2 ]
+					]
+				},
+				{
+					"from": "open15.2",
+					"to": "open15.3",
+					"condition": [
+						[ "item", "Kajo Master Key", 1 ]
+					]
+				},
+				{
+					"from": "open9",
+					"to": "open16",
+					"condition": [
+						[ "item", "Star Shade", 1 ]
+					]
+				},
+				{
+					"from": "open16",
+					"to": "open17",
+					"condition": [
+						[ "item", "Old Dojo Key", 1 ]
+					]
+				},
+				{
+					"from": "open16",
+					"to": "open16.1",
+					"condition": [
+						[ "item", "Meteor Shade", 1 ],
+						[ "item", "Shock", 1 ]
+					]
+				},
+				{
+					"from": "open16",
+					"to": "open18",
+					"condition": [
+						["var", "vwPassage"]
+					]
+				},
+				{
+					"from": "open16.1",
+					"to": "open19",
+					"condition": [
+						[ "item", "Heat", 1 ],
+						[ "item", "Cold", 1 ],
+						[ "item", "Shock", 1 ],
+						[ "item", "Wave", 1 ],
+						[ "var", "vtShadeLock" ]
+					]
+				}
+			],
+			"exclude": [ "open1" ],
+			"start": "open2",
+			"goal": "open19"
+		}
 	}
 }

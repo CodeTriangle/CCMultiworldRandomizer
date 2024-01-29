@@ -1,0 +1,23 @@
+{
+	"vars": {
+		"vtShadeLock": {
+			"shades": [
+				[ "item", "Blue Ice Shade" ],
+				[ "item", "Red Flame Shade" ],
+				[ "item", "Purple Bolt Shade" ],
+				[ "item", "Azure Drop Shade" ]
+			],
+			"bosses": [
+				[ "cutscene", "Temple Mine Shade Statue"],
+				[ "cutscene", "Faj'ro Shade Statue"],
+				[ "cutscene", "Zir'vitar Shade Statue"],
+				[ "cutscene", "So'najiz Shade Statue"]
+			]
+		},
+		"vwPassage": {
+			"meteor": [
+				[ "item", "Meteor Shade"]
+			]
+		}
+	}
+}

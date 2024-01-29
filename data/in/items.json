@@ -1,4 +1,11 @@
 {
+	"keyringItems": [
+		"Mine Key",
+		"Faj'ro Key",
+		"So'najiz Key",
+		"Zir'vitar Key",
+		"Krys'kajo Key"
+	],
 	"items": {
 		"Golden Triangle": {
 			"id": 0
@@ -370,7 +377,8 @@
 			"id": 132
 		},
 		"Broken Gauntlet": {
-			"id": 133
+			"id": 133,
+			"classification": "progression"
 		},
 		"Disc of Insight": {
 			"id": 135
@@ -379,7 +387,8 @@
 			"id": 136
 		},
 		"Broken Shield": {
-			"id": 137
+			"id": 137,
+			"classification": "progression"
 		},
 		"Autumn Ingredients": {
 			"id": 138
@@ -424,7 +433,11 @@
 			"id": 151
 		},
 		"Mine Key": {
-			"id": 152
+			"id": 152,
+			"maxQuantity": {
+				"linear": 5,
+				"open": 5
+			}
 		},
 		"Mine Master Key": {
 			"id": 153
@@ -916,7 +929,11 @@
 			"id": 318
 		},
 		"So'najiz Key": {
-			"id": 319
+			"id": 319,
+			"maxQuantity": {
+				"linear": 4,
+				"open": 4
+			}
 		},
 		"Jack's Flame": {
 			"id": 320
@@ -1171,7 +1188,8 @@
 			"id": 403
 		},
 		"Broken Sword": {
-			"id": 404
+			"id": 404,
+			"classification": "progression"
 		},
 		"Ronin Shell": {
 			"id": 405
@@ -1282,7 +1300,8 @@
 			"id": 441
 		},
 		"Broken Deck": {
-			"id": 443
+			"id": 443,
+			"classification": "progression"
 		},
 		"Stone of Spirit": {
 			"id": 444
@@ -1495,7 +1514,8 @@
 			"id": 514
 		},
 		"Broken Chakrams": {
-			"id": 515
+			"id": 515,
+			"classification": "progression"
 		},
 		"Mooncake": {
 			"id": 516

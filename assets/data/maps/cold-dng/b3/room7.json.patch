@@ -1,0 +1,17 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities", 41, "settings", "event", 32, "thenStep"]
+	},
+	{
+		"type": "FOR_IN",
+		"keyword": "__UNUSED__",
+		"values": [1, 2, 3],
+		"body": [
+			{
+				"type": "REMOVE_ARRAY_ELEMENT",
+				"index": 1
+			}
+		]
+	}
+]

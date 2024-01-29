@@ -8,7 +8,10 @@
 			"region": {
 				"linear": "8",
 				"open": "open4.5"
-			}
+			},
+			"reward": [
+				["element", "Heat"]
+			]
 		},
 		"Cold Pedestal": {
 			"location": {
@@ -18,7 +21,10 @@
 			"region": {
 				"linear": "16",
 				"open": "open7.4"
-			}
+			},
+			"reward": [
+				["element", "Cold"]
+			]
 		},
 		"Shock Pedestal": {
 			"location": {
@@ -27,8 +33,11 @@
 			},
 			"region": {
 				"linear": "27",
-				"open": "open14.2"
-			}
+				"open": "open14.5"
+			},
+			"reward": [
+				["element", "Shock"]
+			]
 		},
 		"Wave Pedestal": {
 			"location": {
@@ -38,7 +47,10 @@
 			"region": {
 				"linear": "25",
 				"open": "open13.1"
-			}
+			},
+			"reward": [
+				["element", "Wave"]
+			]
 		}
 	}
 }

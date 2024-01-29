@@ -4,17 +4,17 @@
   "description": "",
   "scripts": {
     "start": "node ./build.mjs",
-    "watch": "nodemon -i ./plugin.js -e ts,js,mjs,cjs,json"
+    "watch": "nodemon -i mw-rando/ -e ts,js,mjs,cjs,json"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.4.9",
     "esbuild": "^0.18.15",
+    "nax-ccuilib": "conorlawton/CCUILib",
     "nodemon": "^3.0.1",
     "typescript": "^5.1.6",
-    "ultimate-crosscode-typedefs": "CCDirectLink/ultimate-crosscode-typedefs",
-    "nax-ccuilib": "conorlawton/CCUILib"
+    "ultimate-crosscode-typedefs": "github:CCDirectLink/ultimate-crosscode-typedefs"
   },
   "dependencies": {
     "archipelago.js": "file:../../../../Downloads/archipelago.js-1.1.0-isomorphicless.tgz",

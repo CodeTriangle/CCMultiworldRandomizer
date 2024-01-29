@@ -1,92 +1,15 @@
-// don't trust ts-server, you can't replace this `require`
-const fs = require("fs");
-
 import * as ap from 'archipelago.js';
-import {NetworkItem} from 'archipelago.js';
-import {ItemData, RawElement} from './item-data.model';
+import {WorldData, RawElement, RawQuest, ItemInfo} from './item-data.model';
 import {readJsonFromFile} from './utils';
+import "./types/multiworld-model.d";
 
 export default class MwRandomizer {
 	baseDirectory: string;
-	randoData: ItemData | null = null;
+	randoData: WorldData | null = null;
 	itemdb: any;
-	numItems: number = 0;
-
-	baseId: number = 300000;
-	baseNormalItemId: number = 300100;
-
-	client: ap.Client;
-
-	declare lastIndexSeen: number;
-	declare locationInfo: {[idx: number]: ap.NetworkItem};
-	declare connectionInfo: ap.ConnectionInformation;
-	declare localCheckedLocations: number[];
-	declare mode: string;
-	declare options: any;
-
-	defineVarProperty(name: string, igVar: string) {
-		Object.defineProperty(this, name, {
-			get() {
-				return ig.vars.get(igVar);
-			},
-			set(newValue: any) {
-				ig.vars.set(igVar, newValue);
-			},
-		});
-	}
 
 	constructor(mod: {baseDirectory: string}) {
 		this.baseDirectory = mod.baseDirectory
-		this.client = new ap.Client();
-	}
-
-	getElementConstantFromComboId(comboId: number): number | null {
-		switch (comboId) {
-			case this.baseId:
-				return sc.PLAYER_CORE.ELEMENT_HEAT;
-			case this.baseId + 1:
-				return sc.PLAYER_CORE.ELEMENT_COLD;
-			case this.baseId + 2:
-				return sc.PLAYER_CORE.ELEMENT_SHOCK;
-			case this.baseId + 3:
-				return sc.PLAYER_CORE.ELEMENT_WAVE;
-			default:
-				return null;
-		}
-	}
-
-	getItemDataFromComboId(comboId: number): [itemId: number, quantity: number] {
-		if (this.numItems == 0) {
-			throw "Can't fetch item data before item database is loaded";
-		}
-
-		comboId -= this.baseNormalItemId;
-		return [comboId % this.numItems, (comboId / this.numItems + 1) | 0];
-	}
-
-	addMultiworldItem(comboId: number, index: number): void {
-		if (index <= this.lastIndexSeen) {
-			return;
-		}
-
-		if (comboId < this.baseNormalItemId) {
-			if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
-				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
-				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
-				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_COLD, false);
-				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
-				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
-			}
-			let elementConstant = this.getElementConstantFromComboId(comboId);
-			if (elementConstant != null) {
-				sc.model.player.setCore(elementConstant, true);
-			}
-		} else {
-			let [itemId, quantity] = this.getItemDataFromComboId(comboId);
-			sc.model.player.addItem(Number(itemId), quantity, false);
-		}
-
-		this.lastIndexSeen = index;
 	}
 
 	getColoredStatus(status: string) {
@@ -101,145 +24,157 @@ export default class MwRandomizer {
 		}
 	}
 
-	async storeAllLocationInfo() {
-		let listener = (packet: ap.LocationInfoPacket) => {
-			let locationInfoMap = {};
-			packet.locations.forEach((item: any) => {
-				let mwid: number = item.location;
-				
-				// cut down on save file space by not storing unimportant parts
-				// item.location is redundant because you'll have the key whenever that's relevant
-				// item.class is a string which is the same for every instance
-				// together this saves several kilobytes of space in the save data
-				delete item.location;
-				delete item.class;
-				// @ts-ignore
-				locationInfoMap[mwid] = item;
+	getItemInfo(item: ap.NetworkItem): ItemInfo {
+		let gameName: string = sc.multiworld.client.data.players[item.player].game;
+		let gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName);
+		if (gameInfo.item_id_to_name[item.item] == undefined) {
+			gameInfo = sc.multiworld.datapackage;
+			gameName = "CrossCode";
+		}
 
-				ig.vars.set("mw.locationInfo", locationInfoMap);
-			});
+		if (gameInfo.item_id_to_name[item.item] == undefined) {
+			return {icon: "ap-item-default", label: "Unknown", player: "Archipelago", level: 0, isScalable: false};
+		}
 
-			this.client.removeListener("LocationInfo", listener);
-		};
+		const playerId = sc.multiworld.client.players.get(item.player);
+		const playerName = playerId?.alias ?? playerId?.name;
 
-		this.client.addListener('LocationInfo', listener);
+		let label = gameInfo.item_id_to_name[item.item];
+		let player = playerName ? playerName : "Archipelago";
 
-		this.client.locations.scout(
-			ap.CREATE_AS_HINT_MODE.NO_HINT,
-			...this.client.locations.missing
-		);
-	}
-
-	getLocationInfo(locations: number[], callback: (info: NetworkItem[]) => void) {
-		let listener = (packet: ap.LocationInfoPacket) => {
-			let matches = true;
-			for (let i = 0; i < locations.length; i++) {
-				if (packet.locations[i].location != locations[i]) {
-					matches = false;
-					break;
+		if (gameName == "CrossCode") {
+			const comboId: number = item.item;
+			let level = 0;
+			let icon = "item-default";
+			let isScalable = false;
+			if (comboId >= sc.multiworld.baseNormalItemId) {
+				const [itemId, _] = sc.multiworld.getItemDataFromComboId(item.item);
+				const dbEntry = sc.inventory.getItem(itemId);
+				if (dbEntry) {
+					icon = dbEntry.icon + sc.inventory.getRaritySuffix(dbEntry.rarity);
+					isScalable = dbEntry.isScalable || false;
+					if (dbEntry.type == sc.ITEMS_TYPES.EQUIP) {
+						level = dbEntry.level;
+					}
 				}
 			}
 
-			if (!matches) {
-				return;
-			}
-
-			this.client.removeListener("LocationInfo", listener);
-
-			callback(packet.locations);
-		};
-
-		this.client.addListener('LocationInfo', listener);
-
-		this.client.locations.scout(
-			ap.CREATE_AS_HINT_MODE.NO_HINT,
-			...locations
-		);
-	}
-
-	async reallyCheckLocation(mwid: number) {
-		this.client.locations.check(mwid);
-
-		let loc = this.locationInfo[mwid];
-		if (loc == undefined) {
-			this.getLocationInfo([mwid], sc.multiworld.notifyItemsSent.bind(sc.multiworld));
-		} else {
-			sc.multiworld.notifyItemsSent([loc]);
-
-			// cut down on save file space by not storing what we have already
-			delete this.locationInfo[loc.item];
+			return {icon, label, player, level, isScalable};
 		}
 
-		if (this.localCheckedLocations.indexOf(mwid) >= 0) {
+		let cls = "unknown";
+		if (item.flags & ap.ITEM_FLAGS.PROGRESSION) {
+			cls = "prog";
+		} else if (item.flags & ap.ITEM_FLAGS.NEVER_EXCLUDE) {
+			cls = "useful";
+		} else if (item.flags & ap.ITEM_FLAGS.TRAP) {
+			cls = "trap";
+		} else if (item.flags == 0) {
+			cls = "filler";
+		}
+
+		let icon = `ap-item-${cls}`;
+		return {icon, label, player, level: 0, isScalable: false};
+	}
+
+	getGuiString(item: {icon: string, label: string}): string {
+		return `\\i[${item.icon}]${item.label}`;
+	}
+
+	/**
+	 * Modify `itemsGui` such that represents the quest rewards for the
+	 * multiworld, based on user preferences for occluding specific data.
+	 *
+	 * @remarks
+	 * This function signature sucks. I have to do things a really annoying way
+	 * for this to work.
+	 *
+	 * @param quest - The sc.Quest object representing the quest in the base game.
+	 * @param showRewardAnyway - Overrides computed parameter for whether to hide
+	 * the rewards. This is meant to bypass user settings and show the reward
+	 * even if it is not desired (i.e. at the end of the quest).
+	 * @param mwQuest - The object from `data.json` that stores location IDs.
+	 * @param itemsGui - The GUI to modify.
+	 * @param gfx - Argument required to draw the level if required. Inspect
+	 * sc.QuestDialog.setQuest or sc.QuestDetailsView._setQuest for how to obtain
+	 * it.
+	 */
+
+	makeApItemsGui(
+		quest: sc.Quest,
+		showRewardAnyway: boolean,
+		mwQuest: RawQuest,
+		itemsGui: ig.GuiElementBase,
+		gfx: ig.Image
+	) {
+		if (sc.multiworld.client.status != ap.CONNECTION_STATUS.CONNECTED) {
 			return;
 		}
 
-		this.localCheckedLocations.push(mwid);
-	}
+		let itemGuis: sc.TextGui[] = [];
+		let worldGuis: sc.TextGui[] = [];
 
-	async login(info: ap.ConnectionInformation) {
-		try {
-			await this.client.connect(info);
-		} catch (e) {
-			sc.Dialogs.showErrorDialog(
-				"Could not connect to Archipelago server. " +
-					"You may still be able to play if you have logged in to this server before, " + 
-					"but your progress will not be uploaded until " +
-					"you connect to the server.",
-				true
-			);
-			console.error("Could not connect to Archipelago server: ", e);
+		itemsGui.removeAllChildren();
+		itemsGui.gfx = gfx;
 
-			// sc.multiworld.updateConnectionStatus();
-
-			return;
+		const hiddenQuestRewardMode = sc.multiworld.options.hiddenQuestRewardMode;
+		let hideRewards = quest.hideRewards;
+		if (hiddenQuestRewardMode == "show_all") {
+			hideRewards = false;
+		} else if (hiddenQuestRewardMode == "hide_all") {
+			hideRewards = true;
 		}
 
-		// sc.multiworld.updateConnectionStatus();
+		hideRewards = hideRewards && !showRewardAnyway;
 
-		this.client.addListener('ReceivedItems', packet => {
-			let index = packet.index;
-			for (const [offset, item] of packet.items.entries()) {
-				let comboId = item.item;
-				this.addMultiworldItem(comboId, index + offset);
+		if (sc.multiworld.options.questDialogHints && !hideRewards) {
+			sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...mwQuest.mwids);
+		}
+
+		for (let i = 0; i < mwQuest.mwids.length; i++) {
+			const mwid: number = mwQuest.mwids[i]
+			const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
+
+			const itemInfo = this.getItemInfo(item);
+
+			if (hideRewards) {
+				itemInfo.label = "?????????????";
+				if (sc.multiworld.questSettings.hidePlayer) {
+					itemInfo.player =  "?????????????";
+				}
 			}
-		});
 
-		this.connectionInfo = info;
+			const itemGui = new sc.TextGui(this.getGuiString(itemInfo));
+			itemGui.setPos(0, i * 20);
+			const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
 
-		// eventually i'll get proper interfaces set up.....
-		// @ts-ignore
-		this.mode = this.client.data.slotData.mode;
-		this.options = this.client.data.slotData.options;
-
-		sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
-
-		this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
-
-		if (this.locationInfo == null) {
-			this.storeAllLocationInfo();
-		}
-
-		let checkedSet = new Set(this.client.locations.checked);
-
-		for (const location of this.localCheckedLocations) {
-			if (!checkedSet.has(location)) {
-				this.reallyCheckLocation(location);
+			if (itemInfo.level > 0) {
+				itemGui.setDrawCallback(function (width: number, height: number) {
+					sc.MenuHelper.drawLevel(
+						itemInfo.level,
+						width,
+						height,
+						itemsGui.gfx,
+						itemInfo.isScalable
+					);
+				});
 			}
-		}
 
-		sc.multiworld.onLevelLoaded();
+			worldGui.setPos(15, itemGui.hook.size.y - 2);
+			itemsGui.addChildGui(itemGui);
+			itemGui.addChildGui(worldGui);
+			worldGuis.push(worldGui);
+			itemGuis.push(itemGui);
+		}
 	}
 
 	async prestart() {
-		this.defineVarProperty("lastIndexSeen", "mw.lastIndexSeen");
-		this.defineVarProperty("locationInfo", "mw.locationInfo");
-		this.defineVarProperty("connectionInfo", "mw.connectionInfo");
-		this.defineVarProperty("localCheckedLocations", "mw.checkedLocations");
-		this.defineVarProperty("mode", "mw.mode");
-		this.defineVarProperty("options", "mw.options");
+		window.moduleCache.registerModPrefix("mw-rando", this.baseDirectory.substring(7));
+		ig.lib = this.baseDirectory.substring(7);
 
-		let randoData: ItemData = await readJsonFromFile(this.baseDirectory + "data/data.json")
+		ig._loadScript("mw-rando.multiworld-model");
+
+		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/out/data.json")
 		this.randoData = randoData;
 
 		let maps = randoData.items;
@@ -248,104 +183,94 @@ export default class MwRandomizer {
 		let itemdb = await readJsonFromFile("assets/data/item-database.json");
 		this.itemdb = itemdb;
 
-		this.numItems = itemdb.items.length;
-
-		let client = this.client;
-
-		// @ts-ignore
-		window.apclient = client;
-
 		// For those times JS decides to override `this`
 		// Used several times in the injection code
 		let plugin = this;
 
-		sc.MULTIWORLD_MSG = {
-			CONNECTION_STATUS_CHANGED: 0,
-			ITEM_SENT: 1,
-			OPTIONS_PRESENT: 2,
-		};
+		ig.ENTITY.Chest.inject({
+			init(...args) {
+				this.parent(...args);
 
-		sc.MultiWorldModel = ig.GameAddon.extend({
-			observers: [],
-			client: null,
-			previousConnectionStatus: ap.CONNECTION_STATUS.DISCONNECTED,
-
-			init() {
-				this.client = client;
-				ig.storage.register(this);
-
-				window.setInterval(this.updateConnectionStatus.bind(this), 300);
-			},
-
-			onStoragePostLoad() {
-				if (plugin.connectionInfo) {
-					console.log("Reading connection info from save file");
-					plugin.login(plugin.connectionInfo);
-				} else {
-					sc.Dialogs.showInfoDialog(
-						"This save file has no Archpelago connection associated with it. " +
-							"To play online, open the pause menu and enter the details.",
-						true,
-					);
-				}
-			},
-
-			onLevelLoaded() {
-				if (plugin.lastIndexSeen == null) {
-					plugin.lastIndexSeen = -1;
-				}
-
-				if (!plugin.localCheckedLocations) {
-					plugin.localCheckedLocations = [];
-				}
-
-				for (let i = plugin.lastIndexSeen + 1; i < client.items.received.length; i++) {
-					let item = client.items.received[i];
-					let comboId = item.item;
-					plugin.addMultiworldItem(comboId, i);
-				}
-			},
-
-			notifyItemsSent(items: NetworkItem[]) {
-				for (const item of items) {
-					if (item.player == this.client.data.slot) {
-						continue;
-					}
-					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_SENT, item);
-				}
-			},
-
-			updateConnectionStatus() {
-				if (this.previousConnectionStatus == client.status) {
+				const map = maps[ig.game.mapName];
+				if (!map) {
 					return;
 				}
 
-				this.previousConnectionStatus = client.status;
-
-				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED, client.status);
-			},
-		});
-
-		ig.addGameAddon(() => {
-			return (sc.multiworld = new sc.MultiWorldModel());
-		});
-
-		ig.ENTITY.Chest.inject({
-			_reallyOpenUp() {
-				const map = maps[ig.game.mapName];
-				
-				if (!map) {
-					console.warn('Chest not in logic');
-					return this.parent();
+				this.mwCheck = map.chests?.[this.mapId];
+				if (!this.mwCheck) {
+					return;
 				}
 
-				const check = map.chests[this.mapId];
+				if (!sc.multiworld.locationInfo) {
+					return;
+				}
+
+				const keyLayer = this.animSheet.anims.idleKey.animations[1];
+				const masterKeyLayer = this.animSheet.anims.idleMasterKey.animations[1];
+				let layerToAdd = null;
+
+				this.analyzeColor = sc.ANALYSIS_COLORS.GREY;
+				this.analyzeLabel = "Filler";
+
+				let newOffY = 0;
+				this.rawChest = sc.multiworld.locationInfo[this.mwCheck.mwids[0]];
+				let flags = this.rawChest.flags;
+				if (flags & (ap.ITEM_FLAGS.NEVER_EXCLUDE | ap.ITEM_FLAGS.TRAP)) {
+					// USEFUL and TRAP items get a blue chest
+					newOffY = 80;
+					layerToAdd = keyLayer;
+					this.analyzeColor = sc.ANALYSIS_COLORS.BLUE;
+					this.analyzeLabel = "Useful";
+				} else if (flags & ap.ITEM_FLAGS.PROGRESSION) {
+					// PROGRESSION items get a green chest
+					newOffY = 136;
+					layerToAdd = masterKeyLayer;
+					this.analyzeColor = sc.ANALYSIS_COLORS.GREEN;
+					this.analyzeLabel = "Progression";
+				}
+
+				this.animSheet.anims.idleKey = this.animSheet.anims.idleMasterKey = this.animSheet.anims.idle;
+
+				if (newOffY == 0) {
+					return;
+				}
+
+				for (const name of Object.keys(this.animSheet.anims)) {
+					let animations = this.animSheet.anims[name].animations;
+
+					if (name.startsWith("idle")) {
+						animations[0].sheet.offY = newOffY;
+						layerToAdd && animations.splice(1, 0, layerToAdd);
+					}
+					if (name == "open" || name == "end") {
+						this.animSheet.anims[name].animations[0].sheet.offY = newOffY + 24;
+					}
+				}
+			},
+
+			getQuickMenuSettings() {
+				let disabled = this.isOpen || (this.hideManager && this.hideManager.hidden);
+				if (this.mwCheck) {
+					return {
+						type: "Chest",
+						disabled: disabled,
+					};
+				} else {
+					return {
+						type: "Analyzable",
+						disabled: disabled,
+						color: this.analyzeColor ?? 0,
+						text: "\\c[1]Not in logic",
+					}
+				}
+			},
+
+			_reallyOpenUp() {
 				if (
-					check === undefined ||
-					check.mwid === undefined ||
-					check.condition === undefined ||
-					check.condition[plugin.mode] === undefined ||
-					randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
+					this.mwCheck === undefined ||
+					this.mwCheck.mwids === undefined ||
+					this.mwCheck.mwids.length == 0 ||
+					sc.multiworld.locationInfo[this.mwCheck.mwids[0]] === undefined
 				) {
 					console.warn('Chest not in logic');
 					return this.parent();
@@ -353,14 +278,169 @@ export default class MwRandomizer {
 
 				const old = sc.ItemDropEntity.spawnDrops;
 				try {
-					plugin.reallyCheckLocation(check.mwid);
+					if (this.mwCheck) {
+						sc.multiworld.reallyCheckLocations(this.mwCheck.mwids);
+					}
 
 					this.amount = 0;
 					return this.parent();
 				} finally {
 					sc.ItemDropEntity.spawnDrops = old;
 				}
-			}
+			},
+		});
+
+		sc.QUICK_MENU_TYPES.Chest = sc.QuickMenuTypesBase.extend({
+			init(type, settings, screen) {
+				this.parent(type, settings, screen);
+				this.setIconColor(settings.entity.analyzeColor);
+			},
+		});
+
+		sc.QUICK_INFO_BOXES.Chest = ig.BoxGui.extend({
+			ninepatch: new ig.NinePatch("media/gui/menu.png", {
+				width: 8,
+				height: 8,
+				left: 8,
+				top: 8,
+				right: 8,
+				bottom: 8,
+				offsets: { default: { x: 432, y: 304 }, flipped: { x: 456, y: 304 } },
+			}),
+			transitions: {
+				HIDDEN: {
+					state: { alpha: 0 },
+					time: 0.2,
+					timeFunction: KEY_SPLINES.LINEAR,
+				},
+				DEFAULT: { state: {}, time: 0.2, timeFunction: KEY_SPLINES.EASE },
+			},
+			
+			init() {
+				this.parent(127, 100);
+				this.areaGui = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
+				this.areaGui.setPos(0, 6);
+				this.areaGui.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_TOP);
+				this.addChildGui(this.areaGui);
+
+				this.locationGui = new sc.TextGui("", {
+					font: sc.fontsystem.smallFont,
+					maxWidth: 115,
+					linePadding: -2,
+				});
+				this.locationGui.setPos(8, 19);
+				this.addChildGui(this.locationGui);
+
+				this.line = new sc.LineGui(117);
+				this.line.setPos(5, 16);
+				this.addChildGui(this.line);
+
+				this.clearance = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
+				this.clearance.setPos(5, 13);
+				this.clearance.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_TOP);
+				this.addChildGui(this.clearance);
+
+				this.arrow = new sc.QuickItemArrow();
+				this.addChildGui(this.arrow);
+
+				this.typeGui = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
+				this.typeGui.setPos(8, 5);
+				this.typeGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
+				this.addChildGui(this.typeGui);
+			},
+
+			show(tooltip) {
+				let chest = tooltip.entity;
+				if (!this.setData(chest)) {
+					return;
+				}
+				this.alignToBase(tooltip.hook);
+				this.doStateTransition("DEFAULT");
+				this.active = true;
+			},
+			
+			hide() {
+				this.doStateTransition("HIDDEN");
+				this.active = false;
+			},
+
+			setData(chest) {
+				if (!chest.mwCheck) {
+					return false;
+				}
+
+				let [area, location] =  chest.mwCheck.name.split(" - ");
+				let level = null;
+				const match = RegExp("(.+) \\((.+)\\)").exec(location);
+				if (match) {
+					location = match[1];
+					level = match[2];
+				}
+
+				this.areaGui.setText(`\\c[4]${area}\\c[0]`);
+				this.locationGui.setText(location);
+				if (level) {
+					this.clearance.setText(`\\c[3]${level}\\c[0]`);
+					this.line.hook.size.x = 114 - this.clearance.hook.size.x;
+				} else {
+					this.clearance.setText("");
+					this.line.hook.size.x = 117;
+				}
+
+				this.hook.size.y = 34 + this.locationGui.hook.size.y;
+
+				this.typeGui.setText(`Type: \\c[3]${chest.analyzeLabel}\\c[0]`);
+
+				return true;
+			},
+
+			alignToBase: function (otherHook) {
+				let hook = this.hook;
+				let invisible = hook.currentState.alpha == 0;
+
+				let vec = Vec2.createC(0, 0);
+				vec.x = otherHook.pos.x + Math.floor(otherHook.size.x / 2);
+				vec.y = otherHook.pos.y + Math.floor(otherHook.size.y / 2);
+
+				let above = vec.y - 25;
+
+				vec.y = Math.max(10, Math.min(ig.system.height - this.hook.size.y - 10, above));
+
+				if (invisible) {
+					hook.pos.y = vec.y;
+				}
+
+				var arrowY = 17 + (above - vec.y);
+				if (vec.x + 173 < ig.system.width) {
+					this.currentTileOffset = "default";
+					if (invisible) hook.pos.x = vec.x + 20 + 10;
+					hook.doPosTranstition(vec.x + 20, vec.y, 0.2, KEY_SPLINES.EASE);
+					this.arrow.setPosition(-10, Math.max(7, Math.min(hook.size.y - 15, arrowY)), false);
+				} else {
+					this.currentTileOffset = "flipped";
+					if (invisible) hook.pos.x = vec.x - hook.size.x - 20 - 10 - 1;
+					hook.doPosTranstition(
+						vec.x - hook.size.x - 20 - 1,
+						vec.y,
+						0.2,
+						KEY_SPLINES.EASE,
+					);
+					this.arrow.setPosition(
+						hook.size.x + 1,
+						Math.max(7, Math.min(hook.size.y - 15, arrowY)),
+						true,
+					);
+				}
+
+				this.arrow.bottomAnchor = false;
+				this.arrow.flipY = false;
+				if (arrowY < 7) {
+					this.arrow.bottomAnchor = true;
+					this.arrow.flipY = true;
+				} else if (arrowY > hook.size.y - 15) {
+					this.arrow.bottomAnchor = true;
+				}
+			},
 		});
 
 		ig.EVENT_STEP.SET_PLAYER_CORE.inject({
@@ -374,39 +454,61 @@ export default class MwRandomizer {
 					return this.parent();
 				}
 
-				// do not disable elements
-				if (!this.value) {
-					return;
-				}
-
 				const map = maps[ig.game.mapName];
 				if (!map || !map.elements) {
 					return this.parent();
 				}
 
 				const check = Object.values(map.elements)[0] as RawElement;
-				if (
-					check === undefined ||
-					check.mwid === undefined ||
-					check.condition === undefined ||
-					check.condition[plugin.mode] === undefined ||
-					randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
-				) {
-					console.warn('Event not in logic');
-					return this.parent();
+				sc.multiworld.reallyCheckLocations(check.mwids);
+			}
+		});
+
+		ig.EVENT_STEP.RESET_SKILL_TREE.inject({
+			start() {
+				if (maps[ig.game.mapName]) {
+					return; // do not reset the skilltree if there is a check in the room
 				}
-				
-				plugin.reallyCheckLocation(check.mwid);
+				return this.parent();
 			}
 		});
 
 		ig.EVENT_STEP.SEND_ITEM = ig.EventStepBase.extend({
-			mwid: 0,
+			mwids: [],
+			oldItem: undefined,
 			init(settings) {
-				this.mwid = settings.mwid;
+				this.mwids = settings.mwids.filter(x => sc.multiworld.locationInfo[x] != undefined);
+				this.oldItem = {
+					"item": settings.item,
+					"amount": settings.amount,
+				}
 			},
 			start() {
-				plugin.reallyCheckLocation(this.mwid);
+				if (this.mwids.length == 0) {
+					let amount = ig.Event.getExpressionValue(this.oldItem.amount);
+					sc.model.player.addItem(this.oldItem.item, amount, false);
+				}
+
+				sc.multiworld.reallyCheckLocations(this.mwids);
+			}
+		});
+
+		ig.EVENT_STEP.MW_GOAL_COMPLETED = ig.EventStepBase.extend({
+			init(settings) {
+				// In the future, goal will only update client status if it checks off
+				// a specific goal specified by their yaml. For now, there's only one
+				// goal.
+				this.goal = settings.goal;
+			},
+			start() {
+				sc.multiworld.client.updateStatus(ap.CLIENT_STATUS.GOAL);
+			}
+		});
+
+		sc.PartyModel.inject({
+			addPartyMember(name: string, ...args) {
+				this.parent(name, ...args);
+				sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
 			}
 		});
 
@@ -419,22 +521,14 @@ export default class MwRandomizer {
 							entity
 							&& entity.settings
 							&& entity.settings.mapId
-							&& mapOverrides.events[entity.settings.mapId]
+							&& mapOverrides.cutscenes
+							&& mapOverrides.cutscenes[entity.settings.mapId]
 						) {
-								for (const check of mapOverrides.events[entity.settings.mapId]) {
+								for (const check of mapOverrides.cutscenes[entity.settings.mapId]) {
 									const path = check.path.slice(1).split(/\./g);
 
-									if (
-										check.mwid === undefined ||
-										check.condition === undefined ||
-										check.condition[plugin.mode] === undefined ||
-										randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
-									) {
-										continue;
-									}
-
 									set(entity, 'SEND_ITEM', [...path, 'type']);
-									set(entity, check.mwid, [...path, 'mwid']);
+									set(entity, check.mwids, [...path, 'mwids']);
 								}
 							}
 					}
@@ -445,67 +539,75 @@ export default class MwRandomizer {
 		});
 
 		sc.QuestModel.inject({
-			_collectRewards(quest) {
+			_collectRewards(quest: sc.Quest) {
 				const check = quests[quest.id];
 				if (
-					check === undefined ||
-					check.mwid === undefined ||
-				  check.condition === undefined ||
-          check.condition[plugin.mode] === undefined ||
-          randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
+					check == undefined ||
+					check.mwids == undefined ||
+					check.mwids.length == 0 ||
+					sc.multiworld.locationInfo[check.mwids[0]] === undefined
 				) {
 					return this.parent(quest);
 				}
-				plugin.reallyCheckLocation(check.mwid);
-			}
+
+				sc.multiworld.reallyCheckLocations(check.mwids);
+			},
+		});
+
+		sc.QuestDialogWrapper.inject({
+			init(
+				quest: sc.Quest,
+				callback: CallableFunction,
+				finished: bool,
+				characterName: string,
+				mapName: string,
+			) {
+				this.parent(quest, callback, finished, characterName, mapName);
+
+				sc.Model.addObserver(sc.multiworld, this.questBox);
+			},
+
+			_close(a) {
+				this.parent(a);
+
+				sc.Model.removeObserver(sc.multiworld, this.questBox);
+			},
 		});
 
 		sc.QuestDialog.inject({
+			init(quest: sc.Quest, finished: boolean) {
+				this.parent(quest, finished);
+
+				this.finished = finished;
+			},
+
 			setQuestRewards(quest: sc.Quest, hideRewards: boolean, finished: boolean) {
 				this.parent(quest, hideRewards, finished);
 				let mwQuest = randoData.quests[quest.id]
+				this.mwQuest = mwQuest;
 				if (
 					mwQuest === undefined ||
-					mwQuest.mwid === undefined
+					mwQuest.mwids === undefined ||
+					mwQuest.mwids.length === 0 ||
+					sc.multiworld.locationInfo[mwQuest.mwids[0]] === undefined
 				) {
 					return;
 				}
+
 				this.setSize(this.hook.size.x, this.hook.size.y + 6);
+				
+				plugin.makeApItemsGui(quest, !hideRewards, mwQuest, this.itemsGui, this.gfx);
+			},
 
-				let worldGuis: sc.TextGui[] = [];
-
-				// const reward = client.locations.scout(ap.CREATE_AS_HINT_MODE.NO_HINT, randoData.quests[quest.id].mwid);
-				for (let i = 0; i < this.itemsGui.hook.children.length; i++) {
-					const hook = this.itemsGui.hook.children[i];
-					const gui = hook.gui;
-					if (hideRewards) {
-						gui.setText("\\i[ap-logo]?????????????");
-					} else {
-						gui.setText(`\\i[ap-logo]Unknown`);
-					}
-
-					hook.pos.y += 3 * i;
-					let worldGui = new sc.TextGui("Archipelago", { "font": sc.fontsystem.tinyFont });
-					worldGui.setPos(15, gui.hook.size.y - 2);
-					gui.addChildGui(worldGui);
-					worldGuis.push(worldGui);
+			modelChanged(model: sc.Model, msg: number, data: any) {
+				if (
+					model == sc.multiworld &&
+					msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED &&
+					this.mwQuest &&
+					sc.multiworld.locationInfo[this.mwQuest.mwids[0]] === undefined
+				) {
+					plugin.makeApItemsGui(this.quest, this.finished, this.mwQuest, this.itemsGui, this.gfx);
 				}
-
-				plugin.getLocationInfo([mwQuest.mwid], (info) => {
-					for (let i = 0; i < info.length; i++) {
-						const hook = this.itemsGui.hook.children[i];
-						const gui = hook.gui;
-
-						let gameName = client.data.players[info[i].player].game;
-						let gameInfo = client.data.package.get(gameName);
-						gui.setText(`\\i[ap-logo]${gameInfo?.item_id_to_name[info[i].item]}`);
-						let player = client.players.get(info[i].player);
-						let playerName = player?.alias ?? player?.name;
-						if (playerName) {
-							worldGuis[i].setText(`\\i[ap-logo]${playerName}`);
-						}
-					}
-				});
 			}
 		});
 
@@ -515,57 +617,17 @@ export default class MwRandomizer {
 				let mwQuest = randoData.quests[quest.id]
 				if (
 					mwQuest === undefined ||
-					mwQuest.mwid === undefined
+					sc.multiworld.locationInfo[mwQuest.mwids[0]] === undefined
 				) {
 					return;
 				}
-
-				let worldGuis: sc.TextGui[] = [];
-
-				// const reward = client.locations.scout(ap.CREATE_AS_HINT_MODE.NO_HINT, randoData.quests[quest.id].mwid);
-				for (let i = 0; i < this.itemsGui.hook.children.length; i++) {
-					const hook = this.itemsGui.hook.children[i];
-					const gui = hook.gui;
-					if (quest.hideRewards) {
-						gui.setText("\\i[ap-logo]?????????????");
-					} else {
-						gui.setText(`\\i[ap-logo]Unknown`);
-					}
-
-					hook.pos.y += 3 * i;
-					let worldGui = new sc.TextGui("Archipelago", { "font": sc.fontsystem.tinyFont });
-					worldGui.setPos(15, gui.hook.size.y - 2);
-					gui.addChildGui(worldGui);
-					worldGuis.push(worldGui);
-				}
-
-				plugin.getLocationInfo([mwQuest.mwid], (info) => {
-					for (let i = 0; i < info.length; i++) {
-						const hook = this.itemsGui.hook.children[i];
-						const gui = hook.gui;
-
-						let gameName = client.data.players[info[i].player].game;
-						let gameInfo = client.data.package.get(gameName);
-						gui.setText(`\\i[ap-logo]${gameInfo?.item_id_to_name[info[i].item]}`);
-						let player = client.players.get(info[i].player);
-						let playerName = player?.alias ?? player?.name;
-						if (playerName) {
-							worldGuis[i].setText(`\\i[ap-logo]${playerName}`);
-						}
-					}
-				});
+				
+				plugin.makeApItemsGui(quest, false, mwQuest, this.itemsGui, this.gfx);
 			}
 		});
 
-		// ig.Storage.inject({
-		// 	onLevelLoaded(...args) {
-		// 		this.parent(...args);
-		// 		plugin.onLevelLoaded();
-		// 	}
-		// });
-
 		let mwIcons = new ig.Font(
-			plugin.baseDirectory.substring(7) + "assets/icons.png",
+			plugin.baseDirectory.substring(7) + "assets/media/font/icons-multiworld.png",
 			16,
 			ig.MultiFont.ICON_START,
 		);
@@ -574,7 +636,12 @@ export default class MwRandomizer {
 		sc.fontsystem.font.pushIconSet(mwIcons);
 		sc.fontsystem.font.setMapping({
 			"mw-item": [index, 0],
-			"ap-logo": [index, 1],
+			"ap-logo": [index, 2],
+			"ap-item-unknown": [index, 2],
+			"ap-item-trap": [index, 3],
+			"ap-item-filler": [index, 4],
+			"ap-item-useful": [index, 5],
+			"ap-item-prog": [index, 6],
 		});
 
 		// And for my next trick I will rip off ItemContent and ItemHudGui from the base game
@@ -582,26 +649,15 @@ export default class MwRandomizer {
 		sc.MultiWorldItemContent = ig.GuiElementBase.extend({
 			timer: 0,
 			id: -1,
+			player: -1,
 			textGui: null,
-			init: function (mwid: number, player: number) {
+			init: function (item: ItemInfo, receive: boolean) {
 				this.parent();
-				this.id = mwid == void 0 ? -1 : mwid;
-				this.player = player;
 				this.timer = 5;
 
-				let playerObj = client.players.get(player);
-				let destGameName = playerObj?.game;
-				let itemName = "Unknown";
-				if (destGameName != undefined) {
-					let gameInfo = client.data.package.get(destGameName)
-					if (gameInfo != undefined) {
-						itemName = gameInfo.item_id_to_name[mwid];
-					}
-				}
-
-				let playerName = playerObj?.name ?? "Archipelago";
-
-				let text = `\\i[ap-logo] Sent \\c[3]${itemName}\\c[0] to \\c[3]${playerName}\\c[0]`;
+				let verb = receive ? "Received" : "Sent";
+				let prep = receive ? "from": "to";
+				let text = `${verb} \\c[3]${plugin.getGuiString(item)}\\c[0] ${prep} \\c[3]${item.player}\\c[0]`;
 				let isNormalSize = sc.options.get("item-hud-size") == sc.ITEM_HUD_SIZE.NORMAL;
 
 				this.textGui = new sc.TextGui(text, {
@@ -641,19 +697,20 @@ export default class MwRandomizer {
 		});
 
 		sc.MultiWorldHudBox = sc.RightHudBoxGui.extend({
+			contentEntries: [],
 			delayedStack: [],
 			size: 0,
 
 			init: function() {
-				this.parent("ARCHIPELAGO");
+				this.parent("Archipelago");
 				this.size = sc.options.get("item-hud-size");
 				sc.Model.addObserver(sc.multiworld, this);
 				sc.Model.addObserver(sc.model, this);
 				sc.Model.addObserver(sc.options, this);
 			},
 
-			addEntry: function (mwid: number, player: number) {
-				let entry = new sc.MultiWorldItemContent(mwid, player);
+			addEntry: function (itemInfo: ItemInfo, receive: boolean) {
+				let entry = new sc.MultiWorldItemContent(itemInfo, receive);
 				if (this.contentEntries.length >= 5) {
 					this.delayedStack.push(entry);
 				} else {
@@ -706,7 +763,12 @@ export default class MwRandomizer {
 						msg == sc.MULTIWORLD_MSG.ITEM_SENT &&
 						sc.options.get("show-items")
 					) {
-						this.addEntry(data.item, data.player);
+						this.addEntry(plugin.getItemInfo(data), false);
+					} else if (
+						msg == sc.MULTIWORLD_MSG.ITEM_RECEIVED &&
+						sc.options.get("show-items")
+					) {
+						this.addEntry(plugin.getItemInfo(data), true);
 					}
 				} else if (model == sc.model) {
 					if (model.isReset()) {
@@ -746,7 +808,7 @@ export default class MwRandomizer {
 			},
 
 			updateText: function () {
-				this.setText(`AP: ${plugin.getColoredStatus(client.status.toUpperCase())}`);
+				this.setText(`AP: ${plugin.getColoredStatus(sc.multiworld.client.status.toUpperCase())}`);
 			},
 
 			modelChanged(model: any, msg: number, data: any) {
@@ -845,9 +907,9 @@ export default class MwRandomizer {
 					this.buttongroup.addFocusGui(inputGui, 0, i);
 					inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
 					
-					if (plugin.connectionInfo) {
+					if (sc.multiworld.connectionInfo) {
 						//@ts-ignore
-						let prefill = "" + plugin.connectionInfo[this.fields[i].key];
+						let prefill = "" + sc.multiworld.connectionInfo[this.fields[i].key];
 						inputGui.value = prefill.split("");
 						inputGui.textChild.setText(prefill);
 						inputGui.cursorPos = prefill.length;
@@ -895,7 +957,7 @@ export default class MwRandomizer {
 				this.buttongroup.addFocusGui(this.connect, 0, this.fields.length);
 
 				this.disconnect = new sc.ButtonGui("Disconnect", sc.BUTTON_MENU_WIDTH);
-				this.disconnect.onButtonPress = () => { client.disconnect() };
+				this.disconnect.onButtonPress = () => { sc.multiworld.client.disconnect() };
 				this.disconnect.setPos(sc.BUTTON_MENU_WIDTH + this.hSpacer);
 				this.buttongroup.addFocusGui(this.disconnect, 1, this.fields.length);
 
@@ -950,7 +1012,7 @@ export default class MwRandomizer {
 					return;
 				}
 
-				plugin.login({
+				sc.multiworld.login({
 					game: 'CrossCode',
 					hostname: options.hostname,
 					port: portNumber,
@@ -1010,8 +1072,8 @@ export default class MwRandomizer {
 			},
 
 			gotoTitle(...args) {
-				if (client.status == ap.CONNECTION_STATUS.CONNECTED) {
-					client.disconnect();
+				if (sc.multiworld.client.status == ap.CONNECTION_STATUS.CONNECTED) {
+					sc.multiworld.client.disconnect();
 					// sc.multiworld.updateConnectionStatus();
 				}
 				this.parent(...args);

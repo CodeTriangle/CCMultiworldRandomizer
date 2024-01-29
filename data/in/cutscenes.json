@@ -1,71 +1,19 @@
 {
     "cutscenes": {
-        "Talatu Introductions": {
-            "location": {
-                "map": "autumn.path-8",
-                "mapId": 458,
-                "path": ".settings.event.21.accepted.6" 
-            },
-            "region": {
-                "linear": "3",
-                "open": "open3" 
-            },
-            "reward": [
-                [ "item", "Disc of Flora", 1 ]
-            ]
-        },
-        "Talatu Bergen 25%": {
-            "location": {
-                "map": "bergen.inner-questhub-1",
-                "mapId": 160,
-                "path": ".settings.npcStates.0.event.quest.14" 
-            },
-            "region": {
-                "linear": "3",
-                "open": "open3" 
-            },
-            "condition": [
-                [ "cutscene", "Talatu Introductions" ],
-                [ "item", "Disc of Flora", 1 ]
-            ],
-            "reward": [
-                [ "item", "Strawhat", 1 ]
-            ]
-        },
-         "Talatu Ba'kii 50%": {
-            "location": {
-                "map": "heat-village.interior.quest-hub-eg",
-                "mapId": 134,
-                "path": ".settings.npcStates.0.event.quest.11" 
-            },
-            "region": {
-                "linear": "11",
-                "open": "open5" 
-            },
-            "condition": [
-                [ "cutscene", "Talatu Bergen 25%" ]
-            ],
-            "reward": [
-                [ "item", "Dried Grass Hat", 1 ]
-            ]
-        },
-        "Talatu Basin 75%": {
-            "location": {
-                "map": "jungle-city.interior.questhub-01",
-                "mapId": 576,
-                "path": ".settings.npcStates.0.event.quest.11" 
-            },
-            "region": {
-                "linear": "23",
-                "open": "open10" 
-            },
-            "condition": [
-                [ "cutscene", "Talatu Ba'kii 50%" ]
-            ],
-            "reward": [
-                [ "item", "Strawberry Hat", 1 ]
-            ]
-        },
+	"Talatu Introductions": {
+	    "location": {
+		"map": "autumn.path-8",
+		"mapId": 458,
+		"path": ".settings.event.21.accepted.6" 
+	    },
+	    "region": {
+		"linear": "3",
+		"open": "open3" 
+	    },
+	    "reward": [
+		[ "item", "Disc of Flora", 1 ]
+	    ]
+	},
         "Schneider Guild Pass": {
             "location": {
                 "map": "autumn.path-3-1",
@@ -92,6 +40,20 @@
             },
             "reward": [
                 [ "item", "Just Water", 2 ]
+            ]
+        },
+        "Bergen Mine Detector": {
+            "location": {
+                "map": "bergen.inner-questhub-1",
+                "mapId": 135,
+                "path": ".settings.npcStates.1.event.quest.5"
+            },
+            "region": {
+                "linear": "3",
+                "open": "open3"
+            },
+            "reward": [
+                [ "item", "Mine Detector", 1]
             ]
         },
         "Temple Mine Shade Statue": {
@@ -129,7 +91,7 @@
             "location": {
                 "map": "forest.path-04-vaga",
                 "mapId": 447,
-                "path": ".settings.event.19.settings.npcStates.2.event.quest.12" 
+                "path": ".settings.npcStates.2.event.quest.12"
             },
             "region": {
                 "linear": "31",
@@ -237,11 +199,8 @@
             },
             "region": {
                 "linear": "27",
-                "open": "open14.3" 
+                "open": "open14.4" 
             },
-            "condition": [
-                [ "item", "Shock", 1 ]
-            ],
             "reward": [
                 [ "item", "Azure Drop Shade", 1 ]
             ]
@@ -324,11 +283,8 @@
             },
             "region": {
                 "linear": "27",
-                "open": "open14.3" 
+                "open": "open14.4" 
             },
-            "condition": [
-                [ "item", "Shock", 1 ]
-            ],
             "reward": [
                 [ "item", "Circuit Override", 1 ]
             ]
@@ -348,6 +304,34 @@
             ],
             "reward": [
                 [ "item", "Circuit Override", 1 ]
+            ]
+        } ,
+        "Faj'ro SP Upgrade": {
+            "location": {
+                "map": "heat.dng-expo-space",
+                "mapId": 136,
+                "path": ".settings.event.38" 
+            },
+            "region": {
+                "linear": "19",
+                "open": "open7.8" 
+            },
+            "reward": [
+                [ "sp" ]
+            ]
+        },
+        "Krys'kajo SP Upgrade": {
+            "location": {
+                "map": "jungle.dng.tree-expo-space",
+                "mapId": 60,
+                "path": ".settings.event.44" 
+            },
+            "region": {
+                "linear": "30",
+                "open": "open15.3" 
+            },
+            "reward": [
+                [ "sp" ]
             ]
         }
     }

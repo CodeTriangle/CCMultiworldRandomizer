@@ -1,0 +1,17 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities", 180, "settings", "event"]
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"index": 30,
+		"content": {
+			"type": "MW_GOAL_COMPLETED",
+			"goal": "creator"
+		}
+	},
+	{
+		"type": "EXIT"
+	}
+]

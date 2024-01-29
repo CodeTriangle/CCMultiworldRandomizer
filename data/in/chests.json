@@ -1,6 +1,6 @@
 {
 	"chests": {
-		"Vermillion Wasteland - Spiral Cliff - Bronze Chest": {
+		"Vermillion Wasteland - Spiral Cliff Center (Bronze)": {
 			"location": {
 				"map": "arid.cliff-1",
 				"mapId": 467
@@ -30,7 +30,7 @@
 				]
 			]
 		},
-		"Vermillion Wasteland - Spiral Cliff - Chest": {
+		"Vermillion Wasteland - Spiral Cliff Upper": {
 			"location": {
 				"map": "arid.cliff-1",
 				"mapId": 468
@@ -60,7 +60,7 @@
 				]
 			]
 		},
-		"Vermillion Wasteland - Storage Basement - Chest": {
+		"Vermillion Wasteland - Storage Basement": {
 			"location": {
 				"map": "arid.interior.stealth-2",
 				"mapId": 94
@@ -78,7 +78,7 @@
 				]
 			]
 		},
-		"Vermillion Wasteland - Crimson Lake - Chest 1": {
+		"Vermillion Wasteland - Crimson Lake Upper": {
 			"location": {
 				"map": "arid.lake-1",
 				"mapId": 646
@@ -96,7 +96,7 @@
 				]
 			]
 		},
-		"Vermillion Wasteland - Crimson Lake - Chest 2": {
+		"Vermillion Wasteland - Crimson Lake Lower": {
 			"location": {
 				"map": "arid.lake-1",
 				"mapId": 647
@@ -114,7 +114,7 @@
 				]
 			]
 		},
-		"Vermillion Wasteland - East Town - Silver Chest": {
+		"Vermillion Wasteland - East Town Left (Silver)": {
 			"location": {
 				"map": "arid.town-1",
 				"mapId": 334
@@ -132,7 +132,7 @@
 				]
 			]
 		},
-		"Vermillion Wasteland - East Town - Chest 1": {
+		"Vermillion Wasteland - East Town Center": {
 			"location": {
 				"map": "arid.town-1",
 				"mapId": 335
@@ -150,7 +150,7 @@
 				]
 			]
 		},
-		"Vermillion Wasteland - East Town - Chest 2": {
+		"Vermillion Wasteland - East Town Lower": {
 			"location": {
 				"map": "arid.town-1",
 				"mapId": 336
@@ -168,7 +168,7 @@
 				]
 			]
 		},
-		"Vermillion Wasteland - West Town - Bronze Chest 1": {
+		"Vermillion Wasteland - West Town Upper Right (Bronze)": {
 			"location": {
 				"map": "arid.town-2",
 				"mapId": 485
@@ -186,7 +186,7 @@
 				]
 			]
 		},
-		"Vermillion Wasteland - West Town - Chest": {
+		"Vermillion Wasteland - West Town Upper Left": {
 			"location": {
 				"map": "arid.town-2",
 				"mapId": 486
@@ -204,7 +204,7 @@
 				]
 			]
 		},
-		"Vermillion Wasteland - West Town - Bronze Chest 2": {
+		"Vermillion Wasteland - West Town Lower (Bronze)": {
 			"location": {
 				"map": "arid.town-2",
 				"mapId": 487
@@ -222,7 +222,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Drippy Den - Chest": {
+		"Autumn's Rise - Drippy Den": {
 			"location": {
 				"map": "autumn.caves.cave-3-to-6",
 				"mapId": 2
@@ -240,7 +240,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Normal Clearing - Chest 1": {
+		"Autumn's Rise - Normal Clearing Lower": {
 			"location": {
 				"map": "autumn.cubaum",
 				"mapId": 200
@@ -258,7 +258,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Normal Clearing - Chest 2": {
+		"Autumn's Rise - Normal Clearing Left": {
 			"location": {
 				"map": "autumn.cubaum",
 				"mapId": 201
@@ -276,7 +276,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Entrance - Chest": {
+		"Autumn's Rise - Entrance": {
 			"location": {
 				"map": "autumn.entrance",
 				"mapId": 112
@@ -294,7 +294,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Old Observatory - Chest": {
+		"Autumn's Rise - Old Observatory": {
 			"location": {
 				"map": "autumn.lake-observatory",
 				"mapId": 329
@@ -312,7 +312,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Quiet Passage 1 - Chest": {
+		"Autumn's Rise - Quiet Passage 1": {
 			"location": {
 				"map": "autumn.path-1-1",
 				"mapId": 378
@@ -330,7 +330,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Quiet Passage 2 - Chest": {
+		"Autumn's Rise - Quiet Passage 2": {
 			"location": {
 				"map": "autumn.path-1-2",
 				"mapId": 346
@@ -348,7 +348,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Hedgehag's Den - Chest": {
+		"Autumn's Rise - Hedgehag's Den (Defeat)": {
 			"location": {
 				"map": "autumn.path-1-3",
 				"mapId": 322
@@ -366,7 +366,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 1 - Chest": {
+		"Autumn's Rise - Pathway 1": {
 			"location": {
 				"map": "autumn.path-1",
 				"mapId": 137
@@ -384,7 +384,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 2 - Chest": {
+		"Autumn's Rise - Pathway 2": {
 			"location": {
 				"map": "autumn.path-2",
 				"mapId": 268
@@ -402,7 +402,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 3 - Chest": {
+		"Autumn's Rise - Pathway 3 Upper": {
 			"location": {
 				"map": "autumn.path-3-1",
 				"mapId": 291
@@ -420,7 +420,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Off Road 1 - Chest": {
+		"Autumn's Rise - Off Road 1 Right": {
 			"location": {
 				"map": "autumn.path-3-2",
 				"mapId": 305
@@ -438,7 +438,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Off Road 2 - Chest": {
+		"Autumn's Rise - Off Road 2": {
 			"location": {
 				"map": "autumn.path-3-4",
 				"mapId": 265
@@ -456,7 +456,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 6 - Chest 1": {
+		"Autumn's Rise - Pathway 6 Left": {
 			"location": {
 				"map": "autumn.path-7-1",
 				"mapId": 283
@@ -474,7 +474,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 6 - Chest 2": {
+		"Autumn's Rise - Pathway 6 Right": {
 			"location": {
 				"map": "autumn.path-7-1",
 				"mapId": 284
@@ -492,7 +492,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 6 - Chest 3": {
+		"Autumn's Rise - Pathway 6 Center": {
 			"location": {
 				"map": "autumn.path-7-1",
 				"mapId": 1128
@@ -510,7 +510,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 7 - Chest 1": {
+		"Autumn's Rise - Pathway 7 Left": {
 			"location": {
 				"map": "autumn.path-7-2",
 				"mapId": 1115
@@ -528,7 +528,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 7 - Chest 2": {
+		"Autumn's Rise - Pathway 7 Upper": {
 			"location": {
 				"map": "autumn.path-7-2",
 				"mapId": 1142
@@ -546,7 +546,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Ending Pathway - Chest": {
+		"Autumn's Rise - Ending Pathway Lower": {
 			"location": {
 				"map": "autumn.path-8",
 				"mapId": 12
@@ -564,7 +564,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Obelisk Lake - Bronze Chest": {
+		"Autumn's Rise - Obelisk Lake Upper (Bronze)": {
 			"location": {
 				"map": "autumn.path4",
 				"mapId": 22
@@ -582,7 +582,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Obelisk Lake - Chest": {
+		"Autumn's Rise - Obelisk Lake Lower": {
 			"location": {
 				"map": "autumn.path4",
 				"mapId": 98
@@ -600,7 +600,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 4 - Chest 1": {
+		"Autumn's Rise - Pathway 4 Upper": {
 			"location": {
 				"map": "autumn.path5",
 				"mapId": 2
@@ -618,7 +618,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 4 - Chest 2": {
+		"Autumn's Rise - Pathway 4 Center": {
 			"location": {
 				"map": "autumn.path5",
 				"mapId": 3
@@ -636,7 +636,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 4 - Chest 3": {
+		"Autumn's Rise - Pathway 4 Lower": {
 			"location": {
 				"map": "autumn.path5",
 				"mapId": 4
@@ -654,7 +654,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 5 - Chest 1": {
+		"Autumn's Rise - Pathway 5 Upper": {
 			"location": {
 				"map": "autumn.path6",
 				"mapId": 13
@@ -672,7 +672,7 @@
 				]
 			]
 		},
-		"Autumn's Rise - Pathway 5 - Chest 2": {
+		"Autumn's Rise - Pathway 5 Lower": {
 			"location": {
 				"map": "autumn.path6",
 				"mapId": 15
@@ -690,7 +690,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Ruby Tunnel - Gold Chest": {
+		"Autumn's Fall - Ruby Tunnel (Gold)": {
 			"location": {
 				"map": "autumn-fall.caves.path-03-exit",
 				"mapId": 29
@@ -708,7 +708,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Lake Cave 1 - Chest": {
+		"Autumn's Fall - Lake Cave 1": {
 			"location": {
 				"map": "autumn-fall.caves.path-04-cave-01",
 				"mapId": 51
@@ -726,7 +726,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Lake Cave 2 - Chest": {
+		"Autumn's Fall - Lake Cave 2": {
 			"location": {
 				"map": "autumn-fall.caves.path-04-cave-02",
 				"mapId": 92
@@ -744,7 +744,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Lake Cave 3 - Silver Chest": {
+		"Autumn's Fall - Lake Cave 3 (Silver)": {
 			"location": {
 				"map": "autumn-fall.caves.path-04-cave-03",
 				"mapId": 157
@@ -762,7 +762,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Lake Cave 4 - Chest": {
+		"Autumn's Fall - Lake Cave 4": {
 			"location": {
 				"map": "autumn-fall.caves.path-04-cave-04",
 				"mapId": 109
@@ -780,7 +780,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Southern Exit - Chest 1": {
+		"Autumn's Fall - Southern Exit Center": {
 			"location": {
 				"map": "autumn-fall.path-01",
 				"mapId": 458
@@ -798,7 +798,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Southern Exit - Chest 2": {
+		"Autumn's Fall - Southern Exit Upper": {
 			"location": {
 				"map": "autumn-fall.path-01",
 				"mapId": 492
@@ -816,7 +816,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Southern Exit - Chest 3": {
+		"Autumn's Fall - Southern Exit Lower": {
 			"location": {
 				"map": "autumn-fall.path-01",
 				"mapId": 493
@@ -834,7 +834,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Ruined Path - Chest": {
+		"Autumn's Fall - Ruined Path Upper": {
 			"location": {
 				"map": "autumn-fall.path-02",
 				"mapId": 85
@@ -852,7 +852,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Ruined Path - Gold Chest": {
+		"Autumn's Fall - Ruined Path Lower (Gold)": {
 			"location": {
 				"map": "autumn-fall.path-02",
 				"mapId": 98
@@ -870,7 +870,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Eastern Exit - Silver Chest": {
+		"Autumn's Fall - Eastern Exit Center (Silver)": {
 			"location": {
 				"map": "autumn-fall.path-03",
 				"mapId": 48
@@ -888,7 +888,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Eastern Exit - Chest": {
+		"Autumn's Fall - Eastern Exit Right": {
 			"location": {
 				"map": "autumn-fall.path-03",
 				"mapId": 494
@@ -906,7 +906,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Ancient Center - Silver Chest 1": {
+		"Autumn's Fall - Ancient Center Upper (Silver)": {
 			"location": {
 				"map": "autumn-fall.path-04",
 				"mapId": 14
@@ -924,7 +924,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Ancient Center - Silver Chest 2": {
+		"Autumn's Fall - Ancient Center Left (Silver)": {
 			"location": {
 				"map": "autumn-fall.path-04",
 				"mapId": 81
@@ -942,7 +942,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Northern Exit - Chest": {
+		"Autumn's Fall - Northern Exit Lower": {
 			"location": {
 				"map": "autumn-fall.path-05",
 				"mapId": 123
@@ -960,7 +960,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Northern Exit - Bronze Chest": {
+		"Autumn's Fall - Northern Exit Upper (Bronze)": {
 			"location": {
 				"map": "autumn-fall.path-05",
 				"mapId": 124
@@ -978,7 +978,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Pillar Isle - Chest 1": {
+		"Autumn's Fall - Pillar Isle Upper": {
 			"location": {
 				"map": "autumn-fall.path-06",
 				"mapId": 39
@@ -996,7 +996,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Pillar Isle - Chest 2": {
+		"Autumn's Fall - Pillar Isle Right": {
 			"location": {
 				"map": "autumn-fall.path-06",
 				"mapId": 40
@@ -1014,7 +1014,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Pillar Isle - Chest 3": {
+		"Autumn's Fall - Pillar Isle Left": {
 			"location": {
 				"map": "autumn-fall.path-06",
 				"mapId": 740
@@ -1032,7 +1032,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Village Remains - Silver Chest": {
+		"Autumn's Fall - Village Remains Left (Silver)": {
 			"location": {
 				"map": "autumn-fall.path-07",
 				"mapId": 79
@@ -1050,7 +1050,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Village Remains - Gold Chest": {
+		"Autumn's Fall - Village Remains Upper (Gold)": {
 			"location": {
 				"map": "autumn-fall.path-07",
 				"mapId": 85
@@ -1068,7 +1068,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Village Remains - Bronze Chest": {
+		"Autumn's Fall - Village Remains Right (Bronze)": {
 			"location": {
 				"map": "autumn-fall.path-07",
 				"mapId": 128
@@ -1086,7 +1086,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Secluded Path - Gold Chest": {
+		"Autumn's Fall - Secluded Path Upper (Gold)": {
 			"location": {
 				"map": "autumn-fall.path-08",
 				"mapId": 527
@@ -1104,7 +1104,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Secluded Path - Chest 1": {
+		"Autumn's Fall - Secluded Path Left": {
 			"location": {
 				"map": "autumn-fall.path-08",
 				"mapId": 528
@@ -1122,7 +1122,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Secluded Path - Chest 2": {
+		"Autumn's Fall - Secluded Path Right": {
 			"location": {
 				"map": "autumn-fall.path-08",
 				"mapId": 818
@@ -1140,7 +1140,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Villa of Terror - Silver Chest": {
+		"Autumn's Fall - Villa of Terror Right (Silver)": {
 			"location": {
 				"map": "autumn-fall.path-10",
 				"mapId": 68
@@ -1158,7 +1158,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Villa of Terror - Bronze Chest": {
+		"Autumn's Fall - Villa of Terror Left (Bronze)": {
 			"location": {
 				"map": "autumn-fall.path-10",
 				"mapId": 82
@@ -1176,7 +1176,7 @@
 				]
 			]
 		},
-		"Autumn's Fall - Para Island 1 - Chest": {
+		"Autumn's Fall - Para Island 1": {
 			"location": {
 				"map": "autumn-fall.raid.raid-01",
 				"mapId": 375
@@ -1194,7 +1194,7 @@
 				]
 			]
 		},
-		"Bergen Village - Bergen South - Chest": {
+		"Bergen Village South - On Top Of Bergen Bar": {
 			"location": {
 				"map": "bergen.bergen",
 				"mapId": 868
@@ -1212,7 +1212,7 @@
 				]
 			]
 		},
-		"Bergen Village - Bergen South - Bronze Chest 1": {
+		"Bergen Village South - Behind Ice In East (Bronze)": {
 			"location": {
 				"map": "bergen.bergen",
 				"mapId": 1258
@@ -1237,7 +1237,7 @@
 				]
 			]
 		},
-		"Bergen Village - Bergen South - Bronze Chest 2": {
+		"Bergen Village South - Behind Ice In South (Bronze)": {
 			"location": {
 				"map": "bergen.bergen",
 				"mapId": 1265
@@ -1262,7 +1262,7 @@
 				]
 			]
 		},
-		"Bergen Village - Bergen South - Gold Chest": {
+		"Bergen Village South - Top West Roof (Gold)": {
 			"location": {
 				"map": "bergen.bergen",
 				"mapId": 1952
@@ -1280,7 +1280,7 @@
 				]
 			]
 		},
-		"Bergen Village - Bergen North - Chest 1": {
+		"Bergen Village North - On Ledge Near Trader Den": {
 			"location": {
 				"map": "bergen.bergen2",
 				"mapId": 2003
@@ -1298,7 +1298,7 @@
 				]
 			]
 		},
-		"Bergen Village - Bergen North - Chest 2": {
+		"Bergen Village North - Hidden Cave In West": {
 			"location": {
 				"map": "bergen.bergen2",
 				"mapId": 2012
@@ -1323,7 +1323,7 @@
 				]
 			]
 		},
-		"Bergen Village - Bergen North - Silver Chest": {
+		"Bergen Village North - On Ledge In Lower East (Silver)": {
 			"location": {
 				"map": "bergen.bergen2",
 				"mapId": 2021
@@ -1341,7 +1341,7 @@
 				]
 			]
 		},
-		"Bergen Village - Bergen North - Chest 3": {
+		"Bergen Village North - Roof Of Eastern Archway": {
 			"location": {
 				"map": "bergen.bergen2",
 				"mapId": 2889
@@ -1359,7 +1359,7 @@
 				]
 			]
 		},
-		"Bergen Village - Diving Railway - Chest": {
+		"Bergen Village - Diving Railway": {
 			"location": {
 				"map": "bergen.elevator",
 				"mapId": 35
@@ -1377,7 +1377,7 @@
 				]
 			]
 		},
-		"Bergen Village - Seeker Hub Cellar - Chest": {
+		"Bergen Village - Seeker Hub Cellar Left": {
 			"location": {
 				"map": "bergen.inner-questhub-0",
 				"mapId": 130
@@ -1395,7 +1395,7 @@
 				]
 			]
 		},
-		"Bergen Village - Seeker Hub Cellar - Bronze Chest": {
+		"Bergen Village - Seeker Hub Cellar Right (Bronze)": {
 			"location": {
 				"map": "bergen.inner-questhub-0",
 				"mapId": 136
@@ -1413,7 +1413,7 @@
 				]
 			]
 		},
-		"Bergen Village - Storage Room - Chest": {
+		"Bergen Village South - Storage Room": {
 			"location": {
 				"map": "bergen.storage",
 				"mapId": 71
@@ -1431,7 +1431,25 @@
 				]
 			]
 		},
-		"Bergen Trail - Abandoned Cave  - Chest": {
+		"Bergen Village - Omni Gilders Basement Left (Bronze)": {
+			"location": {
+				"map": "bergen.interior.guild-basement",
+				"mapId": 42
+			},
+			"clearance": "Bronze",
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Prickly Bracer",
+					1
+				]
+			]
+		},
+		"Bergen Trail - Abandoned Cave": {
 			"location": {
 				"map": "bergen-trail.cave.cave-08-smith",
 				"mapId": 33
@@ -1449,7 +1467,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Frozen Cave - Chest": {
+		"Bergen Trail - Frozen Cave": {
 			"location": {
 				"map": "bergen-trail.cave.cave-4-1-1",
 				"mapId": 20
@@ -1474,7 +1492,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Abandoned Ground - Silver Chest": {
+		"Bergen Trail - Abandoned Ground (Silver)": {
 			"location": {
 				"map": "bergen-trail.cave.cave-6-1",
 				"mapId": 416
@@ -1499,7 +1517,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Pengpeng's Den - Chest": {
+		"Bergen Trail - Pengpeng Den": {
 			"location": {
 				"map": "bergen-trail.cave.cave-6-3",
 				"mapId": 24
@@ -1524,7 +1542,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Entrance - Chest 1": {
+		"Bergen Trail - Entrance Left": {
 			"location": {
 				"map": "bergen-trail.path-1-entrance",
 				"mapId": 531
@@ -1542,7 +1560,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Entrance - Chest 2": {
+		"Bergen Trail - Entrance Right": {
 			"location": {
 				"map": "bergen-trail.path-1-entrance",
 				"mapId": 532
@@ -1560,7 +1578,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Rising Path 1 - Chest": {
+		"Bergen Trail - Rising Path 1": {
 			"location": {
 				"map": "bergen-trail.path-2",
 				"mapId": 67
@@ -1578,7 +1596,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Off Road 1 - Chest 1": {
+		"Bergen Trail - Off Road 1 Lower": {
 			"location": {
 				"map": "bergen-trail.path-3-1",
 				"mapId": 432
@@ -1596,7 +1614,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Off Road 1 - Chest 2": {
+		"Bergen Trail - Off Road 1 Upper": {
 			"location": {
 				"map": "bergen-trail.path-3-1",
 				"mapId": 454
@@ -1614,7 +1632,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Off Road 2 - Chest 1": {
+		"Bergen Trail - Off Road 2 Center": {
 			"location": {
 				"map": "bergen-trail.path-3-2",
 				"mapId": 373
@@ -1632,7 +1650,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Off Road 2 - Chest 2": {
+		"Bergen Trail - Off Road 2 Lower": {
 			"location": {
 				"map": "bergen-trail.path-3-2",
 				"mapId": 399
@@ -1650,7 +1668,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Off Road 2 - Chest 3": {
+		"Bergen Trail - Off Road 2 Upper": {
 			"location": {
 				"map": "bergen-trail.path-3-2",
 				"mapId": 451
@@ -1668,7 +1686,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Off Road 3 - Chest 1": {
+		"Bergen Trail - Off Road 3 Upper": {
 			"location": {
 				"map": "bergen-trail.path-3-3",
 				"mapId": 32
@@ -1686,7 +1704,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Off Road 3 - Chest 2": {
+		"Bergen Trail - Off Road 3 Lower": {
 			"location": {
 				"map": "bergen-trail.path-3-3",
 				"mapId": 126
@@ -1704,7 +1722,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Old Plateau - Gold Chest": {
+		"Bergen Trail - Old Plateau (Gold)": {
 			"location": {
 				"map": "bergen-trail.path-4-1-1",
 				"mapId": 1015
@@ -1722,7 +1740,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Rising Path 2 - Chest": {
+		"Bergen Trail - Rising Path 2": {
 			"location": {
 				"map": "bergen-trail.path-4-1",
 				"mapId": 288
@@ -1740,7 +1758,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Rising Path 3 - Chest 1": {
+		"Bergen Trail - Rising Path 3 Left": {
 			"location": {
 				"map": "bergen-trail.path-4-2",
 				"mapId": 269
@@ -1758,7 +1776,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Rising Path 3 - Chest 2": {
+		"Bergen Trail - Rising Path 3 Right": {
 			"location": {
 				"map": "bergen-trail.path-4-2",
 				"mapId": 643
@@ -1776,7 +1794,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Spike Heights - Chest": {
+		"Bergen Trail - Spike Heights Upper": {
 			"location": {
 				"map": "bergen-trail.path-5",
 				"mapId": 572
@@ -1794,7 +1812,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Spike Heights - Bronze Chest": {
+		"Bergen Trail - Spike Heights Lower (Bronze)": {
 			"location": {
 				"map": "bergen-trail.path-5",
 				"mapId": 1337
@@ -1819,7 +1837,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Icy Cauldron - Silver Chest": {
+		"Bergen Trail - Icy Cauldron (Silver)": {
 			"location": {
 				"map": "bergen-trail.path-6-1",
 				"mapId": 26
@@ -1844,7 +1862,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Bergen Waterfalls - Chest": {
+		"Bergen Trail - Bergen Waterfalls": {
 			"location": {
 				"map": "bergen-trail.path-6",
 				"mapId": 493
@@ -1862,7 +1880,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Rising Path 4 - Chest 1": {
+		"Bergen Trail - Rising Path 4 Upper": {
 			"location": {
 				"map": "bergen-trail.path-7-1",
 				"mapId": 994
@@ -1880,7 +1898,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Rising Path 4 - Chest 2": {
+		"Bergen Trail - Rising Path 4 Lower": {
 			"location": {
 				"map": "bergen-trail.path-7-1",
 				"mapId": 995
@@ -1898,7 +1916,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Lofty Heights - Bronze Chest": {
+		"Bergen Trail - Lofty Heights (Bronze)": {
 			"location": {
 				"map": "bergen-trail.path-7-2-1",
 				"mapId": 28
@@ -1923,7 +1941,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Windy Climb - Chest": {
+		"Bergen Trail - Windy Climb": {
 			"location": {
 				"map": "bergen-trail.path-7-2",
 				"mapId": 1027
@@ -1941,7 +1959,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Rising Path 5 - Chest": {
+		"Bergen Trail - Rising Path 5": {
 			"location": {
 				"map": "bergen-trail.path-8",
 				"mapId": 36
@@ -1959,7 +1977,7 @@
 				]
 			]
 		},
-		"Temple Mine - Elevator U1 - Chest": {
+		"Temple Mine U1 - Elevator": {
 			"location": {
 				"map": "cold-dng.b1.center",
 				"mapId": 223
@@ -1977,7 +1995,7 @@
 				]
 			]
 		},
-		"Temple Mine - Crossing Funnel - Chest": {
+		"Temple Mine U1 - Crossing Funnel": {
 			"location": {
 				"map": "cold-dng.b1.room1",
 				"mapId": 48
@@ -2002,7 +2020,7 @@
 				]
 			]
 		},
-		"Temple Mine - Old Shaft 1 - Chest": {
+		"Temple Mine U1 - Old Shaft 1": {
 			"location": {
 				"map": "cold-dng.b1.room2",
 				"mapId": 29
@@ -2027,7 +2045,7 @@
 				]
 			]
 		},
-		"Temple Mine - Old Shaft 2 - Chest": {
+		"Temple Mine U1 - Old Shaft 2": {
 			"location": {
 				"map": "cold-dng.b1.room3",
 				"mapId": 26
@@ -2045,7 +2063,7 @@
 				]
 			]
 		},
-		"Temple Mine - Testing Chamber - Chest": {
+		"Temple Mine U1 - Testing Chamber": {
 			"location": {
 				"map": "cold-dng.b1.room4",
 				"mapId": 3
@@ -2063,7 +2081,7 @@
 				]
 			]
 		},
-		"Temple Mine - Old Chamber - Chest": {
+		"Temple Mine U1 - Old Chamber": {
 			"location": {
 				"map": "cold-dng.b1.room6",
 				"mapId": 3
@@ -2081,7 +2099,7 @@
 				]
 			]
 		},
-		"Temple Mine - Storage Room 1 - Bronze Chest": {
+		"Temple Mine U2 - Storage Room 1 (Bronze)": {
 			"location": {
 				"map": "cold-dng.b2.room1",
 				"mapId": 32
@@ -2099,7 +2117,7 @@
 				]
 			]
 		},
-		"Temple Mine - Frozen Chamber 1 - Chest": {
+		"Temple Mine U2 - Frozen Chamber 1": {
 			"location": {
 				"map": "cold-dng.b2.room2",
 				"mapId": 40
@@ -2117,7 +2135,7 @@
 				]
 			]
 		},
-		"Temple Mine - Frozen Chamber 2 - Bronze Chest 1": {
+		"Temple Mine U2 - Frozen Chamber 2 Left": {
 			"location": {
 				"map": "cold-dng.b2.room5",
 				"mapId": 21
@@ -2135,7 +2153,7 @@
 				]
 			]
 		},
-		"Temple Mine - Frozen Chamber 2 - Bronze Chest 2": {
+		"Temple Mine U2 - Frozen Chamber 2 Right (Bronze)": {
 			"location": {
 				"map": "cold-dng.b2.room5",
 				"mapId": 66
@@ -2153,7 +2171,7 @@
 				]
 			]
 		},
-		"Temple Mine - Frozen Shaft 1 - Chest": {
+		"Temple Mine U3 - Frozen Shaft 1": {
 			"location": {
 				"map": "cold-dng.b3.room1",
 				"mapId": 30
@@ -2171,7 +2189,7 @@
 				]
 			]
 		},
-		"Temple Mine - Frozen Shaft 2 - Chest": {
+		"Temple Mine U3 - Frozen Shaft 2": {
 			"location": {
 				"map": "cold-dng.b3.room2",
 				"mapId": 55
@@ -2189,7 +2207,7 @@
 				]
 			]
 		},
-		"Temple Mine - Frozen Shaft 3 - Chest": {
+		"Temple Mine U3 - Frozen Shaft 3 Right": {
 			"location": {
 				"map": "cold-dng.b3.room3",
 				"mapId": 11
@@ -2207,7 +2225,7 @@
 				]
 			]
 		},
-		"Temple Mine - Frozen Shaft 3 - Bronze Chest": {
+		"Temple Mine U3 - Frozen Shaft 3 Left (Bronze)": {
 			"location": {
 				"map": "cold-dng.b3.room3",
 				"mapId": 22
@@ -2225,7 +2243,7 @@
 				]
 			]
 		},
-		"Temple Mine - Overrun Chamber - Chest 1": {
+		"Temple Mine U3 - Overrun Chamber Upper": {
 			"location": {
 				"map": "cold-dng.b3.room6",
 				"mapId": 36
@@ -2243,7 +2261,7 @@
 				]
 			]
 		},
-		"Temple Mine - Overrun Chamber - Chest 2": {
+		"Temple Mine U3 - Overrun Chamber Lower": {
 			"location": {
 				"map": "cold-dng.b3.room6",
 				"mapId": 68
@@ -2261,7 +2279,7 @@
 				]
 			]
 		},
-		"Temple Mine - Elevator U4 - Chest": {
+		"Temple Mine U4 - Elevator": {
 			"location": {
 				"map": "cold-dng.b4.center",
 				"mapId": 298
@@ -2286,7 +2304,7 @@
 				]
 			]
 		},
-		"Temple Mine - Infested Chamber - Chest": {
+		"Temple Mine U4 - Infested Chamber": {
 			"location": {
 				"map": "cold-dng.b4.room10",
 				"mapId": 94
@@ -2311,7 +2329,7 @@
 				]
 			]
 		},
-		"Temple Mine - Forgotten Shaft 1 - Chest": {
+		"Temple Mine U4 - Forgotten Shaft 1": {
 			"location": {
 				"map": "cold-dng.b4.room4",
 				"mapId": 25
@@ -2336,7 +2354,7 @@
 				]
 			]
 		},
-		"Temple Mine - Forgotten Shaft 2 - Bronze Chest": {
+		"Temple Mine U4 - Forgotten Shaft 2 (Bronze)": {
 			"location": {
 				"map": "cold-dng.b4.room5",
 				"mapId": 18
@@ -2361,7 +2379,7 @@
 				]
 			]
 		},
-		"Temple Mine - Forgotten Shaft 3 - Chest": {
+		"Temple Mine U4 - Forgotten Shaft 3": {
 			"location": {
 				"map": "cold-dng.b4.room6",
 				"mapId": 16
@@ -2386,7 +2404,7 @@
 				]
 			]
 		},
-		"Temple Mine - Forgotten Shaft 4 - Chest": {
+		"Temple Mine U4 - Forgotten Shaft 4": {
 			"location": {
 				"map": "cold-dng.b4.room7",
 				"mapId": 44
@@ -2411,7 +2429,7 @@
 				]
 			]
 		},
-		"Temple Mine - Forgotten Shaft 5 - Chest": {
+		"Temple Mine U4 - Forgotten Shaft 5": {
 			"location": {
 				"map": "cold-dng.b4.room8",
 				"mapId": 16
@@ -2436,7 +2454,7 @@
 				]
 			]
 		},
-		"Temple Mine - Elevator GF - Bronze Chest": {
+		"Temple Mine GF - Elevator (Bronze)": {
 			"location": {
 				"map": "cold-dng.g.center",
 				"mapId": 249
@@ -2461,7 +2479,7 @@
 				]
 			]
 		},
-		"Temple Mine - Temple Chamber 2 - Chest": {
+		"Temple Mine GF - Temple Chamber 2": {
 			"location": {
 				"map": "cold-dng.g.room2",
 				"mapId": 3
@@ -2479,7 +2497,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - The Barracks - Bronze Chest": {
+		"Sapphire Ridge - The Barracks (Bronze)": {
 			"location": {
 				"map": "forest.caves.cave-013-pandza-01",
 				"mapId": 385
@@ -2504,7 +2522,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - The Bellow - Gold Chest": {
+		"Sapphire Ridge - The Bellow (Gold)": {
 			"location": {
 				"map": "forest.caves.cave-013-pandza-02",
 				"mapId": 133
@@ -2534,7 +2552,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Sapphire Tunnel - Gold Chest": {
+		"Sapphire Ridge - Sapphire Tunnel (Gold)": {
 			"location": {
 				"map": "forest.caves.path-01-entrance",
 				"mapId": 23
@@ -2552,7 +2570,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Eroded Passage - Silver Chest": {
+		"Sapphire Ridge - Eroded Passage Lower (Silver)": {
 			"location": {
 				"map": "forest.caves.path-02-to-08",
 				"mapId": 1
@@ -2570,7 +2588,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Eroded Passage - Chest": {
+		"Sapphire Ridge - Eroded Passage Upper": {
 			"location": {
 				"map": "forest.caves.path-02-to-08",
 				"mapId": 30
@@ -2588,7 +2606,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Spider Chasm - Bronze Chest": {
+		"Sapphire Ridge - Spider Chasm Lower (Bronze)": {
 			"location": {
 				"map": "forest.caves.path-06-chasm",
 				"mapId": 40
@@ -2606,7 +2624,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Spider Chasm - Gold Chest": {
+		"Sapphire Ridge - Spider Chasm Upper (Gold)": {
 			"location": {
 				"map": "forest.caves.path-06-chasm",
 				"mapId": 63
@@ -2624,7 +2642,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Narrow Passage - Silver Chest": {
+		"Sapphire Ridge - Narrow Passage Left (Silver)": {
 			"location": {
 				"map": "forest.caves.path-07-to-08",
 				"mapId": 5
@@ -2642,7 +2660,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Narrow Passage - Bronze Chest": {
+		"Sapphire Ridge - Narrow Passage Right (Bronze)": {
 			"location": {
 				"map": "forest.caves.path-07-to-08",
 				"mapId": 13
@@ -2660,7 +2678,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Wheel Passage - Gold Chest": {
+		"Sapphire Ridge - Wheel Passage Lower (Gold)": {
 			"location": {
 				"map": "forest.caves.path-08-to-10",
 				"mapId": 29
@@ -2678,7 +2696,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Wheel Passage - Bronze Chest": {
+		"Sapphire Ridge - Wheel Passage Upper (Bronze)": {
 			"location": {
 				"map": "forest.caves.path-08-to-10",
 				"mapId": 32
@@ -2696,7 +2714,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Cave Inn 1F - Chest": {
+		"Sapphire Ridge - Cave Inn Interior 1F": {
 			"location": {
 				"map": "forest.interior.inn-og-01",
 				"mapId": 128
@@ -2714,7 +2732,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Cave Inn Storage - Gold Chest": {
+		"Sapphire Ridge - Cave Inn Interior Storage (Gold)": {
 			"location": {
 				"map": "forest.interior.inn-storage",
 				"mapId": 87
@@ -2732,7 +2750,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Western Exit - Chest": {
+		"Sapphire Ridge - Western Exit Upper": {
 			"location": {
 				"map": "forest.path-01-entrance",
 				"mapId": 72
@@ -2750,7 +2768,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Western Exit - Bronze Chest": {
+		"Sapphire Ridge - Western Exit Lower (Bronze)": {
 			"location": {
 				"map": "forest.path-01-entrance",
 				"mapId": 109
@@ -2768,7 +2786,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - North West Path - Silver Chest": {
+		"Sapphire Ridge - North West Path Lower (Silver)": {
 			"location": {
 				"map": "forest.path-02",
 				"mapId": 157
@@ -2786,7 +2804,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - North West Path - Bronze Chest": {
+		"Sapphire Ridge - North West Path Upper (Bronze)": {
 			"location": {
 				"map": "forest.path-02",
 				"mapId": 160
@@ -2804,7 +2822,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - River Road - Bronze Chest 1": {
+		"Sapphire Ridge - River Road Upper (Bronze)": {
 			"location": {
 				"map": "forest.path-03",
 				"mapId": 11
@@ -2822,7 +2840,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - River Road - Gold Chest": {
+		"Sapphire Ridge - River Road Center (Gold)": {
 			"location": {
 				"map": "forest.path-03",
 				"mapId": 53
@@ -2840,7 +2858,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - River Road - Bronze Chest 2": {
+		"Sapphire Ridge - River Road Lower (Bronze)": {
 			"location": {
 				"map": "forest.path-03",
 				"mapId": 145
@@ -2858,7 +2876,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - The Cave Inn - Bronze Chest": {
+		"Sapphire Ridge - Cave Inn Exterior Upper (Bronze)": {
 			"location": {
 				"map": "forest.path-04-hostel",
 				"mapId": 52
@@ -2876,7 +2894,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - The Cave Inn - Gold Chest": {
+		"Sapphire Ridge - Cave Inn Exterior Lower (Gold)": {
 			"location": {
 				"map": "forest.path-04-hostel",
 				"mapId": 184
@@ -2894,7 +2912,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Tranquil Bamboo - Bronze Chest": {
+		"Sapphire Ridge - Tranquil Bamboo Lower (Bronze)": {
 			"location": {
 				"map": "forest.path-04-vaga",
 				"mapId": 5
@@ -2912,7 +2930,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Tranquil Bamboo - Chest": {
+		"Sapphire Ridge - Tranquil Bamboo Upper": {
 			"location": {
 				"map": "forest.path-04-vaga",
 				"mapId": 6
@@ -2930,7 +2948,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Bamboo Thicket - Silver Chest": {
+		"Sapphire Ridge - Bamboo Thicket Upper (Silver)": {
 			"location": {
 				"map": "forest.path-05",
 				"mapId": 4
@@ -2948,7 +2966,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Bamboo Thicket - Gold Chest": {
+		"Sapphire Ridge - Bamboo Thicket Center (Gold)": {
 			"location": {
 				"map": "forest.path-05",
 				"mapId": 9
@@ -2966,7 +2984,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - North East Path - Silver Chest": {
+		"Sapphire Ridge - North East Path Upper (Silver)": {
 			"location": {
 				"map": "forest.path-06",
 				"mapId": 33
@@ -2984,7 +3002,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - North East Path - Gold Chest": {
+		"Sapphire Ridge - North East Path Lower (Gold)": {
 			"location": {
 				"map": "forest.path-06",
 				"mapId": 53
@@ -3002,7 +3020,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Flower Lake - Gold Chest 1": {
+		"Sapphire Ridge - Flower Lake Left (Gold)": {
 			"location": {
 				"map": "forest.path-07",
 				"mapId": 6
@@ -3020,7 +3038,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Flower Lake - Gold Chest 2": {
+		"Sapphire Ridge - Flower Lake Right (Gold)": {
 			"location": {
 				"map": "forest.path-07",
 				"mapId": 44
@@ -3038,7 +3056,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Carved Pathway - Gold Chest": {
+		"Sapphire Ridge - Carved Pathway Center (Gold)": {
 			"location": {
 				"map": "forest.path-08",
 				"mapId": 68
@@ -3056,7 +3074,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Carved Pathway - Silver Chest": {
+		"Sapphire Ridge - Carved Pathway Lower (Silver)": {
 			"location": {
 				"map": "forest.path-08",
 				"mapId": 82
@@ -3081,7 +3099,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Carved Pathway - Bronze Chest": {
+		"Sapphire Ridge - Carved Pathway Upper (Bronze)": {
 			"location": {
 				"map": "forest.path-08",
 				"mapId": 90
@@ -3106,7 +3124,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - High Ground - Gold Chest": {
+		"Sapphire Ridge - High Ground Lower (Gold)": {
 			"location": {
 				"map": "forest.path-09",
 				"mapId": 24
@@ -3131,7 +3149,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - High Ground - Silver Chest": {
+		"Sapphire Ridge - High Ground Upper (Silver)": {
 			"location": {
 				"map": "forest.path-09",
 				"mapId": 100
@@ -3156,7 +3174,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Old Dojo - Silver Chest": {
+		"Sapphire Ridge - Old Dojo Lower (Silver)": {
 			"location": {
 				"map": "forest.path-10",
 				"mapId": 78
@@ -3174,7 +3192,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Old Dojo - Gold Chest 1": {
+		"Sapphire Ridge - Old Dojo Left (Gold)": {
 			"location": {
 				"map": "forest.path-10",
 				"mapId": 167
@@ -3192,7 +3210,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Old Dojo - Gold Chest 2": {
+		"Sapphire Ridge - Old Dojo Upper (Gold)": {
 			"location": {
 				"map": "forest.path-10",
 				"mapId": 904
@@ -3210,7 +3228,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Dream Pond - Gold Chest": {
+		"Sapphire Ridge - Dream Pond (Gold)": {
 			"location": {
 				"map": "forest.path-11-behind-maze",
 				"mapId": 59
@@ -3228,7 +3246,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Ascension Temple - Gold Chest": {
+		"Sapphire Ridge - Ascension Temple Upper Left (Gold)": {
 			"location": {
 				"map": "forest.path-12",
 				"mapId": 298
@@ -3253,7 +3271,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Ascension Temple - Silver Chest 1": {
+		"Sapphire Ridge - Ascension Temple Upper Right (Silver)": {
 			"location": {
 				"map": "forest.path-12",
 				"mapId": 301
@@ -3278,7 +3296,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Ascension Temple - Silver Chest 2": {
+		"Sapphire Ridge - Ascension Temple Lower (Silver)": {
 			"location": {
 				"map": "forest.path-12",
 				"mapId": 302
@@ -3303,7 +3321,7 @@
 				]
 			]
 		},
-		"Sapphire Ridge - Baton Pond - Bronze Chest": {
+		"Sapphire Ridge - Baton Pond (Bronze)": {
 			"location": {
 				"map": "forest.path-13",
 				"mapId": 814
@@ -3321,7 +3339,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Mystery Cave - Gold Chest": {
+		"Maroon Valley - Mystery Cave Lower (Gold)": {
 			"location": {
 				"map": "heat.caves.cliff-cave-01",
 				"mapId": 42
@@ -3339,7 +3357,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Mystery Cave - Silver Chest": {
+		"Maroon Valley - Mystery Cave Upper (Silver)": {
 			"location": {
 				"map": "heat.caves.cliff-cave-01",
 				"mapId": 43
@@ -3357,7 +3375,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Cursed Temple - Silver Chest 1": {
+		"Maroon Valley - Cursed Temple Upper (Silver)": {
 			"location": {
 				"map": "heat.caves.cliffs-temple-02",
 				"mapId": 48
@@ -3392,7 +3410,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Cursed Temple - Silver Chest 2": {
+		"Maroon Valley - Cursed Temple Lower (Silver)": {
 			"location": {
 				"map": "heat.caves.cliffs-temple-02",
 				"mapId": 86
@@ -3427,9 +3445,9 @@
 				]
 			]
 		},
-		"Maroon Valley - Cursed Temple Treasure Room - Bronze Chest": {
+		"Maroon Valley - Cursed Temple Treasure Room (Bronze)": {
 			"location": {
-				"map": "heat.caves.cliff-temple-03",
+				"map": "heat.caves.cliffs-temple-03",
 				"mapId": 107
 			},
 			"clearance": "Bronze",
@@ -3462,7 +3480,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Maroon Cave 1 - Chest": {
+		"Maroon Valley - Maroon Cave 1": {
 			"location": {
 				"map": "heat.caves.maroon-cave-01",
 				"mapId": 404
@@ -3487,7 +3505,7 @@
 				]
 			]
 		},
-		"Maroon Valley - River Cliff - Chest 1": {
+		"Maroon Valley - River Cliff Right": {
 			"location": {
 				"map": "heat.cliffs.cliffs-path-01",
 				"mapId": 105
@@ -3505,7 +3523,7 @@
 				]
 			]
 		},
-		"Maroon Valley - River Cliff - Chest 2": {
+		"Maroon Valley - River Cliff Left": {
 			"location": {
 				"map": "heat.cliffs.cliffs-path-01",
 				"mapId": 197
@@ -3523,7 +3541,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Endless Pit - Chest 1": {
+		"Maroon Valley - Endless Pit Center": {
 			"location": {
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 29
@@ -3541,7 +3559,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Endless Pit - Chest 2": {
+		"Maroon Valley - Endless Pit Right": {
 			"location": {
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 30
@@ -3559,7 +3577,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Endless Pit - Chest 3": {
+		"Maroon Valley - Endless Pit Left": {
 			"location": {
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 32
@@ -3577,7 +3595,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Vivid Path - Chest 1": {
+		"Maroon Valley - Vivid Path Lower": {
 			"location": {
 				"map": "heat.oasis.oasis-path-01",
 				"mapId": 8
@@ -3595,7 +3613,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Vivid Path - Chest 2": {
+		"Maroon Valley - Vivid Path Upper": {
 			"location": {
 				"map": "heat.oasis.oasis-path-01",
 				"mapId": 9
@@ -3613,7 +3631,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Maroon Oasis - Chest 1": {
+		"Maroon Valley - Maroon Oasis Center": {
 			"location": {
 				"map": "heat.oasis.oasis-path-02",
 				"mapId": 80
@@ -3631,7 +3649,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Maroon Oasis - Chest 2": {
+		"Maroon Valley - Maroon Oasis Upper": {
 			"location": {
 				"map": "heat.oasis.oasis-path-02",
 				"mapId": 97
@@ -3649,7 +3667,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Bright Path - Bronze Chest": {
+		"Maroon Valley - Bright Path (Bronze)": {
 			"location": {
 				"map": "heat.oasis.oasis-path-03",
 				"mapId": 34
@@ -3667,7 +3685,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Rising Railway - Chest": {
+		"Maroon Valley - Rising Railway": {
 			"location": {
 				"map": "heat.path-00",
 				"mapId": 6
@@ -3685,7 +3703,7 @@
 				]
 			]
 		},
-		"Maroon Valley - East Entrance - Chest": {
+		"Maroon Valley - East Entrance": {
 			"location": {
 				"map": "heat.path-01-entrance",
 				"mapId": 55
@@ -3703,7 +3721,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Dusty Path - Bronze Chest": {
+		"Maroon Valley - Dusty Path Center (Bronze)": {
 			"location": {
 				"map": "heat.path-02",
 				"mapId": 7
@@ -3721,7 +3739,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Dusty Path - Chest": {
+		"Maroon Valley - Dusty Path Upper": {
 			"location": {
 				"map": "heat.path-02",
 				"mapId": 14
@@ -3739,7 +3757,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Crossroad - Chest 1": {
+		"Maroon Valley - Crossroad Center": {
 			"location": {
 				"map": "heat.path-03",
 				"mapId": 23
@@ -3757,7 +3775,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Crossroad - Chest 2": {
+		"Maroon Valley - Crossroad Left": {
 			"location": {
 				"map": "heat.path-03",
 				"mapId": 25
@@ -3775,7 +3793,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Long Piece - Chest": {
+		"Maroon Valley - Long Piece": {
 			"location": {
 				"map": "heat.path-04",
 				"mapId": 34
@@ -3793,7 +3811,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Barren Arcs - Chest": {
+		"Maroon Valley - Barren Arcs Center": {
 			"location": {
 				"map": "heat.path-05",
 				"mapId": 2
@@ -3811,7 +3829,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Barren Arcs - Bronze Chest": {
+		"Maroon Valley - Barren Arcs Left (Bronze)": {
 			"location": {
 				"map": "heat.path-05",
 				"mapId": 14
@@ -3829,7 +3847,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Barren Land - Chest": {
+		"Maroon Valley - Barren Land": {
 			"location": {
 				"map": "heat.path-06",
 				"mapId": 16
@@ -3847,7 +3865,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Overpass - Chest 1": {
+		"Maroon Valley - Overpass Upper": {
 			"location": {
 				"map": "heat.path-07",
 				"mapId": 7
@@ -3865,7 +3883,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Overpass - Chest 2": {
+		"Maroon Valley - Overpass Left": {
 			"location": {
 				"map": "heat.path-07",
 				"mapId": 78
@@ -3883,7 +3901,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Paw Cliffs - Chest": {
+		"Maroon Valley - Paw Cliffs Lower": {
 			"location": {
 				"map": "heat.path-08",
 				"mapId": 1
@@ -3901,7 +3919,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Paw Cliffs - Silver Chest": {
+		"Maroon Valley - Paw Cliffs Upper (Silver)": {
 			"location": {
 				"map": "heat.path-08",
 				"mapId": 4
@@ -3919,7 +3937,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Torn Road - Chest 1": {
+		"Maroon Valley - Torn Road Center": {
 			"location": {
 				"map": "heat.path-09",
 				"mapId": 8
@@ -3937,7 +3955,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Torn Road - Chest 2": {
+		"Maroon Valley - Torn Road Right": {
 			"location": {
 				"map": "heat.path-09",
 				"mapId": 41
@@ -3955,7 +3973,7 @@
 				]
 			]
 		},
-		"Maroon Valley - West Entrance - Chest": {
+		"Maroon Valley - West Entrance": {
 			"location": {
 				"map": "heat.path-11",
 				"mapId": 19
@@ -3973,7 +3991,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Fractured Path - Silver Chest": {
+		"Maroon Valley - Fractured Path Upper (Silver)": {
 			"location": {
 				"map": "heat.shortcut-02-09",
 				"mapId": 17
@@ -3991,7 +4009,7 @@
 				]
 			]
 		},
-		"Maroon Valley - Fractured Path - Chest": {
+		"Maroon Valley - Fractured Path Right": {
 			"location": {
 				"map": "heat.shortcut-02-09",
 				"mapId": 19
@@ -4009,7 +4027,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Right Chamber 1 (1F) - Chest": {
+		"Faj'ro Temple 1F - Right Chamber 1": {
 			"location": {
 				"map": "heat-dng.f1.room-03",
 				"mapId": 33
@@ -4027,7 +4045,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Bottom Chamber - Chest": {
+		"Faj'ro Temple 3F - Bottom Chamber": {
 			"location": {
 				"map": "heat-dng.f3.room-02",
 				"mapId": 31
@@ -4045,7 +4063,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Large Fire Chamber - Bronze Chest": {
+		"Faj'ro Temple 3F - Large Fire Chamber Left (Bronze)": {
 			"location": {
 				"map": "heat-dng.f3.room-05",
 				"mapId": 69
@@ -4063,7 +4081,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Large Fire Chamber - Silver Chest": {
+		"Faj'ro Temple 3F - Large Fire Chamber Right (Silver)": {
 			"location": {
 				"map": "heat-dng.f3.room-05",
 				"mapId": 79
@@ -4081,7 +4099,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Test of Wisdom - Chest": {
+		"Faj'ro Temple 3F - Test of Wisdom": {
 			"location": {
 				"map": "heat-dng.f3.room-07",
 				"mapId": 19
@@ -4099,7 +4117,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - West Pathway - Chest": {
+		"Faj'ro Temple 4F - West Pathway": {
 			"location": {
 				"map": "heat-dng.f4.room-02",
 				"mapId": 38
@@ -4117,7 +4135,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Test of Surprise - Chest": {
+		"Faj'ro Temple 4F - Test of Surprise": {
 			"location": {
 				"map": "heat-dng.f4.room-03",
 				"mapId": 21
@@ -4135,7 +4153,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - West Chamber 1 - Chest": {
+		"Faj'ro Temple 4F - West Chamber 1": {
 			"location": {
 				"map": "heat-dng.f4.room-05",
 				"mapId": 56
@@ -4153,7 +4171,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - East Chamber 1 - Chest": {
+		"Faj'ro Temple 4F - East Chamber 1": {
 			"location": {
 				"map": "heat-dng.f4.room-09",
 				"mapId": 92
@@ -4171,7 +4189,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - East Pathway - Silver Chest": {
+		"Faj'ro Temple 4F - East Pathway (Silver)": {
 			"location": {
 				"map": "heat-dng.f4.room-10",
 				"mapId": 78
@@ -4189,7 +4207,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Test of Memory - Chest": {
+		"Faj'ro Temple 4F - Test of Memory": {
 			"location": {
 				"map": "heat-dng.f4.room-11",
 				"mapId": 27
@@ -4207,7 +4225,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Chamber of Prosperity - Chest": {
+		"Faj'ro Temple 4F - Chamber of Prosperity": {
 			"location": {
 				"map": "heat-dng.f4.room-12",
 				"mapId": 85
@@ -4225,7 +4243,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Left Chamber 1 - Chest": {
+		"Faj'ro Temple GF - Left Chamber 1": {
 			"location": {
 				"map": "heat-dng.g.room-03",
 				"mapId": 71
@@ -4243,7 +4261,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Fire and Sand 2 - Chest": {
+		"Faj'ro Temple GF - Fire and Sand 2": {
 			"location": {
 				"map": "heat-dng.g.room-07",
 				"mapId": 28
@@ -4261,7 +4279,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Balance Room 2 - Chest 1": {
+		"Faj'ro Temple GF - Balance Room 2 Right": {
 			"location": {
 				"map": "heat-dng.g.room-09",
 				"mapId": 85
@@ -4279,7 +4297,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Balance Room 2 - Chest 2": {
+		"Faj'ro Temple GF - Balance Room 2 Left": {
 			"location": {
 				"map": "heat-dng.g.room-09",
 				"mapId": 86
@@ -4297,7 +4315,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Right Chamber 1 (GF) - Chest": {
+		"Faj'ro Temple GF - Right Chamber 1": {
 			"location": {
 				"map": "heat-dng.g.room-10",
 				"mapId": 16
@@ -4315,7 +4333,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Right Chamber 2 - Chest": {
+		"Faj'ro Temple GF - Right Chamber 2": {
 			"location": {
 				"map": "heat-dng.g.room-12",
 				"mapId": 110
@@ -4333,7 +4351,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Test of Memory 1 - Chest": {
+		"Faj'ro Temple GF - Test of Memory 2": {
 			"location": {
 				"map": "heat-dng.g.room-13",
 				"mapId": 2
@@ -4351,7 +4369,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple - Test of Memory 2 - Chest": {
+		"Faj'ro Temple GF - Test of Memory 1": {
 			"location": {
 				"map": "heat-dng.g.room-14",
 				"mapId": 2
@@ -4369,7 +4387,7 @@
 				]
 			]
 		},
-		"Ba'kii Kum - Solar Farm - Chest 1": {
+		"Ba'kii Kum - Solar Farm Upper": {
 			"location": {
 				"map": "heat-village.baki-1",
 				"mapId": 99
@@ -4387,7 +4405,7 @@
 				]
 			]
 		},
-		"Ba'kii Kum - Solar Farm - Chest 2": {
+		"Ba'kii Kum - Solar Farm Lower": {
 			"location": {
 				"map": "heat-village.baki-1",
 				"mapId": 737
@@ -4405,7 +4423,7 @@
 				]
 			]
 		},
-		"Ba'kii Kum - Market - Chest": {
+		"Ba'kii Kum - Market East": {
 			"location": {
 				"map": "heat-village.baki-2",
 				"mapId": 259
@@ -4423,7 +4441,7 @@
 				]
 			]
 		},
-		"Ba'kii Kum - Market - Bronze Chest": {
+		"Ba'kii Kum - Market West (Bronze)": {
 			"location": {
 				"map": "heat-village.baki-2",
 				"mapId": 1227
@@ -4441,7 +4459,7 @@
 				]
 			]
 		},
-		"Ba'kii Kum - Bazaar House - Silver Chest": {
+		"Ba'kii Kum - Bazaar House (Silver)": {
 			"location": {
 				"map": "heat-village.interior.tradebuilding-eg",
 				"mapId": 131
@@ -4459,7 +4477,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Dripping Cave - Silver Chest": {
+		"Gaia's Garden - Dripping Cave (Silver)": {
 			"location": {
 				"map": "jungle.caves.grove-cave-01",
 				"mapId": 3
@@ -4484,7 +4502,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Tranquility Pond - Gold Chest": {
+		"Gaia's Garden - Tranquility Pond (Gold)": {
 			"location": {
 				"map": "jungle.caves.grove-cave-02",
 				"mapId": 1
@@ -4509,7 +4527,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Infested Cavern - Bronze Chest": {
+		"Gaia's Garden - Infested Cavern Left (Bronze)": {
 			"location": {
 				"map": "jungle.caves.smuggle-route-2",
 				"mapId": 55
@@ -4534,7 +4552,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Infested Cavern - Silver Chest": {
+		"Gaia's Garden - Infested Cavern Right (Silver)": {
 			"location": {
 				"map": "jungle.caves.smuggle-route-2",
 				"mapId": 60
@@ -4559,7 +4577,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - V'rda Vil West - Gold Chest": {
+		"Gaia's Garden - V'rda Vil West Lower Left (Gold)": {
 			"location": {
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 5
@@ -4577,7 +4595,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - V'rda Vil West - Silver Chest": {
+		"Gaia's Garden - V'rda Vil West Upper (Silver)": {
 			"location": {
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 6
@@ -4595,7 +4613,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - V'rda Vil West - Bronze Chest": {
+		"Gaia's Garden - V'rda Vil West Lower Right (Bronze)": {
 			"location": {
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 125
@@ -4613,7 +4631,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - V'rda Vil East - Bronze Chest": {
+		"Gaia's Garden - V'rda Vil East Right (Bronze)": {
 			"location": {
 				"map": "jungle.clearing.clear-path-02",
 				"mapId": 311
@@ -4631,7 +4649,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - V'rda Vil East - Silver Chest": {
+		"Gaia's Garden - V'rda Vil East Lower (Silver)": {
 			"location": {
 				"map": "jungle.clearing.clear-path-02",
 				"mapId": 351
@@ -4656,7 +4674,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - V'rda Vil North - Gold Chest": {
+		"Gaia's Garden - V'rda Vil North Right (Gold)": {
 			"location": {
 				"map": "jungle.clearing.clear-path-03",
 				"mapId": 31
@@ -4681,7 +4699,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - V'rda Vil North - Silver Chest": {
+		"Gaia's Garden - V'rda Vil North Left (Silver)": {
 			"location": {
 				"map": "jungle.clearing.clear-path-03",
 				"mapId": 33
@@ -4699,7 +4717,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Chief's Den - Silver Chest": {
+		"Gaia's Garden - Chief's Den Center (Silver)": {
 			"location": {
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 27
@@ -4717,7 +4735,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Chief's Den - Bronze Chest": {
+		"Gaia's Garden - Chief's Den Upper (Bronze)": {
 			"location": {
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 91
@@ -4735,7 +4753,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Chief's Den - Gold Chest": {
+		"Gaia's Garden - Chief's Den Lower (Gold)": {
 			"location": {
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 135
@@ -4760,7 +4778,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Grand Krys'kajo Entrance - Bronze Chest": {
+		"Gaia's Garden - Grand Krys'kajo Entrance (Bronze)": {
 			"location": {
 				"map": "jungle.dng.tree-exterior",
 				"mapId": 432
@@ -4778,7 +4796,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - So'najiz Temple Entrance - Silver Chest": {
+		"Gaia's Garden - So'najiz Temple Entrance (Silver)": {
 			"location": {
 				"map": "jungle.dng.wave-exterior",
 				"mapId": 521
@@ -4803,7 +4821,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Covert Path - Chest 1": {
+		"Gaia's Garden - Covert Path Lower": {
 			"location": {
 				"map": "jungle.grove.grove-path-01",
 				"mapId": 4
@@ -4821,7 +4839,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Covert Path - Chest 2": {
+		"Gaia's Garden - Covert Path Upper": {
 			"location": {
 				"map": "jungle.grove.grove-path-01",
 				"mapId": 5
@@ -4839,7 +4857,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Royal Grove - Silver Chest": {
+		"Gaia's Garden - Royal Grove Lower Right (Silver)": {
 			"location": {
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 67
@@ -4857,7 +4875,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Royal Grove - Chest 1": {
+		"Gaia's Garden - Royal Grove Lower Left": {
 			"location": {
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 68
@@ -4875,7 +4893,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Royal Grove - Chest 2": {
+		"Gaia's Garden - Royal Grove Upper Right": {
 			"location": {
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 69
@@ -4893,7 +4911,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Royal Grove - Chest 3": {
+		"Gaia's Garden - Royal Grove Upper Left": {
 			"location": {
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 80
@@ -4911,7 +4929,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Calm Backyard - Chest 1": {
+		"Gaia's Garden - Calm Backyard Left": {
 			"location": {
 				"map": "jungle.grove.grove-path-03",
 				"mapId": 41
@@ -4929,7 +4947,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Calm Backyard - Chest 2": {
+		"Gaia's Garden - Calm Backyard Right": {
 			"location": {
 				"map": "jungle.grove.grove-path-03",
 				"mapId": 42
@@ -4947,7 +4965,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Lost Shrine Interior 1F - Chest": {
+		"Gaia's Garden - Lost Shrine GF": {
 			"location": {
 				"map": "jungle.grove.lost-shrine-02",
 				"mapId": 158
@@ -4977,7 +4995,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Lost Shrine Interior B1 - Gold Chest": {
+		"Gaia's Garden - Lost Shrine B1 (Gold)": {
 			"location": {
 				"map": "jungle.grove.lost-shrine-03",
 				"mapId": 289
@@ -5007,7 +5025,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Lost Shrine Interior B2 - Silver Chest": {
+		"Gaia's Garden - Lost Shrine B2 (Silver)": {
 			"location": {
 				"map": "jungle.grove.lost-shrine-04",
 				"mapId": 363
@@ -5037,7 +5055,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Lost Lookout - Chest 1": {
+		"Gaia's Garden - Lost Lookout Center": {
 			"location": {
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 22
@@ -5055,7 +5073,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Lost Lookout - Chest 2": {
+		"Gaia's Garden - Lost Lookout Lower": {
 			"location": {
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 63
@@ -5073,7 +5091,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Lost Lookout - Chest 3": {
+		"Gaia's Garden - Lost Lookout Upper": {
 			"location": {
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 170
@@ -5098,7 +5116,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Seared Lake - Chest 1": {
+		"Gaia's Garden - Seared Lake Right": {
 			"location": {
 				"map": "jungle.infested.infested-path-02",
 				"mapId": 6
@@ -5116,7 +5134,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Seared Lake - Chest 2": {
+		"Gaia's Garden - Seared Lake Left": {
 			"location": {
 				"map": "jungle.infested.infested-path-02",
 				"mapId": 32
@@ -5134,7 +5152,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Infested Marshes South - Chest 1": {
+		"Gaia's Garden - Infested Marshes South Lower Left": {
 			"location": {
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 18
@@ -5152,7 +5170,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Infested Marshes South - Chest 2": {
+		"Gaia's Garden - Infested Marshes South Lower Right": {
 			"location": {
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 70
@@ -5177,7 +5195,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Infested Marshes South - Chest 3": {
+		"Gaia's Garden - Infested Marshes South Upper Left": {
 			"location": {
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 90
@@ -5195,7 +5213,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Infested Marshes South - Chest 4": {
+		"Gaia's Garden - Infested Marshes South Upper Right": {
 			"location": {
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 97
@@ -5213,7 +5231,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Infested Marshes North - Chest 1": {
+		"Gaia's Garden - Infested Marshes North Lower Left": {
 			"location": {
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 24
@@ -5231,7 +5249,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Infested Marshes North - Chest 2": {
+		"Gaia's Garden - Infested Marshes North Upper Center": {
 			"location": {
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 58
@@ -5249,7 +5267,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Infested Marshes North - Silver Chest 1": {
+		"Gaia's Garden - Infested Marshes North Lower Right (Silver)": {
 			"location": {
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 82
@@ -5267,7 +5285,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Infested Marshes North - Silver Chest 2": {
+		"Gaia's Garden - Infested Marshes North Upper Right (Silver)": {
 			"location": {
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 949
@@ -5285,7 +5303,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Overgrown Path - Bronze Chest 1": {
+		"Gaia's Garden - Overgrown Path Left (Bronze)": {
 			"location": {
 				"map": "jungle.left.path-left-01",
 				"mapId": 74
@@ -5310,7 +5328,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Overgrown Path - Bronze Chest 2": {
+		"Gaia's Garden - Overgrown Path Right (Bronze)": {
 			"location": {
 				"map": "jungle.left.path-left-01",
 				"mapId": 75
@@ -5335,7 +5353,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Drizzle Bosk - Gold Chest": {
+		"Gaia's Garden - Drizzle Bosk Right (Gold)": {
 			"location": {
 				"map": "jungle.left.path-left-02",
 				"mapId": 2
@@ -5360,7 +5378,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Drizzle Bosk - Chest 1": {
+		"Gaia's Garden - Drizzle Bosk Lower": {
 			"location": {
 				"map": "jungle.left.path-left-02",
 				"mapId": 8
@@ -5378,7 +5396,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Drizzle Bosk - Chest 2": {
+		"Gaia's Garden - Drizzle Bosk Center": {
 			"location": {
 				"map": "jungle.left.path-left-02",
 				"mapId": 12
@@ -5396,7 +5414,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Wet Passage - Bronze Chest": {
+		"Gaia's Garden - Wet Passage Lower (Bronze)": {
 			"location": {
 				"map": "jungle.left.path-left-03",
 				"mapId": 32
@@ -5421,7 +5439,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Wet Passage - Chest": {
+		"Gaia's Garden - Wet Passage Upper": {
 			"location": {
 				"map": "jungle.left.path-left-03",
 				"mapId": 33
@@ -5439,7 +5457,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - River's Bed - Silver Chest": {
+		"Gaia's Garden - River's Bed Right (Silver)": {
 			"location": {
 				"map": "jungle.left.path-left-04",
 				"mapId": 38
@@ -5464,7 +5482,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - River's Bed - Chest": {
+		"Gaia's Garden - River's Bed Left": {
 			"location": {
 				"map": "jungle.left.path-left-04",
 				"mapId": 39
@@ -5482,7 +5500,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Jungle Entrance - Chest 1": {
+		"Gaia's Garden - Jungle Entrance Left": {
 			"location": {
 				"map": "jungle.path-01-entrance",
 				"mapId": 12
@@ -5500,7 +5518,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Jungle Entrance - Chest 2": {
+		"Gaia's Garden - Jungle Entrance Lower": {
 			"location": {
 				"map": "jungle.path-01-entrance",
 				"mapId": 13
@@ -5518,7 +5536,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Crossroad - Gold Chest": {
+		"Gaia's Garden - Crossroad Left (Gold)": {
 			"location": {
 				"map": "jungle.path-02-crossroads",
 				"mapId": 13
@@ -5536,7 +5554,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Crossroad - Chest": {
+		"Gaia's Garden - Crossroad Right": {
 			"location": {
 				"map": "jungle.path-02-crossroads",
 				"mapId": 14
@@ -5554,7 +5572,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Tying Greens - Chest 1": {
+		"Gaia's Garden - Tying Greens Lower": {
 			"location": {
 				"map": "jungle.path-03-sync",
 				"mapId": 21
@@ -5572,7 +5590,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Tying Greens - Chest 2": {
+		"Gaia's Garden - Tying Greens Upper": {
 			"location": {
 				"map": "jungle.path-03-sync",
 				"mapId": 22
@@ -5590,7 +5608,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Peridot Approach - Silver Chest": {
+		"Gaia's Garden - Peridot Approach Lower (Silver)": {
 			"location": {
 				"map": "jungle.path-04-end",
 				"mapId": 6
@@ -5615,7 +5633,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Peridot Approach - Chest": {
+		"Gaia's Garden - Peridot Approach Upper": {
 			"location": {
 				"map": "jungle.path-04-end",
 				"mapId": 58
@@ -5633,7 +5651,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Splitting Stumps - Chest 1": {
+		"Gaia's Garden - Splitting Stumps Upper": {
 			"location": {
 				"map": "jungle.right.right-path-01",
 				"mapId": 40
@@ -5658,7 +5676,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Splitting Stumps - Chest 2": {
+		"Gaia's Garden - Splitting Stumps Lower": {
 			"location": {
 				"map": "jungle.right.right-path-01",
 				"mapId": 105
@@ -5676,7 +5694,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Clinging River - Silver Chest": {
+		"Gaia's Garden - Clinging River Right (Silver)": {
 			"location": {
 				"map": "jungle.right.right-path-02",
 				"mapId": 12
@@ -5694,7 +5712,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Clinging River - Gold Chest": {
+		"Gaia's Garden - Clinging River Left (Gold)": {
 			"location": {
 				"map": "jungle.right.right-path-02",
 				"mapId": 13
@@ -5712,7 +5730,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Ringing River - Bronze Chest": {
+		"Gaia's Garden - Ringing River Lower (Bronze)": {
 			"location": {
 				"map": "jungle.right.right-path-03",
 				"mapId": 13
@@ -5730,7 +5748,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Ringing River - Chest": {
+		"Gaia's Garden - Ringing River Upper": {
 			"location": {
 				"map": "jungle.right.right-path-03",
 				"mapId": 14
@@ -5748,7 +5766,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Old Timber - Chest": {
+		"Gaia's Garden - Old Timber": {
 			"location": {
 				"map": "jungle.right.right-path-04",
 				"mapId": 30
@@ -5766,7 +5784,7 @@
 				]
 			]
 		},
-		"Basin Keep - Centrum - Gold Chest": {
+		"Basin Keep - Centrum (Gold)": {
 			"location": {
 				"map": "jungle-city.center",
 				"mapId": 774
@@ -5784,7 +5802,7 @@
 				]
 			]
 		},
-		"Basin Keep - Pond Slums - Silver Chest 1": {
+		"Basin Keep - Pond Slums Lower (Silver)": {
 			"location": {
 				"map": "jungle-city.east",
 				"mapId": 158
@@ -5802,7 +5820,7 @@
 				]
 			]
 		},
-		"Basin Keep - Pond Slums - Silver Chest 2": {
+		"Basin Keep - Pond Slums Center (Silver)": {
 			"location": {
 				"map": "jungle-city.east",
 				"mapId": 322
@@ -5820,7 +5838,7 @@
 				]
 			]
 		},
-		"Basin Keep - Pond Slums - Gold Chest": {
+		"Basin Keep - Pond Slums Upper (Gold)": {
 			"location": {
 				"map": "jungle-city.east",
 				"mapId": 537
@@ -5838,7 +5856,7 @@
 				]
 			]
 		},
-		"Gaia's Garden - Basin Keep Entrance - Chest": {
+		"Gaia's Garden - Basin Keep Entrance": {
 			"location": {
 				"map": "jungle-city.entrance",
 				"mapId": 423
@@ -5856,7 +5874,7 @@
 				]
 			]
 		},
-		"Basin Keep - Basin Police Force HQ - Gold Chest": {
+		"Basin Keep - Police HQ (Gold)": {
 			"location": {
 				"map": "jungle-city.interior.faction-guard-1",
 				"mapId": 1128
@@ -5874,7 +5892,7 @@
 				]
 			]
 		},
-		"Basin Keep - Seeker Hub 1st Floor - Silver Chest": {
+		"Basin Keep - Seeker Hub GF (Silver)": {
 			"location": {
 				"map": "jungle-city.interior.questhub-01",
 				"mapId": 533
@@ -5892,43 +5910,7 @@
 				]
 			]
 		},
-		"Rhombus Dungeon - Ability Room 1 - Chest 1": {
-			"location": {
-				"map": "rhombus-dng.room-1-6",
-				"mapId": 183
-			},
-			"clearance": "Default",
-			"region": {
-				"linear": "1",
-				"open": "open1"
-			},
-			"reward": [
-				[
-					"item",
-					"Sandwich",
-					3
-				]
-			]
-		},
-		"Rhombus Dungeon - Ability Room 1 - Chest 2": {
-			"location": {
-				"map": "rhombus-dng.room-1-6",
-				"mapId": 184
-			},
-			"clearance": "Default",
-			"region": {
-				"linear": "1",
-				"open": "open1"
-			},
-			"reward": [
-				[
-					"item",
-					"Green Leaf Tea",
-					2
-				]
-			]
-		},
-		"Rhombus Square - Arena Plaza - Bronze Chest": {
+		"Rhombus Square - Arena Plaza East (Bronze)": {
 			"location": {
 				"map": "rhombus-sqr.arena-1",
 				"mapId": 298
@@ -5946,7 +5928,7 @@
 				]
 			]
 		},
-		"Rhombus Square - Arena Plaza - Silver Chest": {
+		"Rhombus Square - Arena Plaza West (Silver)": {
 			"location": {
 				"map": "rhombus-sqr.arena-1",
 				"mapId": 299
@@ -5971,7 +5953,7 @@
 				]
 			]
 		},
-		"Rhombus Square - Garden Boulevard - Bronze Chest": {
+		"Rhombus Square - Garden Boulevard North (Bronze)": {
 			"location": {
 				"map": "rhombus-sqr.center-e",
 				"mapId": 271
@@ -5989,7 +5971,7 @@
 				]
 			]
 		},
-		"Rhombus Square - Garden Boulevard - Silver Chest": {
+		"Rhombus Square - Garden Boulevard South (Silver)": {
 			"location": {
 				"map": "rhombus-sqr.center-e",
 				"mapId": 272
@@ -6007,7 +5989,7 @@
 				]
 			]
 		},
-		"Rhombus Square - South Arch - Gold Chest": {
+		"Rhombus Square - South Arch (Gold)": {
 			"location": {
 				"map": "rhombus-sqr.center-s",
 				"mapId": 235
@@ -6025,7 +6007,7 @@
 				]
 			]
 		},
-		"Rhombus Square - Lloyd Passage - Silver Chest": {
+		"Rhombus Square - Lloyd Passage (Silver)": {
 			"location": {
 				"map": "rhombus-sqr.center-se",
 				"mapId": 1209
@@ -6043,7 +6025,7 @@
 				]
 			]
 		},
-		"Rhombus Square - Residential District West - Gold Chest": {
+		"Rhombus Square - Residential District North (Gold)": {
 			"location": {
 				"map": "rhombus-sqr.residential-s1",
 				"mapId": 333
@@ -6061,7 +6043,7 @@
 				]
 			]
 		},
-		"Rhombus Square - Residential District West - Chest": {
+		"Rhombus Square - Residential District South": {
 			"location": {
 				"map": "rhombus-sqr.residential-s1",
 				"mapId": 852
@@ -6079,7 +6061,7 @@
 				]
 			]
 		},
-		"Rookie Harbor - Marketplace - Chest": {
+		"Rookie Harbor - Marketplace": {
 			"location": {
 				"map": "rookie-harbor.center",
 				"mapId": 165
@@ -6097,7 +6079,7 @@
 				]
 			]
 		},
-		"Rookie Harbor - Falling Exit - Chest": {
+		"Rookie Harbor - Falling Exit": {
 			"location": {
 				"map": "rookie-harbor.east",
 				"mapId": 157
@@ -6122,7 +6104,7 @@
 				]
 			]
 		},
-		"Rookie Harbor - Weapon & Backer Shop - Silver Chest": {
+		"Rookie Harbor - Weapon & Backer Shop (Silver)": {
 			"location": {
 				"map": "rookie-harbor.inner-equip-north",
 				"mapId": 50
@@ -6140,7 +6122,7 @@
 				]
 			]
 		},
-		"Rookie Harbor - Dusty Storage - Silver Chest": {
+		"Rookie Harbor - Dusty Storage (Silver)": {
 			"location": {
 				"map": "rookie-harbor.inner-old",
 				"mapId": 72
@@ -6158,7 +6140,7 @@
 				]
 			]
 		},
-		"Rookie Harbor - South Harbor - Gold Chest": {
+		"Rookie Harbor - South Harbor (Gold)": {
 			"location": {
 				"map": "rookie-harbor.south",
 				"mapId": 216
@@ -6176,7 +6158,7 @@
 				]
 			]
 		},
-		"Rookie Harbor - Beginners Arc - Chest 1": {
+		"Rookie Harbor - Beginner's Arc Upper": {
 			"location": {
 				"map": "rookie-harbor.teleporter",
 				"mapId": 389
@@ -6194,7 +6176,7 @@
 				]
 			]
 		},
-		"Rookie Harbor - Beginners Arc - Chest 2": {
+		"Rookie Harbor - Beginner's Arc Lower": {
 			"location": {
 				"map": "rookie-harbor.teleporter",
 				"mapId": 402
@@ -6212,7 +6194,7 @@
 				]
 			]
 		},
-		"Zir'vitar Temple - Moving Transmit - Chest 1": {
+		"Zir'vitar Temple 1F - Moving Transmit Left": {
 			"location": {
 				"map": "shock-dng.f1.room2",
 				"mapId": 64
@@ -6220,7 +6202,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open12"
+				"open": "open10"
 			},
 			"reward": [
 				[
@@ -6230,7 +6212,7 @@
 				]
 			]
 		},
-		"Zir'vitar Temple - Moving Transmit - Chest 2": {
+		"Zir'vitar Temple 1F - Moving Transmit Right": {
 			"location": {
 				"map": "shock-dng.f1.room2",
 				"mapId": 79
@@ -6248,7 +6230,7 @@
 				]
 			]
 		},
-		"Zir'vitar Temple - Haunted Waves - Bronze Chest": {
+		"Zir'vitar Temple 1F - Haunted Waves (Bronze)": {
 			"location": {
 				"map": "shock-dng.f1.room3to4",
 				"mapId": 23
@@ -6273,7 +6255,7 @@
 				]
 			]
 		},
-		"Zir'vitar Temple - Hoodwink - Chest": {
+		"Zir'vitar Temple GF - Hoodwink": {
 			"location": {
 				"map": "shock-dng.g.room4to5",
 				"mapId": 16
@@ -6281,8 +6263,13 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open12"
+				"open": "open10"
 			},
+			"condition": [
+				[
+					"any_element"
+				]
+			],
 			"reward": [
 				[
 					"item",
@@ -6291,7 +6278,7 @@
 				]
 			]
 		},
-		"Zir'vitar Temple - Spinning Transmit - Bronze Chest": {
+		"Zir'vitar Temple GF - Spinning Transmit (Bronze)": {
 			"location": {
 				"map": "shock-dng.g.room5",
 				"mapId": 164
@@ -6316,7 +6303,7 @@
 				]
 			]
 		},
-		"Grand Krys'kajo - East Branch - Gold Chest": {
+		"Grand Krys'kajo - East Branch Lower (Gold)": {
 			"location": {
 				"map": "tree-dng.f3.branch-east",
 				"mapId": 166
@@ -6334,7 +6321,7 @@
 				]
 			]
 		},
-		"Grand Krys'kajo - East Branch - Chest 1": {
+		"Grand Krys'kajo - East Branch Upper": {
 			"location": {
 				"map": "tree-dng.f3.branch-east",
 				"mapId": 167
@@ -6352,7 +6339,7 @@
 				]
 			]
 		},
-		"Grand Krys'kajo - East Branch - Chest 2": {
+		"Grand Krys'kajo - East Branch Right": {
 			"location": {
 				"map": "tree-dng.f3.branch-east",
 				"mapId": 168
@@ -6370,7 +6357,7 @@
 				]
 			]
 		},
-		"Grand Krys'kajo - West Branch - Chest 1": {
+		"Grand Krys'kajo - West Branch Upper": {
 			"location": {
 				"map": "tree-dng.f3.branch-west",
 				"mapId": 67
@@ -6388,7 +6375,7 @@
 				]
 			]
 		},
-		"Grand Krys'kajo - West Branch - Chest 2": {
+		"Grand Krys'kajo - West Branch Lower": {
 			"location": {
 				"map": "tree-dng.f3.branch-west",
 				"mapId": 68
@@ -6406,7 +6393,7 @@
 				]
 			]
 		},
-		"Grand Krys'kajo - Falling Leaves - Chest": {
+		"Grand Krys'kajo - Falling Leaves": {
 			"location": {
 				"map": "tree-dng.f3.center-01",
 				"mapId": 136
@@ -6424,7 +6411,7 @@
 				]
 			]
 		},
-		"Grand Krys'kajo - Branch Conveyance - Chest": {
+		"Grand Krys'kajo - Branch Conveyance": {
 			"location": {
 				"map": "tree-dng.f3.east-01",
 				"mapId": 81
@@ -6442,7 +6429,7 @@
 				]
 			]
 		},
-		"Grand Krys'kajo - Branch Transmit - Chest 1": {
+		"Grand Krys'kajo - Branch Transmit Right": {
 			"location": {
 				"map": "tree-dng.f3.west-01",
 				"mapId": 81
@@ -6460,7 +6447,7 @@
 				]
 			]
 		},
-		"Grand Krys'kajo - Branch Transmit - Chest 2": {
+		"Grand Krys'kajo - Branch Transmit Left": {
 			"location": {
 				"map": "tree-dng.f3.west-01",
 				"mapId": 86
@@ -6478,7 +6465,7 @@
 				]
 			]
 		},
-		"So'najiz Temple - Principle of Conveyance - Chest": {
+		"So'najiz Temple - Principle of Conveyance": {
 			"location": {
 				"map": "wave-dng.b1.center-01",
 				"mapId": 276
@@ -6486,7 +6473,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open12"
+				"open": "open10"
 			},
 			"reward": [
 				[
@@ -6496,15 +6483,15 @@
 				]
 			]
 		},
-		"So'najiz Temple - Trial of Persistence - Chest 1": {
+		"So'najiz Temple - Trial of Persistence Lower Right": {
 			"location": {
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 205
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
-				"open": "open14.1"
+				"linear": "26.5",
+				"open": "open14.3"
 			},
 			"reward": [
 				[
@@ -6514,15 +6501,15 @@
 				]
 			]
 		},
-		"So'najiz Temple - Trial of Persistence - Chest 2": {
+		"So'najiz Temple - Trial of Persistence Upper Right": {
 			"location": {
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 258
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
-				"open": "open14.1"
+				"linear": "26.5",
+				"open": "open14.2"
 			},
 			"reward": [
 				[
@@ -6532,7 +6519,7 @@
 				]
 			]
 		},
-		"So'najiz Temple - Trial of Persistence - Chest 3": {
+		"So'najiz Temple - Trial of Persistence Rightmost": {
 			"location": {
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 329
@@ -6540,7 +6527,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open12"
+				"open": "open10"
 			},
 			"reward": [
 				[
@@ -6550,15 +6537,15 @@
 				]
 			]
 		},
-		"So'najiz Temple - Trial of Persistence - Silver Chest": {
+		"So'najiz Temple - Trial of Persistence Upper Left (Silver)": {
 			"location": {
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 670
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "26",
-				"open": "open14.1"
+				"linear": "26.5",
+				"open": "open14.3"
 			},
 			"reward": [
 				[
@@ -6568,15 +6555,15 @@
 				]
 			]
 		},
-		"So'najiz Temple - Trial of Persistence - Gold Chest": {
+		"So'najiz Temple - Trial of Persistence Lower Left (Gold)": {
 			"location": {
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 671
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "26",
-				"open": "open14.1"
+				"linear": "26.5",
+				"open": "open14.3"
 			},
 			"reward": [
 				[
@@ -6586,7 +6573,7 @@
 				]
 			]
 		},
-		"So'najiz Temple - Moving Attraction - Chest": {
+		"So'najiz Temple - Moving Attraction": {
 			"location": {
 				"map": "wave-dng.b1.north-01",
 				"mapId": 307
@@ -6604,7 +6591,7 @@
 				]
 			]
 		},
-		"So'najiz Temple - Slowing Attraction - Chest": {
+		"So'najiz Temple - Slowing Attraction": {
 			"location": {
 				"map": "wave-dng.b1.north-03",
 				"mapId": 249
@@ -6612,8 +6599,15 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "26",
-				"open": "open14.1"
+				"open": "open10"
 			},
+			"condition": [
+				[
+					"item",
+					"So'najiz Key",
+					3
+				]
+			],
 			"reward": [
 				[
 					"item",
@@ -6622,7 +6616,7 @@
 				]
 			]
 		},
-		"So'najiz Temple - Standing Attraction - Chest": {
+		"So'najiz Temple - Standing Attraction": {
 			"location": {
 				"map": "wave-dng.b1.north-06",
 				"mapId": 193
@@ -6640,15 +6634,15 @@
 				]
 			]
 		},
-		"So'najiz Temple - Attracting Conveyance - Chest": {
+		"So'najiz Temple - Attracting Conveyance": {
 			"location": {
 				"map": "wave-dng.b1.north-08",
 				"mapId": 221
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
-				"open": "open14.1"
+				"linear": "26.5",
+				"open": "open14.2"
 			},
 			"reward": [
 				[
@@ -6658,7 +6652,7 @@
 				]
 			]
 		},
-		"So'najiz Temple - Fast Conveyance - Chest": {
+		"So'najiz Temple - Fast Conveyance": {
 			"location": {
 				"map": "wave-dng.b1.south-04",
 				"mapId": 309
@@ -6676,15 +6670,15 @@
 				]
 			]
 		},
-		"So'najiz Temple - Flaming Conveyance - Chest": {
+		"So'najiz Temple - Flaming Conveyance": {
 			"location": {
 				"map": "wave-dng.b1.south-06",
 				"mapId": 242
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
-				"open": "open14.1"
+				"linear": "26.5",
+				"open": "open14.2"
 			},
 			"reward": [
 				[

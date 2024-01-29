@@ -1,0 +1,1214 @@
+{
+	"cutscenes": {
+		"Talatu Bergen 25%": {
+		    "location": {
+			"map": "bergen.inner-questhub-1",
+			"mapId": 160,
+			"path": ".settings.npcStates.0.event.quest.14" 
+		    },
+		    "region": {
+			"linear": "3",
+			"open": "open3" 
+		    },
+		    "condition": [
+			[ "cutscene", "Talatu Introductions" ],
+			[ "item", "Disc of Flora", 1 ]
+		    ],
+		    "reward": [
+			[ "item", "Strawhat", 1 ]
+		    ]
+		},
+		 "Talatu Ba'kii 50%": {
+		    "location": {
+			"map": "heat-village.interior.quest-hub-eg",
+			"mapId": 134,
+			"path": ".settings.npcStates.0.event.quest.11" 
+		    },
+		    "region": {
+			"linear": "11",
+			"open": "open5" 
+		    },
+		    "condition": [
+			[ "cutscene", "Talatu Bergen 25%" ]
+		    ],
+		    "reward": [
+			[ "item", "Dried Grass Hat", 1 ]
+		    ]
+		},
+		"Talatu Basin 75%": {
+		    "location": {
+			"map": "jungle-city.interior.questhub-01",
+			"mapId": 576,
+			"path": ".settings.npcStates.0.event.quest.11" 
+		    },
+		    "region": {
+			"linear": "23",
+			"open": "open10" 
+		    },
+		    "condition": [
+			[ "cutscene", "Talatu Ba'kii 50%" ]
+		    ],
+		    "reward": [
+			[ "item", "Strawberry Hat", 1 ]
+		    ]
+		}
+	},
+	"quests": {
+		"First Steps": {
+			"questid": "my-first-quest",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Edge o' All", 1 ], [ "item", "Grasswalkers", 1 ]
+			]
+		},
+		"A Few More Steps": {
+			"questid": "my-first-quest_2",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "First Steps" ]
+			],
+			"reward": [
+				[ "item", "Second Hide", 1 ], [ "item", "Explorer's Cap", 1 ]
+			]
+		},
+		"Autumn's Rise Trailblazing": {
+			"questid": "trailblaze-autumn",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Autumn's Rise Collect" ], 
+				[ "quest", "Autumn's Rise Defeat" ],
+				[ "quest", "Autumn's Rise Landmarks" ], 
+				[ "quest", "Autumn's Rise Data Probe" ]
+			]
+		},
+		"Autumn's Rise Collect": {
+			"questid": "trailblaze-autumn-1",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			}
+		},
+		"Autumn's Rise Defeat": {
+			"questid": "trailblaze-autumn-2",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			}
+		},
+		"Autumn's Rise Landmarks": {
+			"questid": "trailblaze-autumn-3",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			}
+		},
+		"Autumn's Rise Data Probe": {
+			"questid": "trailblaze-autumn-4",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			}
+		},
+		"Round and Round": {
+			"questid": "round-and-round",
+			
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Sandwich", 1 ], [ "item", "Hi-Sandwich", 1 ], [ "item", "Chef Sandwich", 1 ]
+			]
+		},
+		"Crocus Pocus": {
+			"questid": "botanics",
+			"region": {
+				"linear": "31",
+				"open": "open3"
+			},
+			"condition": [
+				[ "item", "Disc of Flora", 1 ],
+				[ "item", "Heat"], 
+				[ "cutscene", "Talatu Bergen 25%"],
+				[ "cutscene", "Talatu Ba'kii 50%"],
+				[ "cutscene", "Talatu Basin 75%"],
+				[ "region", "open", "open4.1"],
+				[ "region", "open", "open5"],
+				[ "region", "open", "open9"],
+				[ "region", "open", "open10"],
+				[ "region", "open", "open16"]
+			],
+			"reward": [
+				[ "item", "The Last Strawhat", 1 ]
+			],
+			"_comment": "1 cp for each element"
+		},
+		"The Observatory": {
+			"questid": "observatory",
+			"region": {
+				"linear": "31",
+				"open": "open18" 
+			},
+			"condition": [
+				[ "quest", "A Promise is a Promise 5" ]
+			],
+			"_comment": "1 cp for each element"
+		},
+		"Bergen Trailblazing": {
+			"questid": "trailblaze-bergen",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Bergen Trailblazing Collect" ],
+				[ "quest", "Bergen Trailblazing Defeat" ],
+				[ "quest", "Bergen Trailblazing Landmarks" ],
+				[ "quest", "Bergen Trailblazing Data Probe" ]
+			]
+		},
+		"Bergen Trailblazing Collect": {
+			"questid": "trailblaze-bergen-1",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Autumn's Rise Trailblazing" ]
+			]
+		},
+		"Bergen Trailblazing Defeat": {
+			"questid": "trailblaze-bergen-2",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Autumn's Rise Trailblazing" ]
+			]
+		},
+		"Bergen Trailblazing Landmarks": {
+			"questid": "trailblaze-bergen-3",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Autumn's Rise Trailblazing" ]
+			]
+		},
+		"Bergen Trailblazing Data Probe": {
+			"questid": "trailblaze-bergen-4",
+			"amount": 0,
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Autumn's Rise Trailblazing" ],
+				[ "item", "Heat" ]
+			]
+		},
+
+		"You've Got Mail": {
+			"questid": "you-got-mail",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Pike Wood", 7 ], [ "item", "Frozen Tear", 2 ]
+			]
+		},
+		"The Legendary Bunny": {
+			"questid": "legend-bunny",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			}
+		},
+		"Round and Round 2": {
+			"questid": "round-and-round-2",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Round and Round" ]
+			],
+			"reward": [
+				[ "item", "Sandwich", 1 ], [ "item", "Hi-Sandwich", 1 ], [ "item", "Chef Sandwich", 1 ]
+			]
+		},
+		"Digging Up the Past": {
+			"questid": "bergen-mining_tools",
+			"region": {
+				"linear": "10",
+				"open": "open4.7" 
+			},
+			"condition": [
+				[ "item", "Heat", 1 ]
+			],
+			"_comment": "Gives 1 CP Neutral"
+		},
+		"Filthy Frobbits": {
+			"questid": "miners-1-dirtbunnies",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Metal Gears", 2 ], [ "item", "Purple Ore Lump", 4 ]
+			]
+		},
+		"Explosive Debugging": {
+			"questid": "miners-2-mine_bombing_1",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Filthy Frobbits" ],
+				[ "item", "Blue Ice Shade" ],
+				[ "item", "Heat", 1 ]
+			],
+			"reward": [
+				[ "item", "Metal Gears", 3 ], [ "item", "Blue Orb", 2 ]
+			]
+		},
+		"Preemptive Mining": {
+			"questid": "miners-2-mine_challenge-1",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Explosive Debugging" ]
+			],
+			"reward": [
+				[ "item", "Miner's Helmet", 1 ], [ "item", "Refined Metal", 3 ]
+			]
+		},
+		"Kidding Around": {
+			"questid": "bg-1-lost_pet",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Frosted Carrot", 2 ], [ "item", "Winter Thorn", 4 ]
+			]
+		},
+		"The Goatfather": {
+			"questid": "bg-2-goat_cave_1",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Kidding Around" ],
+				[ "item", "Heat" ],
+				[ "item", "Blue Ice Shade", 1 ]
+			],
+			"reward": [
+				[ "item", "Perforated Tophat", 2 ], [ "item", "Raw Meat", 5 ]
+			]
+		},
+		"Fancy Tophat": {
+			"questid": "bergen-fancy-tophat",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Solid Bubble", 4 ], [ "item", "Diabolic Horns", 2 ]
+			]
+		},
+		"Heating the Hermit": {
+			"questid": "bergtraders-2-hermit_materials",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Fancy Tophat" ],
+				[ "item", "Blue Ice Shade", 1 ],
+				[ "item", "Heat", 1 ]
+			],
+			"reward": [
+				[ "item", "Rusty Bits", 6 ], [ "item", "Winter Thorn", 3 ], [ "item", "Sweet Berry Tea", 5 ]
+			]
+		},
+		"Trial of Aspiration": {
+			"questid": "monks-1-jump_challenge",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Rock Beak", 4 ], [ "item", "Pepper Night Tea", 3 ]
+			]
+		},
+		"Trial of Progression": {
+			"questid": "monks-2-jump_challenge_2",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Trial of Aspiration" ],
+				[ "item", "Blue Ice Shade", 1 ],
+				[ "item", "Heat", 1 ]
+
+			],
+			"reward": [
+				[ "item", "Frozen Tear", 6 ], [ "item", "Crystal Water", 3 ], [ "item", "Hotsauce", 2 ]
+			]
+		},
+		"Challenge of Aspiration": {
+			"questid": "monks-jump_1_bonus",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Trial of Aspiration" ]
+			],
+			"reward": [
+				[ "item", "Wooly Socks", 1 ]
+			]
+		},
+		"Aspiration Timed Challenge": {
+			"questid": "monks-jump_1_time",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Challenge of Aspiration" ]
+			]
+		},
+		"Aspiration No Shield Challenge": {
+			"questid": "monks-jump_1_noShield",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Challenge of Aspiration" ]
+			]
+		},
+		"Challenge of Progression": {
+			"questid": "monks-jump_2_bonus",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Trial of Progression" ]
+			],
+			"reward": [
+				[ "item", "Weird Skates", 1 ]
+			]
+		},
+		"Progression Timed Challenge": {
+			"questid": "monks-jump_2_time",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Challenge of Progression" ]
+			]
+		},
+		"Progression Frosty Challenge": {
+			"questid": "monks-jump_2_frosty",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Challenge of Progression" ]
+			]
+		},
+		"Building a Base": {
+			"questid": "omni-1",
+			"region": {
+				"linear": "4",
+				"open": "open4.1" 
+			},
+			"condition": [
+				[ "item", "Heat", 1 ]
+			]
+		},
+		"Pushing Bases": {
+			"questid": "omni-2",
+			"region": {
+				"linear": "4",
+				"open": "open4.1" 
+			},
+			"condition": [
+				[ "quest", "Building a Base" ],
+				[ "quest", "The Legendary Bunny" ]
+			],
+			"reward": [
+				[ "item", "Disciple Gloves", 1 ]
+			]
+		},
+		"A Promise is a Promise 2": {
+			"questid": "unkown-warrior-2",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "A Promise is a Promise" ],
+				[ "item", "Broken Shield", 1 ]
+			]
+		},
+		"Henry Trailblazing": {
+			"questid": "trailblaze-forest",
+			"region": {
+				"linear": "31",
+				"open": "open9" 
+			},
+			"condition": [
+				[ "quest", "Gaia's Garden Trailblazing" ]
+			],
+			"reward": [
+				[ "item", "Circuit Override", 1 ]
+			]
+		},
+		"Last Minute Help Needed": {
+			"questid": "wervyn-quest",
+			"region": {
+				"linear": "31",
+				"open": "open16" 
+			},
+			"condition": [
+				[ "item", "Meteor Shade", 1 ],
+				[ "item", "Guild Pass", 1]
+			]
+		},
+		"An Unfortunate Series of Features": {
+			"questid": "dekay-quest",
+			"region": {
+				"linear": "31",
+				"open": "open16" 
+			},
+			"condition": [
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ],
+				[ "item", "Wave", 1 ],
+				[ "item", "Shock", 1 ] 
+			],
+			"reward": [
+				[ "item", "Lunatic Paws", 1 ]
+			]
+		},
+		"Maroon Valley Trailblazing": {
+			"questid": "trailblaze-maroon",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "Maroon Valley Collect" ],
+				[ "quest", "Maroon Valley Defeat" ],
+				[ "quest", "Maroon Valley Landmarks" ],
+				[ "quest", "Maroon Valley Data Probe" ]
+			]
+		},
+		"Maroon Valley Collect": {
+			"questid": "trailblaze-maroon-1",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "Bergen Trailblazing" ]
+			]
+		},
+		"Maroon Valley Defeat": {
+			"questid": "trailblaze-maroon-2",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "Bergen Trailblazing" ]
+			]
+		},
+		"Maroon Valley Landmarks": {
+			"questid": "trailblaze-maroon-3",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"condition": [ 
+				[ "quest", "Bergen Trailblazing" ]
+			]
+		},
+		"Maroon Valley Data Probe": {
+			"questid": "trailblaze-maroon-4",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "Bergen Trailblazing" ]
+			]
+		},
+		"Maroon Tree Defender": {
+			"questid": "maroon-tree-defend",
+			"region": {
+				"linear": "12",
+				"open": "open6" 
+			},
+			"condition": [
+				[ "item", "Maroon Cave Pass", 1 ],
+				[ "item", "Heat", 1 ]
+
+			],
+			"reward": [
+				[ "item", "Shiny Orb", 1 ]
+			]
+		},
+		"Blasting Shells": {
+			"questid": "nomadAdv-1-turtle_bombing_1",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"reward": [
+				[ "item", "Pepper Night Tea", 2 ], [ "item", "Old Bones", 10 ]
+			]
+		},
+		"Hot Trail": {
+			"questid": "nomadAdv-2-tomb_raiding_2",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "Blasting Shells" ],
+				[ "item", "Red Flame Shade", 1 ],
+				[ "item", "Heat", 1 ]
+			],
+			"reward": [
+				[ "item", "Laser Eyes", 2 ]
+			]
+		},
+		"Waves of Sand": {
+			"questid": "nomadAdv-3-sandman_tomb_1",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "Hot Trail" ],
+				[ "item", "Meteor Shade", 1 ]
+			],
+			"reward": [
+				[ "item", "Pepper Night Tea", 5 ], [ "item", "Topaz", 4 ]
+			]
+		},
+		"Shady Thief": {
+			"questid": "bakiGuard-1-basar_thief_1",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"reward": [
+				[ "item", "Glaring Rock", 6 ], [ "item", "Maroon Chestnut", 2 ]
+			]
+		},
+		"Just Deserts": {
+			"questid": "bakiGuard-2-evil_guard",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "Shady Thief" ],
+				[ "item", "Red Flame Shade", 1 ],
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ]
+			],
+			"reward": [
+				[ "item", "Lucid Shard", 6 ], [ "item", "Jelly Extract", 5 ]
+			]
+		},
+		"Crate Hate": {
+			"questid": "bakiTrader-1-crate_defense_1",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"reward": [
+				[ "item", "Cactone Fruit", 11 ], [ "item", "Ancient Earth", 3 ]
+			]
+		},
+		"Steamy Booze": {
+			"questid": "bakiTrader-2-brewing_fun_1",
+			"region": {
+				"linear": "20",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "Crate Hate" ],
+				[ "item", "Red Flame Shade", 1 ],
+				[ "item", "Cold", 1 ],
+				[ "item", "Heat", 1 ]
+			],
+			"reward": [
+				[ "item", "Bear Beer", 5 ]
+			]
+		},
+		"Steamy Challenge": {
+			"questid": "bakiTrader-2-brewing_challenge_1",
+			"region": {
+				"linear": "20",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "Steamy Booze" ]
+			],
+			"reward": [
+				[ "item", "Brewing Kit: Crab", 2 ]
+			]
+		},
+		"A Promise is a Promise 3": {
+			"questid": "unknown-warrior-3",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "A Promise is a Promise 2" ],
+				[ "item", "Broken Sword", 1 ],
+				[ "item", "Cursed Coin", 1 ],
+				[ "item", "White Key", 1],
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ] 
+			]
+		},
+		"Turret Defense": {
+			"questid": "jungleAdv-1-turret_defense_1",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"reward": [
+				[ "item", "Virus Root", 4 ], [ "item", "Stout Backplate", 2 ]
+			]
+		},
+		"An Original Idea": {
+			"questid": "jungleAdv-2-turret_defense_2",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "item", "Purple Bolt Shade", 1 ],
+				[ "item", "Azure Drop Shade", 1 ],
+				[ "item", "Shock", 1 ],
+				[ "item", "Wave", 1 ],
+				[ "quest", "Turret Defense" ]
+			],
+			"reward": [
+				[ "item", "Living Bolt", 2 ], [ "item", "Sea Disc", 2 ]
+			]
+		},
+		"Hostage Situation": {
+			"questid": "jungleGuard-1-hostage_1",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"reward": [
+				[ "item", "Chili Dog", 4 ], [ "item", "Star Fruit", 5 ]
+			]
+		},
+		"High Crating": {
+			"questid": "jungleGuard-2-crate_rooftop_1",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "item", "Purple Bolt Shade", 1 ],
+				[ "item", "Azure Drop Shade", 1 ],
+				[ "item", "Shock", 1 ],
+				[ "item", "Wave", 1 ],
+				[ "quest", "Hostage Situation" ]
+			],
+			"reward": [
+				[ "item", "Plain Cube", 3 ], [ "item", "Metal Down", 4 ]
+			]
+		},
+		"Tropical Chill": {
+			"questid": "jungleTrader-1-snowman_thief_1",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "item", "Heat" ]
+			],
+			"reward": [
+				[ "item", "Moon Fruit", 5 ], [ "item", "Huge Nut", 3 ], [ "item", "Lazy Claw", 2 ]
+			]
+		},
+		"Melting this Cold Fiend": {
+			"questid": "jungleTrader-2-snowman_thief_2",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "item", "Purple Bolt Shade", 1 ],
+				[ "item", "Azure Drop Shade", 1 ],
+				[ "item", "Shock", 1 ],
+				[ "item", "Wave", 1 ],
+				[ "quest", "Tropical Chill" ]
+			],
+			"reward": [
+				[ "item", "Climate Cowl", 1 ]
+			]
+		},
+		"Lakeside Escort": {
+			"questid": "jungleGreens-1-escort_1",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"reward": [
+				[ "item", "Green Risotto", 3 ], [ "item", "Wrap Roll", 3 ], [ "item", "Elder Wood", 8 ]
+			]
+		},
+		"Rooting for Power": {
+			"questid": "jungleGreens-2-plantSearch_1",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "item", "Purple Bolt Shade", 1 ],
+				[ "item", "Azure Drop Shade", 1 ],
+				[ "quest", "Lakeside Escort" ]
+			],
+			"reward": [
+				[ "item", "Echo Roll", 5 ], [ "item", "Glow Pear", 7 ], [ "item", "Power Spinach", 4 ]
+			]
+		},
+		"Sprouting Business": {
+			"questid": "basin-mush-1",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Mushroom Kingdom": {
+			"condition::REPLACE": [ 
+				[ "quest", "Sprouting Business" ]
+			]
+		},
+		"Pumpkin Land Superfun": {
+			"questid": "halloween",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"reward": [
+				[ "item", "Scarecrown", 1 ]
+			]
+		},
+		"A Promise is a Promise 4": {
+			"questid": "unknown-warrior-4",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [ 
+				[ "quest", "A Promise is a Promise 3" ],
+				[ "item", "Broken Deck", 1 ]
+			]
+		},
+		"Gaia's Garden Trailblazing": {
+			"questid": "trailblaze-jungle",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "quest", "Gaia's Garden Collect" ],
+				[ "quest", "Gaia's Garden Defeat" ],
+				[ "quest", "Gaia's Garden Landmarks" ],
+				[ "quest", "Gaia's Garden Data Probe" ]
+			]
+		},
+		"Gaia's Garden Collect": {
+			"questid": "trailblaze-jungle-1",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "quest", "Maroon Valley Trailblazing" ]
+			]
+		},
+		"Gaia's Garden Defeat": {
+			"questid": "trailblaze-jungle-2",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "quest", "Maroon Valley Trailblazing" ]
+			]
+		},
+		"Gaia's Garden Landmarks": {
+			"questid": "trailblaze-jungle-3",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "quest", "Maroon Valley Trailblazing" ]
+			]
+		},
+		"Gaia's Garden Data Probe": {
+			"questid": "trailblaze-jungle-4",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "quest", "Maroon Valley Trailblazing" ],
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Turret Defense Challenge 1": {
+			"questid": "jungleAdv-turret_defense_challenge-1",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "quest", "Turret Defense" ]
+			],
+			"reward": [
+				[ "item", "Turret Tokens", 7 ]
+			]
+		},
+		"Turret Defense Challenge 2": {
+			"questid": "jungleAdv-turret_defense_challenge-2",
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "quest", "An Original Idea" ]
+			],
+			"reward": [
+				[ "item", "Turret Tokens", 8 ]
+			]
+		},
+		"A Promise is a Promise 5": {
+			"questid": "unknown-warrior-5",
+			"region": {
+				"linear": "33",
+				"open": "open20" 
+			},
+			"condition": [
+				[ "item", "Broken Chakrams" ],
+				[ "quest", "A Promise is a Promise 4" ]
+			]
+		},
+		"Railing Rider": {
+			"questid": "railing-rider-1",
+			"region": {
+				"linear": "2",
+				"open": "open2" 
+			},
+			"reward": [
+				[ "item", "Veggie Sticks", 6 ]
+			]
+		},
+		"All Hail the Ice Cream": {
+			"questid": "ice-cream-hype",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Bergen Ice Cream", 10 ]
+			]
+		},
+		"Training with the Master": {
+			"questid": "training-tutorial",
+			"region": {
+				"linear": "2",
+				"open": "open2" 
+			},
+			"condition": [
+				[ "quest", "Training: VRP" ],
+				[ "quest", "Training: VPI" ]
+			],
+			"reward": [
+				[ "item", "Adept Gloves", 1 ]
+			]
+		},
+		"Training: VRP": {
+			"questid": "training-balls",
+			"region": {
+				"linear": "2",
+				"open": "open2" 
+			},
+			"condition": [
+				[ "item", "Blue Ice Shade", 1 ],
+				[ "item", "Red Flame Shade", 1 ],
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ]
+			]
+		},
+		"Training: VPI": {
+			"questid": "training-close",
+			"region": {
+				"linear": "2",
+				"open": "open2" 
+			},
+			"condition": [
+				[ "item", "Blue Ice Shade", 1 ],
+				[ "item", "Red Flame Shade", 1 ],
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ]
+			]
+		},
+		"Faction Introduction": {
+			"questid": "faction-tutorial",
+			"region": {
+				"linear": "2",
+				"open": "open2" 
+			},
+			"reward":
+			[
+				[ "item", "Edge o' All", 1 ]
+			]
+		},
+		"Digging for Data": {
+			"questid": "wa-1-digging",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Bronze Edge", 1 ]
+			]
+		},
+		"It Can Dig But It Can't Hide": {
+			"questid": "fd-2-meerkat-cave",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Digging for Data" ]
+			],
+			"reward": [
+				[ "item", "Swiftspike", 1 ], [ "item", "Tofu Cracker", 1 ]
+			]
+		},
+		"Points of Power": {
+			"questid": "fd-3-ball_egg_1",
+			"region": {
+				"linear": "20",
+				"open": "open9" 
+			},
+			"condition": [
+				[ "item", "Blue Ice Shade", 1 ],
+				[ "item", "Red Flame Shade", 1 ],
+				[ "item", "Heat", 1],
+				[ "item", "Cold", 1],
+				[ "quest", "It Can Dig But It Can't Hide" ]
+			],
+			"reward": [
+				[ "item", "Twilight Dew", 9 ], [ "item", "Crimson Dragonfly", 4 ]
+			]
+		},
+		"Petty Crime Hunter": {
+			"questid": "rhg-1-pickpocket",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Hi-Sandwich", 3 ], [ "item", "Just Water", 3 ]
+			]
+		},
+		"Smuggle Trouble": {
+			"questid": "rhg-2-crate_smuggle",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Petty Crime Hunter" ]
+			],
+			"reward": [
+				[ "item", "Battered Fist", 1 ], [ "item", "Sweet Berry Tea", 3 ]
+			]
+		},
+		"Wet Work": {
+			"questid": "rhg-3-maritime_smuggle",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "item", "Blue Ice Shade", 1 ],
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ],
+				[ "quest", "Smuggle Trouble" ]
+			],
+			"reward": [
+				[ "item", "Hunter's Bolt", 1 ], [ "item", "Shrimp Risotto", 4 ]
+			]
+		},
+		"Small Time Delivery": {
+			"questid": "rftc-1-collect_trade",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Gold Beetle", 5 ], [ "item", "Veggie Wraps", 3 ]
+			]
+		},
+		"Bull Grab": {
+			"questid": "bull-arena-1",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Small Time Delivery" ]
+			],
+			"reward": [
+				[ "item", "Flaming Bun", 3 ], [ "item", "Twilight Dew", 6 ], [ "item", "Bear Cicada", 4 ]
+			]
+		},
+		"New Metal": {
+			"questid": "rftc-3-metalstuff",
+			"region": {
+				"linear": "20",
+				"open": "open9" 
+			},
+			"condition": [
+				[ "item", "Red Flame Shade", 1 ],
+				[ "item", "Blue Ice Shade", 1 ],
+				[ "item", "Heat", 1],
+				[ "item", "Cold", 1],
+				[ "quest", "Bull Grab" ]
+			],
+			"reward": [
+				[ "item", "Refined Metal", 5 ], [ "item", "Wolf Cicada", 2 ]
+			]
+		},
+		"Sickly Trees": {
+			"questid": "foa-1-treedoc",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Season Apples", 4 ], [ "item", "Fruit Salad", 3 ]
+			]
+		},
+		"Intensive Tree Care": {
+			"questid": "foa-2-tree_defense",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Sickly Trees" ]
+			],
+			"reward": [
+				[ "item", "Autumn Leaves", 13 ], [ "item", "Azure Dragonfly", 4 ], [ "item", "Chef Sandwich", 2 ]
+			]
+		},
+		"Bull on Fire": {
+			"questid": "foa-3-buffel_cave",
+			"region": {
+				"linear": "20",
+				"open": "open9" 
+			},
+			"condition": [
+				[ "quest", "Intensive Tree Care" ]
+			],
+			"reward": [
+				[ "item", "Ginger Tom. Salad", 4 ], [ "item", "Parched Leaves", 14 ], [ "item", "Ripe Apples", 8 ]
+			]
+		},
+		"A Promise is a Promise": {
+			"questid": "unknown-warrior-1",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "item", "Broken Gauntlet", 1 ]
+			]
+		},
+		"Wood 'n' Steaks": {
+			"questid": "steaks_1",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Hi-Sandwich", 5 ], [ "item", "Chili Con Carne", 2 ]
+			]
+		},
+		"Meating Expectations": {
+			"questid": "steaks_2",
+			"region": {
+				"linear": "11",
+				"open": "open5" 
+			},
+			"condition": [
+				[ "quest", "Wood 'n' Steaks" ]
+			],
+			"reward": [
+				[ "item", "Steak, rare", 5 ]
+			]
+		},
+		"Raising the Steaks": {
+			"questid": "steaks_3",
+			"region": {
+				"linear": "21",
+				"open": "open10" 
+			},
+			"condition": [
+				[ "quest", "Meating Expectations" ]
+			],
+			"reward": [
+				[ "item", "Gourmet Steak", 3 ]
+			]
+		}
+	}
+}
