@@ -225,7 +225,10 @@ ig.module("mw-rando.multiworld-model")
 
 				this.client.addListener('LocationInfo', listener);
 
-				let toScout: number[] = this.client.locations.missing;
+				// In case the file was loaded on a previous version, we need to add the checked locations too.
+				// This might be able to go away once there is version checking.
+				let toScout: number[] = this.client.locations.missing
+					.concat(this.client.locations.checked);
 
 				if (!this.locationInfo) {
 					this.locationInfo = {};

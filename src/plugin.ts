@@ -90,6 +90,7 @@ export default class MwRandomizer {
 
 		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/out/data.json")
 		this.randoData = randoData;
+		sc.randoData = randoData;
 
 		let itemdb = await readJsonFromFile("assets/data/item-database.json");
 		this.itemdb = itemdb;

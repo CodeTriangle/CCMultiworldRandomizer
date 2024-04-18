@@ -38,6 +38,7 @@ declare namespace sc {
 		baseNormalItemId: number;
 		numItems: number;
 		gamepackage: ap.GamePackage;
+		randoData: WorldData;
 
 		questSettings: {
 			hidePlayer: boolean;
