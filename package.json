@@ -12,9 +12,10 @@
     "@types/node": "^20.4.9",
     "esbuild": "^0.18.15",
     "nax-ccuilib": "conorlawton/nax-ccuilib",
+    "nax-module-cache": "github:conorlawton/nax-module-cache",
     "nodemon": "^3.0.1",
     "typescript": "^5.1.6",
-    "ultimate-crosscode-typedefs": "github:CCDirectLink/ultimate-crosscode-typedefs"
+    "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
   },
   "dependencies": {
     "archipelago.js": "file:../../../../Downloads/archipelago.js-1.1.0-isomorphicless.tgz",

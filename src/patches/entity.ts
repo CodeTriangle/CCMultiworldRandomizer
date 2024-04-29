@@ -1,7 +1,6 @@
 import type MwRandomizer from "../plugin";
-import "../types/multiworld-model.d";
 
-function set(root, value, path, offset = 0) {
+function set(root: Record<string, any>, value: any, path: string[], offset = 0) {
 	if (path.length <= offset) {
 		return;
 	}

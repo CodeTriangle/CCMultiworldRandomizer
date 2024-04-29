@@ -1,7 +1,6 @@
 import { defineVarProperty } from "../utils";
 import * as ap from "archipelago.js";
 import {ig, sc} from "ultimate-crosscode-typedefs";
-import {ItemInfo} from "../item-data.model";
 
 ig.module("mw-rando.multiworld-model")
 	.requires("impact.feature.storage.storage")
@@ -285,7 +284,7 @@ ig.module("mw-rando.multiworld-model")
 					return;
 				}
 
-				this.gamepackage = this.client.data.package.get("CrossCode");
+				this.gamepackage = this.client.data.package.get("CrossCode")!;
 
 				this.client.addListener('ReceivedItems', (packet: ap.ReceivedItemsPacket) => {
 					if (!ig.game.mapName || ig.game.mapName == "newgame") {

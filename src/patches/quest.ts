@@ -2,7 +2,23 @@ import * as ap from "archipelago.js";
 import type MwRandomizer from "../plugin";
 import type { RawQuest } from "../item-data.model";
 import { getElementIconString } from "../utils";
-import "../types/multiworld-model.d";
+
+declare global {
+	namespace sc {
+		interface QuestDialog extends sc.Model.Observer {
+			finished: boolean;
+			mwQuest: RawQuest;
+			newItemsGui: sc.MultiWorldQuestItemBox;
+		}
+		interface QuestDetailsView {
+			newItemsGui: sc.MultiWorldQuestItemBox;
+		}
+	}
+	interface Window {
+		qdv: sc.QuestDetailsView;
+	}
+	var qdv: sc.QuestDetailsView;
+}
 
 export function patch(plugin: MwRandomizer) {
 	let quests = plugin.randoData?.quests;
@@ -25,10 +41,10 @@ export function patch(plugin: MwRandomizer) {
 	sc.QuestDialogWrapper.inject({
 		init(
 			quest: sc.Quest,
-			callback: CallableFunction,
-			finished: bool,
-			characterName: string,
-			mapName: string,
+			callback,
+			finished,
+			characterName,
+			mapName,
 		) {
 			this.parent(quest, callback, finished, characterName, mapName);
 			this.questBox.hook.pos.y = -14;
@@ -291,7 +307,7 @@ export function patch(plugin: MwRandomizer) {
 				const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
 
 				if (itemInfo.level > 0) {
-					itemGui.setDrawCallback(function (width: number, height: number) {
+					itemGui.setDrawCallback((width: number, height: number) => {
 						sc.MenuHelper.drawLevel(
 							itemInfo.level,
 							width,
@@ -299,7 +315,7 @@ export function patch(plugin: MwRandomizer) {
 							this.gfx,
 							itemInfo.isScalable
 						);
-					}.bind(this));
+					});
 				}
 
 				itemGui.setPos(15, accum);

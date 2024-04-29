@@ -1,16 +1,24 @@
 import * as ap from 'archipelago.js';
-import {WorldData, RawElement, RawQuest, ItemInfo} from './item-data.model';
+import {WorldData, ItemInfo} from './item-data.model';
 import {readJsonFromFile} from './utils';
-import "./types/multiworld-model.d";
 import {applyPatches} from "./patches/index";
+
+import type * as _ from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
+
+declare global {
+	namespace sc {
+		var randoData: WorldData;
+		var multiWorldHud: sc.MultiWorldHudBox;
+	}
+}
 
 export default class MwRandomizer {
 	baseDirectory: string;
-	randoData: WorldData;
+	randoData!: WorldData;
 	itemdb: any;
 
 	constructor(mod: {baseDirectory: string}) {
-		this.baseDirectory = mod.baseDirectory
+		this.baseDirectory = mod.baseDirectory;
 	}
 
 	getColoredStatus(status: string) {
@@ -27,7 +35,7 @@ export default class MwRandomizer {
 
 	getItemInfo(item: ap.NetworkItem): ItemInfo {
 		let gameName: string = sc.multiworld.client.data.players[item.player].game;
-		let gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName);
+		let gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName)!;
 		if (gameInfo.item_id_to_name[item.item] == undefined) {
 			gameInfo = sc.multiworld.gamepackage;
 			gameName = "CrossCode";
@@ -78,7 +86,7 @@ export default class MwRandomizer {
 		return {icon, label, player, level: 0, isScalable: false};
 	}
 
-	getGuiString(item: {icon: string, label: string}): string {
+	getGuiString(item: {icon: string; label: string}): string {
 		return `\\i[${item.icon}]${item.label}`;
 	}
 
@@ -88,7 +96,7 @@ export default class MwRandomizer {
 
 		ig._loadScript("mw-rando.multiworld-model");
 
-		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/out/data.json")
+		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/out/data.json");
 		this.randoData = randoData;
 		sc.randoData = randoData;
 
@@ -105,14 +113,10 @@ export default class MwRandomizer {
 			addPartyMember(name: string, ...args) {
 				this.parent(name, ...args);
 				sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
-			}
+			},
 		});
 
-		let mwIcons = new ig.Font(
-			plugin.baseDirectory.substring(7) + "assets/media/font/icons-multiworld.png",
-			16,
-			ig.MultiFont.ICON_START,
-		);
+		let mwIcons = new ig.Font(plugin.baseDirectory.substring(7) + "assets/media/font/icons-multiworld.png", 16, ig.MultiFont.ICON_START);
 
 		let index = sc.fontsystem.font.iconSets.length;
 		sc.fontsystem.font.pushIconSet(mwIcons);
@@ -127,8 +131,8 @@ export default class MwRandomizer {
 		});
 
 		sc.CrossCode.inject({
-			init(...args) {
-				this.parent(...args);
+			init() {
+				this.parent();
 				sc.multiWorldHud = new sc.MultiWorldHudBox();
 				sc.gui.rightHudPanel.addHudBox(sc.multiWorldHud);
 			},

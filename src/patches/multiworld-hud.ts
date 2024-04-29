@@ -1,17 +1,17 @@
 import type MwRandomizer from '../plugin';
 import { ItemInfo } from '../item-data.model';
-import "../types/multiworld-model.d";
+
 
 export function patch(plugin: MwRandomizer) {
 	// And for my next trick I will rip off ItemContent and ItemHudGui from the base game
 	// pls don't sue
-	sc.MultiWorldItemContent = ig.GuiElementBase.extend({
+	sc.MultiWorldItemContent = sc.SlickBoxGui.extend({
 		timer: 0,
 		id: -1,
 		player: -1,
 		textGui: null,
 		init: function (item: ItemInfo, receive: boolean) {
-			this.parent();
+			this.parent(this);
 			this.timer = 5;
 
 			let verb = receive ? "Received" : "Sent";
@@ -116,7 +116,7 @@ export function patch(plugin: MwRandomizer) {
 			this.rearrangeContent();
 		},
 
-		modelChanged: function (model: any, msg: number, data: any) {
+		modelChanged: function (model, msg: number, data: any) {
 			if (model == sc.multiworld) {
 				if (
 					msg == sc.MULTIWORLD_MSG.ITEM_SENT &&
@@ -130,29 +130,29 @@ export function patch(plugin: MwRandomizer) {
 					this.addEntry(plugin.getItemInfo(data), true);
 				}
 			} else if (model == sc.model) {
-				if (model.isReset()) {
+				if (sc.model.isReset()) {
 					this.clearContent();
 					this.delayedStack.length = 0;
 					this.hide();
 				} else if (
-					model.isCutscene() ||
-					model.isHUDBlocked() ||
+					sc.model.isCutscene() ||
+					sc.model.isHUDBlocked() ||
 					sc.quests.hasQuestSolvedDialogs()
 				) {
 						this.hide()
 				} else if (
-					!model.isCutscene() &&
-					!model.isHUDBlocked() &&
+					!sc.model.isCutscene() &&
+					!sc.model.isHUDBlocked() &&
 					this.contentEntries.length > 0 &&
 					!sc.quests.hasQuestSolvedDialogs()
 				) {
 					this.show();
 				}
 			} else if (model == sc.options && msg == sc.OPTIONS_EVENT.OPTION_CHANGED) {
-				model = sc.options.get("item-hud-size");
-				if (model != this.size) {
-					this._updateSizes(model == sc.ITEM_HUD_SIZE.NORMAL);
-					this.size = model;
+				const itemHudSize= sc.options.get("item-hud-size");
+				if (itemHudSize != this.size) {
+					this._updateSizes(itemHudSize == sc.ITEM_HUD_SIZE.NORMAL);
+					this.size = itemHudSize;
 				}
 			}
 		},
