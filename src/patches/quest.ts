@@ -247,6 +247,7 @@ export function patch(plugin: MwRandomizer) {
 
 		setQuest(mwQuest: RawQuest, quest: sc.Quest) {
 			if (sc.multiworld.options.questDialogHints && !this.hideRewards) {
+				// @ts-ignore
 				sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...mwQuest.mwids);
 			}
 
@@ -291,7 +292,7 @@ export function patch(plugin: MwRandomizer) {
 				if (this.hideRewards) {
 					itemInfo.label = "?????????????";
 					if (sc.multiworld.questSettings.hidePlayer) {
-						itemInfo.player =  "?????????????";
+						itemInfo.player = "?????????????";
 					}
 
 					if (sc.multiworld.questSettings.hideIcon) {

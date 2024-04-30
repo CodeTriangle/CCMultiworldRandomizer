@@ -5,7 +5,7 @@ import { ItemInfo } from '../item-data.model';
 export function patch(plugin: MwRandomizer) {
 	// And for my next trick I will rip off ItemContent and ItemHudGui from the base game
 	// pls don't sue
-	sc.MultiWorldItemContent = sc.SlickBoxGui.extend({
+	sc.MultiWorldItemContent = ig.GuiElementBase.extend({
 		timer: 0,
 		id: -1,
 		player: -1,
@@ -149,7 +149,7 @@ export function patch(plugin: MwRandomizer) {
 					this.show();
 				}
 			} else if (model == sc.options && msg == sc.OPTIONS_EVENT.OPTION_CHANGED) {
-				const itemHudSize= sc.options.get("item-hud-size");
+				const itemHudSize = sc.options.get("item-hud-size");
 				if (itemHudSize != this.size) {
 					this._updateSizes(itemHudSize == sc.ITEM_HUD_SIZE.NORMAL);
 					this.size = itemHudSize;

@@ -89,7 +89,7 @@ ig.module("mw-rando.multiworld-model")
 					return;
 				}
 
-				if (this.client.status == ap.CLIENT_STATUS.CONNECTED) {
+				if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
 					this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
 				}
 
@@ -100,7 +100,7 @@ ig.module("mw-rando.multiworld-model")
 
 				let area = ig.game.mapName.split(".")[0];
 
-				new ap.Client().send([
+				new ap.Client().send(
 					{
 						cmd: "Set",
 						key: "area",
@@ -113,7 +113,7 @@ ig.module("mw-rando.multiworld-model")
 							}
 						]
 					}
-				]);
+				);
 			},
 
 			notifyItemsSent(items: ap.NetworkItem[]) {
@@ -200,6 +200,8 @@ ig.module("mw-rando.multiworld-model")
 
 				this.client.addListener('LocationInfo', listener);
 
+				// The following function's definition is broken, so I ignore the error.
+				// @ts-ignore
 				this.client.locations.scout(mode, ...locations);
 			},
 
@@ -298,7 +300,8 @@ ig.module("mw-rando.multiworld-model")
 
 				this.connectionInfo = info;
 
-				this.mode = this.client.data.slotData.mode;
+				// this is always going to be a string
+				this.mode = this.client.data.slotData.mode as unknown as string;
 				this.options = this.client.data.slotData.options;
 
 				const obfuscationLevel: string = this.options.hiddenQuestObfuscationLevel;

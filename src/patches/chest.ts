@@ -39,7 +39,7 @@ declare global {
 				typeGui: sc.TextGui;
 				active: boolean;
 
-				show(this: this, tooltip: any): void;
+				show(this: this, tooltip: sc.QuickMenuTypesBase): void;
 				setData(this: this, chest: ig.ENTITY.Chest): boolean;
 				alignToBase(this: this, otherHook: ig.GuiHook): void;
 			}

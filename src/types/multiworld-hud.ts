@@ -2,7 +2,7 @@ import type {ItemInfo, RawQuest} from "../item-data.model";
 
 declare global {
 	namespace sc {
-		interface MultiWorldItemContent extends sc.SlickBoxGui {
+		interface MultiWorldItemContent extends ig.GuiElementBase {
 			timer: number;
 			id: number;
 			player: number;
