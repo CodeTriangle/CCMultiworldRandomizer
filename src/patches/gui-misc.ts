@@ -115,6 +115,11 @@ export function patch(plugin: MwRandomizer) {
 			}
 		],
 
+		transitions: {
+			DEFAULT: { state: {}, time: 0.25, timeFunction: KEY_SPLINES.LINEAR },
+			HIDDEN: { state: { alpha: 0 }, time: 0.25, timeFunction: KEY_SPLINES.LINEAR },
+		},
+
 		textGuis: [],
 		inputGuis: [],
 
@@ -319,8 +324,8 @@ export function patch(plugin: MwRandomizer) {
 				// set by the new game mode select callback.
 				// if connection details are available, it starts the game.
 				if (sc.model.isTitle()) {
-					sc.newgame.setActive(true);
-					sc.model.enterRunning();
+					this.doStateTransition("HIDDEN");
+					sc.menu.pushMenu(sc.MENU_SUBMENU.NEW_GAME);
 				}
 			}
 		},
