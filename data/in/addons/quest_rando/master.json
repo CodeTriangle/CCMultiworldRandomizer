@@ -1158,7 +1158,8 @@
 				"open": "open9" 
 			},
 			"condition": [
-				[ "quest", "Intensive Tree Care" ]
+				[ "quest", "Intensive Tree Care" ],
+				[ "item", "Heat" ]
 			],
 			"reward": [
 				[ "item", "Ginger Tom. Salad", 4 ], [ "item", "Parched Leaves", 14 ], [ "item", "Ripe Apples", 8 ]
