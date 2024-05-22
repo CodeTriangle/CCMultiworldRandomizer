@@ -34,9 +34,9 @@ export default class MwRandomizer {
 	}
 
 	getItemInfo(item: ap.NetworkItem): ItemInfo {
-		let gameName: string = sc.multiworld.client.data.players[item.player].game;
-		let gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName)!;
-		if (gameInfo.item_id_to_name[item.item] == undefined) {
+		let gameName = sc.multiworld.client.data.players[item.player].game;
+		let gameInfo = sc.multiworld.client.data.package.get(gameName);
+		if (gameInfo == undefined || gameInfo.item_id_to_name[item.item] == undefined) {
 			gameInfo = sc.multiworld.gamepackage;
 			gameName = "CrossCode";
 		}
