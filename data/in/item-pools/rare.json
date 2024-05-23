@@ -1,0 +1,120 @@
+{
+	"itemPools": {
+		"fillerRareCons": [
+			{
+				"item": ["item", "Chef Sandwich", 3 ],
+				"quantity": 40
+			},
+			{
+				"item": ["item", "Mega-Sandwich", 2 ],
+				"quantity": 30
+			},
+			{
+				"item": ["item", "Sweet Berry Tea", 2 ],
+				"quantity": 40
+			},
+			{
+				"item": ["item", "Flaming Bun", 3 ],
+				"quantity": 35
+			},
+			{
+				"item": ["item", "Steak, rare", 3 ],
+				"quantity": 30
+			},
+			{
+				"item": ["item", "Chili Con Carne", 2 ],
+				"quantity": 30
+			},
+			{
+				"item": ["item", "Shrimp Risotto", 1 ],
+				"quantity": 20
+			},
+			{
+				"item": ["item", "Fruit Pie", 3 ],
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Ginger Tom. Salad", 3 ],
+				"quantity": 10
+			}
+		],
+		"fillerRareDrop": [
+			{
+				"item": ["item", "Season Apples", 5 ],
+				"quantity": 18
+			},
+			{
+				"item": ["item", "Twilight Dew", 5 ],
+				"quantity": 18
+			},
+			{
+				"item": ["item", "Rusty Bits", 5 ],
+				"quantity": 18
+			},
+			{
+				"item": ["item", "Metal Gears", 3 ],
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Purple Ore Lump", 6 ],
+				"quantity": 21
+			},
+			{
+				"item": ["item", "Arid Lumber", 4 ],
+				"quantity": 17
+			},
+			{
+				"item": ["item", "Cactone Fruit", 4 ],
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Palmapple Seed", 3 ],
+				"quantity": 16
+			},
+			{
+				"item": ["item", "Glaring Rock", 4 ],
+				"quantity": 16
+			},
+			{
+				"item": ["item", "Helix Relic", 5 ],
+				"quantity": 14
+			},
+			{
+				"item": ["item", "Ripe Apples", 5 ],
+				"quantity": 17
+			},
+			{
+				"item": ["item", "Sunset Dew", 5 ],
+				"quantity": 17
+			},
+			{
+				"item": ["item", "Steel Comb", 4 ],
+				"quantity": 16
+			},
+			{
+				"item": ["item", "Spiky Nut", 4 ],
+				"quantity": 18
+			},
+			{
+				"item": ["item", "Exotic Resin", 3 ],
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Glowing Sphere", 4 ],
+				"quantity": 17
+			},
+			{
+				"item": ["item", "Catalop Pellet", 4 ],
+				"quantity": 13
+			},
+			{
+				"item": ["item", "Pink Petal", 3 ],
+				"quantity": 13
+			},
+			{
+				"item": ["item", "Spark Tin", 3 ],
+				"quantity": 11
+			}
+		]
+	}
+}

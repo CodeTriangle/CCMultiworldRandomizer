@@ -1,0 +1,112 @@
+{
+	"itemPools": {
+		"fillerCommonCons": [
+			{
+				"item": ["item", "Sandwich", 3], 
+				"quantity": 50
+			},
+			{
+				"item": ["item", "Hi-Sandwich", 3], 
+				"quantity": 40
+			},
+			{
+				"item": ["item", "Green Leaf Tea", 2], 
+				"quantity": 40
+			},
+			{
+				"item": ["item", "Spicy Bun", 3], 
+				"quantity": 30
+			},
+			{
+				"item": ["item", "Meaty Risotto", 1], 
+				"quantity": 30
+			},
+			{
+				"item": ["item", "Fruit Salad", 3], 
+				"quantity": 25
+			},
+			{
+				"item": ["item", "Veggie Wraps", 3], 
+				"quantity": 25
+			}
+		],
+		"fillerCommonDrop": [
+			{
+				"item": ["item", "Autumn Leaves", 4], 
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Gold Beetle", 4], 
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Feather Leaf", 5], 
+				"quantity": 17
+			},
+			{
+				"item": ["item", "Pike Wood", 5], 
+				"quantity": 17
+			},
+			{
+				"item": ["item", "Bergen Ice", 5], 
+				"quantity": 9
+			},
+			{
+				"item": ["item", "Bug Shell", 5], 
+				"quantity": 13
+			},
+			{
+				"item": ["item", "Tough Sand", 4], 
+				"quantity": 13
+			},
+			{
+				"item": ["item", "Vivid Water", 5], 
+				"quantity": 20
+			},
+			{
+				"item": ["item", "Crystal Leek", 4], 
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Old Bones", 4], 
+				"quantity": 12
+			},
+			{
+				"item": ["item", "Parched Leaves", 4], 
+				"quantity": 13
+			},
+			{
+				"item": ["item", "White Grain", 4], 
+				"quantity": 13
+			},
+			{
+				"item": ["item", "Curly Fern", 4], 
+				"quantity": 11
+			},
+			{
+				"item": ["item", "Common Planter", 4], 
+				"quantity": 11
+			},
+			{
+				"item": ["item", "Blue Mango", 4], 
+				"quantity": 11
+			},
+			{
+				"item": ["item", "Venom Shroom", 4], 
+				"quantity": 11
+			},
+			{
+				"item": ["item", "Green Arbor", 4], 
+				"quantity": 9
+			},
+			{
+				"item": ["item", "Blue Grass", 4], 
+				"quantity": 9
+			},
+			{
+				"item": ["item", "Dirty Rubble", 4], 
+				"quantity": 9
+			}
+		]
+	}
+}

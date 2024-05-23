@@ -1,0 +1,222 @@
+{
+	"itemPools": {
+		"required": [
+			{
+				"item": ["item", "Heat"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Cold"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Shock"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Wave"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "SP Upgrade"],
+				"quantity": 2
+			},
+			{
+				"item": ["item", "Disc of Flora"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Disc of Insight"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Cursed Coin"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Mine Pass"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Guild Pass"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Maroon Cave Pass"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Pond Slums Pass"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Blue Ice Shade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Meteor Shade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Red Flame Shade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Yellow Sand Shade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Purple Bolt Shade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Star Shade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Azure Drop Shade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Green Leaf Shade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Green Seed Shade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Mine Key"],
+				"quantity": 5
+			},
+			{
+				"item": ["item", "Faj'ro Key"],
+				"quantity": 9
+			},
+			{
+				"item": ["item", "Zir'vitar Key"],
+				"quantity": 2
+			},
+			{
+				"item": ["item", "So'najiz Key"],
+				"quantity": 4
+			},
+			{
+				"item": ["item", "Krys'kajo Key"],
+				"quantity": 2
+			},
+			{
+				"item": ["item", "Thief's Key"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "White Key"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Radiant Key"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Mine Master Key"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Faj'ro Master Key"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Kajo Master Key"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Old Dojo Key"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Broken Gauntlet"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Broken Shield"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Broken Chakrams"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Broken Sword"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Broken Deck"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Old Blueprint"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Very Large Ember"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Halcyon Droplet"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Portrait of Ruin"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Heaven's Seed"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Everlasting Amber"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Galaxy Berry"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Dream Globe"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Tremor Engine"],
+				"quantity": 4
+			},
+			{
+				"item": ["item", "Geta Wood"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Geta Glue"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Hungry Salmon"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Mysterious Box"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Omni Lock"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Golden Triangle"],
+				"quantity": 3
+			},
+			{
+				"item": ["item", "King's Ring"],
+				"quantity": 1
+			}
+		]
+	}
+}

@@ -24,3 +24,22 @@ export async function readJsonFromFile(path: string) {
 
 	return JSON.parse((await fs.promises.readFile(path)) as unknown as string);
 }
+
+export function getElementIconString(element: string) {
+	switch (element) {
+		case "ALL":
+			return "\\i[element-neutral]\\i[element-heat]\\i[element-cold]\\i[element-shock]\\i[element-wave]";
+		case "ALL_ELEMENTS":
+			return "\\i[element-heat]\\i[element-cold]\\i[element-shock]\\i[element-wave]";
+		case "NEUTRAL":
+			return "\\i[element-neutral]";
+		case "HEAT":
+			return "\\i[element-heat]";
+		case "COLD":
+			return "\\i[element-cold]";
+		case "SHOCK":
+			return "\\i[element-shock]";
+		case "WAVE":
+			return "\\i[element-wave]";
+	}
+}

@@ -1,0 +1,124 @@
+{
+	"itemPools": {
+		"fillerEpicCons": [
+			{
+				"item": ["item", "Cross Sandwich", 2 ],
+				"quantity": 50
+			},
+			{
+				"item": ["item", "Pepper Night Tea", 1 ],
+				"quantity": 40
+			},
+			{
+				"item": ["item", "Blazing Bun", 1 ],
+				"quantity": 35
+			},
+			{
+				"item": ["item", "Chili Dog", 1 ],
+				"quantity": 30
+			},
+			{
+				"item": ["item", "Gourmet Steak", 2 ],
+				"quantity": 30
+			},
+			{
+				"item": ["item", "Cold Platter", 2 ],
+				"quantity": 25
+			},
+			{
+				"item": ["item", "Green Risotto", 2 ],
+				"quantity": 20
+			},
+			{
+				"item": ["item", "Bear Beer", 3 ],
+				"quantity": 20
+			},
+			{
+				"item": ["item", "Crab Mead", 3 ],
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Whale Wine", 3 ],
+				"quantity": 15
+			}
+		],
+		"fillerEpicDrop": [
+			{
+				"item": ["item", "Bear Cicada", 3 ],
+				"quantity": 14
+			},
+			{
+				"item": ["item", "Azure Dragonfly", 3 ],
+				"quantity": 18
+			},
+			{
+				"item": ["item", "Frozen Tear", 3 ],
+				"quantity": 18
+			},
+			{
+				"item": ["item", "Winter Thorn", 2 ],
+				"quantity": 16
+			},
+			{
+				"item": ["item", "Blue Orb", 2 ],
+				"quantity": 14
+			},
+			{
+				"item": ["item", "Rainbow Gem", 3 ],
+				"quantity": 12
+			},
+			{
+				"item": ["item", "Maroon Chestnut", 4 ],
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Ancient Earth", 3 ],
+				"quantity": 14
+			},
+			{
+				"item": ["item", "Lucid Shard", 3 ],
+				"quantity": 16
+			},
+			{
+				"item": ["item", "Wolf Cicada", 4 ],
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Crimson Dragonfly", 3 ],
+				"quantity": 14
+			},
+			{
+				"item": ["item", "Elder Wood", 3 ],
+				"quantity": 18
+			},
+			{
+				"item": ["item", "Royal Hive", 2 ],
+				"quantity": 13
+			},
+			{
+				"item": ["item", "Moon Fruit", 3 ],
+				"quantity": 16
+			},
+			{
+				"item": ["item", "Star Fruit", 2 ],
+				"quantity": 16
+			},
+			{
+				"item": ["item", "Virus Root", 2 ],
+				"quantity": 16
+			},
+			{
+				"item": ["item", "Steel Bamboo", 4 ],
+				"quantity": 12
+			},
+			{
+				"item": ["item", "Mystery Grape", 3 ],
+				"quantity": 12
+			},
+			{
+				"item": ["item", "Cobalt Crystal", 4 ],
+				"quantity": 12
+			}
+		]
+	}
+}

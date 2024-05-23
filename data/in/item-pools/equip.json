@@ -1,0 +1,196 @@
+{
+	"itemPools": {
+		"equipChests": [
+			{
+				"item": ["item", "Daikon"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Copper Gull"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Rocksplitter"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Prickly Bracer"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Winterclaw"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Hidden Blade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Bright Bracer"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Humming Razor"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Sunset Claw"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Aehre"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Sneaky Shiv"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Sonic Spike"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Shining Bracer"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Warkeeper"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Cooling Veil"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Mighty Strand"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Furry Cap"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Assault Vest"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Bronze Chest Plate"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Tattered Satchel"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Silver Chest Plate"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Vermillion Mantle"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Timeworn Belt"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Bluefiber Robe"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Golden Chest Plate"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Ancient Sandals"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Lead Boots"],
+				"quantity": 1
+			}
+		],
+		"equipQuests": [
+			{
+				"item": ["item", "Edge o' All"],
+				"quantity": 2
+			},
+			{
+				"item": ["item", "Bronze Edge"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Battered Fist"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Disciple Gloves"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Hunter's Bolt"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Adept Gloves"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Infinity Spiral Drill"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Explorer's Cap"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Miner's Helmet"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Scarecrown"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Climate Cowl"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Second Hide"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Grasswalkers"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Wooly Socks"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Weird Skates"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Lunatic Paws"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Strawhat"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Dried Grass Hat"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Strawberry Hat"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "The Last Strawhat"],
+				"quantity": 1
+			}
+		]
+	}
+}

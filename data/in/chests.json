@@ -1413,24 +1413,6 @@
 				]
 			]
 		},
-		"Bergen Village South - Storage Room": {
-			"location": {
-				"map": "bergen.storage",
-				"mapId": 71
-			},
-			"clearance": "Default",
-			"region": {
-				"linear": "3",
-				"open": "open3"
-			},
-			"reward": [
-				[
-					"item",
-					"Just Water",
-					6
-				]
-			]
-		},
 		"Bergen Village - Omni Gilders Basement Left (Bronze)": {
 			"location": {
 				"map": "bergen.interior.guild-basement",
@@ -1438,9 +1420,12 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "4",
+				"open": "open4.1"
 			},
+			"condition": [
+				[ "item", "Heat" ]
+			],
 			"reward": [
 				[
 					"item",

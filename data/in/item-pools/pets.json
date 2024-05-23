@@ -1,0 +1,90 @@
+{
+	"itemPools": {
+		"pets": [
+			{
+				"item": ["item", "Orange Twister"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Baby Peng"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "FDNI Fox"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Good Boy"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "S-Rex"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Lil' Reap"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Red Liz"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Shy Fly"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "T.A.N.K."],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Micro Crawler"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Cool Bar"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Batboy"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Butterfliege"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Piggybank"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Seedling"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Turbo"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "I Rob-0T"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Baby of the East"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Goose"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Nuclear Roach"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Chunky"],
+				"quantity": 1
+			}
+		]
+	}
+}

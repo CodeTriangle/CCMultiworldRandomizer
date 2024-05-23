@@ -1,0 +1,45 @@
+{
+	"progressiveChains": {
+		"areaItemsAll": {
+			"displayName": "Area Unlock",
+			"id": 50,
+			"classification": "progression",
+			"items": [
+				{ "item": ["item", "Green Leaf Shade", 1] },
+				{ "item": ["item", "Mine Pass", 1] },
+				{ "item": ["item", "Blue Ice Shade", 1] },
+				{ "item": ["item", "Yellow Sand Shade", 1] },
+				{ "item": ["item", "Red Flame Shade", 1] },
+				{ "item": ["item", "Green Seed Shade", 1] },
+				{ "item": ["item", "Purple Bolt Shade", 1] },
+				{ "item": ["item", "Azure Drop Shade", 1] },
+				{ "item": ["item", "Star Shade", 1] },
+				{ "item": ["item", "Meteor Shade", 1] }
+			]
+		},
+		"areaItemsOverworld": {
+			"displayName": "Overworld Area Unlock",
+			"id": 51,
+			"classification": "progression",
+			"items": [
+				{ "item": ["item", "Green Leaf Shade", 1] },
+				{ "item": ["item", "Blue Ice Shade", 1] },
+				{ "item": ["item", "Red Flame Shade", 1] },
+				{ "item": ["item", "Green Seed Shade", 1] },
+				{ "item": ["item", "Star Shade", 1] },
+				{ "item": ["item", "Meteor Shade", 1] }
+			]
+		},
+		"areaItemsDungeons": {
+			"displayName": "Dungeon Unlock",
+			"id": 52,
+			"classification": "progression",
+			"items": [
+				{ "item": ["item", "Mine Pass", 1] },
+				{ "item": ["item", "Yellow Sand Shade", 1] },
+				{ "item": ["item", "Purple Bolt Shade", 1] },
+				{ "item": ["item", "Azure Drop Shade", 1] }
+			]
+		}
+	}
+}

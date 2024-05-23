@@ -644,16 +644,6 @@
 				}
 			}
 		},
-		"bergen.storage": {
-			"chests": {
-				"71": {
-					"name": "Bergen Village South - Storage Room",
-					"mwids": [
-						3235824076
-					]
-				}
-			}
-		},
 		"bergen.interior.guild-basement": {
 			"chests": {
 				"42": {
@@ -2962,6 +2952,16 @@
 					"name": "So'najiz Temple - Flaming Conveyance",
 					"mwids": [
 						3235824344
+					]
+				}
+			}
+		},
+		"bergen.storage": {
+			"chests": {
+				"71": {
+					"name": "Bergen Village South - Storage Room",
+					"mwids": [
+						3235824076
 					]
 				}
 			}

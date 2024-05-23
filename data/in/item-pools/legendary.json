@@ -1,0 +1,46 @@
+{
+	"itemPools": {
+		"fillerLegendary": [
+			{
+				"item": ["item", "Final Dinner", 1 ],
+				"quantity": 30
+			},
+			{
+				"item": ["item", "Full Course", 1 ],
+				"quantity": 30
+			},
+			{
+				"item": ["item", "One Up", 1 ],
+				"quantity": 30
+			},
+			{
+				"item": ["item", "Rising Super Star", 1 ],
+				"quantity": 25
+			},
+			{
+				"item": ["item", "Guacamole Toast", 1 ],
+				"quantity": 25
+			},
+			{
+				"item": ["item", "Cheese Spaetzle", 1 ],
+				"quantity": 20
+			},
+			{
+				"item": ["item", "Spicy Beat-0-Type", 1 ],
+				"quantity": 20
+			},
+			{
+				"item": ["item", "Durian", 1 ],
+				"quantity": 20
+			},
+			{
+				"item": ["item", "Dk Pepper", 1 ],
+				"quantity": 15
+			},
+			{
+				"item": ["item", "Mooncake", 1 ],
+				"quantity": 12
+			}
+		]
+	}
+}
