@@ -1004,10 +1004,7 @@
 				"open": "open2"
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Red Flame Shade", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Red Flame Shade", 1 ]
 			]
 		},
 		"Training: VPI": {
@@ -1017,10 +1014,8 @@
 				"open": "open2"
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Red Flame Shade", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Red Flame Shade", 1 ]
+
 			]
 		},
 		"Faction Introduction": {
@@ -1067,6 +1062,46 @@
 			"condition": [
 				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Red Flame Shade", 1 ],
+				[ "item", "Heat", 1],
+				[ "item", "Cold", 1],
+				[ "quest", "It Can Dig But It Can't Hide" ]
+			],
+			"reward": [
+				[ "item", "Twilight Dew", 9 ], [ "item", "Crimson Dragonfly", 4 ]
+			]
+		},
+		"Petty Crime Hunter": {
+			"questid": "rhg-1-pickpocket",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"reward": [
+				[ "item", "Hi-Sandwich", 3 ], [ "item", "Just Water", 3 ]
+			]
+		},
+		"Smuggle Trouble": {
+			"questid": "rhg-2-crate_smuggle",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "quest", "Petty Crime Hunter" ]
+			],
+			"reward": [
+				[ "item", "Battered Fist", 1 ], [ "item", "Sweet Berry Tea", 3 ]
+			]
+		},
+		"Wet Work": {
+			"questid": "rhg-3-maritime_smuggle",
+			"region": {
+				"linear": "3",
+				"open": "open3" 
+			},
+			"condition": [
+				[ "item", "Blue Ice Shade", 1 ],
+
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
 				[ "quest", "It Can Dig But It Can't Hide" ]
@@ -1074,48 +1109,6 @@
 			"reward": [
 				[ "item", "Twilight Dew", 9 ],
 				[ "item", "Crimson Dragonfly", 4 ]
-			]
-		},
-		"Petty Crime Hunter": {
-			"questid": "rhg-1-pickpocket",
-			"region": {
-				"linear": "3",
-				"open": "open3"
-			},
-			"reward": [
-				[ "item", "Hi-Sandwich", 3 ],
-				[ "item", "Just Water", 3 ]
-			]
-		},
-		"Smuggle Trouble": {
-			"questid": "rhg-2-crate_smuggle",
-			"region": {
-				"linear": "3",
-				"open": "open3"
-			},
-			"condition": [
-				[ "quest", "Petty Crime Hunter" ]
-			],
-			"reward": [
-				[ "item", "Battered Fist", 1 ],
-				[ "item", "Sweet Berry Tea", 3 ]
-			]
-		},
-		"Wet Work": {
-			"questid": "rhg-3-maritime_smuggle",
-			"region": {
-				"linear": "3",
-				"open": "open3"
-			},
-			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ],
-				[ "quest", "Smuggle Trouble" ]
-			],
-			"reward": [
-				[ "item", "Hunter's Bolt", 1 ],
-				[ "item", "Shrimp Risotto", 4 ]
 			]
 		},
 		"Small Time Delivery": {

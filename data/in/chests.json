@@ -1441,6 +1441,22 @@
 				"linear": "3",
 				"open": "open3"
 			},
+			"condition": [
+				[ "item", "Heat" ],
+				[
+				"or",
+					[
+						"item",
+						"Heat"
+					],
+					[
+						"item",
+						"Mine Key",
+						1
+					]
+				],
+				[ "quest","The Legendary Bunny" ]
+			],
 			"reward": [
 				[
 					"item",
