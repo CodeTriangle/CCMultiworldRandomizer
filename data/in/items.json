@@ -458,7 +458,11 @@
 			"id": 151
 		},
 		"Mine Key": {
-			"id": 152
+			"id": 152,
+			"maxQuantity": {
+				"linear": 5,
+				"open": 5
+			}
 		},
 		"Mine Master Key": {
 			"id": 153
@@ -950,7 +954,11 @@
 			"id": 318
 		},
 		"So'najiz Key": {
-			"id": 319
+			"id": 319,
+			"maxQuantity": {
+				"linear": 4,
+				"open": 4
+			}
 		},
 		"Jack's Flame": {
 			"id": 320

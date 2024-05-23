@@ -1,57 +1,6 @@
 import * as ap from 'archipelago.js';
 import type MwRandomizer from '../plugin';
-
-import type * as _ from 'nax-ccuilib/src/headers/nax/input-field.d.ts'
-
-declare global {
-	namespace sc {
-		interface APConnectionStatusGui extends sc.TextGui, sc.Model.Observer {
-			updateText(this: this): void;
-		}
-		interface APConnectionStatusGuiConstructor extends ImpactClass<APConnectionStatusGui> {
-			new (): APConnectionStatusGui;
-		}
-		var APConnectionStatusGui: APConnectionStatusGuiConstructor;
-
-		interface PauseScreenGui {
-			apConnectionStatusGui: sc.APConnectionStatusGui;
-			apSettingsButton: sc.ButtonGui;
-		}
-		enum MENU_SUBMENU {
-			AP_CONNECTION,
-		}
-
-		interface APConnectionBox extends sc.BaseMenu, sc.Model.Observer {
-			fields: {key: string; label: string}[];
-			textGuis: sc.TextGui[];
-			inputGuis: nax.ccuilib.InputField[];
-			boundExitCallback: () => void;
-			buttongroup: sc.ButtonGroup;
-			inputList: ig.GuiElementBase;
-			textColumnWidth: number;
-			vSpacer: number;
-			hSpacer: number;
-			content: ig.GuiElementBase;
-			msgBox: sc.BlackWhiteBox;
-			apConnectionStatusGui: sc.APConnectionStatusGui;
-			msgBoxBox: ig.GuiElementBase;
-			connect: sc.ButtonGui;
-			disconnect: sc.ButtonGui;
-			buttonHolder: ig.GuiElementBase;
-			back: null;
-			keepOpen: boolean;
-
-			getOptions(this: this): Record<string, string>;
-			onBackButtonPress(this: this): void;
-			connectFromInput(this: this): void;
-		}
-		interface APConnectionBoxConstructor extends ImpactClass<APConnectionBox> {
-			new (): APConnectionBox;
-		}
-		var APConnectionBox: APConnectionBoxConstructor;
-	}
-}
-
+import "../types/multiworld-model.d";
 
 export function patch(plugin: MwRandomizer) {
 
@@ -87,7 +36,7 @@ export function patch(plugin: MwRandomizer) {
 
 			this.apSettingsButton = new sc.ButtonGui("\\i[ap-logo] Archipelago Settings");
 			this.apSettingsButton.setPos(3, 3);
-			this.buttonGroup.addFocusGui(this.apSettingsButton, 1000, 1000 /* makes it unfocusable by gamepad */);
+			this.buttonGroup.addFocusGui(this.apSettingsButton);
 			this.apSettingsButton.onButtonPress = function () {
 				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_CONNECTION);
 				sc.model.enterMenu(true);
@@ -115,11 +64,6 @@ export function patch(plugin: MwRandomizer) {
 			}
 		],
 
-		transitions: {
-			DEFAULT: { state: {}, time: 0.25, timeFunction: KEY_SPLINES.LINEAR },
-			HIDDEN: { state: { alpha: 0 }, time: 0.25, timeFunction: KEY_SPLINES.LINEAR },
-		},
-
 		textGuis: [],
 		inputGuis: [],
 
@@ -141,8 +85,6 @@ export function patch(plugin: MwRandomizer) {
 
 		init: function () {
 			this.parent();
-
-			this.boundExitCallback = () => {}
 
 			this.hook.zIndex = 9999999;
 			this.hook.localAlpha = 0.0;
@@ -248,7 +190,7 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		getOptions() {
-			let result: Record<string, string> = {};
+			let result = {};
 			for (let i = 0; i < this.fields.length; i++) {
 				result[this.fields[i].key] = this.inputGuis[i].value.join("");
 			}
@@ -258,7 +200,7 @@ export function patch(plugin: MwRandomizer) {
 
 		connectFromInput() {
 			let options = this.getOptions();
-			if (isNaN(options.port as unknown as number)) {
+			if (isNaN(options.port)) {
 				sc.Dialogs.showErrorDialog(
 					"Port is not a number",
 					true,
@@ -292,12 +234,12 @@ export function patch(plugin: MwRandomizer) {
 			this.doStateTransition("DEFAULT");
 		},
 
-		exitMenu: function () {
+		hideMenu: function () {
 			this.parent();
 			ig.interact.setBlockDelay(0.1);
 			this.removeObservers();
+			this.msgBox.doStateTransition("HIDDEN");
 			this.doStateTransition("HIDDEN", false);
-
 		},
 
 		onBackButtonPress: function () {
@@ -307,33 +249,20 @@ export function patch(plugin: MwRandomizer) {
 
 		addObservers: function () {
 			sc.Model.addObserver(sc.model, this);
-			sc.Model.addObserver(sc.multiworld, this);
 		},
 
 		removeObservers: function () {
 			sc.Model.removeObserver(sc.model, this);
-			sc.Model.removeObserver(sc.multiworld, this);
 		},
 
 		modelChanged: function(model: any, msg: number, data: any) {
-			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.OPTIONS_PRESENT) {
-				// if we launched from the title screen that means we are in a context
-				// where we want to put in our login info and start the game.
-				// so we wait for options to be present and when they are, we exit the menu.
-				// exiting the menu automatically activates a bit of code
-				// set by the new game mode select callback.
-				// if connection details are available, it starts the game.
-				if (sc.model.isTitle()) {
-					this.doStateTransition("HIDDEN");
-					sc.menu.pushMenu(sc.MENU_SUBMENU.NEW_GAME);
-				}
+			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
 			}
 		},
 
 		onDetach: function () {},
 	});
 
-	// @ts-expect-error
 	sc.MENU_SUBMENU.AP_CONNECTION = 300000;
 	sc.SUB_MENU_INFO[sc.MENU_SUBMENU.AP_CONNECTION] = {
 		Clazz: sc.APConnectionBox,

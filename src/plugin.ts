@@ -1,24 +1,16 @@
 import * as ap from 'archipelago.js';
-import {WorldData, ItemInfo} from './item-data.model';
+import {WorldData, RawElement, RawQuest, ItemInfo} from './item-data.model';
 import {readJsonFromFile} from './utils';
+import "./types/multiworld-model.d";
 import {applyPatches} from "./patches/index";
-
-import type * as _ from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
-
-declare global {
-	namespace sc {
-		var randoData: WorldData;
-		var multiWorldHud: sc.MultiWorldHudBox;
-	}
-}
 
 export default class MwRandomizer {
 	baseDirectory: string;
-	randoData!: WorldData;
+	randoData: WorldData | null = null;
 	itemdb: any;
 
 	constructor(mod: {baseDirectory: string}) {
-		this.baseDirectory = mod.baseDirectory;
+		this.baseDirectory = mod.baseDirectory
 	}
 
 	getColoredStatus(status: string) {
@@ -35,9 +27,9 @@ export default class MwRandomizer {
 
 	getItemInfo(item: ap.NetworkItem): ItemInfo {
 		let gameName: string = sc.multiworld.client.data.players[item.player].game;
-		let gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName)!;
+		let gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName);
 		if (gameInfo.item_id_to_name[item.item] == undefined) {
-			gameInfo = sc.multiworld.gamepackage;
+			gameInfo = sc.multiworld.datapackage;
 			gameName = "CrossCode";
 		}
 
@@ -86,8 +78,95 @@ export default class MwRandomizer {
 		return {icon, label, player, level: 0, isScalable: false};
 	}
 
-	getGuiString(item: {icon: string; label: string}): string {
+	getGuiString(item: {icon: string, label: string}): string {
 		return `\\i[${item.icon}]${item.label}`;
+	}
+
+	/**
+	 * Modify `itemsGui` such that represents the quest rewards for the
+	 * multiworld, based on user preferences for occluding specific data.
+	 *
+	 * @remarks
+	 * This function signature sucks. I have to do things a really annoying way
+	 * for this to work.
+	 *
+	 * @param quest - The sc.Quest object representing the quest in the base game.
+	 * @param showRewardAnyway - Overrides computed parameter for whether to hide
+	 * the rewards. This is meant to bypass user settings and show the reward
+	 * even if it is not desired (i.e. at the end of the quest).
+	 * @param mwQuest - The object from `data.json` that stores location IDs.
+	 * @param itemsGui - The GUI to modify.
+	 * @param gfx - Argument required to draw the level if required. Inspect
+	 * sc.QuestDialog.setQuest or sc.QuestDetailsView._setQuest for how to obtain
+	 * it.
+	 */
+
+	makeApItemsGui(
+		quest: sc.Quest,
+		showRewardAnyway: boolean,
+		mwQuest: RawQuest,
+		itemsGui: ig.GuiElementBase,
+		gfx: ig.Image
+	) {
+		if (sc.multiworld.client.status != ap.CONNECTION_STATUS.CONNECTED) {
+			return;
+		}
+
+		let itemGuis: sc.TextGui[] = [];
+		let worldGuis: sc.TextGui[] = [];
+
+		itemsGui.removeAllChildren();
+		itemsGui.gfx = gfx;
+
+		const hiddenQuestRewardMode = sc.multiworld.options.hiddenQuestRewardMode;
+		let hideRewards = quest.hideRewards;
+		if (hiddenQuestRewardMode == "show_all") {
+			hideRewards = false;
+		} else if (hiddenQuestRewardMode == "hide_all") {
+			hideRewards = true;
+		}
+
+		hideRewards = hideRewards && !showRewardAnyway;
+
+		if (sc.multiworld.options.questDialogHints && !hideRewards) {
+			sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...mwQuest.mwids);
+		}
+
+		for (let i = 0; i < mwQuest.mwids.length; i++) {
+			const mwid: number = mwQuest.mwids[i]
+			const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
+
+			const itemInfo = this.getItemInfo(item);
+
+			if (hideRewards) {
+				itemInfo.label = "?????????????";
+				if (sc.multiworld.questSettings.hidePlayer) {
+					itemInfo.player =  "?????????????";
+				}
+			}
+
+			const itemGui = new sc.TextGui(this.getGuiString(itemInfo));
+			itemGui.setPos(0, i * 20);
+			const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
+
+			if (itemInfo.level > 0) {
+				itemGui.setDrawCallback(function (width: number, height: number) {
+					sc.MenuHelper.drawLevel(
+						itemInfo.level,
+						width,
+						height,
+						itemsGui.gfx,
+						itemInfo.isScalable
+					);
+				});
+			}
+
+			worldGui.setPos(15, itemGui.hook.size.y - 2);
+			itemsGui.addChildGui(itemGui);
+			itemGui.addChildGui(worldGui);
+			worldGuis.push(worldGui);
+			itemGuis.push(itemGui);
+		}
 	}
 
 	async prestart() {
@@ -96,9 +175,10 @@ export default class MwRandomizer {
 
 		ig._loadScript("mw-rando.multiworld-model");
 
-		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/out/data.json");
+		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/out/data.json")
 		this.randoData = randoData;
-		sc.randoData = randoData;
+
+		let maps = randoData.items;
 
 		let itemdb = await readJsonFromFile("assets/data/item-database.json");
 		this.itemdb = itemdb;
@@ -113,10 +193,14 @@ export default class MwRandomizer {
 			addPartyMember(name: string, ...args) {
 				this.parent(name, ...args);
 				sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
-			},
+			}
 		});
 
-		let mwIcons = new ig.Font(plugin.baseDirectory.substring(7) + "assets/media/font/icons-multiworld.png", 16, ig.MultiFont.ICON_START);
+		let mwIcons = new ig.Font(
+			plugin.baseDirectory.substring(7) + "assets/media/font/icons-multiworld.png",
+			16,
+			ig.MultiFont.ICON_START,
+		);
 
 		let index = sc.fontsystem.font.iconSets.length;
 		sc.fontsystem.font.pushIconSet(mwIcons);
@@ -131,8 +215,8 @@ export default class MwRandomizer {
 		});
 
 		sc.CrossCode.inject({
-			init() {
-				this.parent();
+			init(...args) {
+				this.parent(...args);
 				sc.multiWorldHud = new sc.MultiWorldHudBox();
 				sc.gui.rightHudPanel.addHudBox(sc.multiWorldHud);
 			},

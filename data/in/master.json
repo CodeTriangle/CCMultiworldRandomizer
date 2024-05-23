@@ -1,15 +1,15 @@
 {
-	"_includes": [
+	"includes": [
 		"regions.json",
 		"elements.json",
 		"chests.json",
 		"cutscenes.json",
-		"quests-always.json",
-		"quests-qr.json",
+		"quests.json",
 		"items.json",
-		"progressive-items.json",
-		"vars.json",
-		"item-pools/master.json"
+		"vars.json"
+	],
+	"addons": [
+		"quest_rando"
 	],
 	"version": "5",
 	"modes": [ "linear", "open" ],

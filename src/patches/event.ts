@@ -1,6 +1,6 @@
 import * as ap from 'archipelago.js';
 import type MwRandomizer from "../plugin";
-import {RawElement} from '../item-data.model';
+import "../types/multiworld-model.d";
 
 export function patch(plugin: MwRandomizer) {
 	let maps = plugin.randoData?.items;
