@@ -1,4 +1,28 @@
 {
+	"chests": {
+		"Bergen Village - Omni Gilders Basement Left (Bronze)": {
+			"location": {
+				"map": "bergen.interior.guild-basement",
+				"mapId": 42
+			},
+			"clearance": "Bronze",
+			"region": {
+				"linear": "4",
+				"open": "open4.1"
+			},
+			"condition": [
+				[ "or", [ "item", "Heat" ], [ "item", "Mine Key", 1 ] ],
+				[ "quest","The Legendary Bunny" ]
+			],
+			"reward": [
+				[
+					"item",
+					"Prickly Bracer",
+					1
+				]
+			]
+		}
+	},
 	"cutscenes": {
 		"Talatu Bergen 25%": {
 		    "location": {
@@ -950,10 +974,7 @@
 				"open": "open2" 
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Red Flame Shade", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Red Flame Shade", 1 ]
 			]
 		},
 		"Training: VPI": {
@@ -963,10 +984,8 @@
 				"open": "open2" 
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Red Flame Shade", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Red Flame Shade", 1 ]
+
 			]
 		},
 		"Faction Introduction": {

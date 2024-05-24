@@ -1431,27 +1431,6 @@
 				]
 			]
 		},
-		"Bergen Village - Omni Gilders Basement Left (Bronze)": {
-			"location": {
-				"map": "bergen.interior.guild-basement",
-				"mapId": 42
-			},
-			"clearance": "Bronze",
-			"region": {
-				"linear": "4",
-				"open": "open4.1"
-			},
-			"condition": [
-				[ "item", "Heat" ]
-			],
-			"reward": [
-				[
-					"item",
-					"Prickly Bracer",
-					1
-				]
-			]
-		},
 		"Bergen Trail - Abandoned Cave": {
 			"location": {
 				"map": "bergen-trail.cave.cave-08-smith",
@@ -4789,8 +4768,20 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "28",
-				"open": "open15.1"
+				"open": "open10"
 			},
+			"condition": [
+				[
+					"item",
+					"Azure Drop Shade",
+					1
+				],
+				[
+					"item",
+					"Purple Bolt Shade",
+					1
+				]
+			],
 			"reward": [
 				[
 					"item",
@@ -4814,13 +4805,6 @@
 					"item",
 					"Golden Bars",
 					2
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Wave",
-					1
 				]
 			]
 		},
