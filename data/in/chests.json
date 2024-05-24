@@ -4367,7 +4367,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple GF - Test of Memory 2": {
+		"Faj'ro Temple GF - Test of Memory Left": {
 			"location": {
 				"map": "heat-dng.g.room-13",
 				"mapId": 2
@@ -4385,7 +4385,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple GF - Test of Memory 1": {
+		"Faj'ro Temple GF - Test of Memory Right": {
 			"location": {
 				"map": "heat-dng.g.room-14",
 				"mapId": 2
