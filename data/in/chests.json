@@ -4802,8 +4802,20 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "28",
-				"open": "open15.1"
+				"open": "open10"
 			},
+			"condition": [
+				[
+					"item",
+					"Azure Drop Shade",
+					1
+				],
+				[
+					"item",
+					"Purple Bolt Shade",
+					1
+				]
+			],
 			"reward": [
 				[
 					"item",
@@ -4827,13 +4839,6 @@
 					"item",
 					"Golden Bars",
 					2
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Wave",
-					1
 				]
 			]
 		},
