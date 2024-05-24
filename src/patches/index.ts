@@ -6,6 +6,7 @@ import { patch as patchEvent } from "./event";
 import { patch as patchGui } from "./gui-misc";
 import { patch as patchMWHud } from "./multiworld-hud";
 import { patch as patchQuest } from "./quest";
+import { patch as patchNewGame } from "./new-game";
 
 export function applyPatches(plugin: MwRandomizer) {
 	patchChest(plugin);
@@ -14,4 +15,5 @@ export function applyPatches(plugin: MwRandomizer) {
 	patchGui(plugin);
 	patchMWHud(plugin);
 	patchQuest(plugin);
+	patchNewGame(plugin);
 }

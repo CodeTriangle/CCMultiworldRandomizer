@@ -1,7 +1,6 @@
 import { defineVarProperty } from "../utils";
 import * as ap from "archipelago.js";
 import {ig, sc} from "ultimate-crosscode-typedefs";
-import {ItemInfo} from "../item-data.model";
 
 ig.module("mw-rando.multiworld-model")
 	.requires("impact.feature.storage.storage")
@@ -26,7 +25,7 @@ ig.module("mw-rando.multiworld-model")
 			init() {
 				this.client = new ap.Client();
 				ig.storage.register(this);
-				this.numItems = sc.inventory.items.length;
+				this.numItems = 676;
 
 				defineVarProperty(this, "connectionInfo", "mw.connectionInfo");
 				defineVarProperty(this, "lastIndexSeen", "mw.lastIndexSeen");
@@ -86,10 +85,35 @@ ig.module("mw-rando.multiworld-model")
 					this.localCheckedLocations = [];
 				}
 
+				if (sc.model.isTitle() || ig.game.mapName == "newgame") {
+					return;
+				}
+
+				if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
+					this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
+				}
+
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
 					let item = this.client.items.received[i];
 					this.addMultiworldItem(item, i);
 				}
+
+				let area = ig.game.mapName.split(".")[0];
+
+				new ap.Client().send(
+					{
+						cmd: "Set",
+						key: "area",
+						default: "rookie-harbor",
+						want_reply: false,
+						operations: [
+							{
+								operation: "replace",
+								value: area,
+							}
+						]
+					}
+				);
 			},
 
 			notifyItemsSent(items: ap.NetworkItem[]) {
@@ -131,7 +155,7 @@ ig.module("mw-rando.multiworld-model")
 						sc.model.player.setCore(elementConstant, true);
 					}
 				} else if (itemInfo.item < this.baseNormalItemId) {
-					switch (this.datapackage.item_id_to_name[itemInfo.item]) {
+					switch (this.gamepackage.item_id_to_name[itemInfo.item]) {
 						case "SP Upgrade":
 							sc.model.player.setSpLevel(Number(sc.model.player.spLevel) + 1);
 							sc.party.currentParty.forEach((name: string) => {
@@ -176,6 +200,8 @@ ig.module("mw-rando.multiworld-model")
 
 				this.client.addListener('LocationInfo', listener);
 
+				// The following function's definition is broken, so I ignore the error.
+				// @ts-ignore
 				this.client.locations.scout(mode, ...locations);
 			},
 
@@ -200,7 +226,10 @@ ig.module("mw-rando.multiworld-model")
 
 				this.client.addListener('LocationInfo', listener);
 
-				let toScout: number[] = this.client.locations.missing;
+				// In case the file was loaded on a previous version, we need to add the checked locations too.
+				// This might be able to go away once there is version checking.
+				let toScout: number[] = this.client.locations.missing
+					.concat(this.client.locations.checked);
 
 				if (!this.locationInfo) {
 					this.locationInfo = {};
@@ -257,9 +286,12 @@ ig.module("mw-rando.multiworld-model")
 					return;
 				}
 
-				this.datapackage = this.client.data.package.get("CrossCode");
+				this.gamepackage = this.client.data.package.get("CrossCode")!;
 
 				this.client.addListener('ReceivedItems', (packet: ap.ReceivedItemsPacket) => {
+					if (!ig.game.mapName || ig.game.mapName == "newgame") {
+						return;
+					}
 					let index = packet.index;
 					for (const [offset, itemInfo] of packet.items.entries()) {
 						this.addMultiworldItem(itemInfo, index + offset);
@@ -268,7 +300,8 @@ ig.module("mw-rando.multiworld-model")
 
 				this.connectionInfo = info;
 
-				this.mode = this.client.data.slotData.mode;
+				// this is always going to be a string
+				this.mode = this.client.data.slotData.mode as unknown as string;
 				this.options = this.client.data.slotData.options;
 
 				const obfuscationLevel: string = this.options.hiddenQuestObfuscationLevel;
@@ -278,9 +311,9 @@ ig.module("mw-rando.multiworld-model")
 					hideIcon: obfuscationLevel == "hide_all"
 				};
 
-				sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
+				sc.multiworld.onLevelLoaded();
 
-				this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
+				sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
 
 				this.storeAllLocationInfo();
 
@@ -291,8 +324,6 @@ ig.module("mw-rando.multiworld-model")
 						this.reallyCheckLocation(location);
 					}
 				}
-
-				sc.multiworld.onLevelLoaded();
 			},
 		});
 

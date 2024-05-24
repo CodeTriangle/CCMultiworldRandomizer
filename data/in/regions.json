@@ -301,7 +301,7 @@
 					]
 				},
 				{
-					"from": "open4.3",
+					"from": "open4.4",
 					"to": "open4.6",
 					"condition": [
 						[ "item", "Heat", 1 ]

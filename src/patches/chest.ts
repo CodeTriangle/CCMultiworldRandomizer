@@ -1,6 +1,55 @@
-import * as ap from 'archipelago.js';
+import * as ap from "archipelago.js";
 import type MwRandomizer from "../plugin";
-import "../types/multiworld-model.d";
+import {RawChest} from "../item-data.model";
+
+declare global {
+	namespace ig.ENTITY {
+		interface Chest {
+			mwCheck?: RawChest;
+			analyzeColor: sc.ANALYSIS_COLORS;
+			analyzeLabel: string;
+			rawChest: ap.NetworkItem;
+		}
+	}
+	namespace sc {
+		namespace QUICK_MENU_TYPES {
+			namespace Chest {
+				interface Settings extends sc.QuickMenuTypesBase {
+					type: "Chest";
+					entity: ig.ENTITY.Chest;
+				}
+			}
+			interface Chest extends sc.QuickMenuTypesBase {}
+			interface ChestConstructor extends ImpactClass<Chest> {
+				new (
+					type: string,
+					settings: sc.QUICK_MENU_TYPES.Chest.Settings,
+					screen: sc.QuickFocusScreen
+				): Chest;
+			}
+			var Chest: ChestConstructor;
+		}
+		namespace QUICK_INFO_BOXES {
+			interface Chest extends ig.BoxGui {
+				areaGui: sc.TextGui;
+				locationGui: sc.TextGui;
+				line: sc.LineGui;
+				clearance: sc.TextGui;
+				arrow: sc.QuickItemArrow;
+				typeGui: sc.TextGui;
+				active: boolean;
+
+				show(this: this, tooltip: sc.QuickMenuTypesBase): void;
+				setData(this: this, chest: ig.ENTITY.Chest): boolean;
+				alignToBase(this: this, otherHook: ig.GuiHook): void;
+			}
+			interface ChestConstructor extends ImpactClass<Chest> {
+				new (): Chest;
+			}
+			var Chest: ChestConstructor;
+		}
+	}
+}
 
 export function patch(plugin: MwRandomizer) {
 	ig.ENTITY.Chest.inject({
@@ -21,8 +70,15 @@ export function patch(plugin: MwRandomizer) {
 				return;
 			}
 
-			const keyLayer = this.animSheet.anims.idleKey.animations[1];
-			const masterKeyLayer = this.animSheet.anims.idleMasterKey.animations[1];
+			const anims = this.animSheet.anims as unknown as {
+				idleKey: ig.MultiDirAnimationSet
+				idleMasterKey: ig.MultiDirAnimationSet
+				idle: ig.MultiDirAnimationSet
+				open: ig.MultiDirAnimationSet
+				end: ig.MultiDirAnimationSet
+			}
+			const keyLayer = anims.idleKey.animations[1];
+			const masterKeyLayer = anims.idleMasterKey.animations[1];
 			let layerToAdd = null;
 
 			this.analyzeColor = sc.ANALYSIS_COLORS.GREY;
@@ -30,6 +86,11 @@ export function patch(plugin: MwRandomizer) {
 
 			let newOffY = 0;
 			this.rawChest = sc.multiworld.locationInfo[this.mwCheck.mwids[0]];
+
+			if (this.rawChest == undefined) {
+				return;
+			}
+
 			let flags = this.rawChest.flags;
 			if (flags & (ap.ITEM_FLAGS.NEVER_EXCLUDE | ap.ITEM_FLAGS.TRAP)) {
 				// USEFUL and TRAP items get a blue chest
@@ -45,28 +106,28 @@ export function patch(plugin: MwRandomizer) {
 				this.analyzeLabel = "Progression";
 			}
 
-			this.animSheet.anims.idleKey = this.animSheet.anims.idleMasterKey = this.animSheet.anims.idle;
+			anims.idleKey = anims.idleMasterKey = anims.idle;
 
 			if (newOffY == 0) {
 				return;
 			}
 
-			for (const name of Object.keys(this.animSheet.anims)) {
-				let animations = this.animSheet.anims[name].animations;
+			for (const name of Object.keys(anims) as (keyof typeof anims)[]) {
+				let animations = anims[name].animations;
 
 				if (name.startsWith("idle")) {
 					animations[0].sheet.offY = newOffY;
 					layerToAdd && animations.splice(1, 0, layerToAdd);
 				}
 				if (name == "open" || name == "end") {
-					this.animSheet.anims[name].animations[0].sheet.offY = newOffY + 24;
+					anims[name].animations[0].sheet.offY = newOffY + 24;
 				}
 			}
 		},
 
 		getQuickMenuSettings() {
 			let disabled = this.isOpen || (this.hideManager && this.hideManager.hidden);
-			if (this.mwCheck) {
+			if (this.mwCheck && this.rawChest) {
 				return {
 					type: "Chest",
 					disabled: disabled,
@@ -77,7 +138,7 @@ export function patch(plugin: MwRandomizer) {
 					disabled: disabled,
 					color: this.analyzeColor ?? 0,
 					text: "\\c[1]Not in logic",
-				}
+				};
 			}
 		},
 
@@ -88,7 +149,7 @@ export function patch(plugin: MwRandomizer) {
 				this.mwCheck.mwids.length == 0 ||
 				sc.multiworld.locationInfo[this.mwCheck.mwids[0]] === undefined
 			) {
-				console.warn('Chest not in logic');
+				console.warn("Chest not in logic");
 				return this.parent();
 			}
 
@@ -121,20 +182,20 @@ export function patch(plugin: MwRandomizer) {
 			top: 8,
 			right: 8,
 			bottom: 8,
-			offsets: { default: { x: 432, y: 304 }, flipped: { x: 456, y: 304 } },
+			offsets: {default: {x: 432, y: 304}, flipped: {x: 456, y: 304}},
 		}),
 		transitions: {
 			HIDDEN: {
-				state: { alpha: 0 },
+				state: {alpha: 0},
 				time: 0.2,
 				timeFunction: KEY_SPLINES.LINEAR,
 			},
-			DEFAULT: { state: {}, time: 0.2, timeFunction: KEY_SPLINES.EASE },
+			DEFAULT: {state: {}, time: 0.2, timeFunction: KEY_SPLINES.EASE},
 		},
-		
+
 		init() {
 			this.parent(127, 100);
-			this.areaGui = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
+			this.areaGui = new sc.TextGui("", {font: sc.fontsystem.tinyFont});
 			this.areaGui.setPos(0, 6);
 			this.areaGui.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_TOP);
 			this.addChildGui(this.areaGui);
@@ -151,7 +212,7 @@ export function patch(plugin: MwRandomizer) {
 			this.line.setPos(5, 16);
 			this.addChildGui(this.line);
 
-			this.clearance = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
+			this.clearance = new sc.TextGui("", {font: sc.fontsystem.tinyFont});
 			this.clearance.setPos(5, 13);
 			this.clearance.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_TOP);
 			this.addChildGui(this.clearance);
@@ -159,7 +220,7 @@ export function patch(plugin: MwRandomizer) {
 			this.arrow = new sc.QuickItemArrow();
 			this.addChildGui(this.arrow);
 
-			this.typeGui = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
+			this.typeGui = new sc.TextGui("", {font: sc.fontsystem.tinyFont});
 			this.typeGui.setPos(8, 5);
 			this.typeGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
 			this.addChildGui(this.typeGui);
@@ -174,7 +235,7 @@ export function patch(plugin: MwRandomizer) {
 			this.doStateTransition("DEFAULT");
 			this.active = true;
 		},
-		
+
 		hide() {
 			this.doStateTransition("HIDDEN");
 			this.active = false;
@@ -185,7 +246,7 @@ export function patch(plugin: MwRandomizer) {
 				return false;
 			}
 
-			let [area, location] =  chest.mwCheck.name.split(" - ");
+			let [area, location] = chest.mwCheck.name.split(" - ");
 			let level = null;
 			const match = RegExp("(.+) \\((.+)\\)").exec(location);
 			if (match) {
