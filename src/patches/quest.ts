@@ -99,6 +99,9 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			this.removeChildGui(this.itemsGui);
+			if (this.newItemsGui) {
+				this.removeChildGui(this.newItemsGui);
+			}
 
 			this.newItemsGui = new sc.MultiWorldQuestItemBox(
 				146,
@@ -182,6 +185,16 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		setAcceptMode(buttonGroup: sc.ButtonGroup) {
+			if (!this.acceptMode) {
+				buttonGroup.removeFocusGui(1, 0);
+				// We have to remove columns from button group or else moving in that menu will fail.
+				// This is because it loops infinitely trying to find an element in an empty list.
+				// I'd really love for there to be a better way to do this, but the button group API doesn't seem to have one.
+				// There's no "shrink to fit how many buttons are in the group" function.
+				// So instead we just crudely truncate the list.
+				buttonGroup.elements.length = 1;
+			}
+
 			this.parent(buttonGroup);
 
 			this.hook.size.x = 142;
@@ -308,7 +321,7 @@ export function patch(plugin: MwRandomizer) {
 				const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
 
 				if (itemInfo.level > 0) {
-					itemGui.setDrawCallback((width: number, height: number) => {
+					labelGui.setDrawCallback((width: number, height: number) => {
 						sc.MenuHelper.drawLevel(
 							itemInfo.level,
 							width,
