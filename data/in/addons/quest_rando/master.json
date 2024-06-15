@@ -606,6 +606,7 @@
 			"condition": [
 				[ "quest", "Blasting Shells" ],
 				[ "item", "Red Flame Shade", 1 ],
+				[ "item", "Cold" ],
 				[ "item", "Heat", 1 ]
 			],
 			"reward": [
@@ -766,6 +767,7 @@
 				"open": "open10" 
 			},
 			"condition": [
+				[ "item", "Cold" ],
 				[ "item", "Heat" ]
 			],
 			"reward": [

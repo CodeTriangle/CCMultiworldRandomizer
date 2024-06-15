@@ -436,14 +436,6 @@
 				},
 				{
 					"from": "open10",
-					"to": "open12",
-					"condition": [
-						[ "item", "Heat", 1 ],
-						[ "item", "Cold", 1 ]
-					]
-				},
-				{
-					"from": "open10",
 					"to": "open13.1",
 					"condition": [
 						[ "item", "Zir'vitar Key", 2 ],
@@ -496,11 +488,13 @@
 					]
 				},
 				{
-					"from": "open12",
+					"from": "open10",
 					"to": "open15.1",
 					"condition": [
 						[ "item", "Azure Drop Shade", 1 ],
 						[ "item", "Purple Bolt Shade", 1 ],
+						[ "item", "Heat", 1 ],
+						[ "item", "Cold", 1 ],
 						[ "item", "Wave", 1 ],
 						[ "item", "Shock", 1 ]
 					]
