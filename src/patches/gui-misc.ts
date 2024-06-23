@@ -281,6 +281,7 @@ export function patch(plugin: MwRandomizer) {
 				port: portNumber,
 				items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
 				name: options.name,
+				tags: ["DeathLink"],
 			});
 		},
 

@@ -6,7 +6,6 @@ import { MultiworldOptions } from "../types/multiworld-model";
 ig.module("mw-rando.multiworld-model")
 	.requires("impact.feature.storage.storage")
 	.defines(() => {
-
 		sc.MULTIWORLD_MSG = {
 			CONNECTION_STATUS_CHANGED: 0,
 			ITEM_SENT: 1,
@@ -342,7 +341,17 @@ ig.module("mw-rando.multiworld-model")
 						this.reallyCheckLocation(location);
 					}
 				}
+
+				this.playerData = this.client.players.get(this.client.data.slot)!;
 			},
+
+			sendDeathLinkPacket(data: ap.DeathLinkData) {
+				return this.client.send({
+					cmd: "Bounce",
+					data: data,
+					tags: ["DeathLink"],
+				});
+			}
 		});
 
 		ig.addGameAddon(() => {

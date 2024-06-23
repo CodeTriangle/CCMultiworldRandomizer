@@ -68,6 +68,8 @@ declare global {
 			mode: string;
 			options: MultiworldOptions;
 			progressiveChainProgress: Record<number, number>;
+			playerData: ap.Player;
+			deathLinkMessage: ap.DeathLinkData | undefined;
 
 			getElementConstantFromComboId(this: this, comboId: number): number | null;
 			getItemDataFromComboId(this: this, comboId: number): [itemId: number, quantity: number];
@@ -86,6 +88,7 @@ declare global {
 			reallyCheckLocation(this: this, mwid: number): Promise<void>;
 			reallyCheckLocations(this: this, mwids: number[]): Promise<void>;
 			login(this: this, connectionInfo: ap.ConnectionInformation): Promise<void>;
+			sendDeathLinkPacket(this: this, data: ap.DeathLinkData): void;
 		}
 
 		interface MultiWorldModelConstructor extends ImpactClass<MultiWorldModel> {
