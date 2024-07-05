@@ -5709,6 +5709,9 @@
 				"linear": "23",
 				"open": "open10"
 			},
+			"condition": [
+				[ "item", "Wave" ]
+			],
 			"reward": [
 				[
 					"item",
