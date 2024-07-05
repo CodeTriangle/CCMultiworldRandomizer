@@ -8,7 +8,7 @@
 		"authors": "CodeTriangle",
 		"plugin": "mw-rando/plugin.js",
 		"dependencies": {
-			"open-world": ">=0.1.8",
-			"nax-ccuilib": ">=1.2"
+			"open-world": ">=0.3.2",
+			"nax-ccuilib": ">=1.2.4"
 		}
 }
