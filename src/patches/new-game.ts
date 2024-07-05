@@ -4,6 +4,7 @@ import "ultimate-crosscode-typedefs";
 declare global {
 	namespace sc {
 		interface NewGameModeSelectDialog {
+			apGfx: ig.Image;
 			apGui: sc.NewGameModeDialogButton;
 			oldCallback: this["callback"];
 		}
@@ -18,6 +19,9 @@ export function patch(plugin: MwRandomizer) {
 			this.content.hook.size.x += 110;
 			this.msgBox.hook.size.x += 110;
 			this.msgBox.centerBox.hook.size.x += 110;
+
+			this.apGfx = new ig.Image("media/gui/archipelago-start.png");
+
 			this.apGui = new sc.NewGameModeDialogButton(
 				"Archipelago",
 				2
@@ -25,6 +29,7 @@ export function patch(plugin: MwRandomizer) {
 
 			this.apGui.hook.pos.y = 27;
 			this.apGui.hook.align.x = ig.GUI_ALIGN.X_CENTER;
+			this.apGui.image.setImage(this.apGfx, 0, 0, 110, 90);
 			this.content.addChildGui(this.apGui);
 
 			this.buttongroup.removeFocusGui(1, 0);
