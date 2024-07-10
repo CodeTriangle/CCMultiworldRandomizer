@@ -4,7 +4,7 @@
 		"/cutscenes|chests|quests/": {
 			"*": {
 				"metadata": {
-					"questRandoOnly": true
+					"quest": true
 				}
 			}
 		}

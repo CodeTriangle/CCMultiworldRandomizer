@@ -7,7 +7,7 @@
 		"quests-always.json",
 		"quests-qr.json",
 		"items.json",
-		"progressive-items.json",
+		"prog-items/master.json",
 		"vars.json",
 		"item-pools/master.json"
 	],

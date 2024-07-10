@@ -1,0 +1,1094 @@
+{
+	"_global": {
+		"progressiveChains": {
+			"*": {
+				"multi": true
+			}
+		}
+	},
+	"progressiveChains": {
+		"armsAllPurpose": {
+			"displayName": "All-Purpose Arms",
+			"id": 70,
+			"classification": "progression",
+			"items": [
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Laser Edge", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Laser Edge", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Laser Edge", 1] }
+					]
+				}
+			]
+		},
+		"armsDefensive": {
+			"displayName": "Defensive Arms",
+			"id": 71,
+			"classification": "progression",
+			"items": [
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				}
+			]
+		},
+		"armsMelee": {
+			"displayName": "Melee Arms",
+			"id": 72,
+			"classification": "progression",
+			"items": [
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				}
+			]
+		},
+		"armsRanged": {
+			"displayName": "Ranged Arms",
+			"id": 73,
+			"classification": "progression",
+			"items": [
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				}
+			]
+		},
+		"armsSpecial": {
+			"displayName": "Special Arms",
+			"id": 74,
+			"classification": "progression",
+			"items": [
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				}
+			]
+		},
+		"armsClassBased": {
+			"displayName": "Class-Based Arms",
+			"id": 75,
+			"classification": "progression",
+			"items": [
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Aehre", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Aehre", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Aehre", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Aehre", 1] }
+					]
+				}
+			]
+		},
+		"arms": {
+			"displayName": "Arms",
+			"id": 76,
+			"classification": "progression",
+			"items": [
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Laser Edge", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Adept Gloves", 1] }
+					]
+				}
+			]
+		}
+	}
+}
