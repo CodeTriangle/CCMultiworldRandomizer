@@ -20,6 +20,26 @@ export function patch(plugin: MwRandomizer) {
 	let quests = plugin.randoData?.quests;
 	sc.QuestModel.inject({
 		_collectRewards(quest: sc.Quest) {
+			const previousItemAmounts: Record<sc.ItemID, number> = {};
+
+			if (quest.rewards.items) {
+				for (const item of quest.rewards.items) {
+					previousItemAmounts[item.id] = sc.model.player.getItemAmount(item.id);
+				}
+			}
+
+			this.parent(quest);
+
+			if (quest.rewards.items) {
+				for (const item of quest.rewards.items) {
+					const toTakeAway = sc.model.player.getItemAmount(item.id) - previousItemAmounts[item.id];
+
+					if (toTakeAway > 0) {
+						sc.model.player.removeItem(item.id, toTakeAway);
+					}
+				}
+			}
+
 			const check = quests?.[quest.id];
 			if (
 				check == undefined ||
