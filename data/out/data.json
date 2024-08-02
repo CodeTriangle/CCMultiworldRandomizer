@@ -2966,6 +2966,26 @@
 				}
 			}
 		},
+		"bergen-trail.cave.cave-7-1-1-goat2": {
+			"chests": {
+				"142": {
+					"name": "Bergen Trail - Horncave",
+					"mwids": [
+						3235824522
+					]
+				}
+			}
+		},
+		"jungle.caves.questcave-snowman-1": {
+			"chests": {
+				"247": {
+					"name": "Gaia's Garden - Chilled Den",
+					"mwids": [
+						3235824523
+					]
+				}
+			}
+		},
 		"bergen.mine-entrance": {
 			"cutscenes": {
 				"316": [

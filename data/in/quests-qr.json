@@ -85,6 +85,37 @@
 					1
 				]
 			]
+		},
+		"Bergen Trail - Horncave": {
+			"location": {
+				"map": "bergen-trail.cave.cave-7-1-1-goat2",
+				"mapId": 142
+			},
+			"clearance": "Default",
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"condition": [
+				[ "quest", "Kidding Around" ]
+			],
+			"reward": [
+				[ "item", "Vanilla Ice Cream", 2 ]
+			]
+		},
+		"Gaia's Garden - Chilled Den": {
+			"location": {
+				"map": "jungle.caves.questcave-snowman-1",
+				"mapId": 247
+			},
+			"clearance": "Silver",
+			"region": {
+				"linear": "10",
+				"open": "open10"
+			},
+			"reward": [
+				[ "item", "Perforated Tophat", 5 ]
+			]
 		}
 	},
 	"quests": {
