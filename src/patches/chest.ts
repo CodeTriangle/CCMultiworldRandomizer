@@ -142,6 +142,10 @@ export function patch(plugin: MwRandomizer) {
 			}
 		},
 
+		isQuickMenuVisible() {
+			return this.mwCheck && this.rawChest;
+		},
+
 		_reallyOpenUp() {
 			if (
 				this.mwCheck === undefined ||
