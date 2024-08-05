@@ -199,7 +199,7 @@
             },
             "region": {
                 "linear": "27",
-                "open": "open14.4" 
+                "open": "open14.5"
             },
             "reward": [
                 [ "item", "Azure Drop Shade", 1 ]
