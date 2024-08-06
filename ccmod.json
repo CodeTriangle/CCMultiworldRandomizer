@@ -7,6 +7,9 @@
 		"tags": ["puzzle", "speedrun"],
 		"authors": "CodeTriangle",
 		"plugin": "mw-rando/plugin.js",
+		"icons": {
+			"24": "icon-24.png"
+		},
 		"dependencies": {
 			"open-world": ">=0.3.2",
 			"nax-ccuilib": ">=1.2.4"
