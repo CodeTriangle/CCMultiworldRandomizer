@@ -554,6 +554,44 @@
 				"Willis Waldmahl",
 				"Pumpkin Spice Cof."
 			]
+		},
+		"Vermillion Weapons": {
+			"location": {
+				"shop": "aridWeapons"
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"slots": [
+				"Steel Goggles",
+				"Steel Edge",
+				"Steel Mail",
+				"Steel Boots",
+				"Silver Goggles",
+				"Silver Edge",
+				"Silver Mail",
+				"Silver Boots"
+			]
+		},
+		"Vermillion Items": {
+			"location": {
+				"shop": "aridItems"
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"slots": [
+				"Sandwich",
+				"Hi-Sandwich",
+				"Green Leaf Tea",
+				"Just Water",
+				"Spicy Bun",
+				"Fruit Drink",
+				"Rice Cracker",
+				"Veggie Sticks"
+			]
 		}
 	}
 }

@@ -4075,6 +4075,26 @@
 					"496": 3235824767,
 					"551": 3235824768,
 					"637": 3235824769
+				},
+				"aridWeapons": {
+					"204": 3235824770,
+					"205": 3235824771,
+					"206": 3235824772,
+					"207": 3235824773,
+					"264": 3235824774,
+					"266": 3235824775,
+					"268": 3235824776,
+					"270": 3235824777
+				},
+				"aridItems": {
+					"1": 3235824778,
+					"27": 3235824779,
+					"2": 3235824780,
+					"366": 3235824781,
+					"64": 3235824782,
+					"70": 3235824783,
+					"73": 3235824784,
+					"67": 3235824785
 				}
 			}
 		},
@@ -4160,7 +4180,9 @@
 				"rhombusWeapons1": 3235924450,
 				"rhombusItems1": 3235924459,
 				"rhombusCurios": 3235924475,
-				"rhombusBacker": 3235924478
+				"rhombusBacker": 3235924478,
+				"aridWeapons": 3235924491,
+				"aridItems": 3235924500
 			},
 			"byShopAndId": {
 				"rookieHarborItems": {
@@ -4389,6 +4411,26 @@
 					"496": 3235924488,
 					"551": 3235924489,
 					"637": 3235924490
+				},
+				"aridWeapons": {
+					"204": 3235924492,
+					"205": 3235924493,
+					"206": 3235924494,
+					"207": 3235924495,
+					"264": 3235924496,
+					"266": 3235924497,
+					"268": 3235924498,
+					"270": 3235924499
+				},
+				"aridItems": {
+					"1": 3235924501,
+					"27": 3235924502,
+					"2": 3235924503,
+					"366": 3235924504,
+					"64": 3235924505,
+					"70": 3235924506,
+					"73": 3235924507,
+					"67": 3235924508
 				}
 			}
 		}
@@ -5206,6 +5248,60 @@
 		},
 		"3235924490": {
 			"en_US": "Unlocks the slot selling \\c[3]Pumpkin Spice Cof.\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924491": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Vermillion Equipment\\c[0]."
+		},
+		"3235924492": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Goggles\\c[0] in \\c[3]Vermillion Equipment\\c[0]."
+		},
+		"3235924493": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Edge\\c[0] in \\c[3]Vermillion Equipment\\c[0]."
+		},
+		"3235924494": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Mail\\c[0] in \\c[3]Vermillion Equipment\\c[0]."
+		},
+		"3235924495": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Boots\\c[0] in \\c[3]Vermillion Equipment\\c[0]."
+		},
+		"3235924496": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Goggles\\c[0] in \\c[3]Vermillion Equipment\\c[0]."
+		},
+		"3235924497": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Edge\\c[0] in \\c[3]Vermillion Equipment\\c[0]."
+		},
+		"3235924498": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Mail\\c[0] in \\c[3]Vermillion Equipment\\c[0]."
+		},
+		"3235924499": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Boots\\c[0] in \\c[3]Vermillion Equipment\\c[0]."
+		},
+		"3235924500": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Vermillion Consumables\\c[0]."
+		},
+		"3235924501": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Vermillion Consumables\\c[0]."
+		},
+		"3235924502": {
+			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Vermillion Consumables\\c[0]."
+		},
+		"3235924503": {
+			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Vermillion Consumables\\c[0]."
+		},
+		"3235924504": {
+			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Vermillion Consumables\\c[0]."
+		},
+		"3235924505": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Vermillion Consumables\\c[0]."
+		},
+		"3235924506": {
+			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Vermillion Consumables\\c[0]."
+		},
+		"3235924507": {
+			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Vermillion Consumables\\c[0]."
+		},
+		"3235924508": {
+			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Vermillion Consumables\\c[0]."
 		},
 		"3235824050": {
 			"en_US": "Unlocks the next dungeon or overworld area in story order."
