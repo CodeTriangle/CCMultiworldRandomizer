@@ -11,8 +11,8 @@
   "devDependencies": {
     "@types/node": "^20.4.9",
     "esbuild": "^0.18.15",
-    "nax-ccuilib": "conorlawton/nax-ccuilib",
-    "nax-module-cache": "github:conorlawton/nax-module-cache",
+    "nax-ccuilib": "naxane/nax-ccuilib",
+    "nax-module-cache": "github:naxane/nax-module-cache",
     "nodemon": "^3.0.1",
     "typescript": "^5.1.6",
     "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
