@@ -97,7 +97,7 @@
 				"open": "open3"
 			},
 			"condition": [
-				[ "quest", "Kidding Around" ]
+				[ "quest", "The Goatfather" ]
 			],
 			"reward": [
 				[ "item", "Vanilla Ice Cream", 2 ]
@@ -878,6 +878,7 @@
 			"condition": [
 				[ "item", "Purple Bolt Shade", 1 ],
 				[ "item", "Azure Drop Shade", 1 ],
+				[ "item", "Wave" ],
 				[ "quest", "Lakeside Escort" ]
 			],
 			"reward": [
@@ -1041,8 +1042,7 @@
 				"open": "open2"
 			},
 			"condition": [
-				[ "item", "Heat" ],
-				[ "item", "Cold" ],
+				[ "item", "Blue Ice Shade" ],
 				[ "item", "Red Flame Shade", 1 ]
 			]
 		},
@@ -1053,8 +1053,7 @@
 				"open": "open2"
 			},
 			"condition": [
-				[ "item", "Heat" ],
-				[ "item", "Cold" ],
+				[ "item", "Blue Ice Shade" ],
 				[ "item", "Red Flame Shade", 1 ]
 
 			]
@@ -1232,7 +1231,8 @@
 			},
 			"condition": [
 				[ "quest", "Intensive Tree Care" ],
-				[ "item", "Heat" ]
+				[ "item", "Heat" ],
+				[ "item", "Cold" ]
 			],
 			"reward": [
 				[ "item", "Ginger Tom. Salad", 4 ],
