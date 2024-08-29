@@ -126,6 +126,7 @@ export default class MwRandomizer {
 			"ap-item-filler": [index, 4],
 			"ap-item-useful": [index, 5],
 			"ap-item-prog": [index, 6],
+			"ap-locked": [index, 7],
 		});
 
 		sc.CrossCode.inject({
