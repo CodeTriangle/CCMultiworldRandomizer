@@ -18,7 +18,6 @@ declare global {
 
 export function patch(plugin: MwRandomizer) {
 	let mwQuests: RawQuests = plugin.randoData?.quests;
-	let notifyTheseRewards: any = undefined;
 
 	function getRawQuestFromQuestId(questId: string) {
 		let mwQuest = mwQuests[questId];
@@ -32,16 +31,6 @@ export function patch(plugin: MwRandomizer) {
 		}
 		return mwQuest;
 	}
-
-	sc.StatusHudGui.inject({
-		update() {
-			this.parent();
-			if (notifyTheseRewards != undefined && !sc.model.isCutscene()) {
-				sc.multiworld.reallyCheckLocations(notifyTheseRewards);
-				notifyTheseRewards = undefined;
-			}
-		}
-	});
 
 	sc.QuestModel.inject({
 		_collectRewards(quest: sc.Quest) {
@@ -68,7 +57,7 @@ export function patch(plugin: MwRandomizer) {
 			const check = getRawQuestFromQuestId(quest.id);
 			if (check == undefined) return this.parent(quest);
 
-			notifyTheseRewards = check.mwids;
+			sc.multiworld.reallyCheckLocations(check.mwids);
 		},
 	});
 
