@@ -26,6 +26,9 @@
 					[ "item", "Red Flame Shade" ]
 				]
 			]
+		},
+		"glitchLogic": {
+			"barrierSkip": []
 		}
 	}
 }
