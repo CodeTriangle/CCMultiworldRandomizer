@@ -28,7 +28,11 @@
 			]
 		},
 		"glitchLogic": {
-			"barrierSkip": []
+			"barrierSkip": [
+				["var", "Autumn's Rise BSkip"],
+				["var", "Maroon Valley BSkip"],
+				["var", "Gaia's Garden BSkip"],
+				["var", "Sapphire Ridge BSkip"]
 		}
 	}
 }
