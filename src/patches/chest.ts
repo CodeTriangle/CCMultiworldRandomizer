@@ -40,7 +40,7 @@ declare global {
 				active: boolean;
 
 				show(this: this, tooltip: sc.QuickMenuTypesBase): void;
-				setData(this: this, chest: ig.ENTITY.Chest): boolean;
+				setData(this: this, chest: ig.Entity): boolean;
 				alignToBase(this: this, otherHook: ig.GuiHook): void;
 			}
 			interface ChestConstructor extends ImpactClass<Chest> {
@@ -122,11 +122,11 @@ export function patch(plugin: MwRandomizer) {
 				let animations = anims[name].animations;
 
 				if (name.startsWith("idle")) {
-					animations[0].sheet.offY = newOffY;
+					(animations[0].sheet as ig.TileSheet).offY = newOffY;
 					layerToAdd && animations.splice(1, 0, layerToAdd);
 				}
 				if (name == "open" || name == "end") {
-					anims[name].animations[0].sheet.offY = newOffY + 24;
+					(anims[name].animations[0].sheet as ig.TileSheet).offY = newOffY + 24;
 				}
 			}
 		},
@@ -149,7 +149,7 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		isQuickMenuVisible() {
-			return this.mwCheck && this.rawChest;
+			return !!(this.mwCheck && this.rawChest);
 		},
 
 		_reallyOpenUp() {
@@ -252,7 +252,7 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		setData(chest) {
-			if (!chest.mwCheck) {
+			if (!(chest instanceof ig.ENTITY.Chest) || !chest.mwCheck) {
 				return false;
 			}
 

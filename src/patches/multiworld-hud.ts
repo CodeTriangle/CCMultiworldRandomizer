@@ -11,7 +11,7 @@ export function patch(plugin: MwRandomizer) {
 		player: -1,
 		textGui: null,
 		init: function (item: ItemInfo, receive: boolean) {
-			this.parent(this);
+			this.parent();
 			this.timer = 5;
 
 			let verb = receive ? "Received" : "Sent";
@@ -111,7 +111,9 @@ export function patch(plugin: MwRandomizer) {
 			for (var i = this.contentEntries.length, gui = null; i--; ) {
 				gui = this.contentEntries[i];
 				gui.subGui.updateOption(isNormalSize);
-				gui.setContent(gui.subGui);
+
+				// potential crash? setContent doesn't exist on sc.MultiWorldItemContent
+				// gui.setContent(gui.subGui);
 			}
 			this.rearrangeContent();
 		},
