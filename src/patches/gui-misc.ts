@@ -1,7 +1,8 @@
 import * as ap from 'archipelago.js';
 import type MwRandomizer from '../plugin';
 
-import type * as _ from 'nax-ccuilib/src/headers/nax/input-field.d.ts'
+import type {} from 'nax-ccuilib/src/headers/nax/input-field.d.ts'
+import type {} from 'nax-ccuilib/src/headers/nax/input-field-type.d.ts'
 
 declare global {
 	namespace sc {

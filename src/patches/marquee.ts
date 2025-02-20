@@ -84,6 +84,10 @@ declare global {
 		}
 
 		var MarqueeGroup: sc.MarqueeGroupConstructor;
+
+		interface ButtonGui {
+			textChild: ItemMarqueeGui
+		}
 	}
 }
 
