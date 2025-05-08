@@ -78,10 +78,13 @@ export function patch(plugin: MwRandomizer) {
 	});
 
 	sc.NewGamePlusModel.inject({
-		options: { "rhombus-start": true },
+		init() {
+			this.options["rhombus-start"] = true
+			this.parent()
+		},
 		onReset() {
-			this.options = { "rhombus-start": true },
-			this.active = false;
+			this.parent()
+			this.options["rhombus-start"] = true
 		}
 	});
 

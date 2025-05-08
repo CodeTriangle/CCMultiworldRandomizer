@@ -14,7 +14,7 @@ export type MultiworldOptions = {
 	shopSendMode?: string,
 	shopReceiveMode?: string,
 	shopDialogHints?: boolean,
-	chestClearanceLevels?: Record<number, string>
+	chestClearanceLevels?: Record<number, keyof typeof sc.CHEST_TYPE>
 };
 
 declare global {
