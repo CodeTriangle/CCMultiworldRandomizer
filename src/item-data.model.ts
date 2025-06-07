@@ -2,7 +2,7 @@ export interface WorldData {
 	items: RawItems;
 	quests: RawQuests;
 	shops: RawShops;
-	descriptions: { [itemId: number]: { [locale: string]: string }
+	descriptions: { [itemId: number]: { [locale: string]: string } }
 }
 
 export type RawItems = { [mapName: string]: RawMapItems };

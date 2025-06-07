@@ -3,7 +3,7 @@ import {WorldData, ItemInfo} from './item-data.model';
 import {readJsonFromFile} from './utils';
 import {applyPatches} from "./patches/index";
 
-import type * as _ from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
+import type {} from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
 
 declare global {
 	namespace sc {
