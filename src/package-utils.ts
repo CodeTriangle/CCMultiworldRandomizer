@@ -1,5 +1,4 @@
-// import * as fs from "node:fs";
-const fs = require("fs");
+const fs: typeof import('fs') = (0, eval)('require("fs")');
 import * as ap from "archipelago.js";
 
 const CACHE_DIR = ".apcache";

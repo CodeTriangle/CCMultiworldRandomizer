@@ -1,7 +1,7 @@
-import * as ap from 'archipelago.js';
 import type MwRandomizer from '../plugin';
 
-import type * as _ from 'nax-ccuilib/src/headers/nax/input-field.d.ts'
+import type {} from 'nax-ccuilib/src/headers/nax/input-field.d.ts'
+import type {} from 'nax-ccuilib/src/headers/nax/input-field-type.d.ts'
 
 declare global {
 	namespace sc {
@@ -41,7 +41,7 @@ declare global {
 			back: null;
 			keepOpen: boolean;
 
-			getOptions(this: this): Record<string, string>;
+			getOptions(this: this): sc.MultiWorldModel.AnyConnectionInformation;
 			onBackButtonPress(this: this): void;
 			connectFromInput(this: this): void;
 		}
@@ -192,7 +192,8 @@ export function patch(plugin: MwRandomizer) {
 					this.fields[i].obscure ?? false
 				);
 
-				inputGui.description = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
+				// @ts-expect-error
+				inputGui.data = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
 
 				this.buttongroup.addFocusGui(inputGui, 0, i);
 				inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
@@ -244,13 +245,13 @@ export function patch(plugin: MwRandomizer) {
 
 			this.connect = new sc.ButtonGui("Connect", sc.BUTTON_MENU_WIDTH);
 			this.connect.onButtonPress = this.connectFromInput.bind(this);
-			this.connect.description = ig.lang.get("sc.gui.mw.connection-menu.connect");
+			this.connect.data = ig.lang.get("sc.gui.mw.connection-menu.connect");
 			this.buttongroup.addFocusGui(this.connect, 0, this.fields.length);
 
 			this.disconnect = new sc.ButtonGui("Disconnect", sc.BUTTON_MENU_WIDTH);
 			this.disconnect.onButtonPress = () => { sc.multiworld.disconnect() };
 			this.disconnect.setPos(sc.BUTTON_MENU_WIDTH + this.hSpacer);
-			this.disconnect.description = ig.lang.get("sc.gui.mw.connection-menu.disconnect");
+			this.disconnect.data = ig.lang.get("sc.gui.mw.connection-menu.disconnect");
 			this.buttongroup.addFocusGui(this.disconnect, 1, this.fields.length);
 
 			this.buttongroup.addSelectionCallback(button => {
@@ -258,7 +259,7 @@ export function patch(plugin: MwRandomizer) {
 					sc.menu.setInfoText("", true);
 					return;
 				}
-				sc.menu.setInfoText(button.description);
+				sc.menu.setInfoText((button as sc.ButtonGui).data as string);
 			});
 
 			this.buttongroup.setMouseFocusLostCallback(() => {
@@ -298,7 +299,7 @@ export function patch(plugin: MwRandomizer) {
 				result[this.fields[i].key] = this.inputGuis[i].value.join("");
 			}
 
-			return result;
+			return result as unknown as sc.MultiWorldModel.AnyConnectionInformation;
 		},
 
 		connectFromInput() {

@@ -3,7 +3,7 @@ import {WorldData, ItemInfo} from './item-data.model';
 import {readJsonFromFile} from './utils';
 import {applyPatches} from "./patches/index";
 
-import type * as _ from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
+import type {} from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
 
 // install a bunch of polyfills for archipelago.js
 require('iterator-polyfill');
@@ -18,8 +18,13 @@ declare global {
 // BEHOLD... THE UNIFILLS
 // They're not polyfills because they are only guaranteed to work in this one particular environment lol
 // The polyfill for this added 87 (!) dependencies
+declare global {
+	interface Array<T> {
+		toSorted(comparefn?: (a: any, b: any) => number): Array<T>;
+	}
+}
 if (!Array.prototype.toSorted) {
-	Array.prototype.toSorted = function(comparefn?: (a: any, b: any) => number) {
+	Array.prototype.toSorted = function<T extends Array<E>, E>(this: T, comparefn?: (a: any, b: any) => number) {
 		let result = [...this];
 		result.sort(comparefn);
 		return result;
@@ -37,7 +42,19 @@ Object.fromEntries = function(iterable: Iterable<[key: any, value: any]>) {
 
 import structuredClone from "@ungap/structured-clone";
 if (!("structuredClone" in globalThis)) {
-  globalThis.structuredClone = structuredClone;
+	// @ts-expect-error
+	globalThis.structuredClone = structuredClone;
+}
+
+declare global {
+	namespace ig.Input {
+		interface KnownActions {
+			pgdn: true;
+			pgup: true;
+			home: true;
+			end: true;
+		}
+	}
 }
 
 export default class MwRandomizer {

@@ -228,11 +228,11 @@ export function patch(plugin: MwRandomizer) {
 	});
 
 	sc.SaveList.inject({
-		onSlotLoadPressed(button: sc.SaveSlotButton) {
+		onSlotLoadPressed(button) {
 			let callback = this.parent;
 			let slot: ig.SaveSlot = ig.storage.getSlot(button.slot == -2 ? -1 : button.slot);
 			let mw = slot.data.vars.storage.mw;
-			sc.multiworld.spawnLoginGui(mw?.connectionInfo, mw, () => { callback(button); }, () => { callback(button) });
+			sc.multiworld.spawnLoginGui(mw?.connectionInfo, mw, () => { callback.call(this, button); }, () => { callback.call(this, button) });
 		}
 	});
 
@@ -246,7 +246,7 @@ export function patch(plugin: MwRandomizer) {
 				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
 				sc.menu.exitCallback = () => {
 					if (sc.multiworld.client.authenticated) {
-						button.data = 0;
+						(button as sc.ButtonGui).data = 0;
 						oldCallback(button);
 					}
 				};

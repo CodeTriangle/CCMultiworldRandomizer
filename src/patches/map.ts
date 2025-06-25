@@ -17,14 +17,6 @@ declare global {
 		}
 
 		var MultiworldChestMarker: MultiworldMapMarkerConstructor;
-
-		interface MapAreaContainer {
-			loadNewArea(areaName: string): void;
-			createLandmarks(doAnything: boolean, floor: MapFloor): void;
-		}
-
-		interface MapFloor extends ig.GuiElementBase {
-		}
 	}
 }
 

@@ -106,6 +106,10 @@ declare global {
 
 		var APTextClientMenu: APTextClientMenuConstructor;
 	}
+
+	interface Window {
+		apmenu: sc.APTextClientMenu;
+	}
 }
 
 export function patch(plugin: MwRandomizer) {
@@ -432,8 +436,9 @@ export function patch(plugin: MwRandomizer) {
 			};
 
 			this.buttonGroup.addSelectionCallback(button => {
-				if (button?.description) {
-					sc.menu.setInfoText(button.description);
+				const description = (button as sc.ButtonGui | undefined)?.data as string;
+				if (description) {
+					sc.menu.setInfoText(description);
 					return;
 				}
 				sc.menu.setInfoText("", true);
@@ -524,7 +529,7 @@ export function patch(plugin: MwRandomizer) {
 
 		_createButton(menuName, index, menu) {
 			let button = new sc.ButtonGui(ig.lang.get("sc.gui.menu.menu-titles." + menuName), sc.BUTTON_MENU_WIDTH);
-			button.description = ig.lang.get("sc.gui.mw.text-client." + menuName);
+			button.data = ig.lang.get("sc.gui.mw.text-client." + menuName);
 			this.buttonGroup.addFocusGui(button, 0, index);
 			button.onButtonPress = () => {
 				sc.menu.pushMenu(menu);

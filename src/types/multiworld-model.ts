@@ -82,7 +82,7 @@ declare global {
 				shopSendMode?: string,
 				shopReceiveMode?: string,
 				shopDialogHints?: boolean,
-				chestClearanceLevels?: Record<number, string>
+				chestClearanceLevels?: Record<number, keyof typeof sc.CHEST_TYPE>
 			};
 
 			export type MultiworldVars = {
@@ -137,9 +137,9 @@ declare global {
 			dataPackageChecksums: Record<string, string>;
 			receivedItemMap: Record<number, number>;
 
-			loginMenuMultiworldVars: sc.MultiWorldModel.MultiworldVars;
+			loginMenuMultiworldVars?: sc.MultiWorldModel.MultiworldVars;
 
-			postEditCallback: Optional<() => void>;
+			postEditCallback?: Nullable<() => void>;
 
 			createAPItem(this: this, item: sc.MultiWorldModel.LocalInternalItem, locationId: number): ap.Item;
 			getItemInfo(this: this, item: ap.Item, nameIsSender?: boolean): ItemInfo;

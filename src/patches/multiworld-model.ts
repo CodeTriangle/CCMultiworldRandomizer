@@ -14,10 +14,11 @@ export function patch(plugin: MwRandomizer) {
 		};
 
 		sc.MULTIWORLD_CONNECTION_STATUS = {
-			CONNECTED: "CONNECTED",
-			CONNECTING: "CONNECTING",
-			DISCONNECTED: "DISCONNECTED",
+			CONNECTED: "CONNECTED" as sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED,
+			CONNECTING: "CONNECTING" as sc.MULTIWORLD_CONNECTION_STATUS.CONNECTING,
+			DISCONNECTED: "DISCONNECTED" as sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED,
 		};
+
 
 		sc.MultiWorldModel = ig.GameAddon.extend({
 			observers: [],
@@ -30,7 +31,7 @@ export function patch(plugin: MwRandomizer) {
 			numItems: 0,
 
 			init() {
-				this.client = new ap.Client({autoFetchDataPackage: false});
+				this.client = new ap.Client({autoFetchDataPackage: false, debugLogVersions: true});
 				ig.storage.register(this);
 				this.numItems = 676;
 
@@ -404,18 +405,18 @@ export function patch(plugin: MwRandomizer) {
 				// Lots of errors here, sorry
 
 				// Unset all variables that aren't bound to properties already
-				this.slimLocationInfo = null;
-				this.locationInfo = null;
-				this.connectionInfo = null;
-				this.mode = null;
-				this.options = null;
+				this.slimLocationInfo = null as any;
+				this.locationInfo = null as any;
+				this.connectionInfo = null as any;
+				this.mode = null as any;
+				this.options = null as any;
 
-				this.dataPackageChecksums = null;
+				this.dataPackageChecksums = null as any;
 
-				this.questSettings = null;
-				this.receivedItemMap = null;
-				this.offlineCheckBuffer = null;
-				this.seenChests = null;
+				this.questSettings = null as any;
+				this.receivedItemMap = null as any;
+				this.offlineCheckBuffer = null as any;
+				this.seenChests = null as any;
 			},
 
 			onLevelLoadStart() {
@@ -532,7 +533,6 @@ export function patch(plugin: MwRandomizer) {
 					saveDataPackage(this.client.package.exportPackage());
 				} catch (e: any) {
 					fatalError(e.message);
-					this.roomInfo = null;
 					return;
 				}
 

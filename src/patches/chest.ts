@@ -4,24 +4,18 @@ import {RawChest} from "../item-data.model";
 
 declare global {
 	namespace ig.ENTITY {
-		interface Chest extends ig.Entity.Settings {
+		interface Chest {
 			mwCheck?: RawChest;
 			analyzeColor: sc.ANALYSIS_COLORS;
 			analyzeLabel: string;
 			collectedLabel: string;
 			rawChest: ap.Item | undefined;
 		}
-
-		interface ChestConstructor extends ImpactClass<Chest> {
-			new(...args: any[]): Chest;
-		}
-
-		var Chest: ChestConstructor;
 	}
 	namespace sc {
 		namespace QUICK_MENU_TYPES {
 			namespace Chest {
-				interface Settings extends sc.QuickMenuTypesBase {
+				interface Settings extends sc.QuickMenuTypesBaseSettings {
 					type: "Chest";
 					entity: ig.ENTITY.Chest;
 				}
@@ -49,7 +43,7 @@ declare global {
 
 				show(this: this, tooltip: sc.QuickMenuTypesBase): void;
 				hide(this: this): void;
-				setData(this: this, chest: ig.ENTITY.Chest): boolean;
+				setData(this: this, chest: ig.Entity): boolean;
 				alignToBase(this: this, otherHook: ig.GuiHook): void;
 			}
 			interface ChestConstructor extends ImpactClass<Chest> {
@@ -70,7 +64,7 @@ export function patch(plugin: MwRandomizer) {
 				return;
 			}
 
-			this.mwCheck = map.chests?.[this.mapId];
+			this.mwCheck = map.chests?.[this.mapId!];
 			if (!this.mwCheck) {
 				return;
 			}
@@ -83,22 +77,16 @@ export function patch(plugin: MwRandomizer) {
 				sc.multiworld.seenChests.add(this.mwCheck.mwids[0]);
 			}
 
-			const clearance =  sc.multiworld.options.chestClearanceLevels?.[this.mwCheck.mwids[0]];
+			const clearance = sc.multiworld.options.chestClearanceLevels?.[this.mwCheck.mwids[0]];
 
 			if (clearance != undefined) {
 				this.chestType = sc.CHEST_TYPE[clearance];
 			}
 
-			const anims = this.animSheet.anims as unknown as {
-				idleKey: ig.MultiDirAnimationSet
-				idleMasterKey: ig.MultiDirAnimationSet
-				idleGold: ig.MultiDirAnimationSet
-				idleSilver: ig.MultiDirAnimationSet
-				idleBronze: ig.MultiDirAnimationSet
-				idle: ig.MultiDirAnimationSet
-				open: ig.MultiDirAnimationSet
-				end: ig.MultiDirAnimationSet
-			}
+			const anims = this.animSheet.anims as unknown as Record<
+					'idleKey' | 'idleMasterKey' | 'idleGold' | 'idleSilver' |
+					'idleBronze' | 'idle' | 'open' | 'end',
+				ig.SingleDirAnimationSet>
 
 			// FILLER items get a normal chest with an archipelago logo on it
 			// These are the default values
@@ -142,8 +130,9 @@ export function patch(plugin: MwRandomizer) {
 				let animations = anims[name].animations;
 
 				if (name.startsWith("idle")) {
-					animations[0].sheet.offY = newOffY;
-					animations[0].sheet.offX = newOffX;
+					const sheet = animations[0].sheet as ig.TileSheet;
+					sheet.offY = newOffY;
+					sheet.offX = newOffX;
 				}
 
 				if (name == "idleGold") {
@@ -151,7 +140,8 @@ export function patch(plugin: MwRandomizer) {
 				}
 
 				if (name == "open" || name == "end") {
-					anims[name].animations[0].sheet.offY = newOffY + 24;
+					const sheet = animations[0].sheet as ig.TileSheet;
+					sheet.offY = newOffY + 24;
 				}
 			}
 		},
@@ -180,7 +170,7 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		isQuickMenuVisible() {
-			return this.mwCheck && this.rawChest;
+			return !!(this.mwCheck && this.rawChest);
 		},
 
 		_reallyOpenUp() {
@@ -282,7 +272,7 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		setData(chest) {
-			if (!chest.mwCheck) {
+			if (!(chest instanceof ig.ENTITY.Chest) || !chest.mwCheck) {
 				return false;
 			}
 
