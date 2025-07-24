@@ -259,6 +259,13 @@
 					]
 				},
 				{
+					"from": "open2",
+					"to": "open3",
+					"condition": [
+						[ "var", "Autumn's Rise BSkip"]
+					]
+				},
+				{
 					"from": "open3",
 					"to": "open4.1",
 					"condition": [
@@ -326,6 +333,18 @@
 					"to": "open5",
 					"condition": [
 						[ "item", "Blue Ice Shade", 1 ]
+					]
+				},
+				{
+					"from": "open5",
+					"to": "open3",
+					"condition": []
+				},
+				{
+					"from": "open2",
+					"to": "open5",
+					"condition": [
+						[ "var", "Maroon Valley BSkip"]
 					]
 				},
 				{
@@ -403,8 +422,20 @@
 					"from": "open2",
 					"to": "open9",
 					"condition": [
+						[ "var", "Autumn's Fall BSkip"]
+					]
+				},
+				{
+					"from": "open2",
+					"to": "open9",
+					"condition": [
 						[ "item", "Red Flame Shade", 1 ]
 					]
+				},
+				{
+					"from": "open16",
+					"to": "open9",
+					"condition": []
 				},
 				{
 					"from": "open2",
@@ -421,11 +452,23 @@
 					]
 				},
 				{
+					"from": "open2",
+					"to": "open10",
+					"condition": [
+						[ "var", "Gaia's Garden BSkip"]
+					]
+				},
+				{
 					"from": "open9",
 					"to": "open10",
 					"condition": [
 						[ "item", "Green Seed Shade", 1 ]
 					]
+				},
+				{
+					"from": "open10",
+					"to": "open9",
+					"condition": []
 				},
 				{
 					"from": "open10",
@@ -518,6 +561,18 @@
 					"to": "open16",
 					"condition": [
 						[ "item", "Star Shade", 1 ]
+					]
+				},
+				{
+					"from": "open16",
+					"to": "open9",
+					"condition": []
+				},
+				{
+					"from": "open2",
+					"to": "open16",
+					"condition": [
+						[ "var", "Sapphire Ridge BSkip"]
 					]
 				},
 				{
