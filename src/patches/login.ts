@@ -192,17 +192,19 @@ export function patch(plugin: MwRandomizer) {
 			this.parent();
 
 			let continueButton: sc.ButtonGui = this.namedButtons["continue"];
+			if (continueButton) {
+				let oldContinueCallback = continueButton.onButtonPress;
 
-			let oldContinueCallback = continueButton.onButtonPress;
+				continueButton.onButtonPress = () => {
+					let slot: ig.SaveSlot = ig.storage.getSlot(ig.storage.lastUsedSlot);
+					let mw = slot.data.vars.storage.mw;
+					sc.multiworld.spawnLoginGui(mw?.connectionInfo, mw, oldContinueCallback, () => {
+						sc.menu.exitCallback = oldContinueCallback;
+						sc.model.enterPrevSubState();
+					});
+				};
+			}
 
-			continueButton.onButtonPress = () => {
-				let slot: ig.SaveSlot = ig.storage.getSlot(ig.storage.lastUsedSlot);
-				let mw = slot.data.vars.storage.mw;
-				sc.multiworld.spawnLoginGui(mw?.connectionInfo, mw, oldContinueCallback, () => {
-					sc.menu.exitCallback = oldContinueCallback;
-					sc.model.enterPrevSubState();
-				});
-			};
 
 			let newGameButton: sc.ButtonGui = this.namedButtons["start"];
 
