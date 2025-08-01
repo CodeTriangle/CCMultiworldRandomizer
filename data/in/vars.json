@@ -26,6 +26,10 @@
 					[ "item", "Red Flame Shade" ]
 				]
 			]
+		},
+		"closedGaia": {
+			"minimal": [],
+			"full": []
 		}
 	}
 }

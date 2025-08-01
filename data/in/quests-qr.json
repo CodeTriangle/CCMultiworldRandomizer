@@ -847,6 +847,7 @@
 				"linear": "23",
 				"open": "open10"
 			},
+			"condition": [[ "region", "open", "open10.Grove" ]],
 			"reward": [
 				[ "item", "Virus Root", 4 ],
 				[ "item", "Stout Backplate", 2 ]
@@ -907,7 +908,8 @@
 			},
 			"condition": [
 				[ "item", "Cold" ],
-				[ "item", "Heat" ]
+				[ "item", "Heat" ],
+				[ "region", "open", "open10.Right" ]
 			],
 			"reward": [
 				[ "item", "Moon Fruit", 5 ],
@@ -938,6 +940,7 @@
 				"linear": "23",
 				"open": "open10"
 			},
+			"condition": [[ "region", "open", "open10.Grove" ]],
 			"reward": [
 				[ "item", "Green Risotto", 3 ],
 				[ "item", "Wrap Roll", 3 ],
@@ -969,7 +972,8 @@
 				"open": "open10"
 			},
 			"condition": [
-				[ "item", "Wave", 1 ]
+				[ "item", "Wave", 1 ],
+				[ "region", "open", "open10.Infested" ]
 			]
 		},
 		"Pumpkin Land Superfun": {
@@ -978,6 +982,7 @@
 				"linear": "23",
 				"open": "open10"
 			},
+			"condition": [[ "region", "open", "open10.Infested" ]],
 			"reward": [
 				[ "item", "Scarecrown", 1 ]
 			]
@@ -1016,7 +1021,7 @@
 			"questid": "trailblaze-jungle-2",
 			"region": {
 				"linear": "23",
-				"open": "open10"
+				"open": "open10.Mid"
 			}
 		},
 		"Gaia's Garden Landmarks": {
@@ -1024,7 +1029,11 @@
 			"region": {
 				"linear": "23",
 				"open": "open10"
-			}
+			},
+			"condition": [
+				[ "region", "open", "open10.Grove" ],
+				[ "region", "open", "open10.Infested" ]
+			]
 		},
 		"Gaia's Garden Data Probe": {
 			"questid": "trailblaze-jungle-4",
@@ -1033,14 +1042,15 @@
 				"open": "open10"
 			},
 			"condition": [
-				[ "item", "Wave", 1 ]
+				[ "item", "Wave", 1 ],
+				[ "region", "open", "open10.Grove" ]
 			]
 		},
 		"Turret Defense Challenge 1": {
 			"questid": "jungleAdv-turret_defense_challenge-1",
 			"region": {
 				"linear": "23",
-				"open": "open10"
+				"open": "open10.Grove"
 			},
 			"condition": [
 				[ "quest", "Turret Defense" ]
@@ -1053,7 +1063,7 @@
 			"questid": "jungleAdv-turret_defense_challenge-2",
 			"region": {
 				"linear": "23",
-				"open": "open10"
+				"open": "open10.Grove"
 			},
 			"condition": [
 				[ "quest", "An Original Idea" ]
