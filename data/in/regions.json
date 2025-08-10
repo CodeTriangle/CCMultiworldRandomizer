@@ -327,6 +327,14 @@
 					"condition": [
 						[ "item", "Blue Ice Shade", 1 ]
 					]
+				},				
+				{
+					"from": "open2",
+					"to": "open5",
+					"condition": [
+						[ "item", "Blue Ice Shade", 1 ],
+						[ "var", "rhombusHubUnlock" ]
+					]
 				},
 				{
 					"from": "open5",
@@ -415,16 +423,17 @@
 				},
 				{
 					"from": "open9",
-					"to": "open9.1",
+					"to": "open10",
 					"condition": [
 						[ "item", "Green Seed Shade", 1 ]
 					]
 				},
 				{
-					"from": "open9",
+					"from": "open2",
 					"to": "open10",
 					"condition": [
-						[ "item", "Green Seed Shade", 1 ]
+						[ "item", "Green Seed Shade", 1 ],
+						[ "var", "rhombusHubUnlock" ]
 					]
 				},
 				{
@@ -518,6 +527,14 @@
 					"to": "open16",
 					"condition": [
 						[ "item", "Star Shade", 1 ]
+					]
+				},
+				{
+					"from": "open2",
+					"to": "open16",
+					"condition": [
+						[ "item", "Star Shade", 1 ],
+						[ "var", "rhombusHubUnlock" ]
 					]
 				},
 				{
