@@ -1176,7 +1176,6 @@
 				"open": "open9"
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
@@ -1263,7 +1262,6 @@
 			},
 			"condition": [
 				[ "item", "Red Flame Shade", 1 ],
-				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
 				[ "quest", "Bull Grab" ]
