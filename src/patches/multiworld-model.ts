@@ -387,16 +387,18 @@ export function patch(plugin: MwRandomizer) {
 					this.addMultiworldItem(item, i);
 				}
 
-				let area = ig.game.mapName.split(".")[0];
-
 				if (this.client.authenticated) {
 					if (this.offlineCheckBuffer.length > 0) {
 						this.client.check(...this.offlineCheckBuffer);
 						this.offlineCheckBuffer = [];
 					}
 
-					this.client.storage.prepare("area", "rookie-harbor")
-						.replace(area)
+					const mapName = ig.game.mapName;
+					const team = this.client.players.self.team;
+					const slot = this.client.players.self.slot;
+
+					this.client.storage.prepare(`CrossCode_${team}_${slot}_mapName`, "rookie-harbor")
+						.replace(mapName)
 						.commit(false);
 				}
 			},
