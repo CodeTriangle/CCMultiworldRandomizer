@@ -517,9 +517,19 @@ export function patch(plugin: MwRandomizer) {
 					// return empty object instead of undefined if slot is null or dataPackage doesn't exist
 					let checksums: Optional<Record<string, string>> = mw?.dataPackageChecksums;
 
-					if (checksums != undefined && !ig.equal(checksums, remoteChecksums)) {
-						fatalError("Some game checksums do not match.");
-						return;
+					if (checksums != undefined) {
+						const entries = Object.keys(checksums);
+						const remoteEntries = Object.keys(remoteChecksums);
+
+						if (
+							// check if are same length
+							entries.length !== remoteEntries.length ||
+							// check that the contents of each key are the same
+							entries.find(([k, v]) => remoteChecksums[k] === v) !== undefined
+						) {
+							fatalError("Some game checksums do not match.");
+							return;
+						}
 					}
 
 					listener.onLoginProgress("Downloading remaining game packages.");
