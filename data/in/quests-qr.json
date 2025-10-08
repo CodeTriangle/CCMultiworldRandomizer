@@ -290,7 +290,8 @@
 				"open": "open18"
 			},
 			"condition": [
-				[ "quest", "A Promise is a Promise 5" ]
+				[ "quest", "A Promise is a Promise 5" ],
+				[ "item", "Mine Pass" ]
 			],
 			"_comment": "1 cp for each element"
 		},
@@ -1266,6 +1267,7 @@
 				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
+				[ "item", "Mine Pass" ],
 				[ "quest", "Bull Grab" ]
 			],
 			"reward": [
