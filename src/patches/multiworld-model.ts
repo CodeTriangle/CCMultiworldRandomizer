@@ -572,7 +572,13 @@ export function patch(plugin: MwRandomizer) {
 					this.localCheckedLocations.add(location);
 				}
 
-				this.seenChests = new Set(mw?.seenChests);
+				if (!this.seenChests) {
+					// if our client does not know of any chests, add them all
+					this.seenChests = new Set(mw?.seenChests);
+				} else {
+					// otherwise, merge them into our local seen chests list
+					mw?.seenChests.forEach(e => this.seenChests.add(e));
+				}
 
 				// if we're in game, then run the level loading code
 				// these functions are intended to complement each other but when login() is called from the title screen,
