@@ -1267,7 +1267,7 @@
 				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
-				[ "region", "open4.7" ],
+				[ "region", "open4.5" ],
 				[ "quest", "Bull Grab" ]
 			],
 			"reward": [
