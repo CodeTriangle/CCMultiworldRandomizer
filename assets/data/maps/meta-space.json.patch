@@ -1,13 +1,26 @@
 [
 	{
 		"type": "ENTER",
-		"index": ["entities", 4, "settings", "event"]
+		"index": ["entities"]
 	},
 	{
 		"type": "ADD_ARRAY_ELEMENT",
 		"content": {
-			"type": "MW_GOAL_COMPLETED",
-			"goal": "creator"
+			"type": "EventTrigger",
+			"x": 704,
+			"y": 232,
+			"level": 1,
+			"settings": {
+				"triggerType": "ONCE",
+				"startCondition": "",
+				"endCondition": "false",
+				"event": [
+					{
+						"type": "MW_GOAL_COMPLETED",
+						"goal": "creator"
+					}
+				]
+			}
 		}
 	},
 	{
