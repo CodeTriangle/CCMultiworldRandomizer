@@ -26,6 +26,7 @@
 					[ "item", "Red Flame Shade" ]
 				]
 			]
-		}
+		},
+		"rhombusHubUnlock": "boolean"
 	}
 }
