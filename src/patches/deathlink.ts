@@ -24,7 +24,7 @@ export function patch(plugin: MwRandomizer) {
 	sc.APDeathLink = ig.GameAddon.extend({
 		init() {
 			this.deathLinkProcessed = false;
-			//sc.multiworld.client.deathLink.enableDeathLink();
+			sc.Model.addObserver(sc.multiworld, this);
 			sc.multiworld.client.deathLink.on("deathReceived", () => this.receiveDeath());
 			const onCombatDeath = (a, v) => this.onCombatDeath(a, v);
 			const onNormalDeath = () => this.onNormalDeath();
@@ -40,6 +40,16 @@ export function patch(plugin: MwRandomizer) {
 					onNormalDeath();
 				}
 			});
+		},
+
+		modelChanged(model, msg, data) {
+			if (
+				model === sc.multiworld &&
+				msg === sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED &&
+				data === sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED
+			) {
+				sc.multiworld.client.deathLink.enableDeathLink();
+			}
 		},
 
 		receiveDeath() {
