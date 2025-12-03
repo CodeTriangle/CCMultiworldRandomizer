@@ -46,7 +46,8 @@ export function patch(plugin: MwRandomizer) {
 			if (
 				model === sc.multiworld &&
 				msg === sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED &&
-				data === sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED
+				data === sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED &&
+				sc.multiworld.connectionInfo.deathLink
 			) {
 				sc.multiworld.client.deathLink.enableDeathLink();
 			}

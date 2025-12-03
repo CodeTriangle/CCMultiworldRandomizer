@@ -97,17 +97,25 @@ export function patch(plugin: MwRandomizer) {
 
 		fields: [
 			{
+				type: "INPUT",
 				key: "url",
 				label: "URL",
 			},
 			{
+				type: "INPUT",
 				key: "name",
 				label: "Slot Name",
 			},
 			{
+				type: "INPUT",
 				key: "password",
 				label: "Password",
 				obscure: true,
+			},
+			{
+				type: "CHECKBOX",
+				key: "deathLink",
+				label: "Death Link",
 			}
 		],
 
@@ -159,12 +167,20 @@ export function patch(plugin: MwRandomizer) {
 				this.inputList.addChildGui(textGui);
 				this.textGuis.push(textGui);
 
-				let inputGui = new modmanager.gui.InputField(
-					200,
-					textGui.hook.size.y,
-					modmanager.gui.INPUT_FIELD_TYPE.DEFAULT,
-					this.fields[i].obscure ?? false
-				);
+				let inputGui;
+				switch (this.fields[i].type) {
+				case "INPUT":
+					inputGui = new modmanager.gui.InputField(
+						200,
+						textGui.hook.size.y,
+						modmanager.gui.INPUT_FIELD_TYPE.DEFAULT,
+						this.fields[i].obscure ?? false
+					);
+					break;
+				case "CHECKBOX":
+					inputGui = new sc.CheckboxGui(false, 30);
+					break;
+				}
 
 				// @ts-expect-error
 				inputGui.data = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
@@ -174,11 +190,18 @@ export function patch(plugin: MwRandomizer) {
 				
 				if (sc.multiworld.connectionInfo) {
 					//@ts-ignore
-					let prefill = "" + sc.multiworld.connectionInfo[this.fields[i].key];
-					inputGui.value = prefill.split("");
-					inputGui.setObscure(this.fields[i].obscure ?? false);
-					inputGui.cursorPos = prefill.length;
-					inputGui.cursor.hook.pos.x = inputGui.calculateCursorPos();
+					switch (this.fields[i].type) {
+					case "INPUT":
+						let prefill = "" + sc.multiworld.connectionInfo[this.fields[i].key];
+						inputGui.value = prefill.split("");
+						inputGui.setObscure(this.fields[i].obscure ?? false);
+						inputGui.cursorPos = prefill.length;
+						inputGui.cursor.hook.pos.x = inputGui.calculateCursorPos();
+						break;
+					case "CHECKBOX":
+						inputGui.setPressed(sc.multiworld.connectionInfo[this.fields[i].key]);
+						break;
+					}
 				}
 
 				this.inputList.addChildGui(inputGui);
@@ -268,9 +291,16 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		getOptions() {
-			let result: Record<string, string> = {};
+			let result: Record<string, any> = {};
 			for (let i = 0; i < this.fields.length; i++) {
-				result[this.fields[i].key] = this.inputGuis[i].value.join("");
+				switch(this.fields[i].type) {
+				case "INPUT":
+					result[this.fields[i].key] = this.inputGuis[i].value.join("");
+					break;
+				case "CHECKBOX":
+					result[this.fields[i].key] = this.inputGuis[i].pressed;
+					break;
+				}
 			}
 
 			return result as unknown as sc.MultiWorldModel.AnyConnectionInformation;

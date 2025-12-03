@@ -46,6 +46,7 @@ declare global {
 				url: string;
 				name: string;
 				password: string;
+				deathLink: boolean;
 			}
 
 			interface LegacyConnectionInformation {
