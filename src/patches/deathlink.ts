@@ -43,6 +43,7 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		receiveDeath() {
+			this.deathLinkProcessed = true;
 			if (ig.game.playerEntity) ig.game.playerEntity.selfDestruct();
 		},
 
