@@ -13,6 +13,14 @@ declare global {
 		}
 		var APConnectionStatusGui: APConnectionStatusGuiConstructor;
 
+		interface APDeathLinkStatusGui extends sc.TextGui, sc.Model.Observer {
+			update(this: this): void;
+		}
+		interface APDeathLinkStatusGuiConstructor extends ImpactClass<APDeathLinkStatusGui> {
+			new (): APDeathLinkStatusGui;
+		}
+		var APDeathLinkStatusGui: APDeathLinkStatusGuiConstructor;
+
 		enum MENU_SUBMENU {
 			AP_CONNECTION,
 		}
@@ -76,6 +84,33 @@ export function patch(plugin: MwRandomizer) {
 		},
 	});
 
+	sc.APDeathLinkStatusGui = sc.TextGui.extend({
+		init: function () {
+			this.parent("", {font: sc.fontsystem.tinyFont});
+
+			this.update();
+
+			sc.Model.addObserver(sc.multiworld, this);
+		},
+
+		update: function () {
+			if (
+				sc.multiworld.status == sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED && 
+				sc.multiworld.connectionInfo.deathLink
+			) {
+				this.setText(`\\c[1]DEATH LINK ACTIVE\\c[0]`);
+			} else {
+				this.setText(``);
+			}
+		},
+
+		modelChanged(model: any, msg: number, data: any) {
+			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
+				this.update();
+			}
+		},
+	});
+
 
 	nax.ccuilib.pauseScreen.addButton({
 		text: '',
@@ -90,6 +125,9 @@ export function patch(plugin: MwRandomizer) {
 
 	nax.ccuilib.pauseScreen.addText({
 		textGui: () => new sc.APConnectionStatusGui()
+	})
+	nax.ccuilib.pauseScreen.addText({
+		textGui: () => new sc.APDeathLinkStatusGui()
 	})
 
 	sc.APConnectionBox = sc.BaseMenu.extend({
@@ -227,6 +265,8 @@ export function patch(plugin: MwRandomizer) {
 
 			this.apConnectionStatusGui = new sc.APConnectionStatusGui();
 			this.apConnectionStatusGui.setPos(7, 0);
+			this.apDeathLinkStatusGui = new sc.APDeathLinkStatusGui();
+			this.apDeathLinkStatusGui.setPos(this.apConnectionStatusGui.hook.size.x + 17, 0);
 
 			this.msgBoxBox = new ig.GuiElementBase();
 			this.msgBoxBox.setSize(
@@ -237,6 +277,7 @@ export function patch(plugin: MwRandomizer) {
 			this.msgBox.setPos(0, this.apConnectionStatusGui.hook.size.y);
 
 			this.msgBoxBox.addChildGui(this.apConnectionStatusGui);
+			this.msgBoxBox.addChildGui(this.apDeathLinkStatusGui);
 			this.msgBoxBox.addChildGui(this.msgBox);
 			this.msgBoxBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_TOP);
 
