@@ -65,7 +65,7 @@ export function patch(plugin: MwRandomizer) {
 			const victimName = sc.multiworld.client.name;
 			let enemyName = "an enemy";
 			if (attacker instanceof ig.ENTITY.Enemy) {
-				enemyName = this.enemyDataList[attacker.enemyName].name.en_US;
+				enemyName = sc.combat.enemyDataList[attacker.enemyName].name.en_US;
 			}
 			if (victim == ig.game.playerEntity) {
 				sc.multiworld.client.deathLink.sendDeathLink(victimName, `${victimName} was killed by ${enemyName}`);
