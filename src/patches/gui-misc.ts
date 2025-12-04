@@ -198,10 +198,11 @@ export function patch(plugin: MwRandomizer) {
 
 			this.inputList = new ig.GuiElementBase();
 
+			let movingY = 0;
 			for (let i = 0; i < this.fields.length; i++) {
 				let textGui = new sc.TextGui(this.fields[i].label);
 				this.textColumnWidth = Math.max(this.textColumnWidth, textGui.hook.size.x);
-				textGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
+				textGui.hook.pos.y = movingY;
 				this.inputList.addChildGui(textGui);
 				this.textGuis.push(textGui);
 
@@ -224,7 +225,11 @@ export function patch(plugin: MwRandomizer) {
 				inputGui.data = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
 
 				this.buttongroup.addFocusGui(inputGui, 0, i);
-				inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
+				inputGui.hook.pos.y = movingY;
+				const diffY = inputGui.hook.size.y - textGui.hook.size.y;
+				if (diffY < 0) {
+					textGui.hook.pos.y += diffY/2;
+				}
 				
 				if (sc.multiworld.connectionInfo) {
 					//@ts-ignore
@@ -242,6 +247,7 @@ export function patch(plugin: MwRandomizer) {
 					}
 				}
 
+				movingY += this.vSpacer + Math.max(inputGui.hook.size.y, textGui.hook.size.y);
 				this.inputList.addChildGui(inputGui);
 				this.inputGuis.push(inputGui);
 			}
@@ -251,8 +257,8 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			this.inputList.setSize(
-				this.textColumnWidth + this.hSpacer + 200, 
-				this.textGuis[0].hook.size.y * this.textGuis.length + this.vSpacer * (this.textGuis.length - 1)
+				this.textColumnWidth + this.hSpacer + 200,
+				movingY - this.vSpacer,
 			);
 
 			this.content = new ig.GuiElementBase();
