@@ -11,6 +11,8 @@ export function patch(plugin: MwRandomizer) {
 			ITEM_RECEIVED: 2,
 			OPTIONS_PRESENT: 3,
 			PRINT_JSON: 4,
+			DEATH_SENT: 5,
+			DEATH_RECEIVED: 6,
 		};
 
 		sc.MULTIWORLD_CONNECTION_STATUS = {

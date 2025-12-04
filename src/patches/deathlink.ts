@@ -7,9 +7,12 @@ declare global {
 		interface APDeathLink extends ig.GameAddon {
 			deathLinkProcessed: boolean;
 
-			receiveDeath(this: this): void;
-			onCombatDeath(attacker: any, victim: any): void;
-			onNormalDeath(): void;
+			receiveDeath(this: this, source: string, time: number, cause?: string): void;
+			onCombatDeath(this: this, attacker: any, victim: any): void;
+			onNormalDeath(this: this): void;
+			sendDeathLink(this: this, victim: string, cause?: string): void;
+
+			modelChanged(this: this, model: any, msg: number, data: any): void;
 		}
 
 		interface APDeathLinkConstructor extends ImpactClass<sc.APDeathLink> {
@@ -25,7 +28,7 @@ export function patch(plugin: MwRandomizer) {
 		init() {
 			this.deathLinkProcessed = false;
 			sc.Model.addObserver(sc.multiworld, this);
-			sc.multiworld.client.deathLink.on("deathReceived", () => this.receiveDeath());
+			sc.multiworld.client.deathLink.on("deathReceived", (source, time, cause) => this.receiveDeath(source, time, cause));
 			const onCombatDeath = (a, v) => this.onCombatDeath(a, v);
 			const onNormalDeath = () => this.onNormalDeath();
 			sc.Combat.inject({
@@ -53,9 +56,10 @@ export function patch(plugin: MwRandomizer) {
 			}
 		},
 
-		receiveDeath() {
+		receiveDeath(source, time, cause) {
 			this.deathLinkProcessed = true;
 			if (ig.game.playerEntity) ig.game.playerEntity.selfDestruct();
+			sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.DEATH_RECEIVED, {source, time, cause});
 		},
 
 		onCombatDeath(attacker, victim) {
@@ -68,7 +72,7 @@ export function patch(plugin: MwRandomizer) {
 				enemyName = sc.combat.enemyDataList[attacker.enemyName].name.en_US;
 			}
 			if (victim == ig.game.playerEntity) {
-				sc.multiworld.client.deathLink.sendDeathLink(victimName, `${victimName} was killed by ${enemyName}`);
+				this.sendDeathLink(victimName, `${victimName} was killed by ${enemyName}`);
 				this.deathLinkProcessed = true;
 			}
 		},
@@ -79,7 +83,12 @@ export function patch(plugin: MwRandomizer) {
 				return;
 			}
 			const victimName = sc.multiworld.client.name;
-			sc.multiworld.client.deathLink.sendDeathLink(victimName, `${victimName} died of natural causes`);
+			this.sendDeathLink(victimName, `${victimName} died of natural causes`);
+		},
+
+		sendDeathLink(victim, cause) {
+			sc.multiworld.client.deathLink.sendDeathLink(victim, cause);
+			sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.DEATH_SENT, cause);
 		}
 	});
 
