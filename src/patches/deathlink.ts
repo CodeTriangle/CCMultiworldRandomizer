@@ -87,6 +87,8 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		sendDeathLink(victim, cause) {
+			if (!sc.multiworld.connectionInfo.deathLink) return;
+
 			sc.multiworld.client.deathLink.sendDeathLink(victim, cause);
 			sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.DEATH_SENT, cause);
 		}
