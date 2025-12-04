@@ -2,7 +2,7 @@ import type {ItemInfo, RawQuest} from "../item-data.model";
 
 declare global {
 	namespace sc {
-		interface MultiWorldItemContent extends ig.GuiElementBase {
+		interface MultiWorldNotifyBase extends ig.GuiElementBase {
 			timer: number;
 			id: number;
 			player: number;
@@ -13,12 +13,27 @@ declare global {
 			updateTimer(this: this): void;
 		}
 
+		interface MultiWorldNotifyBaseConstructor extends ImpactClass<MultiWorldNotifyBase> {
+			new (text: string): MultiWorldNotifyBase;
+		}
+
+		var MultiWorldNotifyBase: sc.MultiWorldNotifyBaseConstructor;
+
+		interface MutliWorldItemContent extends MultiWorldNotifyBase {}
+
 		interface MultiWorldItemContentConstructor extends ImpactClass<MultiWorldItemContent> {
 			new (item: ItemInfo, receive: boolean): MultiWorldItemContent;
 		}
 
 		var MultiWorldItemContent: sc.MultiWorldItemContentConstructor;
 
+		interface MutliWorldDeathContent extends MultiWorldNotifyBase {}
+
+		interface MultiWorldDeathContentConstructor extends ImpactClass<MultiWorldDeathContent> {
+			new (recieve: boolean, cause?: string): MultiWorldDeathContent;
+		}
+
+		var MultiWorldDeathContent: sc.MultiWorldDeathContentConstructor;
 
 		interface RightHudBoxGui { /* fix type mismatch */
 			contentEntries: ig.GuiElementBase[]
