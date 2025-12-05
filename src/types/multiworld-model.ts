@@ -41,12 +41,19 @@ declare global {
 			DISCONNECTED = "DISCONNECTED",
 		}
 
+		enum MULTIWORLD_DEATH_LINK_MODE {
+			DEATH = "DEATH",
+			HP_CRITICAL_BOSSES = "HP_CRITICAL_BOSSES",
+			HP_CRITICAL = "HP_CRITICAL",
+		}
+
 		namespace MultiWorldModel {
 			interface ConnectionInformation {
 				url: string;
 				name: string;
 				password: string;
 				deathLink: boolean;
+				deathLinkMode: string;
 			}
 
 			interface LegacyConnectionInformation {

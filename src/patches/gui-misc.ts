@@ -25,6 +25,26 @@ declare global {
 			AP_CONNECTION,
 		}
 
+		interface APOptionGroup extends ig.GuiElementBase {
+			value: string;
+			buttons: Array<sc.ButtonGui>,
+			options: Array<{value: string, label: string}>,
+			init(
+				width: number,
+				height: number,
+				options: Array<{value: string, label: string}>,
+				buttongroup: sc.ButtonGroup,
+				buttongroupRow: number,
+				data: Record<string, string>,
+			): void;
+			updateButtons(): void;
+			setValue(string: void);
+		}
+		interface APOptionGroupConstructor extends ImpactClass<APOptionGroup> {
+			new (): APOptionGroup;
+		}
+		var APOptionGroup: APOptionGroupConstructor;
+
 		interface APConnectionBox extends sc.BaseMenu, sc.Model.Observer {
 			fields: {key: string; label: string, obscure?: boolean}[];
 			textGuis: sc.TextGui[];
@@ -62,6 +82,63 @@ export function patch(plugin: MwRandomizer) {
 		limitCursorPos() {
 			sc.quickmodel.cursor.x = sc.quickmodel.cursor.x.limit(0, ig.system.width);
 			sc.quickmodel.cursor.y = sc.quickmodel.cursor.y.limit(0, ig.system.height);
+		}
+	});
+
+	sc.APOptionGroup = ig.GuiElementBase.extend({
+		buttons: [],
+		value: "",
+		options: [],
+
+		init(width, height, options, buttongroup, buttongroupRow, data) {
+			this.parent();
+			this.options = options;
+			this.setSize(width, height);
+
+			const buttonWidth = Math.floor(width / options.length);
+
+			for (let i = 0; i < options.length; i++) {
+				const opt = options[i];
+				const buttonType = i === 0 ? sc.BUTTON_TYPE.GROUP_LEFT :
+					i === options.length - 1 ? sc.BUTTON_TYPE.GROUP_RIGHT :
+					sc.BUTTON_TYPE.GROUP;
+				const button = new sc.ButtonGui(opt.label, buttonWidth, true, buttonType, null, true);
+
+				button.data = data[opt.label];
+
+				button.noFocusOnPressed = true;
+				button.optionValue = opt.value;
+				button.hook.pos.x = i * buttonWidth;
+
+				this.buttons.push(button);
+				this.addChildGui(button);
+				buttongroup.addFocusGui(button, i, buttongroupRow);
+			}
+
+			buttongroup.addPressCallback((element) => {
+				if (this.buttons.includes(element)) {
+					this.value = element.optionValue;
+					this.updateButtons();
+				}
+			});
+
+			this.value = options[0].value;
+			this.updateButtons();
+		},
+
+		updateButtons() {
+			for (const button of this.buttons) {
+				if (button.optionValue === this.value) {
+					button.textChild.setText(`\\c[0]${button.text}`);
+				} else {
+					button.textChild.setText(`\\c[${sc.FONT_COLORS.GREY}]${button.text}`);
+				}
+			}
+		},
+
+		setValue(value: string) {
+			this.value = value;
+			this.updateButtons();
 		}
 	});
 
@@ -154,7 +231,26 @@ export function patch(plugin: MwRandomizer) {
 				type: "CHECKBOX",
 				key: "deathLink",
 				label: "Death Link",
-			}
+			},
+			{
+				type: "OPTION_GROUP",
+				key: "deathLinkMode",
+				label: "DL Mode",
+				options: [
+					{
+						value: sc.MULTIWORLD_DEATH_LINK_MODE.DEATH,
+						label: "Death",
+					},
+					{
+						value: sc.MULTIWORLD_DEATH_LINK_MODE.HP_CRITICAL_BOSSES,
+						label: "Boss Crit",
+					},
+					{
+						value: sc.MULTIWORLD_DEATH_LINK_MODE.HP_CRITICAL,
+						label: "All Crit",
+					},
+				],
+			},
 		],
 
 		transitions: {
@@ -206,6 +302,9 @@ export function patch(plugin: MwRandomizer) {
 				this.inputList.addChildGui(textGui);
 				this.textGuis.push(textGui);
 
+				// @ts-expect-error
+				const data = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
+
 				let inputGui;
 				switch (this.fields[i].type) {
 				case "INPUT":
@@ -215,16 +314,18 @@ export function patch(plugin: MwRandomizer) {
 						modmanager.gui.INPUT_FIELD_TYPE.DEFAULT,
 						this.fields[i].obscure ?? false
 					);
+					this.buttongroup.addFocusGui(inputGui, 0, i);
+					inputGui.data = data;
 					break;
 				case "CHECKBOX":
 					inputGui = new sc.CheckboxGui(false, 30);
+					this.buttongroup.addFocusGui(inputGui, 0, i);
+					inputGui.data = data;
 					break;
+				case "OPTION_GROUP":
+					inputGui = new sc.APOptionGroup(200, 21, this.fields[i].options, this.buttongroup, i, data);
 				}
 
-				// @ts-expect-error
-				inputGui.data = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
-
-				this.buttongroup.addFocusGui(inputGui, 0, i);
 				inputGui.hook.pos.y = movingY;
 				const diffY = inputGui.hook.size.y - textGui.hook.size.y;
 				if (diffY > 0) {
@@ -243,6 +344,9 @@ export function patch(plugin: MwRandomizer) {
 						break;
 					case "CHECKBOX":
 						inputGui.setPressed(sc.multiworld.connectionInfo[this.fields[i].key]);
+						break;
+					case "OPTION_GROUP":
+						inputGui.setValue(sc.multiworld.connectionInfo[this.fields[i].key]);
 						break;
 					}
 				}
@@ -346,6 +450,9 @@ export function patch(plugin: MwRandomizer) {
 					break;
 				case "CHECKBOX":
 					result[this.fields[i].key] = this.inputGuis[i].pressed;
+					break;
+				case "OPTION_GROUP":
+					result[this.fields[i].key] = this.inputGuis[i].value;
 					break;
 				}
 			}
