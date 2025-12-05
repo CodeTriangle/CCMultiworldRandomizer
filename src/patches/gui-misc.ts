@@ -227,7 +227,7 @@ export function patch(plugin: MwRandomizer) {
 				this.buttongroup.addFocusGui(inputGui, 0, i);
 				inputGui.hook.pos.y = movingY;
 				const diffY = inputGui.hook.size.y - textGui.hook.size.y;
-				if (diffY < 0) {
+				if (diffY > 0) {
 					textGui.hook.pos.y += diffY/2;
 				}
 				
