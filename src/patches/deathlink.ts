@@ -58,8 +58,34 @@ export function patch(plugin: MwRandomizer) {
 
 		receiveDeath(source, time, cause) {
 			this.deathLinkProcessed = true;
-			if (ig.game.playerEntity) ig.game.playerEntity.selfDestruct();
-			sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.DEATH_RECEIVED, {source, time, cause});
+			if (ig.game.playerEntity) {
+				switch (sc.multiworld.connectionInfo.deathLinkMode) {
+				case sc.MULTIWORLD_DEATH_LINK_MODE.HP_CRITICAL_BOSSES:
+					if (sc.model.combatMode &&
+						sc.combat.activeCombatants[sc.COMBATANT_PARTY.ENEMY].some((c) => c.isBoss())
+					) {
+						ig.game.playerEntity.params.setCritical();
+					} else {
+						ig.game.playerEntity.selfDestruct()
+					}
+					break;
+
+				case sc.MULTIWORLD_DEATH_LINK_MODE.HP_CRITICAL:
+					if (sc.model.combatMode && ig.game.playerEntity.params.currentHp > 0) {
+						ig.game.playerEntity.params.setCritical();
+					} else {
+						ig.game.playerEntity.selfDestruct();
+					}
+					break;
+
+				case sc.MULTIWORLD_DEATH_LINK_MODE.DEATH:
+				default:
+					ig.game.playerEntity.selfDestruct();
+					break;
+				}
+
+				sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.DEATH_RECEIVED, {source, time, cause});
+			}
 		},
 
 		onCombatDeath(attacker, victim) {
