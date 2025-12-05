@@ -104,7 +104,7 @@ export function patch(plugin: MwRandomizer) {
 					sc.BUTTON_TYPE.GROUP;
 				const button = new sc.ButtonGui(opt.label, buttonWidth, true, buttonType, null, true);
 
-				button.data = data[opt.label];
+				button.data = data[opt.key];
 
 				button.noFocusOnPressed = true;
 				button.optionValue = opt.value;
@@ -239,14 +239,17 @@ export function patch(plugin: MwRandomizer) {
 				options: [
 					{
 						value: sc.MULTIWORLD_DEATH_LINK_MODE.DEATH,
+						key: "death",
 						label: "Death",
 					},
 					{
 						value: sc.MULTIWORLD_DEATH_LINK_MODE.HP_CRITICAL_BOSSES,
+						key: "hpCriticalBosses",
 						label: "Boss Crit",
 					},
 					{
 						value: sc.MULTIWORLD_DEATH_LINK_MODE.HP_CRITICAL,
+						key: "hpCritical",
 						label: "All Crit",
 					},
 				],
