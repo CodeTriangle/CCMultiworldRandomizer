@@ -147,7 +147,7 @@ export function patch(plugin: MwRandomizer) {
 					msg == sc.MULTIWORLD_MSG.ITEM_RECEIVED &&
 					sc.options.get("show-items")
 				) {
-					const itemInfo = sc.multiworld.getItemInfo(data);
+					const itemInfo = sc.multiworld.getItemInfo(data, true);
 					this.addEntry(new sc.MultiWorldItemContent(itemInfo, true));
 				} else if (msg == sc.MULTIWORLD_MSG.DEATH_SENT) {
 					this.addEntry(new sc.MultiWorldDeathContent(false));
