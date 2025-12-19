@@ -1,0 +1,186 @@
+{
+	"cutscenes": {
+		"Full Rhombus Pass cutscene": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.entrance",
+				"mapId": 582,
+				"path": ".settings.event.31" 
+			},
+			"region": {
+				"open": "openDLC1" 
+			},
+			"reward": [
+				[ "item", "Full Rhombus Pass", 1 ]
+			]
+		},
+		"Ancient Shade SP Upgrade": {
+			"location": {
+				"area": "beach",
+				"map": "beach.expo-space",
+				"mapId": 138,
+				"path": ".settings.event.36" 
+			},
+			"region": {
+				"open": "openDLC_Beach" 
+			},
+			"reward": [
+				[ "sp" ]
+			]
+		},
+		"Ancient Shade Pickup": {
+			"location": {
+				"area": "beach",
+				"map": "beach.expo-space",
+				"mapId": 138,
+				"path": ".settings.event.18" 
+			},
+			"region": {
+				"open": "openDLC_Beach" 
+			},
+			"reward": [
+				[ "item", "Ancient Shade", 1 ]
+			]
+		},
+		"Ancient Shade Circuit Override": {
+			"location": {
+				"area": "rookie-harbor",
+				"map": "rookie-harbor.expo-space",
+				"mapId": 144,
+				"path": ".settings.event.44" 
+			},
+			"region": {
+				"open": "openDLC_Beach" 
+			},
+			"reward": [
+				[ "item", "Circuit Override", 3 ]
+			]
+		},
+		"Ku'lero GF Elevator Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.bridge",
+				"mapId": 139,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC_DungeonGF_L" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero GF Elevator Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.bridge",
+				"mapId": 140,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC_DungeonGF_R" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Gynthar Boss Fight": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.",
+				"mapId": 42,
+				"path": ".settings.event.21" 
+			},
+			"region": {
+				"open": "openDLC_DungeonFull" 
+			},
+			"reward": [
+				[ "item", "Circuit Override", 2 ]
+			]
+		},
+		"Ku'lero B2 Elevator Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b2.bridge",
+				"mapId": 69,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC_DungeonB2_L" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero B2 Elevator Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b2.bridge",
+				"mapId": 71,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC_DungeonB2_R" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero B2 Birds Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b2.room-w4-battle",
+				"mapId": 247,
+				"path": ".settings.event.10" 
+			},
+			"region": {
+				"open": "openDLC_DungeonB2_L" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero B2 Birds Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b2.room-e2-battle",
+				"mapId": 111,
+				"path": ".settings.event.10" 
+			},
+			"region": {
+				"open": "openDLC_DungeonB2_R" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero B3 Elevator Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b3.bridge",
+				"mapId": 42,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC_DungeonB3_L" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		},
+		"Ku'lero B3 Elevator Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b3.bridge",
+				"mapId": 43,
+				"path": ".settings.event.0.13" 
+			},
+			"region": {
+				"open": "openDLC_DungeonB3_R" 
+			},
+			"reward": [
+				[ "item", "Mega-Sandwich", 3 ]
+			]
+		}
+	}
+}

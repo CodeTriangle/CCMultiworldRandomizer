@@ -1,0 +1,631 @@
+{
+	"chests": {
+		"Homestedt: Entrance Left": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.entrance",
+				"mapId": 44
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Emerald", 4 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Homestedt: Entrance Upper": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.entrance",
+				"mapId": 26
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Amethyst", 4 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Homestedt: Center Upper Right": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.center",
+				"mapId": 213
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Topaz", 4 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Homestedt: Center Upper Left": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.center",
+				"mapId": 839
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Citrine", 4 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Homestedt: Center Bottom Right": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.center",
+				"mapId": 26
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Goose", 1 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Homestedt: Center Bottom Left": {
+			"location": {
+				"area": "evo-village",
+				"map": "evo-village.center",
+				"mapId": 1086
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC1"
+			},
+			"reward": [
+				[ "item", "Ruby", 4 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Azure A.: Sandy Bar Lower": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-01-entrance",
+				"mapId": 20
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Chunky", 1 ]
+			]
+		},
+		"Azure A.: Sandy Bar Upper Right": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-01-entrance",
+				"mapId": 21
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "MacGuffin's Coin", 1 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Azure A.: Isle of Legend Left": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-02",
+				"mapId": 50
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Mellow Water", 5 ]
+			]
+		},
+		"Azure A.: Isle of Legend MacGuffin": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-02",
+				"mapId": 51
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Ancient Cups", 1 ]
+			],
+			"condition": [
+				[ "item", "MacGuffin's Coin", 3 ]
+			]
+		},
+		"Azure A.: UFO Island": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-03",
+				"mapId": 80
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Durian", 2 ]
+			]
+		},
+		"Azure A.: Rough Lagoon": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-04",
+				"mapId": 97
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Shell Nut", 5 ]
+			]
+		},
+		"Azure A.: Shallow Shore Left": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-05",
+				"mapId": 796
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Ember Sack", 5 ]
+			]
+		},
+		"Azure A.: Shallow Shore Right": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-05",
+				"mapId": 20
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "MacGuffin's Coin", 1 ]
+			]
+		},
+		"Azure A.: Calm Pocket": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-06",
+				"mapId": 42
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Core Stone", 5 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Azure A.: Bird Skull Approach Left": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-07",
+				"mapId": 2
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Yellow Sponge", 5 ]
+			]
+		},
+		"Azure A.: Bird Skull Approach Right": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-07",
+				"mapId": 16
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Worm Band", 3 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Azure A.: Dover's Cliffs": {
+			"location": {
+				"area": "beach",
+				"map": "beach.path-08",
+				"mapId": 83
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Razor Tip", 3 ]
+			]
+		},
+		"Azure A.: Altar of the Key": {
+			"location": {
+				"area": "beach",
+				"map": "beach.temple",
+				"mapId": 1463
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"reward": [
+				[ "item", "Baby of the East", 1 ]
+			]
+		},
+		"Rhombus: South Arch Left": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-s",
+				"mapId": 888
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Seedling", 1 ]
+			]
+		},
+		"Rhombus: SW Beach": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.beach-sw",
+				"mapId": 1096
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Antique Token", 1 ]
+			]
+		},
+		"Rhombus: Garden Terrace": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-w",
+				"mapId": 305
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Meteor Chunk", 1 ]
+			]
+		},
+		"Rhombus: Open PVP Fields": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-nw",
+				"mapId": 251
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Burned Ash", 2 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Rhombus: North Arch": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-n",
+				"mapId": 197
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Nuclear Roach", 1 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Rhombus: Cliff Exhibition Upper": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-ne",
+				"mapId": 5
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Focus Shard", 5 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
+			]
+		},
+		"Rhombus: Cliff Exhibition Right": {
+			"location": {
+				"area": "rhombus-sqr",
+				"map": "rhombus-sqr.center-ne",
+				"mapId": 437
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "open20"
+			},
+			"reward": [
+				[ "item", "Antique Token", 1 ]
+			]
+		},
+		"Ku'lero: Comet Trail Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-01",
+				"mapId": 256
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC_DungeonEntry.1"
+			},
+			"reward": [
+				[ "item", "Antique Ore", 2 ]
+			]
+		},
+		"Ku'lero: Comet Trail Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-01",
+				"mapId": 17
+			},
+			"clearance": "Silver",
+			"region": {
+				"open": "openDLC_DungeonEntry.1"
+			},
+			"reward": [
+				[ "item", "Rumble Hive", 2 ]
+			]
+		},
+		"Ku'lero: Outlook": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-02-center",
+				"mapId": 42
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			},
+			"reward": [
+				[ "item", "Barrel Beak", 3 ]
+			]
+		},
+		"Ku'lero: Longleg Vale Upper": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-03-south-west",
+				"mapId": 11
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_DungeonB2_L"
+			},
+			"reward": [
+				[ "item", "Rift Spore", 1 ]
+			]
+		},
+		"Ku'lero: Longleg Vale Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-03-south-west",
+				"mapId": 12
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			},
+			"reward": [
+				[ "item", "Lapis Lazuli", 4 ]
+			]
+		},
+		"Ku'lero: Crystal Den Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-04-north-west",
+				"mapId": 11
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC_DungeonB2_L"
+			},
+			"reward": [
+				[ "item", "Moonstone", 4 ]
+			]
+		},
+		"Ku'lero: Crystal Den Key Chest": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-04-north-west",
+				"mapId": 421
+			},
+			"clearance": "Default",
+			"region": {
+				"open": "openDLC_DungeonB2_L"
+			},
+			"reward": [
+				[ "item", "Ku'lero Key", 1 ]
+			]
+		},
+		"Ku'lero: Crystal Den Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-04-north-west",
+				"mapId": 10
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_DungeonB2_L.1"
+			},
+			"reward": [
+				[ "item", "Batboy", 1 ]
+			]
+		},
+		"Ku'lero: Cracked Pillars Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-03-south-east",
+				"mapId": 53
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC_DungeonB2_R"
+			},
+			"reward": [
+				[ "item", "Focus Shard", 3 ]
+			]
+		},
+		"Ku'lero: Cracked Pillars Key Chest": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-03-south-east",
+				"mapId": 770
+			},
+			"clearance": "Default",
+			"region": {
+				"open": "openDLC_DungeonB2_R"
+			},
+			"reward": [
+				[ "item", "Ku'lero Key", 1 ]
+			]
+		},
+		"Ku'lero: Cracked Pillars Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-03-south-east",
+				"mapId": 3
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_DungeonEntry.1"
+			},
+			"reward": [
+				[ "item", "Diamond", 4 ]
+			]
+		},
+		"Ku'lero: Water Grave Right": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-04-north-east",
+				"mapId": 50
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_DungeonB2-R.1"
+			},
+			"reward": [
+				[ "item", "Butterfliege", 1 ]
+			]
+		},
+		"Ku'lero: Water Grave Left": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.g.outdoor-04-north-east",
+				"mapId": 86
+			},
+			"clearance": "Bronze",
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			},
+			"reward": [
+				[ "item", "Burned Ash", 3 ]
+			]
+		},
+		"Ku'lero: Shard Trial West Key Chest": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b2.room-w7-battle",
+				"mapId": 83
+			},
+			"clearance": "Default",
+			"region": {
+				"open": "openDLC_DungeonB2-L"
+			},
+			"reward": [
+				[ "item", "Ku'lero Key", 1 ]
+			]
+		},
+		"Ku'lero: Master Key Chest": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.b3.room-c1",
+				"mapId": 85
+			},
+			"clearance": "Default",
+			"region": {
+				"open": "openDLC_DungeonMain"
+			},
+			"reward": [
+				[ "item", "Ku'lero Master Key", 1 ]
+			]
+		},
+		"Ku'lero: Mac Guffin Coin": {
+			"location": {
+				"area": "final-dng",
+				"map": "final-dng.center-ne",
+				"mapId": 305
+			},
+			"clearance": "Gold",
+			"region": {
+				"open": "openDLC_DungeonBoss"
+			},
+			"reward": [
+				[ "item", "MacGuffin's Coin", 1 ]
+			]
+		}
+	}
+}

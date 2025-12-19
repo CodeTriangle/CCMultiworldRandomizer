@@ -1,0 +1,26 @@
+{
+	"itemPools": {
+		"required": [
+      {
+				"item": ["item", "Full Rhombus Pass"],
+				"quantity": 1
+			},
+      {
+				"item": ["item", "Ancient Shade"],
+				"quantity": 1
+			},
+      {
+				"item": ["item", "MacGuffin's Coin"],
+				"quantity": 3
+			},
+			{
+				"item": ["item", "Ku'lero Key"],
+				"quantity": 3
+			},
+      {
+				"item": ["item", "Ku'lero Master Key"],
+				"quantity": 1
+			}
+    ]
+  }
+}
