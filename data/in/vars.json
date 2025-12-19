@@ -27,6 +27,10 @@
 				]
 			]
 		},
-		"dlcActive": "boolean"
+		"dlcActive": {
+			"false": [
+				[ "never" ]
+			]
+		}
 	}
 }

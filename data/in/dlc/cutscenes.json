@@ -87,7 +87,7 @@
 		"Gynthar Boss Fight": {
 			"location": {
 				"area": "final-dng",
-				"map": "final-dng.",
+				"map": "final-dng.b1.bridge-midboss",
 				"mapId": 42,
 				"path": ".settings.event.21" 
 			},

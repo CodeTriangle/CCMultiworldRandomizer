@@ -7,7 +7,7 @@
 					"to": "openDLC1",
 					"condition": [
 						["item", "Guild Pass", 1],
-						["var", "dlcActive", "true"]
+						["var", "dlcActive"]
 					]
 				},
 				{
@@ -15,7 +15,7 @@
 					"to": "openDLC_Beach",
 					"condition": [
 						["item", "Full Rhombus Pass", 1],
-						["var", "dlcActive", "true"]
+						["var", "dlcActive"]
 					]
 				},
 				{
@@ -23,7 +23,7 @@
 					"to": "openDLC_DungeonEntry",
 					"condition": [
 						["item", "Ancient Shade", 1],
-						["var", "dlcActive", "true"]
+						["var", "dlcActive"]
 					]
 				},
 				{

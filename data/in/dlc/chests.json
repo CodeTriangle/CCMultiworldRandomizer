@@ -616,7 +616,7 @@
 		"Ku'lero: Mac Guffin Coin": {
 			"location": {
 				"area": "final-dng",
-				"map": "final-dng.center-ne",
+				"map": "final-dng.b4.stargate",
 				"mapId": 305
 			},
 			"clearance": "Gold",
