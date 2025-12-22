@@ -26,11 +26,6 @@
 					[ "item", "Red Flame Shade" ]
 				]
 			]
-		},
-		"dlcActive": {
-			"false": [
-				[ "never" ]
-			]
 		}
 	}
 }
