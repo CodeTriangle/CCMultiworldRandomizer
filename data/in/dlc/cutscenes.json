@@ -61,7 +61,7 @@
 				"area": "final-dng",
 				"map": "final-dng.g.bridge",
 				"mapId": 139,
-				"path": ".settings.event.0.13" 
+				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
 				"open": "openDLC_DungeonGF_L" 
@@ -75,7 +75,7 @@
 				"area": "final-dng",
 				"map": "final-dng.g.bridge",
 				"mapId": 140,
-				"path": ".settings.event.0.13" 
+				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
 				"open": "openDLC_DungeonGF_R" 
@@ -103,7 +103,7 @@
 				"area": "final-dng",
 				"map": "final-dng.b2.bridge",
 				"mapId": 69,
-				"path": ".settings.event.0.13" 
+				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
 				"open": "openDLC_DungeonB2_L" 
@@ -117,7 +117,7 @@
 				"area": "final-dng",
 				"map": "final-dng.b2.bridge",
 				"mapId": 71,
-				"path": ".settings.event.0.13" 
+				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
 				"open": "openDLC_DungeonB2_R" 
@@ -159,7 +159,7 @@
 				"area": "final-dng",
 				"map": "final-dng.b3.bridge",
 				"mapId": 42,
-				"path": ".settings.event.0.13" 
+				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
 				"open": "openDLC_DungeonB3_L" 
@@ -173,7 +173,7 @@
 				"area": "final-dng",
 				"map": "final-dng.b3.bridge",
 				"mapId": 43,
-				"path": ".settings.event.0.13" 
+				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
 				"open": "openDLC_DungeonB3_R" 

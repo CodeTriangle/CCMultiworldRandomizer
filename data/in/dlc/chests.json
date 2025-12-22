@@ -421,7 +421,7 @@
 			"location": {
 				"area": "final-dng",
 				"map": "final-dng.g.outdoor-01",
-				"mapId": 17
+				"mapId": 175
 			},
 			"clearance": "Silver",
 			"region": {
@@ -565,7 +565,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_DungeonB2-R.1"
+				"open": "openDLC_DungeonB2_R.1"
 			},
 			"reward": [
 				[ "item", "Butterfliege", 1 ]
@@ -593,7 +593,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"open": "openDLC_DungeonB2-L"
+				"open": "openDLC_DungeonB2_L"
 			},
 			"reward": [
 				[ "item", "Ku'lero Key", 1 ]
