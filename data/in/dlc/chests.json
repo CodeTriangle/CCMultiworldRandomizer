@@ -108,6 +108,9 @@
 			},
 			"reward": [
 				[ "item", "Chunky", 1 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Azure A.: Sandy Bar Upper Right": {
@@ -170,6 +173,9 @@
 			},
 			"reward": [
 				[ "item", "Durian", 2 ]
+			],
+			"condition": [
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Azure A.: Rough Lagoon": {
@@ -257,9 +263,6 @@
 			},
 			"reward": [
 				[ "item", "Worm Band", 3 ]
-			],
-			"condition": [
-				[ "item", "Wave", 1 ]
 			]
 		},
 		"Azure A.: Dover's Cliffs": {
