@@ -46,9 +46,6 @@
 			},
 			"reward": [
 				[ "item", "Topaz", 4 ]
-			],
-			"condition": [
-				[ "item", "Wave", 1 ]
 			]
 		},
 		"Homestedt: Center Upper Left": {
@@ -63,9 +60,6 @@
 			},
 			"reward": [
 				[ "item", "Citrine", 4 ]
-			],
-			"condition": [
-				[ "item", "Wave", 1 ]
 			]
 		},
 		"Homestedt: Center Bottom Right": {
