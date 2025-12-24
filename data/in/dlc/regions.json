@@ -13,7 +13,7 @@
 					"from": "open20",
 					"to": "openDLC_Beach",
 					"condition": [
-						["item", "Full Rhombus Pass", 1]
+						["item", "Azure Archipelago Pass", 1]
 					]
 				},
 				{

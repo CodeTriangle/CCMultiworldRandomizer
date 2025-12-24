@@ -2,7 +2,7 @@
 	"itemPools": {
 		"required_dlc": [
 			{
-				"item": ["item", "Full Rhombus Pass"],
+				"item": ["item", "Azure Archipelago Pass"],
 				"quantity": 1
 			},
 			{
