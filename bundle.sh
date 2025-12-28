@@ -1,6 +1,10 @@
 #!/bin/bash
 
-version="$(jq -r <ccmod.json .version)";
+vparts=( $(jq -r '.randoVersion[]' data/in/master.json) )
+version="${vparts[0]}.${vparts[1]}.${vparts[2]}$([ -n "${vparts[3]}" ] && echo -${vparts[3]})"
+
+sed -i '/"version"/ s/: ".\+"/: '"\"$version\"/" ccmod.json
+
 [ -n "$1" ] && version="$version-$1";
 
 filename="CCMultiworldRandomizer-$version.ccmod";
