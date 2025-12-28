@@ -1261,7 +1261,7 @@
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
-				[ "region", "open4.5" ],
+				[ "region", "open", "open4.5" ],
 				[ "quest", "Bull Grab" ]
 			],
 			"reward": [
