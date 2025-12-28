@@ -147,6 +147,10 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		_initGfx() {
+			if (this.chestType === sc.CHEST_TYPE.MasterKey) {
+				this.chestType = sc.CHEST_TYPE.Default;
+			}
+
 			if (!this.isOpen && this.chestType.anim) {
 				this.setCurrentAnim(this.chestType.anim, true, null, true);
 			}
