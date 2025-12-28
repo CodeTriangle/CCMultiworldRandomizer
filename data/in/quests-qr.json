@@ -836,11 +836,7 @@
 				"open": "open5"
 			},
 			"condition": [
-				[ "item", "Broken Sword", 1 ],
-				[ "item", "Cursed Coin", 1 ],
-				[ "item", "White Key", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Broken Sword", 1 ]
 			]
 		},
 		"Turret Defense": {
