@@ -1263,7 +1263,7 @@
 				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
-				[ "item", "Mine Pass" ],
+				[ "region", "open4.5" ],
 				[ "quest", "Bull Grab" ]
 			],
 			"reward": [
