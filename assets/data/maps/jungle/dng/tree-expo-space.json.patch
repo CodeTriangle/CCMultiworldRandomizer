@@ -1,0 +1,28 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities"]
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "EventTrigger",
+			"x": 0,
+			"y": 0,
+			"level": 3,
+			"settings": {
+				"name": "Goal",
+				"eventType": "PARALLEL",
+				"triggerType": "ONCE_PER_ENTRY",
+				"startCondition": "true",
+				"endCondition": "false",
+				"event": [
+					{
+						"type": "MW_GOAL_COMPLETED",
+						"goal": "monkey"
+					}
+				]
+			}
+		}
+	}
+]

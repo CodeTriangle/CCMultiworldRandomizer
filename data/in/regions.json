@@ -247,7 +247,11 @@
 			],
 			"exclude": [ "1" ],
 			"start": "2",
-			"goal": "32"
+			"goals": {
+				"creator": {
+					"region": "32"
+				}
+			}
 		},
 		"open": {
 			"connections": [
@@ -611,10 +615,13 @@
 					"condition": [
 						["var", "vwPassage"]
 					]
-				},
-				{
-					"from": "open16.1",
-					"to": "open19",
+				}
+			],
+			"exclude": [ "open1" ],
+			"start": "open2",
+			"goals": {
+				"creator": {
+					"region": "open16.1",
 					"condition": [
 						[ "item", "Heat", 1 ],
 						[ "item", "Cold", 1 ],
@@ -622,11 +629,11 @@
 						[ "item", "Wave", 1 ],
 						[ "var", "vtShadeLock" ]
 					]
+				},
+				"monkey": {
+					"region": "open15.3"
 				}
-			],
-			"exclude": [ "open1" ],
-			"start": "open2",
-			"goal": "open19"
+			}
 		}
 	}
 }
