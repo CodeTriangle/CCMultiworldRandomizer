@@ -92,7 +92,7 @@
 				"path": ".settings.event.21" 
 			},
 			"region": {
-				"open": "openDLC_DungeonFull" 
+				"open": "openDLC_DungeonMain" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 2 ]

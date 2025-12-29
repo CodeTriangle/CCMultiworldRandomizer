@@ -408,7 +408,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC_DungeonEntry.1"
+				"open": "openDLC_DungeonEntry.1R"
 			},
 			"reward": [
 				[ "item", "Antique Ore", 2 ]
@@ -422,7 +422,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC_DungeonEntry.1"
+				"open": "openDLC_DungeonEntry.1L"
 			},
 			"reward": [
 				[ "item", "Rumble Hive", 2 ]
@@ -548,7 +548,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_DungeonEntry.1"
+				"open": "openDLC_DungeonEntry.1F"
 			},
 			"reward": [
 				[ "item", "Diamond", 4 ]
