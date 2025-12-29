@@ -2402,6 +2402,22 @@
 						3235824283
 					]
 				}
+			},
+			"cutscenes": {
+				"813": [
+					{
+						"mwids": [
+							3235824790
+						],
+						"path": ".settings.event.49"
+					},
+					{
+						"mwids": [
+							3235824791
+						],
+						"path": ".settings.event.48"
+					}
+				]
 			}
 		},
 		"jungle.path-02-crossroads": {
@@ -4458,6 +4474,12 @@
 		},
 		"3235824004": {
 			"en_US": "Boosts your combat capabilities, allowing you to perform more arts."
+		},
+		"3235824005": {
+			"en_US": "Grants access to the western regions of \\c[2]Gaia's Garden\\c[0]."
+		},
+		"3235824006": {
+			"en_US": "Grants access to the eastern regions of \\c[2]Gaia's Garden\\c[0]."
 		},
 		"3235924225": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rookie's Best\\c[0]."
@@ -8816,6 +8838,24 @@
 				"settings": {
 					"defaultClearance": "Silver"
 				}
+			},
+			{
+				"type": "EventTrigger",
+				"level": 0,
+				"x": 319.2,
+				"y": 732.0,
+				"map": "jungle.path-01-entrance",
+				"mwid": 3235824790,
+				"settings": {}
+			},
+			{
+				"type": "EventTrigger",
+				"level": 0,
+				"x": 319.2,
+				"y": 732.0,
+				"map": "jungle.path-01-entrance",
+				"mwid": 3235824791,
+				"settings": {}
 			}
 		],
 		"jungle-city": [
