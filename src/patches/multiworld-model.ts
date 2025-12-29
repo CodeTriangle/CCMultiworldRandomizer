@@ -387,16 +387,18 @@ export function patch(plugin: MwRandomizer) {
 					this.addMultiworldItem(item, i);
 				}
 
-				let area = ig.game.mapName.split(".")[0];
-
 				if (this.client.authenticated) {
 					if (this.offlineCheckBuffer.length > 0) {
 						this.client.check(...this.offlineCheckBuffer);
 						this.offlineCheckBuffer = [];
 					}
 
-					this.client.storage.prepare("area", "rookie-harbor")
-						.replace(area)
+					const mapName = ig.game.mapName;
+					const team = this.client.players.self.team;
+					const slot = this.client.players.self.slot;
+
+					this.client.storage.prepare(`CrossCode_${team}_${slot}_mapName`, "rookie-harbor")
+						.replace(mapName)
 						.commit(false);
 				}
 			},
@@ -515,9 +517,19 @@ export function patch(plugin: MwRandomizer) {
 					// return empty object instead of undefined if slot is null or dataPackage doesn't exist
 					let checksums: Optional<Record<string, string>> = mw?.dataPackageChecksums;
 
-					if (checksums != undefined && !ig.equal(checksums, remoteChecksums)) {
-						fatalError("Some game checksums do not match.");
-						return;
+					if (checksums != undefined) {
+						const entries = Object.keys(checksums);
+						const remoteEntries = Object.keys(remoteChecksums);
+
+						if (
+							// check if are same length
+							entries.length !== remoteEntries.length ||
+							// check that the contents of each key are the same
+							entries.find(([k, v]) => remoteChecksums[k] === v) !== undefined
+						) {
+							fatalError("Some game checksums do not match.");
+							return;
+						}
 					}
 
 					listener.onLoginProgress("Downloading remaining game packages.");
@@ -560,7 +572,13 @@ export function patch(plugin: MwRandomizer) {
 					this.localCheckedLocations.add(location);
 				}
 
-				this.seenChests = new Set(mw?.seenChests);
+				if (!this.seenChests) {
+					// if our client does not know of any chests, add them all
+					this.seenChests = new Set(mw?.seenChests);
+				} else {
+					// otherwise, merge them into our local seen chests list
+					mw?.seenChests.forEach(e => this.seenChests.add(e));
+				}
 
 				// if we're in game, then run the level loading code
 				// these functions are intended to complement each other but when login() is called from the title screen,

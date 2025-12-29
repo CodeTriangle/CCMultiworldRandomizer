@@ -576,6 +576,9 @@
 				"linear": "33",
 				"open": "open20"
 			},
+			"condition": [
+				[ "var", "canGrind" ]
+			],
 			"slots": [
 				"Rising Super Star",
 				"Dk Pepper",

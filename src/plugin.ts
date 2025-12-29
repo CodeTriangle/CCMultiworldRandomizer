@@ -3,8 +3,6 @@ import {WorldData, ItemInfo} from './item-data.model';
 import {readJsonFromFile} from './utils';
 import {applyPatches} from "./patches/index";
 
-import type {} from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
-
 // install a bunch of polyfills for archipelago.js
 require('iterator-polyfill');
 

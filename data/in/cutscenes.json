@@ -110,6 +110,9 @@
 				"linear": "31",
 				"open": "open16" 
 			},
+			"properties": {
+				"alwaysQuest": true
+			},
 			"reward": [
 				[ "item", "Old Dojo Key", 1 ]
 			]

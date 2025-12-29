@@ -290,7 +290,8 @@
 				"open": "open18"
 			},
 			"condition": [
-				[ "quest", "A Promise is a Promise 5" ]
+				[ "quest", "A Promise is a Promise 5" ],
+				[ "item", "Mine Pass" ]
 			],
 			"_comment": "1 cp for each element"
 		},
@@ -752,6 +753,7 @@
 			},
 			"condition": [
 				[ "quest", "Hot Trail" ],
+				[ "item", "Wave", 1 ],
 				[ "item", "Meteor Shade", 1 ]
 			],
 			"reward": [
@@ -834,11 +836,7 @@
 				"open": "open5"
 			},
 			"condition": [
-				[ "item", "Broken Sword", 1 ],
-				[ "item", "Cursed Coin", 1 ],
-				[ "item", "White Key", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Broken Sword", 1 ]
 			]
 		},
 		"Turret Defense": {
@@ -1185,7 +1183,6 @@
 				"open": "open9"
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
@@ -1228,7 +1225,7 @@
 				"open": "open3"
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
+				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
 				[ "quest", "Smuggle Trouble" ]
@@ -1272,9 +1269,9 @@
 			},
 			"condition": [
 				[ "item", "Red Flame Shade", 1 ],
-				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
+				[ "region", "open", "open4.5" ],
 				[ "quest", "Bull Grab" ]
 			],
 			"reward": [
