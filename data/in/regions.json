@@ -531,8 +531,7 @@
 					"from": "open16",
 					"to": "open16.1",
 					"condition": [
-						[ "item", "Meteor Shade", 1 ],
-						[ "item", "Shock", 1 ]
+						[ "item", "Meteor Shade", 1 ]
 					]
 				},
 				{
