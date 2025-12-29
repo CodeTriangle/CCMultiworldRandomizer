@@ -13,6 +13,7 @@ import { patch as patchNewGame } from "./new-game";
 import { patch as patchTextClient } from "./text-client";
 import { patch as patchLogin } from "./login";
 import { patch as patchMap } from "./map";
+import { patch as patchDeathLink } from "./deathlink.ts";
 
 export function applyPatches(plugin: MwRandomizer) {
 	patchMwModel(plugin);
@@ -28,4 +29,5 @@ export function applyPatches(plugin: MwRandomizer) {
 	patchTextClient(plugin);
 	patchLogin(plugin);
 	patchMap(plugin);
+	patchDeathLink(plugin);
 }

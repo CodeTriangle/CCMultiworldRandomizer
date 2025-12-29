@@ -22,6 +22,12 @@
 				"url": "The URL to connect to, (i.e. 'archipelago.gg:38281').",
 				"name": "The name field in your YAML, (i.e. 'Player1').",
 				"password": "The multiworld's password.",
+				"deathLink": "Enable Death Link (when your friends die, you die).",
+				"deathLinkMode": {
+					"death": "When death is received, you die.",
+					"hpCriticalBosses": "When death is recieved in boss fights, your HP becomes critical. You die otherwise.",
+					"hpCritical": "When death is recieved in combat, your HP becomes critical. You die otherwise.",
+				},
 				"connect": "Connect to the multiworld using these details.",
 				"disconnect": "Disconnect from the multiworld if connected."
 			},

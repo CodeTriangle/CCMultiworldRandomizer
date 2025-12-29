@@ -5,18 +5,15 @@ import { ItemInfo } from '../item-data.model';
 export function patch(plugin: MwRandomizer) {
 	// And for my next trick I will rip off ItemContent and ItemHudGui from the base game
 	// pls don't sue
-	sc.MultiWorldItemContent = ig.GuiElementBase.extend({
+	sc.MultiWorldNotifyBase = ig.GuiElementBase.extend({
 		timer: 0,
 		id: -1,
 		player: -1,
 		textGui: null,
-		init: function (item: ItemInfo, receive: boolean) {
+		init: function (text: string) {
 			this.parent();
 			this.timer = 5;
 
-			let verb = receive ? "Received" : "Sent";
-			let prep = receive ? "from": "to";
-			let text = `${verb} \\c[3]${plugin.getGuiString(item)}\\c[0] ${prep} \\c[3]${item.player}\\c[0]`;
 			let isNormalSize = sc.options.get("item-hud-size") == sc.ITEM_HUD_SIZE.NORMAL;
 
 			this.textGui = new sc.TextGui(text, {
@@ -55,6 +52,27 @@ export function patch(plugin: MwRandomizer) {
 		},
 	});
 
+	sc.MultiWorldItemContent = sc.MultiWorldNotifyBase.extend({
+		init: function (item: ItemInfo, receive: boolean) {
+			let verb = receive ? "Received" : "Sent";
+			let prep = receive ? "from": "to";
+			let text = `${verb} \\c[3]${plugin.getGuiString(item)}\\c[0] ${prep} \\c[3]${item.player}\\c[0]`;
+			let isNormalSize = sc.options.get("item-hud-size") == sc.ITEM_HUD_SIZE.NORMAL;
+			this.parent(text);
+		},
+	});
+
+	sc.MultiWorldDeathContent = sc.MultiWorldNotifyBase.extend({
+		init: function (receive: boolean, source?: string) {
+			let verb = receive ? "Received" : "Sent";
+			let prep = receive ? "from" : "to";
+			let subject = receive ? source : "your friends";
+			let icon = "trophies-COMBAT";
+			let text = `\\c[1]${verb} \\i[${icon}]Death\\i[${icon}] ${prep} ${subject}\\c[0]`;
+			this.parent(text);
+		}
+	});
+
 	sc.MultiWorldHudBox = sc.RightHudBoxGui.extend({
 		contentEntries: [],
 		delayedStack: [],
@@ -68,8 +86,7 @@ export function patch(plugin: MwRandomizer) {
 			sc.Model.addObserver(sc.options, this);
 		},
 
-		addEntry: function (itemInfo: ItemInfo, receive: boolean) {
-			let entry = new sc.MultiWorldItemContent(itemInfo, receive);
+		addEntry: function (entry: any) {
 			if (this.contentEntries.length >= 5) {
 				this.delayedStack.push(entry);
 			} else {
@@ -124,12 +141,18 @@ export function patch(plugin: MwRandomizer) {
 					msg == sc.MULTIWORLD_MSG.ITEM_SENT &&
 					sc.options.get("show-items")
 				) {
-					this.addEntry(sc.multiworld.getItemInfo(data), false);
+					const itemInfo = sc.multiworld.getItemInfo(data);
+					this.addEntry(new sc.MultiWorldItemContent(itemInfo, false));
 				} else if (
 					msg == sc.MULTIWORLD_MSG.ITEM_RECEIVED &&
 					sc.options.get("show-items")
 				) {
-					this.addEntry(sc.multiworld.getItemInfo(data, true), true);
+					const itemInfo = sc.multiworld.getItemInfo(data, true);
+					this.addEntry(new sc.MultiWorldItemContent(itemInfo, true));
+				} else if (msg == sc.MULTIWORLD_MSG.DEATH_SENT) {
+					this.addEntry(new sc.MultiWorldDeathContent(false));
+				} else if (msg == sc.MULTIWORLD_MSG.DEATH_RECEIVED) {
+					this.addEntry(new sc.MultiWorldDeathContent(true, data.source));
 				}
 			} else if (model == sc.model) {
 				if (sc.model.isReset()) {
