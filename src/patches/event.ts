@@ -57,13 +57,15 @@ export function patch(plugin: MwRandomizer) {
 
 	ig.EVENT_STEP.MW_GOAL_COMPLETED = ig.EventStepBase.extend({
 		init(settings) {
-			// In the future, goal will only update client status if it checks off
-			// a specific goal specified by their yaml. For now, there's only one
-			// goal.
 			this.goal = settings.goal;
 		},
 		start() {
-			sc.multiworld.client.goal();
+			if (
+				sc.multiworld.options.goal === undefined && this.goal === "creator" ||
+				sc.multiworld.options.goal === this.goal
+			) {
+				sc.multiworld.client.goal();
+			}
 		}
 	});
 }

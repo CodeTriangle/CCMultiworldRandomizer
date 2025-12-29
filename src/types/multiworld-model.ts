@@ -78,8 +78,10 @@ declare global {
 			}
 
 			export type MultiworldOptions = {
+				goal: string,
 				vtShadeLock: boolean | number,
 				meteorPassage: boolean,
+				closedGaia: number,
 				vtSkip: boolean,
 				keyrings: number[],
 				questRando: boolean,
