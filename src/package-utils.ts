@@ -1,11 +1,16 @@
-// import * as fs from "node:fs";
-const fs = require("fs");
+const fs: typeof import('fs') = (0, eval)('require("fs")');
 import * as ap from "archipelago.js";
 
 const CACHE_DIR = ".apcache";
 
+const UNSAFE_CHARACTERS = /[<>:"\/\\\|\?\*]/g;
+
+function getSafeFileName(game: string) {
+	return game.replace(UNSAFE_CHARACTERS, "");
+}
+
 export async function saveGamePackage(game: string, pkg: ap.GamePackage): Promise<void> {
-	let dir = `${CACHE_DIR}/${game}`;
+	let dir = `${CACHE_DIR}/${getSafeFileName(game)}`;
 	let file = `${dir}/${pkg.checksum}.json`;
 
 	// make directory then write file containing data package
@@ -22,7 +27,7 @@ export async function saveDataPackage(pkg: ap.DataPackage) {
 }
 
 export async function loadGamePackage(game: string, checksum: string): Promise<ap.GamePackage | null> {
-	return fs.promises.readFile(`${CACHE_DIR}/${game}/${checksum}.json`, {encoding: "utf8"})
+	return fs.promises.readFile(`${CACHE_DIR}/${getSafeFileName(game)}/${checksum}.json`, {encoding: "utf8"})
 		.then(contents => JSON.parse(contents))
 		.catch(e => {
 			console.log(e);

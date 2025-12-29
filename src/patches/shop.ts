@@ -15,7 +15,7 @@ declare global {
 		}
 
 		interface ShopItemButton {
-			apItem: ap.NetworkItem | undefined;
+			apItem: ap.Item | undefined;
 			itemId: number | undefined;
 			worldGui: sc.TextGui | undefined;
 			slot: string | undefined;
@@ -104,7 +104,7 @@ export function patch(plugin: MwRandomizer) {
 				const gui = entry.gui as unknown as sc.ShopItemButton;
 				gui.hook.pos.y += accum;
 
-				const itemId: number = gui.data.id;
+				const itemId: number = gui.data.id as number;
 				const mwid: number = this.shopData[itemId];
 
 				if (sc.multiworld.localCheckedLocations.has(mwid)) {

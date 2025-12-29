@@ -25,6 +25,7 @@ export function patch(plugin: MwRandomizer) {
 					if (
 						entity
 						&& entity.settings
+						&& 'mapId' in entity.settings
 						&& entity.settings.mapId
 						&& mapOverrides.cutscenes
 						&& mapOverrides.cutscenes[entity.settings.mapId]

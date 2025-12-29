@@ -14,10 +14,11 @@ export function patch(plugin: MwRandomizer) {
 		};
 
 		sc.MULTIWORLD_CONNECTION_STATUS = {
-			CONNECTED: "CONNECTED",
-			CONNECTING: "CONNECTING",
-			DISCONNECTED: "DISCONNECTED",
+			CONNECTED: "CONNECTED" as sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED,
+			CONNECTING: "CONNECTING" as sc.MULTIWORLD_CONNECTION_STATUS.CONNECTING,
+			DISCONNECTED: "DISCONNECTED" as sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED,
 		};
+
 
 		sc.MultiWorldModel = ig.GameAddon.extend({
 			observers: [],
@@ -30,7 +31,7 @@ export function patch(plugin: MwRandomizer) {
 			numItems: 0,
 
 			init() {
-				this.client = new ap.Client({autoFetchDataPackage: false});
+				this.client = new ap.Client({autoFetchDataPackage: false, debugLogVersions: true});
 				ig.storage.register(this);
 				this.numItems = 676;
 
@@ -244,7 +245,7 @@ export function patch(plugin: MwRandomizer) {
 
 				const foreign = item.sender.slot != this.client.players.self.slot;
 
-				let displayMessage = foreign || item.id < this.baseNormalItemId;
+				let displayMessage = foreign || (item.id < this.baseNormalItemId && !item.name.includes("Pass"));
 
 				if (this.receivedItemMap[item.id]) {
 					this.receivedItemMap[item.id] += 1;
@@ -296,6 +297,12 @@ export function patch(plugin: MwRandomizer) {
 								sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
 							});
 
+							break;
+						case "West Gaia Pass":
+							sc.model.player.addItem("west-gaia-pass", 1, foreign);
+							break;
+						case "East Gaia Pass":
+							sc.model.player.addItem("east-gaia-pass", 1, foreign);
 							break;
 					}
 				} else if (item.id < this.baseDynamicItemId) {
@@ -386,16 +393,18 @@ export function patch(plugin: MwRandomizer) {
 					this.addMultiworldItem(item, i);
 				}
 
-				let area = ig.game.mapName.split(".")[0];
-
 				if (this.client.authenticated) {
 					if (this.offlineCheckBuffer.length > 0) {
 						this.client.check(...this.offlineCheckBuffer);
 						this.offlineCheckBuffer = [];
 					}
 
-					this.client.storage.prepare("area", "rookie-harbor")
-						.replace(area)
+					const mapName = ig.game.mapName;
+					const team = this.client.players.self.team;
+					const slot = this.client.players.self.slot;
+
+					this.client.storage.prepare(`CrossCode_${team}_${slot}_mapName`, "rookie-harbor")
+						.replace(mapName)
 						.commit(false);
 				}
 			},
@@ -404,18 +413,18 @@ export function patch(plugin: MwRandomizer) {
 				// Lots of errors here, sorry
 
 				// Unset all variables that aren't bound to properties already
-				this.slimLocationInfo = null;
-				this.locationInfo = null;
-				this.connectionInfo = null;
-				this.mode = null;
-				this.options = null;
+				this.slimLocationInfo = null as any;
+				this.locationInfo = null as any;
+				this.connectionInfo = null as any;
+				this.mode = null as any;
+				this.options = null as any;
 
-				this.dataPackageChecksums = null;
+				this.dataPackageChecksums = null as any;
 
-				this.questSettings = null;
-				this.receivedItemMap = null;
-				this.offlineCheckBuffer = null;
-				this.seenChests = null;
+				this.questSettings = null as any;
+				this.receivedItemMap = null as any;
+				this.offlineCheckBuffer = null as any;
+				this.seenChests = null as any;
 			},
 
 			onLevelLoadStart() {
@@ -514,9 +523,19 @@ export function patch(plugin: MwRandomizer) {
 					// return empty object instead of undefined if slot is null or dataPackage doesn't exist
 					let checksums: Optional<Record<string, string>> = mw?.dataPackageChecksums;
 
-					if (checksums != undefined && !ig.equal(checksums, remoteChecksums)) {
-						fatalError("Some game checksums do not match.");
-						return;
+					if (checksums != undefined) {
+						const entries = Object.keys(checksums);
+						const remoteEntries = Object.keys(remoteChecksums);
+
+						if (
+							// check if are same length
+							entries.length !== remoteEntries.length ||
+							// check that the contents of each key are the same
+							entries.find(([k, v]) => remoteChecksums[k] === v) !== undefined
+						) {
+							fatalError("Some game checksums do not match.");
+							return;
+						}
 					}
 
 					listener.onLoginProgress("Downloading remaining game packages.");
@@ -532,7 +551,6 @@ export function patch(plugin: MwRandomizer) {
 					saveDataPackage(this.client.package.exportPackage());
 				} catch (e: any) {
 					fatalError(e.message);
-					this.roomInfo = null;
 					return;
 				}
 
@@ -560,7 +578,13 @@ export function patch(plugin: MwRandomizer) {
 					this.localCheckedLocations.add(location);
 				}
 
-				this.seenChests = new Set(mw?.seenChests);
+				if (!this.seenChests) {
+					// if our client does not know of any chests, add them all
+					this.seenChests = new Set(mw?.seenChests);
+				} else {
+					// otherwise, merge them into our local seen chests list
+					mw?.seenChests.forEach(e => this.seenChests.add(e));
+				}
 
 				// if we're in game, then run the level loading code
 				// these functions are intended to complement each other but when login() is called from the title screen,

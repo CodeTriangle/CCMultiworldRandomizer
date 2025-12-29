@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs: typeof import('fs') = (0, eval)('require("fs")');
 
 export function defineVarProperty(object: Object, name: string, igVar: string) {
 	Object.defineProperty(object, name, {

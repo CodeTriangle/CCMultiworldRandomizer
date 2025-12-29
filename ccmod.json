@@ -1,6 +1,6 @@
 {
 		"id": "mw-rando",
-		"version": "0.7.0",
+		"version": "0.7.4",
 		"title": "Multiworld randomizer",
 		"description": "Client for CrossCode Archipelago Integration",
 		"repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -12,7 +12,8 @@
 		},
 		"dependencies": {
 			"open-world": ">=0.4.1",
-			"nax-ccuilib": ">=1.2.4",
+			"nax-ccuilib": ">=1.5.1",
+			"ccmodmanager": ">=1.0.4",
 			"font-utils": ">=1.2.0"
 		}
 }

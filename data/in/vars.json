@@ -27,6 +27,10 @@
 				]
 			]
 		},
-		"rhombusHubUnlock": "boolean"
+		"rhombusHubUnlock": "boolean",
+		"closedGaia": {
+			"minimal": [],
+			"full": []
+		}
 	}
 }

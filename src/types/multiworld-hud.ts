@@ -7,7 +7,7 @@ declare global {
 			id: number;
 			player: number;
 			textGui: sc.TextGui;
-			subGui: MultiWorldItemContent
+			subGui: MultiWorldItemContent;
 
 			updateOption(this: this, isNormalSize: boolean): void;
 			updateTimer(this: this): void;
@@ -19,6 +19,10 @@ declare global {
 
 		var MultiWorldItemContent: sc.MultiWorldItemContentConstructor;
 
+
+		interface RightHudBoxGui { /* fix type mismatch */
+			contentEntries: ig.GuiElementBase[]
+		}
 		interface MultiWorldHudBox extends sc.RightHudBoxGui, sc.Model.Observer {
 			contentEntries: MultiWorldItemContent[];
 			delayedStack: MultiWorldItemContent[];

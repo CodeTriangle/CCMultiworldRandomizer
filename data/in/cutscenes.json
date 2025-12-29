@@ -110,6 +110,9 @@
 				"linear": "31",
 				"open": "open16" 
 			},
+			"properties": {
+				"alwaysQuest": true
+			},
 			"reward": [
 				[ "item", "Old Dojo Key", 1 ]
 			]
@@ -367,6 +370,36 @@
 			},
 			"reward": [
 				[ "sp" ]
+			]
+		},
+		"Apollo Duel East Pass": {
+			"location": {
+				"area": "jungle",
+				"map": "jungle.path-01-entrance",
+				"mapId": 813,
+				"path": ".settings.event.49" 
+			},
+			"region": {
+				"linear": "30",
+				"open": "open10" 
+			},
+			"reward": [
+				[ "item", "East Gaia Pass", 1 ]
+			]
+		},
+		"Apollo Duel West Pass": {
+			"location": {
+				"area": "jungle",
+				"map": "jungle.path-01-entrance",
+				"mapId": 813,
+				"path": ".settings.event.48" 
+			},
+			"region": {
+				"linear": "30",
+				"open": "open10" 
+			},
+			"reward": [
+				[ "item", "West Gaia Pass", 1 ]
 			]
 		}
 	}

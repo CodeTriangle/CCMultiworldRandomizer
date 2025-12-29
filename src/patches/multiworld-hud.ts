@@ -111,7 +111,9 @@ export function patch(plugin: MwRandomizer) {
 			for (var i = this.contentEntries.length, gui = null; i--; ) {
 				gui = this.contentEntries[i];
 				gui.subGui.updateOption(isNormalSize);
-				gui.setContent(gui.subGui);
+
+				// potential crash? setContent doesn't exist on sc.MultiWorldItemContent
+				// gui.setContent(gui.subGui);
 			}
 			this.rearrangeContent();
 		},

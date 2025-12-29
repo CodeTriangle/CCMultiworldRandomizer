@@ -3,7 +3,7 @@ export interface WorldData {
 	quests: RawQuests;
 	shops: RawShops;
 	descriptions: { [itemId: number]: { [locale: string]: string } };
-	markers: { [area: string]: MarkerInfo[] }
+	markers: { [area: string]: MarkerInfo<any>[] }
 }
 
 export type RawItems = { [mapName: string]: RawMapItems };
