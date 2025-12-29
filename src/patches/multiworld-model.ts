@@ -245,7 +245,7 @@ export function patch(plugin: MwRandomizer) {
 
 				const foreign = item.sender.slot != this.client.players.self.slot;
 
-				let displayMessage = foreign || item.id < this.baseNormalItemId;
+				let displayMessage = foreign || (item.id < this.baseNormalItemId && !item.name.includes("Pass"));
 
 				if (this.receivedItemMap[item.id]) {
 					this.receivedItemMap[item.id] += 1;
@@ -297,6 +297,12 @@ export function patch(plugin: MwRandomizer) {
 								sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
 							});
 
+							break;
+						case "West Gaia Pass":
+							sc.model.player.addItem("west-gaia-pass", 1, foreign);
+							break;
+						case "East Gaia Pass":
+							sc.model.player.addItem("east-gaia-pass", 1, foreign);
 							break;
 					}
 				} else if (item.id < this.baseDynamicItemId) {

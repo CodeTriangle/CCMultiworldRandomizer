@@ -47,6 +47,22 @@
 				"en_US": "Boosts your combat capabilities, allowing you to perform more arts."
 			}
 		},
+		"West Gaia Pass": {
+			"reserved": true,
+			"id": 5,
+			"classification": "progression",
+			"description": {
+				"en_US": "Grants access to the western regions of \\c[2]Gaia's Garden\\c[0]."
+			}
+		},
+		"East Gaia Pass": {
+			"reserved": true,
+			"id": 6,
+			"classification": "progression",
+			"description": {
+				"en_US": "Grants access to the eastern regions of \\c[2]Gaia's Garden\\c[0]."
+			}
+		},
 		"Golden Triangle": {
 			"id": 0
 		},
@@ -88,12 +104,6 @@
 		},
 		"Dungeon Heart": {
 			"id": 18
-		},
-		"West Gaia Pass": {
-			"id": 19
-		},
-		"East Gaia Pass": {
-			"id": 20
 		},
 		"Rookiehat": {
 			"id": 23
