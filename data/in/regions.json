@@ -632,6 +632,12 @@
 				},
 				"monkey": {
 					"region": "open15.3"
+				},
+				"observatory": {
+					"region": "open2",
+					"condition": [
+						[ "location", "The Observatory" ]
+					]
 				}
 			}
 		}
