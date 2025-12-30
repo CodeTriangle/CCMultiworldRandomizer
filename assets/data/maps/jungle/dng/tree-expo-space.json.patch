@@ -12,6 +12,7 @@
 			"level": 3,
 			"settings": {
 				"name": "Goal",
+				"mapId": 100,
 				"eventType": "PARALLEL",
 				"triggerType": "ONCE_PER_ENTRY",
 				"startCondition": "true",
