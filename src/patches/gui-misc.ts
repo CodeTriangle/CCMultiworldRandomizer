@@ -13,9 +13,37 @@ declare global {
 		}
 		var APConnectionStatusGui: APConnectionStatusGuiConstructor;
 
+		interface APDeathLinkStatusGui extends sc.TextGui, sc.Model.Observer {
+			update(this: this): void;
+		}
+		interface APDeathLinkStatusGuiConstructor extends ImpactClass<APDeathLinkStatusGui> {
+			new (): APDeathLinkStatusGui;
+		}
+		var APDeathLinkStatusGui: APDeathLinkStatusGuiConstructor;
+
 		enum MENU_SUBMENU {
 			AP_CONNECTION,
 		}
+
+		interface APOptionGroup extends ig.GuiElementBase {
+			value: string;
+			buttons: Array<sc.ButtonGui>,
+			options: Array<{value: string, label: string}>,
+			init(
+				width: number,
+				height: number,
+				options: Array<{value: string, label: string}>,
+				buttongroup: sc.ButtonGroup,
+				buttongroupRow: number,
+				data: Record<string, string>,
+			): void;
+			updateButtons(): void;
+			setValue(string: void);
+		}
+		interface APOptionGroupConstructor extends ImpactClass<APOptionGroup> {
+			new (): APOptionGroup;
+		}
+		var APOptionGroup: APOptionGroupConstructor;
 
 		interface APConnectionBox extends sc.BaseMenu, sc.Model.Observer {
 			fields: {key: string; label: string, obscure?: boolean}[];
@@ -57,6 +85,63 @@ export function patch(plugin: MwRandomizer) {
 		}
 	});
 
+	sc.APOptionGroup = ig.GuiElementBase.extend({
+		buttons: [],
+		value: "",
+		options: [],
+
+		init(width, height, options, buttongroup, buttongroupRow, data) {
+			this.parent();
+			this.options = options;
+			this.setSize(width, height);
+
+			const buttonWidth = Math.floor(width / options.length);
+
+			for (let i = 0; i < options.length; i++) {
+				const opt = options[i];
+				const buttonType = i === 0 ? sc.BUTTON_TYPE.GROUP_LEFT :
+					i === options.length - 1 ? sc.BUTTON_TYPE.GROUP_RIGHT :
+					sc.BUTTON_TYPE.GROUP;
+				const button = new sc.ButtonGui(opt.label, buttonWidth, true, buttonType, null, true);
+
+				button.data = data[opt.key];
+
+				button.noFocusOnPressed = true;
+				button.optionValue = opt.value;
+				button.hook.pos.x = i * buttonWidth;
+
+				this.buttons.push(button);
+				this.addChildGui(button);
+				buttongroup.addFocusGui(button, i, buttongroupRow);
+			}
+
+			buttongroup.addPressCallback((element) => {
+				if (this.buttons.includes(element)) {
+					this.value = element.optionValue;
+					this.updateButtons();
+				}
+			});
+
+			this.value = options[0].value;
+			this.updateButtons();
+		},
+
+		updateButtons() {
+			for (const button of this.buttons) {
+				if (button.optionValue === this.value) {
+					button.textChild.setText(`\\c[0]${button.text}`);
+				} else {
+					button.textChild.setText(`\\c[${sc.FONT_COLORS.GREY}]${button.text}`);
+				}
+			}
+		},
+
+		setValue(value: string) {
+			this.value = value;
+			this.updateButtons();
+		}
+	});
+
 	sc.APConnectionStatusGui = sc.TextGui.extend({
 		init: function () {
 			this.parent("", {font: sc.fontsystem.tinyFont});
@@ -76,6 +161,33 @@ export function patch(plugin: MwRandomizer) {
 		},
 	});
 
+	sc.APDeathLinkStatusGui = sc.TextGui.extend({
+		init: function () {
+			this.parent("", {font: sc.fontsystem.tinyFont});
+
+			this.update();
+
+			sc.Model.addObserver(sc.multiworld, this);
+		},
+
+		update: function () {
+			if (
+				sc.multiworld.status == sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED && 
+				sc.multiworld.connectionInfo.deathLink
+			) {
+				this.setText(`\\c[1]DEATH LINK ACTIVE\\c[0]`);
+			} else {
+				this.setText(``);
+			}
+		},
+
+		modelChanged(model: any, msg: number, data: any) {
+			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
+				this.update();
+			}
+		},
+	});
+
 
 	nax.ccuilib.pauseScreen.addButton({
 		text: '',
@@ -91,24 +203,57 @@ export function patch(plugin: MwRandomizer) {
 	nax.ccuilib.pauseScreen.addText({
 		textGui: () => new sc.APConnectionStatusGui()
 	})
+	nax.ccuilib.pauseScreen.addText({
+		textGui: () => new sc.APDeathLinkStatusGui()
+	})
 
 	sc.APConnectionBox = sc.BaseMenu.extend({
 		gfx: new ig.Image("media/gui/menu.png"),
 
 		fields: [
 			{
+				type: "INPUT",
 				key: "url",
 				label: "URL",
 			},
 			{
+				type: "INPUT",
 				key: "name",
 				label: "Slot Name",
 			},
 			{
+				type: "INPUT",
 				key: "password",
 				label: "Password",
 				obscure: true,
-			}
+			},
+			{
+				type: "CHECKBOX",
+				key: "deathLink",
+				label: "Death Link",
+			},
+			{
+				type: "OPTION_GROUP",
+				key: "deathLinkMode",
+				label: "DL Mode",
+				options: [
+					{
+						value: sc.MULTIWORLD_DEATH_LINK_MODE.DEATH,
+						key: "death",
+						label: "Death",
+					},
+					{
+						value: sc.MULTIWORLD_DEATH_LINK_MODE.HP_CRITICAL_BOSSES,
+						key: "hpCriticalBosses",
+						label: "Boss Crit",
+					},
+					{
+						value: sc.MULTIWORLD_DEATH_LINK_MODE.HP_CRITICAL,
+						key: "hpCritical",
+						label: "All Crit",
+					},
+				],
+			},
 		],
 
 		transitions: {
@@ -152,35 +297,64 @@ export function patch(plugin: MwRandomizer) {
 
 			this.inputList = new ig.GuiElementBase();
 
+			let movingY = 0;
 			for (let i = 0; i < this.fields.length; i++) {
 				let textGui = new sc.TextGui(this.fields[i].label);
 				this.textColumnWidth = Math.max(this.textColumnWidth, textGui.hook.size.x);
-				textGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
+				textGui.hook.pos.y = movingY;
 				this.inputList.addChildGui(textGui);
 				this.textGuis.push(textGui);
 
-				let inputGui = new modmanager.gui.InputField(
-					200,
-					textGui.hook.size.y,
-					modmanager.gui.INPUT_FIELD_TYPE.DEFAULT,
-					this.fields[i].obscure ?? false
-				);
-
 				// @ts-expect-error
-				inputGui.data = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
+				const data = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
 
-				this.buttongroup.addFocusGui(inputGui, 0, i);
-				inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
+				let inputGui;
+				switch (this.fields[i].type) {
+				case "INPUT":
+					inputGui = new modmanager.gui.InputField(
+						200,
+						textGui.hook.size.y,
+						modmanager.gui.INPUT_FIELD_TYPE.DEFAULT,
+						this.fields[i].obscure ?? false
+					);
+					this.buttongroup.addFocusGui(inputGui, 0, i);
+					inputGui.data = data;
+					break;
+				case "CHECKBOX":
+					inputGui = new sc.CheckboxGui(false, 30);
+					this.buttongroup.addFocusGui(inputGui, 0, i);
+					inputGui.data = data;
+					break;
+				case "OPTION_GROUP":
+					inputGui = new sc.APOptionGroup(200, 21, this.fields[i].options, this.buttongroup, i, data);
+				}
+
+				inputGui.hook.pos.y = movingY;
+				const diffY = inputGui.hook.size.y - textGui.hook.size.y;
+				if (diffY > 0) {
+					textGui.hook.pos.y += diffY/2;
+				}
 				
 				if (sc.multiworld.connectionInfo) {
 					//@ts-ignore
-					let prefill = "" + sc.multiworld.connectionInfo[this.fields[i].key];
-					inputGui.value = prefill.split("");
-					inputGui.setObscure(this.fields[i].obscure ?? false);
-					inputGui.cursorPos = prefill.length;
-					inputGui.cursor.hook.pos.x = inputGui.calculateCursorPos();
+					switch (this.fields[i].type) {
+					case "INPUT":
+						let prefill = "" + sc.multiworld.connectionInfo[this.fields[i].key];
+						inputGui.value = prefill.split("");
+						inputGui.setObscure(this.fields[i].obscure ?? false);
+						inputGui.cursorPos = prefill.length;
+						inputGui.cursor.hook.pos.x = inputGui.calculateCursorPos();
+						break;
+					case "CHECKBOX":
+						inputGui.setPressed(sc.multiworld.connectionInfo[this.fields[i].key]);
+						break;
+					case "OPTION_GROUP":
+						inputGui.setValue(sc.multiworld.connectionInfo[this.fields[i].key]);
+						break;
+					}
 				}
 
+				movingY += this.vSpacer + Math.max(inputGui.hook.size.y, textGui.hook.size.y);
 				this.inputList.addChildGui(inputGui);
 				this.inputGuis.push(inputGui);
 			}
@@ -190,8 +364,8 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			this.inputList.setSize(
-				this.textColumnWidth + this.hSpacer + 200, 
-				this.textGuis[0].hook.size.y * this.textGuis.length + this.vSpacer * (this.textGuis.length - 1)
+				this.textColumnWidth + this.hSpacer + 200,
+				movingY - this.vSpacer,
 			);
 
 			this.content = new ig.GuiElementBase();
@@ -204,6 +378,8 @@ export function patch(plugin: MwRandomizer) {
 
 			this.apConnectionStatusGui = new sc.APConnectionStatusGui();
 			this.apConnectionStatusGui.setPos(7, 0);
+			this.apDeathLinkStatusGui = new sc.APDeathLinkStatusGui();
+			this.apDeathLinkStatusGui.setPos(this.apConnectionStatusGui.hook.size.x + 17, 0);
 
 			this.msgBoxBox = new ig.GuiElementBase();
 			this.msgBoxBox.setSize(
@@ -214,6 +390,7 @@ export function patch(plugin: MwRandomizer) {
 			this.msgBox.setPos(0, this.apConnectionStatusGui.hook.size.y);
 
 			this.msgBoxBox.addChildGui(this.apConnectionStatusGui);
+			this.msgBoxBox.addChildGui(this.apDeathLinkStatusGui);
 			this.msgBoxBox.addChildGui(this.msgBox);
 			this.msgBoxBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_TOP);
 
@@ -268,9 +445,19 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		getOptions() {
-			let result: Record<string, string> = {};
+			let result: Record<string, any> = {};
 			for (let i = 0; i < this.fields.length; i++) {
-				result[this.fields[i].key] = this.inputGuis[i].value.join("");
+				switch(this.fields[i].type) {
+				case "INPUT":
+					result[this.fields[i].key] = this.inputGuis[i].value.join("");
+					break;
+				case "CHECKBOX":
+					result[this.fields[i].key] = this.inputGuis[i].pressed;
+					break;
+				case "OPTION_GROUP":
+					result[this.fields[i].key] = this.inputGuis[i].value;
+					break;
+				}
 			}
 
 			return result as unknown as sc.MultiWorldModel.AnyConnectionInformation;

@@ -11,6 +11,8 @@ export function patch(plugin: MwRandomizer) {
 			ITEM_RECEIVED: 2,
 			OPTIONS_PRESENT: 3,
 			PRINT_JSON: 4,
+			DEATH_SENT: 5,
+			DEATH_RECEIVED: 6,
 		};
 
 		sc.MULTIWORLD_CONNECTION_STATUS = {
@@ -19,6 +21,11 @@ export function patch(plugin: MwRandomizer) {
 			DISCONNECTED: "DISCONNECTED" as sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED,
 		};
 
+		sc.MULTIWORLD_DEATH_LINK_MODE = {
+			DEATH: "DEATH" as sc.MULTIWORLD_DEATH_LINK_MODE.DEATH,
+			HP_CRITICAL_BOSSES: "HP_CRITICAL_BOSSES" as sc.MULTIWORLD_DEATH_LINK_MODE.HP_CRITICAL_BOSSES,
+			HP_CRITICAL: "HP_CRITICAL" as sc.MULTIWORLD_DEATH_LINK_MODE.HP_CRITICAL,
+		}
 
 		sc.MultiWorldModel = ig.GameAddon.extend({
 			observers: [],
@@ -245,7 +252,7 @@ export function patch(plugin: MwRandomizer) {
 
 				const foreign = item.sender.slot != this.client.players.self.slot;
 
-				let displayMessage = foreign || item.id < this.baseNormalItemId;
+				let displayMessage = foreign || (item.id < this.baseNormalItemId && !item.name.includes("Pass"));
 
 				if (this.receivedItemMap[item.id]) {
 					this.receivedItemMap[item.id] += 1;
@@ -297,6 +304,12 @@ export function patch(plugin: MwRandomizer) {
 								sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
 							});
 
+							break;
+						case "West Gaia Pass":
+							sc.model.player.addItem("west-gaia-pass", 1, foreign);
+							break;
+						case "East Gaia Pass":
+							sc.model.player.addItem("east-gaia-pass", 1, foreign);
 							break;
 					}
 				} else if (item.id < this.baseDynamicItemId) {
