@@ -117,7 +117,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "25",
-				"open": "open10"
+				"open": "open10.Infested"
 			},
 			"reward": [
 				[
@@ -143,7 +143,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "25",
-				"open": "open10"
+				"open": "open10.Infested"
 			},
 			"reward": [
 				[
@@ -169,7 +169,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "10",
-				"open": "open10"
+				"open": "open10.Right"
 			},
 			"condition": [
 				[ "item", "Heat" ],
