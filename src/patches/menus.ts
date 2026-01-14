@@ -7,6 +7,7 @@ declare global {
 			textUis: { label: sc.TextGui, content: sc.TextGui }[];
 			textBoxContainer: ig.GuiElementBase;
 			msgBox: sc.BlackWhiteBox;
+			buttonGroup: sc.ButtonGroup;
 			onBackButtonPress(this: this): void;
 		}
 
@@ -102,6 +103,8 @@ export function patch(plugin: MwRandomizer) {
 			this.hook.size.x = ig.system.width;
 			this.hook.size.y = ig.system.height;
 
+			this.buttonGroup = new sc.ButtonGroup();
+
 			const boxWidth = 350;
 			const margin = 5;
 
@@ -180,6 +183,7 @@ export function patch(plugin: MwRandomizer) {
 
 			ig.interact.setBlockDelay(0.1);
 
+			sc.menu.buttonInteract.pushButtonGroup(this.buttonGroup);
 			sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
 
 			this.doStateTransition("DEFAULT");
@@ -197,7 +201,8 @@ export function patch(plugin: MwRandomizer) {
 		exitMenu() {
 			this.parent();
 			ig.interact.setBlockDelay(0.2);
-			sc.menu.popBackCallback();
+
+			sc.menu.buttonInteract.removeButtonGroup(this.buttonGroup);
 
 			this.doStateTransition("HIDDEN");
 			this.msgBox.doStateTransition("HIDDEN");
