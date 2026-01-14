@@ -6,7 +6,8 @@
 		"menu": {
 			"menu-titles": {
 				"apConnection": "Connection Info",
-				"apTextClient": "AP Text Client"
+				"apTextClient": "AP Text Client",
+				"apGameInfoMenu": "AP Game Info"
 			}
 		},
 		"title-screen": {
@@ -33,7 +34,20 @@
 			},
 			"text-client": {
 				"apConnection": "Modify connection details, disconnect, or reconnect.",
+				"apGameInfoMenu": "Check on important YAML options.",
 				"new-game": "View or tweak New Game+ options."
+			},
+			"game-info-menu": {
+				"randomized": {
+					"true": "\\c[2]Randomized\\c[0]",
+					"false": "\\c[1]Not Randomized\\c[0]",
+					"undefined": "\\c[1]Unknown\\c[0]"
+				},
+				"progressive": {
+					"combined": "\\c[2]Progressive\\c[0] (\\c[3]combined\\c[0])",
+					"progressive": "\\c[2]Progressive\\c[0]",
+					"nonprog": "\\c[1]Not Progressive\\c[0]",
+				}
 			}
 		}
 	}
