@@ -3,7 +3,11 @@ import MwRandomizer from "../plugin";
 declare global {
 	namespace sc {
 		interface APGameInfoMenu extends sc.BaseMenu {
-			fields: { label: string, callback: (options: sc.MultiWorldModel.MultiworldOptions) => string }[];
+			fields: {
+				label: string,
+				callback: (options: sc.MultiWorldModel.MultiworldOptions) => string,
+				textSpeed?: number,
+			}[];
 			textUis: { label: sc.TextGui, content: sc.TextGui }[];
 			textBoxContainer: ig.GuiElementBase;
 			msgBox: sc.BlackWhiteBox;
@@ -33,8 +37,9 @@ export function patch(plugin: MwRandomizer) {
 			{
 				label: "Goal",
 				callback(options) {
-					return options.goal;
+					return ig.lang.get(`sc.gui.mw.game-info-menu.goals.${options.goal}`);
 				},
+				textSpeed: ig.TextBlock.SPEED.FAST,
 			},
 			{
 				label: "Quests",
@@ -124,7 +129,7 @@ export function patch(plugin: MwRandomizer) {
 			const contents = this.fields.map(field => {
 				let result = new sc.TextGui(
 					field.callback(sc.multiworld.options),
-					{ maxWidth: secondColumnWidth, speed: ig.TextBlock.SPEED.SLOW }
+					{ maxWidth: secondColumnWidth, speed: field.textSpeed ?? ig.TextBlock.SPEED.SLOW }
 				);
 				this.textBoxContainer.addChildGui(result);
 

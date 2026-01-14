@@ -47,6 +47,11 @@
 					"combined": "\\c[2]Progressive\\c[0] (\\c[3]combined\\c[0])",
 					"progressive": "\\c[2]Progressive\\c[0]",
 					"nonprog": "\\c[1]Not Progressive\\c[0]",
+				},
+				"goals": {
+					"creator": "Ascend \\c[3]Vermillion Tower\\c[0] and defeat \\c[3]the Creator\\c[0].",
+					"monkey": "Complete the \\c[3]Grand Krys'kajo\\c[0] and defeat the \\c[3]Son of the East\\c[0].",
+					"observatory": "Find \\c[3]five broken weapons\\c[0] and take them to \\c[3]the Observatory\\c[0]"
 				}
 			}
 		}
