@@ -63,7 +63,11 @@ export function patch(plugin: MwRandomizer) {
 			this.goal = settings.goal;
 		},
 		start() {
-			sc.multiworld.client.goal();
+			try {
+				sc.multiworld.client.goal();
+			} catch {
+				console.error("Failed to send goal because you are disconnected. Please reconnect ASAP.");
+			}
 		}
 	});
 }
