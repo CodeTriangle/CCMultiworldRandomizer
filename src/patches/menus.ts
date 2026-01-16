@@ -133,7 +133,7 @@ export function patch(plugin: MwRandomizer) {
 			this.buttonGroup = new sc.ButtonGroup();
 
 			const boxWidth = 350;
-			const margin = 5;
+			const margin = 6;
 
 			this.textBoxContainer = new ig.GuiElementBase();
 			this.textBoxContainer.hook.size.x = boxWidth;
