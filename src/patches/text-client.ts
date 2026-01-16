@@ -467,6 +467,8 @@ export function patch(plugin: MwRandomizer) {
 				this.console.addMessage(sc.model.textClient.allMessages[i]);
 			}
 
+			this.buttons.gameInfo.setActive(!!sc.multiworld.options);
+
 			this.addObservers();
 
 			if (sc.menu.previousMenu == null) {
