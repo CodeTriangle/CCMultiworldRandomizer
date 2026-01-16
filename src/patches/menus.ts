@@ -39,7 +39,13 @@ export function patch(plugin: MwRandomizer) {
 				callback(options) {
 					return ig.lang.get(`sc.gui.mw.game-info-menu.goals.${options.goal}`);
 				},
-				textSpeed: ig.TextBlock.SPEED.FAST,
+				textSpeed: ig.TextBlock.SPEED.FASTER,
+			},
+			{
+				label: "Keyrings",
+				callback(options) {
+					return ig.lang.get(`sc.gui.mw.game-info-menu.enabled.${options.keyrings.length !== 0}`);
+				},
 			},
 			{
 				label: "Quests",
@@ -49,13 +55,21 @@ export function patch(plugin: MwRandomizer) {
 			},
 			{
 				label: "Shops",
-				callback(options) {
+				callback() {
 					// hacky solution: check if locationInfo has known shop slot values
-					return getRandomizedLabel(
-						sc.multiworld.locationInfo[3235824524] !== undefined ||
-						sc.multiworld.locationInfo[3235824525] !== undefined
+					let perSlotSend = sc.multiworld.locationInfo[3235824524] !== undefined;
+					let perTypeSend = sc.multiworld.locationInfo[3235824525] !== undefined;
+
+					if (!perSlotSend && !perTypeSend) {
+						return getRandomizedLabel(false);
+					}
+
+					return (
+						getRandomizedLabel(true) + ", " +
+						ig.lang.get(`sc.gui.mw.game-info-menu.shop-send.${perSlotSend ? "slot" : "type"}`)
 					);
 				},
+				textSpeed: ig.TextBlock.SPEED.NORMAL,
 			},
 			{
 				label: "Chest Locks",
@@ -70,13 +84,17 @@ export function patch(plugin: MwRandomizer) {
 				},
 			},
 			{
-				label: "Overworld",
+				label: "Overworld Areas",
 				callback(options) {
 					let label = "nonprog";
 					if (options.progressiveChains[3235824050]?.length > 0) {
 						label = "combined";
 					} else if (options.progressiveChains[3235824051]?.length > 0) {
-						label = "progressive";
+						if (options.progressiveChains[3235824052]?.length > 0) {
+							label = "split";
+						} else {
+							label = "progressive";
+						}
 					}
 
 					return ig.lang.get(`sc.gui.mw.game-info-menu.progressive.${label}`);
@@ -89,7 +107,11 @@ export function patch(plugin: MwRandomizer) {
 					if (options.progressiveChains[3235824050]?.length > 0) {
 						label = "combined";
 					} else if (options.progressiveChains[3235824052]?.length > 0) {
-						label = "progressive";
+						if (options.progressiveChains[3235824051]?.length > 0) {
+							label = "split";
+						} else {
+							label = "progressive";
+						}
 					}
 
 					return ig.lang.get(`sc.gui.mw.game-info-menu.progressive.${label}`);
