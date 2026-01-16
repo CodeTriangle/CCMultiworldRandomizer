@@ -64,7 +64,11 @@ export function patch(plugin: MwRandomizer) {
 				sc.multiworld.options.goal === undefined && this.goal === "creator" ||
 				sc.multiworld.options.goal === this.goal
 			) {
-				sc.multiworld.client.goal();
+				try {
+					sc.multiworld.client.goal();
+				} catch {
+					console.error("Failed to send goal because you are disconnected. Please reconnect ASAP.");
+				}
 			}
 		}
 	});
