@@ -6,7 +6,8 @@
 		"menu": {
 			"menu-titles": {
 				"apConnection": "Connection Info",
-				"apTextClient": "AP Text Client"
+				"apTextClient": "AP Text Client",
+				"apGameInfoMenu": "AP Game Info"
 			}
 		},
 		"title-screen": {
@@ -33,7 +34,35 @@
 			},
 			"text-client": {
 				"apConnection": "Modify connection details, disconnect, or reconnect.",
+				"apGameInfoMenu": "Check on important YAML options.",
 				"new-game": "View or tweak New Game+ options."
+			},
+			"game-info-menu": {
+				"randomized": {
+					"true": "\\c[2]Randomized\\c[0]",
+					"false": "\\c[1]Not Randomized\\c[0]",
+					"undefined": "\\c[1]Unknown\\c[0]"
+				},
+				"enabled": {
+					"true": "\\c[2]Enabled\\c[0]",
+					"false": "\\c[1]Disabled\\c[0]",
+					"undefined": "\\c[1]Unknown\\c[0]"
+				},
+				"shop-send": {
+					"slot": "sending \\c[3]per slot\\c[0]",
+					"type": "sending \\c[3]per item type\\c[0]"
+				},
+				"progressive": {
+					"combined": "\\c[2]Progressive\\c[0], \\c[3]combined\\c[0]",
+					"split": "\\c[2]Progressive\\c[0], \\c[3]split\\c[0]",
+					"progressive": "\\c[2]Progressive\\c[0]",
+					"nonprog": "\\c[1]Not Progressive\\c[0]",
+				},
+				"goals": {
+					"creator": "Ascend \\c[3]Vermillion Tower\\c[0] and defeat \\c[3]the Creator\\c[0].",
+					"monkey": "Complete the \\c[3]Grand Krys'kajo\\c[0] and defeat the \\c[3]Son of the East\\c[0].",
+					"observatory": "Find \\c[3]five broken weapons\\c[0] and take them to \\c[3]the Observatory\\c[0]"
+				}
 			}
 		}
 	}

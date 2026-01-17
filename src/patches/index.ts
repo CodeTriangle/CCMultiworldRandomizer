@@ -11,6 +11,7 @@ import { patch as patchQuest } from "./quest";
 import { patch as patchShop } from "./shop";
 import { patch as patchNewGame } from "./new-game";
 import { patch as patchTextClient } from "./text-client";
+import { patch as patchMenus } from "./menus";
 import { patch as patchLogin } from "./login";
 import { patch as patchMap } from "./map";
 import { patch as patchDeathLink } from "./deathlink.ts";
@@ -27,6 +28,7 @@ export function applyPatches(plugin: MwRandomizer) {
 	patchShop(plugin);
 	patchNewGame(plugin);
 	patchTextClient(plugin);
+	patchMenus(plugin);
 	patchLogin(plugin);
 	patchMap(plugin);
 	patchDeathLink(plugin);

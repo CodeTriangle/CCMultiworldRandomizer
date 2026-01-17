@@ -89,6 +89,7 @@ declare global {
 			buttonGroup: sc.ButtonGroup;
 			buttons: {
 				connection: sc.ButtonGui;
+				gameInfo: sc.ButtonGui;
 				newGamePlus: sc.ButtonGui;
 			};
 
@@ -425,7 +426,8 @@ export function patch(plugin: MwRandomizer) {
 
 			this.buttons = {
 				connection: this._createButton("apConnection", 0, sc.MENU_SUBMENU.AP_CONNECTION),
-				newGamePlus: this._createButton("new-game", 1, sc.MENU_SUBMENU.NEW_GAME),
+				gameInfo: this._createButton("apGameInfoMenu", 1, sc.MENU_SUBMENU.AP_GAME_INFO),
+				newGamePlus: this._createButton("new-game", 2, sc.MENU_SUBMENU.NEW_GAME),
 			};
 
 			this.buttons.newGamePlus.onButtonPress = () => {
@@ -447,6 +449,7 @@ export function patch(plugin: MwRandomizer) {
 			});
 
 			this.addChildGui(this.buttons.connection);
+			this.addChildGui(this.buttons.gameInfo);
 			this.addChildGui(this.buttons.newGamePlus);
 		},
 
@@ -464,6 +467,8 @@ export function patch(plugin: MwRandomizer) {
 				this.console.addMessage(sc.model.textClient.allMessages[i]);
 			}
 
+			this.buttons.gameInfo.setActive(!!sc.multiworld.options);
+
 			this.addObservers();
 
 			if (sc.menu.previousMenu == null) {
@@ -474,6 +479,7 @@ export function patch(plugin: MwRandomizer) {
 			ig.interact.setBlockDelay(0.2);
 			this.console.doStateTransition("DEFAULT");
 			this.buttons.connection.doStateTransition("DEFAULT");
+			this.buttons.gameInfo.doStateTransition("DEFAULT");
 			this.buttons.newGamePlus.doStateTransition("DEFAULT");
 		},
 
@@ -487,6 +493,7 @@ export function patch(plugin: MwRandomizer) {
 			ig.interact.setBlockDelay(0.2);
 			this.console.doStateTransition("HIDDEN");
 			this.buttons.connection.doStateTransition("HIDDEN");
+			this.buttons.gameInfo.doStateTransition("HIDDEN");
 			this.buttons.newGamePlus.doStateTransition("HIDDEN");
 		},
 
