@@ -31,6 +31,7 @@
 		"closedGaia": {
 			"minimal": [],
 			"full": []
-		}
+		},
+        "allowBoosterGrinding": "boolean"
 	}
 }

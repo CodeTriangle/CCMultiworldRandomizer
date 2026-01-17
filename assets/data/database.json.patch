@@ -1,0 +1,56 @@
+[
+    { "type": "ENTER", "index": ["traders"] },
+
+    {
+        "type": "SET_KEY",
+        "index": "mwBakiEpicMetal",
+        "content":{
+            "name": {
+                "en_US": "Ba'kii Special Metal",
+                "de_DE": "Ba'kii Special Metal",
+                "zh_CN": "Ba'kii Special Metal",
+                "zh_TW": "Ba'kii Special Metal",
+                "ja_JP": "Ba'kii Special Metal",
+                "ko_KR": "Ba'kii Special Metal"
+            },
+            "order": 36,
+            "noTrack": true,
+            "options": [
+                {
+                    "get": [
+                        {
+                            "id": "192",
+                            "amount": 1
+                        }
+                    ],
+                    "require": [
+                        {
+                            "id": "190",
+                            "amount": 4
+                        },
+                        {
+                            "id": "176",
+                            "amount": 10
+                        },
+                        {
+                            "id": "188",
+                            "amount": 10
+                        },
+                        {
+                            "id": "187",
+                            "amount": 10
+                        },
+                        {
+                            "id": "182",
+                            "amount": 10
+                        }
+                    ],
+                    "scale": 1
+                }
+            ],
+            "area": "heat-village"
+        }
+    },
+    
+    { "type": "EXIT" }
+]

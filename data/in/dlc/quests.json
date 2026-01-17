@@ -88,14 +88,30 @@
 				[ "quest", "Steamy Booze" ],
 				[ "quest", "Steamy Challenge" ],
                 [ "item", "Cold" ],
-                [ "region", "open", "openDLC_Beach" ]
+                [ "region", "open", "openDLC_Beach" ],
+                [ "or",
+                    [ "var", "allowBoosterGrinding", "off" ],
+                    [ "and",
+                        [ "var", "allowBoosterGrinding", "on" ],
+                        [ "item", "Everlasting Amber" ],
+                        [ "or",
+                            [ "quest", "New Metal" ],
+                            [ "region", "open", "open16" ],
+                            [ "region", "open", "open10.Infested" ],
+                            [ "and",
+                                [ "region", "open", "open10.Right" ],
+                                [ "region", "open", "open10.Left" ]
+                            ]
+                        ]
+                    ]
+                ]
 			],
 			"reward": [
 				[ "item", "Fox Sake", 3 ],
 				[ "item", "Brewing Kit: Fox", 2 ],
 				[ "item", "Citrine", 5 ]
 			],
-            "_comment": "1 cp shock, TODO the epic metal"
+            "_comment": "1 cp shock"
 		},
 		"Wrath of Goat": {
 			"questid": "bg-3-goat_final",
