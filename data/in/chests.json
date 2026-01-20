@@ -5018,7 +5018,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open10.Left"
+				"open": "open10.Grove"
 			},
 			"reward": [
 				[
@@ -5037,7 +5037,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open10.Left"
+				"open": "open10.Grove"
 			},
 			"reward": [
 				[
@@ -5094,7 +5094,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open10.Left"
+				"open": "open10.Grove"
 			},
 			"reward": [
 				[
@@ -5650,7 +5650,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "23",
-				"open": "open10.Left"
+				"open": "open10.Grove"
 			},
 			"reward": [
 				[
@@ -5676,7 +5676,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open10.Left"
+				"open": "open10.Grove"
 			},
 			"reward": [
 				[
