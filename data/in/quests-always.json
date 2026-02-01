@@ -22,7 +22,7 @@
 			"questid": "basin-mush-2",
 			"region": {
 				"linear": "23",
-				"open": "open10" 
+				"open": "open10.Infested"
 			},
 			"condition": [ 
 				[ "item", "Wave", 1 ]
