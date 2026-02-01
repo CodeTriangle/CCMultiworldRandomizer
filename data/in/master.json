@@ -14,7 +14,7 @@
 	],
 	"baseId": 3235824000,
 	"dataVersion": "0.5",
-	"randoVersion": [0, 8, 0, "pre.2"],
+	"randoVersion": [0, 8, 0, "pre.3"],
 	"modes": [ "linear", "open" ],
 	"defaultMode": "open",
 	"dungeons": [ "cold-dng", "heat-dng", "shock-dng", "wave-dng", "tree-dng" ],
