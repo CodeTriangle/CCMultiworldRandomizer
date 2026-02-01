@@ -37,7 +37,7 @@ export function patch(plugin: MwRandomizer) {
 			{
 				label: "Goal",
 				callback(options) {
-					return ig.lang.get(`sc.gui.mw.game-info-menu.goals.${options.goal}`);
+					return ig.lang.get(`sc.gui.mw.game-info-menu.goals.${options.goal ?? "creator"}`);
 				},
 				textSpeed: ig.TextBlock.SPEED.FASTER,
 			},
