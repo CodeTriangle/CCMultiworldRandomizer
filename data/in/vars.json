@@ -32,6 +32,6 @@
 			"minimal": [],
 			"full": []
 		},
-        "allowBoosterGrinding": "boolean"
+		"allowBoosterGrinding": "boolean"
 	}
 }

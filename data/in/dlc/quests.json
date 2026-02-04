@@ -25,7 +25,7 @@
 				[ "item", "Champion's Towel", 1 ],
 				[ "item", "Sunglass Visor", 1 ]
 			],
-            "_comment": "1 cp heat"
+			"_comment": "1 cp heat"
 		},
 		"Trial of Ascension": {
 			"questid": "monks-3-jump_challenge_3",
@@ -43,7 +43,7 @@
 				[ "item", "Focus Shard", 4 ],
 				[ "item", "Mooncake", 6 ]
 			],
-            "_comment": "1 cp wave"
+			"_comment": "1 cp wave"
 		},
 		"Challenge of Ascension": {
 			"questid": "monks-jump_3_bonus",
@@ -87,48 +87,48 @@
 			"condition": [ 
 				[ "quest", "Steamy Booze" ],
 				[ "quest", "Steamy Challenge" ],
-                [ "item", "Cold" ],
-                [ "region", "open", "openDLC_Beach" ],
-                [ "or",
-                    [ "var", "allowBoosterGrinding", "off" ],
-                    [ "and",
-                        [ "var", "allowBoosterGrinding", "on" ],
-                        [ "item", "Everlasting Amber" ],
-                        [ "or",
-                            [ "quest", "New Metal" ],
-                            [ "region", "open", "open16" ],
-                            [ "region", "open", "open10.Infested" ],
-                            [ "and",
-                                [ "region", "open", "open10.Right" ],
-                                [ "region", "open", "open10.Left" ]
-                            ]
-                        ]
-                    ]
-                ]
+				[ "item", "Cold" ],
+				[ "region", "open", "openDLC_Beach" ],
+				[ "or",
+					[ "var", "allowBoosterGrinding", "off" ],
+					[ "and",
+						[ "var", "allowBoosterGrinding", "on" ],
+						[ "item", "Everlasting Amber" ],
+						[ "or",
+							[ "quest", "New Metal" ],
+							[ "region", "open", "open16" ],
+							[ "region", "open", "open10.Infested" ],
+							[ "and",
+								[ "region", "open", "open10.Right" ],
+								[ "region", "open", "open10.Left" ]
+							]
+						]
+					]
+				]
 			],
 			"reward": [
 				[ "item", "Fox Sake", 3 ],
 				[ "item", "Brewing Kit: Fox", 2 ],
 				[ "item", "Citrine", 5 ]
 			],
-            "_comment": "1 cp shock"
+			"_comment": "1 cp shock"
 		},
-        "Salty Detox": {
-            "questid": "jungleGreens-3-escort_2",
+		"Salty Detox": {
+			"questid": "jungleGreens-3-escort_2",
 			"region": {
 				"open": "open10"
 			},
 			"condition": [
 				[ "quest", "Lakeside Escort" ],
-                [ "region", "open", "openDLC_Beach" ]
+				[ "region", "open", "openDLC_Beach" ]
 			],
 			"reward": [
 				[ "item", "The Last Straw", 1 ],
 				[ "item", "Core Stone", 7 ],
 				[ "item", "Ember Sack", 3 ]
 			],
-            "_comment": "2 cp wave"
-        },
+			"_comment": "2 cp wave"
+		},
 		"Wrath of Goat": {
 			"questid": "bg-3-goat_final",
 			"region": {
@@ -137,14 +137,14 @@
 			},
 			"condition": [
 				[ "quest", "In Cawhoofs" ],
-                [ "region", "open", "open20" ]
+				[ "region", "open", "open20" ]
 			],
 			"reward": [
 				[ "item", "Asteroid Chunk", 1 ],
 				[ "item", "Goat Cheese", 4 ],
 				[ "item", "Goat Milk", 4 ]
 			],
-            "_comment": "2 cp cold"
+			"_comment": "2 cp cold"
 		},
 		"In Cawhoofs": {
 			"questid": "jungleGuard-3-papagang_goats_1",
@@ -155,25 +155,25 @@
 			"condition": [ 
 				[ "quest", "The Goatfather" ],
 				[ "quest", "High Crating" ],
-                [ "any_element" ],
-                [ "region", "open", "open3" ],
-                [ "region", "open", "open10.Right" ],
-                [ "region", "open", "open11" ],
-                [ "or",
-                    [ "region", "open", "open10.Left"],
-                    [ "and",
-                        [ "region", "open", "open5" ],
-                        [ "region", "open", "open8" ],
-                        [ "region", "open", "open10.Infested" ]
-                    ]
-                ]
+				[ "any_element" ],
+				[ "region", "open", "open3" ],
+				[ "region", "open", "open10.Right" ],
+				[ "region", "open", "open11" ],
+				[ "or",
+					[ "region", "open", "open10.Left"],
+					[ "and",
+						[ "region", "open", "open5" ],
+						[ "region", "open", "open8" ],
+						[ "region", "open", "open10.Infested" ]
+					]
+				]
 			],
 			"reward": [
 				[ "item", "Moon Chunk", 1 ],
 				[ "item", "Razor Tip", 3 ],
 				[ "item", "Pepper Night Tea", 6 ]
 			],
-            "_comment": "1 cp heat"
+			"_comment": "1 cp heat"
 		},
 		"Riches with Fridges": {
 			"questid": "jungleTrader-3-shad_fridge_1",
@@ -183,17 +183,17 @@
 			},
 			"condition": [ 
 				[ "quest", "Melting this Cold Fiend" ],
-                [ "item", "Shock" ],
-                [ "region", "open", "open10.Right" ],
-                [ "region", "open", "open10.Infested" ],
-                [ "region", "open", "open16" ]
+				[ "item", "Shock" ],
+				[ "region", "open", "open10.Right" ],
+				[ "region", "open", "open10.Infested" ],
+				[ "region", "open", "open16" ]
 			],
 			"reward": [
 				[ "item", "Amethyst", 4 ],
 				[ "item", "Antique Token", 1 ],
 				[ "item", "Guacamole Toast", 5 ]
 			],
-            "_comment": "1 cp shock"
+			"_comment": "1 cp shock"
 		},
 		"Lost and On the Run": {
 			"questid": "seizui-quest",
@@ -201,18 +201,18 @@
 				"linear": "23",
 				"open": "open20" 
 			},
-            "condition": [
-                [ "region", "open", "open3" ],
-                [ "region", "open", "open5" ],
-                [ "region", "open", "open10.Infested" ],
-                [ "item", "Heat" ]
+			"condition": [
+				[ "region", "open", "open3" ],
+				[ "region", "open", "open5" ],
+				[ "region", "open", "open10.Infested" ],
+				[ "item", "Heat" ]
 			],
 			"reward": [
 				[ "item", "Garnet", 5 ],
 				[ "item", "Moonstone", 5 ],
 				[ "item", "Citrine", 5 ]
 			],
-            "_comment": "1 cp each element"
+			"_comment": "1 cp each element"
 		},
 		"Trouble on the Highway": {
 			"questid": "autobahn",
@@ -225,7 +225,7 @@
 				[ "item", "Antique Token", 1 ],
 				[ "item", "Echo Roll", 5 ]
 			],
-            "_comment": "1 cp each element"
+			"_comment": "1 cp each element"
 		},
 		"Tremors of the Past": {
 			"questid": "tremor-1",
@@ -235,16 +235,16 @@
 			},
 			"condition": [
 				[ "item", "Tremor Engine", 4 ],
-                [ "item", "Humming Razor", 1 ],
-                [ "any_element" ],
-                [ "region", "open", "open10.Right" ],
-                [ "region", "open", "open16" ]
+				[ "item", "Humming Razor", 1 ],
+				[ "any_element" ],
+				[ "region", "open", "open10.Right" ],
+				[ "region", "open", "open16" ]
 			],
 			"reward": [
 				[ "item", "Thrashing Ripper", 1 ],
 				[ "item", "Core Stone", 5 ]
 			],
-            "_comment": "1 cp shock"
+			"_comment": "1 cp shock"
 		},
 		"Wetter Work": {
 			"questid": "rhg-4-maritime_smuggle_2",
@@ -260,7 +260,7 @@
 				[ "item", "Epic Metal", 2 ],
 				[ "item", "Cross Sandwich", 5 ]
 			],
-            "_comment": "1 cp cold"
+			"_comment": "1 cp cold"
 		}
 	}
 }

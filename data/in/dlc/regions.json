@@ -87,7 +87,7 @@
 						["item", "Cold", 1]
 					]
 				},
-								{
+				{
 					"from": "openDLC_DungeonB2_R",
 					"to": "openDLC_DungeonB2_R.1",
 					"condition": [
