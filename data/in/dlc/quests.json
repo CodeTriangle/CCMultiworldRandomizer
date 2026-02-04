@@ -113,6 +113,22 @@
 			],
             "_comment": "1 cp shock"
 		},
+        "Salty Detox": {
+            "questid": "jungleGreens-3-escort_2",
+			"region": {
+				"open": "open10"
+			},
+			"condition": [
+				[ "quest", "Lakeside Escort" ],
+                [ "region", "open", "openDLC_Beach" ]
+			],
+			"reward": [
+				[ "item", "The Last Straw", 1 ],
+				[ "item", "Core Stone", 7 ],
+				[ "item", "Ember Sack", 3 ]
+			],
+            "_comment": "2 cp wave"
+        },
 		"Wrath of Goat": {
 			"questid": "bg-3-goat_final",
 			"region": {
