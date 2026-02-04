@@ -1,6 +1,6 @@
 {
 	"itemPools": {
-		"fillerRareCons": [
+		"Rare Consumables": [
 			{
 				"item": ["item", "Chef Sandwich", 3 ],
 				"quantity": 40
@@ -38,7 +38,7 @@
 				"quantity": 10
 			}
 		],
-		"fillerRareDrop": [
+		"Rare Drop": [
 			{
 				"item": ["item", "Season Apples", 5 ],
 				"quantity": 18

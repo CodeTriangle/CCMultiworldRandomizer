@@ -1,6 +1,6 @@
 {
 	"itemPools": {
-		"pets": [
+		"Pets": [
 			{
 				"item": ["item", "Orange Twister"],
 				"quantity": 1

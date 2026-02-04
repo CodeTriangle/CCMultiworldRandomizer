@@ -1,0 +1,27 @@
+{
+	"itemPools": {
+		"Dungeon Keys": [
+			"Mine Key",
+			"Mine Master Key",
+			"Faj'ro Key",
+			"Faj'ro Master Key",
+			"So'najiz Key",
+			"Zir'vitar Key",
+			"Krys'kajo Key",
+			"Kajo Master Key",
+			"Ku'lero Key",
+			"Ku'lero Master Key"
+		],
+		"Chest Keys": [
+			"Thief's Key",
+			"White Key",
+			"Radiant Key",
+		],
+		"Elements": [
+			"Heat",
+			"Cold",
+			"Shock",
+			"Wave"
+		]
+	}
+}

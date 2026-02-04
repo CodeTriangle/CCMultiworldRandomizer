@@ -1,6 +1,6 @@
 {
 	"itemPools": {
-		"fillerEpicCons": [
+		"Epic Consumables": [
 			{
 				"item": ["item", "Cross Sandwich", 2 ],
 				"quantity": 50
@@ -42,7 +42,7 @@
 				"quantity": 15
 			}
 		],
-		"fillerEpicDrop": [
+		"Epic Drop": [
 			{
 				"item": ["item", "Bear Cicada", 3 ],
 				"quantity": 14
