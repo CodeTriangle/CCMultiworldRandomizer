@@ -1015,7 +1015,7 @@
 				"open": "open10"
 			},
 			"condition": [
-				[ "region", "open", "open10.Grove" ],
+				[ "region", "open", "open10.Left" ],
 				[ "region", "open", "open10.Infested" ]
 			]
 		},
