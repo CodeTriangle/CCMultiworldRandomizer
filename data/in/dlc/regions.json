@@ -139,7 +139,12 @@
 						["item", "Ku'lero Master Key", 1]
 					]
 				}
-			]
+			],
+            "goals": {
+				"diorbis": {
+					"region": "openDLC_DungeonBoss"
+				}
+			}
 		}
 	}
 }
