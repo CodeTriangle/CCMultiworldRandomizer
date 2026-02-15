@@ -120,7 +120,8 @@
 			},
 			"condition": [
 				[ "quest", "Lakeside Escort" ],
-				[ "region", "open", "openDLC_Beach" ]
+				[ "region", "open", "openDLC_Beach" ],
+                [ "item", "Wave" ]
 			],
 			"reward": [
 				[ "item", "The Last Straw", 1 ],
