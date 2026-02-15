@@ -24,6 +24,38 @@
 			{
 				"item": ["item", "Ku'lero Master Key"],
 				"quantity": 1
+			},
+			{
+				"item": ["item", "Champion's Towel"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Sunglass Visor"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Light Gem"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "The Last Straw"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Asteroid Chunk"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Moon Chunk"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Meteor Chunk"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Rift Spore"],
+				"quantity": 1
 			}
 		]
 	}
