@@ -8,6 +8,8 @@
 		"item-pools.json"
 	],
 	"_comment": "Checks that are found only in DLC areas",
+    "dungeons": [ "final-dng" ],
+    "keyringItems": [ "Ku'lero Key" ],
 	"_global": {
 		"/cutscenes|chests|quests|regions|item-pools|shops/": {
 			"*": {
