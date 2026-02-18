@@ -1,23 +1,10 @@
 {
-	"_global": {
-		"progressiveChains": {
-			"*": {
-				"multi": true
-			}
-		}
-	},
 	"progressiveChains": {
 		"headsAllPurpose": {
-			"displayName": "All-Purpose Heads",
-			"description": {
-				"en_US": "Provides upgraded headgear that's great for any situation."
-			},
-			"id": 60,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -43,12 +30,17 @@
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
-						{ "item": ["item", "Gorgon Veil", 1] }
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -68,12 +60,14 @@
 						{ "item": ["item", "Cobalt Goggles", 1] },
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
-						{ "item": ["item", "Laser Goggles", 1] }
+						{ "item": ["item", "Laser Goggles", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -92,12 +86,16 @@
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
-						{ "item": ["item", "Gorgon Veil", 1] }
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -123,12 +121,17 @@
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
-						{ "item": ["item", "Gorgon Veil", 1] }
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -150,12 +153,17 @@
 						{ "item": ["item", "Cobalt Goggles", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
-						{ "item": ["item", "Gorgon Veil", 1] }
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -175,12 +183,16 @@
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
-						{ "item": ["item", "Gorgon Veil", 1] }
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -200,12 +212,14 @@
 						{ "item": ["item", "Cobalt Goggles", 1] },
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
-						{ "item": ["item", "Laser Goggles", 1] }
+						{ "item": ["item", "Laser Goggles", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -224,12 +238,16 @@
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
-						{ "item": ["item", "Gorgon Veil", 1] }
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -251,12 +269,17 @@
 						{ "item": ["item", "Cobalt Goggles", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
-						{ "item": ["item", "Gorgon Veil", 1] }
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -276,12 +299,16 @@
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
-						{ "item": ["item", "Gorgon Veil", 1] }
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -297,12 +324,17 @@
 						{ "item": ["item", "Bandit's Scarf", 1] },
 						{ "item": ["item", "Cobalt Goggles", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
-						{ "item": ["item", "Gorgon Veil", 1] }
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -318,22 +350,20 @@
 						{ "item": ["item", "Bandit's Scarf", 1] },
 						{ "item": ["item", "Cobalt Goggles", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
-						{ "item": ["item", "Gorgon Veil", 1] }
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] }
 					]
 				}
 			]
 		},
 		"headsDefensive": {
-			"displayName": "Defensive Heads",
-			"description": {
-				"en_US": "Provides upgraded headgear for guarding, status-resist and counterplay combat."
-			},
-			"id": 61,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -354,12 +384,15 @@
 						{ "item": ["item", "Hardhead Hat", 1] },
 						{ "item": ["item", "Serene Bubble", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -378,12 +411,14 @@
 						{ "item": ["item", "Climate Cowl", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -404,12 +439,15 @@
 						{ "item": ["item", "Hardhead Hat", 1] },
 						{ "item": ["item", "Serene Bubble", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -428,12 +466,13 @@
 						{ "item": ["item", "Electrician's Cap", 1] },
 						{ "item": ["item", "Climate Cowl", 1] },
 						{ "item": ["item", "Hardhead Hat", 1] },
-						{ "item": ["item", "Serene Bubble", 1] }
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -453,12 +492,15 @@
 						{ "item": ["item", "Hardhead Hat", 1] },
 						{ "item": ["item", "Serene Bubble", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -477,12 +519,16 @@
 						{ "item": ["item", "Hardhead Hat", 1] },
 						{ "item": ["item", "Serene Bubble", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -504,7 +550,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -523,12 +569,13 @@
 						{ "item": ["item", "Electrician's Cap", 1] },
 						{ "item": ["item", "Climate Cowl", 1] },
 						{ "item": ["item", "Hardhead Hat", 1] },
-						{ "item": ["item", "Serene Bubble", 1] }
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -552,12 +599,17 @@
 						{ "item": ["item", "Gorgon Veil", 1] },
 						{ "item": ["item", "Serene Bubble", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -579,12 +631,17 @@
 						{ "item": ["item", "Gorgon Veil", 1] },
 						{ "item": ["item", "Serene Bubble", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -602,12 +659,13 @@
 						{ "item": ["item", "Electrician's Cap", 1] },
 						{ "item": ["item", "Climate Cowl", 1] },
 						{ "item": ["item", "Hardhead Hat", 1] },
-						{ "item": ["item", "Serene Bubble", 1] }
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -624,12 +682,14 @@
 						{ "item": ["item", "Red Bandana", 1] },
 						{ "item": ["item", "Electrician's Cap", 1] },
 						{ "item": ["item", "Hardhead Hat", 1] },
-						{ "item": ["item", "Serene Bubble", 1] }
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -647,12 +707,15 @@
 						{ "item": ["item", "Hardhead Hat", 1] },
 						{ "item": ["item", "Serene Bubble", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -674,12 +737,15 @@
 						{ "item": ["item", "Climate Cowl", 1] },
 						{ "item": ["item", "Hardhead Hat", 1] },
 						{ "item": ["item", "Gorgon Veil", 1] },
-						{ "item": ["item", "Serene Bubble", 1] }
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -699,12 +765,15 @@
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Hardhead Hat", 1] },
 						{ "item": ["item", "Gorgon Veil", 1] },
-						{ "item": ["item", "Serene Bubble", 1] }
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -724,12 +793,19 @@
 						{ "item": ["item", "Gorgon Veil", 1] },
 						{ "item": ["item", "Serene Bubble", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -745,12 +821,14 @@
 						{ "item": ["item", "Red Bandana", 1] },
 						{ "item": ["item", "Electrician's Cap", 1] },
 						{ "item": ["item", "Hardhead Hat", 1] },
-						{ "item": ["item", "Serene Bubble", 1] }
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -768,22 +846,21 @@
 						{ "item": ["item", "Bandit's Scarf", 1] },
 						{ "item": ["item", "Hardhead Hat", 1] },
 						{ "item": ["item", "Gorgon Veil", 1] },
-						{ "item": ["item", "Serene Bubble", 1] }
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Very Last Strawhat", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Enlightened Halo", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Serene Bubble+", 1] }
 					]
 				}
 			]
 		},
 		"headsOffensive": {
-			"displayName": "Offensive Heads",
-			"description": {
-				"en_US": "Provides upgraded headgear for melee, ranged and crit-based combat."
-			},
-			"id": 62,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -803,12 +880,16 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -828,12 +909,16 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -853,12 +938,16 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -878,12 +967,16 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -903,12 +996,15 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -928,12 +1024,16 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -957,12 +1057,18 @@
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -985,12 +1091,17 @@
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1010,12 +1121,16 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1035,12 +1150,15 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -1060,12 +1178,15 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1089,12 +1210,18 @@
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1117,12 +1244,17 @@
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Medusa Veil", 1] },
+						{ "item": ["item", "Lis'mita Cap", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1142,12 +1274,15 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1167,12 +1302,15 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1192,22 +1330,19 @@
 						{ "item": ["item", "Mystic Mohawk", 1] },
 						{ "item": ["item", "Scouting Visor", 1] },
 						{ "item": ["item", "Furious Hothead", 1] },
-						{ "item": ["item", "Trackwalker Visor", 1] }
+						{ "item": ["item", "Trackwalker Visor", 1] },
+						{ "item": ["item", "Furious Hothead+", 1] },
+						{ "item": ["item", "Trackwalker Visor+", 1] },
+						{ "item": ["item", "Headset TYPE>:3",1] }
 					]
 				}
 			]
 		},
 		"heads": {
-			"displayName": "Heads",
-			"description": {
-				"en_US": "Provides upgraded headgear."
-			},
-			"id": 64,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1232,12 +1367,15 @@
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1262,12 +1400,16 @@
 						{ "item": ["item", "Laser Goggles", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1290,12 +1432,15 @@
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -1318,12 +1463,13 @@
 						{ "item": ["item", "Climate Cowl", 1] },
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
-						{ "item": ["item", "The Last Strawhat", 1] }
+						{ "item": ["item", "The Last Strawhat", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1341,12 +1487,15 @@
 						{ "item": ["item", "Climate Cowl", 1] },
 						{ "item": ["item", "The Last Strawhat", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1362,12 +1511,14 @@
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1390,12 +1541,14 @@
 						{ "item": ["item", "Climate Cowl", 1] },
 						{ "item": ["item", "Cobalt Goggles", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
-						{ "item": ["item", "The Last Strawhat", 1] }
+						{ "item": ["item", "The Last Strawhat", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1416,12 +1569,13 @@
 						{ "item": ["item", "Cobalt Goggles", 1] },
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
-						{ "item": ["item", "Laser Goggles", 1] }
+						{ "item": ["item", "Laser Goggles", 1] },
+						{ "item": ["item", "Cross Goggles", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1437,12 +1591,15 @@
 						{ "item": ["item", "Cobalt Goggles", 1] },
 						{ "item": ["item", "Laser Goggles", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Cross Goggles", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -1458,12 +1615,13 @@
 						{ "item": ["item", "Scarecrown", 1] },
 						{ "item": ["item", "Strawberry Hat", 1] },
 						{ "item": ["item", "Climate Cowl", 1] },
-						{ "item": ["item", "The Last Strawhat", 1] }
+						{ "item": ["item", "The Last Strawhat", 1] },
+						{ "item": ["item", "Sunglass Visor", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -1482,7 +1640,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1491,12 +1649,14 @@
 					},
 					"content": [
 						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Tranquil Earmuffs", 1] },
+						{ "item": ["item", "Dragon's Bandana+", 1] },
+						{ "item": ["item", "Tranquil Earmuffs+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1510,7 +1670,8 @@
 						{ "item": ["item", "Silver Goggles", 1] },
 						{ "item": ["item", "Titan Goggles", 1] },
 						{ "item": ["item", "Cobalt Goggles", 1] },
-						{ "item": ["item", "Laser Goggles", 1] }
+						{ "item": ["item", "Laser Goggles", 1] },
+						{ "item": ["item", "Cross Goggles", 1] }
 					]
 				}
 			]

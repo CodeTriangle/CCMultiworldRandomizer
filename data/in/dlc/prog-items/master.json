@@ -1,0 +1,8 @@
+{
+	"_includes": [
+		"heads.json",
+		"arms.json",
+		"torsos.json",
+		"legs.json"
+	]
+}

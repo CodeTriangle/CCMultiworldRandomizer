@@ -1,23 +1,10 @@
 {
-	"_global": {
-		"progressiveChains": {
-			"*": {
-				"multi": true
-			}
-		}
-	},
 	"progressiveChains": {
 		"armsAllPurpose": {
-			"displayName": "All-Purpose Arms",
-			"description": {
-				"en_US": "Provides upgraded weaponry that's great for any situation."
-			},
-			"id": 70,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -36,12 +23,14 @@
 						{ "item": ["item", "Cobalt Edge", 1] },
 						{ "item": ["item", "Galaxy Spiral Drill", 1] },
 						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] }
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -56,12 +45,13 @@
 						{ "item": ["item", "Silver Edge", 1] },
 						{ "item": ["item", "Titan Edge", 1] },
 						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Laser Edge", 1] }
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Cross Edge", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -80,12 +70,14 @@
 						{ "item": ["item", "Cobalt Edge", 1] },
 						{ "item": ["item", "Galaxy Spiral Drill", 1] },
 						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] }
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -104,12 +96,14 @@
 						{ "item": ["item", "Cobalt Edge", 1] },
 						{ "item": ["item", "Galaxy Spiral Drill", 1] },
 						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] }
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -127,12 +121,14 @@
 						{ "item": ["item", "Cobalt Edge", 1] },
 						{ "item": ["item", "Galaxy Spiral Drill", 1] },
 						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] }
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -147,12 +143,13 @@
 						{ "item": ["item", "Silver Edge", 1] },
 						{ "item": ["item", "Titan Edge", 1] },
 						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Laser Edge", 1] }
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Cross Edge", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -166,12 +163,13 @@
 						{ "item": ["item", "Silver Edge", 1] },
 						{ "item": ["item", "Titan Edge", 1] },
 						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Laser Edge", 1] }
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Cross Edge", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -190,12 +188,14 @@
 						{ "item": ["item", "Cobalt Edge", 1] },
 						{ "item": ["item", "Galaxy Spiral Drill", 1] },
 						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] }
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -213,12 +213,14 @@
 						{ "item": ["item", "Cobalt Edge", 1] },
 						{ "item": ["item", "Galaxy Spiral Drill", 1] },
 						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] }
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -236,12 +238,14 @@
 						{ "item": ["item", "Cobalt Edge", 1] },
 						{ "item": ["item", "Galaxy Spiral Drill", 1] },
 						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] }
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -255,12 +259,13 @@
 						{ "item": ["item", "Silver Edge", 1] },
 						{ "item": ["item", "Titan Edge", 1] },
 						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Laser Edge", 1] }
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Cross Edge", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -278,22 +283,18 @@
 						{ "item": ["item", "Cobalt Edge", 1] },
 						{ "item": ["item", "Galaxy Spiral Drill", 1] },
 						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] }
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
 					]
 				}
 			]
 		},
 		"armsDefensive": {
-			"displayName": "Defensive Arms",
-			"description": {
-				"en_US": "Provides upgraded weaponry for guarding and counterplay combat."
-			},
-			"id": 71,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -313,12 +314,16 @@
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -338,12 +343,16 @@
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -362,12 +371,15 @@
 						{ "item": ["item", "Panzer Fist", 1] },
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -387,12 +399,16 @@
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -410,12 +426,16 @@
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -434,12 +454,15 @@
 						{ "item": ["item", "Panzer Fist", 1] },
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -459,12 +482,16 @@
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -482,12 +509,16 @@
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -506,12 +537,15 @@
 						{ "item": ["item", "Panzer Fist", 1] },
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -528,12 +562,15 @@
 						{ "item": ["item", "Panzer Fist", 1] },
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -551,12 +588,16 @@
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -575,12 +616,15 @@
 						{ "item": ["item", "Panzer Fist", 1] },
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -597,12 +641,15 @@
 						{ "item": ["item", "Panzer Fist", 1] },
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -620,12 +667,16 @@
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -642,12 +693,15 @@
 						{ "item": ["item", "Panzer Fist", 1] },
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -664,22 +718,19 @@
 						{ "item": ["item", "Panzer Fist", 1] },
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
-						{ "item": ["item", "Meister Gloves", 1] }
+						{ "item": ["item", "Meister Gloves", 1] },
+						{ "item": ["item", "Unbreaking Fist+", 1] },
+						{ "item": ["item", "Brostick of Force+", 1] },
+						{ "item": ["item", "Highmeister Gloves", 1] }
 					]
 				}
 			]
 		},
 		"armsMelee": {
-			"displayName": "Melee Arms",
-			"description": {
-				"en_US": "Provides upgraded weaponry for offensive up-close and personal combat."
-			},
-			"id": 72,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -697,12 +748,17 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -720,12 +776,17 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -743,12 +804,17 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -764,12 +830,17 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -787,12 +858,16 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -810,12 +885,17 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -831,12 +911,17 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -854,12 +939,16 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -875,12 +964,17 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -898,12 +992,16 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -919,12 +1017,16 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -940,12 +1042,17 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -963,12 +1070,16 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -984,12 +1095,16 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1005,12 +1120,16 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1026,22 +1145,20 @@
 						{ "item": ["item", "Survivor's Blade", 1] },
 						{ "item": ["item", "Shuddering Cleaver", 1] },
 						{ "item": ["item", "Hydra Fang", 1] },
-						{ "item": ["item", "Skirmisher", 1] }
+						{ "item": ["item", "Skirmisher", 1] },
+						{ "item": ["item", "Cerberus Fang", 1] },
+						{ "item": ["item", "Skirmisher+", 1] },
+						{ "item": ["item", "Tremor Mirage", 1] },
+						{ "item": ["item", "Bearserker Claw", 1] }
 					]
 				}
 			]
 		},
 		"armsRanged": {
-			"displayName": "Ranged Arms",
-			"description": {
-				"en_US": "Provides upgraded weaponry for long-range projectile combat."
-			},
-			"id": 73,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -1060,12 +1177,16 @@
 						{ "item": ["item", "Marksmen Trigger", 1] },
 						{ "item": ["item", "Golden Falcon", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1084,12 +1205,16 @@
 						{ "item": ["item", "Marksmen Trigger", 1] },
 						{ "item": ["item", "Golden Falcon", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1106,12 +1231,14 @@
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
 						{ "item": ["item", "Marksmen Trigger", 1] },
-						{ "item": ["item", "Golden Falcon", 1] }
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -1129,12 +1256,16 @@
 						{ "item": ["item", "Marksmen Trigger", 1] },
 						{ "item": ["item", "Golden Falcon", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -1153,12 +1284,16 @@
 						{ "item": ["item", "Marksmen Trigger", 1] },
 						{ "item": ["item", "Golden Falcon", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1175,12 +1310,14 @@
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
 						{ "item": ["item", "Marksmen Trigger", 1] },
-						{ "item": ["item", "Golden Falcon", 1] }
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1198,12 +1335,16 @@
 						{ "item": ["item", "Marksmen Trigger", 1] },
 						{ "item": ["item", "Golden Falcon", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1222,12 +1363,16 @@
 						{ "item": ["item", "Marksmen Trigger", 1] },
 						{ "item": ["item", "Golden Falcon", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1243,12 +1388,14 @@
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
 						{ "item": ["item", "Marksmen Trigger", 1] },
-						{ "item": ["item", "Golden Falcon", 1] }
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1265,12 +1412,14 @@
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
 						{ "item": ["item", "Marksmen Trigger", 1] },
-						{ "item": ["item", "Golden Falcon", 1] }
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -1288,12 +1437,16 @@
 						{ "item": ["item", "Marksmen Trigger", 1] },
 						{ "item": ["item", "Golden Falcon", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1309,12 +1462,14 @@
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
 						{ "item": ["item", "Marksmen Trigger", 1] },
-						{ "item": ["item", "Golden Falcon", 1] }
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1331,12 +1486,14 @@
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
 						{ "item": ["item", "Marksmen Trigger", 1] },
-						{ "item": ["item", "Golden Falcon", 1] }
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1354,12 +1511,16 @@
 						{ "item": ["item", "Marksmen Trigger", 1] },
 						{ "item": ["item", "Golden Falcon", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1375,12 +1536,14 @@
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
 						{ "item": ["item", "Marksmen Trigger", 1] },
-						{ "item": ["item", "Golden Falcon", 1] }
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1396,22 +1559,18 @@
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
 						{ "item": ["item", "Marksmen Trigger", 1] },
-						{ "item": ["item", "Golden Falcon", 1] }
+						{ "item": ["item", "Golden Falcon", 1] },
+						{ "item": ["item", "Golden Falcon+", 1] },
+						{ "item": ["item", "Meteor Trigger", 1] }
 					]
 				}
 			]
 		},
 		"armsSpecial": {
-			"displayName": "Special Arms",
-			"description": {
-				"en_US": "Provides upgraded weaponry for crits, status effects, and other unique combat styles."
-			},
-			"id": 74,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -1431,12 +1590,15 @@
 						{ "item": ["item", "Shining Bracer", 2] },
 						{ "item": ["item", "Warkeeper", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1457,7 +1619,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1483,12 +1645,16 @@
 						{ "item": ["item", "Warkeeper", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
 						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Singularity Drill", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1508,12 +1674,15 @@
 						{ "item": ["item", "Shining Bracer", 2] },
 						{ "item": ["item", "Warkeeper", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -1531,12 +1700,15 @@
 						{ "item": ["item", "Sparkling Bracer", 1] },
 						{ "item": ["item", "Shining Bracer", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -1556,12 +1728,15 @@
 						{ "item": ["item", "Shining Bracer", 2] },
 						{ "item": ["item", "Warkeeper", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1584,7 +1759,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1605,7 +1780,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1625,7 +1800,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1651,12 +1826,16 @@
 						{ "item": ["item", "Warkeeper", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
 						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Singularity Drill", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1680,12 +1859,16 @@
 						{ "item": ["item", "Shining Bracer", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
 						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Singularity Drill", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1709,12 +1892,16 @@
 						{ "item": ["item", "Warkeeper", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
 						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Singularity Drill", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1732,12 +1919,15 @@
 						{ "item": ["item", "Sparkling Bracer", 1] },
 						{ "item": ["item", "Shining Bracer", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1757,12 +1947,15 @@
 						{ "item": ["item", "Shining Bracer", 2] },
 						{ "item": ["item", "Warkeeper", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -1780,12 +1973,15 @@
 						{ "item": ["item", "Sparkling Bracer", 1] },
 						{ "item": ["item", "Shining Bracer", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -1808,7 +2004,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1828,7 +2024,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1848,7 +2044,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1872,12 +2068,16 @@
 						{ "item": ["item", "Shining Bracer", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
 						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Singularity Drill", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1901,12 +2101,16 @@
 						{ "item": ["item", "Warkeeper", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
 						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Singularity Drill", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1928,12 +2132,16 @@
 						{ "item": ["item", "Shining Bracer", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
 						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Singularity Drill", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1951,12 +2159,15 @@
 						{ "item": ["item", "Sparkling Bracer", 1] },
 						{ "item": ["item", "Shining Bracer", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1978,22 +2189,20 @@
 						{ "item": ["item", "Shining Bracer", 1] },
 						{ "item": ["item", "Mantis Whip", 1] },
 						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] }
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Singularity Drill", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
 					]
 				}
 			]
 		},
 		"armsClassBased": {
-			"displayName": "Class-Based Arms",
-			"description": {
-				"en_US": "Provides upgraded weaponry for both offensive and defensive combat."
-			},
-			"id": 75,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -2014,12 +2223,16 @@
 						{ "item": ["item", "Aehre", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -2040,12 +2253,16 @@
 						{ "item": ["item", "Aehre", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -2063,12 +2280,13 @@
 						{ "item": ["item", "Sunset Claw", 1] },
 						{ "item": ["item", "Adept Gloves", 1] },
 						{ "item": ["item", "Rough Branch", 2] },
-						{ "item": ["item", "Aehre", 1] }
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -2085,12 +2303,15 @@
 						{ "item": ["item", "Aehre", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -2108,12 +2329,13 @@
 						{ "item": ["item", "Sunset Claw", 1] },
 						{ "item": ["item", "Adept Gloves", 1] },
 						{ "item": ["item", "Rough Branch", 2] },
-						{ "item": ["item", "Aehre", 1] }
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -2130,12 +2352,15 @@
 						{ "item": ["item", "Aehre", 1] },
 						{ "item": ["item", "Knocking One", 1] },
 						{ "item": ["item", "Pendulum Striker", 1] },
-						{ "item": ["item", "Eternal Salami", 1] }
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -2155,16 +2380,10 @@
 			]
 		},
 		"arms": {
-			"displayName": "Arms",
-			"description": {
-				"en_US": "Provides upgraded weaponry."
-			},
-			"id": 76,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -2187,12 +2406,17 @@
 						{ "item": ["item", "Laser Edge", 1] },
 						{ "item": ["item", "Knocking One", 1] },
 						{ "item": ["item", "Pendulum Striker", 1] },
-						{ "item": ["item", "Eternal Salami", 1] }
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Cross Edge", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -2209,12 +2433,16 @@
 						{ "item": ["item", "Adept Gloves", 1] },
 						{ "item": ["item", "Knocking One", 1] },
 						{ "item": ["item", "Pendulum Striker", 1] },
-						{ "item": ["item", "Eternal Salami", 1] }
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -2234,12 +2462,14 @@
 						{ "item": ["item", "Adept Gloves", 1] },
 						{ "item": ["item", "Titan Edge", 1] },
 						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Laser Edge", 1] }
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] },
+						{ "item": ["item", "Cross Edge", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -2256,12 +2486,16 @@
 						{ "item": ["item", "Laser Edge", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -2275,12 +2509,13 @@
 						{ "item": ["item", "Battered Fist", 1] },
 						{ "item": ["item", "Disciple Gloves", 1] },
 						{ "item": ["item", "Hunter's Bolt", 1] },
-						{ "item": ["item", "Adept Gloves", 1] }
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Thrashing Ripper", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -2307,7 +2542,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -2317,12 +2552,15 @@
 					"content": [
 						{ "item": ["item", "Eternal Salami", 1] },
 						{ "item": ["item", "Knocking One", 1] },
-						{ "item": ["item", "Pendulum Striker", 1] }
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Eternal Salami+", 1] },
+						{ "item": ["item", "Knocking One+", 1] },
+						{ "item": ["item", "Pendulum Striker+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -2336,7 +2574,8 @@
 						{ "item": ["item", "Silver Edge", 1] },
 						{ "item": ["item", "Titan Edge", 1] },
 						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Laser Edge", 1] }
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Cross Edge", 1] }
 					]
 				}
 			]

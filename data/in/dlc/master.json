@@ -5,7 +5,8 @@
 		"quests.json",
 		"regions.json",
 		"shops.json",
-		"item-pools.json"
+		"item-pools.json",
+        "prog-items/master.json"
 	],
 	"_comment": "Checks that are found only in DLC areas",
     "dungeons": [ "final-dng" ],
