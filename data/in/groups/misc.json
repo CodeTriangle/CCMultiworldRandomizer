@@ -1,5 +1,5 @@
 {
-	"itemPools": {
+	"itemGroups": {
 		"Dungeon Keys": [
 			["item", "Mine Key"],
 			["item", "Mine Master Key"],

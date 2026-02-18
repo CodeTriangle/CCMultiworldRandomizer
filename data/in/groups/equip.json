@@ -62,13 +62,13 @@
 			[ "item", "Warkeeper"],
 			[ "item", "Mantis Whip"],
 			[ "item", "Radiant Bracer"],
-			[ "item", "All-Purpose Arms"],
-			[ "item", "Defensive Arms"],
-			[ "item", "Melee Arms"],
-			[ "item", "Ranged Arms"],
-			[ "item", "Special Arms"],
-			[ "item", "Class-Based Arms"],
-			[ "item", "Arms"]
+			[ "item", "Progressive All-Purpose Arms"],
+			[ "item", "Progressive Defensive Arms"],
+			[ "item", "Progressive Melee Arms"],
+			[ "item", "Progressive Ranged Arms"],
+			[ "item", "Progressive Special Arms"],
+			[ "item", "Progressive Class-Based Arms"],
+			[ "item", "Progressive Arms"]
 		],
 		"Torsos": [
 			[ "item", "Second Hide"],
@@ -115,12 +115,12 @@
 			[ "item", "Zealous Lamellar"],
 			[ "item", "Assault Harness"],
 			[ "item", "Killing Dress"],
-			[ "item", "All-Purpose Torsos"],
-			[ "item", "Defensive Torsos"],
-			[ "item", "Mixed Torsos"],
-			[ "item", "Offensive Torsos"],
-			[ "item", "Torsos"],
-			[ "item", "Class-Based Torsos"]
+			[ "item", "Progressive All-Purpose Torsos"],
+			[ "item", "Progressive Defensive Torsos"],
+			[ "item", "Progressive Mixed Torsos"],
+			[ "item", "Progressive Offensive Torsos"],
+			[ "item", "Progressive Torsos"],
+			[ "item", "Progressive Class-Based Torsos"]
 		],
 		"Legs": [
 			[ "item", "Grasswalkers"],
@@ -162,10 +162,10 @@
 			[ "item", "Deadly Dancers"],
 			[ "item", "Combat Skates"],
 			[ "item", "Artillery Boots"],
-			[ "item", "All-Purpose Legs"],
-			[ "item", "Defensive Legs"],
-			[ "item", "Offensive Legs"],
-			[ "item", "Legs"]
+			[ "item", "Progressive All-Purpose Legs"],
+			[ "item", "Progressive Defensive Legs"],
+			[ "item", "Progressive Offensive Legs"],
+			[ "item", "Progressive Legs"]
 		],
 		"Heads": [
 			[ "item", "Explorer's Cap"],
@@ -214,10 +214,10 @@
 			[ "item", "Scouting Visor"],
 			[ "item", "Furious Hothead"],
 			[ "item", "Trackwalker Visor"],
-			[ "item", "All-Purpose Heads"],
-			[ "item", "Defensive Heads"],
-			[ "item", "Offensive Heads"],
-			[ "item", "Heads"]
+			[ "item", "Progressive All-Purpose Heads"],
+			[ "item", "Progressive Defensive Heads"],
+			[ "item", "Progressive Offensive Heads"],
+			[ "item", "Progressive Heads"]
 		]
 	}
 }
