@@ -289,6 +289,10 @@
 			"region": {
 				"open": "openDLC_Beach"
 			},
+            "condition": [
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ]
+			],
 			"reward": [
 				[ "item", "Baby of the East", 1 ]
 			]

@@ -65,6 +65,7 @@
 					"to": "openDLC_DungeonGF_L",
 					"condition": [
 						["item", "Heat", 1],
+                        ["item", "Cold", 1],
 						["item", "Wave", 1]
 					]
 				},

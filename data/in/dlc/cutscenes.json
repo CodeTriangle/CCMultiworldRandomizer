@@ -24,6 +24,10 @@
 			"region": {
 				"open": "openDLC_Beach" 
 			},
+            "condition": [
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ]
+			],
 			"reward": [
 				[ "sp" ]
 			]
@@ -38,6 +42,10 @@
 			"region": {
 				"open": "openDLC_Beach" 
 			},
+            "condition": [
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ]
+			],
 			"reward": [
 				[ "item", "Ancient Shade", 1 ]
 			]
@@ -52,6 +60,10 @@
 			"region": {
 				"open": "openDLC_Beach" 
 			},
+            "condition": [
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ]
+			],
 			"reward": [
 				[ "item", "Circuit Override", 3 ]
 			]

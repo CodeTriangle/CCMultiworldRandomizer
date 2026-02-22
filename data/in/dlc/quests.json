@@ -121,7 +121,8 @@
 			"condition": [
 				[ "quest", "Lakeside Escort" ],
 				[ "region", "open", "openDLC_Beach" ],
-                [ "item", "Wave" ]
+                [ "item", "Cold", 1 ],
+                [ "item", "Wave", 1 ]
 			],
 			"reward": [
 				[ "item", "The Last Straw", 1 ],
@@ -237,7 +238,7 @@
 			"condition": [
 				[ "item", "Tremor Engine", 4 ],
 				[ "item", "Humming Razor", 1 ],
-				[ "any_element" ],
+				[ "item", "Shock", 1 ],
 				[ "region", "open", "open10.Right" ],
 				[ "region", "open", "open16" ]
 			],
@@ -254,7 +255,8 @@
 				"open": "open2" 
 			},
 			"condition": [ 
-				[ "quest", "Wet Work" ]
+				[ "quest", "Wet Work" ],
+                [ "item", "Wave", 1 ]
 			],
 			"reward": [
 				[ "item", "Ruby", 6 ],
