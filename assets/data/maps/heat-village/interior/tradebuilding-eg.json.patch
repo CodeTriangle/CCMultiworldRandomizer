@@ -29,7 +29,7 @@
                         "face": "WEST",
                         "action": [],
                         "hidden": false,
-                        "condition": "mw.options.dlcActive && mw.options.questRando && !mw.options.allowBoosterGrinding && quest.bakiTrader-3-brewing_ghosts_1.started",
+                        "condition": "mw.options.dlcActive && mw.options.questRando && !mw.options.allowBoosterGrinding && quest.bakiTrader-3-brewing_ghosts_1.started && !quest.bakiTrader-3-brewing_ghosts_1.finished",
                         "config": "normal",
                         "event": {
                             "trade": {

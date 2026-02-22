@@ -20,7 +20,7 @@
                     "get": [
                         {
                             "id": "192",
-                            "amount": 1
+                            "amount": 2
                         }
                     ],
                     "require": [
@@ -30,19 +30,19 @@
                         },
                         {
                             "id": "176",
-                            "amount": 10
+                            "amount": 5
                         },
                         {
                             "id": "188",
-                            "amount": 10
+                            "amount": 5
                         },
                         {
                             "id": "187",
-                            "amount": 10
+                            "amount": 5
                         },
                         {
                             "id": "182",
-                            "amount": 10
+                            "amount": 5
                         }
                     ],
                     "scale": 1
