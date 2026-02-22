@@ -5,7 +5,7 @@
 	},
 	{
 		"type": "ADD_ARRAY_ELEMENT",
-		"index": 27,
+		"index": 21,
 		"content": {
 			"type": "MW_GOAL_COMPLETED",
 			"goal": "diorbis"
