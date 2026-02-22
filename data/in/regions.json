@@ -301,7 +301,7 @@
 					"from": "open4.4",
 					"to": "open4.5",
 					"condition": [
-						[ "item", "Mine Key", 4 ]
+						[ "item", "Mine Key", 5 ]
 					]
 				},
 				{
