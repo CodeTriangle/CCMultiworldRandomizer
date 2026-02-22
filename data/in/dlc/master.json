@@ -1,0 +1,23 @@
+{
+	"_includes": [
+		"chests.json",
+		"cutscenes.json",
+		"quests.json",
+		"regions.json",
+		"shops.json",
+		"item-pools.json",
+        "prog-items/master.json"
+	],
+	"_comment": "Checks that are found only in DLC areas",
+    "dungeons": [ "final-dng" ],
+    "keyringItems": [ "Ku'lero Key" ],
+	"_global": {
+		"/cutscenes|chests|quests|regions|item-pools|shops/": {
+			"*": {
+				"metadata": {
+					"dlc": true
+				}
+			}
+		}
+	}
+}

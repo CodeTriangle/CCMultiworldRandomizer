@@ -1,0 +1,17 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities", 22, "settings", "event"]
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"index": 21,
+		"content": {
+			"type": "MW_GOAL_COMPLETED",
+			"goal": "diorbis"
+		}
+	},
+	{
+		"type": "EXIT"
+	}
+]

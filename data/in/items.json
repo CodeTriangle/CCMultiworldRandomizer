@@ -579,7 +579,8 @@
 			"id": 182
 		},
 		"Everlasting Amber": {
-			"id": 183
+			"id": 183,
+            "classificaton": "progression"
 		},
 		"Weird Hillkat Tech": {
 			"id": 184
@@ -807,7 +808,8 @@
 			"id": 260
 		},
 		"Galaxy Berry": {
-			"id": 261
+			"id": 261,
+            "classification": "progression"
 		},
 		"Royal Hive": {
 			"id": 262
@@ -1167,6 +1169,7 @@
 			"id": 380
 		},
 		"Tremor Engine": {
+			"classification": "progression",
 			"id": 381
 		},
 		"Rising Super Star": {
@@ -1200,7 +1203,8 @@
 			"id": 391
 		},
 		"Dream Globe": {
-			"id": 392
+			"id": 392,
+            "classification": "progression"
 		},
 		"Cobalt Goggles": {
 			"id": 393
@@ -1361,7 +1365,8 @@
 			"id": 446
 		},
 		"Heaven's Seed": {
-			"id": 447
+			"id": 447,
+            "classification": "progression"
 		},
 		"Rise Booster": {
 			"id": 448
@@ -1382,10 +1387,12 @@
 			"id": 453
 		},
 		"Halcyon Droplet": {
-			"id": 454
+			"id": 454,
+            "classification": "progression"
 		},
 		"Portrait of Ruin": {
-			"id": 455
+			"id": 455,
+            "classification": "progression"
 		},
 		"Very Large Ember": {
 			"id": 456
@@ -1874,7 +1881,7 @@
 		"Ancient Cups": {
 			"id": 625
 		},
-		"Full Rhombus Pass": {
+		"Azure Archipelago Pass": {
 			"id": 626
 		},
 		"Ancient Shade": {

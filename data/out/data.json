@@ -2637,6 +2637,12 @@
 					"mwids": [
 						3235824308
 					]
+				},
+				"888": {
+					"name": "Rhombus: South Arch Left",
+					"mwids": [
+						3235824811
+					]
 				}
 			}
 		},
@@ -3002,6 +3008,362 @@
 				}
 			}
 		},
+		"evo-village.entrance": {
+			"chests": {
+				"44": {
+					"name": "Homestedt: Entrance Left",
+					"mwids": [
+						3235824792
+					]
+				},
+				"26": {
+					"name": "Homestedt: Entrance Upper",
+					"mwids": [
+						3235824793
+					]
+				}
+			},
+			"cutscenes": {
+				"582": [
+					{
+						"mwids": [
+							3235824834
+						],
+						"path": ".settings.event.5"
+					}
+				]
+			}
+		},
+		"evo-village.center": {
+			"chests": {
+				"213": {
+					"name": "Homestedt: Center Upper Right",
+					"mwids": [
+						3235824794
+					]
+				},
+				"839": {
+					"name": "Homestedt: Center Upper Left",
+					"mwids": [
+						3235824795
+					]
+				},
+				"26": {
+					"name": "Homestedt: Center Bottom Right",
+					"mwids": [
+						3235824796
+					]
+				},
+				"1086": {
+					"name": "Homestedt: Center Bottom Left",
+					"mwids": [
+						3235824797
+					]
+				}
+			}
+		},
+		"beach.path-01-entrance": {
+			"chests": {
+				"20": {
+					"name": "Azure A.: Sandy Bar Lower",
+					"mwids": [
+						3235824798
+					]
+				},
+				"21": {
+					"name": "Azure A.: Sandy Bar Upper Right",
+					"mwids": [
+						3235824799
+					]
+				}
+			}
+		},
+		"beach.path-02": {
+			"chests": {
+				"50": {
+					"name": "Azure A.: Isle of Legend Left",
+					"mwids": [
+						3235824800
+					]
+				},
+				"51": {
+					"name": "Azure A.: Isle of Legend MacGuffin",
+					"mwids": [
+						3235824801
+					]
+				}
+			}
+		},
+		"beach.path-03": {
+			"chests": {
+				"80": {
+					"name": "Azure A.: UFO Island",
+					"mwids": [
+						3235824802
+					]
+				}
+			}
+		},
+		"beach.path-04": {
+			"chests": {
+				"97": {
+					"name": "Azure A.: Rough Lagoon",
+					"mwids": [
+						3235824803
+					]
+				}
+			}
+		},
+		"beach.path-05": {
+			"chests": {
+				"796": {
+					"name": "Azure A.: Shallow Shore Left",
+					"mwids": [
+						3235824804
+					]
+				},
+				"20": {
+					"name": "Azure A.: Shallow Shore Right",
+					"mwids": [
+						3235824805
+					]
+				}
+			}
+		},
+		"beach.path-06": {
+			"chests": {
+				"42": {
+					"name": "Azure A.: Calm Pocket",
+					"mwids": [
+						3235824806
+					]
+				}
+			}
+		},
+		"beach.path-07": {
+			"chests": {
+				"2": {
+					"name": "Azure A.: Bird Skull Approach Left",
+					"mwids": [
+						3235824807
+					]
+				},
+				"16": {
+					"name": "Azure A.: Bird Skull Approach Right",
+					"mwids": [
+						3235824808
+					]
+				}
+			}
+		},
+		"beach.path-08": {
+			"chests": {
+				"83": {
+					"name": "Azure A.: Dover's Cliffs",
+					"mwids": [
+						3235824809
+					]
+				}
+			}
+		},
+		"beach.temple": {
+			"chests": {
+				"1463": {
+					"name": "Azure A.: Altar of the Key",
+					"mwids": [
+						3235824810
+					]
+				}
+			}
+		},
+		"rhombus-sqr.beach-sw": {
+			"chests": {
+				"1096": {
+					"name": "Rhombus: SW Beach",
+					"mwids": [
+						3235824812
+					]
+				}
+			}
+		},
+		"rhombus-sqr.center-w": {
+			"chests": {
+				"305": {
+					"name": "Rhombus: Garden Terrace",
+					"mwids": [
+						3235824813
+					]
+				}
+			}
+		},
+		"rhombus-sqr.center-nw": {
+			"chests": {
+				"251": {
+					"name": "Rhombus: Open PVP Fields",
+					"mwids": [
+						3235824814
+					]
+				}
+			}
+		},
+		"rhombus-sqr.center-n": {
+			"chests": {
+				"197": {
+					"name": "Rhombus: North Arch",
+					"mwids": [
+						3235824815
+					]
+				}
+			}
+		},
+		"rhombus-sqr.center-ne": {
+			"chests": {
+				"5": {
+					"name": "Rhombus: Cliff Exhibition Upper",
+					"mwids": [
+						3235824816
+					]
+				},
+				"437": {
+					"name": "Rhombus: Cliff Exhibition Right",
+					"mwids": [
+						3235824817
+					]
+				}
+			}
+		},
+		"final-dng.g.outdoor-01": {
+			"chests": {
+				"256": {
+					"name": "Ku'lero: Comet Trail Right",
+					"mwids": [
+						3235824818
+					]
+				},
+				"175": {
+					"name": "Ku'lero: Comet Trail Left",
+					"mwids": [
+						3235824819
+					]
+				}
+			}
+		},
+		"final-dng.g.outdoor-02-center": {
+			"chests": {
+				"42": {
+					"name": "Ku'lero: Outlook",
+					"mwids": [
+						3235824820
+					]
+				}
+			}
+		},
+		"final-dng.g.outdoor-03-south-west": {
+			"chests": {
+				"11": {
+					"name": "Ku'lero: Longleg Vale Upper",
+					"mwids": [
+						3235824821
+					]
+				},
+				"12": {
+					"name": "Ku'lero: Longleg Vale Right",
+					"mwids": [
+						3235824822
+					]
+				}
+			}
+		},
+		"final-dng.g.outdoor-04-north-west": {
+			"chests": {
+				"11": {
+					"name": "Ku'lero: Crystal Den Right",
+					"mwids": [
+						3235824823
+					]
+				},
+				"421": {
+					"name": "Ku'lero: Crystal Den Key Chest",
+					"mwids": [
+						3235824824
+					]
+				},
+				"10": {
+					"name": "Ku'lero: Crystal Den Left",
+					"mwids": [
+						3235824825
+					]
+				}
+			}
+		},
+		"final-dng.g.outdoor-03-south-east": {
+			"chests": {
+				"53": {
+					"name": "Ku'lero: Cracked Pillars Right",
+					"mwids": [
+						3235824826
+					]
+				},
+				"770": {
+					"name": "Ku'lero: Cracked Pillars Key Chest",
+					"mwids": [
+						3235824827
+					]
+				},
+				"3": {
+					"name": "Ku'lero: Cracked Pillars Left",
+					"mwids": [
+						3235824828
+					]
+				}
+			}
+		},
+		"final-dng.g.outdoor-04-north-east": {
+			"chests": {
+				"50": {
+					"name": "Ku'lero: Water Grave Right",
+					"mwids": [
+						3235824829
+					]
+				},
+				"86": {
+					"name": "Ku'lero: Water Grave Left",
+					"mwids": [
+						3235824830
+					]
+				}
+			}
+		},
+		"final-dng.b2.room-w7-battle": {
+			"chests": {
+				"83": {
+					"name": "Ku'lero: Shard Trial West Key Chest",
+					"mwids": [
+						3235824831
+					]
+				}
+			}
+		},
+		"final-dng.b3.room-c1": {
+			"chests": {
+				"85": {
+					"name": "Ku'lero: Master Key Chest",
+					"mwids": [
+						3235824832
+					]
+				}
+			}
+		},
+		"final-dng.b4.stargate": {
+			"chests": {
+				"305": {
+					"name": "Ku'lero: Mac Guffin Coin",
+					"mwids": [
+						3235824833
+					]
+				}
+			}
+		},
 		"bergen.mine-entrance": {
 			"cutscenes": {
 				"316": [
@@ -3209,6 +3571,14 @@
 						],
 						"path": ".settings.event.14"
 					}
+				],
+				"144": [
+					{
+						"mwids": [
+							3235824837
+						],
+						"path": ".settings.event.44"
+					}
 				]
 			}
 		},
@@ -3220,6 +3590,120 @@
 							3235824375
 						],
 						"path": ".settings.npcStates.0.event.quest.11"
+					}
+				]
+			}
+		},
+		"beach.expo-space": {
+			"cutscenes": {
+				"138": [
+					{
+						"mwids": [
+							3235824835
+						],
+						"path": ".settings.event.36"
+					},
+					{
+						"mwids": [
+							3235824836
+						],
+						"path": ".settings.event.18"
+					}
+				]
+			}
+		},
+		"final-dng.g.bridge": {
+			"cutscenes": {
+				"139": [
+					{
+						"mwids": [
+							3235824838
+						],
+						"path": ".settings.event.0.thenStep.13"
+					}
+				],
+				"140": [
+					{
+						"mwids": [
+							3235824839
+						],
+						"path": ".settings.event.0.thenStep.13"
+					}
+				]
+			}
+		},
+		"final-dng.b1.bridge-midboss": {
+			"cutscenes": {
+				"42": [
+					{
+						"mwids": [
+							3235824840
+						],
+						"path": ".settings.event.21"
+					}
+				]
+			}
+		},
+		"final-dng.b2.bridge": {
+			"cutscenes": {
+				"69": [
+					{
+						"mwids": [
+							3235824841
+						],
+						"path": ".settings.event.0.thenStep.13"
+					}
+				],
+				"71": [
+					{
+						"mwids": [
+							3235824842
+						],
+						"path": ".settings.event.0.thenStep.13"
+					}
+				]
+			}
+		},
+		"final-dng.b2.room-w4-battle": {
+			"cutscenes": {
+				"247": [
+					{
+						"mwids": [
+							3235824843
+						],
+						"path": ".settings.event.10"
+					}
+				]
+			}
+		},
+		"final-dng.b2.room-e2-battle": {
+			"cutscenes": {
+				"111": [
+					{
+						"mwids": [
+							3235824844
+						],
+						"path": ".settings.event.10"
+					}
+				]
+			}
+		},
+		"final-dng.b3.bridge": {
+			"cutscenes": {
+				"42": [
+					{
+						"mwids": [
+							3235824845
+						],
+						"path": ".settings.event.0.thenStep.13"
+					}
+				],
+				"43": [
+					{
+						"mwids": [
+							3235824846
+						],
+						"path": ".settings.event.0.thenStep.13"
 					}
 				]
 			}
@@ -3799,6 +4283,96 @@
 			"mwids": [
 				3235824521
 			]
+		},
+		"ape-battle": {
+			"mwids": [
+				3235824847,
+				3235824848
+			]
+		},
+		"monks-3-jump_challenge_3": {
+			"mwids": [
+				3235824852,
+				3235824853,
+				3235824854
+			]
+		},
+		"monks-jump_3_bonus": {
+			"mwids": [
+				3235824855
+			]
+		},
+		"monks-jump_3_time": {
+			"mwids": [
+				3235824876
+			]
+		},
+		"monks-jump_3_frosty": {
+			"mwids": [
+				3235824877
+			]
+		},
+		"bakiTrader-3-brewing_ghosts_1": {
+			"mwids": [
+				3235824856,
+				3235824857,
+				3235824858
+			]
+		},
+		"jungleGreens-3-escort_2": {
+			"mwids": [
+				3235824878,
+				3235824879,
+				3235824880
+			]
+		},
+		"bg-3-goat_final": {
+			"mwids": [
+				3235824849,
+				3235824850,
+				3235824851
+			]
+		},
+		"jungleGuard-3-papagang_goats_1": {
+			"mwids": [
+				3235824859,
+				3235824860,
+				3235824861
+			]
+		},
+		"jungleTrader-3-shad_fridge_1": {
+			"mwids": [
+				3235824862,
+				3235824863,
+				3235824864
+			]
+		},
+		"seizui-quest": {
+			"mwids": [
+				3235824865,
+				3235824866,
+				3235824867
+			]
+		},
+		"autobahn": {
+			"mwids": [
+				3235824868,
+				3235824869,
+				3235824870
+			]
+		},
+		"tremor-1": {
+			"mwids": [
+				3235824871,
+				3235824872
+			]
+		},
+		"rhg-4-maritime_smuggle_2": {
+			"mwids": [
+				3235824873,
+				3235824874,
+				3235824875
+			]
 		}
 	},
 	"shops": {
@@ -3862,7 +4436,13 @@
 				"398": 3235824736,
 				"399": 3235824738,
 				"400": 3235824740,
-				"501": 3235824757
+				"501": 3235824757,
+				"568": 3235824901,
+				"567": 3235824903,
+				"569": 3235824905,
+				"570": 3235824907,
+				"670": 3235824913,
+				"671": 3235824915
 			},
 			"perShop": {
 				"rookieHarborItems": {
@@ -4060,7 +4640,11 @@
 					"397": 3235824733,
 					"398": 3235824735,
 					"399": 3235824737,
-					"400": 3235824739
+					"400": 3235824739,
+					"568": 3235824916,
+					"567": 3235824917,
+					"569": 3235824918,
+					"570": 3235824919
 				},
 				"rhombusItems1": {
 					"1": 3235824741,
@@ -4115,6 +4699,43 @@
 					"70": 3235824783,
 					"73": 3235824784,
 					"67": 3235824785
+				},
+				"homestedtItems": {
+					"1": 3235824881,
+					"27": 3235824882,
+					"2": 3235824883,
+					"366": 3235824884,
+					"353": 3235824885,
+					"355": 3235824886,
+					"64": 3235824887,
+					"70": 3235824888,
+					"73": 3235824889,
+					"67": 3235824890,
+					"110": 3235824891,
+					"165": 3235824892,
+					"291": 3235824893,
+					"290": 3235824894,
+					"331": 3235824895
+				},
+				"homestedtWeapons": {
+					"397": 3235824896,
+					"398": 3235824897,
+					"399": 3235824898,
+					"400": 3235824899
+				},
+				"beachWeapons": {
+					"568": 3235824900,
+					"567": 3235824902,
+					"569": 3235824904,
+					"570": 3235824906
+				},
+				"goatShop": {
+					"1": 3235824908,
+					"27": 3235824909,
+					"2": 3235824910,
+					"366": 3235824911,
+					"670": 3235824912,
+					"671": 3235824914
 				}
 			}
 		},
@@ -4178,7 +4799,13 @@
 				"398": 3235924454,
 				"399": 3235924456,
 				"400": 3235924458,
-				"501": 3235924477
+				"501": 3235924477,
+				"568": 3235924536,
+				"567": 3235924538,
+				"569": 3235924540,
+				"570": 3235924542,
+				"670": 3235924549,
+				"671": 3235924551
 			},
 			"byShop": {
 				"rookieHarborItems": 3235924225,
@@ -4202,7 +4829,11 @@
 				"rhombusCurios": 3235924475,
 				"rhombusBacker": 3235924478,
 				"aridWeapons": 3235924491,
-				"aridItems": 3235924500
+				"aridItems": 3235924500,
+				"homestedtItems": 3235924513,
+				"homestedtWeapons": 3235924529,
+				"beachWeapons": 3235924534,
+				"goatShop": 3235924543
 			},
 			"byShopAndId": {
 				"rookieHarborItems": {
@@ -4400,7 +5031,11 @@
 					"397": 3235924451,
 					"398": 3235924453,
 					"399": 3235924455,
-					"400": 3235924457
+					"400": 3235924457,
+					"568": 3235924552,
+					"567": 3235924553,
+					"569": 3235924554,
+					"570": 3235924555
 				},
 				"rhombusItems1": {
 					"1": 3235924460,
@@ -4455,6 +5090,43 @@
 					"70": 3235924506,
 					"73": 3235924507,
 					"67": 3235924508
+				},
+				"homestedtItems": {
+					"1": 3235924514,
+					"27": 3235924515,
+					"2": 3235924516,
+					"366": 3235924517,
+					"353": 3235924518,
+					"355": 3235924519,
+					"64": 3235924520,
+					"70": 3235924521,
+					"73": 3235924522,
+					"67": 3235924523,
+					"110": 3235924524,
+					"165": 3235924525,
+					"291": 3235924526,
+					"290": 3235924527,
+					"331": 3235924528
+				},
+				"homestedtWeapons": {
+					"397": 3235924530,
+					"398": 3235924531,
+					"399": 3235924532,
+					"400": 3235924533
+				},
+				"beachWeapons": {
+					"568": 3235924535,
+					"567": 3235924537,
+					"569": 3235924539,
+					"570": 3235924541
+				},
+				"goatShop": {
+					"1": 3235924544,
+					"27": 3235924545,
+					"2": 3235924546,
+					"366": 3235924547,
+					"670": 3235924548,
+					"671": 3235924550
 				}
 			}
 		}
@@ -5344,6 +6016,135 @@
 		},
 		"3235924508": {
 			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Vermillion Consumables\\c[0]."
+		},
+		"3235924513": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924514": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924515": {
+			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924516": {
+			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924517": {
+			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924518": {
+			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924519": {
+			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924520": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924521": {
+			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924522": {
+			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924523": {
+			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924524": {
+			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924525": {
+			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924526": {
+			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924527": {
+			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924528": {
+			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Homestedt Items\\c[0]."
+		},
+		"3235924529": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Homestedt Weaponry\\c[0]."
+		},
+		"3235924530": {
+			"en_US": "Unlocks the slot selling \\c[3]Laser Goggles\\c[0] in \\c[3]Homestedt Weaponry\\c[0]."
+		},
+		"3235924531": {
+			"en_US": "Unlocks the slot selling \\c[3]Laser Edge\\c[0] in \\c[3]Homestedt Weaponry\\c[0]."
+		},
+		"3235924532": {
+			"en_US": "Unlocks the slot selling \\c[3]Laser Mail\\c[0] in \\c[3]Homestedt Weaponry\\c[0]."
+		},
+		"3235924533": {
+			"en_US": "Unlocks the slot selling \\c[3]Laser Boots\\c[0] in \\c[3]Homestedt Weaponry\\c[0]."
+		},
+		"3235924534": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Beach Weapon Store\\c[0]."
+		},
+		"3235924535": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Goggles\\c[0] in \\c[3]Beach Weapon Store\\c[0]."
+		},
+		"3235924536": {
+			"en_US": "Unlocks slots selling \\c[3]Cross Goggles\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924537": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Edge\\c[0] in \\c[3]Beach Weapon Store\\c[0]."
+		},
+		"3235924538": {
+			"en_US": "Unlocks slots selling \\c[3]Cross Edge\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924539": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Mail\\c[0] in \\c[3]Beach Weapon Store\\c[0]."
+		},
+		"3235924540": {
+			"en_US": "Unlocks slots selling \\c[3]Cross Mail\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924541": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Boots\\c[0] in \\c[3]Beach Weapon Store\\c[0]."
+		},
+		"3235924542": {
+			"en_US": "Unlocks slots selling \\c[3]Cross Boots\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924543": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Goat Zira's Shop\\c[0]."
+		},
+		"3235924544": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Goat Zira's Shop\\c[0]."
+		},
+		"3235924545": {
+			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Goat Zira's Shop\\c[0]."
+		},
+		"3235924546": {
+			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Goat Zira's Shop\\c[0]."
+		},
+		"3235924547": {
+			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Goat Zira's Shop\\c[0]."
+		},
+		"3235924548": {
+			"en_US": "Unlocks the slot selling \\c[3]Goat Cheese\\c[0] in \\c[3]Goat Zira's Shop\\c[0]."
+		},
+		"3235924549": {
+			"en_US": "Unlocks slots selling \\c[3]Goat Cheese\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924550": {
+			"en_US": "Unlocks the slot selling \\c[3]Goat Milk\\c[0] in \\c[3]Goat Zira's Shop\\c[0]."
+		},
+		"3235924551": {
+			"en_US": "Unlocks slots selling \\c[3]Goat Milk\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924552": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Goggles\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924553": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Edge\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924554": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Mail\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924555": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Boots\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
 		},
 		"3235824050": {
 			"en_US": "Unlocks the next dungeon or overworld area in story order."
@@ -9023,6 +9824,83 @@
 				"settings": {
 					"defaultClearance": "Default"
 				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 310.14285714285717,
+				"y": 498.55555555555554,
+				"map": "rhombus-sqr.center-s",
+				"mwid": 3235824811,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 232.7111111111111,
+				"y": 638.3478260869565,
+				"map": "rhombus-sqr.beach-sw",
+				"mwid": 3235824812,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 243.66666666666669,
+				"y": 465.50387596899225,
+				"map": "rhombus-sqr.center-w",
+				"mwid": 3235824813,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 266.6666666666667,
+				"y": 274.05555555555554,
+				"map": "rhombus-sqr.center-nw",
+				"mwid": 3235824814,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 358.8571428571429,
+				"y": 249.64285714285714,
+				"map": "rhombus-sqr.center-n",
+				"mwid": 3235824815,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 462.0,
+				"y": 281.5,
+				"map": "rhombus-sqr.center-ne",
+				"mwid": 3235824816,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 496.16,
+				"y": 309.0,
+				"map": "rhombus-sqr.center-ne",
+				"mwid": 3235824817,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
 			}
 		],
 		"rookie-harbor": [
@@ -9429,6 +10307,487 @@
 				"y": 149.8181818181818,
 				"map": "wave-dng.b1.center-05-element",
 				"mwid": 3235824370,
+				"settings": {}
+			}
+		],
+		"evo-village": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 151.2,
+				"y": 307.54,
+				"map": "evo-village.entrance",
+				"mwid": 3235824792,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 190.8,
+				"y": 260.74,
+				"map": "evo-village.entrance",
+				"mwid": 3235824793,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 267.6461538461539,
+				"y": 154.06593406593407,
+				"map": "evo-village.center",
+				"mwid": 3235824794,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 88.61538461538461,
+				"y": 126.04395604395604,
+				"map": "evo-village.center",
+				"mwid": 3235824795,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 269.7230769230769,
+				"y": 232.15384615384616,
+				"map": "evo-village.center",
+				"mwid": 3235824796,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 82.8,
+				"y": 222.8131868131868,
+				"map": "evo-village.center",
+				"mwid": 3235824797,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "EventTrigger",
+				"level": 0,
+				"x": 192.0,
+				"y": 267.76,
+				"map": "evo-village.entrance",
+				"mwid": 3235824834,
+				"settings": {}
+			}
+		],
+		"beach": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 601.28,
+				"y": 332.26666666666665,
+				"map": "beach.path-01-entrance",
+				"mwid": 3235824798,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 641.4133333333333,
+				"y": 289.24444444444447,
+				"map": "beach.path-01-entrance",
+				"mwid": 3235824799,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 517.7142857142857,
+				"y": 218.816,
+				"map": "beach.path-02",
+				"mwid": 3235824800,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 570.8285714285714,
+				"y": 201.152,
+				"map": "beach.path-02",
+				"mwid": 3235824801,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 433.5333333333333,
+				"y": 165.14,
+				"map": "beach.path-03",
+				"mwid": 3235824802,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 313.9,
+				"y": 246.74782608695654,
+				"map": "beach.path-04",
+				"mwid": 3235824803,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 203.0,
+				"y": 296.0,
+				"map": "beach.path-05",
+				"mwid": 3235824804,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 262.76666666666665,
+				"y": 323.82608695652175,
+				"map": "beach.path-05",
+				"mwid": 3235824805,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 327.375,
+				"y": 389.68888888888887,
+				"map": "beach.path-06",
+				"mwid": 3235824806,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 380.0,
+				"y": 372.6222222222222,
+				"map": "beach.path-07",
+				"mwid": 3235824807,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 445.5,
+				"y": 372.0888888888889,
+				"map": "beach.path-07",
+				"mwid": 3235824808,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 482.5840707964602,
+				"y": 335.136,
+				"map": "beach.path-08",
+				"mwid": 3235824809,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 390.84615384615387,
+				"y": 291.8333333333333,
+				"map": "beach.temple",
+				"mwid": 3235824810,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			}
+		],
+		"final-dng": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 246.9,
+				"y": 435.8,
+				"map": "final-dng.g.outdoor-01",
+				"mwid": 3235824818,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 194.925,
+				"y": 461.4,
+				"map": "final-dng.g.outdoor-01",
+				"mwid": 3235824819,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 269.93333333333334,
+				"y": 354.56,
+				"map": "final-dng.g.outdoor-02-center",
+				"mwid": 3235824820,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 115.75,
+				"y": 288.5,
+				"map": "final-dng.g.outdoor-03-south-west",
+				"mwid": 3235824821,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 135.75,
+				"y": 300.75,
+				"map": "final-dng.g.outdoor-03-south-west",
+				"mwid": 3235824822,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 137.88333333333333,
+				"y": 206.925,
+				"map": "final-dng.g.outdoor-04-north-west",
+				"mwid": 3235824823,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 105.38333333333333,
+				"y": 179.475,
+				"map": "final-dng.g.outdoor-04-north-west",
+				"mwid": 3235824824,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 68.76666666666667,
+				"y": 201.75,
+				"map": "final-dng.g.outdoor-04-north-west",
+				"mwid": 3235824825,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 376.25,
+				"y": 312.75,
+				"map": "final-dng.g.outdoor-03-south-east",
+				"mwid": 3235824826,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 368.5,
+				"y": 326.25,
+				"map": "final-dng.g.outdoor-03-south-east",
+				"mwid": 3235824827,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 325.75,
+				"y": 335.25,
+				"map": "final-dng.g.outdoor-03-south-east",
+				"mwid": 3235824828,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 371.0,
+				"y": 174.35,
+				"map": "final-dng.g.outdoor-04-north-east",
+				"mwid": 3235824829,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 313.6,
+				"y": 175.0,
+				"map": "final-dng.g.outdoor-04-north-east",
+				"mwid": 3235824830,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 59.666666666666664,
+				"y": 215.0,
+				"map": "final-dng.b2.room-w7-battle",
+				"mwid": 3235824831,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -3,
+				"x": 227.6,
+				"y": 289.1363636363636,
+				"map": "final-dng.b3.room-c1",
+				"mwid": 3235824832,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -8,
+				"x": 195.94285714285715,
+				"y": 183.82608695652175,
+				"map": "final-dng.b4.stargate",
+				"mwid": 3235824833,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "EventTrigger",
+				"level": 0,
+				"x": 204.12765957446808,
+				"y": 250.48888888888888,
+				"map": "final-dng.g.bridge",
+				"mwid": 3235824838,
+				"settings": {}
+			},
+			{
+				"type": "EventTrigger",
+				"level": 0,
+				"x": 249.531914893617,
+				"y": 250.22222222222223,
+				"map": "final-dng.g.bridge",
+				"mwid": 3235824839,
+				"settings": {}
+			},
+			{
+				"type": "EventTrigger",
+				"level": -1,
+				"x": 209.33333333333334,
+				"y": 279.0153846153846,
+				"map": "final-dng.b1.bridge-midboss",
+				"mwid": 3235824840,
+				"settings": {}
+			},
+			{
+				"type": "EventTrigger",
+				"level": -2,
+				"x": 220.5,
+				"y": 249.68421052631578,
+				"map": "final-dng.b2.bridge",
+				"mwid": 3235824841,
+				"settings": {}
+			},
+			{
+				"type": "EventTrigger",
+				"level": -2,
+				"x": 235.0,
+				"y": 249.68421052631578,
+				"map": "final-dng.b2.bridge",
+				"mwid": 3235824842,
+				"settings": {}
+			},
+			{
+				"type": "EventTrigger",
+				"level": -2,
+				"x": 176.64,
+				"y": 196.55384615384617,
+				"map": "final-dng.b2.room-w4-battle",
+				"mwid": 3235824843,
+				"settings": {}
+			},
+			{
+				"type": "EventTrigger",
+				"level": -2,
+				"x": 250.66666666666666,
+				"y": 344.96000000000004,
+				"map": "final-dng.b2.room-e2-battle",
+				"mwid": 3235824844,
+				"settings": {}
+			},
+			{
+				"type": "EventTrigger",
+				"level": -3,
+				"x": 218.0,
+				"y": 261.23636363636365,
+				"map": "final-dng.b3.bridge",
+				"mwid": 3235824845,
+				"settings": {}
+			},
+			{
+				"type": "EventTrigger",
+				"level": -3,
+				"x": 236.4,
+				"y": 261.23636363636365,
+				"map": "final-dng.b3.bridge",
+				"mwid": 3235824846,
 				"settings": {}
 			}
 		]
