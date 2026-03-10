@@ -3272,6 +3272,11 @@
 				3235824474
 			]
 		},
+		"maroon-tree-defend": {
+			"mwids": [
+				3235824440
+			]
+		},
 		"my-first-quest": {
 			"mwids": [
 				3235824377,
@@ -3513,11 +3518,6 @@
 		"trailblaze-maroon-4": {
 			"mwids": [
 				3235824439
-			]
-		},
-		"maroon-tree-defend": {
-			"mwids": [
-				3235824440
 			]
 		},
 		"nomadAdv-1-turtle_bombing_1": {
