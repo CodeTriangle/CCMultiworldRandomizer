@@ -704,20 +704,6 @@
 				"open": "open5"
 			}
 		},
-		"Maroon Tree Defender": {
-			"questid": "maroon-tree-defend",
-			"region": {
-				"linear": "12",
-				"open": "open6"
-			},
-			"condition": [
-				[ "item", "Maroon Cave Pass", 1 ],
-				[ "item", "Heat", 1 ]
-			],
-			"reward": [
-				[ "item", "Shiny Orb", 1 ]
-			]
-		},
 		"Blasting Shells": {
 			"questid": "nomadAdv-1-turtle_bombing_1",
 			"region": {

@@ -33,6 +33,23 @@
 			"reward": [
 				[ "item", "Pond Slums Pass", 1 ]
 			]
+		},
+		"Maroon Tree Defender": {
+			"questid": "maroon-tree-defend",
+			"region": {
+				"linear": "12",
+				"open": "open6"
+			},
+			"condition": [
+				[ "item", "Maroon Cave Pass", 1 ],
+				[ "item", "Heat", 1 ]
+			],
+			"properties": {
+				"alwaysQuest": true
+			},
+			"reward": [
+				[ "item", "Shiny Orb", 1 ]
+			]
 		}
 	}
 }
