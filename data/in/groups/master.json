@@ -1,6 +1,7 @@
 {
 	"_includes": [
 		"equip.json",
+		"required.json",
 		"misc.json"
 	]
 }

@@ -41,7 +41,7 @@
 			[ "item", "Copper Gull"],
 			[ "item", "Gunner's Trigger"],
 			[ "item", "Hunter's Bolt"],
-			[ "item", "Rough Branch"],
+			[ "item", "Rough Branch", 2],
 			[ "item", "Silver Hawk"],
 			[ "item", "Golden Revolver"],
 			[ "item", "Bigger Stick"],
