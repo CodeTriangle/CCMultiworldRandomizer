@@ -17,7 +17,9 @@
 				{ "item": ["item", "Purple Bolt Shade", 1] },
 				{ "item": ["item", "Azure Drop Shade", 1] },
 				{ "item": ["item", "Star Shade", 1] },
-				{ "item": ["item", "Meteor Shade", 1] }
+				{ "item": ["item", "Meteor Shade", 1] },
+                { "item": ["item", "Azure Archipelago Pass", 1] },
+                { "item": ["item", "Ancient Shade", 1] }
 			]
 		},
 		"areaItemsOverworld": {
@@ -33,7 +35,8 @@
 				{ "item": ["item", "Red Flame Shade", 1] },
 				{ "item": ["item", "Green Seed Shade", 1] },
 				{ "item": ["item", "Star Shade", 1] },
-				{ "item": ["item", "Meteor Shade", 1] }
+				{ "item": ["item", "Meteor Shade", 1] },
+                { "item": ["item", "Azure Archipelago Pass", 1] }
 			]
 		},
 		"areaItemsDungeons": {
@@ -47,7 +50,8 @@
 				{ "item": ["item", "Mine Pass", 1] },
 				{ "item": ["item", "Yellow Sand Shade", 1] },
 				{ "item": ["item", "Purple Bolt Shade", 1] },
-				{ "item": ["item", "Azure Drop Shade", 1] }
+				{ "item": ["item", "Azure Drop Shade", 1] },
+                { "item": ["item", "Ancient Shade", 1] }
 			]
 		}
 	}

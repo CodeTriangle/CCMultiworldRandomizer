@@ -1,23 +1,10 @@
 {
-	"_global": {
-		"progressiveChains": {
-			"*": {
-				"multi": true
-			}
-		}
-	},
 	"progressiveChains": {
 		"torsosAllPurpose": {
-			"displayName": "All-Purpose Torsos",
-			"description": {
-				"en_US": "Provides upgraded attire that's great for any situation."
-			},
-			"id": 80,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -36,12 +23,14 @@
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Golden Chest Plate", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
-						{ "item": ["item", "Plate of Chests", 1] }
+						{ "item": ["item", "Plate of Chests", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Body Armoire", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -60,12 +49,14 @@
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Golden Chest Plate", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
-						{ "item": ["item", "Plate of Chests", 1] }
+						{ "item": ["item", "Plate of Chests", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Body Armoire", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -81,12 +72,14 @@
 						{ "item": ["item", "Titan Mail", 1] },
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
-						{ "item": ["item", "Plate of Chests", 1] }
+						{ "item": ["item", "Plate of Chests", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Body Armoire", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -104,12 +97,14 @@
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Golden Chest Plate", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
-						{ "item": ["item", "Plate of Chests", 1] }
+						{ "item": ["item", "Plate of Chests", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Body Armoire", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -125,12 +120,14 @@
 						{ "item": ["item", "Titan Mail", 1] },
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
-						{ "item": ["item", "Plate of Chests", 1] }
+						{ "item": ["item", "Plate of Chests", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Body Armoire", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -148,12 +145,14 @@
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Golden Chest Plate", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
-						{ "item": ["item", "Plate of Chests", 1] }
+						{ "item": ["item", "Plate of Chests", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Body Armoire", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -168,12 +167,14 @@
 						{ "item": ["item", "Titan Mail", 1] },
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
-						{ "item": ["item", "Plate of Chests", 1] }
+						{ "item": ["item", "Plate of Chests", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Body Armoire", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -181,12 +182,13 @@
 						"quest": false
 					},
 					"content": [
-						{ "item": ["item", "Plate of Chests", 1] }
+						{ "item": ["item", "Plate of Chests", 1] },
+						{ "item": ["item", "Body Armoire", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -201,22 +203,18 @@
 						{ "item": ["item", "Titan Mail", 1] },
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
-						{ "item": ["item", "Plate of Chests", 1] }
+						{ "item": ["item", "Plate of Chests", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Body Armoire", 1] }
 					]
 				}
 			]
 		},
 		"torsosDefensive": {
-			"displayName": "Defensive Torsos",
-			"description": {
-				"en_US": "Provides upgraded attire for guarding and counterplay combat."
-			},
-			"id": 81,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -234,12 +232,14 @@
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Timeworn Belt", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -257,12 +257,14 @@
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Timeworn Belt", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -279,12 +281,14 @@
 						{ "item": ["item", "Vermillion Mantle", 1] },
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -302,12 +306,14 @@
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Timeworn Belt", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -324,12 +330,14 @@
 						{ "item": ["item", "Vermillion Mantle", 1] },
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -346,12 +354,14 @@
 						{ "item": ["item", "Vermillion Mantle", 1] },
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -369,12 +379,14 @@
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Timeworn Belt", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -391,12 +403,14 @@
 						{ "item": ["item", "Vermillion Mantle", 1] },
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -413,12 +427,14 @@
 						{ "item": ["item", "Vermillion Mantle", 1] },
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -435,12 +451,14 @@
 						{ "item": ["item", "Vermillion Mantle", 1] },
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -457,12 +475,14 @@
 						{ "item": ["item", "Vermillion Mantle", 1] },
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -479,22 +499,18 @@
 						{ "item": ["item", "Vermillion Mantle", 1] },
 						{ "item": ["item", "Survival Plate", 1] },
 						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] }
 					]
 				}
 			]
 		},
 		"torsosMixed": {
-			"displayName": "Mixed Torsos",
-			"description": {
-				"en_US": "Provides upgraded attire with regenerative and status-resistant properties."
-			},
-			"id": 82,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -512,12 +528,14 @@
 						{ "item": ["item", "Infinite Bag", 1] },
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -540,12 +558,15 @@
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
 						{ "item": ["item", "Plate of Chests", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Body Armoire", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -563,12 +584,14 @@
 						{ "item": ["item", "Infinite Bag", 1] },
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -585,12 +608,14 @@
 						{ "item": ["item", "Infinite Bag", 1] },
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -608,12 +633,14 @@
 						{ "item": ["item", "Infinite Bag", 1] },
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -636,12 +663,15 @@
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
 						{ "item": ["item", "Plate of Chests", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Body Armoire", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -660,12 +690,15 @@
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
 						{ "item": ["item", "Plate of Chests", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Body Armoire", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -687,12 +720,15 @@
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
 						{ "item": ["item", "Plate of Chests", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Body Armoire", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -709,12 +745,14 @@
 						{ "item": ["item", "Infinite Bag", 1] },
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -732,12 +770,14 @@
 						{ "item": ["item", "Infinite Bag", 1] },
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -754,12 +794,14 @@
 						{ "item": ["item", "Infinite Bag", 1] },
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -778,12 +820,15 @@
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
 						{ "item": ["item", "Plate of Chests", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Body Armoire", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -805,12 +850,15 @@
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
 						{ "item": ["item", "Plate of Chests", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Body Armoire", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -827,12 +875,14 @@
 						{ "item": ["item", "Infinite Bag", 1] },
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -849,12 +899,14 @@
 						{ "item": ["item", "Infinite Bag", 1] },
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -872,22 +924,19 @@
 						{ "item": ["item", "Pioneer Vest", 1] },
 						{ "item": ["item", "Infinity+1 Bag", 1] },
 						{ "item": ["item", "Plate of Chests", 1] },
-						{ "item": ["item", "Lifefiber Uniform", 1] }
+						{ "item": ["item", "Lifefiber Uniform", 1] },
+						{ "item": ["item", "Body Armoire", 1] },
+						{ "item": ["item", "Pioneer Vest+", 1] },
+						{ "item": ["item", "Lifefiber Dress", 1] }
 					]
 				}
 			]
 		},
 		"torsosOffensive": {
-			"displayName": "Offensive Torsos",
-			"description": {
-				"en_US": "Provides upgraded attire for offensive and crit-based combat."
-			},
-			"id": 83,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -904,12 +953,17 @@
 						{ "item": ["item", "Centaur Vest", 1] },
 						{ "item": ["item", "Zealous Lamellar", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -924,12 +978,15 @@
 						{ "item": ["item", "Loose Trenchcoat", 1] },
 						{ "item": ["item", "Shadowy Cloak", 1] },
 						{ "item": ["item", "Centaur Vest", 1] },
-						{ "item": ["item", "Zealous Lamellar", 1] }
+						{ "item": ["item", "Zealous Lamellar", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -946,12 +1003,17 @@
 						{ "item": ["item", "Centaur Vest", 1] },
 						{ "item": ["item", "Zealous Lamellar", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -968,12 +1030,17 @@
 						{ "item": ["item", "Centaur Vest", 1] },
 						{ "item": ["item", "Zealous Lamellar", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -990,12 +1057,17 @@
 						{ "item": ["item", "Centaur Vest", 1] },
 						{ "item": ["item", "Zealous Lamellar", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1010,12 +1082,15 @@
 						{ "item": ["item", "Loose Trenchcoat", 1] },
 						{ "item": ["item", "Shadowy Cloak", 1] },
 						{ "item": ["item", "Centaur Vest", 1] },
-						{ "item": ["item", "Zealous Lamellar", 1] }
+						{ "item": ["item", "Zealous Lamellar", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1030,12 +1105,15 @@
 						{ "item": ["item", "Loose Trenchcoat", 1] },
 						{ "item": ["item", "Shadowy Cloak", 1] },
 						{ "item": ["item", "Centaur Vest", 1] },
-						{ "item": ["item", "Zealous Lamellar", 1] }
+						{ "item": ["item", "Zealous Lamellar", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -1052,12 +1130,17 @@
 						{ "item": ["item", "Centaur Vest", 1] },
 						{ "item": ["item", "Zealous Lamellar", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1072,12 +1155,15 @@
 						{ "item": ["item", "Loose Trenchcoat", 1] },
 						{ "item": ["item", "Shadowy Cloak", 1] },
 						{ "item": ["item", "Centaur Vest", 1] },
-						{ "item": ["item", "Zealous Lamellar", 1] }
+						{ "item": ["item", "Zealous Lamellar", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1094,12 +1180,17 @@
 						{ "item": ["item", "Centaur Vest", 1] },
 						{ "item": ["item", "Zealous Lamellar", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -1114,12 +1205,15 @@
 						{ "item": ["item", "Loose Trenchcoat", 1] },
 						{ "item": ["item", "Shadowy Cloak", 1] },
 						{ "item": ["item", "Centaur Vest", 1] },
-						{ "item": ["item", "Zealous Lamellar", 1] }
+						{ "item": ["item", "Zealous Lamellar", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1134,22 +1228,19 @@
 						{ "item": ["item", "Loose Trenchcoat", 1] },
 						{ "item": ["item", "Shadowy Cloak", 1] },
 						{ "item": ["item", "Centaur Vest", 1] },
-						{ "item": ["item", "Zealous Lamellar", 1] }
+						{ "item": ["item", "Zealous Lamellar", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				}
 			]
 		},
 		"torsos": {
-			"displayName": "Torsos",
-			"description": {
-				"en_US": "Provides upgraded attire."
-			},
-			"id": 84,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1174,12 +1265,15 @@
 						{ "item": ["item", "Golden Chest Plate", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1197,12 +1291,14 @@
 						{ "item": ["item", "Bluefiber Robe", 1] },
 						{ "item": ["item", "Golden Chest Plate", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1225,12 +1321,13 @@
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Bluefiber Robe", 1] },
 						{ "item": ["item", "Golden Chest Plate", 1] },
-						{ "item": ["item", "Laser Mail", 1] }
+						{ "item": ["item", "Laser Mail", 1] },
+						{ "item": ["item", "Cross Mail", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1247,12 +1344,15 @@
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1276,12 +1376,15 @@
 						{ "item": ["item", "Golden Chest Plate", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -1302,7 +1405,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1312,12 +1415,14 @@
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1334,12 +1439,14 @@
 						{ "item": ["item", "Bluefiber Robe", 1] },
 						{ "item": ["item", "Golden Chest Plate", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1354,12 +1461,13 @@
 						{ "item": ["item", "Silver Mail", 1] },
 						{ "item": ["item", "Titan Mail", 1] },
 						{ "item": ["item", "Cobalt Mail", 1] },
-						{ "item": ["item", "Laser Mail", 1] }
+						{ "item": ["item", "Laser Mail", 1] },
+						{ "item": ["item", "Cross Mail", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1381,12 +1489,13 @@
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Bluefiber Robe", 1] },
 						{ "item": ["item", "Golden Chest Plate", 1] },
-						{ "item": ["item", "Laser Mail", 1] }
+						{ "item": ["item", "Laser Mail", 1] },
+						{ "item": ["item", "Cross Mail", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1402,12 +1511,15 @@
 						{ "item": ["item", "Cobalt Mail", 1] },
 						{ "item": ["item", "Laser Mail", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Cross Mail", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -1420,7 +1532,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -1440,7 +1552,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1449,12 +1561,14 @@
 					},
 					"content": [
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1468,22 +1582,17 @@
 						{ "item": ["item", "Silver Mail", 1] },
 						{ "item": ["item", "Titan Mail", 1] },
 						{ "item": ["item", "Cobalt Mail", 1] },
-						{ "item": ["item", "Laser Mail", 1] }
+						{ "item": ["item", "Laser Mail", 1] },
+						{ "item": ["item", "Cross Mail", 1] }
 					]
 				}
 			]
 		},
 		"torsosClassBased": {
-			"displayName": "Class-Based Torsos",
-			"description": {
-				"en_US": "Provides upgraded attire for both offensive and defensive combat."
-			},
-			"id": 85,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1511,12 +1620,19 @@
 						{ "item": ["item", "Zealous Lamellar", 1] },
 						{ "item": ["item", "Reactive Plate", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1542,12 +1658,17 @@
 						{ "item": ["item", "Plated Plate", 1] },
 						{ "item": ["item", "Centaur Vest", 1] },
 						{ "item": ["item", "Zealous Lamellar", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -1575,12 +1696,19 @@
 						{ "item": ["item", "Zealous Lamellar", 1] },
 						{ "item": ["item", "Reactive Plate", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
-						{ "item": ["item", "Killing Dress", 1] }
+						{ "item": ["item", "Killing Dress", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Assault Harness+", 1] },
+						{ "item": ["item", "Killing Dress+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1606,7 +1734,12 @@
 						{ "item": ["item", "Plated Plate", 1] },
 						{ "item": ["item", "Centaur Vest", 1] },
 						{ "item": ["item", "Zealous Lamellar", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
+						{ "item": ["item", "Reactive Plate", 1] },
+						{ "item": ["item", "Reactive Plate+", 1] },
+						{ "item": ["item", "Asteroid Belt", 1] },
+						{ "item": ["item", "Chiron Vest", 1] },
+						{ "item": ["item", "Zealous Lamellar+", 1] },
+						{ "item": ["item", "Nightfeather Coat", 1] }
 					]
 				}
 			]

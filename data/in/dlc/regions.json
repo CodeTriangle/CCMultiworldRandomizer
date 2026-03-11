@@ -1,0 +1,151 @@
+{
+	"regions": {
+		"open": {
+			"connections": [
+				{
+					"from": "open3",
+					"to": "openDLC1",
+					"condition": [
+						["item", "Guild Pass", 1]
+					]
+				},
+				{
+					"from": "open20",
+					"to": "openDLC_Beach",
+					"condition": [
+						["item", "Azure Archipelago Pass", 1]
+					]
+				},
+				{
+					"from": "open16.1",
+					"to": "openDLC_DungeonEntry",
+					"condition": [
+						["item", "Ancient Shade", 1]
+					]
+				},
+				{
+					"from": "openDLC_DungeonEntry",
+					"to": "openDLC_DungeonEntry.1F",
+					"condition": [
+						["item", "Ku'lero Key", 3],
+						["item", "Wave", 1]
+					]
+				},
+				{
+					"from": "openDLC_DungeonEntry",
+					"to": "openDLC_DungeonEntry.1L",
+					"condition": [
+						["item", "Ku'lero Key", 3]
+					]
+				},
+				{
+					"from": "openDLC_DungeonEntry",
+					"to": "openDLC_DungeonEntry.1R",
+					"condition": [
+						["or",
+							["and",
+								["item", "Ku'lero Key", 2],
+								["item", "Wave", 1]
+							],
+							["item", "Ku'lero Key", 3]
+						]
+					]
+				},
+				{
+					"from": "openDLC_DungeonEntry",
+					"to": "openDLC_DungeonGF_R",
+					"condition": [
+						["item", "Heat", 1],
+						["item", "Cold", 1],
+						["item", "Shock", 1]
+					]
+				},
+				{
+					"from": "openDLC_DungeonEntry",
+					"to": "openDLC_DungeonGF_L",
+					"condition": [
+						["item", "Heat", 1],
+                        ["item", "Cold", 1],
+						["item", "Wave", 1]
+					]
+				},
+				{
+					"from": "openDLC_DungeonGF_R",
+					"to": "openDLC_DungeonMain",
+					"condition": []
+				},
+				{
+					"from": "openDLC_DungeonGF_L",
+					"to": "openDLC_DungeonMain",
+					"condition": []
+				},
+				{
+					"from": "openDLC_DungeonMain",
+					"to": "openDLC_DungeonB2_R",
+					"condition": [
+						["item", "Heat", 1],
+						["item", "Shock", 1],
+						["item", "Cold", 1]
+					]
+				},
+				{
+					"from": "openDLC_DungeonB2_R",
+					"to": "openDLC_DungeonB2_R.1",
+					"condition": [
+						["item", "Wave", 1]
+					]
+				},
+				{
+					"from": "openDLC_DungeonMain",
+					"to": "openDLC_DungeonB2_L",
+					"condition": [
+						["item", "Heat", 1],
+						["item", "Wave", 1],
+						["item", "Cold", 1],
+						["item", "Shock", 1]
+					]
+				},
+				{
+					"from": "openDLC_DungeonB2_L",
+					"to": "openDLC_DungeonB2_L.1",
+					"condition": [
+						["item", "Ku'lero Key", 3]
+					]
+				},
+				{
+					"from": "openDLC_DungeonMain",
+					"to": "openDLC_DungeonB3_L",
+					"condition": [
+						["item", "Heat", 1],
+						["item", "Cold", 1],
+						["item", "Shock", 1]
+					]
+				},
+				{
+					"from": "openDLC_DungeonMain",
+					"to": "openDLC_DungeonB3_R",
+					"condition": [
+						["item", "Shock", 1],
+						["item", "Wave", 1]
+					]
+				},
+				{
+					"from": "openDLC_DungeonMain",
+					"to": "openDLC_DungeonBoss",
+					"condition": [
+						["item", "Heat", 1],
+						["item", "Cold", 1],
+						["item", "Shock", 1],
+						["item", "Wave", 1],
+						["item", "Ku'lero Master Key", 1]
+					]
+				}
+			],
+            "goals": {
+				"diorbis": {
+					"region": "openDLC_DungeonBoss"
+				}
+			}
+		}
+	}
+}

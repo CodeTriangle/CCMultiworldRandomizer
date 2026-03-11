@@ -9,6 +9,7 @@
 		"items.json",
 		"shops.json",
 		"prog-items/master.json",
+		"dlc/master.json",
 		"vars.json",
 		"item-pools/master.json"
 	],
