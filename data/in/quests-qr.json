@@ -23,7 +23,8 @@
 			},
 			"condition": [
 				[ "cutscene", "Talatu Introductions" ],
-				[ "item", "Disc of Flora", 1 ]
+				[ "item", "Disc of Flora", 1 ],
+				[ "botanics", 20 ]
 			],
 			"reward": [
 				[ "item", "Strawhat", 1 ]
@@ -41,7 +42,8 @@
 				"open": "open5"
 			},
 			"condition": [
-				[ "cutscene", "Talatu Bergen 25%" ]
+				[ "cutscene", "Talatu Bergen 25%" ],
+				[ "botanics", 39 ]
 			],
 			"reward": [
 				[ "item", "Dried Grass Hat", 1 ]
@@ -59,7 +61,8 @@
 				"open": "open10"
 			},
 			"condition": [
-				[ "cutscene", "Talatu Ba'kii 50%" ]
+				[ "cutscene", "Talatu Ba'kii 50%" ],
+				[ "botanics", 58 ]
 			],
 			"reward": [
 				[ "item", "Strawberry Hat", 1 ]
@@ -267,16 +270,8 @@
 			},
 			"condition": [
 				[ "item", "Disc of Flora", 1 ],
-				[ "item", "Heat" ],
-				[ "cutscene", "Talatu Bergen 25%" ],
-				[ "cutscene", "Talatu Ba'kii 50%" ],
 				[ "cutscene", "Talatu Basin 75%" ],
-				[ "region", "open", "open4.1" ],
-				[ "region", "open", "open5" ],
-				[ "region", "open", "open9" ],
-				[ "region", "open", "open10" ],
-				[ "region", "open", "open16" ],
-				[ "region", "open", "open20" ]
+				[ "botanics", 77 ]
 			],
 			"reward": [
 				[ "item", "The Last Strawhat", 1 ]

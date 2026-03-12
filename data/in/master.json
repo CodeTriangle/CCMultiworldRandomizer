@@ -8,6 +8,7 @@
 		"quests-qr.json",
 		"items.json",
 		"shops.json",
+		"botanics.json",
 		"prog-items/master.json",
 		"vars.json",
 		"item-pools/master.json"
