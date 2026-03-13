@@ -7,6 +7,7 @@
 			"description": {
 				"en_US": "Unlocks the next dungeon or overworld area in story order."
 			},
+			"group": "Area Unlocks",
 			"items": [
 				{ "item": ["item", "Green Leaf Shade", 1] },
 				{ "item": ["item", "Mine Pass", 1] },
@@ -27,6 +28,7 @@
 			"description": {
 				"en_US": "Unlocks the next overworld area in story order."
 			},
+			"group": "Overworld Area Unlocks",
 			"items": [
 				{ "item": ["item", "Green Leaf Shade", 1] },
 				{ "item": ["item", "Blue Ice Shade", 1] },
@@ -43,6 +45,7 @@
 			"description": {
 				"en_US": "Unlocks the next dungeon in story order."
 			},
+			"group": "Dungeon Unlocks",
 			"items": [
 				{ "item": ["item", "Mine Pass", 1] },
 				{ "item": ["item", "Yellow Sand Shade", 1] },
