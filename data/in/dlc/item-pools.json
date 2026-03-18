@@ -1,6 +1,6 @@
 {
 	"itemPools": {
-		"required_dlc": [
+		"Required (DLC)": [
 			{
 				"item": ["item", "Azure Archipelago Pass"],
 				"quantity": 1
