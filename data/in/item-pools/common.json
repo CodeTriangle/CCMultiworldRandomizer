@@ -1,6 +1,6 @@
 {
 	"itemPools": {
-		"fillerCommonCons": [
+		"Common Consumables": [
 			{
 				"item": ["item", "Sandwich", 3], 
 				"quantity": 40
@@ -30,7 +30,7 @@
 				"quantity": 25
 			}
 		],
-		"fillerCommonDrop": [
+		"Common Drops": [
 			{
 				"item": ["item", "Autumn Leaves", 4], 
 				"quantity": 15

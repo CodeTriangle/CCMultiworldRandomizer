@@ -1,6 +1,6 @@
 {
 	"itemPools": {
-		"fillerLegendary": [
+		"Legendary Consumables": [
 			{
 				"item": ["item", "Final Dinner", 1 ],
 				"quantity": 30

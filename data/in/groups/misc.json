@@ -1,0 +1,27 @@
+{
+	"itemGroups": {
+		"Dungeon Keys": [
+			["item", "Mine Key"],
+			["item", "Mine Master Key"],
+			["item", "Faj'ro Key"],
+			["item", "Faj'ro Master Key"],
+			["item", "So'najiz Key"],
+			["item", "Zir'vitar Key"],
+			["item", "Krys'kajo Key"],
+			["item", "Kajo Master Key"],
+			["item", "Ku'lero Key"],
+			["item", "Ku'lero Master Key"]
+		],
+		"Chest Keys": [
+			["item", "Thief's Key"],
+			["item", "White Key"],
+			["item", "Radiant Key"]
+		],
+		"Elements": [
+			["item", "Heat"],
+			["item", "Cold"],
+			["item", "Shock"],
+			["item", "Wave"]
+		]
+	}
+}

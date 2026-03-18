@@ -1,0 +1,43 @@
+{
+	"itemGroups": {
+		"Broken Equipment": [
+			[ "item", "Broken Deck"],
+			[ "item", "Broken Sword"],
+			[ "item", "Broken Chakrams"],
+			[ "item", "Broken Gauntlet"],
+			[ "item", "Broken Shield"]
+		],
+		"Side Area Unlocks": [
+			[ "item", "Guild Pass"],
+			[ "item", "Old Dojo Key"],
+			[ "item", "Cursed Coin"],
+			[ "item", "Pond Slums Pass"],
+			[ "item", "Maroon Cave Pass"],
+			[ "item", "Shiny Orb"],
+			[ "item", "East Gaia Pass"],
+			[ "item", "West Gaia Pass"]
+		],
+		"Discs": [
+			[ "item", "Disc of Insight"],
+			[ "item", "Disc of Flora"]
+		],
+		"Unique Trade Items": [
+			["item", "Old Blueprint"],
+			["item", "Very Large Ember"],
+			["item", "Halcyon Droplet"],
+			["item", "Portrait of Ruin"],
+			["item", "Heaven's Seed"],
+			["item", "Everlasting Amber"],
+			["item", "Galaxy Berry"],
+			["item", "Dream Globe"],
+			["item", "Tremor Engine"],
+			["item", "Geta Wood"],
+			["item", "Geta Glue"],
+			["item", "Hungry Salmon"],
+			["item", "Mysterious Box"],
+			["item", "Omni Lock"],
+			["item", "Golden Triangle"],
+			["item", "King's Ring"]
+		]
+	}
+}
