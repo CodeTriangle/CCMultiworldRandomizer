@@ -1,0 +1,58 @@
+{
+	"itemPools": {
+		"Required (DLC)": [
+			{
+				"item": ["item", "Azure Archipelago Pass"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Ancient Shade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "SP Upgrade"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "MacGuffin's Coin"],
+				"quantity": 3
+			},
+			{
+				"item": ["item", "Ku'lero Key"],
+				"quantity": 3
+			},
+			{
+				"item": ["item", "Ku'lero Master Key"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Champion's Towel"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Light Gem"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "The Last Straw"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Asteroid Chunk"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Moon Chunk"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Meteor Chunk"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Rift Spore"],
+				"quantity": 1
+			}
+		]
+	}
+}

@@ -1,23 +1,10 @@
 {
-	"_global": {
-		"progressiveChains": {
-			"*": {
-				"multi": true
-			}
-		}
-	},
 	"progressiveChains": {
 		"legsAllPurpose": {
-			"displayName": "All-Purpose Legs",
-			"description": {
-				"en_US": "Provides upgraded footwear that's great for any situation."
-			},
-			"id": 90,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -36,12 +23,14 @@
 						{ "item": ["item", "Lead Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Unicorn Greaves", 1] },
-						{ "item": ["item", "Old Geta", 1] }
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Cross Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -60,12 +49,14 @@
 						{ "item": ["item", "Lead Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Unicorn Greaves", 1] },
-						{ "item": ["item", "Old Geta", 1] }
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Cross Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -83,12 +74,14 @@
 						{ "item": ["item", "Cobalt Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Unicorn Greaves", 1] },
-						{ "item": ["item", "Old Geta", 1] }
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Cross Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -106,12 +99,14 @@
 						{ "item": ["item", "Lead Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Unicorn Greaves", 1] },
-						{ "item": ["item", "Old Geta", 1] }
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Cross Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -129,12 +124,14 @@
 						{ "item": ["item", "Cobalt Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Unicorn Greaves", 1] },
-						{ "item": ["item", "Old Geta", 1] }
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Cross Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -152,12 +149,14 @@
 						{ "item": ["item", "Lead Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Unicorn Greaves", 1] },
-						{ "item": ["item", "Old Geta", 1] }
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Cross Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -174,12 +173,14 @@
 						{ "item": ["item", "Cobalt Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Unicorn Greaves", 1] },
-						{ "item": ["item", "Old Geta", 1] }
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Cross Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -196,22 +197,18 @@
 						{ "item": ["item", "Cobalt Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Unicorn Greaves", 1] },
-						{ "item": ["item", "Old Geta", 1] }
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Cross Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] }
 					]
 				}
 			]
 		},
 		"legsDefensive": {
-			"displayName": "Defensive Legs",
-			"description": {
-				"en_US": "Provides upgraded footwear with regenerative, status-resist and defensive properties."
-			},
-			"id": 91,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -233,12 +230,16 @@
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
 						{ "item": ["item", "Mistwalkers", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -260,12 +261,16 @@
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
 						{ "item": ["item", "Mistwalkers", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -286,12 +291,15 @@
 						{ "item": ["item", "Bamboots", 1] },
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] }
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -312,12 +320,16 @@
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
 						{ "item": ["item", "Mistwalkers", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -338,12 +350,16 @@
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
 						{ "item": ["item", "Mistwalkers", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -364,12 +380,15 @@
 						{ "item": ["item", "Bamboots", 1] },
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] }
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -390,12 +409,16 @@
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
 						{ "item": ["item", "Mistwalkers", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -416,12 +439,16 @@
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
 						{ "item": ["item", "Mistwalkers", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -441,12 +468,15 @@
 						{ "item": ["item", "Bamboots", 1] },
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] }
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -466,12 +496,15 @@
 						{ "item": ["item", "Bamboots", 1] },
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] }
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -491,12 +524,16 @@
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
 						{ "item": ["item", "Mistwalkers", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -516,12 +553,15 @@
 						{ "item": ["item", "Bamboots", 1] },
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] }
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -541,12 +581,15 @@
 						{ "item": ["item", "Bamboots", 1] },
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] }
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -566,12 +609,16 @@
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
 						{ "item": ["item", "Mistwalkers", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -590,12 +637,15 @@
 						{ "item": ["item", "Bamboots", 1] },
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] }
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -614,22 +664,19 @@
 						{ "item": ["item", "Bamboots", 1] },
 						{ "item": ["item", "Brave Anchors", 1] },
 						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] }
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Praetorian Anchors+", 1] },
+						{ "item": ["item", "Mistwalkers+", 1] },
+						{ "item": ["item", "Moonwalkers", 1] }
 					]
 				}
 			]
 		},
 		"legsOffensive": {
-			"displayName": "Offensive Legs",
-			"description": {
-				"en_US": "Provides upgraded footwear for melee and ranged combat."
-			},
-			"id": 92,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -648,12 +695,17 @@
 						{ "item": ["item", "Lunatic Paws", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -677,12 +729,18 @@
 						{ "item": ["item", "Old Geta", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -700,12 +758,15 @@
 						{ "item": ["item", "Trench Boots", 1] },
 						{ "item": ["item", "Lunatic Paws", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -724,12 +785,17 @@
 						{ "item": ["item", "Lunatic Paws", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -746,12 +812,17 @@
 						{ "item": ["item", "Trench Boots", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -774,12 +845,16 @@
 						{ "item": ["item", "Unicorn Greaves", 1] },
 						{ "item": ["item", "Old Geta", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -802,12 +877,18 @@
 						{ "item": ["item", "Old Geta", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -828,12 +909,18 @@
 						{ "item": ["item", "Old Geta", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -851,12 +938,15 @@
 						{ "item": ["item", "Trench Boots", 1] },
 						{ "item": ["item", "Lunatic Paws", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -872,12 +962,15 @@
 						{ "item": ["item", "Boom Walkers", 1] },
 						{ "item": ["item", "Trench Boots", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": true,
@@ -894,12 +987,17 @@
 						{ "item": ["item", "Trench Boots", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -921,12 +1019,16 @@
 						{ "item": ["item", "Unicorn Greaves", 1] },
 						{ "item": ["item", "Old Geta", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -946,12 +1048,16 @@
 						{ "item": ["item", "Unicorn Greaves", 1] },
 						{ "item": ["item", "Old Geta", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": true,
@@ -971,12 +1077,18 @@
 						{ "item": ["item", "Old Geta", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": true,
 						"arena": false,
@@ -992,12 +1104,15 @@
 						{ "item": ["item", "Boom Walkers", 1] },
 						{ "item": ["item", "Trench Boots", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -1016,22 +1131,20 @@
 						{ "item": ["item", "Unicorn Greaves", 1] },
 						{ "item": ["item", "Old Geta", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
-						{ "item": ["item", "Artillery Boots", 1] }
+						{ "item": ["item", "Artillery Boots", 1] },
+						{ "item": ["item", "Pegasus Greaves", 1] },
+						{ "item": ["item", "Deadly Dancers+", 1] },
+						{ "item": ["item", "Artillery Boots+", 1] },
+						{ "item": ["item", "Speedy Boom Boots", 1] }
 					]
 				}
 			]
 		},
 		"legs": {
-			"displayName": "Legs",
-			"description": {
-				"en_US": "Provides upgraded footwear."
-			},
-			"id": 93,
-			"classification": "progression",
 			"items": [
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1053,12 +1166,16 @@
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Lunatic Paws", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Cross Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1073,12 +1190,15 @@
 						{ "item": ["item", "Lead Boots", 1] },
 						{ "item": ["item", "Lunatic Paws", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Paedalos+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1098,12 +1218,13 @@
 						{ "item": ["item", "Cobalt Boots", 1] },
 						{ "item": ["item", "Lead Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
-						{ "item": ["item", "Lunatic Paws", 1] }
+						{ "item": ["item", "Lunatic Paws", 1] },
+						{ "item": ["item", "Cross Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1123,12 +1244,16 @@
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Lunatic Paws", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Cross Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1146,12 +1271,16 @@
 						{ "item": ["item", "Lead Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Cross Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -1169,7 +1298,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1182,12 +1311,15 @@
 						{ "item": ["item", "Weird Skates", 1] },
 						{ "item": ["item", "Lunatic Paws", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Paedalos+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1198,12 +1330,15 @@
 						{ "item": ["item", "Ancient Sandals", 1] },
 						{ "item": ["item", "Lead Boots", 1] },
 						{ "item": ["item", "Paedalos", 1] },
-						{ "item": ["item", "Combat Skates", 1] }
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1221,12 +1356,13 @@
 						{ "item": ["item", "Titan Boots", 1] },
 						{ "item": ["item", "Cobalt Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
-						{ "item": ["item", "Lunatic Paws", 1] }
+						{ "item": ["item", "Lunatic Paws", 1] },
+						{ "item": ["item", "Cross Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1242,12 +1378,13 @@
 						{ "item": ["item", "Titan Boots", 1] },
 						{ "item": ["item", "Cobalt Boots", 1] },
 						{ "item": ["item", "Lead Boots", 1] },
-						{ "item": ["item", "Laser Boots", 1] }
+						{ "item": ["item", "Laser Boots", 1] },
+						{ "item": ["item", "Cross Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": true,
@@ -1263,12 +1400,16 @@
 						{ "item": ["item", "Cobalt Boots", 1] },
 						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Paedalos+", 1] },
+						{ "item": ["item", "Cross Boots", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -1284,7 +1425,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": false,
@@ -1298,7 +1439,7 @@
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": false,
 						"arena": true,
@@ -1307,12 +1448,15 @@
 					},
 					"content": [
 						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Paedalos", 1] },
+						{ "item": ["item", "Combat Skates+", 1] },
+						{ "item": ["item", "Lunatic Paws UwU", 1] },
+						{ "item": ["item", "Paedalos+", 1] }
 					]
 				},
 				{
 					"metadata": {
-						"dlc": false,
+						"dlc": true,
 						"trade": false,
 						"shop": true,
 						"arena": false,
@@ -1326,7 +1470,8 @@
 						{ "item": ["item", "Silver Boots", 1] },
 						{ "item": ["item", "Titan Boots", 1] },
 						{ "item": ["item", "Cobalt Boots", 1] },
-						{ "item": ["item", "Laser Boots", 1] }
+						{ "item": ["item", "Laser Boots", 1] },
+						{ "item": ["item", "Cross Boots", 1] }
 					]
 				}
 			]
