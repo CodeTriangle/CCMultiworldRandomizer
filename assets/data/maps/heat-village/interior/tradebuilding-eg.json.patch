@@ -1,0 +1,48 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+            "type": "NPC",
+            "x": 481,
+            "y": 206,
+            "level": 0,
+            "settings": {
+                "size": {
+                    "x": 16,
+                    "y": 16
+                },
+                "mapId": 154,
+                "npcStates": [
+                    {
+                        "reactType": "FIXED_POS",
+                        "face": "WEST",
+                        "action": [],
+                        "hidden": true,
+                        "condition": "",
+                        "config": "normal",
+                        "event": []
+                    },
+                    {
+                        "reactType": "FIXED_POS",
+                        "face": "WEST",
+                        "action": [],
+                        "hidden": false,
+                        "condition": "mw.options.dlcActive && mw.options.questRando && !mw.options.allowBoosterGrinding && quest.bakiTrader-3-brewing_ghosts_1.started && !quest.bakiTrader-3-brewing_ghosts_1.finished",
+                        "config": "normal",
+                        "event": {
+                            "trade": {
+                                "trader": "mwBakiEpicMetal"
+                            }
+                        }
+                    }
+                ],
+                "characterName": "baki.female-yellow-tall",
+                "name": "epic_metal"
+            }
+        }
+    },
+    
+    { "type": "EXIT" }
+]

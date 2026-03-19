@@ -1,0 +1,100 @@
+{
+	"shops": {
+		"Homestedt Items": {
+			"location": {
+				"shop": "homestedtItems",
+				"area": "evo-village"
+			},
+			"region": {
+				"open": "openDLC1"
+			},
+			"slots": [
+                "Sandwich",
+                "Hi-Sandwich",
+                "Green Leaf Tea",
+                "Just Water",
+                "Kebab Roll",
+                "Meaty Risotto",
+                "Spicy Bun",
+                "Fruit Drink",
+                "Rice Cracker",
+                "Veggie Sticks",
+                "Bergen Ice Cream",
+                "Sweet Lemonjuice",
+                "Cup o' Coffee",
+                "Salted Peanuts",
+                "Snack Mix"
+			]
+		},
+		"Homestedt Weapons": {
+			"location": {
+				"shop": "homestedtWeapons",
+				"area": "evo-village"
+			},
+			"region": {
+				"open": "openDLC1"
+			},
+			"slots": [
+                "Laser Goggles",
+                "Laser Edge",
+                "Laser Mail",
+                "Laser Boots"
+			]
+		},
+		"Beach Weapons": {
+			"location": {
+				"shop": "beachWeapons",
+				"area": "beach"
+			},
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"slots": [
+                "Cross Goggles",
+                "Cross Edge",
+                "Cross Mail",
+                "Cross Boots"
+			]
+		},
+		"Goat Zira's Shop": {
+			"location": {
+				"shop": "goatShop",
+				"area": "rhombus-sqr"
+			},
+			"region": {
+				"open": "open20"
+			},
+			"condition": [
+                [ "quest", "Wrath of Goat" ],
+				[ "var", "canGrind" ]
+			],
+			"slots": [
+                "Sandwich",
+                "Hi-Sandwich",
+                "Green Leaf Tea",
+                "Just Water",
+                "Goat Cheese",
+                "Goat Milk"
+			]
+		},
+		"Rhombus Weapons + DLC": {
+			"location": {
+				"shop": "rhombusWeapons1",
+				"area": "rhombus-sqr"
+			},
+			"region": {
+				"linear": "33",
+				"open": "open20"
+			},
+			"condition": [
+				[ "var", "canGrind" ]
+			],
+			"slots": [
+                "Cross Goggles",
+                "Cross Edge",
+                "Cross Mail",
+                "Cross Boots"
+			]
+		}
+	}
+}
