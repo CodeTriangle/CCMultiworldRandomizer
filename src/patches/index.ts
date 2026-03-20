@@ -1,6 +1,7 @@
 import type MwRandomizer from "../plugin";
 
 import { patch as patchMwModel } from "./multiworld-model";
+import { patch as patchBotanics } from "./botanics";
 import { patch as patchChest } from "./chest";
 import { patch as patchEntities } from "./entity";
 import { patch as patchEvent } from "./event";
@@ -18,6 +19,7 @@ import { patch as patchDeathLink } from "./deathlink.ts";
 
 export function applyPatches(plugin: MwRandomizer) {
 	patchMwModel(plugin);
+	patchBotanics(plugin);
 	patchChest(plugin);
 	patchEntities(plugin);
 	patchEvent(plugin);

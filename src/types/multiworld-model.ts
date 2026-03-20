@@ -92,7 +92,8 @@ declare global {
 				shopSendMode?: string,
 				shopReceiveMode?: string,
 				shopDialogHints?: boolean,
-				chestClearanceLevels?: Record<number, keyof typeof sc.CHEST_TYPE>
+				chestClearanceLevels?: Record<number, keyof typeof sc.CHEST_TYPE>,
+				botanicsCompletionAmount?: number,
 			};
 
 			export type MultiworldVars = {
