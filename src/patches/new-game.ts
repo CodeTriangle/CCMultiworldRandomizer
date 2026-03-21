@@ -12,6 +12,12 @@ declare global {
 }
 
 export function patch(plugin: MwRandomizer) {
+	sc.TrophyManager.inject({
+		getTotalPoints() {
+			return 1e9;
+		}
+	});
+
 	sc.NewGamePlusModel.inject({
 		options: { "rhombus-start": true },
 		onReset() {
