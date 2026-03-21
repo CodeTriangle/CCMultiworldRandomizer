@@ -29,7 +29,25 @@ export function patch(plugin: MwRandomizer) {
 	sc.NewGamePlusMenu.inject({
 		init() {
 			this.parent();
-			this.button.setActive(sc.newgame.hasAnyOptions());
+			if (!sc.menu.newGameViewMode && sc.model.isGame()) {
+				// this.button.setActive(sc.newgame.hasAnyOptions());
+				const oldWidth = this.button.hook.size.x;
+				this.button.setText(
+					"\\i[help2]" + ig.lang.get("sc.gui.menu.new-game.modifyOptions")
+				)
+				const newWidth = this.button.hook.size.x;
+				this.button.hook.pos.x -= (newWidth - oldWidth) / 2;
+				this.button.setActive(true);
+			}
+		},
+
+		onBeginButtonPressed() {
+			if (!sc.menu.newGameViewMode && sc.model.isGame()) {
+				sc.menu.popBackCallback();
+				sc.menu.popMenu();
+			} else {
+				this.parent();
+			}
 		},
 	});
 
