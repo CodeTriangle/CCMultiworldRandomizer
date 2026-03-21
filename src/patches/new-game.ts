@@ -8,6 +8,10 @@ declare global {
 			apGui: sc.NewGameModeDialogButton;
 			oldCallback: this["callback"];
 		}
+
+		interface NewGameToggleSet {
+			setName: string;
+		}
 	}
 }
 
@@ -52,6 +56,11 @@ export function patch(plugin: MwRandomizer) {
 	});
 
 	sc.NewGameToggleSet.inject({
+		init(set, list, yOffset, listIndex, counter) {
+			this.parent(set, list, yOffset, listIndex, counter);
+			this.setName = set;
+		},
+
 		updateActiveState(
 			totalPoints: number,
 			newGameCost: number,
@@ -60,7 +69,10 @@ export function patch(plugin: MwRandomizer) {
 			this.parent(totalPoints, newGameCost, remainingCredits);
 
 			for (const button of this.buttons) {
-				if (button.data.id == "rhombus-start") {
+				if (
+					button.data.id == "rhombus-start" ||
+					this.setName == "carry-over" && !sc.menu.newGameViewMode && sc.model.isGame()
+				) {
 					button.setActive(false);
 				}
 			}
