@@ -50,6 +50,19 @@
 			"reward": [
 				[ "item", "Shiny Orb", 1 ]
 			]
+		},
+		"Trials of the Golden Bugs": {
+			"questid": "bug-hunting",
+			"region": {
+				"linear": "31",
+				"open": "open16" 
+			},
+			"properties": {
+				"alwaysQuest": true
+			},
+			"reward": [
+				[ "item", "Old Dojo Key", 1 ]
+			]
 		}
 	}
 }
