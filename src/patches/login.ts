@@ -213,7 +213,7 @@ export function patch(plugin: MwRandomizer) {
 			newGameButton.onButtonPress = () => {
 				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
 				sc.menu.exitCallback = () => {
-					if (sc.multiworld.client.authenticated) {
+					if (sc.multiworld.client.authenticated && sc.newgame.active) {
 						// unset New Game Plus to get the behavior I want from the callback.
 						let oldNGP = this._newGamePlus;
 						this._newGamePlus = false;

@@ -400,7 +400,12 @@ export function patch(plugin: MwRandomizer) {
 			this.buttongroup.addFocusGui(this.connect, 0, this.fields.length);
 
 			this.disconnect = new sc.ButtonGui("Disconnect", sc.BUTTON_MENU_WIDTH);
-			this.disconnect.onButtonPress = () => { sc.multiworld.disconnect() };
+			this.disconnect.onButtonPress = () => {
+				sc.multiworld.disconnect();
+				if (!sc.model.isGame()) {
+					sc.multiworld.unsetVars();
+				}
+			};
 			this.disconnect.setPos(sc.BUTTON_MENU_WIDTH + this.hSpacer);
 			this.disconnect.data = ig.lang.get("sc.gui.mw.connection-menu.disconnect");
 			this.buttongroup.addFocusGui(this.disconnect, 1, this.fields.length);

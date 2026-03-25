@@ -8,6 +8,9 @@
 				"apConnection": "Connection Info",
 				"apTextClient": "AP Text Client",
 				"apGameInfoMenu": "AP Game Info"
+			},
+			"new-game": {
+				"modifyOptions": "Modify Options"
 			}
 		},
 		"title-screen": {
