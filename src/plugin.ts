@@ -44,8 +44,6 @@ if (!("structuredClone" in globalThis)) {
 	globalThis.structuredClone = structuredClone;
 }
 
-import { Mod } from 'ultimate-crosscode-typedefs/modloader/mod';
-
 declare global {
 	namespace ig.Input {
 		interface KnownActions {
@@ -58,13 +56,11 @@ declare global {
 }
 
 export default class MwRandomizer {
-	mod: Mod;
 	baseDirectory: string;
 	randoData!: WorldData;
 	itemdb: any;
 
-	constructor(mod: Mod) {
-		this.mod = mod;
+	constructor(mod: {baseDirectory: string}) {
 		this.baseDirectory = mod.baseDirectory;
 	}
 

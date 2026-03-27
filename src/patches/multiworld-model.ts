@@ -393,8 +393,6 @@ export function patch(plugin: MwRandomizer) {
 				ig.vars.setDefault("mw.mode", this.mode);
 				ig.vars.setDefault("mw.options", this.options);
 				ig.vars.setDefault("mw.dataPackageChecksums", this.dataPackageChecksums);
-				ig.vars.setDefault("mw.seed", this.client.room.seedName)
-				ig.vars.setDefault("mw.slot", this.client.players.self.slot)
 				ig.vars.set("mw.connectionInfo", this.connectionInfo);
 
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
@@ -465,8 +463,6 @@ export function patch(plugin: MwRandomizer) {
 			},
 
 			async login(info, mw, listener) {
-				this.disconnectPlanned = false;
-
 				const fatalError = (message: string) => {
 					listener.onLoginError(message);
 					this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
@@ -520,32 +516,14 @@ export function patch(plugin: MwRandomizer) {
 						}
 					);
 
-					// semver is provided by CCModManager. don't wanna set up the typescript for this.
-					// @ts-ignore
-					if (slotData.apworldVersion && semver.gt(slotData.apworldVersion, plugin.mod.version)) {
-						fatalError("Cannot connect to this slot because APWorld version is greater than mod version.");
-						return;
-					}
-
 					listener.onLoginProgress("Checking local game package cache.");
 
 					// okay, if we actually successfully connected, we should have the roomInfo packet
 					// also, if we had any data packages cached, those should be available now
 					// in either case, we'll need all of that information for the next phase
 					// possibly the room info promise idles forever but there's no way that happens, right?
-					let [gamePackages, [roomInfo]] = await Promise.all([dataPackagePromise, roomInfoPromise]);
-
-					if (mw?.seed && mw.seed !== roomInfo.seed_name) {
-						fatalError("Cannot connect to this multiworld because this save was previously connected to a different multiworld.");
-						return;
-					}
-
-					if (mw?.slot && mw.slot !== this.client.players.self.slot) {
-						fatalError("Cannot connect to this slot because this save was previously connected to a different slot in this multiworld.");
-						return;
-					}
-
-					let remoteChecksums = roomInfo.datapackage_checksums;
+					let [gamePackages, roomInfo] = await Promise.all([dataPackagePromise, roomInfoPromise]);
+					let remoteChecksums = roomInfo[0].datapackage_checksums;
 					this.dataPackageChecksums = remoteChecksums;
 
 					// list of expected checksums, loaded from save file
