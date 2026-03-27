@@ -121,7 +121,7 @@ export function patch(plugin: MwRandomizer) {
 
 		hide(success) {
 			if (!success) {
-				sc.multiworld.client.socket.disconnect();
+				sc.multiworld.disconnect();
 			}
 			ig.interact.removeEntry(this.buttonInteract);
 			ig.interact.setBlockDelay(0.2);
