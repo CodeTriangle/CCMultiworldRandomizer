@@ -523,7 +523,7 @@ export function patch(plugin: MwRandomizer) {
 					// semver is provided by CCModManager. don't wanna set up the typescript for this.
 					// @ts-ignore
 					if (slotData.apworldVersion && semver.gt(slotData.apworldVersion, plugin.mod.version)) {
-						fatalError("Cannot connect to this slot because APWorld version is greater than mod version.");
+						fatalError(ig.lang.get("sc.gui.mw.login.failures.gen-version"));
 						return;
 					}
 
@@ -536,12 +536,12 @@ export function patch(plugin: MwRandomizer) {
 					let [gamePackages, [roomInfo]] = await Promise.all([dataPackagePromise, roomInfoPromise]);
 
 					if (mw?.seed && mw.seed !== roomInfo.seed_name) {
-						fatalError("Cannot connect to this multiworld because this save was previously connected to a different multiworld.");
+						fatalError(ig.lang.get("sc.gui.mw.login.failures.seed"));
 						return;
 					}
 
 					if (mw?.slot && mw.slot !== this.client.players.self.slot) {
-						fatalError("Cannot connect to this slot because this save was previously connected to a different slot in this multiworld.");
+						fatalError(ig.lang.get("sc.gui.mw.login.failures.slot"));
 						return;
 					}
 
