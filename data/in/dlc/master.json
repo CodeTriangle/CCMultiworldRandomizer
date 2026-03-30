@@ -1,5 +1,6 @@
 {
 	"_includes": [
+		"botanics.json",
 		"chests.json",
 		"cutscenes.json",
 		"quests.json",
@@ -12,7 +13,7 @@
     "dungeons": [ "final-dng" ],
     "keyringItems": [ "Ku'lero Key" ],
 	"_global": {
-		"/cutscenes|chests|quests|regions|item-pools|shops/": {
+		"/botanics|cutscenes|chests|quests|regions|item-pools|shops/": {
 			"*": {
 				"metadata": {
 					"dlc": true
