@@ -1,0 +1,103 @@
+{
+	"botanics": {
+		"Alpha Cone Sprout": {
+			"location": {
+				"area": "final-dng",
+				"name": "Final-Plant-A"
+			},
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			}
+		},
+		"Beta Cone Sprout": {
+			"location": {
+				"area": "final-dng",
+				"name": "Final-Plant-B"
+			},
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			}
+		},
+		"Gamma Cone Sprout": {
+			"location": {
+				"area": "final-dng",
+				"name": "Final-Plant-C"
+			},
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			}
+		},
+		"Delta Cone Sprout": {
+			"location": {
+				"area": "final-dng",
+				"name": "Final-Plant-D"
+			},
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			}
+		},
+		"Alpha Shard": {
+			"location": {
+				"area": "final-dng",
+				"name": "Final-Planet-E"
+			},
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			}
+		},
+		"Alpha Coral Blub": {
+			"location": {
+				"area": "beach",
+				"name": "Beach-Pink-1"
+			},
+			"region": {
+				"open": "openDLC_Beach"
+			}
+		},
+		"Beta Coral Bulb": {
+			"location": {
+				"area": "beach",
+				"name": "Beach-Pink-2"
+			},
+			"region": {
+				"open": "openDLC_Beach"
+			}
+		},
+		"Alpha Keen Sprout": {
+			"location": {
+				"area": "beach",
+				"name": "Beach-Green-1"
+			},
+			"region": {
+				"open": "openDLC_Beach"
+			}
+		},
+		"Beta Keen Sprout": {
+			"location": {
+				"area": "beach",
+				"name": "Beach-Green-2"
+			},
+			"region": {
+				"open": "openDLC_Beach"
+			}
+		},
+		"Alpha Fossil Stone": {
+			"location": {
+				"area": "beach",
+				"name": "Beach-Grey-1"
+			},
+			"region": {
+				"open": "openDLC_Beach"
+			}
+		},
+		"Beta Fossil Stone": {
+			"location": {
+				"area": "beach",
+				"name": "Beach-Grey-2"
+			},
+			"region": {
+				"open": "openDLC_Beach"
+			}
+		}
+	}
+}
