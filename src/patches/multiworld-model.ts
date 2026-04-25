@@ -520,6 +520,8 @@ export function patch(plugin: MwRandomizer) {
 						}
 					);
 
+					let semver = window.semver ?? window.ccmod.semver;
+
 					// semver is provided by CCModManager. don't wanna set up the typescript for this.
 					// @ts-ignore
 					if (slotData.apworldVersion && semver.gt(slotData.apworldVersion, plugin.mod.version)) {
