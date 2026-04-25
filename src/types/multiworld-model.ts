@@ -98,6 +98,8 @@ declare global {
 			export type MultiworldVars = {
 				connectionInfo: AnyConnectionInformation;
 				mode: "open" | "linear";
+				seed?: string;
+				slot?: number;
 				options: MultiworldOptions;
 				lastIndexSeen: number;
 				checkedLocations: number[];
@@ -110,6 +112,7 @@ declare global {
 
 			export type SlotData = {
 				mode: "open" | "linear";
+				apworldVersion?: string;
 				options: MultiworldOptions;
 			};
 		}
