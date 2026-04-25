@@ -468,6 +468,7 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			this.buttons.gameInfo.setActive(!!sc.multiworld.options);
+			this.buttons.newGamePlus.setActive(!!sc.multiworld.options);
 
 			this.addObservers();
 
