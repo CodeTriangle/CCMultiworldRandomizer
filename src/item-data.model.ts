@@ -2,6 +2,7 @@ export interface WorldData {
 	items: RawItems;
 	quests: RawQuests;
 	shops: RawShops;
+	botanics: Record<string, number>;
 	descriptions: { [itemId: number]: { [locale: string]: string } };
 	markers: { [area: string]: MarkerInfo<any>[] }
 }
