@@ -35,6 +35,13 @@
 				"connect": "Connect to the multiworld using these details.",
 				"disconnect": "Disconnect from the multiworld if connected."
 			},
+			"login": {
+				"failures": {
+					"gen-version": "Cannot connect to this slot because APWorld version is greater than mod version.",
+					"seed": "Cannot connect to this multiworld because this save was previously connected to a different multiworld.",
+					"slot": "Cannot connect to this slot because this save was previously connected to a different slot in this multiworld."
+				}
+			},
 			"text-client": {
 				"apConnection": "Modify connection details, disconnect, or reconnect.",
 				"apGameInfoMenu": "Check on important YAML options.",

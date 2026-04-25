@@ -99,24 +99,6 @@
 				[ "item", "Meteor Shade", 1 ]
 			]
 		},
-		"Vagabond Dojo Key": {
-			"location": {
-				"area": "forest",
-				"map": "forest.path-04-vaga",
-				"mapId": 447,
-				"path": ".settings.npcStates.2.event.quest.12"
-			},
-			"region": {
-				"linear": "31",
-				"open": "open16" 
-			},
-			"properties": {
-				"alwaysQuest": true
-			},
-			"reward": [
-				[ "item", "Old Dojo Key", 1 ]
-			]
-		},
 		"Faj'ro Shade Statue": {
 			"location": {
 				"area": "heat-dng",

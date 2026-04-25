@@ -1328,16 +1328,6 @@
 						3235824153
 					]
 				}
-			},
-			"cutscenes": {
-				"447": [
-					{
-						"mwids": [
-							3235824351
-						],
-						"path": ".settings.npcStates.2.event.quest.12"
-					}
-				]
 			}
 		},
 		"forest.path-05": {
@@ -3759,6 +3749,11 @@
 		"maroon-tree-defend": {
 			"mwids": [
 				3235824440
+			]
+		},
+		"bug-hunting": {
+			"mwids": [
+				3235824351
 			]
 		},
 		"my-first-quest": {
@@ -8290,15 +8285,6 @@
 				"settings": {
 					"defaultClearance": "Bronze"
 				}
-			},
-			{
-				"type": "NPC",
-				"level": 0,
-				"x": 320.34285714285716,
-				"y": 663.4782608695652,
-				"map": "forest.path-04-vaga",
-				"mwid": 3235824351,
-				"settings": {}
 			}
 		],
 		"heat-area": [

@@ -788,6 +788,7 @@
 				"open": "open5"
 			},
 			"condition": [
+				[ "region", "open", "open3" ],
 				[ "quest", "Crate Hate" ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Cold", 1 ],
@@ -1005,7 +1006,10 @@
 			"region": {
 				"linear": "23",
 				"open": "open10.Mid"
-			}
+			},
+			"condition": [
+				[ "region", "open", "open10.Left" ]
+			]
 		},
 		"Gaia's Garden Landmarks": {
 			"questid": "trailblaze-jungle-3",
