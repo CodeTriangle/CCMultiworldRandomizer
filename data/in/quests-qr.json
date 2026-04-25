@@ -382,7 +382,8 @@
 				"open": "open4.7"
 			},
 			"condition": [
-				[ "item", "Heat", 1 ]
+				[ "item", "Heat", 1 ],
+				[ "item", "Mine Detector", 1 ]
 			],
 			"_comment": "Gives 1 CP Neutral"
 		},
