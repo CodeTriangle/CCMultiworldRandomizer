@@ -519,7 +519,7 @@
 				"name": "jungle-clearing-1"
 			},
 			"region": {
-				"open": "open10.Left"
+				"open": "open10.Right"
 			}
 		},
 		"Beta Vivid Puff Plant": {
@@ -528,7 +528,7 @@
 				"name": "jungle-clearing-2"
 			},
 			"region": {
-				"open": "open10.Left"
+				"open": "open10.Right"
 			}
 		},
 		"Omega Vivid Puff Plant": {
@@ -537,7 +537,7 @@
 				"name": "jungle-clearing-special"
 			},
 			"region": {
-				"open": "open10.Left"
+				"open": "open10.Right"
 			}
 		},
 		"Alpha Virus Shroom": {
