@@ -102,10 +102,9 @@ declare global {
 				slot?: number;
 				options: MultiworldOptions;
 				lastIndexSeen: number;
-				checkedLocations: number[];
+				localCheckedLocations: number[];
 				progressiveChainProgress: Record<number, number>;
 				locationInfo: Record<number, LocalInternalItem>;
-				offlineCheckBuffer: number[];
 				dataPackageChecksums: Record<string, string>;
 				seenChests: number[];
 			};
@@ -141,7 +140,6 @@ declare global {
 			locationInfo: {[idx: number]: ap.Item};
 			connectionInfo: sc.MultiWorldModel.ConnectionInformation;
 			localCheckedLocations: Set<number>;
-			offlineCheckBuffer: number[];
 			mode: string;
 			options: sc.MultiWorldModel.MultiworldOptions;
 			progressiveChainProgress: Record<number, number>;

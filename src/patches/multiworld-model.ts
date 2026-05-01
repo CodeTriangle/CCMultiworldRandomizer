@@ -56,7 +56,6 @@ export function patch(plugin: MwRandomizer) {
 				// defineVarProperty(this, "options", "mw.options");
 				defineVarProperty(this, "progressiveChainProgress", "mw.progressiveChainProgress");
 				defineVarProperty(this, "receivedItemMap", "mw.received");
-				defineVarProperty(this, "offlineCheckBuffer", "mw.offlineCheckBuffer");
 
 				this.client.items.on("itemsReceived", (items: ap.Item[], index: number) => {
 					if (!ig.game.mapName || ig.game.mapName == "newgame" || !this.receivedItemMap) {
@@ -378,10 +377,6 @@ export function patch(plugin: MwRandomizer) {
 					};
 				}
 
-				if (!this.offlineCheckBuffer) {
-					this.offlineCheckBuffer = [];
-				}
-
 				if (!this.seenChests) {
 					this.seenChests = new Set();
 				}
@@ -403,11 +398,6 @@ export function patch(plugin: MwRandomizer) {
 				}
 
 				if (this.client.authenticated) {
-					if (this.offlineCheckBuffer.length > 0) {
-						this.client.check(...this.offlineCheckBuffer);
-						this.offlineCheckBuffer = [];
-					}
-
 					const mapName = ig.game.mapName;
 					const team = this.client.players.self.team;
 					const slot = this.client.players.self.slot;
@@ -432,7 +422,6 @@ export function patch(plugin: MwRandomizer) {
 
 				this.questSettings = null as any;
 				this.receivedItemMap = null as any;
-				this.offlineCheckBuffer = null as any;
 				this.seenChests = null as any;
 			},
 
@@ -448,8 +437,6 @@ export function patch(plugin: MwRandomizer) {
 			async reallyCheckLocation(mwid: number) {
 				if (this.client.authenticated) {
 					this.client.check(mwid);
-				} else {
-					this.offlineCheckBuffer.push(mwid);
 				}
 
 				let loc = this.locationInfo[mwid];
@@ -603,7 +590,23 @@ export function patch(plugin: MwRandomizer) {
 
 				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.OPTIONS_PRESENT, this.options);
 
-				this.localCheckedLocations = new Set(mw?.checkedLocations);
+				// load the list of locations checked by the client from the variables (if we don't already have some)
+				if (!this.localCheckedLocations) {
+					this.localCheckedLocations = new Set(mw?.localCheckedLocations);
+				}
+				// create a set of locations checked on the server side
+				const remoteCheckedLocations = new Set(this.client.room.checkedLocations);
+				// get all locations checked on the client side that are not checked on the server side
+				let initialChecks: number[] = [];
+				for (const loc of this.localCheckedLocations) {
+					if (!remoteCheckedLocations.has(loc)) {
+						initialChecks.push(loc);
+					}
+				}
+				// if initial checks is not empty or nonexistent, then we have local progress to send
+				if (initialChecks !== undefined && initialChecks.length > 0) {
+					this.client.check(...initialChecks);
+				}
 
 				for (const location of this.client.room.checkedLocations) {
 					this.localCheckedLocations.add(location);

@@ -103,6 +103,10 @@ export function patch(plugin: MwRandomizer) {
 				return;
 			}
 
+			if (this.isOpen && !sc.multiworld.client.room.checkedLocations.includes(this.mwCheck.mwids[0])) {
+				sc.multiworld.reallyCheckLocation(this.mwCheck.mwids[0]);
+			}
+
 			if (this.rawChest.progression) {
 				// PROGRESSION items get a green chest
 				newOffY = 192;
