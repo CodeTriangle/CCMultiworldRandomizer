@@ -445,7 +445,7 @@
 				"open": "open10"
 			},
 			"condition": [
-				[ "item", "Wave", 1 ]
+				[ "item", "Pond Slums Pass", 1 ]
 			],
 			"slots": [
 				"One Up"
