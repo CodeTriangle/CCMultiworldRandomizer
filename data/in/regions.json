@@ -573,7 +573,7 @@
 					]
 				},
 				{
-					"from": "open15.2",
+					"from": "open15.1",
 					"to": "open15.3",
 					"condition": [
 						[ "item", "Kajo Master Key", 1 ]
