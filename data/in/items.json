@@ -1418,7 +1418,8 @@
 			"id": 465
 		},
 		"Mine Detector": {
-			"id": 466
+			"id": 466,
+			"classification": "progression"
 		},
 		"Dried Grass Hat": {
 			"id": 467
