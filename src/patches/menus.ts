@@ -66,10 +66,11 @@ export function patch(plugin: MwRandomizer) {
 
 					return (
 						getRandomizedLabel(true) + ", " +
-						ig.lang.get(`sc.gui.mw.game-info-menu.shop-send.${perSlotSend ? "slot" : "type"}`)
+						ig.lang.get(`sc.gui.mw.game-info-menu.shop-send.${perSlotSend ? "slot" : "type"}`) + ", " +
+						ig.lang.get(`sc.gui.mw.game-info-menu.shop-receive.${sc.multiworld.options.shopReceiveMode}`) + "."
 					);
 				},
-				textSpeed: ig.TextBlock.SPEED.NORMAL,
+				textSpeed: ig.TextBlock.SPEED.FAST,
 			},
 			{
 				label: "Chest Locks",
