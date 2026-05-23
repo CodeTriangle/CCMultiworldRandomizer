@@ -218,6 +218,11 @@ export function patch(plugin: MwRandomizer) {
 
 				if (gui.itemId != undefined) {
 					let unlockItem: number | null = null;
+					if (sc.multiworld.options.shopReceiveMode == "none") {
+						gui.lockedGui.setText("");
+						continue;
+					}
+
 					if (sc.multiworld.options.shopReceiveMode == "itemType") {
 						unlockItem = sc.randoData.shops.unlocks.byId[gui.itemId];
 					} else if (sc.multiworld.options.shopReceiveMode == "shop") {
