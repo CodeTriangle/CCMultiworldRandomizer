@@ -286,7 +286,7 @@
 			},
 			"condition": [
 				[ "quest", "A Promise is a Promise 5" ],
-				[ "item", "Mine Pass" ]
+				[ "item", "Guild Pass" ]
 			],
 			"_comment": "1 cp for each element"
 		},
@@ -1006,7 +1006,7 @@
 			"questid": "trailblaze-jungle-2",
 			"region": {
 				"linear": "23",
-				"open": "open10.Mid"
+				"open": "open10.Right"
 			},
 			"condition": [
 				[ "region", "open", "open10.Left" ]
@@ -1353,6 +1353,7 @@
 				"open": "open10"
 			},
 			"condition": [
+				[ "region", "open", "open9" ],
 				[ "quest", "Meating Expectations" ]
 			],
 			"reward": [

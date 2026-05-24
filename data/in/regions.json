@@ -554,7 +554,7 @@
 					]
 				},
 				{
-					"from": "open10",
+					"from": "open10.Mid",
 					"to": "open15.1",
 					"condition": [
 						[ "item", "Azure Drop Shade", 1 ],
