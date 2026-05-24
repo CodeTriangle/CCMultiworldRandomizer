@@ -62,6 +62,12 @@
 					"slot": "sending \\c[3]per slot\\c[0]",
 					"type": "sending \\c[3]per item type\\c[0]"
 				},
+				"shop-receive": {
+					"none": "\\c[3]unlocked\\c[0]",
+					"slot": "receiving \\c[3]slot unlocks\\c[0]",
+					"shop": "receiving \\c[3]shop unlocks\\c[0]",
+					"itemType": "receiving \\c[3]item type unlocks\\c[0]"
+				},
 				"progressive": {
 					"combined": "\\c[2]Progressive\\c[0], \\c[3]combined\\c[0]",
 					"split": "\\c[2]Progressive\\c[0], \\c[3]split\\c[0]",
@@ -71,7 +77,7 @@
 				"goals": {
 					"creator": "Ascend \\c[3]Vermillion Tower\\c[0] and defeat \\c[3]the Creator\\c[0].",
 					"monkey": "Complete the \\c[3]Grand Krys'kajo\\c[0] and defeat the \\c[3]Son of the East\\c[0].",
-					"observatory": "Find \\c[3]five broken weapons\\c[0] and take them to \\c[3]the Observatory\\c[0]"
+					"observatory": "Find \\c[3]five broken weapons\\c[0] and take them to \\c[3]the Observatory\\c[0]."
 				}
 			}
 		}

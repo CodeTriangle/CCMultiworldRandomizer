@@ -43,6 +43,10 @@ export function patch(plugin: MwRandomizer) {
 				this.button.hook.pos.x -= (newWidth - oldWidth) / 2;
 				this.button.setActive(true);
 			}
+
+			if (sc.model.isTitle()) {
+				this.button.setActive(true);
+			}
 		},
 
 		onBeginButtonPressed() {

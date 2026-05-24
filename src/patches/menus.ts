@@ -55,7 +55,7 @@ export function patch(plugin: MwRandomizer) {
 			},
 			{
 				label: "Shops",
-				callback() {
+				callback(options) {
 					// hacky solution: check if locationInfo has known shop slot values
 					let perSlotSend = sc.multiworld.locationInfo[3235824524] !== undefined;
 					let perTypeSend = sc.multiworld.locationInfo[3235824525] !== undefined;
@@ -66,10 +66,11 @@ export function patch(plugin: MwRandomizer) {
 
 					return (
 						getRandomizedLabel(true) + ", " +
-						ig.lang.get(`sc.gui.mw.game-info-menu.shop-send.${perSlotSend ? "slot" : "type"}`)
+						ig.lang.get(`sc.gui.mw.game-info-menu.shop-send.${perSlotSend ? "slot" : "type"}`) + ", " +
+						ig.lang.get(`sc.gui.mw.game-info-menu.shop-receive.${options.shopReceiveMode}`)
 					);
 				},
-				textSpeed: ig.TextBlock.SPEED.NORMAL,
+				textSpeed: ig.TextBlock.SPEED.FAST,
 			},
 			{
 				label: "Chest Locks",
@@ -114,6 +115,13 @@ export function patch(plugin: MwRandomizer) {
 						}
 					}
 
+					return ig.lang.get(`sc.gui.mw.game-info-menu.progressive.${label}`);
+				},
+			},
+			{
+				label: "Equipment",
+				callback(options) {
+					let label = options.progressiveChains[3235824060]?.length > 0 ? "progressive" : "nonprog";
 					return ig.lang.get(`sc.gui.mw.game-info-menu.progressive.${label}`);
 				},
 			},
