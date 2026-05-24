@@ -417,6 +417,7 @@ export function patch(plugin: MwRandomizer) {
 				this.connectionInfo = null as any;
 				this.mode = null as any;
 				this.options = null as any;
+				this.localCheckedLocations = null as any;
 
 				this.dataPackageChecksums = null as any;
 
