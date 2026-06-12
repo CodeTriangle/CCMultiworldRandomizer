@@ -456,7 +456,7 @@
 				"name": "jungle-common-flower-special"
 			},
 			"region": {
-				"open": "open10"
+				"open": "open10.Mid"
 			}
 		},
 		"Alpha Closed Baraleles": {
@@ -546,7 +546,7 @@
 				"name": "jungle-infested-1"
 			},
 			"region": {
-				"open": "open10.Right"
+				"open": "open10.Infested"
 			}
 		},
 		"Beta Virus Shroom": {
@@ -555,7 +555,7 @@
 				"name": "jungle-infested-2"
 			},
 			"region": {
-				"open": "open10.Right"
+				"open": "open10.Infested"
 			}
 		},
 		"Omega Virus Shroom": {
