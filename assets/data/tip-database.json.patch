@@ -1,0 +1,75 @@
+{
+	"codetriangle.ccmwr.vermillion-sapphire": {
+		"title": {
+			"en_US": "Vermillion access"
+		},
+		"body": {
+			"en_US": "\\c[3]Vermillion Wasteland\\c[0] can be found to the east of \\c[3]Old Dojo\\c[0] in \\c[3]Sapphire Ridge\\c[0]."
+		},
+		"contributor": "CodeTriangle"
+	},
+	"codetriangle.ccmwr.apollo": {
+		"title": {
+			"en_US": "Apollo duels"
+		},
+		"body": {
+			"en_US": "When randomized, all Apollo duels except for the one in \\c[3]Gaia's Garden\\c[0] have been disabled."
+		},
+		"contributor": "Juanba"
+	},
+	"codetriangle.ccmwr.temple-keys": {
+		"title": {
+			"en_US": "Temple key requirements"
+		},
+		"body": {
+			"en_US": "When randomized, \\c[3]Temple Mine\\c[0] and \\c[3]So'najiz Temple\\c[0] require fewer keys than in vanilla."
+		},
+		"contributor": "Juanba"
+	},
+	"codetriangle.ccmwr.locked-party": {
+		"title": {
+			"en_US": "Locked party?"
+		},
+		"body": {
+			"en_US": "If you can't remove one of your party members, visit \\c[3]Rookie Harbor - Info Hub\\c[0] and talk to the NPC there."
+		},
+		"contributor": "Juanba"
+	},
+	"codetriangle.ccmwr.chest-colors": {
+		"title": {
+			"en_US": "Chest colors"
+		},
+		"body": {
+			"en_US": "When randomized, chests are colored based on what they contain. Green chests are important, deep blue chests are useful, and light blue chests are filler."
+		},
+		"contributor": "CodeTriangle"
+	},
+	"codetriangle.ccmwr.chest-hover": {
+		"title": {
+			"en_US": "Chest information"
+		},
+		"body": {
+			"en_US": "Wondering what the name or classification of a chest is? Hover over it in \\c[3]Seeker Mode\\c[0] to find out more."
+		},
+		"contributor": "Juanba"
+	},
+	"codetriangle.ccmwr.newgame_change": {
+		"title": {
+			"en_US": "Changing New Game+ settings"
+		},
+		"body": {
+			"en_US": "Regretting your choice of New Game+ settings? Open \\c[3]Archipelago Menu > New Game+\\c[0] to change them."
+		},
+		"contributor": "Juanba"
+	},
+	"codetriangle.ccmwr.always-quests": {
+		"title": {
+			"en_US": "Always Quests"
+		},
+		"body": {
+			"en_US": "Certain quests are always in the location pool because they contain progression items. Important items will \\c[1]not\\c[0] randomize there, unless you unset \\c[2]Exclude Always Quests\\c[0]."
+		},
+		"condition": "!mw.options.questRando",
+		"contributor": "Juanba"
+	}
+}
