@@ -618,6 +618,7 @@
 				"open": "open9"
 			},
 			"condition": [
+				[ "item", "Meteor Shade" ],
 				[ "quest", "Autumn's Rise Trailblazing" ],
 				[ "quest", "Bergen Trailblazing" ],
 				[ "quest", "Maroon Valley Trailblazing" ],
@@ -662,7 +663,6 @@
 				"open": "open5"
 			},
 			"condition": [
-				[ "item", "Meteor Shade" ],
 				[ "quest", "Maroon Valley Collect" ],
 				[ "quest", "Maroon Valley Defeat" ],
 				[ "quest", "Maroon Valley Landmarks" ],
