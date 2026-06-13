@@ -1,25 +1,25 @@
 {
-		"id": "mw-rando",
-		"version": "0.9.0",
-		"title": "Multiworld randomizer",
-		"description": "Client for CrossCode Archipelago Integration",
-		"repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
-		"tags": ["puzzle", "speedrun"],
-		"authors": [
-			"CodeTriangle",
-			"buanjautista"
-		],
-		"plugin": "mw-rando/plugin.js",
-		"icons": {
-			"24": "icon-24.png"
-		},
-		"dependencies": {
-			"nax-ccuilib": ">=1.5.1",
-			"ccmodmanager": ">=1.0.4",
-			"font-utils": ">=1.2.0",
-			"ccloader": ">=2.24.0",
-			"crosscode": ">=1.4.0",
-			"cc-alybox": ">=1.0.0",
-			"item-api": "^0.4.0"
-		}
+	"id": "mw-rando",
+	"version": "0.9.0",
+	"title": "Multiworld randomizer",
+	"description": "Client for CrossCode Archipelago Integration",
+	"repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
+	"tags": ["puzzle", "speedrun"],
+	"authors": [
+		"CodeTriangle",
+		"buanjautista"
+	],
+	"plugin": "mw-rando/plugin.js",
+	"icons": {
+		"24": "icon-24.png"
+	},
+	"dependencies": {
+		"nax-ccuilib": ">=1.5.1",
+		"ccmodmanager": ">=1.0.4",
+		"font-utils": ">=1.2.0",
+		"ccloader": ">=2.24.0",
+		"crosscode": ">=1.4.0",
+		"cc-alybox": ">=1.0.0",
+		"item-api": "^0.4.0"
+	}
 }
