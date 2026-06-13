@@ -309,7 +309,7 @@ export function patch(plugin: MwRandomizer) {
 
 			this.removeAllChildren();
 
-			const marqueeGroup = new sc.MarqueeGroup(true);
+			const marqueeGroup = new codetriangle.marquee.MarqueeGroup(true);
 
 			let accum = 0;
 
