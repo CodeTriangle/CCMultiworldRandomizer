@@ -16,6 +16,7 @@
 	"dependencies": {
 		"open-world": ">=0.5.1-pre1",
 		"nax-ccuilib": ">=1.5.1",
+		"tips-and-tricks": ">=0.1.0",
 		"ccmodmanager": ">=1.0.4",
 		"font-utils": ">=1.2.0"
 	}
