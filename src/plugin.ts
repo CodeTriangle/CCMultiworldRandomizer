@@ -132,4 +132,8 @@ export default class MwRandomizer {
 			},
 		});
 	}
+
+	async main() {
+		sc.gui.taskHud.remove();
+	}
 }
