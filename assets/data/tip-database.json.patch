@@ -71,5 +71,25 @@
 		},
 		"condition": "!mw.options.questRando",
 		"contributor": "Juanba"
+	},
+	"codetriangle.ccmwr.rh-expo-space": {
+		"title": {
+			"en_US": "Missing Rookie Harbor Checks"
+		},
+		"body": {
+			"en_US": "You may have missed some checks on \\c[3]the second floor\\c[0] of the \\c[3]Rookie Harbor Quest Hub\\c[0]."
+		},
+		"condition": "maps.rookieHarbor/centralQuestHub-2.expoDone",
+		"contributor": "Firmata"
+	},
+	"codetriangle.ccmwr.schneider": {
+		"title": {
+			"en_US": "Guild Pass Cutscene"
+		},
+		"body": {
+			"en_US": "Looking for Schneider to give you the Guild Pass check? Meet him at \\c[3]Old Obelisk\\c[0]."
+		},
+		"condition": "plot.guildEntry >= 10 && plot.guildEntry < 20",
+		"contributor": "CodeTriangle"
 	}
 }
