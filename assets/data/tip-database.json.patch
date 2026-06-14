@@ -91,5 +91,15 @@
 		},
 		"condition": "plot.guildEntry >= 10 && plot.guildEntry < 20",
 		"contributor": "CodeTriangle"
+	},
+	"codetriangle.ccmwr.guild-pass-dlc": {
+		"title": {
+			"en_US": "Homestedt unlock"
+		},
+		"body": {
+			"en_US": "When playing randomized, Homestedt is unlocked by Guild Pass."
+		},
+		"condition": "mw.options.dlcActive && !maps.evoVillage/entrance.passGiven",
+		"contributor": "hellfall"
 	}
 }
