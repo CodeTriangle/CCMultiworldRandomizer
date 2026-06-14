@@ -2,6 +2,7 @@
   "include": [
     "src",
     "node_modules/ultimate-crosscode-typedefs/crosscode-ccloader-all.d.ts",
+    "node_modules/marquee/marquee.d.ts",
     "node_modules/nax-ccuilib/src/global.d.ts"
   ],
   "compilerOptions": {
