@@ -79,7 +79,7 @@
 		"body": {
 			"en_US": "You may have missed some checks on \\c[3]the second floor\\c[0] of the \\c[3]Rookie Harbor Quest Hub\\c[0]."
 		},
-		"condition": "maps.rookieHarbor/centralQuestHub-2.expoDone",
+		"condition": "!maps.rookieHarbor/centralQuestHub-2.expoDone",
 		"contributor": "Firmata"
 	},
 	"codetriangle.ccmwr.schneider": {
