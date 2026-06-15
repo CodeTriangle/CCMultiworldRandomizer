@@ -1,4 +1,5 @@
 import * as fs from "node:fs/promises";
+import { createWriteStream } from "node:fs"; 
 import * as process from "node:process";
 import * as fflate from "fflate";
 
@@ -34,7 +35,7 @@ if (process.argv.length > 2) {
 }
 
 const filename = `CCMultiworldRandomizer-${versionString}.ccmod`;
-const outfile = await fs.open(filename, "w");
+const outfile = createWriteStream(filename);
 
 const zipfile = new fflate.Zip((err, data, final) => {
 	if (err) {

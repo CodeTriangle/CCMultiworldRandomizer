@@ -20,8 +20,12 @@ export function patch(plugin: MwRandomizer) {
 				return this.parent();
 			}
 
-			const check = Object.values(map.elements)[0] as RawElement;
-			sc.multiworld.reallyCheckLocations(check.mwids);
+			if (!ig.vars.get('tmp.elementGiven')) {
+				ig.vars.set('tmp.elementGiven', true);
+
+				const check = Object.values(map.elements)[0] as RawElement;
+				sc.multiworld.reallyCheckLocations(check.mwids);
+			}
 		}
 	});
 

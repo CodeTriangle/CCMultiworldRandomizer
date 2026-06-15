@@ -93,6 +93,7 @@ declare global {
 				shopReceiveMode?: string,
 				shopDialogHints?: boolean,
 				chestClearanceLevels?: Record<number, keyof typeof sc.CHEST_TYPE>,
+				chestReveal: boolean,
 				botanicsCompletionAmount?: number,
 			};
 

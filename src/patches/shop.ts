@@ -126,7 +126,7 @@ export function patch(plugin: MwRandomizer) {
 				gui.slot = itemInfo.player;
 				gui.itemId = itemId;
 
-				const marqueeGui = new sc.ItemMarqueeGui(
+				const marqueeGui = new codetriangle.marquee.ItemMarqueeGui(
 					itemInfo.icon,
 					itemInfo.label,
 					button.hook.size.x - 10,

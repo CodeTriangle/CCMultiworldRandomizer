@@ -52,9 +52,7 @@ export function patch(plugin: MwRandomizer) {
 
 				let isSeen = sc.multiworld.seenChests.has(info.mwid);
 
-				if (!isSeen) {
-					this.addMarkerIcon(sc.MULTIWORLD_MARKER_ICON_COORDS.unknown);
-				} else {
+				if (isSeen || sc.multiworld.options.chestReveal == true) {
 					if (loc.progression) {
 						this.addMarkerIcon(sc.MULTIWORLD_MARKER_ICON_COORDS.progression);
 					} else if (loc.useful || loc.trap) {
@@ -72,6 +70,8 @@ export function patch(plugin: MwRandomizer) {
 							sc.MULTIWORLD_MARKER_ICON_COORDS["rim-" + clearance.toLowerCase()]
 						);
 					}
+				} else {
+					this.addMarkerIcon(sc.MULTIWORLD_MARKER_ICON_COORDS.unknown);
 				}
 			}
 		},
