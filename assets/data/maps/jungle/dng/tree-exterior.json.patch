@@ -1,0 +1,35 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities",336,"settings"]
+    },
+    {
+        "_comment": "Door not locked through story or party members",
+        "type": "SET_KEY",
+        "index": "blockEventCondition"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEvent"
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+
+    {
+        "type": "ENTER",
+        "index": ["entities",335,"settings"]
+    },
+    {
+        "_comment": "Removes the intro cutscene",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    }    
+    
+]

@@ -1,0 +1,115 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Disables PVP events",
+        "keyword": "__INDEX__",
+        "values": [450, 451, 457],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Hide Apollo and Joern",
+        "keyword": "__INDEX__",
+        "values": [449, 460],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "npcStates",
+                "content": [
+                                {
+                                    "reactType": "FIXED_POS",
+                                    "face": "WEST",
+                                    "showFx": {
+                                        "sheet": "teleport",
+                                        "name": "showDefault"
+                                    },
+                                    "hidden": true,
+                                    "condition": "",
+                                    "config": "",
+                                    "event": []
+                                }]
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Hide all the PVP stuff",
+        "keyword": "__INDEX__",
+        "values": [448, 444, 445, 446, 447],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "spawnCondition",
+                "content": "false"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+    {
+        "type": "ENTER",
+        "index": [18, "settings"]
+    },
+    {
+        "_comment": "Make the door accessible without advancing plot or asking",
+        "type": "SET_KEY",
+        "index": "blockEventCondition"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEvent"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes mid floor events",
+        "keyword": "__INDEX__",
+        "values": [492, 491],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

@@ -1,0 +1,98 @@
+[{
+        "type": "ENTER",
+        "index": "entities"
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Disable story events",
+        "keyword": "__INDEX__",
+        "values": [769, 772, 774],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__", "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Disable all NPCs from vermillion raid",
+        "keyword": "__INDEX__",
+        "values": [776, 777, 778, 779, 780, 781, 782],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "npcStates",
+                "content": [
+                                {
+                                    "reactType": "FIXED_POS",
+                                    "face": "WEST",
+                                    "showFx": {
+                                        "sheet": "teleport",
+                                        "name": "showDefault"
+                                    },
+                                    "hidden": true,
+                                    "condition": "",
+                                    "config": "",
+                                    "event": []
+                                }]
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+
+
+    {
+        "type": "ENTER",
+        "index": [164, "settings"],
+        "_comment": "Make dojo accessible with key, no quest need"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "item.439.amount >= 1"
+    },
+    { "type": "EXIT", "count": 2 },
+
+    {
+        "type": "ENTER",
+        "index": [783, "settings"],
+        "_comment": "Make teleport accesible after Shizuka fight"
+    },
+    
+    {
+        "type": "SET_KEY",
+        "index": "spawnCondition",
+        "content": "plot.shizuka >= 20300"
+    },
+
+    { "type": "EXIT", "count": 2 },
+
+    {
+        "type": "ENTER",
+        "index": [753, "settings"],
+        "_comment": "Disable object and collision that blocks Hidden Passage"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "spawnCondition",
+        "content": "false"
+    },
+    { "type": "EXIT", "count": 2 },
+
+    {
+    "type": "EXIT",
+    "count": 1
+}
+]

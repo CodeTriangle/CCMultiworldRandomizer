@@ -1,0 +1,280 @@
+[
+  {
+    "type": "ENTER",
+    "index": "entities"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Bergen Barrier",
+    "content": {
+      "type": "Prop",
+      "x": 484,
+      "y": 644,
+      "level": 0,
+      "settings": {
+        "name": "barrierLeafSignA",
+        "mapId": 321,
+        "propType": {
+          "sheet": "autumn",
+          "name": "barrierSign"
+        },
+        "propAnim": "leafOff",
+        "condAnims": [
+          {
+            "0": " ",
+            "condition": "map.coldOpen",
+            "anim": "leafOn"
+          }
+        ],
+        "spawnCondition": ""
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Barrier 1 opener event",
+    "content": {
+      "type": "EventTrigger",
+      "x": 408,
+      "y": 680,
+      "level": 0,
+      "settings": {
+        "name": "BarrierBergenOpen",
+        "eventType": "PARALLEL",
+        "endCondition": "map.coldOpen",
+        "event": [ { "entity": { "player": true }, "duration": -1, "align": "TOP", "group": "shade", "wait": false, "waitSkip": 0, "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "greenLeaf" }, "offset": { "x": 0, "y": 0, "z": 12 } }, { "pos": { "x": 520, "y": 680 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "group": "shade", "type": "CLEAR_EFFECTS" }, { "entity": { "global": true, "name": "barrierLeafSignA" }, "duration": 0, "align": "TOP", "group": "shade", "wait": false, "waitSkip": 0, "target2": { "player": true }, "target2Offset": { "x": 0, "y": 0, "z": 12 }, "target2Align": "TOP", "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "barrierHoming" }, "offset": { "x": 0, "y": 0, "z": 0 } }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.8 }, { "zoomType": "LIGHT", "fadeIn": 0.2, "duration": 0.1, "fadeOut": 0.2, "type": "SET_ZOOM_BLUR" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.coldOpen", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 1 }, { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" } ],
+        "triggerType": "ONCE",
+        "mapId": 322,
+        "startCondition": "map.barrierTrailOpenZone"
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "TouchTrigger",
+      "x": 544,
+      "y": 704,
+      "level": 0,
+      "settings": {
+        "name": "LeafOpener",
+        "size": {
+          "x": 84,
+          "y": 84
+        },
+        "type": "SET_TRUE",
+        "zHeight": 12,
+        "reactToParty": false,
+        "mapId": 323,
+        "variable": "map.barrierTrailOpenZone",
+        "startCondition": "item.145.amount >= 1"
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Bakii Barrier",
+    "content": {
+      "type": "TouchTrigger",
+      "x": 456,
+      "y": 840,
+      "level": 0,
+      "settings": {
+        "name": "HeatOpener",
+        "size": {
+          "x": 64,
+          "y": 136
+        },
+        "type": "SET_TRUE",
+        "zHeight": 12,
+        "reactToParty": false,
+        "mapId": 325,
+        "variable": "map.barrierDesertOpenZone",
+        "startCondition": "item.225.amount >= 1"
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Shade prop",
+    "content": {
+      "type": "Prop",
+      "x": 356,
+      "y": 900,
+      "level": 0,
+      "settings": {
+        "name": "barrierIceSignA",
+        "mapId": 326,
+        "propType": {
+          "sheet": "bergen-trail",
+          "name": "barrierSign"
+        },
+        "propAnim": "off",
+        "condAnims": [
+          {
+            "0": " ",
+            "condition": "map.heatOpen",
+            "anim": "on"
+          }
+        ],
+        "spawnCondition": ""
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "EventTrigger",
+      "x": 440,
+      "y": 992,
+      "level": 0,
+      "settings": {
+        "name": "BarrierDesertOpen",
+        "eventType": "PARALLEL",
+        "endCondition": "map.heatOpen",
+        "event": [ { "entity": { "player": true }, "duration": -1, "align": "TOP", "group": "shade", "wait": false, "waitSkip": 0, "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "blueStone" }, "offset": { "x": 0, "y": 0, "z": 12 } }, { "pos": { "x": 367, "y": 905 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "group": "shade", "type": "CLEAR_EFFECTS" }, { "entity": { "global": true, "name": "barrierIceSignA" }, "duration": 0, "align": "TOP", "group": "shade", "wait": false, "waitSkip": 0, "target2": { "player": true }, "target2Offset": { "x": 0, "y": 0, "z": 12 }, "target2Align": "TOP", "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "barrierHoming" }, "offset": { "x": 0, "y": 0, "z": 0 } }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.8 }, { "zoomType": "LIGHT", "fadeIn": 0.2, "duration": 0.1, "fadeOut": 0.2, "type": "SET_ZOOM_BLUR" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.heatOpen", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 1 }, { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" } ],
+        "triggerType": "ONCE",
+        "mapId": 336,
+        "startCondition": "map.barrierDesertOpenZone"
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Basin Keep Barrier",
+    "content": {
+      "type": "Prop",
+      "x": 996,
+      "y": 644,
+      "level": 0,
+      "settings": {
+        "name": "barrierSeedSignA",
+        "mapId": 330,
+        "propType": {
+          "sheet": "autumn",
+          "name": "barrierSignSeed"
+        },
+        "propAnim": "off",
+        "condAnims": [
+          {
+            "0": " ",
+            "condition": "map.shockOpen",
+            "anim": "on"
+          }
+        ],
+        "spawnCondition": ""
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "TouchTrigger",
+      "x": 872,
+      "y": 704,
+      "level": 0,
+      "settings": {
+        "name": "JungleOpener",
+        "size": {
+          "x": 84,
+          "y": 84
+        },
+        "type": "SET_TRUE",
+        "zHeight": 12,
+        "reactToParty": false,
+        "mapId": 332,
+        "variable": "map.barrierBasinOpenZone",
+        "startCondition": "item.376.amount >= 1"
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "EventTrigger",
+      "x": 1072,
+      "y": 680,
+      "level": 0,
+      "settings": {
+        "name": "BarrierJungleOpen",
+        "eventType": "PARALLEL",
+        "endCondition": "map.shockOpen",
+        "event": [ { "entity": { "player": true }, "duration": -1, "align": "TOP", "group": "shade", "wait": false, "waitSkip": 0, "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "greenSeed" }, "offset": { "x": 0, "y": 0, "z": 12 } }, { "pos": { "x": 1000, "y": 656 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "group": "shade", "type": "CLEAR_EFFECTS" }, { "entity": { "global": true, "name": "barrierSeedSignA" }, "duration": 0, "align": "TOP", "group": "shade", "wait": false, "waitSkip": 0, "target2": { "player": true }, "target2Offset": { "x": 0, "y": 0, "z": 12 }, "target2Align": "TOP", "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "barrierHoming" }, "offset": { "x": 0, "y": 0, "z": 0 } }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.8 }, { "zoomType": "LIGHT", "fadeIn": 0.2, "duration": 0.1, "fadeOut": 0.2, "type": "SET_ZOOM_BLUR" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.shockOpen", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 1 }, { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" } ],
+        "triggerType": "ONCE",
+        "mapId": 333,
+        "startCondition": "map.barrierBasinOpenZone"
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Sapphire Barrier",
+    "content": {
+      "type": "TouchTrigger",
+      "x": 992,
+      "y": 840,
+      "level": 0,
+      "settings": {
+        "name": "ForestOpener",
+        "size": {
+          "x": 64,
+          "y": 136
+        },
+        "type": "SET_TRUE",
+        "zHeight": 12,
+        "reactToParty": false,
+        "mapId": 334,
+        "variable": "map.barrierRidgeOpenZone",
+        "startCondition": "item.410.amount >= 1"
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Barrier 4 opener event",
+    "content": {
+      "type": "EventTrigger",
+      "x": 1040,
+      "y": 1008,
+      "level": 0,
+      "settings": {
+        "name": "BarrierRidgeOpen",
+        "eventType": "PARALLEL",
+        "endCondition": "map.woodOpen",
+        "event": [ { "entity": { "player": true }, "duration": -1, "align": "TOP", "group": "shade", "wait": false, "waitSkip": 0, "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "star" }, "offset": { "x": 0, "y": 0, "z": 12 } }, { "pos": { "x": 1136, "y": 912 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "group": "shade", "type": "CLEAR_EFFECTS" }, { "entity": { "global": true, "name": "barrierStarSignA" }, "duration": 0, "align": "TOP", "group": "shade", "wait": false, "waitSkip": 0, "target2": { "player": true }, "target2Offset": { "x": 0, "y": 0, "z": 12 }, "target2Align": "TOP", "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "barrierHoming" }, "offset": { "x": 0, "y": 0, "z": 0 } }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.8 }, { "zoomType": "LIGHT", "fadeIn": 0.2, "duration": 0.1, "fadeOut": 0.2, "type": "SET_ZOOM_BLUR" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.woodOpen", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 1 }, { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" } ],
+        "triggerType": "ONCE",
+        "mapId": 335,
+        "startCondition": "map.barrierRidgeOpenZone"
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "Prop",
+      "x": 1125,
+      "y": 900,
+      "level": 0,
+      "settings": {
+        "name": "barrierStarSignA",
+        "mapId": 337,
+        "propType": {
+          "sheet": "autumn",
+          "name": "barrierSignStar"
+        },
+        "propAnim": "off",
+        "condAnims": [
+          {
+            "0": " ",
+            "condition": "map.woodOpen",
+            "anim": "on"
+          }
+        ],
+        "spawnCondition": ""
+      }
+    }
+  },
+  {
+    "type": "EXIT"
+  }
+]

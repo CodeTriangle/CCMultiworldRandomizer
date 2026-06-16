@@ -1,0 +1,16 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities",286,"settings","event"]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "Change the Sephisloth event to not solve quest condition to fit the new quest",
+        "index": 15,
+        "content": { "type": "SOLVE_QUEST_CONDITION", "quest": { "quest": "ow-infestation", "label": "followSloth" } }
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    }
+]

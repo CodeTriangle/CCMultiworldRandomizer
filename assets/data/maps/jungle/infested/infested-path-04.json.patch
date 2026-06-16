@@ -1,0 +1,30 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities",804,"settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "Make Sloth touch-trigger not depend on killing poles or story events",
+        "index": "startCondition",
+        "content": "open-world.extraQuests && quest.ow-infestation.task.1"
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+    {
+        "type": "ENTER",
+        "index": ["entities",805,"settings","event"]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "Remove Jungle plotline so enemies spawn dont mess up, and change it to solve quest step",
+        "index": 28,
+        "content": { "type": "SOLVE_QUEST_CONDITION", "quest": { "quest": "ow-infestation", "label": "findSloth" } }
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    }
+]

@@ -1,0 +1,218 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["emilie-join", "event"]
+	},
+	{
+    "type": "FOR_IN",
+    "_comment": "Cancel party lock options from DLC",
+    "keyword": "__INDEX__",
+    "values": [5,6,7,8],
+    "body": [{
+				"type": "ENTER",
+				"index": "__INDEX__"
+		},{
+				"type": "SET_KEY",
+				"index": "condition",
+				"content": "false"
+		},{
+				"type": "SET_KEY",
+				"index": "thenStep",
+				"content": []
+		},{
+				"type": "EXIT"
+		}]  
+	},
+	{
+		"type": "EXIT", "count": 2
+	},
+	{
+			"type": "ENTER",
+			"index": ["glasses-join", "event"]
+	},
+	{
+    "type": "FOR_IN",
+    "_comment": "Cancel party lock options from DLC",
+    "keyword": "__INDEX__",
+    "values": [4,5,6,7,8],
+    "body": [{
+            "type": "ENTER",
+            "index": "__INDEX__"
+        },{
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "false"
+        },{
+            "type": "SET_KEY",
+            "index": "thenStep",
+            "content": []
+        },{
+            "type": "EXIT"
+        }]  
+	},
+	{
+		"type": "EXIT", "count": 2
+	},
+	{
+		"type": "ENTER",
+		"index": ["glasses-join", "event"]
+	},
+	{
+    "type": "FOR_IN",
+    "_comment": "Cancel party lock options from DLC",
+    "keyword": "__INDEX__",
+    "values": [4,5,6,7,8],
+    "body": [{
+            "type": "ENTER",
+            "index": "__INDEX__"
+        },{
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "false"
+        },{
+            "type": "SET_KEY",
+            "index": "thenStep",
+            "content": []
+        },{
+            "type": "EXIT"
+        }]  
+	},
+	{
+		"type": "EXIT", "count": 2
+	},
+	{
+		"type": "ENTER",
+		"index": ["apollo-join", "event"]
+	},
+	{
+    "type": "FOR_IN",
+    "_comment": "Cancel party lock options from DLC",
+    "keyword": "__INDEX__",
+    "values": [4,5,6],
+    "body": [{
+            "type": "ENTER",
+            "index": "__INDEX__"
+        },{
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "false"
+        },{
+            "type": "SET_KEY",
+            "index": "thenStep",
+            "content": []
+        },{
+            "type": "EXIT"
+        }]  
+	},
+	{
+		"type": "EXIT", "count": 2
+	},
+	{
+		"type": "ENTER",
+		"index": ["joern-join", "event"]
+	},
+	{
+    "type": "FOR_IN",
+    "_comment": "Cancel party lock options from DLC",
+    "keyword": "__INDEX__",
+    "values": [4,5],
+    "body": [{
+            "type": "ENTER",
+            "index": "__INDEX__"
+        },{
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "false"
+        },{
+            "type": "SET_KEY",
+            "index": "thenStep",
+            "content": []
+        },{
+            "type": "EXIT"
+        }]  
+	},
+	{
+		"type": "EXIT", "count": 2
+	},
+	{
+		"type": "ENTER",
+		"index": ["schneider-join", "event"]
+	},
+	{
+    "type": "FOR_IN",
+    "_comment": "Cancel party lock options from DLC",
+    "keyword": "__INDEX__",
+    "values": [4,5,6,7],
+    "body": [{
+				"type": "ENTER",
+				"index": "__INDEX__"
+		},{
+				"type": "SET_KEY",
+				"index": "condition",
+				"content": "false"
+		},{
+				"type": "SET_KEY",
+				"index": "thenStep",
+				"content": []
+		},{
+				"type": "EXIT"
+		}]  
+	},
+	{
+		"type": "EXIT", "count": 2
+	},
+	{
+		"type": "ENTER",
+		"index": ["shizuka-join", "event"]
+	},
+	{
+    "type": "FOR_IN",
+    "_comment": "Cancel party lock options from DLC",
+    "keyword": "__INDEX__",
+    "values": [4,5],
+    "body": [{
+					"type": "ENTER",
+					"index": "__INDEX__"
+			},{
+					"type": "SET_KEY",
+					"index": "condition",
+					"content": "false"
+			},{
+					"type": "SET_KEY",
+					"index": "thenStep",
+					"content": []
+			},{
+					"type": "EXIT"
+		}]  
+	},
+	{
+		"type": "EXIT", "count": 2
+	},
+	{
+		"type": "ENTER",
+		"index": ["luke-join", "event"]
+	},
+	{
+    "type": "FOR_IN",
+    "_comment": "Cancel party lock options from DLC",
+    "keyword": "__INDEX__",
+    "values": [4,5,6,7,8],
+    "body": [{
+				"type": "ENTER",
+				"index": "__INDEX__"
+		},{
+				"type": "SET_KEY",
+				"index": "condition",
+				"content": "false"
+		},{
+				"type": "SET_KEY",
+				"index": "thenStep",
+				"content": []
+		},{
+				"type": "EXIT"
+		}]  
+	},
+	{
+		"type": "EXIT", "count": 2
+	}
+]

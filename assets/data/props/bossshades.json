@@ -1,0 +1,77 @@
+{
+  "DOCTYPE": "PROP_SHEET",
+  "props": [
+    {
+      "name": "barrierSignDriller",
+      "size": { "x": 24, "y": 24, "z": 0 },
+      "collType": "NONE",
+      "anims": {
+        "sheet": {
+          "src": "media/map/bossshades.png",
+          "width": 24,
+          "height": 24,
+          "offX": 0,
+          "offY": 0
+        },
+        "SUB": [
+          { "name": "off", "time": 1, "frames": [0], "repeat": true },
+          { "name": "on", "time": 1, "frames": [1], "repeat": true }
+        ]
+      }
+    },
+    {
+      "name": "barrierSignMoth",
+      "size": { "x": 24, "y": 24, "z": 0 },
+      "collType": "NONE",
+      "anims": {
+        "sheet": {
+          "src": "media/map/bossshades.png",
+          "width": 24,
+          "height": 24,
+          "offX": 0,
+          "offY": 24
+        },
+        "SUB": [
+          { "name": "off", "time": 1, "frames": [0], "repeat": true },
+          { "name": "on", "time": 1, "frames": [1], "repeat": true }
+        ]
+      }
+    },
+    {
+      "name": "barrierSignBlob",
+      "size": { "x": 24, "y": 24, "z": 0 },
+      "collType": "NONE",
+      "anims": {
+        "sheet": {
+          "src": "media/map/bossshades.png",
+          "width": 24,
+          "height": 24,
+          "offX": 0,
+          "offY": 48
+        },
+        "SUB": [
+          { "name": "off", "time": 1, "frames": [0], "repeat": true },
+          { "name": "on", "time": 1, "frames": [1], "repeat": true }
+        ]
+      }
+    },
+    {
+      "name": "barrierSignPhantom",
+      "size": { "x": 24, "y": 24, "z": 0 },
+      "collType": "NONE",
+      "anims": {
+        "sheet": {
+          "src": "media/map/bossshades.png",
+          "width": 24,
+          "height": 24,
+          "offX": 0,
+          "offY": 72
+        },
+        "SUB": [
+          { "name": "off", "time": 1, "frames": [0], "repeat": true },
+          { "name": "on", "time": 1, "frames": [1], "repeat": true }
+        ]
+      }
+    }
+  ]
+}

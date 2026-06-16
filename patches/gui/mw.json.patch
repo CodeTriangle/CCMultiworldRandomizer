@@ -1,0 +1,80 @@
+{
+	"labels": {
+		"pause-screen": {
+			"archipelago": "\\i[ap-logo]Archipelago"
+		},
+		"menu": {
+			"menu-titles": {
+				"apConnection": "Connection Info",
+				"apTextClient": "AP Text Client",
+				"apGameInfoMenu": "AP Game Info"
+			},
+			"new-game": {
+				"modifyOptions": "Modify Options"
+			}
+		},
+		"title-screen": {
+			"start": "New Game \\i[ap-logo]",
+			"startPlus": "New Game \\i[ap-logo]"
+		},
+		"mw": {
+			"warnings": {
+				"no-new-game-plus": "It appears that you haven't completed the game before. It is \\c[3]highly recommended\\c[0] to do so before attempting CrossCode randomized. See the CCMultiworldRandomizer setup guide for more information.",
+				"unplanned-disconnect": "You were unexpectedly disconnected from the server. Would you like to reconnect?"
+			},
+			"connection-menu": {
+				"url": "The URL to connect to, (i.e. 'archipelago.gg:38281').",
+				"name": "The name field in your YAML, (i.e. 'Player1').",
+				"password": "The multiworld's password.",
+				"deathLink": "Enable Death Link (when your friends die, you die).",
+				"deathLinkMode": {
+					"death": "When death is received, you die.",
+					"hpCriticalBosses": "When death is recieved in boss fights, your HP becomes critical. You die otherwise.",
+					"hpCritical": "When death is recieved in combat, your HP becomes critical. You die otherwise.",
+				},
+				"connect": "Connect to the multiworld using these details.",
+				"disconnect": "Disconnect from the multiworld if connected."
+			},
+			"login": {
+				"failures": {
+					"gen-version": "Cannot connect to this slot because APWorld version is greater than mod version.",
+					"seed": "Cannot connect to this multiworld because this save was previously connected to a different multiworld.",
+					"slot": "Cannot connect to this slot because this save was previously connected to a different slot in this multiworld."
+				}
+			},
+			"text-client": {
+				"apConnection": "Modify connection details, disconnect, or reconnect.",
+				"apGameInfoMenu": "Check on important YAML options.",
+				"new-game": "View or tweak New Game+ options."
+			},
+			"game-info-menu": {
+				"randomized": {
+					"true": "\\c[2]Randomized\\c[0]",
+					"false": "\\c[1]Not Randomized\\c[0]",
+					"undefined": "\\c[1]Unknown\\c[0]"
+				},
+				"enabled": {
+					"true": "\\c[2]Enabled\\c[0]",
+					"false": "\\c[1]Disabled\\c[0]",
+					"undefined": "\\c[1]Unknown\\c[0]"
+				},
+				"shop-send": {
+					"slot": "sending \\c[3]per slot\\c[0]",
+					"type": "sending \\c[3]per item type\\c[0]"
+				},
+				"progressive": {
+					"combined": "\\c[2]Progressive\\c[0], \\c[3]combined\\c[0]",
+					"split": "\\c[2]Progressive\\c[0], \\c[3]split\\c[0]",
+					"progressive": "\\c[2]Progressive\\c[0]",
+					"nonprog": "\\c[1]Not Progressive\\c[0]",
+				},
+				"goals": {
+					"creator": "Ascend \\c[3]Vermillion Tower\\c[0] and defeat \\c[3]the Creator\\c[0].",
+					"monkey": "Complete the \\c[3]Grand Krys'kajo\\c[0] and defeat the \\c[3]Son of the East\\c[0].",
+					"observatory": "Find \\c[3]five broken weapons\\c[0] and take them to \\c[3]the Observatory\\c[0]",
+					"diorbis": "Descend \\c[3]Ku'lero Temple\\c[0] and defeat \\c[3]the Gods of Shape\\c[0]."
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,138 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "_comment": "Hlin States",
+        "index": [60, "settings", "npcStates", 0]
+    },
+    {
+        "_comment": "Force Hlin to be there for intro cutscene",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": ""
+    },
+    { "type": "EXIT" },  
+    { "type": "ENTER", "index": 1 },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "false"
+    },
+    { "type": "EXIT" },  
+    { "type": "ENTER", "index": 2 },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "(plot.guildEntry >= 250) && (plot.line >= 17500)"
+    },
+    { "type": "EXIT" },  
+    { "type": "ENTER", "index": 3 },
+    {        
+        "_comment": "Make Hlin not be up there if have quest active or plot past Gaia? (might remove)",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "party.has.Hlin || quest.observatory.started"
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    },  
+    
+    {
+        "type": "FOR_IN",
+        "_comment": "Disable unnecessary story events",
+        "keyword": "__INDEX__",
+        "values": [61,67],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__", "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    { "type": "ENTER", "index": [63, "settings", "npcStates"] },
+    { "type": "ENTER", "index": 1 },
+    {
+        "_comment": "Make Schneider be there for cutscene",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "false"
+    },
+    { "type": "EXIT" },
+    { "type": "ENTER", "index": 2 },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "false"
+    },
+    { "type": "EXIT" },  
+    { "type": "ENTER", "index": 4 },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "party.has.Schneider"
+    },
+    { "type": "EXIT" },  
+    { "type": "EXIT", "count": 3 },  
+
+    { "type": "ENTER", "index": [62, "settings", "npcStates"] },
+    {
+        "type": "FOR_IN",
+        "_comment": "Hides buggy entirely",
+        "keyword": "__INDEX__",
+        "values": [0,1,2,3],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__"]
+        }, {
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 1
+        }]
+    },
+    { "type": "EXIT", "count": 3 },  
+
+    { "type": "ENTER", "index": [70, "settings"] },
+    { "_comment": "Changing searching Albert meetup conditions", "type": "SET_KEY", "index": "startCondition", "content": "plot.shareholder >= 2100" },
+    { "type": "SET_KEY", "index": "endCondition", "content": "plot.shareholder >= 2200" },
+    { "type": "ENTER", "index": "event" },
+    { "type": "SET_KEY", "index": 118, "content": { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.shareholder", "value": "2200" } },
+    { "type": "EXIT" },
+    { "type": "EXIT", "count": 2 }, 
+
+    { "type": "ENTER", "index": [59, "settings", "npcStates"] },
+    { "type": "ENTER", "index": 1 },
+    {
+        "_comment": "Hides grumpy after shareholder events",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "plot.line >= 4100 || plot.shareholder < 2000"
+    },
+    { "type": "EXIT" },
+    { "type": "ENTER", "index": 6 },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "plot.line >= 17800 || plot.shareholder >= 2100"
+    },
+    { "type": "EXIT", "count": 4 },  
+
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

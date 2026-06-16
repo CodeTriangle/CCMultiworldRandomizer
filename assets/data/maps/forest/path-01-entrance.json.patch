@@ -1,0 +1,39 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    {
+        "type": "ENTER",
+        "index": [510, "settings", "npcStates"]
+    },
+
+        {
+            "type": "ENTER",
+            "index": 0
+        },
+        {
+            "_comment": "Replace plotline condition for obtain meteor shade condition",
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "item.434.amount >= 1"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+
+    { "type": "EXIT" },
+    {
+      "type": "IF",
+      "_comment": "Adds corresponding patch if Extra Barriers is active",
+      "cond": "ig.vars.get('open-world.extraBarriers') >= 1",
+      "thenSteps": [{
+      "type": "INCLUDE",
+      "src": "mod:extra-patches/extra-barriers/forest-entrance.json.patch"
+      }]
+  }
+]

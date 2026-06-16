@@ -1,0 +1,138 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [16, "settings", "npcStates", 0] },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "_comment": "Able to start the quest without the pre-reqs",
+        "content": "!quest.unknown-warrior-5.started"
+    },
+    { "type": "ENTER", "index": ["event", "quest", 11] },
+    {
+        "type": "SET_KEY",
+        "index": "message",
+        "content": { "en_US": "Anyway... there's one more piece missing in our little puzzle.", "de_DE": "Anyway... there's one more piece missing in our little puzzle.", "zh_CN": "Anyway... there's one more piece missing in our little puzzle.", "ja_JP": "Anyway... there's one more piece missing in our little puzzle.", "ko_KR": "Anyway... there's one more piece missing in our little puzzle.", "langUid": 561, "zh_TW": "Anyway... there's one more piece missing in our little puzzle." }
+    },
+    { "type": "EXIT" },    
+    { "type": "ENTER", "index": 12 },
+    {
+        "type": "SET_KEY",
+        "index": "message",
+        "content": { "en_US": "Should we find it and the others, I might be able to fulfill my promise to my kids...", "de_DE": "Sollten wir es finden, k\u00f6nnte ich mein Versprechen meinen Kindern gegen\u00fcber halten...", "zh_CN": "\u8981\u662f\u80fd\u627e\u5230\u7684\u8bdd\uff0c\u4e5f\u8bb8\u6211\u5c31\u80fd\u5b8c\u6210\u5bf9\u5b69\u5b50\u4eec\u7684\u627f\u8bfa...<<A<<[CHANGED 2019\/01\/10]", "ja_JP": "\u3082\u3057\u898b\u3064\u3051\u3089\u308c\u308c\u3070\u3001\u79c1\u306f\u5b50\u4f9b\u305f\u3061\u3068\u306e\n\u7d04\u675f\u3092\u679c\u305f\u305b\u308b\u304b\u3082\u3057\u308c\u306a\u3044...<<A<<[CHANGED 2019\/01\/10]", "ko_KR": "\uadf8\uac78 \ucc3e\uc73c\uba74 \uc544\uc774\ub4e4\uc5d0\uac8c \ud55c \uc57d\uc18d\uc744 \uc9c0\ud0ac \uc218 \uc788\uc5b4...<<A<<[CHANGED 2019\/01\/10]", "langUid": 562, "zh_TW": "\u8981\u662f\u80fd\u627e\u5230\u7684\u8a71\uff0c\u4e5f\u8a31\u6211\u5c31\u80fd\u5b8c\u6210\u5c0d\u5b69\u5b50\u5011\u7684\u627f\u8afe...<<A<<[CHANGED 2019\/01\/10]" }
+    },
+    { "type": "EXIT", "count": 4 },    
+    { "type": "ENTER", "index": 2 },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "_comment": "Change Dkar to need all 4 prerequisites to finish the quest",
+        "content": "quest.unknown-warrior-1.solved && quest.unkown-warrior-2.solved && quest.unknown-warrior-3.solved && quest.unknown-warrior-4.solved && quest.unknown-warrior-5.task.1"
+    },
+    { "type": "EXIT" },    
+    { 
+      "type": "ADD_ARRAY_ELEMENT", 
+      "content": {
+        "reactType": "FIXED_POS",
+        "face": "NORTH",
+        "action": [],
+        "hidden": false,
+        "condition": "quest.unknown-warrior-5.started && !(quest.unknown-warrior-1.solved && quest.unkown-warrior-2.solved && quest.unknown-warrior-3.solved && quest.unknown-warrior-4.solved)",
+        "config": "normal",
+        "event": [
+            {
+                "side": "LEFT",
+                "order": 0,
+                "clearSide": false,
+                "type": "ADD_MSG_PERSON",
+                "person": {
+                    "person": "main.dkar",
+                    "expression": "DEFAULT"
+                }
+            },
+            {
+                "side": "RIGHT",
+                "order": 0,
+                "clearSide": false,
+                "type": "ADD_MSG_PERSON",
+                "person": {
+                    "person": "main.lea",
+                    "expression": "DEFAULT"
+                }
+            },
+            {
+                "message": {
+                    "en_US": "Hello young lady, found the other pieces yet?",
+                    "de_DE": "Hallo, junge Dame, hast du das Buch schon gelesen?",
+                    "zh_CN": "\u8bfb\u8fc7\u4e66\u4e86\u5417\uff1f<<A<<[CHANGED 2019\/01\/10]",
+                    "ja_JP": "\u3084\u3042\u304a\u5b22\u3055\u3093\u3001\u672c\u306f\u8aad\u3093\u3060\u304b\u3044\uff1f<<A<<[CHANGED 2019\/01\/10]",
+                    "ko_KR": "\uaf2c\ub9c8 \uc544\uac00\uc528, \ucc45 \uc77d\uc5b4 \ubd24\ub098?<<A<<[CHANGED 2019\/01\/10]",
+                    "langUid": 471,
+                    "zh_TW": "\u8b80\u904e\u66f8\u4e86\u55ce\uff1f<<A<<[CHANGED 2019\/01\/10]"
+                },
+                "autoContinue": false,
+                "type": "SHOW_MSG",
+                "person": {
+                    "person": "main.dkar",
+                    "expression": "DEFAULT"
+                }
+            },
+            {
+                "message": {
+                    "en_US": "[shakes head]",
+                    "de_DE": "[sch\u00fcttelt Kopf]",
+                    "zh_CN": "[\u6447\u5934]<<A<<[CHANGED 2019\/01\/10]",
+                    "ja_JP": "[\u9996\u3092\u632f\u308b]<<A<<[CHANGED 2019\/01\/10]",
+                    "ko_KR": "[\ub3c4\ub9ac\ub3c4\ub9ac]<<A<<[CHANGED 2019\/01\/10]",
+                    "langUid": 474,
+                    "zh_TW": "[\u6416\u982d]<<A<<[CHANGED 2019\/01\/10]"
+                },
+                "autoContinue": false,
+                "type": "SHOW_MSG",
+                "person": {
+                    "person": "main.lea",
+                    "expression": "SHAKE"
+                }
+            },
+            {
+                "message": {
+                    "en_US": "I'll be waiting here then.",
+                    "de_DE": "Gut, dann schau mal rein. Es steht im linken B\u00fccherregal.",
+                    "zh_CN": "\u53bb\u8bfb\u8bfb\u770b\u5427\uff0c\u5c31\u5728\u5de6\u8fb9\u7684\u4e66\u67b6\u4e0a\u3002<<A<<[CHANGED 2019\/01\/10]",
+                    "ja_JP": "\u307e\u3042\u3001\u8aad\u3093\u3067\u307f\u3066\u304f\u308c\u3002\n\u5de6\u5074\u306e\u68da\u306b\u3042\u308b\u3002<<A<<[CHANGED 2019\/01\/10]",
+                    "ko_KR": "\ud55c \ubc88 \uc77d\uc5b4\ubcf4\ub834. \uc67c\ucabd \ucc45\uc7a5\uc5d0 \uc788\ub2e8\ub2e4.<<A<<[CHANGED 2019\/01\/10]",
+                    "langUid": 535,
+                    "zh_TW": "\u53bb\u8b80\u8b80\u770b\u5427\uff0c\u5c31\u5728\u5de6\u908a\u7684\u66f8\u67b6\u4e0a\u3002<<A<<[CHANGED 2019\/01\/10]"
+                },
+                "autoContinue": false,
+                "type": "SHOW_MSG",
+                "person": {
+                    "person": "main.dkar",
+                    "expression": "DEFAULT"
+                }
+            },
+            {
+              "type": "SHOW_OW_AR_MSG",
+              "entity": { "player": true },
+              "text": { 
+                "en_US": "Complete A Promise is a Promise 1-4 to continue.", 
+                "de_DE": "Complete A Promise is a Promise 1-4 to continue.", 
+                "ja_JP": "Complete A Promise is a Promise 1-4 to continue.", 
+                "ko_KR": "Complete A Promise is a Promise 1-4 to continue.", 
+                "zh_CN": "Complete A Promise is a Promise 1-4 to continue.", 
+                "zh_TW": "Complete A Promise is a Promise 1-4 to continue.", 
+                "langUid": 23343 
+              },
+              "time": 6,
+              "mode": "LINE_FILL",
+              "color": "BLUE",
+              "yOffset": 16,
+              "hideOutsideOfScreen": false
+            }
+        ]
+      }
+    },
+    { "type": "EXIT", "count": 3 },    
+
+    { "type": "EXIT" }    
+]

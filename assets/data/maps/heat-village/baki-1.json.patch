@@ -1,0 +1,35 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [578]
+    },
+    {
+        "_comment": "Only do intro if never did Maroon Tree quest, and only with Emilie in party",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+                "name": "IntroScene",
+                "eventType": "CUTSCENE",
+                "endCondition": "plot.heatLine >= 50",
+                "event": [ { "alpha": 1, "time": 0, "lighter": false, "type": "SET_OVERLAY", "color": "white" }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.heatLine", "value": 50 }, { "entity": { "player": true }, "position": { "x": 268, "y": 132, "lvl": "1" }, "type": "SET_ENTITY_POS" }, { "entity": { "party": "Emilie" }, "position": { "x": 324, "y": 132, "lvl": "1" }, "type": "SET_ENTITY_POS" }, { "entity": { "global": true, "name": "r3" }, "position": { "x": 324, "y": 20, "lvl": "1" }, "type": "SET_ENTITY_POS" }, { "entity": { "global": true, "name": "r4" }, "position": { "x": 304, "y": 20, "lvl": "1" }, "type": "SET_ENTITY_POS" }, { "pos": { "x": 368, "y": 1272 }, "speed": "IMMEDIATELY", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "alpha": 0, "time": 1.5, "lighter": false, "type": "SET_OVERLAY", "color": "white" }, { "pos": { "x": 372, "y": 1128 }, "speed": "SLOWER", "transition": "LINEAR", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "pos": { "x": 296, "y": 228 }, "speed": "FASTER", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.3, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 264, "y": 216, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "party": "Emilie" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 312, "y": 216, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "r3" }, "action": [ { "target": { "x": 416, "y": 316, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "face": "EAST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.randomsArrive", "value": true } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "r4" }, "action": [ { "target": { "x": 416, "y": 336, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "face": "EAST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "Here we are, that should be the village!", "de_DE": "Wir sind da! Das sollte das Dorf sein.", "fr_FR": "fr_FR", "langUid": 9, "zh_CN": "我们到了，应该就是那个村子了！", "ja_JP": "着いた、きっとここが村だね！", "ko_KR": "여기가 그 마을인가 봐!", "zh_TW": "我們到了，應該就是那個村子了！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "So...\\. how about we go ahead and visit the major building now?", "de_DE": "Also...\\. Wie wäre es, wenn wir direkt zum Hauptgebäude gehen?", "fr_FR": "fr_FR", "langUid": 10, "zh_CN": "那…\\.我们快点去主楼怎么样？", "ja_JP": "それじゃ...\\.\nさっそくこの村の主な施設に行こうか？<<A<<[CHANGED 2017/08/03]", "ko_KR": "그럼...\\. 저쪽에 있는 큰 건물부터 가보는 게 어때?", "zh_TW": "那…\\.我們快點去主樓怎麼樣？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "AWAY" } }, { "message": { "en_US": "You know, to continue the plot and all.", "de_DE": "Du weißt schon, um die Handlung voranzutreiben und so.", "fr_FR": "fr_FR", "langUid": 11, "zh_CN": "你知道的，推进主线剧情什么的。", "ja_JP": "ほら、ストーリーとかを進めるためにさ。", "ko_KR": "스토리는 진행해야 하니까.", "zh_TW": "你知道的，推進主線劇情什麼的。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "UP" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "langUid": 12, "zh_CN": "[点头]", "ja_JP": "[うなずく]", "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "task": { "en_US": "Continue the plot within \\c[3]Ba'kii Kum\\c[0] together with Emilie.", "de_DE": "Treibe mit Emilie die Handlung in \\c[3]Ba'kii Kum\\c[0] voran.", "fr_FR": "fr_FR", "langUid": 50, "zh_CN": "和艾米莉一起在\\c[3]巴基库姆\\c[0]继续主线。", "ja_JP": "エミリーと一緒に\\c[3]バキーイ・クム\\c[0]でのストーリーを進めよう。", "ko_KR": "에밀리와 함께 \\c[3]바키쿰\\c[0]에서의 스토리를 이어가세요.", "zh_TW": "和艾米莉一起在\\c[3]巴基庫姆\\c[0]繼續主線。" }, "type": "SET_PERMA_TASK" } ],
+                "triggerType": "ALWAYS",
+                "mapId": 806,
+                "startCondition": "party.has.Emilie"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }    
+    
+]

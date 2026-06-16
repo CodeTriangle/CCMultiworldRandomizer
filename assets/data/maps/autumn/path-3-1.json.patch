@@ -1,0 +1,92 @@
+[
+    {
+        "type": "ENTER",
+        "index": [ "entities" ]
+    },
+    {
+        "type": "ENTER",
+        "index": [ 330 ]
+    },
+    {
+        "_comment": "Change Schneider walking intro event",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+            "name": "Schneider walking off",
+            "eventType": "PARALLEL",
+            "endCondition": "plot.guildEntry >= 30",
+            "event": [ { "entity": { "global": true, "name": "schneider" }, "action": [ { "value": 0.9, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 252, "y": 496, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "target": { "x": 596, "y": 556, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "target": { "x": 760, "y": 336, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 796, "y": 260, "lvl": "2" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "type": "RESET_NPC" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.guildEntry", "value": 30 }, { "message": { "en_US": "The entrance is over there to the \\c[3]north,\\c[0] then to the \\c[3]west\\c[0].", "de_DE": "Der Eingang ist dort dr\u00fcben, \\c[3]im Norden\\c[0].", "fr_FR": "fr_FR", "langUid": 179, "zh_CN": "\u5165\u53e3\u5c31\u5728\u90a3\u8fb9\\c[3]\u5f80\u5317\\c[0]\u4e00\u70b9\u3002", "ja_JP": "\u5165\u53e3\u306f\u3053\u3053\u304b\u3089\\c[3]\u5317\\c[0]\u306e\u307b\u3046\u306b\u3042\u308b\u305e\u3002", "ko_KR": "\uc785\uad6c\ub294 \\c[3]\ubd81\ucabd\\c[0]\uc5d0 \uc788\uc5b4.", "zh_TW": "\u5165\u53e3\u5c31\u5728\u90a3\u908a\\c[3]\u5f80\u5317\\c[0]\u4e00\u9ede\u3002" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } } ],
+            "triggerType": "ALWAYS",
+            "mapId": 453,
+            "startCondition": "plot.guildEntry >= 20"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },
+    {
+        "type": "ENTER",
+        "index": [ 329, "settings" ]
+    },
+    {
+        "_comment": "Change Schneider NPC States to match plot points",
+        "type": "SET_KEY",
+        "index": "npcStates",
+        "content": [ { "position": { "x": 128, "y": 444, "lvl": "1" }, "reactType": "FIXED_POS", "face": "EAST", "action": [], "hidden": false, "condition": "plot.guildEntry >= 20", "config": "running", "event": [] }, { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": false, "condition": "plot.guildEntry >= 30", "config": "running", "event": [ { "entity": { "global": true, "name": "schneider" }, "action": [ { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "party": "Emilie" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 788, "y": 284, "lvl": "2" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 816, "y": 284, "lvl": "2" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "Here we are!", "de_DE": "Da w\u00e4ren wir!", "fr_FR": "fr_FR", "langUid": 180, "zh_CN": "\u6211\u4eec\u5230\u4e86\uff01", "ja_JP": "\u3088\u3057\u3001\u7740\u3044\u305f\u305e\uff01", "ko_KR": "\ub3c4\ucc29\ud588\uc5b4!", "zh_TW": "\u6211\u5011\u5230\u4e86\uff01" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "Now this is the entrance to a small and humble \\c[3]guild area\\c[0].", "de_DE": "Dies ist der Eingang zu einem kleinen und bescheidenen \\c[3]Gildengebiet\\c[0].", "fr_FR": "fr_FR", "langUid": 182, "zh_CN": "\u8fd9\u91cc\u5c31\u662f\u7b80\u964b\u7684\u5c0f\\c[3]\u516c\u4f1a\u533a\u57df\\c[0]\u7684\u5165\u53e3\u4e86\u3002", "ja_JP": "\u3055\u3066\u3001\u3053\u3053\u304c\u5c0f\u3055\u304f\u3066\u3055\u3055\u3084\u304b\u306a\n\\c[3]\u30ae\u30eb\u30c9\u30a8\u30ea\u30a2\\c[0]\u306e\u5165\u53e3\u3060\u3002", "ko_KR": "\uc774\uacf3\uc774 \ubc14\ub85c \uc791\uace0 \ubbf8\ucc9c\ud55c \\c[3]\uae38\ub4dc \uc9c0\uc5ed\\c[0]\uc758 \uc785\uad6c\uc57c.", "zh_TW": "\u9019\u88e1\u5c31\u662f\u7c21\u964b\u7684\u5c0f\\c[3]\u516c\u6703\u5340\u57df\\c[0]\u7684\u5165\u53e3\u4e86\u3002" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "message": { "en_US": "You'll need a pass to enter, so here you go!", "de_DE": "Ihr braucht einen Pass, um einzutreten. Hier, nehmt den!", "fr_FR": "fr_FR", "langUid": 183, "zh_CN": "\u4f60\u9700\u8981\u901a\u884c\u8bc1\u624d\u80fd\u8fdb\u5165\uff0c\u6240\u4ee5\u62ff\u7740\u8fd9\u4e2a\uff01", "ja_JP": "\u5165\u308b\u306b\u306f\u901a\u884c\u8a3c\u304c\u5fc5\u8981\u306a\u3093\u3060\u3002\u6e21\u3057\u3068\u304f\u306a\uff01", "ko_KR": "\ub4e4\uc5b4\uac00\ub824\uba74 \ud1b5\ud589\uc99d\uc774 \ud544\uc694\ud560 \uac70\uc57c. \uc790!", "zh_TW": "\u4f60\u9700\u8981\u901a\u884c\u8b49\u624d\u80fd\u9032\u5165\uff0c\u6240\u4ee5\u62ff\u8457\u9019\u500b\uff01" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "item": "170", "amount": 1, "skip": false, "type": "GIVE_ITEM" }, { "msgType": "OBTAINED", "object": { "en_US": "\\v[item.170.name]", "de_DE": "Gildenpass", "fr_FR": "fr_FR", "langUid": 181, "zh_CN": "\\v[item.170.name]", "ja_JP": "\\v[item.170.name]", "ko_KR": "\\v[item.170.name]", "zh_TW": "\\v[item.170.name]" }, "type": "SHOW_GET_MSG" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "This item gives you access to our headquarters as well.", "de_DE": "Dieses Item gew\u00e4hrt euch auch Zugang zu unserem Hauptquartier.", "fr_FR": "fr_FR", "langUid": 184, "zh_CN": "\u8fd9\u4ef6\u4e1c\u897f\u4e5f\u80fd\u591f\u8ba9\u4f60\u8fdb\u5165\u6211\u4eec\u7684\u603b\u90e8\u3002", "ja_JP": "\u3053\u306e\u30a2\u30a4\u30c6\u30e0\u3092\u6301\u3063\u3066\u308c\u3070\u3001\n\u672c\u90e8\u306b\u5165\u308c\u308b\u304b\u3089\u306a\u3002", "ko_KR": "\uc774 \uc544\uc774\ud15c\uc73c\ub85c \uc6b0\ub9ac \ubcf8\ubd80\uc5d0\ub3c4 \ub4e4\uc5b4\uac08 \uc218 \uc788\uc5b4.", "zh_TW": "\u9019\u4ef6\u6771\u897f\u4e5f\u80fd\u5920\u8b93\u4f60\u9032\u5165\u6211\u5011\u7684\u7e3d\u90e8\u3002" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "LAUGH" } }, { "message": { "en_US": "Now then, let's go!", "de_DE": "Also, lasst uns gehen!", "fr_FR": "fr_FR", "langUid": 185, "zh_CN": "\u73b0\u5728\uff0c\u6211\u4eec\u8fdb\u53bb\u5427\uff01", "ja_JP": "\u305d\u308c\u3058\u3083\u3001\u884c\u304f\u304b\uff01", "ko_KR": "\uadf8\ub7fc \uac00\ubcfc\uae4c?", "zh_TW": "\u73fe\u5728\uff0c\u6211\u5011\u9032\u53bb\u5427\uff01" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.guildEntry", "value": 40 } ] }, { "position": { "x": 736, "y": 52, "lvl": "2" }, "reactType": "FIXED_POS", "face": "NORTH", "action": [], "hidden": true, "door": { "global": true, "name": "top" }, "condition": "plot.guildEntry >= 35", "config": "normal", "event": [] }, { "position": { "x": 712, "y": 144, "lvl": "2" }, "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": false, "condition": "tmp.schneiderThere", "config": "normal", "event": [] } ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+    {
+        "type": "ENTER",
+        "index": [ 272, "settings" ]
+    },
+    {
+        "_comment": "Change barrier conditions, to not make it stop working after a point of plot (might break dream sequences if there's any remaining)",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "!map.barrierOpen"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+    {
+      "type": "ADD_ARRAY_ELEMENT",
+      "_comment": "Show a sign if Schneider hasn't been met and have the mine pass",
+      "content": {
+        "type": "Prop",
+        "x": 720,
+        "y": 190,
+        "level": 2,
+        "settings": {
+          "mapId": 5060,
+          "interact": {
+            "icon": "INFO",
+            "hoverText": {
+              "en_US": "Schneider is waiting at Old Obelisk",
+              "de_DE": "Schneider is waiting at Old Obelisk",
+              "fr_FR": "Schneider is waiting at Old Obelisk",
+              "langUid": 3427,
+              "zh_CN": "Schneider is waiting at Old Obelisk",
+              "ko_KR": "Schneider is waiting at Old Obelisk",
+              "ja_JP": "Schneider is waiting at Old Obelisk",
+              "zh_TW": "Schneider is waiting at Old Obelisk"
+            }
+          },
+          "propType": {
+            "sheet": "autumn",
+            "name": "arSignCenter"
+          },
+          "propAnim": "default",
+          "spawnCondition": "plot.guildEntry < 20 && item.149.amount >= 1"
+        }
+      }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

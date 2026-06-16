@@ -1,0 +1,137 @@
+[
+	{ "type": "ENTER", "index": "quests" },
+
+	{ "type": "ENTER", "index": ["ape-battle", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Son of the Beach",
+		"index": "condition",
+		"content": "open-world.dlcActive && g.firstApeDefeat && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "index": ["bg-3-goat_final", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Wrath of Goat",
+		"index": "condition",
+		"content": "open-world.dlcActive && quest.bg-2-goat_cave_1.solved && quest.jungleGuard-2-crate_rooftop_1.solved && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "index": ["monks-3-jump_challenge_3", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Trial of Ascension",
+		"index": "condition",
+		"content": "open-world.dlcActive && quest.monks-2-jump_challenge_2.solved && player.core.12 && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "index": ["monks-jump_3_bonus", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Challenge of Ascension",
+		"index": "condition",
+		"content": "open-world.dlcActive && quest.monks-3-jump_challenge_3.solved"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "index": ["bakiTrader-3-brewing_ghosts_1", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Spiritual Drinks",
+		"index": "condition",
+		"content": "open-world.dlcActive && quest.bakiTrader-2-brewing_fun_1.solved && quest.bakiTrader-2-brewing_challenge_1.solved && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+    { "type": "ENTER", "index": ["jungleGreens-3-escort_2", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Salty Detox",
+		"index": "condition",
+		"content": "open-world.dlcActive && quest.jungleGreens-2-plantSearch_1.solved && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "index": ["jungleGuard-3-papagang_goats_1", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "",
+		"index": "condition",
+		"content": "open-world.dlcActive && quest.jungleGuard-2-crate_rooftop_1.solved && quest.bg-3-goat_final.task.3 && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "index": ["jungleTrader-3-shad_fridge_1", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Riches with Fridges",
+		"index": "condition",
+		"content": "open-world.dlcActive && quest.jungleTrader-2-snowman_thief_2.solved && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "index": ["seizui-quest", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Lost and On the Run",
+		"index": "condition",
+		"content": "open-world.dlcActive && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "index": ["autobahn", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Trouble on the Highway",
+		"index": "condition",
+		"content": "open-world.dlcActive && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "index": ["tremor-1", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Tremors of the Past",
+		"index": "condition",
+		"content": "open-world.dlcActive && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "index": ["rhg-4-maritime_smuggle_2", "hubSettings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Wetter Work",
+		"index": "condition",
+		"content": "open-world.dlcActive && quest.rhg-3-maritime_smuggle.solved && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 2 },
+	{ "type": "EXIT" },
+
+    { "type": "ENTER", "index": "commonEvents" },
+    {
+        "type": "FOR_IN",
+        "_comment": "Remove unwanted save data fixes related to DLC quests that mess with items",
+        "keyword": "__EVENT__",
+        "values": [
+            "fixRhombusPass",
+            "lostItemFix",
+            "lostItemFix2",
+            "moonchunkFix",
+            "moonchunkFix2",
+            "strawFix"
+        ],
+        "body": [
+            { "type": "ENTER", "index": "__EVENT__" },
+            {
+                "type": "SET_KEY",
+                "index": "condition",
+                "content": "false"
+            },
+            { "type": "EXIT" }
+        ]
+    },
+    { "type": "EXIT" }
+]

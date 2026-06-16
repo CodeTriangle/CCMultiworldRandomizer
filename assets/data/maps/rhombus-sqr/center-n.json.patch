@@ -1,0 +1,10 @@
+[
+    { "type": "ENTER", "index": ["entities", 1073, "settings", "npcStates", 0] },
+    {
+        "_comment": "Replace DLC completion for quest",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "open-world.dlcActive && item.626.amount >= 1"
+    },
+    { "type": "EXIT", "count": 5 }
+]

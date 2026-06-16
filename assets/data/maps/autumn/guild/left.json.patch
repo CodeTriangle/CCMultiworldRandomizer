@@ -1,0 +1,159 @@
+[
+    {
+        "type": "ENTER",
+        "index": [ "entities" ]
+    },
+    {
+        "type": "ENTER",
+        "index": [ 279, "settings", "npcStates" ]
+    },
+    {
+        "type": "FOR_IN",
+        "_comment": "Change conditions in Schneider",
+        "keyword": {
+            "eventIndex": "__INDEX__",
+            "variable": "__VAR__"
+        },
+        "values": [{ "eventIndex": "0", "variable": "false" },{ "eventIndex": "1", "variable": "false" }, { "eventIndex": "2", "variable": "false" } ],
+        "body": [ { "type": "ENTER", "index": "__INDEX__" }, { "type": "SET_KEY", "index": "condition", "content": "__VAR__" }, { "type": "EXIT", "count": 1 } ]
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+    {
+        "type": "ENTER",
+        "index": [
+            281,
+            "settings"
+        ]
+    },
+    {
+        "_comment": "Make sure you don't skip the previous cutscene losing the pickup",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "false"
+    },
+    {
+        "_comment": "Changing variables around for intro",
+        "type": "SET_KEY",
+        "index": "endCondition",
+        "content": "false"
+    },
+    {
+        "type": "ENTER",
+        "index": [ "event" ]
+    },
+    {
+        "type": "SET_KEY",
+        "index": 0,
+        "content": {
+            "changeType": "set",
+            "type": "CHANGE_VAR_NUMBER",
+            "varName": "plot.guildEntry",
+            "value": 50
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+    {
+        "type": "ENTER",
+        "index": [
+            283,
+            "settings"
+        ]
+    },
+    {
+        "_comment": "Changing variables around for before entering",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "false"
+    },
+    {
+        "_comment": "Changing variables around for before entering",
+        "type": "SET_KEY",
+        "index": "endCondition",
+        "content": "false"
+    },
+    {
+        "type": "ENTER",
+        "index": [
+            "event"
+        ]
+    },
+    {
+        "type": "SET_KEY",
+        "index": 31,
+        "content": {
+            "changeType": "set",
+            "type": "CHANGE_VAR_NUMBER",
+            "varName": "plot.guildEntry",
+            "value": 60
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+    {
+        "type": "ENTER",
+        "index": [ 284, "settings", "interact" ]
+    },
+    {
+        "_comment": ":0",
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [ { "text": { "en_US": "Thanks for playing rando", "langUid": 66, "ja_JP": "本当に、ここにはなにもないよ。<<A<<[CHANGED 2017/08/03]", "zh_CN": "真的没有，不骗你。<<A<<[CHANGED 2017/10/10]", "de_DE": "Im Ernst, hier ist nichts.", "ko_KR": "아니 정말, 아무것도 없다니까요.<<A<<[CHANGED 2017/10/17]", "zh_TW": "真的沒有，不騙你。<<A<<[CHANGED 2017/10/10]" }, "center": false, "type": "SHOW_BOARD_MSG" }, { "text": { "en_US": "... ", "langUid": 65, "ja_JP": "...<<A<<[CHANGED 2017/08/03]", "zh_CN": "...<<A<<[CHANGED 2017/10/10]", "de_DE": "... ", "ko_KR": "... <<A<<[CHANGED 2017/10/17]", "zh_TW": "...<<A<<[CHANGED 2017/10/10]" }, "center": false, "type": "SHOW_BOARD_MSG" }, { "text": { "en_US": "There's still no easter egg here... ", "langUid": 64, "ja_JP": "...<<A<<[CHANGED 2017/08/03]", "zh_CN": "...<<A<<[CHANGED 2017/10/10]", "de_DE": "... ", "ko_KR": "... <<A<<[CHANGED 2017/10/17]", "zh_TW": "...<<A<<[CHANGED 2017/10/10]" }, "center": false, "type": "SHOW_BOARD_MSG" }, { "text": { "en_US": "... ", "langUid": 64, "ja_JP": "...<<A<<[CHANGED 2017/08/03]", "zh_CN": "...<<A<<[CHANGED 2017/10/10]", "de_DE": "... ", "ko_KR": "... <<A<<[CHANGED 2017/10/17]", "zh_TW": "...<<A<<[CHANGED 2017/10/10]" }, "center": false, "type": "SHOW_BOARD_MSG" }, { "text": { "en_US": "... ", "langUid": 67, "ja_JP": "...<<A<<[CHANGED 2017/08/03]", "zh_CN": "...<<A<<[CHANGED 2017/10/10]", "de_DE": "... ", "ko_KR": "... <<A<<[CHANGED 2017/10/17]", "zh_TW": "...<<A<<[CHANGED 2017/10/10]" }, "center": false, "type": "SHOW_BOARD_MSG" }, { "text": { "en_US": "Sooooo... Bye.", "langUid": 68, "ja_JP": "それじゃ...じゃあね。<<A<<[CHANGED 2017/08/03]", "zh_CN": "呃... 拜拜。<<A<<[CHANGED 2017/10/10]", "de_DE": "Alsoooo.... Bye.", "ko_KR": "그러니까, 음... 안녕히 가세요.<<A<<[CHANGED 2017/10/17]", "zh_TW": "呃... 拜拜。<<A<<[CHANGED 2017/10/10]" }, "center": false, "type": "SHOW_BOARD_MSG" } ]
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+    {
+        "type": "ENTER",
+        "index": [ 280, "settings" ]
+    },
+    {
+        "_comment": "Change guild area entry conditions",
+        "type": "SET_KEY",
+        "index": "blockEventCondition",
+        "content": "plot.guildEntry < 30"
+    },
+    {
+        "_comment": "Change guild area entry conditions",
+        "type": "SET_KEY",
+        "index": "blockEvent",
+        "content": [ { "entity": { "player": true }, "action": [ { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "withElse": false, "type": "IF", "condition": "plot.guildEntry < 30", "thenStep": [ { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.sergey", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "Uhm...\\. Lea?", "langUid": 297, "zh_CN": "\u5443...\\.\u8389\u4e9a?<<A<<[CHANGED 2018/07/09]", "ja_JP": "\u3048\u3063\u3068...\\.\u30ec\u30a2\uff1f<<A<<[CHANGED 2018/07/09]", "ko_KR": "\uc74c...\\. \ub808\uc544?<<A<<[CHANGED 2018/07/09]", "de_DE": "\u00d6hm...\\. Lea?", "zh_TW": "\u5443...\\.\u8389\u4e9e?<<A<<[CHANGED 2018/07/09]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.sergey", "expression": "WHISTLING" } }, { "message": { "en_US": "Lea, that's First Scholars HQ", "langUid": 298, "zh_CN": "\u6211\u60f3\u897f\u7279\u9686\u4ed6\u4eec\u90fd\u5728\\c[3]\u7b2c\u4e00\u5b66\u8005\u603b\u90e8\\c[0]\u7b49\u7740\u4f60\u5462\u3002<<A<<[CHANGED 2018/07/09]", "ja_JP": "\u30b7\u30fb\u30c8\u30ed\u30f3\u3068\u4ed6\u306e\u307f\u3093\u306a\u304c\n\\c[3]\u30d5\u30a1\u30fc\u30b9\u30c8\u30b9\u30ab\u30e9\u30fc\u306e\u672c\u90e8\\c[0]\u3067\n\u5f85\u3063\u3066\u308b\u3093\u3058\u3083\u306a\u304b\u3063\u305f\u304b\u3044\uff1f<<A<<[CHANGED 2018/07/09]", "ko_KR": "\uc2dc\ud2b8\ub860\uacfc \ub2e4\ub978 \uc560\ub4e4\uc774 \\c[3]\ucd5c\ucd08\uc758 \ud559\uc790\ub4e4 \ubcf8\ubd80\\c[0]\uc5d0\uc11c \ub110 \uae30\ub2e4\ub9ac\uace0 \uc788\ub294 \uac83 \uac19\uc740\ub370, \ub9de\ub2c8?<<A<<[CHANGED 2018/07/09]", "de_DE": "Ich glaube, C'tron und die anderen warten auf dich im \\c[3]Hauptquartier\\c[0], korrekt?", "zh_TW": "\u6211\u60f3\u897f\u7279\u9686\u4ed6\u5011\u90fd\u5728\\c[3]\u7b2c\u4e00\u5b78\u8005\u7e3d\u90e8\\c[0]\u7b49\u8457\u4f60\u5462\u3002<<A<<[CHANGED 2018/07/09]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.sergey", "expression": "THINKING" } }, { "message": { "en_US": "Do you really want to go there now?", "langUid": 299, "zh_CN": "\u5728\u524d\u5f80\\c[3]\u9752\u7389\u5c71\u8109\\c[0]\u4e4b\u524d\u6700\u597d\u53bb\u90a3\u91cc\u4e00\u8d9f\u3002<<A<<[CHANGED 2018/07/09]", "ja_JP": "\\c[3]\u30b5\u30d5\u30a1\u30a4\u30a2\u5cf0\\c[0]\u306b\u884c\u304f\u524d\u306b\u3001\n\u672c\u90e8\u306b\u884c\u3063\u305f\u307b\u3046\u304c\u3044\u3044\u3068\u601d\u3046\u306a\u3002<<A<<[CHANGED 2018/07/09]", "ko_KR": "\\c[3]\uc0ac\ud30c\uc774\uc5b4 \uc0b0\ub9e5\\c[0]\uc5d0 \uac00\uae30 \uc804\uc5d0 \uba3c\uc800 \ub4e4\ub7ec\uc57c \ud560 \uac83 \uac19\uc544.<<A<<[CHANGED 2018/07/09]", "de_DE": "Du solltest besser dort vorbeischauen, bevor du zum \\c[3]Saphirgrat\\c[0] gehst.", "zh_TW": "\u5728\u524d\u5f80\\c[3]\u9752\u7389\u5c71\u8108\\c[0]\u4e4b\u524d\u6700\u597d\u53bb\u90a3\u88e1\u4e00\u8d9f\u3002<<A<<[CHANGED 2018/07/09]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.sergey", "expression": "DEFAULT" } }, { "message": { "en_US": "...", "langUid": 300, "zh_CN": "...<<A<<[CHANGED 2018/07/09]", "ja_JP": "...<<A<<[CHANGED 2018/07/09]", "ko_KR": "...<<A<<[CHANGED 2018/07/09]", "de_DE": "...", "zh_TW": "...<<A<<[CHANGED 2018/07/09]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "THINKING" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" } ] }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 432, "y": 456, "lvl": "1" }, "precise": false, "forceTime": false, "type": "MOVE_TO_POINT" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "type": "SHOW_OW_AR_MSG", "entity": { "player": true }, "text": { "en_US": "Talk to Schneider at Old Obelisk, after obtaining Mine Pass", "de_DE": "Talk to Schneider at Old Obelisk, after obtaining Mine Pass", "ja_JP": "Talk to Schneider at Old Obelisk, after obtaining Mine Pass", "ko_KR": "Talk to Schneider at Old Obelisk, after obtaining Mine Pass", "zh_CN": "Talk to Schneider at Old Obelisk, after obtaining Mine Pass", "zh_TW": "Talk to Schneider at Old Obelisk, after obtaining Mine Pass", "langUid": 23343 }, "time": 5, "mode": "LINE_FILL", "color": "BLUE", "yOffset": 16, "hideOutsideOfScreen": false } ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+    { 
+    "type": "IF", 
+    "_comment": "Adds corresponding patch if Extra Sandwich is on", 
+    "cond": "ig.vars.get('open-world.extra-sandwich') >= 1", 
+    "thenSteps": [{
+        "_comment": "Extra Sandwich",
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+            "type": "Chest",
+            "x": 776,
+            "y": 368,
+            "level": 2,
+            "settings": {
+                "name": "",
+                "chestType": "Default",
+                "item": "1",
+                "amount": 2,
+                "mapId": 5000
+            }
+        }
+    }]},
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

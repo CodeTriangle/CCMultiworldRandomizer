@@ -629,6 +629,18 @@ export function patch(plugin: MwRandomizer) {
 					this.setVars();
 				}
 
+				const owOptionList = [
+					ig.vars.get("mw.options.vtShadeLock"), 
+					ig.vars.get("mw.options.vtSkip"), 
+					ig.vars.get("mw.options.openFajro"), 
+					ig.vars.get("mw.options.meteorPassage"),
+					ig.vars.get("mw.options.rhombusHubUnlock"),
+					ig.vars.get("mw.options.closedGaia"),
+					ig.vars.get("mw.options.dlcActive"),
+					ig.vars.get("mw.options.extraQuests")
+				];
+				sc.openworld.addMWPatches(owOptionList);
+
 				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED);
 				listener.onLoginSuccess(`Connected to ${info.url}.`);
 			},

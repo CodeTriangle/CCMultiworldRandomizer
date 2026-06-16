@@ -1,0 +1,25 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    { "type": "ENTER", "index": [554, "settings","event"] },
+    {
+            "type": "ADD_ARRAY_ELEMENT",
+            "_comment": "All bunny steps in a row",
+            "index": "npcStates",
+            "content": { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.bunny6", "value": true }
+    },
+    { "type": "EXIT", "count": 3 },
+    { "type": "ENTER", "index": [555, "settings","event"] },
+    {
+            "type": "ADD_ARRAY_ELEMENT",
+            "_comment": "All bunny steps in a row",
+            "index": "npcStates",
+            "content": { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.bunny7", "value": true }
+    },
+    { "type": "EXIT", "count": 3 },
+    
+    { "type": "EXIT" }
+]

@@ -1,0 +1,286 @@
+[{
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [4, "settings"]
+    },
+    {
+        "_comment": "Change expo space cutscene variables to align with plot.heatLine",
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [{
+            "entity": {
+                "party": "Member2"
+            },
+            "skipEffects": false,
+            "type": "HIDE_ENTITY"
+        }, {
+            "entity": {
+                "party": "Member3"
+            },
+            "skipEffects": false,
+            "type": "HIDE_ENTITY"
+        }, {
+            "alpha": 1,
+            "time": 0,
+            "lighter": true,
+            "type": "SET_OVERLAY",
+            "color": "white"
+        }, {
+            "pos": {
+                "x": 400,
+                "y": 728
+            },
+            "speed": "IMMEDIATELY",
+            "transition": "EASE",
+            "wait": false,
+            "waitSkip": 0,
+            "zoom": 1,
+            "type": "SET_CAMERA_POS"
+        }, {
+            "ignoreSlowDown": false,
+            "type": "WAIT",
+            "time": 0.2
+        }, {
+            "zoomType": "LIGHT",
+            "fadeIn": 0,
+            "duration": 2,
+            "fadeOut": 0.5,
+            "type": "SET_ZOOM_BLUR"
+        }, {
+            "alpha": 0,
+            "time": 2,
+            "lighter": true,
+            "type": "SET_OVERLAY",
+            "color": "white"
+        }, {
+            "pos": {
+                "x": 400,
+                "y": 396
+            },
+            "speed": "SLOWER",
+            "transition": "EASE_OUT",
+            "wait": true,
+            "waitSkip": 0,
+            "zoom": 1,
+            "type": "SET_CAMERA_POS"
+        }, {
+            "text": {
+                "en_US": "Your prolonged journey\nbrought you to this barren field.",
+                "de_DE": "Der Weg, den du beschritten hast,\nhat dich in dieses karge Gebiet geführt.",
+                "fr_FR": "fr_FR",
+                "zh_CN": "旅途漫漫\n足踏荒原。",
+                "ja_JP": "汝はこの不毛の地に達するまで\n その旅を続けてきた。<<A<<[CHANGED 2017/08/03]",
+                "langUid": 2,
+                "ko_KR": "계속되는 여정으로\n결국 이 불모지로 오게 됐군요.",
+                "zh_TW": "旅途漫漫\r\n足踏荒原。"
+            },
+            "entity": {
+                "global": true,
+                "name": "hologramNPC"
+            },
+            "posType": "TOP",
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "SHOW_DREAM_MSG"
+        }, {
+            "text": {
+                "en_US": "Surrounded by boundless sand\nI shall hand you the Shade of the same.",
+                "de_DE": "Von endlosem Sand umgeben,\nwerde ich dir die Form desselbigen überreichen.",
+                "fr_FR": "fr_FR",
+                "zh_CN": "满目黄沙\n证印闪耀。",
+                "ja_JP": "この果てしのない砂に囲まれて\n 我は汝に同じものからできたシェードを手渡そう。<<A<<[CHANGED 2017/08/03]",
+                "langUid": 23,
+                "ko_KR": "드넓은 모래로 덮여있으니\n그와 같은 셰이드를 드리도록 하죠.",
+                "zh_TW": "滿目黃沙\r\n證印閃耀。"
+            },
+            "entity": {
+                "global": true,
+                "name": "hologramNPC"
+            },
+            "posType": "TOP",
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "SHOW_DREAM_MSG"
+        }, {
+            "text": {
+                "en_US": "It will open the passage\nto the \\c[3]Temple of Faj'ro\\c[0].",
+                "de_DE": "Sie wird das Tor \nzum \\c[3]Tempel von Faj'ro\\c[0] öffnen.",
+                "fr_FR": "fr_FR",
+                "zh_CN": "\\c[3]法加罗神庙\\c[0]\n将为你打开。",
+                "ja_JP": "そのシェードこそが、\n \\c[3]ファイロ神殿\\c[0]への道を開くだろう。<<A<<[CHANGED 2017/08/03]",
+                "langUid": 24,
+                "ko_KR": "\\c[3]파즈로 사원\\c[0]의\n길을 열어줄 겁니다.",
+                "zh_TW": "\\c[3]法加羅神廟\\c[0]_x000D_\n將為你打開。"
+            },
+            "entity": {
+                "global": true,
+                "name": "hologramNPC"
+            },
+            "posType": "TOP",
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "SHOW_DREAM_MSG"
+        }, {
+            "text": {
+                "en_US": "Traveler, envoy of change,\nyour next trial awaits you.",
+                "de_DE": "Reisender, Gesandter des Wandels,\ndeine nächste Prüfung erwartet dich.",
+                "fr_FR": "fr_FR",
+                "zh_CN": "旅行者，变革的使者，\n你的下一个试炼正在等待。",
+                "ja_JP": "旅人よ、変化を司る使者よ。\n 次の試練が汝を待ちかまえている。<<A<<[CHANGED 2017/08/03]",
+                "langUid": 25,
+                "ko_KR": "여행자여, 변화의 사절단이여,\n다음 시험이 당신을 기다립니다.<<A<<[CHANGED 2017/07/21]",
+                "zh_TW": "旅行者，變革的使者，\r\n你的下一個試煉正在等待。<<A<<[CHANGED 2017/07/11]"
+            },
+            "entity": {
+                "global": true,
+                "name": "hologramNPC"
+            },
+            "posType": "TOP",
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "SHOW_DREAM_MSG"
+        }, {
+            "entity": {
+                "player": true
+            },
+            "duration": -1,
+            "align": "BOTTOM",
+            "group": "shade",
+            "wait": false,
+            "waitSkip": 0,
+            "type": "SHOW_EFFECT",
+            "effect": {
+                "sheet": "map.rh-quest-hub",
+                "name": "yellowSand"
+            },
+            "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 48
+            }
+        }, {
+            "pos": {
+                "x": 400,
+                "y": 452
+            },
+            "speed": "SLOW",
+            "transition": "EASE_IN_OUT",
+            "wait": true,
+            "waitSkip": 0,
+            "zoom": 1,
+            "type": "SET_CAMERA_POS"
+        }, {
+            "ignoreSlowDown": false,
+            "type": "WAIT",
+            "time": 1
+        }, {
+            "entity": {
+                "player": true
+            },
+            "group": "shade",
+            "type": "CLEAR_EFFECTS"
+        }, {
+            "ignoreSlowDown": false,
+            "type": "WAIT",
+            "time": 0.4
+        }, {
+            "item": "148",
+            "amount": 1,
+            "skip": true,
+            "type": "GIVE_ITEM"
+        }, {
+            "msgType": "OBTAINED",
+            "object": {
+                "en_US": "\\v[item.148.name]",
+                "de_DE": "Gelbe Sandform",
+                "fr_FR": "fr_FR",
+                "zh_CN": "\\v[item.148.name]",
+                "ja_JP": "\\v[item.148.name]<<A<<[CHANGED 2017/08/03]",
+                "langUid": 22,
+                "ko_KR": "\\v[item.148.name]",
+                "zh_TW": "\\v[item.148.name]"
+            },
+            "type": "SHOW_GET_MSG"
+        }, {
+            "ignoreSlowDown": false,
+            "type": "WAIT",
+            "time": 0.2
+        }, {
+            "volume": 1,
+            "name": "",
+            "loop": false,
+            "offset": 0,
+            "startTime": 0,
+            "type": "PLAY_SOUND",
+            "sound": "media/sound/scenes/swoosh-rise-long.ogg"
+        }, {
+            "pos": {
+                "x": 400,
+                "y": 80
+            },
+            "speed": "SLOW",
+            "transition": "EASE_IN",
+            "wait": false,
+            "waitSkip": 0,
+            "zoom": 1,
+            "type": "SET_CAMERA_POS"
+        }, {
+            "zoomType": "LIGHT",
+            "fadeIn": 0.5,
+            "duration": 2,
+            "fadeOut": 0,
+            "type": "SET_ZOOM_BLUR"
+        }, {
+            "alpha": 1,
+            "time": 2,
+            "lighter": true,
+            "type": "SET_OVERLAY",
+            "color": "white"
+        }, {
+            "ignoreSlowDown": false,
+            "type": "WAIT",
+            "time": 2
+        }, {
+            "type": "IF",
+            "withElse": false,
+            "condition": "plot.heatLine < 500",
+            "thenStep": [{
+                "changeType": "set",
+                "type": "CHANGE_VAR_NUMBER",
+                "varName": "plot.heatLine",
+                "value": 500
+            }]
+        }, {
+            "lighter": true,
+            "type": "SET_TELEPORT_COLOR",
+            "color": "white"
+        }, { "member": "Emilie", "locked": false, "type": "SET_MEMBER_LOCKED" },
+         { "member": "Glasses", "locked": false, "type": "SET_MEMBER_LOCKED" }, {
+            "type": "TELEPORT",
+            "map": "heat-village.baki-2",
+            "marker": "statue"
+        }]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+
+]

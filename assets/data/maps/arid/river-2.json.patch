@@ -1,0 +1,23 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Deactivate story events",
+        "keyword": "__INDEX__",
+        "values": [390],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    { "type": "EXIT", "count": 1 }
+]

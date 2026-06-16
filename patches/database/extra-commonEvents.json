@@ -1,0 +1,220 @@
+[
+  {
+    "type": "SET_KEY",
+    "_comment": "This shows the tip when first entering Gaia's Garden, about the dungeon changes",
+    "index": "gaia-dungeons-unlock",
+    "content": {
+      "frequency": "ALWAYS",
+      "repeat": "ONCE",
+      "condition": "area.jungle.isCurrent && open-world.closedgaia <= 0 && !option.openworld-disabledTips",
+      "eventType": "CUTSCENE",
+      "overrideSideMessage": false,
+      "event": [
+        { "type": "START_PRIVATE_MSG" },
+        {
+          "person": { "person": "misc.blank", "expression": "GLASS" },
+          "type": "ADD_MSG_PERSON",
+          "side": "LEFT",
+          "name": { "en_US": "Archie P. Lago", "de_DE": "Archie P. Lago", "ja_JP": "Archie P. Lago", "ko_KR": "Archie P. Lago", "zh_CN": "Archie P. Lago", "zh_TW": "Archie P. Lago" }
+        },
+        {
+          "person": { "person": "main.lea", "expression": "SURPRISED_TOWARD" },
+          "type": "ADD_MSG_PERSON",
+          "side": "RIGHT"
+        },
+        {
+          "person": { "person": "misc.blank", "expression": "GLASS" },
+          "message": { "en_US": "Hello there. Did you know?", "de_DE": "Hello there. Did you know?", "ja_JP": "Hello there. Did you know?", "ko_KR": "Hello there. Did you know?", "zh_CN": "Hello there. Did you know?", "zh_TW": "Hello there. Did you know?", "langUid": 23352 },
+          "type": "SHOW_MSG"
+        },
+        {
+          "person": { "person": "misc.blank", "expression": "GLASS" },
+          "message": { "en_US": "The devs removed the Heat and Cold puzzles at the start of the Gaia's Garden temples.", "de_DE": "The devs removed the Heat and Cold puzzles at the start of the Gaia's Garden temples.", "ja_JP": "The devs removed the Heat and Cold puzzles at the start of the Gaia's Garden temples.", "ko_KR": "The devs removed the Heat and Cold puzzles at the start of the Gaia's Garden temples.", "zh_CN": "The devs removed the Heat and Cold puzzles at the start of the Gaia's Garden temples.", "zh_TW": "The devs removed the Heat and Cold puzzles at the start of the Gaia's Garden temples.", "langUid": 23352 },
+          "type": "SHOW_MSG"
+        },
+        {
+          "person": { "person": "main.lea", "expression": "ASTONISHED" },
+          "message": { "en_US": "...", "de_DE": "...", "ja_JP": "...", "ko_KR": "...", "zh_CN": "...", "zh_TW": "...", "langUid": 23353 },
+          "type": "SHOW_MSG"
+        },
+        {
+          "person": { "person": "misc.blank", "expression": "GLASS" },
+          "message": { "en_US": "That's right. You no longer need any elements to start So'najiz and Zir'vitar Temples.", "de_DE": "That's right. You no longer need any elements to start So'najiz and Zir'vitar Temples.", "ja_JP": "That's right. You no longer need any elements to start So'najiz and Zir'vitar Temples.", "ko_KR": "That's right. You no longer need any elements to start So'najiz and Zir'vitar Temples.", "zh_CN": "That's right. You no longer need any elements to start So'najiz and Zir'vitar Temples.", "zh_TW": "That's right. You no longer need any elements to start So'najiz and Zir'vitar Temples.", "langUid": 23354 },
+          "type": "SHOW_MSG"
+        },
+        {
+          "person": { "person": "main.lea", "expression": "EXCITED" },
+          "message": { "en_US": "...", "de_DE": "...", "ja_JP": "...", "ko_KR": "...", "zh_CN": "...", "zh_TW": "...", "langUid": 23353 },
+          "type": "SHOW_MSG"
+        },
+        {
+          "person": { "person": "misc.blank", "expression": "GLASS" },
+          "message": { "en_US": "So... have fun.", "de_DE": "So... have fun.", "ja_JP": "So... have fun.", "ko_KR": "So... have fun.", "zh_CN": "So... have fun.", "zh_TW": "So... have fun.", "langUid": 23354 },
+          "type": "SHOW_MSG"
+        },
+        { "type": "REMOVE_MSG_PERSON", "person": "misc.blank" },
+        { "type": "REMOVE_MSG_PERSON", "person": "main.lea" },
+        { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 },
+        {
+          "type": "SHOW_OW_AR_MSG",
+          "entity": { "player": true },
+          "text": { "en_US": "So'najiz and Zir'vitar Temples are now accessible", "de_DE": "So'najiz and Zir'vitar Temples are now accessible", "ja_JP": "So'najiz and Zir'vitar Temples are now accessible", "ko_KR": "So'najiz and Zir'vitar Temples are now accessible", "zh_CN": "So'najiz and Zir'vitar Temples are now accessible", "zh_TW": "So'najiz and Zir'vitar Temples are now accessible", "langUid": 23343 },
+          "time": 3,
+          "mode": "LINE_FILL",
+          "color": "BLUE",
+          "yOffset": 16,
+          "hideOutsideOfScreen": false
+        }
+      ],
+      "loopCount": 1,
+      "type": { "type": "MAP_ENTERED" }
+    }
+  },
+  {
+    "type": "SET_KEY",
+    "_comment": "This shows the tip when first entering Gaia's Garden, about the dungeon changes",
+    "index": "vermillion-passage-unlock",
+    "content": {
+      "frequency": "ALWAYS",
+      "repeat": "ONCE",
+      "condition": "area.forest.isCurrent && !option.openworld-disabledTips",
+      "eventType": "CUTSCENE",
+      "overrideSideMessage": false,
+      "event": [
+        { "type": "START_PRIVATE_MSG" },
+        {
+          "person": { "person": "misc.blank", "expression": "GLASS" },
+          "type": "ADD_MSG_PERSON",
+          "side": "LEFT",
+          "name": { "en_US": "Archie P. Lago", "de_DE": "Archie P. Lago", "ja_JP": "Archie P. Lago", "ko_KR": "Archie P. Lago", "zh_CN": "Archie P. Lago", "zh_TW": "Archie P. Lago" }
+        },
+        {
+          "person": { "person": "main.lea", "expression": "SURPRISED_TOWARD" },
+          "type": "ADD_MSG_PERSON",
+          "side": "RIGHT"
+        },
+        {
+          "person": { "person": "misc.blank", "expression": "GLASS" },
+          "message": { "en_US": "Hello there. Did you know?", "de_DE": "Hello there. Did you know?", "ja_JP": "Hello there. Did you know?", "ko_KR": "Hello there. Did you know?", "zh_CN": "Hello there. Did you know?", "zh_TW": "Hello there. Did you know?", "langUid": 23352 },
+          "type": "SHOW_MSG"
+        },
+        {
+          "person": { "person": "misc.blank", "expression": "GLASS" },
+          "message": { "en_US": "There's a passage to the east of Old Dojo, here in Sapphire Ridge.", "de_DE": "There's a passage to the east of Old Dojo, here in Sapphire Ridge.", "ja_JP": "There's a passage to the east of Old Dojo, here in Sapphire Ridge.", "ko_KR": "There's a passage to the east of Old Dojo, here in Sapphire Ridge.", "zh_CN": "There's a passage to the east of Old Dojo, here in Sapphire Ridge.", "zh_TW": "There's a passage to the east of Old Dojo, here in Sapphire Ridge.", "langUid": 23352 },
+          "type": "SHOW_MSG"
+        },
+        {
+          "person": { "person": "main.lea", "expression": "ASTONISHED" },
+          "message": { "en_US": "...", "de_DE": "...", "ja_JP": "...", "ko_KR": "...", "zh_CN": "...", "zh_TW": "...", "langUid": 23353 },
+          "type": "SHOW_MSG"
+        },
+        {
+          "person": { "person": "misc.blank", "expression": "GLASS" },
+          "message": { "en_US": "Apparently, it leads to a unknown wasteland location.", "de_DE": "Apparently, it leads to a unknown wasteland location.", "ja_JP": "Apparently, it leads to a unknown wasteland location.", "ko_KR": "Apparently, it leads to a unknown wasteland location.", "zh_CN": "Apparently, it leads to a unknown wasteland location.", "zh_TW": "Apparently, it leads to a unknown wasteland location.", "langUid": 23354 },
+          "type": "SHOW_MSG"
+        },
+        { "type": "REMOVE_MSG_PERSON", "person": "misc.blank" },
+        { "type": "REMOVE_MSG_PERSON", "person": "main.lea" },
+        { "type": "END_PRIVATE_MSG" },
+        {
+					"type": "CHANGE_VAR_BOOL",
+					"changeType": "set",
+					"map": "forest.path-10-hidden",
+					"varName": "_mw_dummy_value",
+					"value": true
+				},
+        {
+					"type": "CHANGE_VAR_BOOL",
+					"changeType": "set",
+					"map": "forest.caves.exit-cave-01",
+					"varName": "_mw_dummy_value",
+					"value": true
+				},
+        {
+					"type": "CHANGE_VAR_BOOL",
+					"changeType": "set",
+					"map": "forest.caves.exit-cave-02",
+					"varName": "_mw_dummy_value",
+					"value": true
+				},
+        {
+					"type": "CHANGE_VAR_BOOL",
+					"changeType": "set",
+					"map": "forest.caves.exit-cave-03",
+					"varName": "_mw_dummy_value",
+					"value": true
+				},
+        { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 },
+        {
+          "type": "MAP_AND_STAMP",
+          "area": "forest",
+          "stamp": { "key": "QUEST", "level": 0, "x": 475, "y": 232 }
+        },
+        { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 },
+        {
+          "type": "SHOW_OW_AR_MSG",
+          "entity": { "player": true },
+          "text": { "en_US": "Vermillion Passage can now be found east of Old Dojo", "de_DE": "Vermillion Passage can now be found east of Old Dojo", "ja_JP": "Vermillion Passage can now be found east of Old Dojo", "ko_KR": "Vermillion Passage can now be found east of Old Dojo", "zh_CN": "Vermillion Passage can now be found east of Old Dojo", "zh_TW": "Vermillion Passage can now be found east of Old Dojo", "langUid": 23343 },
+          "time": 3,
+          "mode": "LINE_FILL",
+          "color": "BLUE",
+          "yOffset": 16,
+          "hideOutsideOfScreen": false
+        }
+      ],
+      "loopCount": 1,
+      "type": { "type": "MAP_ENTERED" }
+    }
+  },
+  {
+    "type": "SET_KEY",
+    "index": "minepass-schneider-trigger",
+    "content": {
+      "frequency": "ALWAYS",
+      "repeat": "ONCE",
+      "condition": "item.149.amount >= 1 && plot.guildEntry < 10",
+      "eventType": "CUTSCENE",
+      "overrideSideMessage": false,
+      "event": [
+        { "frequency": "", "type": "SET_NPC_RUNNERS" },
+        { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 },
+        {
+          "withElse": true,
+          "type": "IF",
+          "condition": "!party.has.Emilie",
+          "thenStep": [ { "type": "START_PRIVATE_MSG" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "Bonjour, Lea!", "de_DE": "Bonjour, Lea!", "fr_FR": "fr_FR", "langUid": 121, "zh_CN": "你好，莉亚！", "ja_JP": "ボンジュール、レア！", "ko_KR": "안녕, 레아!", "zh_TW": "你好，莉亞！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "Hi!", "de_DE": "Hi!", "fr_FR": "fr_FR", "langUid": 122, "zh_CN": "你好！", "ja_JP": "やぁ！", "ko_KR": "안녕!", "zh_TW": "你好！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "EXCITED" } }, { "message": { "en_US": "Guess what?\\. Lukas told me he'd like to introduce us to his guild.", "de_DE": "Weißt du was?\\. Lukas hat mir gesagt, dass er uns gerne seiner Gilde vorstellen würde.", "fr_FR": "fr_FR", "langUid": 123, "zh_CN": "猜猜怎么着？\\.卢卡斯告诉我他想要把我们介绍给他的公会。", "ja_JP": "ねえ聞いてよ！\\.ルーカスがね、私たちをあいつのギルドに招待したいって。", "ko_KR": "그거 알아?\\. 루카스가 우리를 길드에 소개하고 싶대.", "zh_TW": "猜猜怎麼樣？\\.盧卡斯告訴我他想要把我們介紹給他的公會。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "Uhm, what was the name...?\\. Right, the \\c[3]First Scholars\\c[0]!", "de_DE": "Ähm, wie war nochmal der Name...?\\. Genau, die \\c[3]Ersten Gelehrten\\c[0]!", "fr_FR": "fr_FR", "langUid": 143, "zh_CN": "嗯，名字叫什么来着…？\\.对了，是\\c[3]第一学者\\c[0]！。", "ja_JP": "えーっと、名前はなんだったかな...？\\.そうだ、\\c[3]ファーストスカラー\\c[0]だ！", "ko_KR": "음, 이름이 뭐더라...?\\. 그래, \\c[3]최초의 학자들\\c[0]이라는 길드야.", "zh_TW": "嗯，名字叫什麼…？\\.對了，是\\c[3]第一學者\\c[0]！。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SUSPICIOUS" } }, { "message": { "en_US": "It seems, they are looking for new members!", "de_DE": "Scheint so, als würden sie nach neuen Mitgliedern suchen!", "fr_FR": "fr_FR", "langUid": 124, "zh_CN": "他们好像在招收新成员！", "ja_JP": "なんでも、新しいメンバーを探してるんだってさ！", "ko_KR": "새로운 멤버를 찾는다나 봐!", "zh_TW": "他們好像在招募新成員！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "AWAY" } }, { "message": { "en_US": "...!", "de_DE": "...!", "fr_FR": "fr_FR", "langUid": 125, "zh_CN": "…！", "ja_JP": "...！", "ko_KR": "...!", "zh_TW": "…！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "message": { "en_US": "We probably shouldn't let them wait for too long, non?", "de_DE": "Wir sollten sie wohl lieber nicht zu lange warten lassen, non?", "fr_FR": "fr_FR", "langUid": 126, "zh_CN": "我们可不应该让他们等太久对吧？", "ja_JP": "向こうの人をあんまり待たせない方がいいでしょう？", "ko_KR": "어서 빨리 가보자!", "zh_TW": "我們不應該讓他們等太久對吧？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "langUid": 127, "zh_CN": "[点头]", "ja_JP": "[うなずく]", "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "Très bien!", "de_DE": "Très bien!", "fr_FR": "fr_FR", "langUid": 128, "zh_CN": "没错！", "ja_JP": "トレビアン！", "ko_KR": "좋았어!", "zh_TW": "沒錯！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "We should meet in \\c[3]\\v[area.autumn-area.name]\\c[0] at the \\c[3]Old Obelisk\\c[0].", "de_DE": "Wir treffen uns in \\c[3]Autumn's Rise\\c[0] am \\c[3]Alten Obelisken\\c[0].", "fr_FR": "fr_FR", "langUid": 129, "zh_CN": "我们应该在\\c[3]\\v[area.autumn-area.name]\\c[0]的\\c[3]方尖古塔\\c[0]见面。", "ja_JP": "それじゃ、\\c[3]\\v[area.autumn-area.name]\\c[0]の\\c[3]古いオベリスク\\c[0]で会いましょ。", "ko_KR": "\\c[3]\\v[area.autumn-area.name]\\c[0]에 있는 \\c[3]오래된 방첨탑\\c[0]에서 만나야겠어.", "zh_TW": "我們應該在\\c[3]\\v[area.autumn-area.name]\\c[0]的\\c[3]方尖古塔\\c[0]見面。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "That's a \\c[3]landmark\\c[0], remember? You can just quickly teleport to it.", "de_DE": "Das ist ein \\c[3]Wegpunkt\\c[0], erinnerst du dich? Du kannst dich einfach dorthin teleportieren.", "fr_FR": "fr_FR", "langUid": 130, "zh_CN": "那是一个\\c[3]地标\\c[0]，记得吗？你可以快速传送到那里。", "ja_JP": "あの\\c[3]ランドマーク\\c[0]だよ、覚えてる？テレポートしてすぐに来れるよ。", "ko_KR": "그거 \\c[3]랜드마크\\c[0]잖아. 기억하지? 랜드마크는 바로 텔레포트 할 수 있어.", "zh_TW": "那是一個\\c[3]地標\\c[0]，記得嗎？你可以快速傳送到那裡。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "UP" } }, { "message": { "en_US": "...!", "de_DE": "...!", "fr_FR": "fr_FR", "langUid": 131, "zh_CN": "…！", "ja_JP": "...！", "ko_KR": "...!", "zh_TW": "…！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "EXCITED" } }, { "type": "END_PRIVATE_MSG" } ],
+          "elseStep": [ { "outgoing": false, "type": "RING_PRIVATE_MSG" }, { "type": "START_PRIVATE_MSG" }, { "entity": { "player": true }, "action": [ { "entity": { "party": "Emilie" }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "entity": { "party": "Emilie" }, "action": [ { "entity": { "player": true }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "...?", "de_DE": "...?", "fr_FR": "fr_FR", "langUid": 144, "zh_CN": "…？", "ja_JP": "...？", "ko_KR": "...?", "zh_TW": "…？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "SURPRISED_TOWARD" } }, { "message": { "en_US": "Oh, it's a D-Link request by Lukas!", "de_DE": "Oh! Eine D-Link-Anfrage von Lukas!", "fr_FR": "fr_FR", "langUid": 145, "zh_CN": "噢，卢卡斯的直连请求！", "ja_JP": "あっ、ルーカスからのDLだ！", "ko_KR": "오, 루카스에게서 D-링크로 연락이 왔네!", "zh_TW": "噢，盧卡斯的直連請求！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "ASTONISHED" } }, { "side": "RIGHT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "Holerö, you two!", "de_DE": "Holerö, ihr beiden!", "fr_FR": "fr_FR", "langUid": 146, "zh_CN": "你们好哟，两位！", "ja_JP": "グーテンターク、お2人さん！", "ko_KR": "안녕, 얘들아!", "zh_TW": "你們好喲，兩位！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "Bonjour, Monsieur Dark Lord!", "de_DE": "Bonjour, Monsieur von und zu Fieserich!", "fr_FR": "fr_FR", "langUid": 147, "zh_CN": "你好，黑暗领主先生！", "ja_JP": "ボンジュール、\nムッシュー・ダークロードさん！", "ko_KR": "안녕, 어둠의 제왕님!", "zh_TW": "你好，黑暗領主先生！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "TAUNTING" } }, { "message": { "en_US": "Hi!", "de_DE": "Hi!", "fr_FR": "fr_FR", "langUid": 148, "zh_CN": "你好！", "ja_JP": "やぁ！", "ko_KR": "안녕!", "zh_TW": "你好！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "Oh, I see you're in a party right now? That's just perfect!", "de_DE": "Oh, ich sehe, du bist gerade in einer Party? Das ist perfekt!", "fr_FR": "fr_FR", "langUid": 149, "zh_CN": "噢，你们在一个队伍里？太棒了！", "ja_JP": "ああ、2人でパーティーを組んでるのか？\nそいつはちょうどよかった！", "ko_KR": "이미 파티를 구성하고 있구나. 완벽해!", "zh_TW": "噢，你們在一個隊伍里？太棒了！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "UP" } }, { "message": { "en_US": "I'm here to cordially invite you to the headquarters of the\\c[3] First Scholars\\c[0]!", "de_DE": "Ich möchte euch nämlich ganz herzlich in das Hauptquartier der \\c[3]Ersten Gelehrten\\c[0] einladen!", "fr_FR": "fr_FR", "langUid": 150, "zh_CN": "我诚挚地邀请你前往\\c[3]第一学者\\c[0]的总部！", "ja_JP": "\\c[3]ファーストスカラー\\c[0]の本部に、\n2人を招待しようと思ってね！", "ko_KR": "난 너희들을 \\c[3]최초의 학자들\\c[0] 본부에 진심으로 초대하기 위해 왔어.", "zh_TW": "我誠摯地邀請你前往\\c[3]第一學者\\c[0]的總部！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "EYES_CLOSED" } }, { "message": { "en_US": "First what?", "de_DE": "Die Ersten... was?", "fr_FR": "fr_FR", "langUid": 151, "zh_CN": "第一什么？", "ja_JP": "ファースト、なに？", "ko_KR": "최초의 뭐?", "zh_TW": "第一什麼？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SUSPICIOUS" } }, { "message": { "en_US": "The \\c[3]First Scholars\\c[0], that's my guild.", "de_DE": "Die \\c[3]Ersten Gelehrten\\c[0], das ist meine Gilde.", "fr_FR": "fr_FR", "langUid": 152, "zh_CN": "\\c[3]第一学者\\c[0]，那是我的公会。", "ja_JP": "\\c[3]ファーストスカラー\\c[0]だよ。俺のギルドさ。", "ko_KR": "\\c[3]최초의 학자들\\c[0]. 내 길드야.", "zh_TW": "\\c[3]第一學者\\c[0]，那是我的公會。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "message": { "en_US": "I told the chief about you two and she said we could use a couple new members.", "de_DE": "Ich habe unserem Anführer von euch beiden erzählt, und sie meinte, wir könnten ein paar neue Mitglieder gebrauchen.", "fr_FR": "fr_FR", "langUid": 153, "zh_CN": "我已经将你们两个推荐给了首领，她认为我们应该招收你们两位新成员。", "ja_JP": "チーフにお前たち2人のことを話してみたら、\n新メンバーとして迎え入れてもいいかもって。", "ko_KR": "대장에게는 너희 둘에 대해 말해놨어. 그리고 새로운 멤버를 들여도 좋을 것 같다고 하셨지.", "zh_TW": "我已經將你們兩個推薦給了首領，她認為我們應該招收你們兩位新成員。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "WONDERING" } }, { "message": { "en_US": "Really? Are you saying we can already join a guild?", "de_DE": "Echt? Du meinst, wir können jetzt schon einer Gilde beitreten?", "fr_FR": "fr_FR", "langUid": 154, "zh_CN": "真的吗？你是说我们已经可以加入公会了吗？", "ja_JP": "ほんとに？私たち、もうギルドに入っちゃえるの？", "ko_KR": "정말? 벌써 우리가 길드에 가입하기로 되어 있는 거야?", "zh_TW": "真的嗎？你是說我們已經可以加入公會了嗎？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "ASTONISHED" } }, { "message": { "en_US": "Japp! At least never heard of any rule against it.", "de_DE": "Japp! Jedenfalls kenne ich keine Regel, die es verbietet.", "fr_FR": "fr_FR", "langUid": 155, "zh_CN": "是的！我还没有听说有任何一条规则反对你们的加入。", "ja_JP": "そうさ！そうしちゃダメなんてルール、\n聞いたこともないしな。", "ko_KR": "그럼! 그렇게 하면 안 된다는 얘기는 없었거든.", "zh_TW": "是的！我還沒有聽說有任何一條規則反對你們的加入。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "LAUGH" } }, { "message": { "en_US": "...!", "de_DE": "...!", "fr_FR": "fr_FR", "langUid": 156, "zh_CN": "…！", "ja_JP": "...！", "ko_KR": "...!", "zh_TW": "…！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "message": { "en_US": "Trop génial!", "de_DE": "Trop génial!", "fr_FR": "fr_FR", "langUid": 157, "zh_CN": "太厉害了！", "ja_JP": "もう最高！", "ko_KR": "훌륭해!", "zh_TW": "太厲害了！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "Of course the folks would like to meet you first.", "de_DE": "Natürlich wollen sie sich erst einmal mit euch treffen.", "fr_FR": "fr_FR", "langUid": 158, "zh_CN": "当然那里的成员都想先见见你们。", "ja_JP": "もちろん、まずはみんなに会ってからだけどさ。", "ko_KR": "물론 멤버들도 너희와 만나고 싶어 해.", "zh_TW": "當然那裡的成員都想先見見你們。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "EYES_CLOSED" } }, { "message": { "en_US": "So if you're not busy right now, why don't you quickly drop by?", "de_DE": "Also, wenn ihr gerade nicht zu beschäftigt seid, warum kommt ihr dann nicht kurz vorbei?", "fr_FR": "fr_FR", "langUid": 159, "zh_CN": "所以如果你们现在不忙的话，不妨来走访一下？", "ja_JP": "というわけで、もし忙しくなければささっと\n落ち合わないか？", "ko_KR": "지금 바쁘지 않으면 잠깐 들렀다 갈래?", "zh_TW": "所以如果你們現在不忙的話，不妨來走訪一下？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "message": { "en_US": "Absolutely!! We should totally go, Lea!", "de_DE": "Unbedingt!! Wir sollten sowas von gehen, Lea!", "fr_FR": "fr_FR", "langUid": 160, "zh_CN": "当然了！我们应该去的，莉亚！", "ja_JP": "もっちろん！！絶対行くべきだよ、レア！", "ko_KR": "물론이지!! 꼭 가야겠어, 레아!", "zh_TW": "當然了！我們應該去的，莉亞！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "langUid": 161, "zh_CN": "[点头]", "ja_JP": "[うなずく]", "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "Great!\\. Let's meet in \\c[3]\\v[area.autumn-area.name]\\c[0] at the \\c[3]Old Obelisk\\c[0].", "de_DE": "Fein!\\. Treffen wir uns in \\c[3]Autumn's Rise\\c[0] am \\c[3]Alten Obelisken\\c[0].", "fr_FR": "fr_FR", "langUid": 162, "zh_CN": "太棒了！\\.那我们在\\c[3]\\v[area.autumn-area.name]\\c[0]的\\c[3]方尖古塔\\c[0]见面吧。", "ja_JP": "そいつはよかった！\\.それじゃ、\\c[3]\\v[area.autumn-area.name]\\c[0]の\n\\c[3]古いオベリスク\\c[0]で会おう。", "ko_KR": "좋았어!\\. \\c[3]\\v[area.autumn-area.name]\\c[0]에 있는 \\c[3]오래된 방첨탑\\c[0]에서 만나자.", "zh_TW": "太棒了！\\.那我們在\\c[3]\\v[area.autumn-area.name]\\c[0]的\\c[3]方尖古塔\\c[0]見面吧。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "That's a \\c[3]landmark\\c[0]. You two can just quickly teleport there, remember?", "de_DE": "Das ist ein \\c[3]Wegpunkt\\c[0]. Ihr könnt euch einfach dorthin teleportieren, erinnert ihr euch?", "fr_FR": "fr_FR", "langUid": 163, "zh_CN": "那是一个\\c[3]地标\\c[0]。你们两个可以直接传送到这里，记得吗？", "ja_JP": "あそこは\\c[3]ランドマーク\\c[0]だから、テレポートしてすぐに行ける。覚えてるよな？", "ko_KR": "그거 \\c[3]랜드마크\\c[0]잖아. 기억하지? 랜드마크는 바로 텔레포트 할 수 있어.", "zh_TW": "那是一個\\c[3]地標\\c[0]。你們兩個可以直接傳送到這裡，記得嗎？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "langUid": 164, "zh_CN": "[点头]", "ja_JP": "[うなずく]", "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "Bien sûr!", "de_DE": "Bien sûr!", "fr_FR": "fr_FR", "langUid": 165, "zh_CN": "没问题！", "ja_JP": "もちろん！", "ko_KR": "잘 알고 있지!", "zh_TW": "沒問題！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "Alright, until then!", "de_DE": "Na denn, bis dann!", "fr_FR": "fr_FR", "langUid": 166, "zh_CN": "好的，到时见！", "ja_JP": "それじゃ、また後でな！", "ko_KR": "좋아, 그럼 이따 보자!", "zh_TW": "好的，到時見！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "LAUGH" } }, { "side": "LEFT", "type": "CLEAR_MSG" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 }, { "entity": { "party": "Emilie" }, "action": [ { "jumpHeight": "L", "wait": true, "ignoreSounds": true, "type": "JUMP" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "side": "LEFT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "A guild, Lea! We'll join a GUILD! Isn't that awesome?", "de_DE": "Eine Gilde, Lea! Wir werden einer GILDE beitreten! Ist das nicht toll?", "fr_FR": "fr_FR", "langUid": 167, "zh_CN": "公会，莉亚！我们加入了一个公会呀！太牛啦！", "ja_JP": "ギルドだって、レア！私たち、ギルドに入れるんだよ！最高じゃない？", "ko_KR": "길드야, 레아! 우리가 길드에 가입한다니! 멋지지 않아?", "zh_TW": "公會，莉亞！我們加入了一個公會呀！太厲害啦！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "...!!", "de_DE": "...!!", "fr_FR": "fr_FR", "langUid": 168, "zh_CN": "…！！", "ja_JP": "...！！", "ko_KR": "...!!", "zh_TW": "…！！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "EXCITED" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "type": "END_PRIVATE_MSG" }, { "entity": { "party": "Emilie" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "entity": { "player": true }, "maxTime": 4, "distance": 200, "throwing": true, "planOnly": false, "type": "NAVIGATE_ESCAPE_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" } ]
+        },
+        { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.guildEntry", "value": 10 },
+        { "type": "RESET_NPC_RUNNERS" },
+        { "ignoreSlowDown": false, "type": "WAIT", "time": 0.2 },
+        {
+          "type": "SHOW_OW_AR_MSG",
+          "entity": { "player": true },
+          "text": { "en_US": "You can now meet Schneider in Old Obelisk", "de_DE": "You can now meet Schneider in Old Obelisk", "ja_JP": "You can now meet Schneider in Old Obelisk", "ko_KR": "You can now meet Schneider in Old Obelisk", "zh_CN": "You can now meet Schneider in Old Obelisk", "zh_TW": "You can now meet Schneider in Old Obelisk", "langUid": 23343 },
+          "time": 3,
+          "mode": "LINE_FILL",
+          "color": "BLUE",
+          "yOffset": 16,
+          "hideOutsideOfScreen": false
+        }
+      ],
+      "loopCount": 1,
+      "type": { "type": "MAP_ENTERED" }
+    }
+  },
+  {
+    "type": "SET_KEY",
+    "index": "lower-key-requirement-mine",
+    "content": {
+      "frequency": "ALWAYS",
+      "repeat": "ONCE",
+      "condition": "cold-dng.elevator-on && !option.openworld-disabledTips",
+      "eventType": "CUTSCENE",
+      "overrideSideMessage": false,
+      "event": [ { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 }, { "withElse": true, "type": "IF", "condition": "!party.has.Emilie", "thenStep": [ { "type": "START_PRIVATE_MSG" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "Bonjour, Lea!", "de_DE": "Bonjour, Lea!", "fr_FR": "fr_FR", "langUid": 121, "zh_CN": "你好，莉亚！", "ja_JP": "ボンジュール、レア！", "ko_KR": "안녕, 레아!", "zh_TW": "你好，莉亞！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "Hi!", "de_DE": "Hi!", "fr_FR": "fr_FR", "langUid": 122, "zh_CN": "你好！", "ja_JP": "やぁ！", "ko_KR": "안녕!", "zh_TW": "你好！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "EXCITED" } }, { "message": { "en_US": "Are you doing the Temple Mine?", "de_DE": "Are you doing the Temple Mine?", "fr_FR": "fr_FR", "langUid": 123, "zh_CN": "Are you doing the Temple Mine?", "ja_JP": "Are you doing the Temple Mine?", "ko_KR": "Are you doing the Temple Mine?", "zh_TW": "Are you doing the Temple Mine?" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "And without waiting for me?", "de_DE": "And without waiting for me?", "fr_FR": "fr_FR", "langUid": 143, "zh_CN": "And without waiting for me?", "ja_JP": "And without waiting for me?", "ko_KR": "And without waiting for me?", "zh_TW": "And without waiting for me?" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SUSPICIOUS" } }, { "message": { "en_US": "Anyway, Lukas told me that bottom floors are easier than before.", "de_DE": "Anyway, Lukas told me that bottom floors are easier than before", "fr_FR": "fr_FR", "langUid": 124, "zh_CN": "他们好像在招收新成员！", "ja_JP": "なんでも、新しいメンバーを探してるんだってさ！", "ko_KR": "새로운 멤버를 찾는다나 봐!", "zh_TW": "他們好像在招募新成員！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "EMBARRASSED" } }, { "message": { "en_US": "...!", "de_DE": "...!", "fr_FR": "fr_FR", "langUid": 125, "zh_CN": "…！", "ja_JP": "...！", "ko_KR": "...!", "zh_TW": "…！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "message": { "en_US": "Something about requiring fewer keys?", "de_DE": "Something about requiring fewer keys?", "fr_FR": "fr_FR", "langUid": 126, "zh_CN": "我们可不应该让他们等太久对吧？", "ja_JP": "向こうの人をあんまり待たせない方がいいでしょう？", "ko_KR": "어서 빨리 가보자!", "zh_TW": "我們不應該讓他們等太久對吧？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "langUid": 127, "zh_CN": "[点头]", "ja_JP": "[うなずく]", "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "EXCITED" } }, { "message": { "en_US": "Très bien!", "de_DE": "Très bien!", "fr_FR": "fr_FR", "langUid": 128, "zh_CN": "没错！", "ja_JP": "トレビアン！", "ko_KR": "좋았어!", "zh_TW": "沒錯！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "type": "END_PRIVATE_MSG" } ], "elseStep": [ { "outgoing": false, "type": "RING_PRIVATE_MSG" }, { "type": "START_PRIVATE_MSG" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "...?", "de_DE": "...?", "fr_FR": "fr_FR", "langUid": 144, "zh_CN": "…？", "ja_JP": "...？", "ko_KR": "...?", "zh_TW": "…？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "SURPRISED_TOWARD" } }, { "message": { "en_US": "Another D-Link request by Lukas?", "de_DE": "Eine D-Link-Anfrage von Lukas?", "fr_FR": "fr_FR", "langUid": 145, "zh_CN": "噢，卢卡斯的直连请求！", "ja_JP": "あっ、ルーカスからのDLだ！", "ko_KR": "오, 루카스에게서 D-링크로 연락이 왔네!", "zh_TW": "噢，盧卡斯的直連請求！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "CURIOUS" } }, { "side": "RIGHT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "Holerö, you two!", "de_DE": "Holerö, ihr beiden!", "fr_FR": "fr_FR", "langUid": 146, "zh_CN": "你们好哟，两位！", "ja_JP": "グーテンターク、お2人さん！", "ko_KR": "안녕, 얘들아!", "zh_TW": "你們好喲，兩位！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "Sorry to interrupt your dungeon race.", "de_DE": "Sorry to interrupt your dungeon race.", "fr_FR": "fr_FR", "langUid": 159, "zh_CN": "Sorry to interrupt your dungeon race.", "ja_JP": "Sorry to interrupt your dungeon race.", "ko_KR": "Sorry to interrupt your dungeon race.", "zh_TW": "Sorry to interrupt your dungeon race." }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "message": { "en_US": "H'lin reminded me something about the dungeon.", "de_DE": "H'lin reminded me something about the dungeon.", "fr_FR": "fr_FR", "langUid": 163, "zh_CN": "H'lin reminded me something about the dungeon", "ja_JP": "H'lin reminded me something about the dungeon.", "ko_KR": "H'lin reminded me something about the dungeon.", "zh_TW": "H'lin reminded me something about the dungeon." }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "EYES_CLOSED" } }, { "message": { "en_US": "Seems you wont be needing that many keys for lower floors?", "de_DE": "Seems you wont be needing that many keys for lower floors?", "fr_FR": "fr_FR", "langUid": 163, "zh_CN": "Seems you wont be needing that many keys for lower floors?", "ja_JP": "Seems the bottom floors have less locks than before?", "ko_KR": "Seems you wont be needing that many keys for lower floors?", "zh_TW": "Seems you wont be needing that many keys for lower floors?" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "WONDERING" } }, { "message": { "en_US": "...?", "de_DE": "...?", "fr_FR": "fr_FR", "langUid": 144, "zh_CN": "…？", "ja_JP": "...？", "ko_KR": "...?", "zh_TW": "…？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "SURPRISED_TOWARD" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "langUid": 164, "zh_CN": "[点头]", "ja_JP": "[うなずく]", "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "de_DE": "D'accord", "en_US": "D'accord", "fr_FR": "fr_FR", "langUid": 165, "zh_CN": "没问题！", "ja_JP": "もちろん！", "ko_KR": "잘 알고 있지!", "zh_TW": "沒問題！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "CURIOUS" } }, { "message": { "en_US": "Okay, that was it, have fun.", "de_DE": "Okay, that was it, have fun.", "fr_FR": "fr_FR", "langUid": 166, "zh_CN": "Okay, that was it, have fun.", "ja_JP": "Okay, that was it, have fun.", "ko_KR": "Okay, that was it, have fun.", "zh_TW": "Okay, that was it, have fun." }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "LAUGH" } }, { "side": "LEFT", "type": "CLEAR_MSG" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 }, { "side": "LEFT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "SUSPICIOUS" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "What did he mean by that?", "de_DE": "What did he mean by that?", "fr_FR": "fr_FR", "langUid": 167, "zh_CN": "What did he mean by that?", "ja_JP": "What did he mean by that?", "ko_KR": "What did he mean by that?", "zh_TW": "What did he mean by that?" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SUSPICIOUS" } }, { "message": { "en_US": "...", "de_DE": "...", "fr_FR": "fr_FR", "langUid": 168, "zh_CN": "…", "ja_JP": "...", "ko_KR": "...", "zh_TW": "…" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ANNOYED" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "type": "END_PRIVATE_MSG" } ] }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.2 }, { "type": "SHOW_OW_AR_MSG", "entity": { "player": true }, "text": { "en_US": "Lower Temple Mine now requires fewer keys to progress", "de_DE": "Lower Temple Mine now requires fewer keys to progress", "ja_JP": "Lower Temple Mine now requires fewer keys to progress", "ko_KR": "Lower Temple Mine now requires fewer keys to progress", "zh_CN": "Lower Temple Mine now requires fewer keys to progress", "zh_TW": "Lower Temple Mine now requires fewer keys to progress", "langUid": 23343 }, "time": 3, "mode": "LINE_FILL", "color": "BLUE", "yOffset": 16, "hideOutsideOfScreen": false } ],
+      "loopCount": 1,
+      "type": { "type": "MAP_ENTERED" }
+    }
+  }
+]

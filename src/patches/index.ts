@@ -1,6 +1,8 @@
 import type MwRandomizer from "../plugin";
 
 import { patch as patchMwModel } from "./multiworld-model";
+import { patch as patchOptions } from "./options";
+import { patch as patchOpenWorld } from "./openworld";
 import { patch as patchBotanics } from "./botanics";
 import { patch as patchChest } from "./chest";
 import { patch as patchEntities } from "./entity";
@@ -9,6 +11,7 @@ import { patch as patchMarquee } from "./marquee";
 import { patch as patchGui } from "./gui-misc";
 import { patch as patchMWHud } from "./multiworld-hud";
 import { patch as patchQuest } from "./quest";
+import { patch as patchQuestHub } from "./quest-hub";
 import { patch as patchShop } from "./shop";
 import { patch as patchNewGame } from "./new-game";
 import { patch as patchTextClient } from "./text-client";
@@ -19,6 +22,8 @@ import { patch as patchDeathLink } from "./deathlink.ts";
 
 export function applyPatches(plugin: MwRandomizer) {
 	patchMwModel(plugin);
+	patchOptions(plugin);
+	patchOpenWorld(plugin);
 	patchBotanics(plugin);
 	patchChest(plugin);
 	patchEntities(plugin);
@@ -27,6 +32,7 @@ export function applyPatches(plugin: MwRandomizer) {
 	patchGui(plugin);
 	patchMWHud(plugin);
 	patchQuest(plugin);
+	patchQuestHub(plugin);
 	patchShop(plugin);
 	patchNewGame(plugin);
 	patchTextClient(plugin);

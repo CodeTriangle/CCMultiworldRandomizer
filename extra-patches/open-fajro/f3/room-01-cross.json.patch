@@ -1,0 +1,61 @@
+[
+	{
+		"type": "ENTER",
+		"index": [
+			"entities"
+		]
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add the touch trigger just in case to trigger the reverse",
+		"content": {
+			"type": "TouchTrigger",
+			"x": 640,
+			"y": 320,
+			"level": 4,
+			"settings": {
+				"size": { "x": 32, "y": 48 },
+				"mapId": 46,
+				"variable": "heat-dng.eastCorridorReverse",
+				"type": "SET_TRUE",
+				"zHeight": 32,
+				"shape": "RECTANGLE"
+			}
+		}
+	},
+	{
+        "type": "ENTER",
+        "index": [3, "settings"]
+    },
+    {
+        "_comment": "Make the east door open by default",
+        "type": "SET_KEY",
+        "index": "condition"
+    },
+	{
+        "type": "SET_KEY",
+        "index": "blockEvent",
+		"content": [
+			{
+                "changeType": "set",
+                "type": "CHANGE_VAR_BOOL",
+                "varName": "heat-dng.eastCorridorReverse",
+                "value": true
+            }
+		]
+    },
+	{
+        "_comment": "Set the variable from this rather than a separate touch trigger",
+        "type": "SET_KEY",
+        "index": "blockEventCondition",
+		"content": "!heat-dng.f4.corridor-east && !heat-dng.eastCorridorReverse"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+	{
+		"type": "EXIT",
+		"count": 1
+	}
+]

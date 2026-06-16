@@ -1,0 +1,33 @@
+[
+  {
+      "type": "ENTER",
+      "index": ["entities"]
+  },
+
+  {
+    "type": "FOR_IN",
+    "_comment": "Removes story events",
+    "keyword": "__INDEX__",
+    "values": [445, 451, 455, 456, 463, 394, 408, 411, 413],
+    "body": [{
+      "type": "ENTER",
+      "index": ["__INDEX__",  "settings"]
+    },{
+      "type": "SET_KEY",
+      "index": "startCondition",
+      "content": "false"
+    },{
+      "type": "EXIT",
+      "count": 2
+    }]
+  },
+
+  { "type": "ENTER", "_comment": "Unlock quest hub door only on with extra quests on", "index": [287,  "settings"] },
+  { "type": "SET_KEY", "index": "condition", "content": "open-world.extraQuests" },
+  { "type": "EXIT", "count": 2 },
+
+  {
+    "type": "EXIT",
+    "count": 1
+  }
+]

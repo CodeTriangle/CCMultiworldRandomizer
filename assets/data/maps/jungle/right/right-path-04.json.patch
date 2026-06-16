@@ -1,0 +1,11 @@
+[
+    { "type": "IF", 
+    "_comment": "Adds corresponding patch if Closed Gaia is on Full mode", 
+    "cond": "ig.vars.get('open-world.closedGaia') == 2", 
+    "thenSteps": [{ "type": "INCLUDE", "src": "mod:extra-patches/enclosed-gaia/right/right-path-04.json.patch" }] },
+
+    { "type": "ENTER", "index": ["entities"] },
+
+
+    { "type": "EXIT" }    
+]

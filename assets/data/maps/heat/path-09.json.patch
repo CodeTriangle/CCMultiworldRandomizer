@@ -1,0 +1,41 @@
+[
+  { "type": "ENTER", "index": [ "entities" ] },
+  {
+    "_comment": "Anti Softlock on chest",
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {"type":"TouchTrigger","x":736,"y":480,"level":1,"settings":{"size":{"x":64,"y":32},"mapId":977,"type":"WHILE_TOUCH_TRUE","shape":"RECTANGLE","zHeight":16,"variable":"map.wallDown1","name":"antiSoftlockWarriors"}}
+  },
+  {
+    "_comment": "Anti Softlock on chest",
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {"type":"TouchTrigger","x":728,"y":664,"level":1,"settings":{"size":{"x":64,"y":32},"mapId":978,"type":"WHILE_TOUCH_TRUE","shape":"RECTANGLE","zHeight":16,"variable":"map.wallDown1","name":"antiSoftlockWarriors"}}
+  },
+
+  { "type": "ENTER", "index": [ 287, "settings" ] },
+  {
+      "_comment": "Anti Respawn on chest v2",
+      "type": "SET_KEY",
+      "index": "variable",
+      "content": "map.chestWallDown1"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [ 4, "settings" ] },
+  {
+      "_comment": "Anti Respawn on chest wall v2",
+      "type": "SET_KEY",
+      "index": "condition",
+      "content": "(!map.wallDown1) && (!map.chestWallDown1)"
+  },
+  { "type": "EXIT", "count": 2 },
+  { "type": "ENTER", "index": [ 0, "settings" ] },
+  {
+      "_comment": "Anti Respawn on chest wall v2",
+      "type": "SET_KEY",
+      "index": "condition",
+      "content": "(!map.wallDown1) && (!map.chestWallDown1)"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "EXIT", "count": 1 }
+]

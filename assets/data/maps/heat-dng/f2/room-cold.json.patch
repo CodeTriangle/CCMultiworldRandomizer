@@ -1,0 +1,230 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [64, "settings"]
+    },
+    {
+        "_comment": "Changing the intro cutscene so it doesnt perma walk around",
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.5
+                    },
+                    {
+                        "pos": {
+                            "x": 368,
+                            "y": 384
+                        },
+                        "speed": "NORMAL",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0,
+                        "zoom": 1,
+                        "type": "SET_CAMERA_POS"
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "map.upgradeVisible",
+                        "value": true
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.6
+                    },
+                    {
+                        "speed": "NORMAL",
+                        "transition": "EASE_IN_OUT",
+                        "wait": false,
+                        "waitSkip": 0,
+                        "type": "RESET_CAMERA"
+                    }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "index": [79,"settings"]
+    },
+    {
+        "_comment": "Changing the race continue event 1 to fit heat dungeon progress",
+        "type": "SET_KEY",
+        "index": "endCondition",
+        "content": "plot.heatDng >= 6150"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "index": [59,"settings"]
+    },
+    {
+        "_comment": "Changing the race continue event 2 to fit heat dungeon progress",
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [
+                    {
+                        "entity": {
+                            "player": true
+                        },
+                        "action": [
+                            {
+                                "face": "NORTH",
+                                "rotate": true,
+                                "rotateSpeed": 3,
+                                "type": "SET_FACE"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": false,
+                        "keepState": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "pos": {
+                            "x": 192,
+                            "y": 604
+                        },
+                        "speed": "FAST",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0,
+                        "zoom": 1,
+                        "type": "SET_CAMERA_POS"
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "map.wallSWDown",
+                        "value": true
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.5
+                    },
+                    {
+                        "pos": {
+                            "x": 216,
+                            "y": 216
+                        },
+                        "speed": "FASTER",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0,
+                        "zoom": 1,
+                        "type": "SET_CAMERA_POS"
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "map.wallNWdown",
+                        "value": true
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.5
+                    },
+                    {
+                        "speed": "FAST",
+                        "transition": "EASE_IN_OUT",
+                        "wait": false,
+                        "waitSkip": 0,
+                        "type": "RESET_CAMERA"
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_NUMBER",
+                        "varName": "plot.line",
+                        "value": 6150
+                    },
+                    {
+                        "type": "RESET_TIMER",
+                        "name": "heat-dng"
+                    },
+                    {
+                        "type": "RESUME_TIMER",
+                        "name": "heat-dng"
+                    },
+                    {
+                        "message": {
+                            "en_US": "Okay, race now officially continues!",
+                            "de_DE": "Okay, Pause ist nun offiziell vorbei!",
+                            "fr_FR": "fr_FR",
+                            "zh_CN": "好嘞，比赛再开！",
+                            "ja_JP": "よーし、レースは正式に再開だよ！<<A<<[CHANGED 2017/08/03]",
+                            "langUid": 5,
+                            "ko_KR": "좋아, 이제 공식적으로 시합은 계속된다!",
+                            "zh_TW": "好了，比賽再開！"
+                        },
+                        "type": "SHOW_SIDE_MSG",
+                        "person": {
+                            "person": "main.emilie",
+                            "expression": "DETERMINED"
+                        }
+                    },
+                    {
+                        "message": {
+                            "en_US": "Here we go!",
+                            "de_DE": "Los geht's!",
+                            "fr_FR": "fr_FR",
+                            "zh_CN": "走喽！",
+                            "ja_JP": "さあ、行きましょう！<<A<<[CHANGED 2017/08/03]",
+                            "langUid": 6,
+                            "ko_KR": "출발!",
+                            "zh_TW": "走嘍！"
+                        },
+                        "type": "SHOW_SIDE_MSG",
+                        "person": {
+                            "person": "main.glasses",
+                            "expression": "SMILE"
+                        }
+                    },
+                    {
+                        "message": {
+                            "en_US": "...!",
+                            "de_DE": "...!",
+                            "fr_FR": "fr_FR",
+                            "zh_CN": "...!",
+                            "ja_JP": "...！<<A<<[CHANGED 2017/08/03]",
+                            "langUid": 7,
+                            "ko_KR": "...!",
+                            "zh_TW": "...!"
+                        },
+                        "type": "SHOW_SIDE_MSG",
+                        "person": {
+                            "person": "main.lea",
+                            "expression": "DETERMINED"
+                        }
+                    }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }    
+    
+]

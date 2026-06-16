@@ -1,0 +1,14 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+ 
+    { "type": "EXIT" },
+    {
+        "type": "IF",
+        "_comment": "Adds corresponding patch if Extra Quests is active",
+        "cond": "ig.vars.get('open-world.extraQuests') >= 1",
+        "thenSteps": [{
+        "type": "INCLUDE",
+        "src": "mod:extra-patches/extra-quests/fall-trailblazing/henry_path-01.json.patch"
+        }]
+    }
+]

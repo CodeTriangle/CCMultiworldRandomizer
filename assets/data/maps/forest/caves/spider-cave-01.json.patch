@@ -1,0 +1,36 @@
+[
+	{ "type": "ENTER", "index": [ "entities" ] },
+	{
+		"type": "ENTER",
+		"index": [ 222, "settings", "npcStates" ]
+	},
+	{
+		"_comment": "Separate quest from main quest",
+		"type": "SET_KEY",
+		"index": 0,
+		"content": {
+			"reactType": "FIXED_POS",
+			"face": "SOUTH",
+			"permaFx": {
+				"sheet": "npc",
+				"name": "bugLight"
+			},
+			"hidden": false,
+			"condition": "!quest.bug-hunting-heat.started",
+			"config": "normal",
+			"event": {
+				"quest": [ { "text": { "en_US": "..A Trial it is you seek, and a trial you shall receive... ", "langUid": 2, "ja_JP": "...これはお前が探し求め、そして受けるべき試練...<<A<<[CHANGED 2018/05/01]", "ko_KR": "...당신이 원하는 건 시험, 그러면 시험을 받을 것입니다...<<A<<[CHANGED 2018/05/01]", "zh_CN": "...寻找试炼，接受试炼...<<A<<[CHANGED 2018/05/01]", "de_DE": "... Du willst dich also prüfen lassen, so wollen wir dich prüfen...", "zh_TW": "...尋找試煉，接受試煉...<<A<<[CHANGED 2018/05/01]" }, "entity": { "global": true, "name": "bug" }, "posType": "TOP", "offset": { "x": 0, "y": 0 }, "type": "SHOW_DREAM_MSG" }, { "entity": { "global": true, "name": "bug" }, "action": [ { "face": "WEST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "type": "WAIT", "time": 0.1 }, { "face": "WEST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "pos": { "x": 436, "y": 512 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "type": "OPEN_QUEST_DIALOG", "quest": "bug-hunting-heat", "npc": "", "accepted": [ { "volume": 1, "name": "", "loop": false, "offset": 0, "startTime": 0, "speed": 0.8, "global": false, "sound": "media/sound/environment/stone-door-small.ogg", "type": "PLAY_SOUND" },{ "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.hideShadow", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "entity": { "global": true, "name": "bug" }, "action": [ { "entity": { "player": true }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "type": "WAIT", "time": 0.1 }, { "entity": { "global": true, "name": "bug" }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "type": "RESET_CAMERA" },{ "text": { "en_US": "...A warrior must stay focused even when surrounded...", "langUid": 6, "ja_JP": "...周囲を敵に囲まれても、戦士は精神を集中せねばならない...<<A<<[CHANGED 2018/05/01]", "ko_KR": "...전사는 포위된 상태에서도 계속 집중해야 합니다...<<A<<[CHANGED 2018/05/01]", "zh_CN": "...万军围困也应从容不迫...<<A<<[CHANGED 2018/05/01]", "de_DE": "... Ein Krieger bleibt stets konzentriert, auch wenn er umzingelt wird...", "zh_TW": "...萬軍圍困也應從容不迫...<<A<<[CHANGED 2018/05/01]" }, "entity": { "global": true, "name": "bug" }, "posType": "TOP", "offset": { "x": 0, "y": 0 }, "type": "SHOW_DREAM_MSG" }, { "text": { "en_US": "...This trial will test both strength and speed...", "langUid": 7, "ja_JP": "...この試練はパワーとスピードを試すものだ...<<A<<[CHANGED 2018/05/01]", "ko_KR": "...이 시험에서는 힘과 속도를 모두 시험할 것입니다...<<A<<[CHANGED 2018/05/01]", "zh_CN": "...此试炼将测试你的力量和速度...<<A<<[CHANGED 2018/05/01]", "de_DE": "... Diese Prüfung wird sowohl deine Stärke als auch deine Geschwindigkeit testen...", "zh_TW": "...此試煉將測試你的力量和速度...<<A<<[CHANGED 2018/05/01]" }, "entity": { "global": true, "name": "bug" }, "posType": "TOP", "offset": { "x": 0, "y": 0 }, "type": "SHOW_DREAM_MSG" }, { "text": { "en_US": "...As your foes are fast and will grow in numbers even faster...", "langUid": 4, "ja_JP": "...お前の敵はすばやく、数もどんどん増えていく...<<A<<[CHANGED 2018/09/19]", "ko_KR": "...적들은 빠르게, 더 빠르게 증식할 겁니다...<<A<<[CHANGED 2018/09/19]", "zh_CN": "...因为你的敌人行动迅捷，越多且越发迅捷...<<A<<[CHANGED 2018/09/19]", "de_DE": "... Denn deine Feinde sind schnell und wachsen in ihrer Zahl noch schneller...", "zh_TW": "...因為你的敵人行動迅捷，越多且越發迅捷...<<A<<[CHANGED 2018/09/19]" }, "entity": { "global": true, "name": "bug" }, "posType": "TOP", "offset": { "x": 0, "y": 0 }, "type": "SHOW_DREAM_MSG" }, { "text": { "en_US": "...Now step into the ring and show us your \\c[3]Vigor\\c[0]...", "langUid": 5, "ja_JP": "...さあ、リングに足を踏み入れ、お前の\\c[3]活力\\c[0]を見せるがいい...<<A<<[CHANGED 2018/05/01]", "ko_KR": "...이제 링에 들어가서 당신의 \\c[3]활력\\c[0]을 보여주십시오...<<A<<[CHANGED 2018/05/01]", "zh_CN": "...那么站进圆圈，展示你的\\c[3]体力\\c[0]吧...<<A<<[CHANGED 2018/05/01]", "de_DE": "... Nun tritt in den Ring und demonstriere uns deine \\c[3]Kraft\\c[0]...", "zh_TW": "...那麼站進圓圈，展示你的\\c[3]體力\\c[0]吧...<<A<<[CHANGED 2018/05/01]" }, "entity": { "global": true, "name": "bug" }, "posType": "TOP", "offset": { "x": 0, "y": 0 }, "type": "SHOW_DREAM_MSG" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.bugTalk", "value": true }, { "withElse": false, "type": "IF", "condition": "party.has.Emilie", "thenStep": [ { "message": { "en_US": "We have to fight now? Please just let it be spiders...", "langUid": 82, "zh_CN": "我们现在要进行战斗？拜托是蜘蛛...<<A<<[CHANGED 2018/07/09]", "ja_JP": "今戦わなきゃいけないの？\nお願いだからクモであって...<<A<<[CHANGED 2018/07/09]", "ko_KR": "지금 싸워야 해? 그냥 평범한 거미여라...<<A<<[CHANGED 2018/07/09]", "de_DE": "Wir sollen kämpfen? Bitte lass es nur Spinnen sein...", "zh_TW": "我們現在要進行戰鬥？拜託是蜘蛛...<<A<<[CHANGED 2018/07/09]" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.emilie", "expression": "BROKEN" } }, { "withElse": true, "type": "IF", "condition": "party.has.Glasses", "thenStep": [ { "message": { "en_US": "Now that's a plea I never imagined hearing...", "langUid": 368, "zh_CN": "我还真没听到过这么诡异的请求...<<A<<[CHANGED 2018/07/09]", "ja_JP": "そんなお願い、聞くことになるとは\n思いませんでした...<<A<<[CHANGED 2018/07/09]", "ko_KR": "그런 소원을 들을 줄은 몰랐는데...<<A<<[CHANGED 2018/07/09]", "de_DE": "Uff, das nenne ich mal eine verzweifelte Bitte...", "zh_TW": "我還真沒聽到過這麼詭異的請求...<<A<<[CHANGED 2018/07/09]" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.glasses", "expression": "EXHAUSTED" } } ], "elseStep": [ { "withElse": false, "type": "IF", "condition": "party.has.Joern", "thenStep": [ { "message": { "en_US": "Emilie, please. No spiders, either!", "langUid": 369, "zh_CN": "艾米莉，拜托。千万别是蜘蛛！<<A<<[CHANGED 2018/07/09]", "ja_JP": "エミリー、頼むよ。\nクモもよしてくれ！<<A<<[CHANGED 2018/07/09]", "ko_KR": "에밀리, 진정해. 나도 거미는 싫어!<<A<<[CHANGED 2018/07/09]", "de_DE": "Emilie, bitte. Auch keine Spinnen!", "zh_TW": "艾米莉，拜託。千萬不要是蜘蛛！<<A<<[CHANGED 2018/07/09]" }, "type": "SHOW_SIDE_MSG", "person": { "person": "antagonists.sidekick", "expression": "SURPRISED" } } ] } ] } ] }, { "marker": { "global": true, "name": "bugMarker" }, "type": "SAVE" } ], "declined": [] } ]
+			}
+		}
+	},
+	{ "type": "ENTER", "index": 5 },
+	{
+		"_comment": "Make the rechallenge need its own quest solved",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content": "quest.bug-hunting.solved && quest.bug-hunting-heat.solved"
+	},
+	{ "type": "EXIT", "count": 4 },
+
+	{ "type": "EXIT", "count": 1 }
+]

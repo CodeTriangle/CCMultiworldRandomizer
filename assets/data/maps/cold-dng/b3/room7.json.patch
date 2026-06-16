@@ -13,5 +13,53 @@
 				"index": 1
 			}
 		]
-	}
+	},
+	{ "type": "EXIT", "count": 5 },
+
+	{ "type": "ENTER", "index": "entities" },
+
+    { "type": "ENTER", "index": [52, "settings"] },
+    {
+        "type": "SET_KEY",
+        "_comment": "Make smelter digmo spawn only if infected digmo died",
+        "index": "spawnCondition",
+        "content": "quest.rftc-3-metalstuff.task.3 && map.allowSmelter"
+    },
+    { "type": "EXIT", "count": 2 },
+
+    { "type": "ENTER", "index": [55, "settings"] },
+    {
+        "type": "SET_KEY",
+        "_comment": "Make smelter fight only activable once reenter and boss is dead",
+        "index": "startCondition",
+        "content": "quest.rftc-3-metalstuff.task.3 && map.allowSmelter"
+    },
+    { "type": "EXIT", "count": 2 },
+    
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "_comment": "Add an event to check if boss is dead, then allow spawning smelter digmo",
+        "content": {
+			"type": "EventTrigger",
+			"x": 508,
+			"y": 666,
+			"level": 1,
+			"settings": {
+				"size": { "x": 16, "y": 16 },
+				"mapId": 71,
+				"event": [
+					{ "type": "CHANGE_VAR_BOOL", "varName": "map.allowSmelter", "changeType": "set", "value": "true" }
+				],
+				"eventType": "PARALLEL",
+				"triggerType": "ONCE_PER_ENTRY",
+				"startCondition": "map.bossKilled",
+				"name": "smelterFix",
+				"endCondition": "map.questBossKilled"
+			}
+		}
+    },
+
+
+    { "type": "EXIT", "count": 1 }
 ]
+>>>>>>> 0.5.4

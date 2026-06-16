@@ -1,0 +1,48 @@
+[
+    {
+        "type": "INCLUDE",
+        "src": "mod:assets/data/maps/jungle/dng/shock-expo-space.json.patch"
+    },
+
+    {
+        "type": "ENTER",
+        "index": "entities"
+    },
+
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "_comment": "Check for boss kill on Vermillion Tower",
+        "content": {
+            "type": "EventTrigger",
+            "x": 11,
+            "y": 5,
+            "level": 0,
+            "settings": {
+                "mapId": 35,
+                "event": [
+                    {
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "map.phantomDead",
+                        "changeType": "set",
+                        "value": true,
+                        "map": "arid.town-1"
+                    },
+                    {
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.shadeGiven",
+                        "changeType": "set",
+                        "value": true
+                    }
+                ],
+                "name": "coldBoss",
+                "eventType": "PARALLEL",
+                "startCondition": "",
+                "endCondition": "tmp.shadeGiven",
+                "triggerType": "ONCE"
+            }
+        }
+    },
+    {
+        "type": "EXIT"
+    }
+]

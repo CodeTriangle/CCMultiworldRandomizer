@@ -1,0 +1,502 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "_comment": "Add steps to event for skipping tower entirely, enabling all floors after first fight",
+        "index": [30,"settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "event",
+        "content":  [
+                    {
+                        "value": false,
+                        "type": "SET_FORCE_COMBAT"
+                    },
+                    {
+                        "type": "CALL_EVENT_FROM_SHEET",
+                        "eventCall": {
+                            "path": "puzzle",
+                            "name": "focusEnemyCounterCompact",
+                            "input": {
+                                "counterPos": {
+                                    "x": 368,
+                                    "y": 152
+                                },
+                                "targetPos": {
+                                    "x": 368,
+                                    "y": 304
+                                },
+                                "wait": 0,
+                                "postCondition": "map.postDone",
+                                "variable": "tmp.designer"
+                            }
+                        }
+                    },
+                    {
+                        "pos": {
+                            "x": 368,
+                            "y": 304
+                        },
+                        "speed": "FAST",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0.1,
+                        "zoom": 1.5,
+                        "type": "SET_CAMERA_POS"
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.designer",
+                        "value": true
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.05
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "designer"
+                        },
+                        "action": [
+                            {
+                                "value": 16,
+                                "type": "SET_FLOAT_HEIGHT"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": false,
+                        "keepState": true,
+                        "immediately": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "designer"
+                        },
+                        "duration": 0,
+                        "align": "CENTER",
+                        "group": "",
+                        "wait": false,
+                        "waitSkip": 0,
+                        "type": "SHOW_EFFECT",
+                        "effect": {
+                            "sheet": "scene.designer",
+                            "name": "designerAppear"
+                        },
+                        "offset": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "designer"
+                        },
+                        "duration": -1,
+                        "align": "CENTER",
+                        "group": "",
+                        "wait": false,
+                        "waitSkip": 0,
+                        "type": "SHOW_EFFECT",
+                        "effect": {
+                            "sheet": "scene.designer",
+                            "name": "designerAuraDark"
+                        },
+                        "offset": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.3
+                    },
+                    {
+                        "entity": {
+                            "player": true
+                        },
+                        "action": [
+                            {
+                                "kind": "NAMED_ENTITY",
+                                "key": "designer",
+                                "type": "SET_TEMP_TARGET"
+                            },
+                            {
+                                "value": true,
+                                "type": "FACE_TO_TARGET"
+                            },
+                            {
+                                "value": 0.3,
+                                "type": "SET_RELATIVE_SPEED"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "min": 0,
+                                        "max": 32,
+                                        "negated": false,
+                                        "type": "TARGET_DISTANCE"
+                                    }
+                                ],
+                                "withElse": false,
+                                "type": "COMBAT_IF",
+                                "thenStep": [
+                                    {
+                                        "min": 48,
+                                        "max": 1000,
+                                        "maxTime": 1,
+                                        "forceTime": false,
+                                        "stopBeforeEdge": false,
+                                        "type": "MOVE_TO_DISTANCE"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "WAIT",
+                                "time": 0.5
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": false,
+                        "keepState": false,
+                        "immediately": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "zoom": 1,
+                        "duration": 3,
+                        "transition": "EASE_IN_OUT",
+                        "type": "SET_CAMERA_ZOOM"
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.8
+                    },
+                    {
+                        "side": "LEFT",
+                        "order": 0,
+                        "clearSide": false,
+                        "type": "ADD_MSG_PERSON",
+                        "person": {
+                            "person": "antagonists.designer",
+                            "expression": "DEFAULT_AR"
+                        }
+                    },
+                    {
+                        "message": {
+                            "en_US": "We seek the ultimate experience.",
+                            "langUid": 10,
+                            "de_DE": "Unser Streben gilt allein der ultimativen Erfahrung.",
+                            "ja_JP": "\u6211\u3005\u306f\u7a76\u6975\u306e\u7d4c\u9a13\u3092\n\u63a2\u3057\u6c42\u3081\u3066\u304d\u305f\u3002<<A<<[CHANGED 2018\/08\/01]",
+                            "ko_KR": "\uc6b0\ub9b0 \uad81\uadf9\uc758 \uacbd\ud5d8\uc744 \ucc3e\uace0 \uc788\uc5b4.<<A<<[CHANGED 2018\/08\/01]",
+                            "zh_CN": "\u6211\u4eec\u60f3\u8981\u7ec8\u6781\u7684\u4f53\u9a8c\u3002<<A<<[CHANGED 2018\/08\/01]",
+                            "zh_TW": "\u6211\u5011\u60f3\u8981\u7d42\u6975\u7684\u9ad4\u9a57\u3002<<A<<[CHANGED 2018\/08\/01]"
+                        },
+                        "autoContinue": false,
+                        "type": "SHOW_MSG",
+                        "person": {
+                            "person": "antagonists.designer",
+                            "expression": "DEFAULT_AR"
+                        }
+                    },
+                    {
+                        "message": {
+                            "en_US": "That is why we create.",
+                            "langUid": 11,
+                            "de_DE": "Darum erschaffen wir.",
+                            "ja_JP": "\u305d\u308c\u3053\u305d\u6211\u3005\u304c\n\u5275\u9020\u3059\u308b\u7406\u7531\u3060\u3002<<A<<[CHANGED 2018\/08\/01]",
+                            "ko_KR": "\uadf8\uac78 \uc704\ud574 \ucc3d\uc870\ud558\ub294 \uac70\uc9c0.<<A<<[CHANGED 2018\/08\/01]",
+                            "zh_CN": "\u8fd9\u5c31\u662f\u6211\u4eec\u521b\u9020\u7684\u539f\u56e0\u3002<<A<<[CHANGED 2018\/08\/01]",
+                            "zh_TW": "\u9019\u5c31\u662f\u6211\u5011\u5275\u9020\u7684\u539f\u56e0\u3002<<A<<[CHANGED 2018\/08\/01]"
+                        },
+                        "autoContinue": false,
+                        "type": "SHOW_MSG",
+                        "person": {
+                            "person": "antagonists.designer",
+                            "expression": "DOWN_AR"
+                        }
+                    },
+                    {
+                        "message": {
+                            "en_US": "Vast forests, majestic mountains, mysterious caves...",
+                            "langUid": 12,
+                            "de_DE": "Weite W\u00e4lder, majest\u00e4tische Berge, mysteri\u00f6se H\u00f6hlen...",
+                            "ja_JP": "\u5e83\u5927\u306a\u68ee\u3001\u5802\u3005\u305f\u308b\u5c71\u3005\u3001\n\u795e\u79d8\u7684\u306a\u6d1e\u7a9f...<<A<<[CHANGED 2018\/08\/01]",
+                            "ko_KR": "\uad11\ud65c\ud55c \uc232, \uc7a5\uc5c4\ud55c \uc0b0, \ubd88\uac00\uc0ac\uc758\ud55c \ub3d9\uad74...<<A<<[CHANGED 2018\/08\/01]",
+                            "zh_CN": "\u4e00\u671b\u65e0\u9645\u7684\u68ee\u6797\uff0c\u9ad8\u8038\u5165\u4e91\u7684\u5c71\u5cf0\uff0c\u795e\u79d8\u83ab\u6d4b\u7684\u6d1e\u7a74...<<A<<[CHANGED 2018\/08\/01]",
+                            "zh_TW": "\u4e00\u671b\u7121\u969b\u7684\u68ee\u6797\uff0c\u9ad8\u8073\u5165\u96f2\u7684\u5c71\u5cf0\uff0c\u795e\u79d8\u83ab\u6e2c\u7684\u6d1e\u7a74...<<A<<[CHANGED 2018\/08\/01]"
+                        },
+                        "autoContinue": false,
+                        "type": "SHOW_MSG",
+                        "person": {
+                            "person": "antagonists.designer",
+                            "expression": "TOWARD_AR"
+                        }
+                    },
+                    {
+                        "message": {
+                            "en_US": "Any place that can harbor a story and nourish a memory.",
+                            "langUid": 13,
+                            "de_DE": "Orte, die eine Geschichte haben und Erinnerungen hervorrufen.",
+                            "ja_JP": "\u7269\u8a9e\u3068\u8c4a\u304b\u306a\u8a18\u61b6\u304c\u5bbf\u308a\u3046\u308b\u3001\n\u3042\u308a\u3068\u3042\u3089\u3086\u308b\u5834\u6240\u3002<<A<<[CHANGED 2018\/08\/01]",
+                            "ko_KR": "\uc774\uc57c\uae30\ub97c \ud488\uace0 \uae30\uc5b5\uc744 \uc81c\uacf5\ud560 \uc218 \uc788\ub294 \uadf8 \uc5b4\ub5a4 \uacf3\uc774\ub4e0.<<A<<[CHANGED 2018\/08\/01]",
+                            "zh_CN": "\u53ea\u8981\u80fd\u591f\u5bb9\u7eb3\u6545\u4e8b\uff0c\u4f9b\u517b\u8bb0\u5fc6\u3002<<A<<[CHANGED 2018\/08\/01]",
+                            "zh_TW": "\u53ea\u8981\u80fd\u5920\u5bb9\u7d0d\u6545\u4e8b\uff0c\u4f9b\u990a\u8a18\u61b6\u3002<<A<<[CHANGED 2018\/08\/01]"
+                        },
+                        "autoContinue": false,
+                        "type": "SHOW_MSG",
+                        "person": {
+                            "person": "antagonists.designer",
+                            "expression": "CONDESCENDING_AR"
+                        }
+                    },
+                    {
+                        "message": {
+                            "en_US": "We created it all.",
+                            "langUid": 14,
+                            "de_DE": "All das haben wir erschaffen.",
+                            "ja_JP": "\u305d\u306e\u3059\u3079\u3066\u3092\n\u6211\u3005\u304c\u5275\u9020\u3057\u305f\u3002<<A<<[CHANGED 2018\/08\/01]",
+                            "ko_KR": "\uc6b0\ub9ac\uac00 \uadf8 \ubaa8\ub4e0 \uac78 \ucc3d\uc870\ud588\uc5b4.<<A<<[CHANGED 2018\/08\/01]",
+                            "zh_CN": "\u6211\u4eec\u90fd\u4f1a\u628a\u4ed6\u4eec\u521b\u9020\u51fa\u6765\u3002<<A<<[CHANGED 2018\/08\/01]",
+                            "zh_TW": "\u6211\u5011\u90fd\u6703\u628a\u4ed6\u5011\u5275\u9020\u51fa\u4f86\u3002<<A<<[CHANGED 2018\/08\/01]"
+                        },
+                        "autoContinue": false,
+                        "type": "SHOW_MSG",
+                        "person": {
+                            "person": "antagonists.designer",
+                            "expression": "DOWN_AR"
+                        }
+                    },
+                    {
+                        "side": "ALL",
+                        "type": "CLEAR_MSG"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "designer"
+                        },
+                        "type": "CLEAR_EFFECTS"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "designer"
+                        },
+                        "duration": 0,
+                        "align": "CENTER",
+                        "group": "",
+                        "wait": false,
+                        "waitSkip": 0,
+                        "type": "SHOW_EFFECT",
+                        "effect": {
+                            "sheet": "scene.designer",
+                            "name": "designerDisappear"
+                        },
+                        "offset": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.designer",
+                        "value": false
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.8
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "map.elevator",
+                        "value": true
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.5
+                    },
+                    {
+                        "pos": {
+                            "x": 368,
+                            "y": 396
+                        },
+                        "speed": "FAST",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0,
+                        "zoom": 1,
+                        "type": "SET_CAMERA_POS"
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "map.elevatorSign",
+                        "value": true
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.2
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "g.last-dng.floor0",
+                        "value": true
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.2
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "g.last-dng.floor1",
+                        "value": true
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.2
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "g.last-dng.floor3",
+                        "value": true
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "g.last-dng.floor4",
+                        "value": true
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "g.last-dng.floorEnd",
+                        "value": true
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "g.last-dng.floor2",
+                        "value": true
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.barrier",
+                        "value": false
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.2
+                    },
+                    {
+                        "speed": "NORMAL",
+                        "transition": "EASE_IN_OUT",
+                        "wait": false,
+                        "waitSkip": 0,
+                        "type": "RESET_CAMERA"
+                    }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "_comment": "Add extra event as safety in case floors dont get skip",
+        "content": {
+            "type": "EventTrigger",
+            "x": 578,
+            "y": 527,
+            "level": 1,
+            "settings": {
+                "size": {
+                    "x": 16,
+                    "y": 16
+                },
+                "mapId": 39,
+                "event": [
+                    {
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "g.last-dng.floor2",
+                        "changeType": "set",
+                        "value": "true"
+                    },
+                    {
+                        "type": "WAIT",
+                        "time": 0.2
+                    },
+                    {
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "g.last-dng.floor3",
+                        "changeType": "set",
+                        "value": "true"
+                    },
+                    {
+                        "type": "WAIT",
+                        "time": 0.2
+                    },
+                    {
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "g.last-dng.floor4",
+                        "changeType": "set",
+                        "value": "true"
+                    },
+                    {
+                        "type": "WAIT",
+                        "time": 0.2
+                    },
+                    {
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "g.last-dng.floorEnd",
+                        "changeType": "set",
+                        "value": "true"
+                    },
+                    {
+                        "type": "WAIT",
+                        "time": 0.2
+                    }
+                ],
+                "name": "FloorFixer",
+                "eventType": "CUTSCENE",
+                "triggerType": "ALWAYS",
+                "startCondition": "g.last-dng.floor1",
+                "endCondition": "g.last-dng.floorEnd"
+            }
+        }
+    },
+
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

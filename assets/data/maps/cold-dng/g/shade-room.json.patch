@@ -1,0 +1,46 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [20]
+    },
+    {
+        "_comment": "Change Dungeon End cutscene",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content":  { 
+                "name": "DungeonEnd", "eventType": "CUTSCENE", "endCondition": "map.dungeonEnd", "event": [ { "mode": "IMMEDIATELY", "type": "PAUSE_BGM" }, { "entity": { "player": true }, "action": [ { "target": { "x": 576, "y": 772, "lvl": "1" }, "precise": false, "type": "MOVE_TO_POINT" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 576, "y": 708, "lvl": "1" }, "precise": true, "type": "MOVE_TO_POINT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "pos": { "x": 576, "y": 368 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "mode": "SLOW", "delayed": false, "type": "RESUME_DEFAULT_BGM" }, { "type": "IF", "condition": "party.has.Emilie", "thenStep": [ { "entity": { "party": "Emilie" }, "action": [ { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" } ] }, { "entity": { "player": true }, "action": [ { "time": 0.2, "type": "WAIT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "pos": { "x": 576, "y": 424 }, "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 592, "y": 504, "lvl": "2" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "type": "NAVIGATE_TO_POINT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "type": "IF", "condition": "party.has.Emilie", "thenStep": [ { "entity": { "party": "Emilie" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 560, "y": 504, "lvl": "2" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "type": "NAVIGATE_TO_POINT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "party": "Emilie" }, "type": "WAIT_UNTIL_ACTION_DONE" } ] }, { "entity": { "player": true }, "type": "WAIT_UNTIL_ACTION_DONE" }, { "pos": { "x": 576, "y": 348 }, "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "zoomType": "LIGHT", "fadeIn": 0.5, "duration": 2, "fadeOut": 0, "type": "SET_ZOOM_BLUR" }, { "alpha": 1, "time": 2, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "zoom": 2, "duration": 2, "transition": "EASE_IN", "type": "SET_CAMERA_ZOOM" }, { "volume": 0.8, "name": "", "loop": false, "offset": 0, "startTime": 0, "type": "PLAY_SOUND", "sound": "media/sound/scenes/swoosh-rise-long.ogg" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 2 }, { "lighter": true, "type": "SET_TELEPORT_COLOR", "color": "white" }, { "value": "SAVE", "type": "SET_MOBILITY_BLOCK" }, { "type": "CHANGE_VAR_BOOL", "varName": "map.dungeonEnd", "changeType": "set", "value": true }, { "type": "CHANGE_VAR_BOOL", "varName": "plot.bergenMineDone", "changeType": "set", "value": true }, { "type": "TELEPORT", "map": "cold-dng.g.expo-space", "marker": "start" } ], "triggerType": "ALWAYS", "mapId": 45, "startCondition": "" 
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },  
+
+
+    {
+        "type": "ENTER",
+        "index": [23]
+    },
+    {
+        "_comment": "Change Post Expo cutscene",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+                "name": "PostExpoScene", "eventType": "CUTSCENE", "endCondition": "map.loreDone", "event": [ { "value": "NONE", "type": "SET_MOBILITY_BLOCK" }, { "entity": { "player": true }, "position": { "x": 592, "y": 504, "lvl": "2" }, "type": "SET_ENTITY_POS" }, { "volume": 1, "name": "", "loop": false, "offset": 0, "startTime": 0, "type": "PLAY_SOUND", "sound": "media/sound/scenes/swoosh-fall-long.ogg", "position": { "x": 1, "y": 1 } }, { "mode": "MEDIUM", "delayed": false, "type": "RESUME_DEFAULT_BGM" }, { "alpha": 1, "time": 0, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.1 }, { "pos": { "x": 576, "y": 348 }, "speed": "IMMEDIATELY", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 2, "type": "SET_CAMERA_POS" }, { "zoom": 1, "duration": 2, "transition": "EASE_OUT", "type": "SET_CAMERA_ZOOM" }, { "alpha": 0, "time": 2, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 2 }, { "entity": { "player": true }, "action": [ { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "map.infoText", "value": 1 }, { "time": 0.3, "type": "WAIT" }, { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "map.infoText", "value": 1 }, { "time": 0.3, "type": "WAIT" }, { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "map.infoText", "value": 1 }, { "time": 0.3, "type": "WAIT" }, { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "map.infoText", "value": 1 } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "pos": { "x": 576, "y": 472 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "type": "WAIT_UNTIL_ACTION_DONE" }, { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "map.spectatorsGone", "value": 1 }, { "entity": { "player": true }, "action": [ { "face": "WEST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "type": "IF", "condition": "party.has.Emilie", "thenStep": [ { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "...Bird people. Bird people in space.", "de_DE": "... Vogelmenschen. Vogelmenschen im Weltraum.", "fr_FR": "fr_FR", "langUid": 25, "zh_CN": "…鸟人。太空中的鸟人。", "ja_JP": "...鳥人間だ。鳥人間が宇宙にいた。", "ko_KR": "...새 인간. 새 인간이 공중에 있었어.", "zh_TW": "…鳥人。太空中的鳥人。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "ASTONISHED" } }, { "message": { "en_US": "So that's the Ancients?", "de_DE": "Das sind also die Ahnen?", "fr_FR": "fr_FR", "langUid": 26, "zh_CN": "这么说那就是先祖吗？", "ja_JP": "じゃあ、あれが古代人なの？", "ko_KR": "저게 고대인들이라는 거지?", "zh_TW": "這麼說那就是先祖嗎？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "MOPING" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "langUid": 27, "zh_CN": "[点头]", "ja_JP": "[うなずく]", "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "Fair enough.", "de_DE": "Naaa~ gut.", "fr_FR": "fr_FR", "langUid": 28, "zh_CN": "好吧。", "ja_JP": "まあ、いいか。", "ko_KR": "이해했어.", "zh_TW": "好吧。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SUSPICIOUS" } }, { "message": { "en_US": "Alors... do you see those \\c[3]rotating info thingies\\c[0]?", "de_DE": "Alors... Siehst du diese \\c[3]rotierenden Infodinger\\c[0]?", "fr_FR": "fr_FR", "langUid": 29, "zh_CN": "那…你看到那些\\c[3]浮空面板\\c[0]了吗？", "ja_JP": "ところで...\\c[3]情報板みたいなのが\n回ってる\\c[0]のに気付いた？", "ko_KR": "다음은... 저 \\c[3]회전하는 정보창 같은 거\\c[0] 보여?", "zh_TW": "那…你看到那些\\c[3]浮空面板\\c[0]了嗎？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "AWAY" } }, { "message": { "en_US": "I bet those have all the info about the Ancients we need.", "de_DE": "Ich wette, die haben alle Infos über die Ahnen, die wir brauchen.", "fr_FR": "fr_FR", "langUid": 30, "zh_CN": "我猜上面肯定写着关于先祖的信息。", "ja_JP": "これ全部、私たちに必要な古代人の\n知識ってやつなんだと思う。", "ko_KR": "우리가 찾고 있는 고대인의 정보가 쓰여 있을지도 몰라.", "zh_TW": "我猜上面肯定寫著關於先祖的信息。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "ALL", "type": "CLEAR_MSG" } ] }, { "type": "CHANGE_VAR_BOOL", "varName": "map.loreDone", "changeType": "set", "value": true } ], "triggerType": "ALWAYS", "mapId": 25, "startCondition": "map.expoDone"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },  
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

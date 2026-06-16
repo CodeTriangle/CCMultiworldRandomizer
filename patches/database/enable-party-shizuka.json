@@ -1,0 +1,14 @@
+[{
+    "_comment": "Disables the condition that makes Shizuka not join party before post-game",
+    "type": "ENTER",
+    "index": ["shizuka-join","event",6]
+},
+{
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "plot.shizuka <= 19500"
+},
+{
+    "type": "EXIT",
+    "count": 3
+}]

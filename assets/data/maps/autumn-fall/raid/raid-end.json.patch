@@ -1,0 +1,42 @@
+[
+  {
+    "type": "ENTER",
+    "index": [ "entities" ]
+  },
+
+  {
+    "type": "ENTER",
+    "index": [ 305, "settings" ]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "endCondition",
+    "content": "plot.paraRaidDone"
+  },
+  { "type": "ENTER", "index": [ "event" ] },
+  {
+    "type": "SET_KEY",
+    "index": "206",
+    "content": { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "plot.paraRaidDone", "value": true }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+
+  {
+    "type": "ENTER",
+    "index": [ 140, "settings", "npcStates", 0 ]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "!plot.paraRaidDone"
+  },
+  {
+    "type": "EXIT",
+    "count": 4
+  },
+
+  { "type": "EXIT", "count": 1 }
+]

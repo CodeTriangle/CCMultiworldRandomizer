@@ -1,0 +1,98 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+
+  { "type": "ENTER", "index": [11,  "settings"] },
+  {
+    "type": "SET_KEY",
+    "_comment": "Change entry event to remove party",
+    "index": "event",
+    "content": [
+      { "entity": { "player": true }, "action": [ { "value": 1, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 376, "y": 472, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "teleportOnFail": true, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" },
+      { "pos": { "x": 400, "y": 320 }, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.3, "zoom": 1, "type": "SET_CAMERA_POS" },
+      { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.barrier", "value": true },
+      { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 },
+      { "mode": "SLOW", "type": "PAUSE_BGM" },
+      { "pos": { "x": 400, "y": 384 }, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" },
+      { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "tmp.wave1", "value": 1 },
+      { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 },
+      { "pos": { "x": 400, "y": 312 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1.5, "type": "SET_CAMERA_POS" },
+      { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 },
+      { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "tmp.wave1", "value": 2 },
+      { "ignoreSlowDown": false, "type": "WAIT", "time": 0.8 },
+      { "value": true, "type": "SET_FORCE_COMBAT" },
+      { "target": { "player": true }, "type": "SET_SCREEN_ENEMY_TARGET" },
+      { "entity": { "global": true, "name": "center" }, "type": "ADD_PLAYER_CAMERA_TARGET" },
+      { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" }
+    ]
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [20,  "settings"] },
+  {
+    "type": "SET_KEY",
+    "_comment": "Change Wave 3 event to remove party",
+    "index": "event",
+    "content": [
+      { "pos": { "x": 400, "y": 336 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1.5, "type": "SET_CAMERA_POS" },
+      { "ignoreSlowDown": false, "type": "WAIT", "time": 0.4 },
+      { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "tmp.wave1", "value": 4 },
+      { "zoomType": "LIGHT", "fadeIn": 0.2, "duration": -1, "fadeOut": 0.2, "name": "blur", "type": "SET_ZOOM_BLUR" },
+      { "ignoreSlowDown": false, "type": "WAIT", "time": 0.2 },
+      { "entity": { "player": true }, "action": [ { "kind": "NAMED_ENTITY", "key": "diceMage", "type": "SET_TEMP_TARGET" }, { "value": true, "immediately": true, "type": "FACE_TO_TARGET" }, { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "maxTime": 1, "distance": 160, "throwing": false, "planOnly": false, "targetType": "ENEMY", "type": "NAVIGATE_ESCAPE_TARGET" }, { "time": -1, "type": "WAIT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" },
+      { "ignoreSlowDown": false, "type": "WAIT", "time": 0.8 },
+      { "name": "blur", "fadeOut": 0.2, "type": "FADE_OUT_ZOOM_BLUR" },
+      { "zoomType": "MEDIUM", "fadeIn": 0.1, "duration": 0.3, "fadeOut": 0.3, "type": "SET_ZOOM_BLUR" },
+      { "zoom": 1, "duration": 0.3, "transition": "EASE_IN_OUT", "type": "SET_CAMERA_ZOOM" },
+      { "ignoreSlowDown": false, "type": "WAIT", "time": 0.8 },
+      { "effectType": "LAST_ENEMY_ZOOM", "type": "SET_FINAL_DRAMATIC_EFFECT" },
+      { "entity": { "global": true, "name": "center" }, "type": "REMOVE_PLAYER_CAMERA_TARGET" },
+      { "entity": { "global": true, "name": "diceMage" }, "type": "ADD_PLAYER_CAMERA_TARGET" },
+      { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" },
+      { "entity": { "player": true }, "action": [ { "time": 0.1, "type": "WAIT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" },
+      { "message": { "en_US": "...!", "de_DE": "...!", "zh_CN": "...!<<A<<[CHANGED 2017\/12\/12]", "ja_JP": "...\uff01<<A<<[CHANGED 2017\/12\/02]", "ko_KR": "...!<<A<<[CHANGED 2017\/11\/30]", "langUid": 5, "zh_TW": "...!<<A<<[CHANGED 2017\/12\/12]" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.lea", "expression": "DETERMINED" } }
+    ]
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [25,  "settings"] },
+  {
+    "type": "SET_KEY",
+    "_comment": "Change event to remove party",
+    "index": "event",
+    "content": [
+      { "mode": "SLOW", "delayed": false, "type": "RESUME_DEFAULT_BGM" },
+      { "value": false, "type": "SET_FORCE_COMBAT" },
+      { "type": "CALL_EVENT_FROM_SHEET", "eventCall": { "path": "puzzle", "name": "focusEnemyCounterQuick", "input": { "counterPos": { "x": 400, "y": 416 }, "targetPos": { "x": 400, "y": 264 }, "wait": 0.6, "postCondition": "map.postDone", "variable": "map.battleDone" } } }
+    ]
+  },
+  { "type": "EXIT", "count": 2 },
+
+
+  { "type": "ENTER", "index": [6,  "settings"] },
+  {
+    "type": "SET_KEY",
+    "_comment": "Redirect ending door",
+    "index": "map",
+    "content": "arid.interior.trial-exit-1"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [19,  "settings", "enemyInfo"] },
+  {
+    "type": "SET_KEY",
+    "_comment": "Change Mage's level to match area level better",
+    "index": "level",
+    "content": "42"
+  },
+  { "type": "EXIT", "count": 3 },
+
+
+
+  {
+    "type": "EXIT",
+    "count": 1
+  }
+]

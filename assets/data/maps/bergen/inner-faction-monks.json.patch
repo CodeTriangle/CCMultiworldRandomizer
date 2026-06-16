@@ -1,0 +1,46 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [29, "settings", "npcStates"]
+    },
+
+        {
+            "type": "ENTER",
+            "index": 4
+        },
+        {
+            "_comment": "Replace mine completion for obtain ice shade for second quest",
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "quest.monks-1-jump_challenge.solved && (item.225.amount >= 1) && !quest.monks-2-jump_challenge_2.started"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+
+        { "type": "ENTER", "index": [7] },
+        {
+            "_comment": "Replace DLC completion for third quest",
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "open-world.dlcActive && quest.monks-2-jump_challenge_2.solved && player.core.12 && !quest.monks-3-jump_challenge_3.started && item.626.amount >= 1"
+        },
+        { "type": "EXIT", "count": 1 },
+
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+
+]

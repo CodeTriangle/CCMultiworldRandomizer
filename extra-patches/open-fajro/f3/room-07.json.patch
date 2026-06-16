@@ -1,0 +1,24 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+
+    {
+        "type": "ENTER",
+        "index": [1, "settings"]
+    },
+    {
+        "_comment": "Make the left door accesible",
+        "type": "SET_KEY",
+        "index": "condition"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+  {
+    "type": "EXIT",
+    "count": 1
+  } 
+]

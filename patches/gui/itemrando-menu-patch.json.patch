@@ -1,0 +1,25 @@
+{
+    "labels": {
+        "menu": {
+            "randomizer": {
+                "sets": {
+                    "open-world": "Open World"
+                },
+                "options": {
+                    "descriptions": {
+                        "sblock-enabled": "Entrance to Vermillion Tower locked by 4 element dungeon bosses and shades",
+                        "vt-skip": "Enables all floors of Vermillion Tower after the first fight",
+                        "meteor-vw": "Locks Vermillion Wasteland behind a Meteor Shade barrier",
+                        "open-fajro": "Opens up some locked doors in Upper Faj'ro Temple"
+                    },
+                    "names": {
+                        "sblock-enabled": "Shades and Bosses",
+                        "vt-skip": "All Tower Floors",
+                        "meteor-vw": "Meteor Shade Wasteland",
+                        "open-fajro":"Open Fajro"
+                    }
+                }
+            }
+        }
+    }
+}

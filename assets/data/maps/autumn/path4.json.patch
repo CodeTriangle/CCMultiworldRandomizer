@@ -1,0 +1,85 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [628]
+    },
+    {
+        "_comment": "Change Schneider meet event",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": 
+        {
+            "name": "MeetingSchneider",
+            "eventType": "CUTSCENE",
+            "endCondition": "plot.guildEntry >= 20",
+            "event": [ { "withElse": false, "type": "IF", "condition": "!party.has.Emilie", "thenStep": [ { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "value": "IGNORE", "type": "SET_COLL_TYPE" }, { "target": { "x": 1112, "y": 756, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "LEFT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "Bonjour, Lea!", "de_DE": "Bonjour, Lea!", "fr_FR": "fr_FR", "langUid": 138, "zh_CN": "\u4f60\u597d\uff0c\u8389\u4e9a\uff01", "ja_JP": "\u30dc\u30f3\u30b8\u30e5\u30fc\u30eb\u3001\u30ec\u30a2\uff01", "ko_KR": "\uc548\ub155, \ub808\uc544!", "zh_TW": "\u60a8\u597d\uff0c\u8389\u4e9e\uff01" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "There you are! Thanks for dropping by.", "de_DE": "Da bist du ja! Danke f\u00fcrs Vorbeischauen!", "fr_FR": "fr_FR", "langUid": 172, "zh_CN": "\u4f60\u4eec\u6765\u4e86\u554a\uff01\u611f\u8c22\u4f60\u4eec\u7684\u62dc\u8bbf\u3002", "ja_JP": "\u305d\u3053\u306b\u3044\u305f\u306e\u304b\uff01\u6765\u3066\u304f\u308c\u3066\u3042\u308a\u304c\u3068\u306a\u3002", "ko_KR": "\uc654\uad6c\ub098! \ub4e4\ub7ec\uc918\uc11c \uace0\ub9c8\uc6cc.", "zh_TW": "\u4f60\u5011\u4f86\u4e86\u554a\uff01\u611f\u8b1d\u4f60\u5011\u7684\u62dc\u8a2a\u3002" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "LAUGH" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.emilieJustJoined", "value": true }, { "member": "Emilie", "npc": { "global": true, "name": "emilie" }, "skipEffect": false, "type": "ADD_PARTY_MEMBER" } ] }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "value": "IGNORE", "type": "SET_COLL_TYPE" }, { "target": { "x": 1156, "y": 772, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "entity": { "global": true, "name": "schneider" }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "member": "Emilie", "locked": false, "type": "SET_MEMBER_LOCKED" }, { "entity": { "party": "Emilie" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 1120, "y": 772, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "entity": { "global": true, "name": "schneider" }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "type": "WAIT_UNTIL_ACTION_DONE" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "withElse": false, "type": "IF", "condition": "!tmp.emilieJustJoined", "thenStep": [ { "message": { "en_US": "Bonjour, Lukas!", "de_DE": "Bonjour, Lukas!", "fr_FR": "fr_FR", "langUid": 173, "zh_CN": "\u4f60\u597d\uff0c\u5362\u5361\u65af\uff01", "ja_JP": "\u30dc\u30f3\u30b8\u30e5\u30fc\u30eb\u3001\u30eb\u30fc\u30ab\u30b9\uff01", "ko_KR": "\uc548\ub155, \ub8e8\uce74\uc2a4!", "zh_TW": "\u4f60\u597d\uff0c\u76e7\u5361\u65af\uff01" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "There you are! Thanks for dropping by.", "de_DE": "Da seid ihr ja! Danke f\u00fcrs Vorbeischauen!", "fr_FR": "fr_FR", "langUid": 174, "zh_CN": "\u4f60\u4eec\u6765\u4e86\u554a\uff01\u6b22\u8fce\u4f60\u4eec\u524d\u6765\u3002", "ja_JP": "\u305d\u3053\u306b\u3044\u305f\u306e\u304b\uff01\u6765\u3066\u304f\u308c\u3066\u3042\u308a\u304c\u3068\u306a\u3002", "ko_KR": "\uc654\uad6c\ub098! \ub4e4\ub7ec\uc918\uc11c \uace0\ub9c8\uc6cc.", "zh_TW": "\u4f60\u5011\u4f86\u4e86\u554a\uff01\u6b61\u8fce\u4f60\u5011\u524d\u4f86\u3002" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "LAUGH" } } ] }, { "message": { "en_US": "Let's just go straight to the headquarters.", "de_DE": "Lasst uns direkt zum Hauptquartier gehen.", "fr_FR": "fr_FR", "langUid": 140, "zh_CN": "\u6211\u4eec\u76f4\u63a5\u524d\u5f80\u603b\u90e8\u5427\u3002", "ja_JP": "\u305d\u308c\u3058\u3083\u3001\u307e\u3063\u3059\u3050\u672c\u90e8\u307e\u3067\u884c\u3053\u3046\u304b\u3002", "ko_KR": "\ubc14\ub85c \ubcf8\ubd80\ub85c \uac00\uc790.", "zh_TW": "\u6211\u5011\u76f4\u63a5\u524d\u5f80\u7e3d\u90e8\u5427\u3002" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "message": { "en_US": "It's to the \\c[3]northeast\\c[0]. Just follow me!", "de_DE": "Es liegt \\c[3]nord\u00f6stlich\\c[0] von hier. Folgt mir einfach!", "fr_FR": "fr_FR", "langUid": 141, "zh_CN": "\u5c31\u5728\\c[3]\u4e1c\u5317\u65b9\u5411\\c[0]\u3002\u8ddf\u7740\u6211\u5c31\u53ef\u4ee5\u4e86\uff01", "ja_JP": "\u30ae\u30eb\u30c9\u306f\\c[3]\u5317\u6771\\c[0]\u306b\u3042\u308b\u3093\u3060\u3002\u3064\u3044\u3066\u6765\u3066\u304f\u308c\uff01", "ko_KR": "\\c[3]\ubd81\ub3d9\ucabd\\c[0]\uc73c\ub85c \uac00\uba74 \ub3fc. \ub530\ub77c\uc640!", "zh_TW": "\u5c31\u5728\\c[3]\u6771\u5317\u65b9\u5411\\c[0]\u3002\u8ddf\u8457\u6211\u5c31\u53ef\u4ee5\u4e86\uff01" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "entity": { "global": true, "name": "schneider" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "value": "IGNORE", "type": "SET_COLL_TYPE" }, { "target": { "x": 1220, "y": 812, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "target": { "x": 1308, "y": 740, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "target": { "x": 1392, "y": 708, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "target": { "x": 1392, "y": 652, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "value": 0.9, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 1408, "y": 452, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "target": { "x": 1696, "y": 420, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "target": { "x": 2160, "y": 284, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "target": { "x": 2212, "y": 272, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "type": "RESET_NPC" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.guildEntry", "value": 20 }, { "entity": { "player": true }, "action": [ { "value": true, "type": "SET_FACE_FIX" }, { "value": 0.4, "type": "SET_RELATIVE_SPEED" }, { "value": "IGNORE", "type": "SET_COLL_TYPE" }, { "target": { "x": 1148, "y": 788, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "message": { "en_US": "So how big is your guild, anyway?", "de_DE": "Also, wie gro\u00df ist die Gilde eigentlich?", "fr_FR": "fr_FR", "langUid": 139, "zh_CN": "\u4f60\u4eec\u516c\u4f1a\u6709\u591a\u5927\u554a\uff1f", "ja_JP": "\u305d\u308c\u3067\u3001\u3042\u306a\u305f\u306e\u30ae\u30eb\u30c9\u3063\u3066\n\u3069\u308c\u304f\u3089\u3044\u5927\u304d\u3044\u306e\uff1f", "ko_KR": "\uadf8\ub798\uc11c \ub108\ud76c \uae38\ub4dc\ub294 \uc5bc\ub9c8\ub098 \ud070\ub370?", "zh_TW": "\u4f60\u5011\u516c\u6703\u6709\u591a\u5927\u554a\uff1f" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "Not big. You're about to see it yourself.", "de_DE": "Nicht gro\u00df. Aber ihr werdet es bald selbst sehen.", "fr_FR": "fr_FR", "langUid": 142, "zh_CN": "\u4e0d\u5927\u3002\u4f60\u9a6c\u4e0a\u5c31\u80fd\u770b\u5230\u4e86\u3002", "ja_JP": "\u305d\u3053\u307e\u3067\u3058\u3083\u306a\u3044\u3055\u3002\u898b\u3066\u78ba\u304b\u3081\u308b\u3068\u3044\u3044\u3002", "ko_KR": "\uadf8\ub2e4\uc9c0 \ud06c\uc9c4 \uc54a\uc544. \ubcf4\uba74 \uc54c \uac70\uc57c.", "zh_TW": "\u4e0d\u5927\u3002\u4f60\u99ac\u4e0a\u5c31\u80fd\u770b\u5230\u4e86\u3002" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.schneider", "expression": "SKEPTICAL" } }, { "task": { "en_US": "Follow \\c[3]Schneider\\c[0] to the \\c[3]First Scholars HQ\\c[0] near \\c[3]Autumn's Rise - Pathway 3\\c[0].", "de_DE": "Folge \\c[3]Schneider\\c[0] zum \\c[3]Hauptquartier der Ersten Gelehrten\\c[0] nahe des \\c[3]Pfades 3 in Autumn's Rise\\c[0].", "zh_CN": "\u8ddf\u7740\\c[3]\u526a\u5200\u624b\\c[0]\u524d\u5f80\\c[3]\u79cb\u8272\u5c71\u91ce - \u901a\u90533\\c[0]\u9644\u8fd1\u7684\\c[3]\u7b2c\u4e00\u5b66\u8005\u603b\u90e8\\c[0]\u3002<<A<<[CHANGED 2018\/05\/01]", "ja_JP": "\\c[3]\u30b7\u30e5\u30ca\u30a4\u30c0\u30fc\\c[0]\u3092\u8ffd\u3044\u304b\u3051\u3066\u3001\\c[3]\u30aa\u30fc\u30bf\u30e0\u30e9\u30a4\u30ba - \u901a\u8def3\\c[0]\u306e\u8fd1\u304f\u306b\u3042\u308b\\c[3]\u30d5\u30a1\u30fc\u30b9\u30c8\u30b9\u30ab\u30e9\u30fc\u306e\u672c\u90e8\\c[0]\u3078\u884c\u3053\u3046\u3002<<A<<[CHANGED 2018\/05\/01]", "ko_KR": "\\c[3]\uc288\ub098\uc774\ub354\\c[0]\ub97c \ub530\ub77c \\c[3]\uac00\uc744\uc758 \ubd80\uc0c1 - \uacbd\ub85c 3\\c[0] \uadfc\ucc98\uc5d0 \uc788\ub294 \\c[3]\ucd5c\ucd08\uc758 \ud559\uc790\ub4e4 \ubcf8\ubd80\\c[0]\ub85c \uc774\ub3d9\ud558\uc138\uc694.<<A<<[CHANGED 2018\/05\/01]", "langUid": 171, "zh_TW": "\u8ddf\u8457\\c[3]\u526a\u5200\u624b\\c[0]\u524d\u5f80\\c[3]\u79cb\u8272\u5c71\u91ce - \u901a\u90533\\c[0]\u9644\u8fd1\u7684\\c[3]\u7b2c\u4e00\u5b78\u8005\u7e3d\u90e8\\c[0]\u3002<<A<<[CHANGED 2018\/05\/01]" }, "type": "SET_PERMA_TASK" } ],
+            "triggerType": "ALWAYS",
+            "mapId": 746,
+            "startCondition": "plot.guildEntry >= 15"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },  
+    
+
+
+    {
+        "type": "ENTER",
+        "index": [626, "settings"]
+    },
+    {
+        "_comment": "Change Schneider NPC States",
+        "type": "SET_KEY",
+        "index": "npcStates",
+        "content": [{ "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": false, "condition": "plot.guildEntry >= 10", "config": "running", "event": { "quest": [{ "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.guildEntry", "value": 15 }] } }, { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": false, "condition": "plot.guildEntry >= 15", "config": "running", "event": [] }, { "position": { "x": 2224, "y": 268, "lvl": "1" }, "reactType": "FIXED_POS", "face": "EAST", "action": [], "hidden": true, "door": { "global": true, "name": "right-1" }, "condition": "plot.guildEntry >= 20", "config": "running", "event": [] } ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "index": [627, "settings"]
+    },
+    {
+        "_comment": "Change Emilie NPC States",
+        "type": "SET_KEY",
+        "index": "npcStates",
+        "content": [
+            {
+                "reactType": "FIXED_POS",
+                "face": "SOUTH",
+                "action": [],
+                "hidden": false,
+                "condition": "plot.guildEntry >= 10 && plot.guildEntry <= 20 && !party.has.Emilie",
+                "config": "normal",
+                "event": [
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_NUMBER",
+                        "varName": "plot.guildEntry",
+                        "value": 15
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

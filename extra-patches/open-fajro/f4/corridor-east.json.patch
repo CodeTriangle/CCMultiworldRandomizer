@@ -1,0 +1,157 @@
+[
+	{
+		"type": "ENTER",
+		"index": [
+			"entities"
+		]
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add the bounce blocker in the middle",
+		"content": {
+			"type": "Blocker",
+			"x": 257,
+			"y": 631,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 137,
+				"condition": "map.reverse && !map.switchEnd",
+				"name": "reverseBlocker",
+				"blockerType": "diagonalNE"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add the end switch in the bottom",
+		"content": {
+			"type": "FloorSwitch",
+			"x": 329,
+			"y": 781,
+			"level": 1,
+			"settings": {
+				"name": "reverseFloorSwitch",
+				"switchType": "PERMANENT",
+				"mapId": 138,
+				"variable": "map.switchEnd",
+				"spawnCondition": "map.reverse"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add the event to start the reverse",
+		"content": {
+			"type": "EventTrigger",
+			"x": 556,
+			"y": 302,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 134,
+				"event": [
+					{
+						"type": "CHANGE_VAR_BOOL",
+						"varName": "map.reverse",
+						"changeType": "set",
+						"value": "true"
+					}
+				],
+				"startCondition": "heat-dng.eastCorridorReverse",
+				"endCondition": "heat-dng.f4.corridor-east",
+				"name": "reverseOrder",
+				"eventType": "PARALLEL",
+				"triggerType": "ONCE_PER_ENTRY"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add the bubble",
+		"content": {
+			"type": "WaterBubblePanel",
+			"x": 326,
+			"y": 810,
+			"level": 1,
+			"settings": {
+				"name": "reverseBubble",
+				"mapId": 139,
+				"spawnCondition": "map.reverse && !map.switchEnd"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add the end event",
+		"content": {
+			"type": "EventTrigger",
+			"x": 496,
+			"y": 662,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 140,
+				"event": [
+					{
+						"type": "CHANGE_VAR_BOOL",
+						"varName": "heat-dng.f4.corridor-east",
+						"changeType": "set",
+						"value": "true"
+					},
+					{
+						"type": "CHANGE_VAR_BOOL",
+						"varName": "map.flamesOff",
+						"changeType": "set",
+						"value": "true"
+					}
+				],
+				"name": "reverseDeactivate",
+				"eventType": "PARALLEL",
+				"startCondition": "map.reverse && map.switchEnd",
+				"endCondition": "map.flamesOff",
+				"triggerType": "ALWAYS"
+			}
+		}
+	},
+	{
+		"type": "FOR_IN",
+		"_comment": "Hide the top switches if doing the map in reverse",
+		"keyword": "__INDEX__",
+		"values": [
+			22,
+			23
+		],
+		"body": [
+			{
+				"type": "ENTER",
+				"index": [
+					"__INDEX__",
+					"settings"
+				]
+			},
+			{
+				"type": "SET_KEY",
+				"index": "spawnCondition",
+				"content": "!map.reverse"
+			},
+			{
+				"type": "EXIT",
+				"count": 2
+			}
+		]
+	},
+	{
+		"type": "EXIT",
+		"count": 1
+	}
+]

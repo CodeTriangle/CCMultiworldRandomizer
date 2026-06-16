@@ -1,0 +1,24 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+
+    {
+        "type": "ENTER",
+        "index": [28, "settings"]
+    },
+    {
+        "_comment": "Make the east door accesible",
+        "type": "SET_KEY",
+        "index": "condition"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+  {
+    "type": "EXIT",
+    "count": 1
+  } 
+]

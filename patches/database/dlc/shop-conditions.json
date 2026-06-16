@@ -1,0 +1,36 @@
+[
+    {
+        "type": "ENTER",
+        "_comment": "Homestedt Weapons",
+        "index": ["homestedtWeapons","pages",0,"content"]
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Make the Cross Gear require Beach Pass",
+        "values": [4,5,6,7],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.626.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    { "type": "EXIT", "count": 4 },
+
+    {
+        "type": "ENTER",
+        "_comment": "Rhombus Square Weapons",
+        "index": ["rhombusWeapons1","pages",0,"content"]
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change pre-beach limit to not depend on plot-line",
+        "values": [0,1,2,3],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition" },{ "type": "EXIT" }]  
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change beach open requirement to require Beach Pass",
+        "values": [8,9,10,11],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.626.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    { "type": "EXIT", "count": 4 }
+]

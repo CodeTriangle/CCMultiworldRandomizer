@@ -1,0 +1,66 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes story events",
+        "keyword": "__INDEX__",
+        "values": [292, 295, 296, 297, 298, 299, 300, 312, 311, 336],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Hide all the object layers hiding the passage",
+        "keyword": "__INDEX__",
+        "values": [286, 287, 288, 289, 290, 291],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "spawnCondition",
+                "content": "false"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Hide all the shredders on the entrance to Vermillion Tower",
+        "keyword": "__INDEX__",
+        "values": [282, 283, 284, 285],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "spawnCondition",
+                "content": "false"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

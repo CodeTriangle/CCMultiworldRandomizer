@@ -1,0 +1,103 @@
+[
+    {
+        "type": "ENTER",
+        "_comment": "Rookie Harbor items",
+        "index": ["rookieHarborItems","pages",0,"content"]
+    },
+    {
+    "type": "FOR_IN",
+    "keyword": "__INDEX__",
+    "_comment": "Remove Bergen Trail requirement",
+    "values": [1,3,6,7,8,9],
+    "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition" },{ "type": "EXIT" }]  
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change Temple Mine finish to Ice Shade",
+        "values": [4,5],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.225.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change Fajro finish to Flame Shade",
+        "values": [10,11],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.230.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change Gaia entrance to Seed Shade",
+        "values": [12,13,14],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.376.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    { "type": "EXIT", "count": 4 },
+    {
+        "type": "ENTER",
+        "_comment": "Rookie Harbor Weapons",
+        "index": ["rookieHarborWeapons","pages",0,"content"]
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Remove Bergen Trail requirement",
+        "values": [4,5,6,7],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition" },{ "type": "EXIT" }]  
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change Fajro finish to Flame Shade",
+        "values": [8,9,10,11],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.230.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    { "type": "EXIT", "count": 4 },
+    {
+        "type": "ENTER",
+        "_comment": "Bergen Village items",
+        "index": ["bergenVillageItems","pages",0,"content"]
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change Temple Mine finish to Ice Shade",
+        "values": [4,5],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.225.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change Fajro finish to Flame Shade",
+        "values": [10,11],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.230.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change Gaia entrance to Seed Shade",
+        "values": [12,13,14],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.376.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    { "type": "EXIT", "count": 4 },
+    {
+        "type": "ENTER",
+        "_comment": "Bakii Items",
+        "index": ["bakiItems","pages",0,"content"]
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change Temple Mine finish to Ice Shade",
+        "values": [4,5],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.225.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "_comment": "Change Gaia entrance to Seed Shade",
+        "values": [12,13,14],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "condition", "content": "item.376.amount >= 1" },{ "type": "EXIT" }]  
+    },
+    { "type": "EXIT", "count": 4 }
+]

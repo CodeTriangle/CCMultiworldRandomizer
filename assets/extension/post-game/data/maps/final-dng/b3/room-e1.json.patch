@@ -1,0 +1,35 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities"]
+	},
+
+	{ "type": "ENTER", "index": [147, "settings","propConfig"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Remove fence for free puzzle access",
+		"index": "name",
+		"content": "blockLineH"
+	},
+	{
+		"type": "ENTER",
+		"index": "ends"
+	},
+	{
+		"type": "SET_KEY",
+		"index": "east",
+		"content": "EAST_END"
+	},
+	{ "type": "EXIT", "count": 4 }, 
+
+	{ "type": "ENTER", "index": [148, "settings","propType"] },
+	{
+		"type": "SET_KEY",
+		"index": "name",
+		"content": "slopeNWbottom"
+	},
+	{ "type": "EXIT", "count": 3 },    
+	{
+		"type": "EXIT"
+	}    
+]

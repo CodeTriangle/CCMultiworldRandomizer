@@ -1,0 +1,323 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities", "1", "settings", "event", "2"]
+	},
+	{
+		"type": "SET_KEY",
+		"index": "condition",
+		"content": "true"
+	},
+	{
+		"type": "ENTER",
+		"index": ["thenStep"]
+	},
+	{
+		"type": "REMOVE_ARRAY_ELEMENT",
+		"index": 65
+	},
+	{
+		"_comment": "Enable stat collection",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "ENABLED_STATS"
+		}
+	},
+	{
+		"_comment": "Set Lea to level 4, as long as keep level isnt a thing",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+				"type": "SET_PLAYER_LEVEL_DEBUG",
+				"level": "4"
+			}
+	},
+	{
+		"_comment": "Add circuit points (only if keep level isnt a thing)",
+		"type": "FOR_IN",
+		"keyword": "__ELEMENT__",
+		"values": [ "NEUTRAL","HEAT","COLD","WAVE","SHOCK" ],
+		"body": [
+			{
+				"type": "ADD_ARRAY_ELEMENT",
+				"content": { "type": "IF", "withElse": false, "condition": "!newgame.keep-level", "thenStep": [{
+					"type": "ADD_CP",
+					"element": "__ELEMENT__",
+					"amount": 3
+				}]}
+			}]
+	},
+	{
+		"_comment": "Enable all of the player core values acquired during Rhombus Dungeon.",
+		"type": "FOR_IN",
+		"keyword": "__CORE__",
+		"values": [ "MENU", "QUICK_MENU", "SPECIAL", "COMBAT_RANK", "EXP", "MODIFIER" ],
+		"body": [
+			{
+				"type": "ADD_ARRAY_ELEMENT",
+				"content": {
+					"type": "SET_PLAYER_CORE",
+					"core": "__CORE__",
+					"value": true
+				}
+			}
+		]
+	},
+	{
+		"_comment": "Modify map variables so that cutscenes don't play when going back to these rooms.",
+		"type": "FOR_IN",
+		"keyword": {
+			"map": "__MAP__",
+			"var": "__VAR__"
+		},
+		"values": [
+			{ "map": "rhombus-sqr.dng-end", "var": "fancyGuyAppears" },
+			{ "map": "rhombus-sqr.dng-end", "var": "sidekickAppears" },
+			{ "map": "rhombus-sqr.central", "var": "centerFocus" },
+			{ "map": "rhombus-sqr.central-inner", "var": "rookieHarborOpen" },
+			{ "map": "rookie-harbor.south", "var": "infoHouseTut" }
+		],
+		"body": [
+			{
+				"type": "ADD_ARRAY_ELEMENT",
+				"content": {
+					"type": "CHANGE_VAR_BOOL",
+					"changeType": "set",
+					"map": "__MAP__",
+					"varName": "__VAR__",
+					"value": true
+				}
+			}
+		]
+	},
+	{
+		"_comment": "Unlock all of the rest of the rooms",
+		"type": "FOR_IN",
+		"keyword": "__MAP__",
+		"values": [
+			"rhombus-dng.entrance",
+			"rhombus-dng.boss",
+			"rhombus-dng.room-1",
+			"rhombus-dng.room-1-5",
+			"rhombus-dng.room-1-6",
+			"rhombus-dng.room-2",
+			"rhombus-dng.room-3-1",
+			"rhombus-dng.room-3-1-pre",
+			"rhombus-dng.room-3-1-post",
+			"rhombus-dng.room-3-2",
+			"rhombus-dng.room-3-2-pre",
+			"rhombus-dng.room-3-2-post",
+			"rhombus-dng.room-5-newer",
+			"rhombus-dng.room-6",
+			"rhombus-dng.room-final",
+			"rhombus-sqr.central",
+			"rhombus-sqr.central-inner",
+			"rhombus-sqr.dungeon-end",
+			"rhombus-sqr.dungeon-top",
+			"rookie-harbor.center",
+			"rookie-harbor.central-quest-hub",
+			"rookie-harbor.south",
+			"rookie-harbor.teleporter"
+		],
+		"body": [
+			{
+				"type": "ADD_ARRAY_ELEMENT",
+				"content": {
+					"type": "CHANGE_VAR_BOOL",
+					"changeType": "set",
+					"map": "__MAP__",
+					"varName": "_mw_dummy_value",
+					"value": true
+				}
+			}
+		]
+	},
+	{
+		"_comment": "Mark all of the previous areas as visited",
+		"type": "FOR_IN",
+		"keyword": "__AREA__",
+		"values": [ "rhombus-dng", "rhombus-sqr" ],
+		"body": [
+			{
+				"type": "ADD_ARRAY_ELEMENT",
+				"content": {
+					"type": "UPDATE_VISITED_AREA",
+					"area": "__AREA__"
+				}
+			}
+		]
+	},
+	{
+				"_comment": "Add all maps as visited (ideally with a IF but it was removed)",
+				"type": "INCLUDE",
+				"src": "mod:extra-patches/visited-maps/newgame_visitedmaps.json.patch"
+	},
+	{
+		"_comment": "Activate landmarks that would have been encountered.",
+		"type": "FOR_IN",
+		"keyword": {
+			"area": "__AREA__",
+			"landmark": "__LMK__"
+		},
+		"values": [
+			{ "area": "rhombus-sqr", "landmark": "crosscentralTop" },
+			{ "area": "rhombus-sqr", "landmark": "crosscentralInner" },
+			{ "area": "rookie-harbor", "landmark": "harbor" },
+			{ "area": "rookie-harbor", "landmark": "center" }
+		],
+		"body": [
+			{
+				"type": "ADD_ARRAY_ELEMENT",
+				"content": {
+					"type": "ACTIVATE_LANDMARK",
+					"area": "__AREA__",
+					"landmark": "__LMK__"
+				}
+			}
+		]
+	},
+	{
+		"_comment": "Add consumables received from those two chests.",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "GIVE_ITEM",
+			"item": 1,
+			"amount": 3,
+			"skip": true
+		}
+	},
+	{
+		"_comment": "Add consumables received from those two chests.",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "GIVE_ITEM",
+			"item": 2,
+			"amount": 2,
+			"skip": true
+		}
+	},
+	{
+		"_comment": "Makes sure the map will say 6/6 chests in Rhombus Dungeon.",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "ADD_STAT_MAP_NUMBER",
+			"map": "chests",
+			"stat": "rhombus-dng",
+			"value": 6
+		}
+	},
+	{
+		"_comment": "Let Lea use Specials",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "SET_PLAYER_SP_LEVEL",
+			"level": "1"
+		}
+	},
+	{
+		"_comment": "Update plotline values",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "CHANGE_VAR_NUMBER",
+			"changeType": "set",
+			"varName": "plot.line",
+			"value": 2556
+		}
+	},
+	{
+		"_comment": "Update plotline values",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "CHANGE_VAR_NUMBER",
+			"changeType": "set",
+			"varName": "plot.version",
+			"value": 2 
+		}
+	},
+	{
+		"_comment": "Create kill entries for all the rhombus dungeon enemies",
+		"type": "FOR_IN",
+		"keyword": "__ENEMY__",
+		"values": [
+			"simple-bot",
+			"turret-rhombus",
+			"turret-boss"
+		],
+		"body": [
+			{
+				"type": "ADD_ARRAY_ELEMENT",
+				"content": {
+					"type": "UNLOCK_ENEMY",
+					"enemy": "__ENEMY__",
+					"asSpecial": true
+				}
+			}
+		]
+	},
+	{
+		"_comment": "Enable NG+ carry data",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "APPLY_NEW_GAME_DATA",
+			"atRhombus": false
+		}
+	},
+	{
+		"_comment": "Add equipment",
+		"type": "FOR_IN",
+		"keyword": {
+			"part": "__PART__",
+			"equip": "__EQUIP__"
+		},
+		"values": [ { "part": 1, "equip": 23 }, { "part": 2, "equip": 24 }, { "part": 3, "equip": 24 }, { "part": 4, "equip": 26 }, { "part": 5, "equip": 25 } ],
+		"body": [
+			{
+				"type": "ADD_ARRAY_ELEMENT",
+				"content": { "type": "IF", "withElse": false, "condition": "!newgame.keep-equipment", "thenStep": [
+					{
+						"type": "EQUIP_ITEM",
+						"part": "__PART__",
+						"item": "__EQUIP__"
+					}
+				]}
+			}
+		]
+	},
+	{
+		"_comment": "Disable all elements so it doesn't show in circuit tree",
+		"type": "FOR_IN",
+		"keyword": "__CORE__",
+		"values": [ "HEAT", "COLD", "WAVE", "SHOCK" ],
+		"body": [
+			{
+				"type": "ADD_ARRAY_ELEMENT",
+				"content": { "type": "IF", "withElse": true, "condition": "!newgame.keep-elements", "thenStep": [
+					{
+					"type": "SET_PLAYER_CORE",
+					"core": "ELEMENT___CORE__",
+					"value": false
+					}],
+					"elseStep": [
+						{
+						"type": "SET_PLAYER_CORE",
+						"core": "ELEMENT___CORE__",
+						"value": true
+					},
+					{
+						"type": "SET_PLAYER_CORE",
+						"core": "ELEMENT_CHANGE",
+						"value": true
+					}]
+				}
+			}
+		]
+	},
+	{
+		"_comment": "Teleport!",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "TELEPORT",
+			"map": "rookie-harbor.central-quest-hub",
+			"marker": "entrance"
+		}
+	}
+]

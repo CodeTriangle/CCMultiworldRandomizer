@@ -1,0 +1,22 @@
+[
+    { "type": "IF", 
+    "_comment": "Adds corresponding patch if Extra Barriers is on", 
+    "cond": "ig.vars.get('open-world.rhombusHubUnlock') >= 1", 
+    "thenSteps": [{ "type": "INCLUDE", "src": "mod:extra-patches/extra-barriers/fall-path-05.json.patch" }] },
+
+    {
+        "type": "ENTER",
+        "index": ["entities", 2, "settings"]
+    },
+
+    {
+        "type": "SET_KEY",
+        "index": "blockEventCondition"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEvent"
+    },
+
+    { "type": "EXIT" }
+]

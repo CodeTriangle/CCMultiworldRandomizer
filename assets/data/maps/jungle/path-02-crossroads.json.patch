@@ -1,0 +1,27 @@
+[
+    { "type": "IF", 
+    "_comment": "Adds corresponding patch if Closed Gaia is on", 
+    "cond": "ig.vars.get('open-world.closedGaia') >= 1", 
+    "thenSteps": [{ "type": "INCLUDE", "src": "mod:extra-patches/enclosed-gaia/path-02-crossroads.json.patch" }] },
+
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [642,"settings"] },
+    {
+        "type": "SET_KEY",
+        "index": "spawnCondition",
+        "_comment": "Change Henry quest trigger to not have prerequisites",
+        "content": "!quest.trailblaze-jungle.started"
+    },
+    { "type": "EXIT", "count": 2 },
+
+    { "type": "ENTER", "index": [641,"settings", "npcStates", 0] },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "_comment": "Make Henry appear without prerequisites"
+    },
+    { "type": "EXIT", "count": 4 },    
+
+    { "type": "EXIT" }    
+]

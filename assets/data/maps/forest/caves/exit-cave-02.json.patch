@@ -1,0 +1,58 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "values": [109, 111, 113],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "startCondition",
+                "content": "false"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]
+    },  
+    
+
+     {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "values": [102, 103, 104, 105, 106, 107, 108],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "npcStates",
+                "content": [
+                                {
+                                    "reactType": "FIXED_POS",
+                                    "face": "WEST",
+                                    "showFx": {
+                                        "sheet": "teleport",
+                                        "name": "showDefault"
+                                    },
+                                    "hidden": true,
+                                    "condition": "",
+                                    "config": "",
+                                    "event": []
+                                }]
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    }    
+    
+]

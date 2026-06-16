@@ -1,0 +1,93 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Hide all the NPCs from plot and beta pass",
+        "keyword": "__INDEX__",
+        "values": [730, 731, 588, 589, 590],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "npcStates",
+                "content": [
+                                {
+                                    "reactType": "FIXED_POS",
+                                    "face": "WEST",
+                                    "showFx": {
+                                        "sheet": "teleport",
+                                        "name": "showDefault"
+                                    },
+                                    "hidden": true,
+                                    "condition": "",
+                                    "config": "",
+                                    "event": []
+                                }]
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes story events",
+        "keyword": "__INDEX__",
+        "values": [735, 732],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [729, "settings"]
+    },
+    {
+        "_comment": "Make the door accessible even if beta pass",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": ""
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "index": [587]
+    },
+    {
+        "_comment": "Edit the intro cutscene to slightly fit the no story",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": { 
+            "name": "Intro", "eventType": "CUTSCENE", "endCondition": "map.firstApolloVisit", "event": [ { "frequency": "", "type": "SET_NPC_RUNNERS" }, { "pos": { "x": 752, "y": 2096 }, "speed": "SLOW", "transition": "EASE_OUT", "wait": true, "waitSkip": 3, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 752, "y": 2096, "lvl": "0" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "party": "Member2" }, "action": [ { "time": 0.1, "type": "WAIT" }, { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 768, "y": 2120, "lvl": "0" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "party": "Member3" }, "action": [ { "time": 0.2, "type": "WAIT" }, { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 736, "y": 2120, "lvl": "0" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.6 }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.fancyguy", "expression": "DEFAULT" } }, { "message": { "en_US": "Here we are!", "langUid": 363, "zh_CN": "到了！<<A<<[CHANGED 2018/03/14]", "ko_KR": "도착했다!<<A<<[CHANGED 2018/03/14]", "ja_JP": "到着だ！<<A<<[CHANGED 2018/03/14]", "de_DE": "Wir sind da!", "zh_TW": "到了！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "DEFAULT" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "pos": { "x": 752, "y": 1488 }, "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "side": "RIGHT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.sidekick", "expression": "SURPRISED" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "side": "RIGHT", "order": -5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.fancyguy", "expression": "DEFAULT" } }, { "message": { "en_US": "...!", "langUid": 368, "zh_CN": "...！<<A<<[CHANGED 2018/03/14]", "ko_KR": "...!<<A<<[CHANGED 2018/03/14]", "ja_JP": "...！<<A<<[CHANGED 2018/03/14]", "de_DE": "...!", "zh_TW": "...！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "message": { "en_US": "No joke, that's a big city.", "langUid": 367, "zh_CN": "这可是个大城镇。<<A<<[CHANGED 2018/03/14]", "ko_KR": "농담이 아니라 정말 큰 도시네.<<A<<[CHANGED 2018/03/14]", "ja_JP": "冗談抜きで、\n大きな街だな。<<A<<[CHANGED 2018/03/14]", "de_DE": "Donnerlüttchen, das ist ja eine richtige Großstadt.", "zh_TW": "這是一座大城鎮。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.sidekick", "expression": "SURPRISED" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "pos": { "x": 752, "y": 2064 }, "speed": "FASTER", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.2, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "party": "Apollo" }, "action": [ { "face": "WEST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "party": "Joern" }, "action": [ { "face": "EAST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "LEFT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.sidekick", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": -5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.fancyguy", "expression": "DEFAULT" } }, { "message": { "en_US": "\\c[3]Basin Keep\\c[0]!", "langUid": 370, "zh_CN": " \n                                 \n\n\\c[3]巴辛堡\\c[0]!\n<<A<<[CHANGED 2018/03/14]", "ko_KR": "\\c[3]유역의 아성\\c[0]!<<A<<[CHANGED 2018/03/14]", "ja_JP": "\\c[3]ベイスンキープ\\c[0]！<<A<<[CHANGED 2018/03/14]", "de_DE": "\\c[3]Burg Bassin\\c[0]!", "zh_TW": " _x000D_\n                                 _x000D_\n_x000D_\n\\c[3]巴辛堡\\c[0]!_x000D_\n<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "Bustling city of the jungle!", "langUid": 371, "zh_CN": "繁华的丛林城镇！<<A<<[CHANGED 2018/03/14]", "ko_KR": "정글의 떠들썩한 도시!<<A<<[CHANGED 2018/03/14]", "ja_JP": "ジャングルにそびえる\n賑やかな大都市！<<A<<[CHANGED 2018/03/14]", "de_DE": "Pulsierende Großstadt des Dschungels!", "zh_TW": "繁華的叢林城鎮！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "DOWN" } }, { "message": { "en_US": "A place full of opportunity!", "langUid": 372, "zh_CN": "充满了机遇！<<A<<[CHANGED 2018/03/14]", "ko_KR": "기회로 가득한 곳!<<A<<[CHANGED 2018/03/14]", "ja_JP": "あらゆるチャンスに\n満ちた場所！<<A<<[CHANGED 2018/03/14]", "de_DE": "Ein Ort voller Möglichkeiten!", "zh_TW": "充滿了機遇！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "CONTENT" } }, { "rumbleType": "RANDOM", "name": "", "duration": 0.3, "power": "MEDIUM", "speed": "FAST", "fade": true, "type": "RUMBLE_SCREEN" }, { "message": { "en_US": "Yet there resides a severe lack of \\c[3]Justice\\c[0], dividing the rich from the poor!", "langUid": 373, "zh_CN": "但缺乏\\c[3]正义\\c[0]！<<A<<[CHANGED 2021/05/22]", "ko_KR": "\\c[3]정의\\c[0]라는 건 눈곱만큼도 찾아볼 수 없지!<<A<<[CHANGED 2018/09/19]", "ja_JP": "しかし、\\c[3]正義\\c[0]が\n深刻に枯渇している街！<<A<<[CHANGED 2021/05/22]", "de_DE": "Aber auch mangelnder \\c[3]Gerechtigkeit\\c[0], die Arm und Reich gespalten hat!<<A<<[CHANGED 2021/05/22]", "zh_TW": "但缺乏\\c[3]正義\\c[0]！<<A<<[CHANGED 2021/05/22]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "POINTING" } }, { "message": { "en_US": "I also don't like the rain.", "langUid": 374, "zh_CN": "而且我讨厌下雨。<<A<<[CHANGED 2018/03/14]", "ko_KR": "비 내리는 것도 마음에 안 들어.<<A<<[CHANGED 2018/03/14]", "ja_JP": "ついでに言わせてもらうと、\nこの雨は気に入らないな。<<A<<[CHANGED 2018/03/14]", "de_DE": "Außerdem mag ich den Regen nicht.", "zh_TW": "而且我討厭下雨。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.sidekick", "expression": "TOWARD" } }, { "message": { "en_US": "Yes, the rain... the poor folks of this city have to suffer through it all year long!", "langUid": 375, "zh_CN": "是的，这里终年下雨...可怜的当地居民啊。<<A<<[CHANGED 2018/03/14]", "ko_KR": "그래, 비... 이 마을에 사는 불쌍한 주민들은 일년 내내 비에 시달려야 하지!<<A<<[CHANGED 2018/03/14]", "ja_JP": "そう、この雨...\nこの街に住む哀れな人々は、\nこの雨に年中悩まされている！<<A<<[CHANGED 2018/03/14]", "de_DE": "Ja, der Regen... Die armen Leute hier müssen ihn das ganze Jahr über ertragen!", "zh_TW": "是的，這裡終年下雨...可憐的當地居民啊。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "ANGRY" } }, { "message": { "en_US": "...Why?", "langUid": 376, "zh_CN": "为什么？<<A<<[CHANGED 2018/03/14]", "ko_KR": "...왜?<<A<<[CHANGED 2018/03/14]", "ja_JP": "...どうして？<<A<<[CHANGED 2018/03/14]", "de_DE": "... Warum?", "zh_TW": "為什麼？<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "SURPRISED" } }, { "message": { "en_US": "They say it's the Jungle's answer to this iron scar amid its sea of trees!", "langUid": 377, "zh_CN": "有人说这是丛林对树海中的伤痕所做出的回应！<<A<<[CHANGED 2018/09/19]", "ko_KR": "마을 사람들은 이 비가 나무로 우거진 이곳의 우뚝 솟은 철제 건물에 주는 정글의 답변이라고 하더군.<<A<<[CHANGED 2018/09/19]", "ja_JP": "彼らいわく、これは樹海の真ん中に\nこの街という鉄の爪あとを残したことへの\nジャングルの返答だそうだ！<<A<<[CHANGED 2018/09/19]", "de_DE": "Man sagt, es sei des Dschungels Antwort auf die eiserne Narbe inmitten seiner Baumpracht!", "zh_TW": "有人說這是叢林對樹海中的傷痕所做出的回應！<<A<<[CHANGED 2018/09/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "Bummer.", "langUid": 378, "zh_CN": "胡扯。<<A<<[CHANGED 2018/03/14]", "ko_KR": "저런.<<A<<[CHANGED 2018/03/14]", "ja_JP": "そいつはイヤだな。<<A<<[CHANGED 2018/03/14]", "de_DE": "Ein Jammer.", "zh_TW": "胡扯。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.sidekick", "expression": "DEFAULT" } }, { "message": { "en_US": "So... what now?", "langUid": 379, "zh_CN": "接下来干嘛？<<A<<[CHANGED 2018/03/14]", "ko_KR": "좋아... 이제 뭘 하지?<<A<<[CHANGED 2018/03/14]", "ja_JP": "それで...どうする？<<A<<[CHANGED 2018/03/14]", "de_DE": "Also... Was nun?", "zh_TW": "接下來幹嘛？<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.sidekick", "expression": "TOWARD" } }, { "message": { "en_US": "First there is a dire need to prepare for all the dangers of this wilderness!", "langUid": 380, "zh_CN": "首先我们需要为探索荒野做好准备！<<A<<[CHANGED 2018/03/14]", "ko_KR": "일단 이 야생에서 일어날 위험한 일에 단단히 준비를 해둬야겠어!<<A<<[CHANGED 2018/03/14]", "ja_JP": "まず早急に必要なのは、\nこの未開の地に存在する危険から\n身を守る準備をすることだ！<<A<<[CHANGED 2018/03/14]", "de_DE": "Zunächst sollten wir uns dringend auf die Gefahren der Wildnis vorbereiten!", "zh_TW": "首先我們需要為探索荒野做好準備！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "Fortunately, we will find lots of \\c[3]expertly crafted goods\\c[0] in this trading hotspot!", "langUid": 387, "zh_CN": "幸运的是，我们能在集市找到很多\\c[3]制作精良的物品\\c[0]！<<A<<[CHANGED 2021/05/22]", "ko_KR": "다행히도 이 핫한 거래 장소에서 \\c[3]전문적으로 제작된 상품\\c[0]을 찾을 수 있을 거야!<<A<<[CHANGED 2018/03/14]", "ja_JP": "幸い、ここでは活発な市場から\n\\c[3]質のいいクラフト品\\c[0]を\n見つくろうことができる！<<A<<[CHANGED 2021/05/22]", "de_DE": "Glücklicherweise bietet das hiesige Handelsnetz eine Vielzahl \\c[3]hochwertiger Waren\\c[0]!<<A<<[CHANGED 2021/05/22]", "zh_TW": "幸運的是，我們能在集市找到很多\\c[3]製作精良的物品\\c[0]！<<A<<[CHANGED 2021/05/22]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "CONTENT" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" }, { "type": "CHANGE_VAR_BOOL", "varName": "map.firstApolloVisit", "changeType": "set", "value": true } ], "triggerType": "ALWAYS", "mapId": 884, "startCondition": "party.has.Apollo && party.has.Joern" 
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },
+
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+
+]

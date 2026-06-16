@@ -1,0 +1,61 @@
+[
+    { "type": "IF", "_comment": "Adds corresponding patch if Extra Barriers is on", "cond": "ig.vars.get('open-world.rhombusHubUnlock') >= 1", "thenSteps": [{ "type": "INCLUDE", "src": "mod:extra-patches/extra-barriers/central-inner.json.patch" }] },
+    {
+        "type": "ENTER",
+        "index": "entities"
+    },
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "_comment": "Adds a trigger that lets you enter Rhombus Square with Meteor Shade",
+        "content": {
+            "type": "TouchTrigger",
+            "x": 616,
+            "y": 1088,
+            "level": 0,
+            "settings": {
+                "name": "barrierOpener",
+                "size": {
+                    "x": 272,
+                    "y": 48
+                },
+                "type": "SET_TRUE",
+                "zHeight": 64,
+                "reactToParty": false,
+                "mapId": 319,
+                "variable": "map.rhombusSquareOpen",
+                "startCondition": "item.434.amount >= 1"
+            }
+        }
+    },
+
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "_comment": "Adds a Meteor Shade prop to indicate barrier open",
+        "content": { "type": "Prop", "x": 740, "y": 1285, "level": 0, "settings": { "mapId": 294, "propType": { "sheet": "forest", "name": "barrierSignMeteor" }, "condAnims": [ { "0": " ", "condition": "map.rhombusSquareOpen", "anim": "on" } ], "name": "barrierSignA" } }
+    },
+
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes story events",
+        "keyword": "__INDEX__",
+        "values": [147, 151, 152],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+
+    {
+    "type": "EXIT",
+    "count": 1
+}
+]

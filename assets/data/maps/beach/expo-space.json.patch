@@ -1,0 +1,16 @@
+[
+    {
+        "type": "ENTER",
+        "index": [ "entities", 4, "settings", "event" ]
+    },
+    {
+        "_comment": "Change the SP level to increase by 1 instead of setting to 2",
+        "type": "SET_KEY",
+        "index": "36",
+        "content": 
+        {
+            "type": "INCREASE_PLAYER_SP_LEVEL"
+        }
+    },
+    { "type": "EXIT", "count": 4 }
+]

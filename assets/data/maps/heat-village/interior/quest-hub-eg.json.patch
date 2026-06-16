@@ -1,0 +1,25 @@
+[
+	{ "type": "ENTER", "index": "entities" },
+	{ 
+		"type": "IF", 
+		"_comment": "Adds corresponding patch if full Quest Hub is on", 
+		"cond": "sc.options.get('openworld-fullQuestHub')", 
+		"thenSteps": [
+				{
+						"type": "ENTER",
+						"index": [119,"settings","interact", "event"]
+				},
+				{ 
+						"_comment": "Replace Quest Hub", 
+						"type": "SET_KEY", 
+						"index": 3,
+						"content": {
+								"hub": "bakiiKum",
+								"type": "OPEN_QUEST_HUB_FULL"
+						}
+				},
+				{ "type": "EXIT", "count": 4 }
+		]
+	},
+	{ "type": "EXIT" }
+]

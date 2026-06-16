@@ -1,0 +1,27 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+    { "type": "ENTER", "index": [68, "settings", "npcStates"] },
+    { "type": "ENTER", "index": 1 },
+    { "_comment": "Change Investor states", "type": "SET_KEY", "index": "condition", "content": "plot.shareholder >= 2900" },
+    { "type": "EXIT", "count": 1},  
+    { "type": "EXIT", "count": 3},  
+
+    { "type": "ENTER", "index": [70, "settings"] },
+    { "type": "SET_KEY", "index": "endCondition", "content": "plot.shareholder >= 2900" },
+    { "type": "ENTER", "index": "event" },
+    { 
+        "type": "SET_KEY", 
+        "index": "162", 
+        "content": { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.shareholder", "value": "2900" } 
+    },
+    { "type": "EXIT" },
+    { "type": "EXIT", "count": 2 }, 
+    
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

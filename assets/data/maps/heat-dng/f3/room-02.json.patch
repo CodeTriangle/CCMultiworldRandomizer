@@ -1,0 +1,10 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+  {
+    "type": "EXIT",
+    "count": 1
+  } 
+]

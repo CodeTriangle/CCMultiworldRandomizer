@@ -1,0 +1,37 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [976, "settings", "npcStates",0,"event","quest"]
+    },
+
+        {
+            "type": "ENTER",
+            "index": 4
+        },
+        {
+            "_comment": "Change condition for Kit quest to be doable on party",
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "party.size > 3"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+
+    {
+        "type": "EXIT",
+        "count": 6
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+
+]

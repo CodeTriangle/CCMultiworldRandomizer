@@ -1,0 +1,32 @@
+[
+    { "type": "IF", 
+    "_comment": "Adds corresponding patch if Extra Barriers is on", 
+    "cond": "ig.vars.get('open-world.rhombusHubUnlock') >= 1", 
+    "thenSteps": [{ "type": "INCLUDE", "src": "mod:extra-patches/extra-barriers/fall-path-03.json.patch" }] },
+
+    {
+        "type": "ENTER",
+        "index": ["entities", 601, "settings"]
+    },
+
+    {
+        "type": "SET_KEY",
+        "index": "blockEventCondition"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEvent"
+    },
+
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "_comment": "Barrier open by default",
+        "content": { "type": "EventTrigger", "x": 608, "y": 116, "level": 3, "settings": { "name": "BarrierBlock", "eventType": "PARALLEL", "endCondition": "map.daftBarrierDown", "event": [ { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.daftBarrierDown", "value": true } ], "triggerType": "ONCE", "mapId": 455, "startCondition": "" } }
+    },
+    
+    { "type": "EXIT" }
+]

@@ -1,0 +1,29 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities", 97, "settings", "event"]
+	},
+	{
+		"type": "SET_KEY",
+		"index": 16,
+		"content": {
+			"type": "TELEPORT",
+			"map": "arid-dng.second.f99.pre-creator",
+			"marker": "designerExit"
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"index": 17,
+		"content": {
+			"type": "CHANGE_VAR_BOOL",
+			"changeType": "set",
+			"varName": "map.designerDead",
+			"value": "true",
+			"map": "arid-dng.second.f99.center"
+		}
+	},
+	{
+		"type": "EXIT", "count": 4
+	}
+]

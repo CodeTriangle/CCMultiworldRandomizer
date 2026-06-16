@@ -1,0 +1,280 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+    {
+        "_comment": "Replacements for all the NPCs to hide them",
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "values": [328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 344, 345, 346, 347, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "npcStates",
+                "content": [
+                                {
+                                    "reactType": "FIXED_POS",
+                                    "face": "WEST",
+                                    "showFx": {
+                                        "sheet": "teleport",
+                                        "name": "showDefault"
+                                    },
+                                    "hidden": true,
+                                    "condition": "",
+                                    "config": "",
+                                    "event": []
+                                }]
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+    {
+        "_comment": "Guard NPC idle",
+        "type": "ENTER",
+        "index": [300, "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "npcStates",
+            "content": [
+                        {
+                            "reactType": "FIXED_POS",
+                            "face": "SOUTH",
+                            "hidden": false,
+                            "condition": "",
+                            "config": "",
+                            "event": []
+                        }]
+        },{
+            "type": "EXIT",
+            "count": 2
+    },
+
+    {
+        "_comment": "Removes all the story events",
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "values": [297, 298, 342, 350, 351, 374, 376],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "startCondition",
+                "content": "false"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+    {
+        "_comment": "Hide a few object layers from beta pass, and hidden walls from story progress",
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "values": [348, 349, 299, 296, 327],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "spawnCondition",
+                "content": "false"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+    {
+        "_comment": "Barrier fix so its not tied to story or junglecontinue",
+                "type": "ENTER",
+                "index": 322
+            },{
+                "type": "SET_KEY",
+                "index": "settings",
+                "content": {
+                    "name": "BarrierOpen",
+                    "eventType": "PARALLEL",
+                    "endCondition": "false",
+                    "event": [
+                        {
+                            "entity": {
+                                "player": true
+                            },
+                            "duration": -1,
+                            "align": "TOP",
+                            "group": "shade",
+                            "wait": false,
+                            "waitSkip": 0,
+                            "type": "SHOW_EFFECT",
+                            "effect": {
+                                "sheet": "map.barrier",
+                                "name": "purpleLightning"
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 12
+                            }
+                        },
+                        {
+                            "entity": {
+                                "player": true
+                            },
+                            "duration": -1,
+                            "align": "TOP",
+                            "group": "shade",
+                            "wait": false,
+                            "waitSkip": 0,
+                            "type": "SHOW_EFFECT",
+                            "effect": {
+                                "sheet": "map.barrier",
+                                "name": "azureDrop"
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 32
+                            }
+                        },
+                        {
+                            "pos": {
+                                "x": 800,
+                                "y": 280
+                            },
+                            "speed": "NORMAL",
+                            "transition": "EASE_IN_OUT",
+                            "wait": true,
+                            "waitSkip": 0,
+                            "zoom": 1,
+                            "type": "SET_CAMERA_POS"
+                        },
+                        {
+                            "entity": {
+                                "player": true
+                            },
+                            "group": "shade",
+                            "type": "CLEAR_EFFECTS"
+                        },
+                        {
+                            "entity": {
+                                "global": true,
+                                "name": "barrierSignA"
+                            },
+                            "duration": 0,
+                            "align": "TOP",
+                            "group": "shade",
+                            "wait": false,
+                            "waitSkip": 0,
+                            "target2": {
+                                "player": true
+                            },
+                            "target2Offset": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 12
+                            },
+                            "target2Align": "TOP",
+                            "type": "SHOW_EFFECT",
+                            "effect": {
+                                "sheet": "map.barrier",
+                                "name": "barrierHoming"
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            }
+                        },
+                        {
+                            "entity": {
+                                "global": true,
+                                "name": "barrierSignB"
+                            },
+                            "duration": 0,
+                            "align": "TOP",
+                            "group": "shade",
+                            "wait": false,
+                            "waitSkip": 0,
+                            "target2": {
+                                "player": true
+                            },
+                            "target2Offset": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 32
+                            },
+                            "target2Align": "TOP",
+                            "type": "SHOW_EFFECT",
+                            "effect": {
+                                "sheet": "map.barrier",
+                                "name": "barrierHoming"
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            }
+                        },
+                        {
+                            "ignoreSlowDown": false,
+                            "type": "WAIT",
+                            "time": 0.8
+                        },
+                        {
+                            "zoomType": "LIGHT",
+                            "fadeIn": 0.2,
+                            "duration": 0.1,
+                            "fadeOut": 0.2,
+                            "type": "SET_ZOOM_BLUR"
+                        },
+                        {
+                            "ignoreSlowDown": false,
+                            "type": "WAIT",
+                            "time": 0.3
+                        },
+                        {
+                            "changeType": "set",
+                            "type": "CHANGE_VAR_BOOL",
+                            "varName": "map.barrierOpen2",
+                            "value": true
+                        },
+                        {
+                            "ignoreSlowDown": false,
+                            "type": "WAIT",
+                            "time": 1
+                        },
+                        {
+                            "speed": "NORMAL",
+                            "transition": "EASE_IN_OUT",
+                            "wait": false,
+                            "waitSkip": 0,
+                            "type": "RESET_CAMERA"
+                        }
+                    ],
+                    "triggerType": "ONCE_PER_ENTRY",
+                    "mapId": 389,
+                    "startCondition": "tmp.barrierOpenZone && !map.barrierOpen2"
+                }
+            },{
+                "type": "EXIT",
+                "count": 1
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }, 
+    
+    { 
+        "type": "IF", 
+        "_comment": "Adds corresponding patch if Closed Gaia is on", 
+        "cond": "ig.vars.get('open-world.closedGaia') >= 1", 
+        "thenSteps": [{ "type": "INCLUDE", "src": "mod:extra-patches/enclosed-gaia/dng/dng-crossing.json.patch" }] 
+    }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+
+    {
+        "type": "ENTER",
+        "index": [74, "settings","states",1]
+    },
+    {
+        "_comment": "Make the platform object lower from any side switch. Either way you have to do the puzzle to get the hidden chest lmao",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "map.steam1 || map.coldActive"
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    },
+    { 
+        "type": "ADD_ARRAY_ELEMENT",
+        "_comment": "Add the barrier for anticheese at the top",
+        "content": {
+			"type": "ScalableProp",
+			"x": 528,
+			"y": 198,
+			"level": 1,
+			"settings": {
+				"name": "",
+				"size": { "x": 32, "y": 8 },
+				"patternOffset": { "x": 0, "y": 0 },
+				"timeOffset": 0,
+				"blockNavMap": false,
+				"mapId": 118,
+				"propConfig": {
+					"sheet": "dungeon-ar",
+					"name": "barrierH",
+					"ends": null
+				},
+				"spawnCondition": "map.coldActive && !map.steam1"
+			  }
+		  }
+    },
+  {
+    "type": "EXIT",
+    "count": 1
+  } 
+]

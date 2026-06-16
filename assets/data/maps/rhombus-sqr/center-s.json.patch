@@ -1,0 +1,52 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    {
+        "type": "ENTER",
+        "index": [618, "settings", "npcStates"]
+    },
+    { "type": "ENTER", "index": 0 },
+    { "type": "SET_KEY", "_comment": "Change Grumpy to show after shareholder events", "index": "condition", "content": "plot.shareholder >= 2500" },
+    { "type": "ENTER", "index": ["event", "quest"]},
+    { 
+        "type": "SET_KEY", 
+        "_comment": "Change the event variables",
+        "index": 4,
+        "content": { "withElse": true, "type": "IF", "condition": "party.size > 1", "thenStep": [ { "message": { "en_US": "I was expecting you to arrive \\c[3]alone\\c[0]. We should make sure that no one else is involved in this.", "langUid": 67, "de_DE": "Ich hatte erwartet, dass du \\c[3]allein\\c[0] kommst. Wir sollten doch darauf achten, dass niemand sonst davon erf\u00e4hrt.", "ja_JP": "\u304a\u524d\u306f\u3053\u3053\u306b\\c[3]\u3072\u3068\u308a\\c[0]\u3067\u6765\u308b\u3082\u306e\u3060\u3068\n\u601d\u3063\u3066\u3044\u305f\u3002\u3053\u308c\u306b\u4ed6\u306e\u4eba\u9593\u306f\n\u95a2\u308f\u3089\u305b\u306a\u3044\u3088\u3046\u306b\u3057\u306a\u3044\u3068\u306a\u3002<<A<<[CHANGED 2018/09/19]", "ko_KR": "\ub108 \\c[3]\ud63c\uc790\\c[0] \uc62c \uc904 \uc54c\uc558\ub294\ub370. \ub108 \uc678\uc5d0 \uadf8 \ub204\uad6c\ub3c4 \uc774 \uc77c\uc5d0 \uc5f0\ub8e8\ub418\uc5b4\uc11c\ub294 \uc548 \ub3fc.<<A<<[CHANGED 2018/09/19]", "zh_CN": "\u6211\u8fd8\u4ee5\u4e3a\u4f60\u4f1a\\c[3]\u81ea\u5df1\u6765\\c[0]\u5462\u3002\u6bd5\u7adf\u4e0d\u5e94\u8be5\u628a\u5176\u4ed6\u4eba\u5377\u8fdb\u6765\u3002<<A<<[CHANGED 2018/09/19]", "zh_TW": "\u6211\u9084\u4ee5\u70ba\u4f60\u6703\\c[3]\u81ea\u5df1\u4f86\\c[0]\u5462\u3002\u7562\u7adf\u4e0d\u61c9\u8a72\u628a\u5176\u4ed6\u4eba\u6372\u9032\u4f86\u3002<<A<<[CHANGED 2018/09/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.grumpy", "expression": "EYES_CLOSED" } }, { "message": { "en_US": "...!", "langUid": 66, "de_DE": "...!", "ja_JP": "...\uff01<<A<<[CHANGED 2018/08/28]", "ko_KR": "...!<<A<<[CHANGED 2018/08/28]", "zh_CN": "...!<<A<<[CHANGED 2018/08/28]", "zh_TW": "...!<<A<<[CHANGED 2018/08/28]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "SURPRISED" } } ], "elseStep": [ { "message": { "en_US": "No time to waste, please come this way.", "langUid": 64, "de_DE": "Keine Zeit zu verlieren, bitte hier entlang.", "ja_JP": "\u5bc4\u308a\u9053\u3057\u3066\u308b\u30d2\u30de\u306f\u306a\u3044\u3001\n\u3053\u3063\u3061\u306b\u6765\u3066\u304f\u308c\u3002<<A<<[CHANGED 2018/09/19]", "ko_KR": "\uc2dc\uac04\uc774 \uc5c6\uad70, \uc774\ucabd\uc73c\ub85c.<<A<<[CHANGED 2018/09/19]", "zh_CN": "\u6ca1\u65f6\u95f4\u6d6a\u8d39\u4e86\uff0c\u8d70\u8fd9\u8fb9\u3002<<A<<[CHANGED 2018/09/19]", "zh_TW": "\u6c92\u6642\u9593\u6d6a\u8cbb\u4e86\uff0c\u8d70\u9019\u908a\u3002<<A<<[CHANGED 2018/09/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.grumpy", "expression": "UP" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "task": { "en_US": "Follow Albert to \\c[3]Rhombus Square - Residential District\\c[0].", "langUid": 65, "de_DE": "Folge Albert ins \\c[3]Wohnviertel von Rhombus Square\\c[0].", "ja_JP": "\u30a2\u30eb\u30d0\u30fc\u30c8\u306b\u3064\u3044\u3066\n\\c[3]\u30ed\u30f3\u30d0\u30b9\u5e83\u5834 - \u4f4f\u5b85\u5730\\c[0]\u3078\u884c\u3053\u3046\u3002<<A<<[CHANGED 2018/08/28]", "ko_KR": "\uc54c\ubc84\ud2b8\ub97c \ub530\ub77c \\c[3]\ub9c8\ub984\ubaa8 \uad11\uc7a5 - \uac70\uc8fc \uc9c0\uad6c\\c[0]\ub85c \uc774\ub3d9\ud558\uc138\uc694.<<A<<[CHANGED 2018/08/28]", "zh_CN": "\u8ddf\u968f\u57c3\u5c14\u4f2f\u7279\u524d\u5f80\\c[3]\u7f57\u59c6\u5e03\u65af\u5e7f\u573a -  \u5c45\u4f4f\u533a\\c[0]\u3002<<A<<[CHANGED 2018/08/28]", "zh_TW": "\u8ddf\u96a8\u57c3\u723e\u4f2f\u7279\u524d\u5f80\\c[3]\u7f85\u59c6\u5e03\u65af\u5ee3\u5834 -  \u5c45\u4f4f\u5340\\c[0]\u3002<<A<<[CHANGED 2018/08/28]" }, "type": "SET_PERMA_TASK" }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.shareholder", "value": 2700 }, { "entity": { "global": true, "name": "grumpy" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 384, "y": 880, "lvl": "2" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "type": "RESET_NPC" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" } ] }
+    },
+    { "type": "EXIT", "count": 3 },
+    { "type": "ENTER", "index": 1 },
+    { "type": "SET_KEY", "index": "condition", "content": "plot.shareholder >= 2700" },
+    { "type": "EXIT", "count": 1 },
+    {
+        "type": "EXIT",
+        "count": 3
+    }, 
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes the barriers in front of the dlc exits with dlc active",
+        "keyword": "__INDEX__",
+        "values": [154,301,679],
+        "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "blockEventCondition", "content": "!extension.post-game.active || !open-world.dlcActive" },{ "type": "EXIT", "count": 2 }]
+      },
+  
+      {
+          "type": "FOR_IN",
+          "_comment": "Removes the barriers in front of the dlc exits with dlc active",
+          "keyword": "__INDEX__",
+          "values": [590,591],
+          "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition", "content": "!extension.post-game.active || !open-world.dlcActive" },{ "type": "EXIT", "count": 2 }]
+      },
+
+      {
+        "type": "FOR_IN",
+        "_comment": "Shows the OLs in front of the dlc exits with dlc active",
+        "keyword": "__INDEX__",
+        "values": [676,677],
+        "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition", "content": "extension.post-game.active && open-world.dlcActive" },{ "type": "EXIT", "count": 2 }]
+    },
+
+    { "type": "ENTER","_comment": "Shows the golden chest in front of the dlc exits with dlc active", "index": [678,  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition", "content": "extension.post-game.active && open-world.dlcActive" },{ "type": "EXIT", "count": 2 },
+    { "type": "EXIT", "count": 1 }  
+]

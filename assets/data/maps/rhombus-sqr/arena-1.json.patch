@@ -1,0 +1,52 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    {
+      "type": "FOR_IN",
+      "_comment": "Removes the barriers in front of the dlc exits with dlc active",
+      "keyword": "__INDEX__",
+      "values": [481,483,627],
+      "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "blockEventCondition", "content": "!extension.post-game.active || !open-world.dlcActive" },{ "type": "EXIT", "count": 2 }]
+    },
+  
+      {
+          "type": "FOR_IN",
+          "_comment": "Removes the barriers in front of the dlc exits with dlc active",
+          "keyword": "__INDEX__",
+          "values": [485,480],
+          "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition", "content": "!extension.post-game.active || !open-world.dlcActive" },{ "type": "EXIT", "count": 2 }]
+      },
+
+      {
+        "type": "FOR_IN",
+        "_comment": "OL barrier deactivated fx when dlc",
+        "keyword": "__INDEX__",
+        "values": [821,822],
+        "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition", "content": "extension.post-game.active && open-world.dlcActive" },{ "type": "EXIT", "count": 2 }]
+    },
+
+    { 
+    "type": "IF", 
+    "_comment": "Adds corresponding patch if Extra Sandwich is on", 
+    "cond": "ig.vars.get('open-world.extra-sandwich') >= 1", 
+    "thenSteps": [{ 
+        "_comment": "Extra Sandwich", "type": "ADD_ARRAY_ELEMENT", "content": {"type":"Chest","x":1656,"y":1000,"level":1,"settings":{"name":"","chestType":"Default","item":"1","amount":2,"mapId":5000}} 
+    }]},
+
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "values": [704, 705],
+        "body": [
+            { "type": "ENTER", "index": ["__INDEX__",  "settings", "npcStates", 0] },
+            {
+                "_comment": "Replace DLC completion for quest",
+                "type": "SET_KEY",
+                "index": "condition",
+                "content": "open-world.dlcActive && item.626.amount >= 1"
+            },
+            { "type": "EXIT", "count": 4 }]
+    },
+
+    { "type": "EXIT", "count": 1 }  
+]

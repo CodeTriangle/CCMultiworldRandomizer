@@ -1,0 +1,14 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [21,"settings", "npcStates", 1] },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "item.345.amount >= 1",
+        "_comment": "Change Calzone Shop need Pond Slums Pass instead"
+    },
+    { "type": "EXIT", "count": 4 },    
+
+    { "type": "EXIT" }    
+]

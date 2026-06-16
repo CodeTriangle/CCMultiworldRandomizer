@@ -1,0 +1,78 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+    {
+        "type": "ENTER",
+        "index": [63, "settings","event", 0, "thenStep"]
+    },
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+            "type": "GIVE_ITEM",
+            "item": "40",
+            "amount": 3
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 5
+    },    
+    {
+        "type": "ENTER",
+        "index": [64, "settings","event", 0, "thenStep"]
+    },
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+            "type": "GIVE_ITEM",
+            "item": "40",
+            "amount": 3
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 5
+    },    
+    {
+        "type": "ENTER",
+        "index": [66, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "map.poleUp1 || map.poleUp2"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },    
+
+    {
+        "type": "ENTER",
+        "index": [79, "settings","npcStates", 0]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "condition"
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    },  
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Enable elevator signs",
+        "keyword": "__INDEX__",
+        "values": [48, 49, 50, 51, 52],
+        "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition" },{ "type": "EXIT", "count": 2 }]
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }    
+    
+]

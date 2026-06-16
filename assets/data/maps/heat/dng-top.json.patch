@@ -1,0 +1,79 @@
+[
+    {
+        "type": "ENTER",
+        "index": [ "entities" ]
+    },
+    {
+        "type": "ENTER",
+        "index": [ 359 ]
+    },
+    {
+        "_comment": "Change pre-expo cutscene",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+            "name": "DungeonFinish",
+            "eventType": "CUTSCENE",
+            "endCondition": "map.dungeonEnd",
+            "event": [ { "alpha": 1, "time": 0, "lighter": false, "type": "SET_OVERLAY", "color": "white" }, { "mode": "IMMEDIATELY", "type": "PAUSE_BGM" }, { "entity": { "player": true }, "skipEffects": true, "type": "HIDE_ENTITY" }, { "entity": { "party": "Member2" }, "skipEffects": true, "type": "HIDE_ENTITY" }, { "entity": { "party": "Member3" }, "skipEffects": true, "type": "HIDE_ENTITY" }, { "pos": { "x": 800, "y": 456 }, "speed": "IMMEDIATELY", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "alpha": 0, "time": 1, "lighter": false, "type": "SET_OVERLAY", "color": "white" }, { "pos": { "x": 800, "y": 616 }, "speed": "SLOWER", "transition": "EASE_OUT", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "door": { "global": true, "name": "entrance" }, "type": "OPEN_DOOR" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "entity": { "player": true }, "position": { "x": 800, "y": 600, "lvl": "2" }, "type": "SET_ENTITY_POS" }, { "entity": { "player": true }, "skipEffects": false, "type": "SHOW_ENTITY" }, { "entity": { "player": true }, "action": [ { "value": true, "type": "SET_SLIP_THROUGH" }, { "time": 1, "type": "WAIT" }, { "value": 0.4, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 800, "y": 664, "lvl": "2" }, "precise": true, "type": "MOVE_TO_POINT" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "pos": { "x": 800, "y": 1080 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "entity": { "party": "Member2" }, "skipEffects": true, "type": "SHOW_ENTITY" }, { "entity": { "party": "Member3" }, "skipEffects": true, "type": "SHOW_ENTITY" }, { "offsetX": 0, "offsetY": 0, "speed": "NORMAL", "transition": "EASE_IN_OUT", "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_TARGET", "entity": { "player": true }, "wait": true }, { "mode": "SLOW", "delayed": false, "type": "RESUME_DEFAULT_BGM" }, { "type": "CHANGE_VAR_BOOL", "varName": "tmp.introCutscene", "changeType": "set", "value": true }, { "pos": { "x": 800, "y": 900 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "action": [ { "value": 1, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 800, "y": 1000, "lvl": "2" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "pos": { "x": 800, "y": 1020 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 800, "y": 1160, "lvl": "2" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "type": "WAIT_UNTIL_ACTION_DONE" }, { "pos": { "x": 800, "y": 1080 }, "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "zoomType": "LIGHT", "fadeIn": 0.5, "duration": 2, "fadeOut": 0, "type": "SET_ZOOM_BLUR" }, { "alpha": 1, "time": 2, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "zoom": 2, "duration": 2, "transition": "EASE_IN", "type": "SET_CAMERA_ZOOM" }, { "volume": 0.8, "name": "", "loop": false, "offset": 0, "startTime": 0, "type": "PLAY_SOUND", "sound": "media/sound/scenes/swoosh-rise-long.ogg" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 2 }, { "value": "SAVE", "type": "SET_MOBILITY_BLOCK" }, { "lighter": true, "type": "SET_TELEPORT_COLOR", "color": "white" }, { "type": "CHANGE_VAR_BOOL", "varName": "map.dungeonEnd", "changeType": "set", "value": true }, { "type": "TELEPORT", "map": "heat.dng-expo-space", "marker": "start" } ],
+            "triggerType": "ALWAYS",
+            "mapId": 457,
+            "startCondition": ""
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },
+    {
+        "type": "ENTER",
+        "index": [366]
+    },
+    {
+        "_comment": "Change Post Expo cutscene",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+            "name": "PostExpoScene",
+            "eventType": "CUTSCENE",
+            "endCondition": "map.cutsceneDone",
+            "event": [ { "type": "SET_MOBILITY_BLOCK", "value": "NONE" }, { "entity": { "player": true }, "position": { "x": 800, "y": 1160, "lvl": "2" }, "type": "SET_ENTITY_POS" }, { "volume": 1, "name": "", "loop": false, "offset": 0, "startTime": 0, "type": "PLAY_SOUND", "sound": "media/sound/scenes/swoosh-fall-long.ogg", "position": { "x": 1, "y": 1 } }, { "mode": "MEDIUM", "delayed": false, "type": "RESUME_DEFAULT_BGM" }, { "alpha": 1, "time": 0, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.1 }, { "pos": { "x": 800, "y": 1012 }, "speed": "IMMEDIATELY", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 2, "type": "SET_CAMERA_POS" }, { "zoom": 1, "duration": 2, "transition": "EASE_OUT", "type": "SET_CAMERA_ZOOM" }, { "alpha": 0, "time": 2, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 2 }, { "entity": { "player": true }, "action": [ { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "map.infoText", "value": 1 }, { "time": 0.3, "type": "WAIT" }, { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "map.infoText", "value": 1 }, { "time": 0.3, "type": "WAIT" }, { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "map.infoText", "value": 1 }, { "time": 0.3, "type": "WAIT" }, { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "map.infoText", "value": 1 } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "pos": { "x": 800, "y": 1448 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "g.fajroTopTeleport", "value": 1 }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "changeType": "add", "type": "CHANGE_VAR_NUMBER", "varName": "map.spectatorsGone", "value": 1 }, { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 }, { "type": "SET_MEMBER_LOCKED", "member": "Emilie", "locked": false }, { "type": "SET_MEMBER_LOCKED", "member": "Glasses", "locked": false }, { "type": "CHANGE_VAR_BOOL", "varName": "map.cutsceneDone", "changeType": "set", "value": true } ],
+            "triggerType": "ALWAYS",
+            "mapId": 396,
+            "startCondition": "map.expoDone"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes dream and post dream events",
+        "keyword": "__INDEX__",
+        "values": [ 381, 374 ],
+        "body": [ { "type": "ENTER", "index": [ "__INDEX__", "settings" ] }, { "type": "SET_KEY", "index": "startCondition", "content": "false" }, { "type": "EXIT", "count": 2 } ]
+    },
+    {
+        "type": "ENTER",
+        "index": [ 373, "settings" ]
+    },
+    {
+        "_comment": "Make the teleport accessible without advancing plot or asking, just in case",
+        "type": "SET_KEY",
+        "index": "blockEventCondition"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEvent"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

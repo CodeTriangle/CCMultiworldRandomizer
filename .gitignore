@@ -1,3 +1,17 @@
+# ccmwr
 node_modules
-*.js
+mw-rando/*.js
 *.ccmod
+
+# ccow
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Readme.md
+assets/media/bgm/
+package.json
+releases/
