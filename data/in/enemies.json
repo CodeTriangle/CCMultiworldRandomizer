@@ -485,7 +485,7 @@
 			"id": "jungle.plant",
 			"level": 37,
 			"region": {
-				"open": "openXX"
+				"open": "open10"
 			},
 			"boosted": {
 				"level": 63,
@@ -498,7 +498,7 @@
 			"id": "jungle.blob",
 			"level": 38,
 			"region": {
-				"open": "openXX"
+				"open": "open10"
 			},
 			"boosted": {
 				"level": 63,
@@ -511,7 +511,7 @@
 			"id": "jungle.parrot",
 			"level": 38,
 			"region": {
-				"open": "openXX"
+				"open": "open10"
 			},
 			"boosted": {
 				"level": 63,
@@ -524,7 +524,7 @@
 			"id": "jungle.fish",
 			"level": 39,
 			"region": {
-				"open": "openXX"
+				"open": "open10.Grove"
 			},
 			"boosted": {
 				"level": 63,
@@ -536,8 +536,15 @@
 			"name": "Shokat",
 			"id": "jungle.shockcat",
 			"level": 40,
-			"region": {
-				"open": "openXX"
+			"firstEncounter": {
+				"region": {
+					"open": "open10"
+				}
+			},
+			"grindAccess": {
+				"region": {
+					"open": "open10.Mid"
+				}
 			},
 			"boosted": {
 				"level": 63,
@@ -550,7 +557,7 @@
 			"id": "jungle.sloth",
 			"level": 42,
 			"region": {
-				"open": "openXX"
+				"open": "open10.Infested"
 			},
 			"boosted": {
 				"level": 63,
@@ -563,8 +570,15 @@
 			"name": "Jelleric",
 			"id": "jungle.blob-wave",
 			"level": 42,
-			"region": {
-				"open": "openXX"
+			"firstEncounter": {
+				"region": {
+					"open": "open10.Left"
+				}
+			},
+			"grindAccess": {
+				"region": {
+					"open": "open14.1"
+				}
 			},
 			"boosted": {
 				"level": 63,
@@ -577,7 +591,7 @@
 			"id": "jungle.octopus",
 			"level": 42,
 			"region": {
-				"open": "openXX"
+				"open": "open14.1"
 			},
 			"boosted": {
 				"level": 63,
@@ -590,7 +604,7 @@
 			"id": "jungle.blueray",
 			"level": 44,
 			"region": {
-				"open": "openXX"
+				"open": "open14.1"
 			},
 			"boosted": {
 				"level": 64,
@@ -604,7 +618,7 @@
 			"id": "jungle.chicken",
 			"level": 42,
 			"region": {
-				"open": "openXX"
+				"open": "open10.Right"
 			},
 			"boosted": {
 				"level": 63,
@@ -616,8 +630,15 @@
 			"name": "Powerplant",
 			"id": "jungle.powerplant",
 			"level": 43,
-			"region": {
-				"open": "openXX"
+			"firstEncounter": {
+				"region": {
+					"open": "open10.Right"
+				}
+			},
+			"grindAccess": {
+				"region": {
+					"open": "open13.1"
+				}
 			},
 			"boosted": {
 				"level": 64,
@@ -629,8 +650,15 @@
 			"name": "Ectovolt",
 			"id": "jungle.ghost",
 			"level": 44,
-			"region": {
-				"open": "openXX"
+			"firstEncounter": {
+				"region": {
+					"open": "open10.Right"
+				}
+			},
+			"grindAccess": {
+				"region": {
+					"open": "open13.1"
+				}
 			},
 			"boosted": {
 				"level": 64,
@@ -644,7 +672,7 @@
 			"id": "forest.bug-samurai-heat",
 			"level": 51,
 			"region": {
-				"open": "openXX"
+				"open": "open16"
 			},
 			"boosted": {
 				"level": 65,
@@ -657,7 +685,7 @@
 			"id": "forest.bug-samurai-shock",
 			"level": 51,
 			"region": {
-				"open": "openXX"
+				"open": "open16"
 			},
 			"boosted": {
 				"level": 65,
@@ -670,7 +698,7 @@
 			"id": "forest.panda",
 			"level": 51,
 			"region": {
-				"open": "openXX"
+				"open": "open16"
 			},
 			"boosted": {
 				"level": 65,
@@ -683,7 +711,7 @@
 			"id": "forest.spider",
 			"level": 52,
 			"region": {
-				"open": "openXX"
+				"open": "open16"
 			},
 			"boosted": {
 				"level": 65,
@@ -697,7 +725,7 @@
 			"id": "beach.sea-star-heat",
 			"level": 66,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_Beach"
 			},
 			"area": "beach"
 		},
@@ -706,7 +734,7 @@
 			"id": "beach.sea-star-cold",
 			"level": 66,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_Beach"
 			},
 			"area": "beach"
 		},
@@ -715,7 +743,7 @@
 			"id": "beach.sea-star-shock",
 			"level": 66,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_Beach"
 			},
 			"area": "beach"
 		},
@@ -724,7 +752,7 @@
 			"id": "beach.sea-star-wave",
 			"level": 66,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_Beach"
 			},
 			"area": "beach"
 		},
@@ -733,7 +761,7 @@
 			"id": "beach.special.blob-salt",
 			"level": 67,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_Beach"
 			},
 			"area": "beach"
 		},
@@ -742,7 +770,7 @@
 			"id": "beach.fish",
 			"level": 68,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_Beach"
 			},
 			"area": "beach"
 		},
@@ -751,7 +779,7 @@
 			"id": "beach.worm",
 			"level": 70,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_Beach"
 			},
 			"area": "beach"
 		},
@@ -760,7 +788,7 @@
 			"id": "beach.turtle-man",
 			"level": 71,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_Beach"
 			},
 			"area": "beach"
 		},
@@ -770,7 +798,7 @@
 			"id": "final.crystal-heat",
 			"level": 71,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_DungeonEntry"
 			},
 			"area": "final-dng"
 		},
@@ -779,7 +807,7 @@
 			"id": "final.crystal-cold",
 			"level": 71,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_DungeonEntry"
 			},
 			"area": "final-dng"
 		},
@@ -788,7 +816,7 @@
 			"id": "final.crystal-shock",
 			"level": 71,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_DungeonEntry"
 			},
 			"area": "final-dng"
 		},
@@ -797,7 +825,7 @@
 			"id": "final.crystal-wave",
 			"level": 71,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_DungeonEntry"
 			},
 			"area": "final-dng"
 		},
@@ -806,7 +834,7 @@
 			"id": "final.colibri",
 			"level": 72,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_DungeonEntry"
 			},
 			"area": "final-dng"
 		},
@@ -815,7 +843,7 @@
 			"id": "guest.firespirit",
 			"level": 73,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_DungeonEntry"
 			},
 			"area": "final-dng"
 		},
@@ -824,7 +852,7 @@
 			"id": "guest.honeybear",
 			"level": 73,
 			"region": {
-				"open": "openXX"
+				"open": "openDLC_DungeonEntry"
 			},
 			"area": "final-dng"
 		},
