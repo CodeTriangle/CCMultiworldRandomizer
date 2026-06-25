@@ -7,13 +7,14 @@
 		"regions.json",
 		"shops.json",
 		"item-pools.json",
+		"enemies.json",
         "prog-items/master.json"
 	],
 	"_comment": "Checks that are found only in DLC areas",
     "dungeons": [ "final-dng" ],
     "keyringItems": [ "Ku'lero Key" ],
 	"_global": {
-		"/botanics|cutscenes|chests|quests|regions|item-pools|shops/": {
+		"/botanics|cutscenes|chests|quests|regions|item-pools|shops|enemies/": {
 			"*": {
 				"metadata": {
 					"dlc": true

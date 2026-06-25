@@ -1,6 +1,6 @@
 {
-	"enemies": [
-		{
+	"enemies": {
+		"Hedgehag": {
 			"name": "Hedgehag",
 			"id": "hedgehog",
 			"level": 4,
@@ -13,7 +13,7 @@
 			},
 			"area": "autumn-area"
 		},
-		{
+		"Rockin' Hillkat": {
 			"name": "Rockin' Hillkat",
 			"id": "meerkat",
 			"level": 5,
@@ -26,7 +26,7 @@
 			},
 			"area": "autumn-area"
 		},
-		{
+		"Mad Bovine": {
 			"name": "Mad Bovine",
 			"id": "buffalo",
 			"level": 6,
@@ -39,7 +39,7 @@
 			},
 			"area": "autumn-area"
 		},
-		{
+		"Old Hedgehag": {
 			"name": "Old Hedgehag",
 			"id": "hedgehog-alt",
 			"level": 9,
@@ -52,7 +52,7 @@
 			},
 			"area": "autumn-area"
 		},
-		{
+		"Flamin' Hillkat": {
 			"name": "Flamin' Hillkat",
 			"id": "meerkat-alt",
 			"level": 10,
@@ -65,7 +65,7 @@
 			},
 			"area": "autumn-area"
 		},
-		{
+		"Red Eyed Bovine": {
 			"name": "Red Eyed Bovine",
 			"id": "buffalo-alt",
 			"level": 12,
@@ -79,7 +79,7 @@
 			"area": "autumn-area"
 		},
 
-		{
+		"Young Frobbit": {
 			"name": "Young Frobbit",
 			"id": "gray-frobbit",
 			"level": 13,
@@ -92,7 +92,7 @@
 			},
 			"area": "bergen-trails"
 		},
-		{
+		"White Frobbit": {
 			"name": "White Frobbit",
 			"id": "frobbit",
 			"level": 15,
@@ -105,7 +105,7 @@
 			},
 			"area": "bergen-trails"
 		},
-		{
+		"Seafly": {
 			"name": "Seafly",
 			"id": "seahorse",
 			"level": 16,
@@ -118,7 +118,7 @@
 			},
 			"area": "bergen-trails"
 		},
-		{
+		"Pengpeng": {
 			"name": "Pengpeng",
 			"id": "penguin",
 			"level": 17,
@@ -131,7 +131,7 @@
 			},
 			"area": "bergen-trails"
 		},
-		{
+		"Horny Goat": {
 			"name": "Horny Goat",
 			"id": "goat",
 			"level": 17,
@@ -144,7 +144,7 @@
 			},
 			"area": "bergen-trails"
 		},
-		{
+		"Karotto": {
 			"name": "Karotto",
 			"id": "snowman",
 			"level": 18,
@@ -158,7 +158,7 @@
 			"area": "bergen-trails"
 		},
 
-		{
+		"Fleazer": {
 			"name": "Fleazer",
 			"id": "mine-coldbug",
 			"level": 18,
@@ -167,7 +167,7 @@
 					"open": "open4.2"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open4.4"
 				}
@@ -178,7 +178,7 @@
 			},
 			"area": "cold-dng"
 		},
-		{
+		"Carritrich": {
 			"name": "Carritrich",
 			"id": "mine-runbot",
 			"level": 18,
@@ -187,7 +187,7 @@
 					"open": "open4.2"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open4.4"
 				}
@@ -198,7 +198,7 @@
 			},
 			"area": "cold-dng"
 		},
-		{
+		"Kamikatze": {
 			"name": "Kamikatze",
 			"id": "mine-kamikatze",
 			"level": 18,
@@ -207,7 +207,7 @@
 					"open": "open4.2"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open4.4"
 				}
@@ -218,7 +218,7 @@
 			},
 			"area": "cold-dng"
 		},
-		{
+		"Digmo": {
 			"name": "Digmo",
 			"id": "mine-diggingbot",
 			"level": 19,
@@ -227,7 +227,7 @@
 					"open": "open4.4"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open4.6"
 				}
@@ -239,7 +239,7 @@
 			"area": "cold-dng"
 		},
 
-		{
+		"Pinceron": {
 			"name": "Pinceron",
 			"id": "heat.scorpion",
 			"level": 23,
@@ -252,7 +252,7 @@
 			},
 			"area": "heat-area"
 		},
-		{
+		"Sharkster": {
 			"name": "Sharkster",
 			"id": "heat.sandshark",
 			"level": 24,
@@ -265,7 +265,7 @@
 			},
 			"area": "heat-area"
 		},
-		{
+		"Vulturbine": {
 			"name": "Vulturbine",
 			"id": "heat.volturbine",
 			"level": 24,
@@ -278,7 +278,7 @@
 			},
 			"area": "heat-area"
 		},
-		{
+		"Drillertoise": {
 			"name": "Drillertoise",
 			"id": "heat.drillertoise",
 			"level": 25,
@@ -291,7 +291,7 @@
 			},
 			"area": "heat-area"
 		},
-		{
+		"Tim": {
 			"name": "Tim",
 			"id": "heat.sandworm",
 			"level": 25,
@@ -304,7 +304,7 @@
 			},
 			"area": "heat-area"
 		},
-		{
+		"Boss Pincer": {
 			"name": "Boss Pincer",
 			"id": "heat.scorpion-alt",
 			"level": 26,
@@ -318,7 +318,7 @@
 			"area": "heat-area"
 		},
 
-		{
+		"Trijelly": {
 			"name": "Trijelly",
 			"id": "heat.jellyfish",
 			"level": 27,
@@ -327,7 +327,7 @@
 					"open": "open7.2"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open7.6"
 				}
@@ -338,7 +338,7 @@
 			},
 			"area": "heat-dng"
 		},
-		{
+		"Pada Moth": {
 			"name": "Pada Moth",
 			"id": "heat.moth",
 			"level": 27,
@@ -347,7 +347,7 @@
 					"open": "open7.2"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open7.6"
 				}
@@ -358,7 +358,7 @@
 			},
 			"area": "heat-dng"
 		},
-		{
+		"Darth Moth": {
 			"name": "Darth Moth",
 			"id": "heat.darth-moth",
 			"level": 28,
@@ -367,7 +367,7 @@
 					"open": "open7.6"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open7.7"
 				}
@@ -378,7 +378,7 @@
 			},
 			"area": "heat-dng"
 		},
-		{
+		"Magmanizer": {
 			"name": "Magmanizer",
 			"id": "heat.heat-golem",
 			"level": 28,
@@ -387,7 +387,7 @@
 					"open": "open7.5"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open7.6"
 				}
@@ -399,7 +399,7 @@
 			"area": "heat-dng"
 		},
 
-		{
+		"Radical Hedgehag": {
 			"name": "Radical Hedgehag",
 			"id": "autumn-fall.hedgehog-fall",
 			"level": 32,
@@ -412,7 +412,7 @@
 			},
 			"area": "autumn-fall"
 		},
-		{
+		"Chillin' Hillkat": {
 			"name": "Chillin' Hillkat",
 			"id": "autumn-fall.meerkat-fall",
 			"level": 34,
@@ -425,7 +425,7 @@
 			},
 			"area": "autumn-fall"
 		},
-		{
+		"Fallfly": {
 			"name": "Fallfly",
 			"id": "autumn-fall.seahorse-fall",
 			"level": 35,
@@ -438,7 +438,7 @@
 			},
 			"area": "autumn-fall"
 		},
-		{
+		"Ivory Bovine": {
 			"name": "Ivory Bovine",
 			"id": "autumn-fall.buffalo-fall",
 			"level": 36,
@@ -452,7 +452,7 @@
 			"area": "autumn-fall"
 		},
 
-		{
+		"Neutral Virus": {
 			"name": "Neutral Virus",
 			"id": "arid.virus-neutral",
 			"level": 38,
@@ -461,7 +461,7 @@
 			},
 			"area": "arid"
 		},
-		{
+		"Heat Virus": {
 			"name": "Heat Virus",
 			"id": "arid.virus-heat",
 			"level": 38,
@@ -470,7 +470,7 @@
 			},
 			"area": "arid"
 		},
-		{
+		"Cold Virus": {
 			"name": "Cold Virus",
 			"id": "arid.virus-cold",
 			"level": 38,
@@ -480,7 +480,7 @@
 			"area": "arid"
 		},
 
-		{
+		"Argeby": {
 			"name": "Argeby",
 			"id": "jungle.plant",
 			"level": 37,
@@ -493,7 +493,7 @@
 			},
 			"area": "jungle"
 		},
-		{
+		"Gelleric": {
 			"name": "Gelleric",
 			"id": "jungle.blob",
 			"level": 38,
@@ -506,7 +506,7 @@
 			},
 			"area": "jungle"
 		},
-		{
+		"Papagun": {
 			"name": "Papagun",
 			"id": "jungle.parrot",
 			"level": 38,
@@ -519,7 +519,7 @@
 			},
 			"area": "jungle"
 		},
-		{
+		"Angler": {
 			"name": "Angler",
 			"id": "jungle.fish",
 			"level": 39,
@@ -532,7 +532,7 @@
 			},
 			"area": "jungle"
 		},
-		{
+		"Shokat": {
 			"name": "Shokat",
 			"id": "jungle.shockcat",
 			"level": 40,
@@ -541,7 +541,7 @@
 					"open": "open10"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open10.Mid"
 				}
@@ -552,7 +552,7 @@
 			},
 			"area": "jungle"
 		},
-		{
+		"Behesloth": {
 			"name": "Behesloth",
 			"id": "jungle.sloth",
 			"level": 42,
@@ -566,7 +566,7 @@
 			"area": "jungle"
 		},
 
-		{
+		"Jelleric": {
 			"name": "Jelleric",
 			"id": "jungle.blob-wave",
 			"level": 42,
@@ -575,7 +575,7 @@
 					"open": "open10.Left"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open14.1"
 				}
@@ -586,7 +586,7 @@
 			},
 			"area": "wave-dng"
 		},
-		{
+		"Ocubepus": {
 			"name": "Ocubepus",
 			"id": "jungle.octopus",
 			"level": 42,
@@ -599,7 +599,7 @@
 			},
 			"area": "wave-dng"
 		},
-		{
+		"Blue Ray": {
 			"name": "Blue Ray",
 			"id": "jungle.blueray",
 			"level": 44,
@@ -613,7 +613,7 @@
 			"area": "wave-dng"
 		},
 
-		{
+		"Rob0ck": {
 			"name": "Rob0ck",
 			"id": "jungle.chicken",
 			"level": 42,
@@ -626,7 +626,7 @@
 			},
 			"area": "shock-dng"
 		},
-		{
+		"Powerplant": {
 			"name": "Powerplant",
 			"id": "jungle.powerplant",
 			"level": 43,
@@ -635,7 +635,7 @@
 					"open": "open10.Right"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open13.1"
 				}
@@ -646,7 +646,7 @@
 			},
 			"area": "shock-dng"
 		},
-		{
+		"Ectovolt": {
 			"name": "Ectovolt",
 			"id": "jungle.ghost",
 			"level": 44,
@@ -655,7 +655,7 @@
 					"open": "open10.Right"
 				}
 			},
-			"grindAccess": {
+			"grind": {
 				"region": {
 					"open": "open13.1"
 				}
@@ -667,7 +667,7 @@
 			"area": "shock-dng"
 		},
 
-		{
+		"Sun Beetle": {
 			"name": "Sun Beetle",
 			"id": "forest.bug-samurai-heat",
 			"level": 51,
@@ -680,7 +680,7 @@
 			},
 			"area": "forest"
 		},
-		{
+		"Moon Beetle": {
 			"name": "Moon Beetle",
 			"id": "forest.bug-samurai-shock",
 			"level": 51,
@@ -693,7 +693,7 @@
 			},
 			"area": "forest"
 		},
-		{
+		"Pandza": {
 			"name": "Pandza",
 			"id": "forest.panda",
 			"level": 51,
@@ -706,7 +706,7 @@
 			},
 			"area": "forest"
 		},
-		{
+		"Aranetarda": {
 			"name": "Aranetarda",
 			"id": "forest.spider",
 			"level": 52,
@@ -718,170 +718,6 @@
 				"booster": "Ridge Booster"
 			},
 			"area": "forest"
-		},
-
-		{
-			"name": "Echinoignis",
-			"id": "beach.sea-star-heat",
-			"level": 66,
-			"region": {
-				"open": "openDLC_Beach"
-			},
-			"area": "beach"
-		},
-		{
-			"name": "Echinonix",
-			"id": "beach.sea-star-cold",
-			"level": 66,
-			"region": {
-				"open": "openDLC_Beach"
-			},
-			"area": "beach"
-		},
-		{
-			"name": "Echinofulgur",
-			"id": "beach.sea-star-shock",
-			"level": 66,
-			"region": {
-				"open": "openDLC_Beach"
-			},
-			"area": "beach"
-		},
-		{
-			"name": "Echinofluctus",
-			"id": "beach.sea-star-wave",
-			"level": 66,
-			"region": {
-				"open": "openDLC_Beach"
-			},
-			"area": "beach"
-		},
-		{
-			"name": "Salteric",
-			"id": "beach.special.blob-salt",
-			"level": 67,
-			"region": {
-				"open": "openDLC_Beach"
-			},
-			"area": "beach"
-		},
-		{
-			"name": "Balooneer",
-			"id": "beach.fish",
-			"level": 68,
-			"region": {
-				"open": "openDLC_Beach"
-			},
-			"area": "beach"
-		},
-		{
-			"name": "K'im",
-			"id": "beach.worm",
-			"level": 70,
-			"region": {
-				"open": "openDLC_Beach"
-			},
-			"area": "beach"
-		},
-		{
-			"name": "Trigenbu",
-			"id": "beach.turtle-man",
-			"level": 71,
-			"region": {
-				"open": "openDLC_Beach"
-			},
-			"area": "beach"
-		},
-
-		{
-			"name": "Heat Crystalid",
-			"id": "final.crystal-heat",
-			"level": 71,
-			"region": {
-				"open": "openDLC_DungeonEntry"
-			},
-			"area": "final-dng"
-		},
-		{
-			"name": "Cold Crystalid",
-			"id": "final.crystal-cold",
-			"level": 71,
-			"region": {
-				"open": "openDLC_DungeonEntry"
-			},
-			"area": "final-dng"
-		},
-		{
-			"name": "Shock Crystalid",
-			"id": "final.crystal-shock",
-			"level": 71,
-			"region": {
-				"open": "openDLC_DungeonEntry"
-			},
-			"area": "final-dng"
-		},
-		{
-			"name": "Wave Crystalid",
-			"id": "final.crystal-wave",
-			"level": 71,
-			"region": {
-				"open": "openDLC_DungeonEntry"
-			},
-			"area": "final-dng"
-		},
-		{
-			"name": "Hummagnum",
-			"id": "final.colibri",
-			"level": 72,
-			"region": {
-				"open": "openDLC_DungeonEntry"
-			},
-			"area": "final-dng"
-		},
-		{
-			"name": "Mizree",
-			"id": "guest.firespirit",
-			"level": 73,
-			"region": {
-				"open": "openDLC_DungeonEntry"
-			},
-			"area": "final-dng"
-		},
-		{
-			"name": "Beearbot",
-			"id": "guest.honeybear",
-			"level": 73,
-			"region": {
-				"open": "openDLC_DungeonEntry"
-			},
-			"area": "final-dng"
-		},
-		{
-			"name": "Heat Statue",
-			"id": "final.ele-pillar-heat",
-			"level": 73,
-			"region": {
-				"open": "openXX"
-			},
-			"area": "final-dng"
-		},
-		{
-			"name": "Cold Statue",
-			"id": "final.ele-pillar-cold",
-			"level": 73,
-			"region": {
-				"open": "openXX"
-			},
-			"area": "final-dng"
-		},
-		{
-			"name": "Shock Statue",
-			"id": "final.ele-pillar-shock",
-			"level": 73,
-			"region": {
-				"open": "openXX"
-			},
-			"area": "final-dng"
 		}
-	]
+	}
 }
