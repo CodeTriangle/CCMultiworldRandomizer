@@ -1,0 +1,367 @@
+{
+	"enemies": {
+		"meerkat-special-command-1": {
+			"name": "Hillkat Bandleader",
+			"id": "meerkat-special-command-1",
+			"level": 13,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "autumn-area"
+		},
+		"minibosses.blue-hedge": {
+			"name": "Blue Hedgehag",
+			"id": "minibosses.blue-hedge",
+			"level": 15,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "autumn-area"
+		},
+		"mine-diggingbot-cold": {
+			"name": "Infected Digmo",
+			"id": "mine-diggingbot-cold",
+			"level": 19,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "cold-dng"
+		},
+		"minibosses.penguin-rapper": {
+			"name": "Peng King Dakara",
+			"id": "minibosses.penguin-rapper",
+			"level": 21,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "bergen-trails"
+		},
+		"boss-driller": {
+			"name": "X01 Driller H.F.S.",
+			"id": "boss-driller",
+			"level": 21,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "cold-dng"
+		},
+		"snowman-xmas": {
+			"name": "Meister Karotto",
+			"id": "snowman-xmas",
+			"level": 23,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "bergen"
+		},
+		"heat.sandworm-boss": {
+			"name": "Ti'im",
+			"id": "heat.sandworm-boss",
+			"level": 26,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "heat-area"
+		},
+		"heat.antlion": {
+			"name": "Pinzo'jrahrrrn",
+			"id": "heat.antlion",
+			"level": 28,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "heat-dng"
+		},
+		"minibosses.cursed-sandshark": {
+			"name": "Cursed Sharkster",
+			"id": "minibosses.cursed-sandshark",
+			"level": 30,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "heat-area"
+		},
+		"heat.megamoth": {
+			"name": "Master Magmoth",
+			"id": "heat.megamoth",
+			"level": 30,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "heat-dng"
+		},
+		"heat.special.guard-hostile-mustache": {
+			"name": "Guard Billston",
+			"id": "heat.special.guard-hostile-mustache",
+			"level": 33,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "heat-area"
+		},
+		"boss.designer-1": {
+			"name": "???",
+			"id": "boss.designer-1",
+			"level": 36,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "bergen-trails"
+		},
+		"daft-frobbit": {
+			"name": "Hologram Frobbit",
+			"id": "daft-frobbit",
+			"level": 36,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "autumn-fall"
+		},
+		"cold.mine-diggingbot-quest": {
+			"name": "Smelter Digmo",
+			"id": "cold.mine-diggingbot-quest",
+			"level": 36,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "cold-dng"
+		},
+		"autumn-fall.raid-pillar-large": {
+			"name": "Big Pillar",
+			"id": "autumn-fall.raid-pillar-large",
+			"level": 36,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "autumn-fall"
+		},
+		"autumn-rh.boss_turret-quest_naval": {
+			"name": "Super Illegal Mega Turret",
+			"id": "autumn-rh.boss_turret-quest_naval",
+			"level": 36,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "autumn-area"
+		},
+		"autumn-fall.buffalo-fire-quest": {
+			"name": "Blazehoof",
+			"id": "autumn-fall.buffalo-fire-quest",
+			"level": 37,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "autumn-fall"
+		},
+		"arid.snail": {
+			"name": "Gastropolis",
+			"id": "arid.snail",
+			"level": 38,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "arid-dng-1"
+		},
+		"jungle.shockboss": {
+			"name": "Plasma Phantom",
+			"id": "jungle.shockboss",
+			"level": 44,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "shock-dng"
+		},
+		"jungle.waveboss": {
+			"name": "Sir Blobus Starnikus",
+			"id": "jungle.waveboss",
+			"level": 44,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "wave-dng"
+		},
+		"minibosses.sloth-black": {
+			"name": "Sephisloth",
+			"id": "minibosses.sloth-black",
+			"level": 44,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "jungle"
+		},
+		"minibosses.deep-fish": {
+			"name": "Tiefsee Angler",
+			"id": "minibosses.deep-fish",
+			"level": 46,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "jungle"
+		},
+		"jungle.ape-boss": {
+			"name": "Son of the East",
+			"id": "jungle.ape-boss",
+			"level": 46,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "tree-dng"
+		},
+		"jungle.whale-boss": {
+			"name": "Ancient Guardian",
+			"id": "jungle.whale-boss",
+			"level": 46,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "tree-dng"
+		},
+		"jungle.special.snowman-jungle-boss": {
+			"name": "Karotto Fruitseeker",
+			"id": "jungle.special.snowman-jungle-boss",
+			"level": 47,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "jungle"
+		},
+		"jungle.special.powerplant-quest-1": {
+			"name": "Buff Bloomy",
+			"id": "jungle.special.powerplant-quest-1",
+			"level": 47,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "jungle"
+		},
+		"forest.samurai-boss": {
+			"name": "Twilight Master",
+			"id": "forest.samurai-boss",
+			"level": 51,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "forest"
+		},
+		"heat.special.sandman-1": {
+			"name": "King Kaktorro",
+			"id": "heat.special.sandman-1",
+			"level": 57,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "heat-area"
+		},
+		"guest.glitch-boss": {
+			"name": "DON'T USE THIS",
+			"id": "guest.glitch-boss",
+			"level": 58,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "heat-area"
+		},
+		"boss.designer-2": {
+			"name": "Designer",
+			"id": "boss.designer-2",
+			"level": 60,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "arid"
+		},
+		"arid.element-turret-boss": {
+			"name": "Final Turret IX",
+			"id": "arid.element-turret-boss",
+			"level": 60,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "arid-dng-2"
+		},
+		"boss.elephant": {
+			"name": "The Creator",
+			"id": "boss.elephant",
+			"level": 60,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "arid-dng-2"
+		},
+		"minibosses.panda-boss": {
+			"name": "Pandza Mk. II",
+			"id": "minibosses.panda-boss",
+			"level": 62,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "forest"
+		}
+	}
+}

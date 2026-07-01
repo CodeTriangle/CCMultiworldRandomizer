@@ -11,7 +11,7 @@
 		"botanics.json",
 		"prog-items/master.json",
 		"groups/master.json",
-		"enemies.json",
+		"enemies/master.json",
         "dlc/master.json",
 		"vars.json",
 		"item-pools/master.json"

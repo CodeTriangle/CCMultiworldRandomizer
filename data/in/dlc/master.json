@@ -7,7 +7,7 @@
 		"regions.json",
 		"shops.json",
 		"item-pools.json",
-		"enemies.json",
+		"enemies/master.json",
         "prog-items/master.json"
 	],
 	"_comment": "Checks that are found only in DLC areas",

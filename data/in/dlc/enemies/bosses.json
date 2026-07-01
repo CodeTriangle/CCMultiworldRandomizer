@@ -1,0 +1,125 @@
+{
+	"enemies": {
+		"Illegal Coordinator": {
+			"name": "Illegal Coordinator",
+			"id": "autumn-rh.turret_boss-quest_naval",
+			"level": 63,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "autumn-area"
+		},
+		"Tremmy": {
+			"name": "Tremmy",
+			"id": "autumn-fall.runbot-tremor",
+			"level": 67,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "rhombus-sqr"
+		},
+		"Distillizer": {
+			"name": "Distillizer",
+			"id": "heat.special.heat-golem-booze",
+			"level": 67,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "heat-village"
+		},
+		"Toxovolt": {
+			"name": "Toxovolt",
+			"id": "jungle.special.ghost-toxic",
+			"level": 68,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "jungle"
+		},
+		"Papaboss the Younger": {
+			"name": "Papaboss the Younger",
+			"id": "jungle.special.parrot-gangster-boss-1",
+			"level": 69,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "jungle-city"
+		},
+		"Hillcart": {
+			"name": "Hillcart",
+			"id": "rhombus.meerkat-delorean",
+			"level": 72,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "rhombus-sqr"
+		},
+		"The Goatfather": {
+			"name": "The Goatfather",
+			"id": "cold.goat-father-2",
+			"level": 72,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "rhombus-sqr"
+		},
+		"Guardian Statue": {
+			"name": "Guardian Statue",
+			"id": "final.guardian",
+			"level": 74,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "final-dng"
+		},
+		"Gynthar": {
+			"name": "Gynthar",
+			"id": "final.gynthar",
+			"level": 75,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "final-dng"
+		},
+		"Di'orbis": {
+			"name": "Di'orbis",
+			"id": "final.god-neutral",
+			"level": 77,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "final-dng"
+		},
+		"Son of the Beach": {
+			"name": "Son of the Beach",
+			"id": "beach.ape-beach",
+			"level": 79,
+			"firstEncounter": {
+				"region": {
+					"open": "openXX"
+				}
+			},
+			"area": "beach"
+		}
+	}
+}
