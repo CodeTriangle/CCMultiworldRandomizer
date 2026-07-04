@@ -3540,30 +3540,13 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "11",
-				"open": "open5"
+				"open": "openCursedTemple"
 			},
 			"reward": [
 				[
 					"item",
 					"Ancient Earth",
 					4
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				],
-				[
-					"item",
-					"Cursed Coin",
-					1
 				]
 			]
 		},
@@ -3576,29 +3559,12 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "11",
-				"open": "open5"
+				"open": "openCursedTemple"
 			},
 			"reward": [
 				[
 					"item",
 					"Bright Bracer",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				],
-				[
-					"item",
-					"Cursed Coin",
 					1
 				]
 			]
@@ -3612,29 +3578,12 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "11",
-				"open": "open5"
+				"open": "openCursedTemple"
 			},
 			"reward": [
 				[
 					"item",
 					"Broken Sword",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				],
-				[
-					"item",
-					"Cursed Coin",
 					1
 				]
 			]

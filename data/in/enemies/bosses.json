@@ -1,364 +1,350 @@
 {
 	"enemies": {
-		"meerkat-special-command-1": {
+		"Hillkat Bandleader": {
 			"name": "Hillkat Bandleader",
 			"id": "meerkat-special-command-1",
 			"level": 13,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"open": "open3"
+				},
+				"condition": [
+					[ "quest", "Digging for Data" ]
+				]
 			},
 			"area": "autumn-area"
 		},
-		"minibosses.blue-hedge": {
+		"Blue Hedgehag": {
 			"name": "Blue Hedgehag",
 			"id": "minibosses.blue-hedge",
 			"level": 15,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open3"
 				}
 			},
 			"area": "autumn-area"
 		},
-		"mine-diggingbot-cold": {
+		"Infected Digmo": {
 			"name": "Infected Digmo",
 			"id": "mine-diggingbot-cold",
 			"level": 19,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open4.5"
 				}
 			},
 			"area": "cold-dng"
 		},
-		"minibosses.penguin-rapper": {
+		"Peng King Dakara": {
 			"name": "Peng King Dakara",
 			"id": "minibosses.penguin-rapper",
 			"level": 21,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"open": "open3"
+				},
+				"condition": [
+					[ "item", "Heat" ]
+				]
 			},
 			"area": "bergen-trails"
 		},
-		"boss-driller": {
+		"X01 Driller H.F.S.": {
 			"name": "X01 Driller H.F.S.",
 			"id": "boss-driller",
 			"level": 21,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open4.8"
 				}
 			},
 			"area": "cold-dng"
 		},
-		"snowman-xmas": {
-			"name": "Meister Karotto",
-			"id": "snowman-xmas",
-			"level": 23,
-			"firstEncounter": {
-				"region": {
-					"open": "openXX"
-				}
-			},
-			"area": "bergen"
-		},
-		"heat.sandworm-boss": {
+		"Ti'im": {
 			"name": "Ti'im",
 			"id": "heat.sandworm-boss",
 			"level": 26,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open6"
 				}
 			},
 			"area": "heat-area"
 		},
-		"heat.antlion": {
-			"name": "Pinzo'jrahrrrn",
-			"id": "heat.antlion",
-			"level": 28,
-			"firstEncounter": {
-				"region": {
-					"open": "openXX"
-				}
-			},
-			"area": "heat-dng"
-		},
-		"minibosses.cursed-sandshark": {
+		"Cursed Sharkster": {
 			"name": "Cursed Sharkster",
 			"id": "minibosses.cursed-sandshark",
 			"level": 30,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "openCursedTemple"
 				}
 			},
 			"area": "heat-area"
 		},
-		"heat.megamoth": {
+		"Pinzo'jrahrrrn": {
+			"name": "Pinzo'jrahrrrn",
+			"id": "heat.antlion",
+			"level": 28,
+			"firstEncounter": {
+				"region": {
+					"open": "open7.1"
+				}
+			},
+			"area": "heat-dng"
+		},
+		"Master Magmoth": {
 			"name": "Master Magmoth",
 			"id": "heat.megamoth",
 			"level": 30,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open7.8"
 				}
 			},
 			"area": "heat-dng"
 		},
-		"heat.special.guard-hostile-mustache": {
+		"Guard Billston": {
 			"name": "Guard Billston",
 			"id": "heat.special.guard-hostile-mustache",
 			"level": 33,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open5",
+					"condition": [
+						[ "quest", "Shady Theft" ],
+						[ "item", "Red Flame Shade" ],
+						[ "item", "Heat", 1 ],
+						[ "item", "Cold", 1 ]
+					]
 				}
 			},
 			"area": "heat-area"
 		},
-		"boss.designer-1": {
-			"name": "???",
-			"id": "boss.designer-1",
-			"level": 36,
-			"firstEncounter": {
-				"region": {
-					"open": "openXX"
-				}
-			},
-			"area": "bergen-trails"
-		},
-		"daft-frobbit": {
+		"Hologram Frobbit": {
 			"name": "Hologram Frobbit",
 			"id": "daft-frobbit",
 			"level": 36,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "20",
+					"open": "open9" 
+				},
+				"condition": [
+					[ "item", "Heat" ],
+					[ "item", "Cold" ]
+				]
 			},
 			"area": "autumn-fall"
 		},
-		"cold.mine-diggingbot-quest": {
+		"Smelter Digmo": {
 			"name": "Smelter Digmo",
 			"id": "cold.mine-diggingbot-quest",
 			"level": 36,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "20",
+					"open": "open9"
+				},
+				"condition": [
+					[ "item", "Red Flame Shade", 1 ],
+					[ "item", "Heat", 1 ],
+					[ "item", "Cold", 1 ],
+					[ "region", "open", "open4.5" ],
+					[ "quest", "Bull Grab" ]
+				]
 			},
 			"area": "cold-dng"
 		},
-		"autumn-fall.raid-pillar-large": {
-			"name": "Big Pillar",
-			"id": "autumn-fall.raid-pillar-large",
-			"level": 36,
-			"firstEncounter": {
-				"region": {
-					"open": "openXX"
-				}
-			},
-			"area": "autumn-fall"
-		},
-		"autumn-rh.boss_turret-quest_naval": {
-			"name": "Super Illegal Mega Turret",
-			"id": "autumn-rh.boss_turret-quest_naval",
-			"level": 36,
-			"firstEncounter": {
-				"region": {
-					"open": "openXX"
-				}
-			},
-			"area": "autumn-area"
-		},
-		"autumn-fall.buffalo-fire-quest": {
+		"Blazehoof": {
 			"name": "Blazehoof",
 			"id": "autumn-fall.buffalo-fire-quest",
 			"level": 37,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "20",
+					"open": "open9"
+				},
+				"condition": [
+					[ "quest", "Intensive Tree Care" ],
+					[ "item", "Heat" ],
+					[ "item", "Cold" ]
+				]
 			},
 			"area": "autumn-fall"
 		},
-		"arid.snail": {
-			"name": "Gastropolis",
-			"id": "arid.snail",
-			"level": 38,
-			"firstEncounter": {
-				"region": {
-					"open": "openXX"
-				}
-			},
-			"area": "arid-dng-1"
-		},
-		"jungle.shockboss": {
+		"Plasma Phantom": {
 			"name": "Plasma Phantom",
 			"id": "jungle.shockboss",
 			"level": 44,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open13.1"
 				}
 			},
 			"area": "shock-dng"
 		},
-		"jungle.waveboss": {
+		"Sir Blobus Starnikus": {
 			"name": "Sir Blobus Starnikus",
 			"id": "jungle.waveboss",
 			"level": 44,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open14.5"
 				}
 			},
 			"area": "wave-dng"
 		},
-		"minibosses.sloth-black": {
-			"name": "Sephisloth",
-			"id": "minibosses.sloth-black",
-			"level": 44,
-			"firstEncounter": {
-				"region": {
-					"open": "openXX"
-				}
-			},
-			"area": "jungle"
-		},
-		"minibosses.deep-fish": {
+		"Tiefsee Angler": {
 			"name": "Tiefsee Angler",
 			"id": "minibosses.deep-fish",
 			"level": 46,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"open": "open10.Grove"
+				},
+				"condition": [
+					[ "item", "Wave", 1 ],
+					[ "item", "Shock", 1 ]
+				]
 			},
 			"area": "jungle"
 		},
-		"jungle.ape-boss": {
+		"Son of the East": {
 			"name": "Son of the East",
 			"id": "jungle.ape-boss",
 			"level": 46,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open15.1"
 				}
 			},
 			"area": "tree-dng"
 		},
-		"jungle.whale-boss": {
+		"Ancient Guardian": {
 			"name": "Ancient Guardian",
 			"id": "jungle.whale-boss",
 			"level": 46,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open15.3"
 				}
 			},
 			"area": "tree-dng"
 		},
-		"jungle.special.snowman-jungle-boss": {
+		"Karotto Fruitseeker": {
 			"name": "Karotto Fruitseeker",
 			"id": "jungle.special.snowman-jungle-boss",
 			"level": 47,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "23",
+					"open": "open10"
+				},
+				"condition": [
+					[ "item", "Purple Bolt Shade", 1 ],
+					[ "item", "Azure Drop Shade", 1 ],
+					[ "item", "Shock", 1 ],
+					[ "item", "Wave", 1 ],
+					[ "quest", "Tropical Chill" ]
+				]
 			},
 			"area": "jungle"
 		},
-		"jungle.special.powerplant-quest-1": {
+		"Buff Bloomy": {
 			"name": "Buff Bloomy",
 			"id": "jungle.special.powerplant-quest-1",
 			"level": 47,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "23",
+					"open": "open10"
+				},
+				"condition": [
+					[ "item", "Purple Bolt Shade", 1 ],
+					[ "item", "Azure Drop Shade", 1 ],
+					[ "item", "Wave" ],
+					[ "quest", "Lakeside Escort" ]
+				]
 			},
 			"area": "jungle"
 		},
-		"forest.samurai-boss": {
+		"Twilight Master": {
 			"name": "Twilight Master",
 			"id": "forest.samurai-boss",
 			"level": 51,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open17"
 				}
 			},
 			"area": "forest"
 		},
-		"heat.special.sandman-1": {
+		"King Kaktorro": {
 			"name": "King Kaktorro",
 			"id": "heat.special.sandman-1",
 			"level": 57,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "11",
+					"open": "open5"
+				},
+				"condition": [
+					[ "quest", "Hot Trail" ],
+					[ "item", "Wave", 1 ],
+					[ "item", "Meteor Shade", 1 ]
+				]
 			},
 			"area": "heat-area"
 		},
-		"guest.glitch-boss": {
+		"DON'T USE THIS": {
 			"name": "DON'T USE THIS",
 			"id": "guest.glitch-boss",
 			"level": 58,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "31",
+					"open": "open16"
+				},
+				"condition": [
+					[ "item", "Heat", 1 ],
+					[ "item", "Cold", 1 ],
+					[ "item", "Wave", 1 ],
+					[ "item", "Shock", 1 ]
+				]
 			},
 			"area": "heat-area"
 		},
-		"boss.designer-2": {
+		"Designer": {
 			"name": "Designer",
 			"id": "boss.designer-2",
 			"level": 60,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open18"
 				}
 			},
 			"area": "arid"
 		},
-		"arid.element-turret-boss": {
-			"name": "Final Turret IX",
-			"id": "arid.element-turret-boss",
-			"level": 60,
-			"firstEncounter": {
-				"region": {
-					"open": "openXX"
-				}
-			},
-			"area": "arid-dng-2"
-		},
-		"boss.elephant": {
+		"The Creator": {
 			"name": "The Creator",
 			"id": "boss.elephant",
 			"level": 60,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open18"
 				}
 			},
 			"area": "arid-dng-2"
 		},
-		"minibosses.panda-boss": {
+		"Pandza Mk. II": {
 			"name": "Pandza Mk. II",
 			"id": "minibosses.panda-boss",
 			"level": 62,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "open20"
 				}
 			},
 			"area": "forest"

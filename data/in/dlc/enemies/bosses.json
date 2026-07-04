@@ -6,8 +6,14 @@
 			"level": 63,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "23",
+					"open": "open2" 
+				},
+				"condition": [ 
+					[ "quest", "Wet Work" ],
+					[ "item", "Wave", 1 ],
+					[ "item", "Azure Archipelago Pass", 1 ]
+				]
 			},
 			"area": "autumn-area"
 		},
@@ -17,8 +23,17 @@
 			"level": 67,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "23",
+					"open": "open20" 
+				},
+				"condition": [
+					[ "item", "Tremor Engine", 4 ],
+					[ "item", "Humming Razor", 1 ],
+					[ "item", "Shock", 1 ],
+					[ "region", "open", "open10.Right" ],
+					[ "region", "open", "open16" ],
+					[ "item", "Azure Archipelago Pass", 1 ]
+				]
 			},
 			"area": "rhombus-sqr"
 		},
@@ -28,8 +43,32 @@
 			"level": 67,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "11",
+					"open": "open5" 
+				},
+				"condition": [ 
+					[ "quest", "Steamy Booze" ],
+					[ "quest", "Steamy Challenge" ],
+					[ "item", "Cold" ],
+					[ "region", "open", "openDLC_Beach" ],
+					[ "or",
+						[ "var", "allowBoosterGrinding", "off" ],
+						[ "and",
+							[ "var", "allowBoosterGrinding", "on" ],
+							[ "item", "Everlasting Amber" ],
+							[ "or",
+								[ "quest", "New Metal" ],
+								[ "region", "open", "open16" ],
+								[ "region", "open", "open10.Infested" ],
+								[ "and",
+									[ "region", "open", "open10.Right" ],
+									[ "region", "open", "open10.Left" ]
+								]
+							]
+						]
+					],
+					[ "item", "Azure Archipelago Pass", 1 ]
+				]
 			},
 			"area": "heat-village"
 		},
@@ -39,8 +78,15 @@
 			"level": 68,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"open": "open10"
+				},
+				"condition": [
+					[ "quest", "Rooting for Power" ],
+					[ "region", "open", "openDLC_Beach" ],
+					[ "item", "Cold", 1 ],
+					[ "item", "Wave", 1 ],
+					[ "item", "Azure Archipelago Pass", 1 ]
+				]
 			},
 			"area": "jungle"
 		},
@@ -72,8 +118,14 @@
 			"level": 72,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "3",
+					"open": "open3"
+				},
+				"condition": [
+					[ "quest", "In Cawhoofs" ],
+					[ "region", "open", "open20" ],
+					[ "item", "Azure Archipelago Pass", 1 ]
+				]
 			},
 			"area": "rhombus-sqr"
 		},
@@ -83,7 +135,7 @@
 			"level": 74,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "openDLC_DungeonEntry"
 				}
 			},
 			"area": "final-dng"
@@ -94,7 +146,7 @@
 			"level": 75,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "openDLC_DungeonB2_L"
 				}
 			},
 			"area": "final-dng"
@@ -105,7 +157,7 @@
 			"level": 77,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
+					"open": "openDLC_DungeonBoss"
 				}
 			},
 			"area": "final-dng"
@@ -116,8 +168,13 @@
 			"level": 79,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "23",
+					"open": "openDLC_Beach" 
+				},
+				"condition": [
+					[ "region", "open", "open15.1" ],
+					[ "item", "Azure Archipelago Pass", 1 ]
+				]
 			},
 			"area": "beach"
 		}
