@@ -5134,6 +5134,311 @@
 			}
 		}
 	},
+	"enemies": {
+		"hedgehog": {
+			"kill": 3235825012
+		},
+		"meerkat": {
+			"kill": 3235825013
+		},
+		"buffalo": {
+			"kill": 3235825014
+		},
+		"hedgehog-alt": {
+			"kill": 3235825015
+		},
+		"meerkat-alt": {
+			"kill": 3235825016
+		},
+		"buffalo-alt": {
+			"kill": 3235825017
+		},
+		"gray-frobbit": {
+			"kill": 3235825018
+		},
+		"frobbit": {
+			"kill": 3235825019
+		},
+		"seahorse": {
+			"kill": 3235825020
+		},
+		"penguin": {
+			"kill": 3235825021
+		},
+		"goat": {
+			"kill": 3235825022
+		},
+		"snowman": {
+			"kill": 3235825023
+		},
+		"mine-coldbug": {
+			"kill": 3235825024
+		},
+		"mine-runbot": {
+			"kill": 3235825025
+		},
+		"mine-kamikatze": {
+			"kill": 3235825026
+		},
+		"mine-diggingbot": {
+			"kill": 3235825027
+		},
+		"heat.scorpion": {
+			"kill": 3235825028
+		},
+		"heat.sandshark": {
+			"kill": 3235825029
+		},
+		"heat.volturbine": {
+			"kill": 3235825030
+		},
+		"heat.drillertoise": {
+			"kill": 3235825031
+		},
+		"heat.sandworm": {
+			"kill": 3235825032
+		},
+		"heat.scorpion-alt": {
+			"kill": 3235825033
+		},
+		"heat.jellyfish": {
+			"kill": 3235825034
+		},
+		"heat.moth": {
+			"kill": 3235825035
+		},
+		"heat.darth-moth": {
+			"kill": 3235825036
+		},
+		"heat.heat-golem": {
+			"kill": 3235825037
+		},
+		"autumn-fall.hedgehog-fall": {
+			"kill": 3235825038
+		},
+		"autumn-fall.meerkat-fall": {
+			"kill": 3235825039
+		},
+		"autumn-fall.seahorse-fall": {
+			"kill": 3235825040
+		},
+		"autumn-fall.buffalo-fall": {
+			"kill": 3235825041
+		},
+		"arid.virus-neutral": {
+			"kill": 3235825042
+		},
+		"arid.virus-heat": {
+			"kill": 3235825043
+		},
+		"arid.virus-cold": {
+			"kill": 3235825044
+		},
+		"jungle.plant": {
+			"kill": 3235825045
+		},
+		"jungle.blob": {
+			"kill": 3235825046
+		},
+		"jungle.parrot": {
+			"kill": 3235825047
+		},
+		"jungle.fish": {
+			"kill": 3235825048
+		},
+		"jungle.shockcat": {
+			"kill": 3235825049
+		},
+		"jungle.sloth": {
+			"kill": 3235825050
+		},
+		"jungle.blob-wave": {
+			"kill": 3235825051
+		},
+		"jungle.octopus": {
+			"kill": 3235825052
+		},
+		"jungle.blueray": {
+			"kill": 3235825053
+		},
+		"jungle.chicken": {
+			"kill": 3235825054
+		},
+		"jungle.powerplant": {
+			"kill": 3235825055
+		},
+		"jungle.ghost": {
+			"kill": 3235825056
+		},
+		"forest.bug-samurai-heat": {
+			"kill": 3235825057
+		},
+		"forest.bug-samurai-shock": {
+			"kill": 3235825058
+		},
+		"forest.panda": {
+			"kill": 3235825059
+		},
+		"forest.spider": {
+			"kill": 3235825060
+		},
+		"meerkat-special-command-1": {
+			"kill": 3235825061
+		},
+		"minibosses.blue-hedge": {
+			"kill": 3235825062
+		},
+		"mine-diggingbot-cold": {
+			"kill": 3235825063
+		},
+		"minibosses.penguin-rapper": {
+			"kill": 3235825064
+		},
+		"boss-driller": {
+			"kill": 3235825065
+		},
+		"heat.sandworm-boss": {
+			"kill": 3235825066
+		},
+		"minibosses.cursed-sandshark": {
+			"kill": 3235825067
+		},
+		"heat.antlion": {
+			"kill": 3235825068
+		},
+		"heat.megamoth": {
+			"kill": 3235825069
+		},
+		"heat.special.guard-hostile-mustache": {
+			"kill": 3235825070
+		},
+		"daft-frobbit": {
+			"kill": 3235825071
+		},
+		"cold.mine-diggingbot-quest": {
+			"kill": 3235825072
+		},
+		"autumn-fall.buffalo-fire-quest": {
+			"kill": 3235825073
+		},
+		"jungle.shockboss": {
+			"kill": 3235825074
+		},
+		"jungle.waveboss": {
+			"kill": 3235825075
+		},
+		"minibosses.deep-fish": {
+			"kill": 3235825076
+		},
+		"jungle.ape-boss": {
+			"kill": 3235825077
+		},
+		"jungle.whale-boss": {
+			"kill": 3235825078
+		},
+		"jungle.special.snowman-jungle-boss": {
+			"kill": 3235825079
+		},
+		"jungle.special.powerplant-quest-1": {
+			"kill": 3235825080
+		},
+		"forest.samurai-boss": {
+			"kill": 3235825081
+		},
+		"heat.special.sandman-1": {
+			"kill": 3235825082
+		},
+		"guest.glitch-boss": {
+			"kill": 3235825083
+		},
+		"boss.designer-2": {
+			"kill": 3235825084
+		},
+		"boss.elephant": {
+			"kill": 3235825085
+		},
+		"minibosses.panda-boss": {
+			"kill": 3235825086
+		},
+		"beach.sea-star-heat": {
+			"kill": 3235825087
+		},
+		"beach.sea-star-cold": {
+			"kill": 3235825088
+		},
+		"beach.sea-star-shock": {
+			"kill": 3235825089
+		},
+		"beach.sea-star-wave": {
+			"kill": 3235825090
+		},
+		"beach.special.blob-salt": {
+			"kill": 3235825091
+		},
+		"beach.fish": {
+			"kill": 3235825092
+		},
+		"beach.worm": {
+			"kill": 3235825093
+		},
+		"beach.turtle-man": {
+			"kill": 3235825094
+		},
+		"final.crystal-heat": {
+			"kill": 3235825095
+		},
+		"final.crystal-cold": {
+			"kill": 3235825096
+		},
+		"final.crystal-shock": {
+			"kill": 3235825097
+		},
+		"final.crystal-wave": {
+			"kill": 3235825098
+		},
+		"final.colibri": {
+			"kill": 3235825099
+		},
+		"guest.firespirit": {
+			"kill": 3235825100
+		},
+		"guest.honeybear": {
+			"kill": 3235825101
+		},
+		"autumn-rh.turret_boss-quest_naval": {
+			"kill": 3235825102
+		},
+		"autumn-fall.runbot-tremor": {
+			"kill": 3235825103
+		},
+		"heat.special.heat-golem-booze": {
+			"kill": 3235825104
+		},
+		"jungle.special.ghost-toxic": {
+			"kill": 3235825105
+		},
+		"jungle.special.parrot-gangster-boss-1": {
+			"kill": 3235825106
+		},
+		"rhombus.meerkat-delorean": {
+			"kill": 3235825107
+		},
+		"cold.goat-father-2": {
+			"kill": 3235825108
+		},
+		"final.guardian": {
+			"kill": 3235825109
+		},
+		"final.gynthar": {
+			"kill": 3235825110
+		},
+		"final.god-neutral": {
+			"kill": 3235825111
+		},
+		"beach.ape-beach": {
+			"kill": 3235825112
+		}
+	},
 	"botanics": {
 		"Autumn-Ground-1": 3235824920,
 		"Autumn-Ground-2": 3235824921,
