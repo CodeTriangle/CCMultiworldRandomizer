@@ -96,8 +96,14 @@
 			"level": 69,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "3",
+					"open": "open3"
+				},
+				"condition": [
+					[ "quest", "In Cawhoofs" ],
+					[ "region", "open", "open20" ],
+					[ "item", "Azure Archipelago Pass", 1 ]
+				]
 			},
 			"area": "jungle-city"
 		},
@@ -107,8 +113,12 @@
 			"level": 72,
 			"firstEncounter": {
 				"region": {
-					"open": "openXX"
-				}
+					"linear": "23",
+					"open": "open20" 
+				},
+				"condition": [
+					[ "item", "Azure Archipelago Pass", 1 ]
+				]
 			},
 			"area": "rhombus-sqr"
 		},
