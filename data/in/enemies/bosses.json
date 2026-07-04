@@ -114,7 +114,7 @@
 					"open": "open5"
 				},
 				"condition": [
-					[ "quest", "Shady Theft" ],
+					[ "quest", "Shady Thief" ],
 					[ "item", "Red Flame Shade" ],
 					[ "item", "Heat", 1 ],
 					[ "item", "Cold", 1 ]
