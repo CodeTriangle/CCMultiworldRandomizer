@@ -111,14 +111,14 @@
 			"level": 33,
 			"firstEncounter": {
 				"region": {
-					"open": "open5",
-					"condition": [
-						[ "quest", "Shady Theft" ],
-						[ "item", "Red Flame Shade" ],
-						[ "item", "Heat", 1 ],
-						[ "item", "Cold", 1 ]
-					]
-				}
+					"open": "open5"
+				},
+				"condition": [
+					[ "quest", "Shady Theft" ],
+					[ "item", "Red Flame Shade" ],
+					[ "item", "Heat", 1 ],
+					[ "item", "Cold", 1 ]
+				]
 			},
 			"area": "heat-area"
 		},
