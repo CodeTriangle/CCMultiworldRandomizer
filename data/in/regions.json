@@ -620,7 +620,7 @@
 			"start": "open2",
 			"goals": {
 				"creator": {
-					"region": "open16.1",
+					"region": "open18",
 					"condition": [
 						[ "item", "Heat", 1 ],
 						[ "item", "Cold", 1 ],
