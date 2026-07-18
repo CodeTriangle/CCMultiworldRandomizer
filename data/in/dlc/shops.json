@@ -98,7 +98,7 @@
                 "quest": true
             }
 		},
-		"Rhombus Weapons + DLC": {
+		"Rhombus Weapons + Azure A. Pass": {
 			"location": {
 				"shop": "rhombusWeapons1",
 				"area": "rhombus-sqr"
@@ -108,6 +108,7 @@
 				"open": "open20"
 			},
 			"condition": [
+				[ "item", "Azure Archipelago Pass" ],
 				[ "var", "canGrind" ]
 			],
 			"slots": [
