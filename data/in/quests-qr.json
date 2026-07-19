@@ -650,7 +650,8 @@
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
 				[ "item", "Wave", 1 ],
-				[ "item", "Shock", 1 ]
+				[ "item", "Shock", 1 ],
+				[ "region", "open", "open5" ]
 			],
 			"reward": [
 				[ "item", "Lunatic Paws", 1 ]

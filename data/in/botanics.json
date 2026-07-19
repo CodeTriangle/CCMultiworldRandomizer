@@ -511,7 +511,13 @@
 			},
 			"region": {
 				"open": "open10.Left"
-			}
+			},
+			"conditions": [
+				[ "or",
+					[ "item", "Wave" ],
+					[ "region", "open", "open10.Grove" ]
+				]
+			]
 		},
 		"Alpha Vivid Puff Plant": {
 			"location": {
