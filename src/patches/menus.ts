@@ -142,7 +142,7 @@ export function patch(plugin: MwRandomizer) {
 			{
 				label: "Equipment",
 				callback(options) {
-					let label = options.progressiveChains[3235824060]?.length > 0 ? "progressive" : "nonprog";
+					let label = options.progressiveChains[3235824061]?.length > 0 ? "progressive" : "nonprog";
 					return ig.lang.get(`sc.gui.mw.game-info-menu.progressive.${label}`);
 				},
 			},
