@@ -146,13 +146,17 @@ export function patch(plugin: MwRandomizer) {
 		_setQuest(quest: sc.Quest) {
 			this.parent(quest);
 
-			let mwQuest = getRawQuestFromQuestId(quest.id);
-			if (mwQuest == undefined) return;
-
-			this.removeChildGui(this.itemsGui);
 			if (this.newItemsGui) {
 				this.removeChildGui(this.newItemsGui);
 			}
+
+			let mwQuest = getRawQuestFromQuestId(quest.id);
+			if (mwQuest == undefined) {
+				this.addChildGui(this.itemsGui);
+				return;
+			}
+
+			this.removeChildGui(this.itemsGui);
 			this.atCurLevelGui.doStateTransition("HIDDEN", true);
 
 			this.newItemsGui = new sc.MultiWorldQuestItemBox(
