@@ -3,21 +3,21 @@
 		"open": {
 			"connections": [
 				{
-					"from": "open3",
+					"from": "rise",
 					"to": "openDLC1",
 					"condition": [
 						["item", "Guild Pass", 1]
 					]
 				},
 				{
-					"from": "open20",
+					"from": "harbor",
 					"to": "openDLC_Beach",
 					"condition": [
 						["item", "Azure Archipelago Pass", 1]
 					]
 				},
 				{
-					"from": "open16.1",
+					"from": "ridge.Ascension",
 					"to": "openDLC_DungeonEntry",
 					"condition": [
 						["item", "Ancient Shade", 1]
