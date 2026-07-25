@@ -474,6 +474,7 @@
 			"condition": [
 				[ "quest", "Fancy Tophat" ],
 				[ "region", "open", "maroon" ],
+				[ "item", "Blue Ice Shade", 1],
 				[ "item", "Heat", 1 ]
 			],
 			"reward": [
