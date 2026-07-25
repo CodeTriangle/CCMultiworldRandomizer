@@ -51,7 +51,7 @@
 				"name": "Beach-Pink-1"
 			},
 			"region": {
-				"open": "dlc_archipelago"
+				"open": "dlc_beach"
 			}
 		},
 		"Beta Coral Bulb": {
@@ -60,7 +60,7 @@
 				"name": "Beach-Pink-2"
 			},
 			"region": {
-				"open": "dlc_archipelago"
+				"open": "dlc_beach"
 			}
 		},
 		"Alpha Keen Sprout": {
@@ -69,7 +69,7 @@
 				"name": "Beach-Green-1"
 			},
 			"region": {
-				"open": "dlc_archipelago"
+				"open": "dlc_beach"
 			}
 		},
 		"Beta Keen Sprout": {
@@ -78,7 +78,7 @@
 				"name": "Beach-Green-2"
 			},
 			"region": {
-				"open": "dlc_archipelago"
+				"open": "dlc_beach"
 			}
 		},
 		"Alpha Fossil Stone": {
@@ -87,7 +87,7 @@
 				"name": "Beach-Grey-1"
 			},
 			"region": {
-				"open": "dlc_archipelago"
+				"open": "dlc_beach"
 			}
 		},
 		"Beta Fossil Stone": {
@@ -96,7 +96,7 @@
 				"name": "Beach-Grey-2"
 			},
 			"region": {
-				"open": "dlc_archipelago"
+				"open": "dlc_beach"
 			}
 		}
 	}
