@@ -6,7 +6,7 @@
 				"name": "Final-Plant-A"
 			},
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kulero.Entry"
 			}
 		},
 		"Beta Cone Sprout": {
@@ -15,7 +15,7 @@
 				"name": "Final-Plant-B"
 			},
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kulero.Entry"
 			}
 		},
 		"Gamma Cone Sprout": {
@@ -24,7 +24,7 @@
 				"name": "Final-Plant-C"
 			},
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kulero.Entry"
 			}
 		},
 		"Delta Cone Sprout": {
@@ -33,7 +33,7 @@
 				"name": "Final-Plant-D"
 			},
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kulero.Entry"
 			}
 		},
 		"Alpha Shard": {
@@ -42,7 +42,7 @@
 				"name": "Final-Planet-E"
 			},
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kulero.Entry"
 			}
 		},
 		"Alpha Coral Blub": {
@@ -51,7 +51,7 @@
 				"name": "Beach-Pink-1"
 			},
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			}
 		},
 		"Beta Coral Bulb": {
@@ -60,7 +60,7 @@
 				"name": "Beach-Pink-2"
 			},
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			}
 		},
 		"Alpha Keen Sprout": {
@@ -69,7 +69,7 @@
 				"name": "Beach-Green-1"
 			},
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			}
 		},
 		"Beta Keen Sprout": {
@@ -78,7 +78,7 @@
 				"name": "Beach-Green-2"
 			},
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			}
 		},
 		"Alpha Fossil Stone": {
@@ -87,7 +87,7 @@
 				"name": "Beach-Grey-1"
 			},
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			}
 		},
 		"Beta Fossil Stone": {
@@ -96,7 +96,7 @@
 				"name": "Beach-Grey-2"
 			},
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			}
 		}
 	}
