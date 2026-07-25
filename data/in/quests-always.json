@@ -38,7 +38,7 @@
 			"questid": "maroon-tree-defend",
 			"region": {
 				"linear": "12",
-				"open": "maroon.cave"
+				"open": "maroon.Cave"
 			},
 			"condition": [
 				[ "item", "Maroon Cave Pass", 1 ],
