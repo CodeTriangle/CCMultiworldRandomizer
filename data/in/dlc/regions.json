@@ -11,7 +11,7 @@
 				},
 				{
 					"from": "harbor",
-					"to": "dlc_archipelago",
+					"to": "dlc_beach",
 					"condition": [
 						["item", "Azure Archipelago Pass", 1]
 					]
