@@ -80,7 +80,7 @@
 				"area": "rhombus-sqr"
 			},
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
                 [ "quest", "Wrath of Goat" ],
@@ -105,7 +105,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "item", "Azure Archipelago Pass" ],
