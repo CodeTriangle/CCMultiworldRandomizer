@@ -362,7 +362,7 @@
 				},
 				{
 					"from": "maroon",
-					"to": "maroon.cave",
+					"to": "maroon.Cave",
 					"condition": [
 						[ "item", "Maroon Cave Pass", 1 ]
 					]
@@ -426,7 +426,7 @@
 				},
 				{
 					"from": "harbor",
-					"to": "harbor.north",
+					"to": "harbor.North",
 					"condition": [
 						[ "item", "Red Flame Shade", 1 ]
 					]
@@ -600,14 +600,14 @@
 				},
 				{
 					"from": "ridge",
-					"to": "ridge.dojo",
+					"to": "ridge.Dojo",
 					"condition": [
 						[ "item", "Old Dojo Key", 1 ]
 					]
 				},
 				{
 					"from": "ridge",
-					"to": "ridge.ascension",
+					"to": "ridge.Ascension",
 					"condition": [
 						[ "item", "Meteor Shade", 1 ]
 					]
