@@ -9,7 +9,7 @@
 			},
 			"region": {
 				"linear": "3",
-				"open": "open3" 
+				"open": "rise" 
 			},
 			"properties": {
 				"alwaysQuest": true
@@ -26,9 +26,12 @@
 				"path": ".settings.npcStates.1.event.10" 
 			},
 			"region": {
-				"linear": "3.1",
-				"open": "open3.1" 
+				"linear": "3",
+				"open": "rise" 
 			},
+			"condition": [
+				["item", "Mine Pass", 1]
+			],
 			"reward": [
 				[ "item", "Guild Pass", 1 ]
 			]
@@ -42,7 +45,7 @@
 			},
 			"region": {
 				"linear": "4",
-				"open": "open4.1" 
+				"open": "mine.1" 
 			},
 			"reward": [
 				[ "item", "Just Water", 2 ]
@@ -57,7 +60,7 @@
 			},
 			"region": {
 				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"properties": {
 				"alwaysQuest": true
@@ -75,11 +78,8 @@
 			},
 			"region": {
 				"linear": "10",
-				"open": "open4.1" 
+				"open": "mine.8" 
 			},
-			"condition": [
-				["item", "Mine Master Key", 1]
-			],
 			"reward": [
 				[ "item", "Blue Ice Shade", 1 ]
 			]
@@ -93,7 +93,7 @@
 			},
 			"region": {
 				"linear": "32",
-				"open": "open17" 
+				"open": "ridge.dojo" 
 			},
 			"reward": [
 				[ "item", "Meteor Shade", 1 ]
@@ -108,7 +108,7 @@
 			},
 			"region": {
 				"linear": "19",
-				"open": "open7.8" 
+				"open": "fajro.8" 
 			},
 			"reward": [
 				[ "item", "Red Flame Shade", 1 ]
@@ -123,7 +123,7 @@
 			},
 			"region": {
 				"linear": "11",
-				"open": "open5" 
+				"open": "maroon" 
 			},
 			"condition": [
 				[ "item", "Cold", 1 ]
@@ -141,7 +141,7 @@
 			},
 			"region": {
 				"linear": "11",
-				"open": "open5" 
+				"open": "maroon" 
 			},
 			"reward": [
 				[ "item", "Maroon Cave Pass", 1 ]
@@ -156,7 +156,7 @@
 			},
 			"region": {
 				"linear": "12",
-				"open": "open6" 
+				"open": "maroon.cave" 
 			},
 			"condition": [
 				[ "item", "Shiny Orb" ]
@@ -177,7 +177,7 @@
 			},
 			"region": {
 				"linear": "25",
-				"open": "open13.2" 
+				"open": "zirvitar.2" 
 			},
 			"condition": [
 				[ "item", "Wave", 1 ]
@@ -195,7 +195,7 @@
 			},
 			"region": {
 				"linear": "30",
-				"open": "open15.3" 
+				"open": "kajo.3" 
 			},
 			"reward": [
 				[ "item", "Star Shade", 1 ]
@@ -210,7 +210,7 @@
 			},
 			"region": {
 				"linear": "27",
-				"open": "open14.5"
+				"open": "sonajiz.5"
 			},
 			"reward": [
 				[ "item", "Azure Drop Shade", 1 ]
@@ -225,7 +225,7 @@
 			},
 			"region": {
 				"linear": "2",
-				"open": "open2" 
+				"open": "harbor" 
 			},
 			"reward": [
 				[ "item", "Green Leaf Shade", 1 ]
@@ -240,7 +240,7 @@
 			},
 			"region": {
 				"linear": "2",
-				"open": "open2" 
+				"open": "harbor" 
 			},
 			"reward": [
 				[ "item", "Disc of Insight", 1 ]
@@ -255,7 +255,7 @@
 			},
 			"region": {
 				"linear": "11",
-				"open": "open4.8" 
+				"open": "mine.8" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 1 ]
@@ -270,7 +270,7 @@
 			},
 			"region": {
 				"linear": "19",
-				"open": "open7.8" 
+				"open": "fajro.8" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 1 ]
@@ -285,7 +285,7 @@
 			},
 			"region": {
 				"linear": "30",
-				"open": "open15.3" 
+				"open": "kajo.3" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 2 ]
@@ -300,7 +300,7 @@
 			},
 			"region": {
 				"linear": "27",
-				"open": "open14.5"
+				"open": "sonajiz.5"
 			},
 			"reward": [
 				[ "item", "Circuit Override", 1 ]
@@ -315,7 +315,7 @@
 			},
 			"region": {
 				"linear": "25",
-				"open": "open13.2" 
+				"open": "zirvitar.2" 
 			},
 			"condition": [
 				[ "item", "Wave", 1 ]
@@ -333,7 +333,7 @@
 			},
 			"region": {
 				"linear": "19",
-				"open": "open7.8" 
+				"open": "fajro.8" 
 			},
 			"reward": [
 				[ "sp" ]
@@ -348,7 +348,7 @@
 			},
 			"region": {
 				"linear": "30",
-				"open": "open15.3" 
+				"open": "kajo.3" 
 			},
 			"reward": [
 				[ "sp" ]
@@ -363,7 +363,7 @@
 			},
 			"region": {
 				"linear": "30",
-				"open": "open10" 
+				"open": "gaia" 
 			},
 			"reward": [
 				[ "item", "East Gaia Pass", 1 ]
@@ -378,7 +378,7 @@
 			},
 			"region": {
 				"linear": "30",
-				"open": "open10" 
+				"open": "gaia" 
 			},
 			"reward": [
 				[ "item", "West Gaia Pass", 1 ]
