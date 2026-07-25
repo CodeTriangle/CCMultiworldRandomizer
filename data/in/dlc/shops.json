@@ -6,7 +6,7 @@
 				"area": "evo-village"
 			},
 			"region": {
-				"open": "openDLC1"
+				"open": "dlc_homestedt"
 			},
 			"slots": [
                 "Sandwich",
@@ -32,7 +32,7 @@
 				"area": "evo-village"
 			},
 			"region": {
-				"open": "openDLC1"
+				"open": "dlc_homestedt"
 			},
 			"slots": [
                 "Laser Goggles",
@@ -47,7 +47,7 @@
 				"area": "evo-village"
 			},
 			"region": {
-				"open": "openDLC1"
+				"open": "dlc_homestedt"
 			},
 			"condition": [
 				[ "item", "Azure Archipelago Pass", 1 ]
@@ -65,7 +65,7 @@
 				"area": "beach"
 			},
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"slots": [
                 "Cross Goggles",
@@ -80,7 +80,7 @@
 				"area": "rhombus-sqr"
 			},
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
                 [ "quest", "Wrath of Goat" ],
@@ -105,7 +105,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "item", "Azure Archipelago Pass" ],

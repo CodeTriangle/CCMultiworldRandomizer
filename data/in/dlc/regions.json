@@ -3,44 +3,44 @@
 		"open": {
 			"connections": [
 				{
-					"from": "open3",
-					"to": "openDLC1",
+					"from": "rise",
+					"to": "dlc_homestedt",
 					"condition": [
 						["item", "Guild Pass", 1]
 					]
 				},
 				{
-					"from": "open20",
-					"to": "openDLC_Beach",
+					"from": "harbor",
+					"to": "dlc_beach",
 					"condition": [
 						["item", "Azure Archipelago Pass", 1]
 					]
 				},
 				{
-					"from": "open16.1",
-					"to": "openDLC_DungeonEntry",
+					"from": "ridge.Ascension",
+					"to": "dlc_kulero.Entry",
 					"condition": [
 						["item", "Ancient Shade", 1]
 					]
 				},
 				{
-					"from": "openDLC_DungeonEntry",
-					"to": "openDLC_DungeonEntry.1F",
+					"from": "dlc_kulero.Entry",
+					"to": "dlc_kulero.Entry.1F",
 					"condition": [
 						["item", "Ku'lero Key", 3],
 						["item", "Wave", 1]
 					]
 				},
 				{
-					"from": "openDLC_DungeonEntry",
-					"to": "openDLC_DungeonEntry.1L",
+					"from": "dlc_kulero.Entry",
+					"to": "dlc_kulero.Entry.1L",
 					"condition": [
 						["item", "Ku'lero Key", 3]
 					]
 				},
 				{
-					"from": "openDLC_DungeonEntry",
-					"to": "openDLC_DungeonEntry.1R",
+					"from": "dlc_kulero.Entry",
+					"to": "dlc_kulero.Entry.1R",
 					"condition": [
 						["or",
 							["and",
@@ -52,8 +52,8 @@
 					]
 				},
 				{
-					"from": "openDLC_DungeonEntry",
-					"to": "openDLC_DungeonGF_R",
+					"from": "dlc_kulero.Entry",
+					"to": "dlc_kulero.GF_R",
 					"condition": [
 						["item", "Heat", 1],
 						["item", "Cold", 1],
@@ -61,8 +61,8 @@
 					]
 				},
 				{
-					"from": "openDLC_DungeonEntry",
-					"to": "openDLC_DungeonGF_L",
+					"from": "dlc_kulero.Entry",
+					"to": "dlc_kulero.GF_L",
 					"condition": [
 						["item", "Heat", 1],
                         ["item", "Cold", 1],
@@ -70,18 +70,18 @@
 					]
 				},
 				{
-					"from": "openDLC_DungeonGF_R",
-					"to": "openDLC_DungeonMain",
+					"from": "dlc_kulero.GF_R",
+					"to": "dlc_kulero.Main",
 					"condition": []
 				},
 				{
-					"from": "openDLC_DungeonGF_L",
-					"to": "openDLC_DungeonMain",
+					"from": "dlc_kulero.GF_L",
+					"to": "dlc_kulero.Main",
 					"condition": []
 				},
 				{
-					"from": "openDLC_DungeonMain",
-					"to": "openDLC_DungeonB2_R",
+					"from": "dlc_kulero.Main",
+					"to": "dlc_kulero.B2_R",
 					"condition": [
 						["item", "Heat", 1],
 						["item", "Shock", 1],
@@ -89,15 +89,15 @@
 					]
 				},
 				{
-					"from": "openDLC_DungeonB2_R",
-					"to": "openDLC_DungeonB2_R.1",
+					"from": "dlc_kulero.B2_R",
+					"to": "dlc_kulero.B2_R.1",
 					"condition": [
 						["item", "Wave", 1]
 					]
 				},
 				{
-					"from": "openDLC_DungeonMain",
-					"to": "openDLC_DungeonB2_L",
+					"from": "dlc_kulero.Main",
+					"to": "dlc_kulero.B2_L",
 					"condition": [
 						["item", "Heat", 1],
 						["item", "Wave", 1],
@@ -106,15 +106,15 @@
 					]
 				},
 				{
-					"from": "openDLC_DungeonB2_L",
-					"to": "openDLC_DungeonB2_L.1",
+					"from": "dlc_kulero.B2_L",
+					"to": "dlc_kulero.B2_L.1",
 					"condition": [
 						["item", "Ku'lero Key", 3]
 					]
 				},
 				{
-					"from": "openDLC_DungeonMain",
-					"to": "openDLC_DungeonB3_L",
+					"from": "dlc_kulero.Main",
+					"to": "dlc_kulero.B3_L",
 					"condition": [
 						["item", "Heat", 1],
 						["item", "Cold", 1],
@@ -122,16 +122,16 @@
 					]
 				},
 				{
-					"from": "openDLC_DungeonMain",
-					"to": "openDLC_DungeonB3_R",
+					"from": "dlc_kulero.Main",
+					"to": "dlc_kulero.B3_R",
 					"condition": [
 						["item", "Shock", 1],
 						["item", "Wave", 1]
 					]
 				},
 				{
-					"from": "openDLC_DungeonMain",
-					"to": "openDLC_DungeonBoss",
+					"from": "dlc_kulero.Main",
+					"to": "dlc_kulero.Boss",
 					"condition": [
 						["item", "Heat", 1],
 						["item", "Cold", 1],
@@ -143,7 +143,7 @@
 			],
             "goals": {
 				"diorbis": {
-					"region": "openDLC_DungeonBoss"
+					"region": "dlc_kulero.Boss"
 				}
 			}
 		}

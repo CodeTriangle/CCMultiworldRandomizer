@@ -6,7 +6,7 @@
 				"name": "Autumn-Ground-1"
 			},
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			}
 		},
 		"Beta Ball Plant": {
@@ -15,7 +15,7 @@
 				"name": "Autumn-Ground-2"
 			},
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			}
 		},
 		"Omega Ball Plant": {
@@ -24,7 +24,7 @@
 				"name": "Autumn-Ground-Rare"
 			},
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			}
 		},
 		"Alpha Water Blades": {
@@ -33,7 +33,7 @@
 				"name": "Autumn-Water-1"
 			},
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			}
 		},
 		"Beta Water Blades": {
@@ -42,7 +42,7 @@
 				"name": "Autumn-Water-2"
 			},
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			}
 		},
 		"Omega Water Blades": {
@@ -51,7 +51,7 @@
 				"name": "Autumn-Water-Rare"
 			},
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			}
 		},
 		"Alpha Feather Bush": {
@@ -60,7 +60,7 @@
 				"name": "BergenTrail-Grass-1"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Beta Feather Bush": {
@@ -69,7 +69,7 @@
 				"name": "BergenTrail-Grass-2"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Omega Feather Bush": {
@@ -78,7 +78,7 @@
 				"name": "BergenTrail-Grass-Rare"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Alpha Pike Shrub": {
@@ -87,7 +87,7 @@
 				"name": "BergenTrail-Dry-1"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Beta Pike Shrub": {
@@ -96,7 +96,7 @@
 				"name": "BergenTrail-Dry-2"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Omega Pike Shrub": {
@@ -105,7 +105,7 @@
 				"name": "BergenTrail-Dry-Rare"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Alpha Plume Bush": {
@@ -114,7 +114,7 @@
 				"name": "BergenTrail-Grass-Snow-1"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Beta Plume Bush": {
@@ -123,7 +123,7 @@
 				"name": "BergenTrail-Grass-Snow-2"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Omega Plume Bush": {
@@ -132,7 +132,7 @@
 				"name": "BergenTrail-Grass-Snow-Rare"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Alpha Lance Shrub": {
@@ -141,7 +141,7 @@
 				"name": "BergenTrail-Dry-Snow-1"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Beta Lance Shrub": {
@@ -150,7 +150,7 @@
 				"name": "BergenTrail-Dry-Snow-2"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Omega Lance Shrub": {
@@ -159,7 +159,7 @@
 				"name": "BergenTrail-Dry-Snow-Rare"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Diamond Ice": {
@@ -168,7 +168,7 @@
 				"name": "BergenTrail-IceCrystal"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Alpha Egg Pot": {
@@ -177,7 +177,7 @@
 				"name": "Cold-Dng-1"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Beta Egg Pot": {
@@ -186,7 +186,7 @@
 				"name": "Cold-Dng-2"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Gamma Egg Pot": {
@@ -195,7 +195,7 @@
 				"name": "Cold-Dng-3"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Delta Egg Pot": {
@@ -204,7 +204,7 @@
 				"name": "Cold-Dng-4"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Omega Egg Pot A": {
@@ -213,7 +213,7 @@
 				"name": "Cold-Dng-Special-1"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Omega Egg Pot B": {
@@ -222,7 +222,7 @@
 				"name": "Cold-Dng-Special-2"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Alpha Dry Cactone": {
@@ -231,7 +231,7 @@
 				"name": "heat-common-cactus-1"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Beta Dry Cactone": {
@@ -240,7 +240,7 @@
 				"name": "heat-common-cactus-2"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Alpha Dry Shrub": {
@@ -249,7 +249,7 @@
 				"name": "heat-common-bush-1"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Beta Dry Shrub": {
@@ -258,7 +258,7 @@
 				"name": "heat-common-bush-2"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Omega Dry Shrub": {
@@ -267,7 +267,7 @@
 				"name": "heat-common-bush-special"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Alpha Cactone": {
@@ -276,7 +276,7 @@
 				"name": "heat-oasis-cactus-1"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Beta Cactone": {
@@ -285,7 +285,7 @@
 				"name": "heat-oasis-cactus-2"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Omega Cactone": {
@@ -294,7 +294,7 @@
 				"name": "heat-oasis-cactus-special"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Alpha Palmapple": {
@@ -303,7 +303,7 @@
 				"name": "heat-oasis-palmapple-1"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Beta Palmapple": {
@@ -312,7 +312,7 @@
 				"name": "heat-oasis-palmapple-2"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Omega Palmapple": {
@@ -321,7 +321,7 @@
 				"name": "heat-oasis-palmapple-special"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Alpha Ant Hill": {
@@ -330,7 +330,7 @@
 				"name": "heat-barren-hill-1"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Beta Ant Hill": {
@@ -339,7 +339,7 @@
 				"name": "heat-barren-hill-2"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Omega Ant Hill": {
@@ -348,7 +348,7 @@
 				"name": "heat-barren-hill-special"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Alpha Bone Pile": {
@@ -357,7 +357,7 @@
 				"name": "heat-cliffs-bones-1"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Beta Bone Pile": {
@@ -366,7 +366,7 @@
 				"name": "heat-cliffs-bones-2"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Omega Bone Pile": {
@@ -375,7 +375,7 @@
 				"name": "heat-cliffs-bones-special"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Alpha Sphere Plant": {
@@ -384,7 +384,7 @@
 				"name": "Autumn-Fall-Ground-1"
 			},
 			"region": {
-				"open": "open8"
+				"open": "fall"
 			}
 		},
 		"Beta Sphere Plant": {
@@ -393,7 +393,7 @@
 				"name": "Autumn-Fall-Ground-2"
 			},
 			"region": {
-				"open": "open8"
+				"open": "fall"
 			}
 		},
 		"Omega Sphere Plant": {
@@ -402,7 +402,7 @@
 				"name": "Autumn-Fall-Ground-Rare"
 			},
 			"region": {
-				"open": "open8"
+				"open": "fall"
 			}
 		},
 		"Alpha Water Cutlass": {
@@ -411,7 +411,7 @@
 				"name": "Autumn-Fall-Water-1"
 			},
 			"region": {
-				"open": "open8"
+				"open": "fall"
 			}
 		},
 		"Beta Water Cutlass": {
@@ -420,7 +420,7 @@
 				"name": "Autumn-Fall-Water-2"
 			},
 			"region": {
-				"open": "open8"
+				"open": "fall"
 			}
 		},
 		"Omega Water Cutlass": {
@@ -429,7 +429,7 @@
 				"name": "Autumn-Fall-Water-Rare"
 			},
 			"region": {
-				"open": "open8"
+				"open": "fall"
 			}
 		},
 		"Alpha Puff Plant": {
@@ -438,7 +438,7 @@
 				"name": "jungle-common-flower-1"
 			},
 			"region": {
-				"open": "open10"
+				"open": "gaia"
 			}
 		},
 		"Beta Puff Plant": {
@@ -447,7 +447,7 @@
 				"name": "jungle-common-flower-2"
 			},
 			"region": {
-				"open": "open10"
+				"open": "gaia"
 			}
 		},
 		"Omega Puff Plant": {
@@ -456,7 +456,7 @@
 				"name": "jungle-common-flower-special"
 			},
 			"region": {
-				"open": "open10.Mid"
+				"open": "gaia.Top"
 			}
 		},
 		"Alpha Closed Baraleles": {
@@ -465,7 +465,7 @@
 				"name": "jungle-common-water-1"
 			},
 			"region": {
-				"open": "open10"
+				"open": "gaia"
 			}
 		},
 		"Beta Closed Baraleles": {
@@ -474,7 +474,7 @@
 				"name": "jungle-common-water-2"
 			},
 			"region": {
-				"open": "open10"
+				"open": "gaia"
 			}
 		},
 		"Bee Hive": {
@@ -483,7 +483,7 @@
 				"name": "jungle-bees-1"
 			},
 			"region": {
-				"open": "open10.Mid"
+				"open": "gaia.Top"
 			}
 		},
 		"Alpha Open Baraleles": {
@@ -492,7 +492,7 @@
 				"name": "jungle-rain-1"
 			},
 			"region": {
-				"open": "open10.Left"
+				"open": "gaia.Left"
 			}
 		},
 		"Beta Open Baraleles": {
@@ -501,7 +501,7 @@
 				"name": "jungle-rain-2"
 			},
 			"region": {
-				"open": "open10.Left"
+				"open": "gaia.Left"
 			}
 		},
 		"Omega Open Baraleles": {
@@ -510,12 +510,12 @@
 				"name": "jungle-rain-special"
 			},
 			"region": {
-				"open": "open10.Left"
+				"open": "gaia.Left"
 			},
 			"conditions": [
 				[ "or",
 					[ "item", "Wave" ],
-					[ "region", "open", "open10.Grove" ]
+					[ "region", "open", "gaia.Grove" ]
 				]
 			]
 		},
@@ -525,7 +525,7 @@
 				"name": "jungle-clearing-1"
 			},
 			"region": {
-				"open": "open10.Right"
+				"open": "gaia.Right"
 			}
 		},
 		"Beta Vivid Puff Plant": {
@@ -534,7 +534,7 @@
 				"name": "jungle-clearing-2"
 			},
 			"region": {
-				"open": "open10.Right"
+				"open": "gaia.Right"
 			}
 		},
 		"Omega Vivid Puff Plant": {
@@ -543,7 +543,7 @@
 				"name": "jungle-clearing-special"
 			},
 			"region": {
-				"open": "open10.Right"
+				"open": "gaia.Right"
 			}
 		},
 		"Alpha Virus Shroom": {
@@ -552,7 +552,7 @@
 				"name": "jungle-infested-1"
 			},
 			"region": {
-				"open": "open10.Infested"
+				"open": "gaia.Infested"
 			}
 		},
 		"Beta Virus Shroom": {
@@ -561,7 +561,7 @@
 				"name": "jungle-infested-2"
 			},
 			"region": {
-				"open": "open10.Infested"
+				"open": "gaia.Infested"
 			}
 		},
 		"Omega Virus Shroom": {
@@ -570,7 +570,7 @@
 				"name": "jungle-infested-special"
 			},
 			"region": {
-				"open": "open10.Infested"
+				"open": "gaia.Infested"
 			}
 		},
 		"Alpha Bamboo": {
@@ -579,7 +579,7 @@
 				"name": "forest-bamboo-1"
 			},
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			}
 		},
 		"Beta Bamboo": {
@@ -588,7 +588,7 @@
 				"name": "forest-bamboo-2"
 			},
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			}
 		},
 		"Omega Bamboo": {
@@ -597,7 +597,7 @@
 				"name": "forest-bamboo-special"
 			},
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			}
 		},
 		"Alpha Ridge Flower": {
@@ -606,7 +606,7 @@
 				"name": "forest-bush-1"
 			},
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			}
 		},
 		"Beta Ridge Flower": {
@@ -615,7 +615,7 @@
 				"name": "forest-bush-2"
 			},
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			}
 		},
 		"Omega Ridge Flower": {
@@ -624,7 +624,7 @@
 				"name": "forest-bush-special"
 			},
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			}
 		},
 		"Alpha Crystal": {
@@ -633,7 +633,7 @@
 				"name": "forest-crystal-1"
 			},
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			}
 		},
 		"Beta Crystal": {
@@ -642,7 +642,7 @@
 				"name": "forest-crystal-2"
 			},
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			}
 		},
 		"Omega Crystal": {
@@ -651,7 +651,7 @@
 				"name": "forest-crystal-special"
 			},
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			}
 		},
 		"Sprout of Valor": {
@@ -660,7 +660,7 @@
 				"name": "STONE_VALOR"
 			},
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			}
 		},
 		"Sprout of Space": {
@@ -669,7 +669,7 @@
 				"name": "STONE_SPACE"
 			},
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			}
 		},
 		"Sprout of Truth": {
@@ -678,7 +678,7 @@
 				"name": "STONE_TRUTH"
 			},
 			"region": {
-				"open": "open8"
+				"open": "harbor.North"
 			}
 		},
 		"Sprout of Spirit": {
@@ -687,7 +687,7 @@
 				"name": "STONE_SPIRIT"
 			},
 			"region": {
-				"open": "open11"
+				"open": "slums"
 			}
 		},
 		"Sprout of Ages": {
@@ -696,7 +696,7 @@
 				"name": "STONE_AGES"
 			},
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			}
 		}
 	}

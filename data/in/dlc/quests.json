@@ -13,10 +13,10 @@
 			"questid": "ape-battle",
 			"region": {
 				"linear": "23",
-				"open": "openDLC_Beach" 
+				"open": "dlc_beach" 
 			},
 			"condition": [
-				[ "region", "open", "open15.1" ],
+				[ "region", "open", "kajo.1" ],
 				[ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
@@ -29,7 +29,7 @@
 			"questid": "monks-3-jump_challenge_3",
 			"region": {
 				"linear": "23",
-				"open": "open3" 
+				"open": "trail" 
 			},
 			"condition": [ 
 				[ "quest", "Trial of Progression" ],
@@ -48,7 +48,7 @@
 			"questid": "monks-jump_3_bonus",
 			"region": {
 				"linear": "23",
-				"open": "open3" 
+				"open": "trail" 
 			},
 			"condition": [ 
 				[ "quest", "Trial of Ascension" ]
@@ -61,7 +61,7 @@
 			"questid": "monks-jump_3_time",
 			"region": {
 				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "quest", "Challenge of Ascension" ]
@@ -71,7 +71,7 @@
 			"questid": "monks-jump_3_frosty",
 			"region": {
 				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "quest", "Challenge of Ascension" ]
@@ -81,13 +81,13 @@
 			"questid": "bakiTrader-3-brewing_ghosts_1",
 			"region": {
 				"linear": "11",
-				"open": "open5" 
+				"open": "maroon" 
 			},
 			"condition": [ 
 				[ "quest", "Steamy Booze" ],
 				[ "quest", "Steamy Challenge" ],
 				[ "item", "Cold" ],
-				[ "region", "open", "openDLC_Beach" ],
+				[ "region", "open", "dlc_beach" ],
 				[ "or",
 					[ "var", "allowBoosterGrinding", "off" ],
 					[ "and",
@@ -95,11 +95,11 @@
 						[ "item", "Everlasting Amber" ],
 						[ "or",
 							[ "quest", "New Metal" ],
-							[ "region", "open", "open16" ],
-							[ "region", "open", "open10.Infested" ],
+							[ "region", "open", "ridge" ],
+							[ "region", "open", "gaia.Infested" ],
 							[ "and",
-								[ "region", "open", "open10.Right" ],
-								[ "region", "open", "open10.Left" ]
+								[ "region", "open", "gaia.Right" ],
+								[ "region", "open", "gaia.Left" ]
 							]
 						]
 					]
@@ -116,11 +116,11 @@
 		"Salty Detox": {
 			"questid": "jungleGreens-3-escort_2",
 			"region": {
-				"open": "open10"
+				"open": "gaia"
 			},
 			"condition": [
 				[ "quest", "Rooting for Power" ],
-				[ "region", "open", "openDLC_Beach" ],
+				[ "region", "open", "dlc_beach" ],
                 [ "item", "Cold", 1 ],
                 [ "item", "Wave", 1 ],
                 [ "item", "Azure Archipelago Pass", 1 ]
@@ -136,11 +136,11 @@
 			"questid": "bg-3-goat_final",
 			"region": {
 				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "quest", "In Cawhoofs" ],
-				[ "region", "open", "open20" ],
+				[ "region", "open", "rhombus" ],
                 [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
@@ -154,21 +154,21 @@
 			"questid": "jungleGuard-3-papagang_goats_1",
 			"region": {
 				"linear": "23",
-				"open": "open10" 
+				"open": "gaia" 
 			},
 			"condition": [ 
 				[ "quest", "The Goatfather" ],
 				[ "quest", "High Crating" ],
 				[ "any_element" ],
-				[ "region", "open", "open3" ],
-				[ "region", "open", "open10.Right" ],
-				[ "region", "open", "open11" ],
+				[ "region", "open", "trail" ],
+				[ "region", "open", "gaia.Right" ],
+				[ "region", "open", "slums" ],
 				[ "or",
-					[ "region", "open", "open10.Left" ],
+					[ "region", "open", "gaia.Left" ],
 					[ "and",
-						[ "region", "open", "open5" ],
-						[ "region", "open", "open8" ],
-						[ "region", "open", "open10.Infested" ]
+						[ "region", "open", "maroon" ],
+						[ "region", "open", "harbor.North" ],
+						[ "region", "open", "gaia.Infested" ]
 					]
 				],
                 [ "item", "Azure Archipelago Pass", 1 ]
@@ -184,14 +184,14 @@
 			"questid": "jungleTrader-3-shad_fridge_1",
 			"region": {
 				"linear": "23",
-				"open": "open10" 
+				"open": "gaia" 
 			},
 			"condition": [ 
 				[ "quest", "Melting this Cold Fiend" ],
 				[ "item", "Shock" ],
-				[ "region", "open", "open10.Right" ],
-				[ "region", "open", "open10.Infested" ],
-				[ "region", "open", "open16" ],
+				[ "region", "open", "gaia.Right" ],
+				[ "region", "open", "gaia.Infested" ],
+				[ "region", "open", "ridge" ],
                 [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
@@ -205,12 +205,12 @@
 			"questid": "seizui-quest",
 			"region": {
 				"linear": "23",
-				"open": "open20" 
+				"open": "rhombus" 
 			},
 			"condition": [
-				[ "region", "open", "open3" ],
-				[ "region", "open", "open5" ],
-				[ "region", "open", "open10.Infested" ],
+				[ "region", "open", "trail" ],
+				[ "region", "open", "maroon" ],
+				[ "region", "open", "gaia.Infested" ],
 				[ "item", "Heat" ],
                 [ "item", "Azure Archipelago Pass", 1 ]
 			],
@@ -225,7 +225,7 @@
 			"questid": "autobahn",
 			"region": {
 				"linear": "23",
-				"open": "open20" 
+				"open": "rhombus" 
 			},
 			"condition": [
 				[ "item", "Azure Archipelago Pass", 1 ]
@@ -241,14 +241,14 @@
 			"questid": "tremor-1",
 			"region": {
 				"linear": "23",
-				"open": "open20" 
+				"open": "rhombus" 
 			},
 			"condition": [
 				[ "item", "Tremor Engine", 4 ],
 				[ "item", "Humming Razor", 1 ],
 				[ "item", "Shock", 1 ],
-				[ "region", "open", "open10.Right" ],
-				[ "region", "open", "open16" ],
+				[ "region", "open", "gaia.Right" ],
+				[ "region", "open", "ridge" ],
                 [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
@@ -261,7 +261,7 @@
 			"questid": "rhg-4-maritime_smuggle_2",
 			"region": {
 				"linear": "23",
-				"open": "open2" 
+				"open": "harbor" 
 			},
 			"condition": [ 
 				[ "quest", "Wet Work" ],

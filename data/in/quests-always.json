@@ -5,7 +5,7 @@
 			"questid": "daft-frobbit",
 			"region": {
 				"linear": "20",
-				"open": "open9" 
+				"open": "fall" 
 			},
 			"condition": [
 				[ "item", "Heat" ],
@@ -22,7 +22,7 @@
 			"questid": "basin-mush-2",
 			"region": {
 				"linear": "23",
-				"open": "open10.Infested"
+				"open": "gaia.Infested"
 			},
 			"condition": [ 
 				[ "item", "Wave", 1 ]
@@ -38,7 +38,7 @@
 			"questid": "maroon-tree-defend",
 			"region": {
 				"linear": "12",
-				"open": "open6"
+				"open": "maroon.Cave"
 			},
 			"condition": [
 				[ "item", "Maroon Cave Pass", 1 ],
@@ -55,7 +55,7 @@
 			"questid": "bug-hunting",
 			"region": {
 				"linear": "31",
-				"open": "open16" 
+				"open": "ridge" 
 			},
 			"properties": {
 				"alwaysQuest": true

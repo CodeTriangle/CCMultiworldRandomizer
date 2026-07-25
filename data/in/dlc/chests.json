@@ -8,7 +8,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC1"
+				"open": "dlc_homestedt"
 			},
 			"reward": [
 				[ "item", "Emerald", 4 ]
@@ -25,7 +25,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC1"
+				"open": "dlc_homestedt"
 			},
 			"reward": [
 				[ "item", "Amethyst", 4 ]
@@ -42,7 +42,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC1"
+				"open": "dlc_homestedt"
 			},
 			"reward": [
 				[ "item", "Topaz", 4 ]
@@ -56,7 +56,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC1"
+				"open": "dlc_homestedt"
 			},
 			"reward": [
 				[ "item", "Citrine", 4 ]
@@ -70,7 +70,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC1"
+				"open": "dlc_homestedt"
 			},
 			"reward": [
 				[ "item", "Goose", 1 ]
@@ -87,7 +87,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC1"
+				"open": "dlc_homestedt"
 			},
 			"reward": [
 				[ "item", "Ruby", 4 ]
@@ -104,7 +104,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "Chunky", 1 ]
@@ -121,7 +121,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "MacGuffin's Coin", 1 ]
@@ -138,7 +138,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "Mellow Water", 5 ]
@@ -152,7 +152,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "Ancient Cups", 1 ]
@@ -169,7 +169,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "Durian", 2 ]
@@ -186,7 +186,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "Shell Nut", 5 ]
@@ -200,7 +200,7 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "Ember Sack", 5 ]
@@ -214,7 +214,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "MacGuffin's Coin", 1 ]
@@ -228,7 +228,7 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "Core Stone", 5 ]
@@ -245,7 +245,7 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "Yellow Sponge", 5 ]
@@ -259,7 +259,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "Worm Band", 3 ]
@@ -273,7 +273,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
 			"reward": [
 				[ "item", "Razor Tip", 3 ]
@@ -287,7 +287,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_beach"
 			},
             "condition": [
 				[ "item", "Heat", 1 ],
@@ -305,7 +305,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Seedling", 1 ]
@@ -319,7 +319,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Antique Token", 1 ]
@@ -333,7 +333,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Meteor Chunk", 1 ]
@@ -347,7 +347,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Burned Ash", 2 ]
@@ -364,7 +364,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Nuclear Roach", 1 ]
@@ -381,7 +381,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Focus Shard", 5 ]
@@ -398,7 +398,7 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Antique Token", 1 ]
@@ -412,7 +412,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC_DungeonEntry.1R"
+				"open": "dlc_kulero.Entry.1R"
 			},
 			"reward": [
 				[ "item", "Antique Ore", 2 ]
@@ -426,7 +426,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "openDLC_DungeonEntry.1L"
+				"open": "dlc_kulero.Entry.1L"
 			},
 			"reward": [
 				[ "item", "Rumble Hive", 2 ]
@@ -440,7 +440,7 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kulero.Entry"
 			},
 			"reward": [
 				[ "item", "Barrel Beak", 3 ]
@@ -454,7 +454,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_DungeonB2_L"
+				"open": "dlc_kulero.B2_L"
 			},
 			"reward": [
 				[ "item", "Rift Spore", 1 ]
@@ -468,7 +468,7 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kulero.Entry"
 			},
 			"reward": [
 				[ "item", "Lapis Lazuli", 4 ]
@@ -482,7 +482,7 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "openDLC_DungeonB2_L"
+				"open": "dlc_kulero.B2_L"
 			},
 			"reward": [
 				[ "item", "Moonstone", 4 ]
@@ -496,7 +496,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"open": "openDLC_DungeonB2_L"
+				"open": "dlc_kulero.B2_L"
 			},
 			"reward": [
 				[ "item", "Ku'lero Key", 1 ]
@@ -510,7 +510,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_DungeonB2_L.1"
+				"open": "dlc_kulero.B2_L.1"
 			},
 			"reward": [
 				[ "item", "Batboy", 1 ]
@@ -524,7 +524,7 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "openDLC_DungeonB2_R"
+				"open": "dlc_kulero.B2_R"
 			},
 			"reward": [
 				[ "item", "Focus Shard", 3 ]
@@ -538,7 +538,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"open": "openDLC_DungeonB2_R"
+				"open": "dlc_kulero.B2_R"
 			},
 			"reward": [
 				[ "item", "Ku'lero Key", 1 ]
@@ -552,7 +552,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_DungeonEntry.1F"
+				"open": "dlc_kulero.Entry.1F"
 			},
 			"reward": [
 				[ "item", "Diamond", 4 ]
@@ -566,7 +566,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_DungeonB2_R.1"
+				"open": "dlc_kulero.B2_R.1"
 			},
 			"reward": [
 				[ "item", "Butterfliege", 1 ]
@@ -580,7 +580,7 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kulero.Entry"
 			},
 			"reward": [
 				[ "item", "Burned Ash", 3 ]
@@ -594,7 +594,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"open": "openDLC_DungeonB2_L"
+				"open": "dlc_kulero.B2_L"
 			},
 			"reward": [
 				[ "item", "Ku'lero Key", 1 ]
@@ -608,7 +608,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"open": "openDLC_DungeonMain"
+				"open": "dlc_kulero.Main"
 			},
 			"reward": [
 				[ "item", "Ku'lero Master Key", 1 ]
@@ -622,7 +622,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "openDLC_DungeonBoss"
+				"open": "dlc_kulero.Boss"
 			},
 			"reward": [
 				[ "item", "MacGuffin's Coin", 1 ]
