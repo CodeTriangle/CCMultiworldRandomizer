@@ -3386,7 +3386,7 @@
 			"clearance": "Gold",
 			"region": {
 				"linear": "33",
-				"open": "ridge.ascension"
+				"open": "ridge.Ascension"
 			},
 			"reward": [
 				[
@@ -3405,7 +3405,7 @@
 			"clearance": "Gold",
 			"region": {
 				"linear": "33",
-				"open": "ridge.ascension"
+				"open": "ridge.Ascension"
 			},
 			"reward": [
 				[
@@ -3431,7 +3431,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "33",
-				"open": "ridge.ascension"
+				"open": "ridge.Ascension"
 			},
 			"reward": [
 				[
@@ -3457,7 +3457,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "33",
-				"open": "ridge.ascension"
+				"open": "ridge.Ascension"
 			},
 			"reward": [
 				[
@@ -3648,7 +3648,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "12",
-				"open": "maroon.cave"
+				"open": "maroon.Cave"
 			},
 			"reward": [
 				[
@@ -6374,7 +6374,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "2",
-				"open": "harbor.north"
+				"open": "harbor.North"
 			},
 			"reward": [
 				[
@@ -6400,7 +6400,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "19",
-				"open": "harbor.north"
+				"open": "harbor.North"
 			},
 			"reward": [
 				[
@@ -6419,7 +6419,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "19",
-				"open": "harbor.north"
+				"open": "harbor.North"
 			},
 			"reward": [
 				[
