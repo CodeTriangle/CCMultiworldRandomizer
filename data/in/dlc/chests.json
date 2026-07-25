@@ -305,7 +305,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Seedling", 1 ]
@@ -319,7 +319,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Antique Token", 1 ]
@@ -333,7 +333,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Meteor Chunk", 1 ]
@@ -347,7 +347,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Burned Ash", 2 ]
@@ -364,7 +364,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Nuclear Roach", 1 ]
@@ -381,7 +381,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Focus Shard", 5 ]
@@ -398,7 +398,7 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"reward": [
 				[ "item", "Antique Token", 1 ]
