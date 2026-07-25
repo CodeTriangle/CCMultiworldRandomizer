@@ -13,7 +13,7 @@
 			"questid": "ape-battle",
 			"region": {
 				"linear": "23",
-				"open": "openDLC_Beach" 
+				"open": "dlc_beach" 
 			},
 			"condition": [
 				[ "region", "open", "kajo.1" ],
@@ -87,7 +87,7 @@
 				[ "quest", "Steamy Booze" ],
 				[ "quest", "Steamy Challenge" ],
 				[ "item", "Cold" ],
-				[ "region", "open", "openDLC_Beach" ],
+				[ "region", "open", "dlc_beach" ],
 				[ "or",
 					[ "var", "allowBoosterGrinding", "off" ],
 					[ "and",
@@ -120,7 +120,7 @@
 			},
 			"condition": [
 				[ "quest", "Rooting for Power" ],
-				[ "region", "open", "openDLC_Beach" ],
+				[ "region", "open", "dlc_beach" ],
                 [ "item", "Cold", 1 ],
                 [ "item", "Wave", 1 ],
                 [ "item", "Azure Archipelago Pass", 1 ]
