@@ -8,7 +8,7 @@
 				"path": ".settings.event.5" 
 			},
 			"region": {
-				"open": "openDLC1" 
+				"open": "dlc_homestedt" 
 			},
 			"reward": [
 				[ "item", "Azure Archipelago Pass", 1 ]
@@ -22,7 +22,7 @@
 				"path": ".settings.event.36" 
 			},
 			"region": {
-				"open": "openDLC_Beach" 
+				"open": "dlc_beach" 
 			},
             "condition": [
 				[ "item", "Heat", 1 ],
@@ -40,7 +40,7 @@
 				"path": ".settings.event.18" 
 			},
 			"region": {
-				"open": "openDLC_Beach" 
+				"open": "dlc_beach" 
 			},
             "condition": [
 				[ "item", "Heat", 1 ],
@@ -58,7 +58,7 @@
 				"path": ".settings.event.44" 
 			},
 			"region": {
-				"open": "openDLC_Beach" 
+				"open": "dlc_beach" 
 			},
             "condition": [
 				[ "item", "Heat", 1 ],
@@ -76,7 +76,7 @@
 				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
-				"open": "openDLC_DungeonGF_L" 
+				"open": "dlc_kulero.GF_L" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -90,7 +90,7 @@
 				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
-				"open": "openDLC_DungeonGF_R" 
+				"open": "dlc_kulero.GF_R" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -104,7 +104,7 @@
 				"path": ".settings.event.21" 
 			},
 			"region": {
-				"open": "openDLC_DungeonMain" 
+				"open": "dlc_kulero.Main" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 2 ]
@@ -118,7 +118,7 @@
 				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
-				"open": "openDLC_DungeonB2_L" 
+				"open": "dlc_kulero.B2_L" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -132,7 +132,7 @@
 				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
-				"open": "openDLC_DungeonB2_R" 
+				"open": "dlc_kulero.B2_R" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -146,7 +146,7 @@
 				"path": ".settings.event.10" 
 			},
 			"region": {
-				"open": "openDLC_DungeonB2_L" 
+				"open": "dlc_kulero.B2_L" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -160,7 +160,7 @@
 				"path": ".settings.event.10" 
 			},
 			"region": {
-				"open": "openDLC_DungeonB2_R" 
+				"open": "dlc_kulero.B2_R" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -174,7 +174,7 @@
 				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
-				"open": "openDLC_DungeonB3_L" 
+				"open": "dlc_kulero.B3_L" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
@@ -188,7 +188,7 @@
 				"path": ".settings.event.0.thenStep.13" 
 			},
 			"region": {
-				"open": "openDLC_DungeonB3_R" 
+				"open": "dlc_kulero.B3_R" 
 			},
 			"reward": [
 				[ "item", "Mega-Sandwich", 3 ]
