@@ -93,7 +93,7 @@
 			},
 			"region": {
 				"linear": "32",
-				"open": "ridge.dojo" 
+				"open": "ridge.Dojo" 
 			},
 			"reward": [
 				[ "item", "Meteor Shade", 1 ]
