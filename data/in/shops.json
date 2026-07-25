@@ -7,7 +7,7 @@
 			},
 			"region": {
 				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -30,7 +30,7 @@
 			},
 			"region": {
 				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ],
@@ -48,7 +48,7 @@
 			},
 			"region": {
 				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ],
@@ -66,7 +66,7 @@
 			},
 			"region": {
 				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ],
@@ -85,7 +85,7 @@
 			},
 			"region": {
 				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -108,7 +108,7 @@
 			},
 			"region": {
 				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ],
@@ -128,7 +128,7 @@
 			},
 			"region": {
 				"linear": "19",
-				"open": "open8"
+				"open": "harbor.North"
 			},
 			"slots": [
 				"Steel Goggles",
@@ -148,7 +148,7 @@
 			},
 			"region": {
 				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -164,7 +164,7 @@
 			},
 			"region": {
 				"linear": "19",
-				"open": "open8"
+				"open": "harbor.North"
 			},
 			"slots": [
 				"Rising Super Star",
@@ -188,7 +188,7 @@
 			},
 			"region": {
 				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"slots": [
 				"Sandwich",
@@ -208,7 +208,7 @@
 			},
 			"region": {
 				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "item", "Blue Ice Shade" ]
@@ -225,7 +225,7 @@
 			},
 			"region": {
 				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "item", "Red Flame Shade" ]
@@ -242,7 +242,7 @@
 			},
 			"region": {
 				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"condition": [
 				[ "item", "Green Seed Shade" ]
@@ -260,7 +260,7 @@
 			},
 			"region": {
 				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"slots": [
 				"Iron Goggles",
@@ -276,7 +276,7 @@
 			},
 			"region": {
 				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"slots": [
 				"Chili Con Carne",
@@ -291,7 +291,7 @@
 			},
 			"region": {
 				"linear": "11",
-				"open": "open5"
+				"open": "maroon"
 			},
 			"slots": [
 				"Sandwich",
@@ -313,7 +313,7 @@
 			},
 			"region": {
 				"linear": "11",
-				"open": "open5"
+				"open": "maroon"
 			},
 			"condition": [
 				[ "item", "Blue Ice Shade" ]
@@ -330,7 +330,7 @@
 			},
 			"region": {
 				"linear": "11",
-				"open": "open5"
+				"open": "maroon"
 			},
 			"condition": [
 				[ "item", "Green Seed Shade" ]
@@ -348,7 +348,7 @@
 			},
 			"region": {
 				"linear": "11",
-				"open": "open5"
+				"open": "maroon"
 			},
 			"slots": [
 				"Iron Goggles",
@@ -368,7 +368,7 @@
 			},
 			"region": {
 				"linear": "23",
-				"open": "open10"
+				"open": "gaia"
 			},
 			"slots": [
 				"Sandwich",
@@ -395,7 +395,7 @@
 			},
 			"region": {
 				"linear": "23",
-				"open": "open10"
+				"open": "gaia"
 			},
 			"slots": [
 				"Sandwich",
@@ -422,7 +422,7 @@
 			},
 			"region": {
 				"linear": "23",
-				"open": "open10"
+				"open": "gaia"
 			},
 			"slots": [
 				"Silver Goggles",
@@ -442,11 +442,8 @@
 			},
 			"region": {
 				"linear": "23",
-				"open": "open10"
+				"open": "slums"
 			},
-			"condition": [
-				[ "item", "Pond Slums Pass", 1 ]
-			],
 			"slots": [
 				"One Up"
 			]
@@ -458,7 +455,7 @@
 			},
 			"region": {
 				"linear": "31",
-				"open": "open16"
+				"open": "ridge"
 			},
 			"slots": [
 				"Titan Goggles",
@@ -478,7 +475,7 @@
 			},
 			"region": {
 				"linear": "31",
-				"open": "open16"
+				"open": "ridge"
 			},
 			"slots": [
 				"Sandwich",
@@ -505,7 +502,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -528,7 +525,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -558,7 +555,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -574,7 +571,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -601,7 +598,7 @@
 			},
 			"region": {
 				"linear": "22",
-				"open": "open18"
+				"open": "vermillion"
 			},
 			"slots": [
 				"Steel Goggles",
@@ -621,7 +618,7 @@
 			},
 			"region": {
 				"linear": "22",
-				"open": "open18"
+				"open": "vermillion"
 			},
 			"slots": [
 				"Sandwich",
