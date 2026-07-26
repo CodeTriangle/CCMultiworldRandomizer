@@ -280,7 +280,8 @@
 					"from": "open4.1",
 					"to": "open4.2",
 					"condition": [
-						[ "item", "Mine Key", 1 ]
+						[ "item", "Mine Key", 1 ],
+						[ "defeat", "Carritrich" ]
 					]
 				},
 				{
@@ -295,6 +296,7 @@
 					"to": "open4.4",
 					"condition": [
 						[ "item", "Mine Key", 3 ]
+						[ "defeat", "Digmo"]
 					]
 				},
 				{
@@ -313,6 +315,13 @@
 				},
 				{
 					"from": "open4.6",
+					"to": "open4.6.5",
+					"condition": [
+						[ "defeat", "Kamikatze", "Fleazer"]
+					]
+				},
+				{
+					"from": "open4.6.5",
 					"to": "open4.7",
 					"condition": [
 						[ "item", "Mine Key", 5 ]
@@ -322,7 +331,8 @@
 					"from": "open4.1",
 					"to": "open4.8",
 					"condition": [
-						[ "item", "Mine Master Key", 1 ]
+						[ "item", "Mine Master Key", 1 ],
+						[ "defeat", "X01 Driller H.F.S." ]
 					]
 				},
 				{
@@ -366,9 +376,17 @@
 				},
 				{
 					"from": "open7.1",
+					"to": "open7.1.5",
+					"condition": [
+						[ "item", "Faj'ro Key", 1 ],
+						[ "defeat", "Trijelly" ]
+					]
+				},
+				{
+					"from": "open7.1.5",
 					"to": "open7.2",
 					"condition": [
-						[ "item", "Faj'ro Key", 1 ]
+						[ "defeat", "Pada Moth" ]
 					]
 				},
 				{
@@ -387,16 +405,25 @@
 				},
 				{
 					"from": "open7.4",
-					"to": "open7.5",
+					"to": "open7.4.5",
 					"condition": [
 						[ "item", "Cold", 1 ]
+						[ "defeat", "Pinzo'jrahrrrn" ]
+					]
+				},
+				{
+					"from": "open7.4.5",
+					"to": "open7.5",
+					"condition": [
+						[ "defeat", "Magmanizer" ]
 					]
 				},
 				{
 					"from": "open7.5",
 					"to": "open7.6",
 					"condition": [
-						[ "item", "White Key", 1 ]
+						[ "item", "White Key", 1 ],
+						[ "defeat", "Darth Moth" ]
 					]
 				},
 				{
@@ -410,7 +437,8 @@
 					"from": "open7.6",
 					"to": "open7.8",
 					"condition": [
-						[ "item", "Faj'ro Master Key", 1 ]
+						[ "item", "Faj'ro Master Key", 1 ],
+						[ "defeat", "Master Magmoth" ]
 					]
 				},
 				{
@@ -513,15 +541,34 @@
 					"from": "open10.Right",
 					"to": "open13.1",
 					"condition": [
-						[ "item", "Zir'vitar Key", 2 ],
-						[ "any_element" ]
+						[ "defeat", "Rob0ck" ]
 					]
-				},
 				{
 					"from": "open13.1",
 					"to": "open13.2",
 					"condition": [
+						[ "or", 
+							[ "any_element" ],
+							[ "and", [ "item", "Zir'vitar Key", 1 ], [ "defeat", "Shokat" ]]
+						],
+						[ "defeat", "Powerplant" ]
+					]
+				},
+				{
+					"from": "open13.2",
+					"to": "open13.3",
+					"condition": [
+						[ "item", "Zir'vitar Key", 2 ],
+						[ "defeat", "Ectovolt" ]
+					]
+				}
+				{
+					"from": "open13.3",
+					"to": "open13.4",
+					"condition": [
 						[ "item", "Wave", 1 ]
+						[ "defeat", "Papagun" ]
+						[ "defeat", "Plasma Phantom" ]
 					]
 				},
 				{
