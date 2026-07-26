@@ -19,16 +19,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				]
+				["defeat", "Neutral Virus", "Heat Virus", "Cold Virus"]
 			]
 		},
 		"Wasteland: Spiral Cliff Upper": {
@@ -50,16 +41,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				]
+				["defeat", "Neutral Virus", "Heat Virus", "Cold Virus"]
 			]
 		},
 		"Wasteland: Storage Basement": {
@@ -383,6 +365,9 @@
 					"Broken Gauntlet",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Hedgehag", "Old Hedgehag", "Blue Hedgehag"]
 			]
 		},
 		"Rise: Pathway 1": {
@@ -782,6 +767,9 @@
 					"Tremor Engine",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Chillin' Hillkat"]
 			]
 		},
 		"Fall: Lake Cave 3": {
@@ -795,6 +783,9 @@
 				"linear": "20",
 				"open": "open9"
 			},
+			"condition": [
+				["defeat", "Chillin' Hillkat", "Radical Hedgehag"]
+			],
 			"reward": [
 				[
 					"item",
@@ -1590,17 +1581,14 @@
 				"linear": "3",
 				"open": "open3"
 			},
+			"condition": [
+				["item", "Heat", 1],
+				["defeat", "Pengpeng", "Peng King Dakara"]
+			],
 			"reward": [
 				[
 					"item",
 					"Broken Shield",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Heat",
 					1
 				]
 			]
@@ -2653,16 +2641,9 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				],
-				[
-					"item",
-					"Wave",
-					1
-				]
+				["item", "Shock", 1],
+				["item", "Wave", 1],
+				["defeat", "Aranetarda", "War Webster", "Pandza Mk. II"]
 			]
 		},
 		"Ridge: Sapphire Tunnel": {
@@ -3586,6 +3567,9 @@
 					"Broken Sword",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Cursed Sharkster"]
 			]
 		},
 		"Maroon: Maroon Cave 1": {
@@ -5191,16 +5175,9 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				],
-				[
-					"item",
-					"Shock",
-					1
-				]
+				["item", "Wave", 1],
+				["item", "Shock", 1],
+				["defeat", "Tiefsee Angler"]
 			]
 		},
 		"Garden: Lost Lookout Center": {
