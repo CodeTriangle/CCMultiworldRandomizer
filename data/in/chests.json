@@ -1210,6 +1210,9 @@
 					"Portrait of Ruin",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Aranetarda"]
 			]
 		},
 		"Fall: Villa of Terror Left": {
@@ -1229,6 +1232,9 @@
 					"Golden Ticket",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Aranetarda"]
 			]
 		},
 		"Fall: Para Island 1": {
@@ -1966,6 +1972,9 @@
 					"Perforated Tophat",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Karotto"]
 			]
 		},
 		"Trail: Rising Path 4 Lower": {
@@ -2682,6 +2691,9 @@
 					"Cobalt Crystal",
 					4
 				]
+			],
+			"condition": [
+				["defeat", "Aranetarda"]
 			]
 		},
 		"Ridge: Eroded Passage Upper": {
@@ -2758,6 +2770,9 @@
 					"Wrap Roll",
 					5
 				]
+			],
+			"condition": [
+				["defeat", "Aranetarda", "Moon Beetle"]
 			]
 		},
 		"Ridge: Narrow Passage Right": {
@@ -2777,6 +2792,9 @@
 					"Spark Tin",
 					8
 				]
+			],
+			"condition": [
+				["defeat", "Aranetarda", "Moon Beetle"]
 			]
 		},
 		"Ridge: Wheel Passage Lower": {
@@ -3216,11 +3234,8 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				]
+				["item", "Shock", 1],
+				["defeat", "Aranetarda"]
 			]
 		},
 		"Ridge: Carved Pathway Upper": {
@@ -3242,11 +3257,8 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				]
+				["item", "Shock", 1],
+				["defeat", "Aranetarda"]
 			]
 		},
 		"Ridge: High Ground Lower": {
@@ -3356,6 +3368,9 @@
 					"Warkeeper",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Moon Beetle", "Sun Beetle"]
 			]
 		},
 		"Ridge: Dream Pond": {
@@ -4052,6 +4067,9 @@
 					"Shrimp Risotto",
 					5
 				]
+			],
+			"condition": [
+				["defeat", "Sharkster"]
 			]
 		},
 		"Maroon: Torn Road Center": {
@@ -4821,6 +4839,9 @@
 					"Precious Metal",
 					2
 				]
+			],
+			"condition": [
+				["defeat", "Wiccat"]
 			]
 		},
 		"Garden: Chief's Den Center": {
@@ -4840,6 +4861,9 @@
 					"Golden Bars",
 					3
 				]
+			],
+			"condition": [
+				["defeat", "Wiccat"]
 			]
 		},
 		"Garden: Chief's Den Upper": {
@@ -4859,6 +4883,9 @@
 					"Prime Pistachios",
 					2
 				]
+			],
+			"condition": [
+				["defeat", "Wiccat"]
 			]
 		},
 		"Garden: Chief's Den Lower": {
@@ -4880,11 +4907,8 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				["item", "Wave", 1],
+				["defeat", "Wiccat"]
 			]
 		},
 		"Garden: Grand Krys'kajo Entrance": {
