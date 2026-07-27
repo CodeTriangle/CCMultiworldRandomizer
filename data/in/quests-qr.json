@@ -82,7 +82,11 @@
 				"open": "open4.1"
 			},
 			"condition": [
-				[ "or", [ "item", "Heat" ], [ "item", "Mine Key", 1 ] ],
+				[ "or", 
+					[ "item", "Heat" ], 
+					[ "item", "Mine Key", 1 ], 
+					[ "grind", "Fleazer" ]
+				],
 				[ "quest","The Legendary Bunny" ]
 			],
 			"reward": [
@@ -176,7 +180,8 @@
 			},
 			"condition": [
 				[ "item", "Heat" ],
-				[ "item", "Cold" ]
+				[ "item", "Cold" ],
+				[ "defeat", "Shokat" ]
 			],
 			"reward": [
 				[ "item", "Perforated Tophat", 5 ]
@@ -193,6 +198,9 @@
 			"reward": [
 				[ "item", "Edge o' All", 1 ],
 				[ "item", "Grasswalkers", 1 ]
+			],
+			"condition": [
+				[ "grind", "Hedgehag" ]
 			]
 		},
 		"A Few More Steps": {
@@ -234,7 +242,10 @@
 			"region": {
 				"linear": "3",
 				"open": "open3"
-			}
+			},
+			"condition": [
+				[ "grind", "Hedgehag", "Rockin' Hillkat", "Mad Bovine", "Old Hedgehag" ]
+			]
 		},
 		"Autumn's Rise Landmarks": {
 			"questid": "trailblaze-autumn-3",
@@ -315,7 +326,10 @@
 			"region": {
 				"linear": "3",
 				"open": "open3"
-			}
+			},
+			"condition": [
+				[ "grind", "Young Frobbit", "Pengpeng", "Horny Goat", "Karotto" ]
+			]
 		},
 		"Bergen Trailblazing Landmarks": {
 			"questid": "trailblaze-bergen-3",
@@ -358,7 +372,10 @@
 			"region": {
 				"linear": "3",
 				"open": "open3"
-			}
+			},
+			"condition": [
+				[ "defeat", "Legendary Frobbit" ]
+			]
 		},
 		"Round and Round 2": {
 			"questid": "round-and-round-2",
@@ -396,6 +413,9 @@
 			"reward": [
 				[ "item", "Metal Gears", 2 ],
 				[ "item", "Purple Ore Lump", 4 ]
+			],
+			"condition": [
+				[ "defeat", "Dirty Frobbit" ]
 			]
 		},
 		"Explosive Debugging": {
@@ -407,7 +427,8 @@
 			"condition": [
 				[ "quest", "Filthy Frobbits" ],
 				[ "item", "Blue Ice Shade" ],
-				[ "item", "Heat", 1 ]
+				[ "item", "Heat", 1 ],
+				[ "defeat", "Flintzer" ]
 			],
 			"reward": [
 				[ "item", "Metal Gears", 3 ],
@@ -448,7 +469,8 @@
 			"condition": [
 				[ "quest", "Kidding Around" ],
 				[ "item", "Heat" ],
-				[ "item", "Blue Ice Shade", 1 ]
+				[ "item", "Blue Ice Shade", 1 ],
+				[ "defeat", "Horny Cavegoat" ]
 			],
 			"reward": [
 				[ "item", "Perforated Tophat", 2 ],
@@ -464,6 +486,13 @@
 			"reward": [
 				[ "item", "Solid Bubble", 4 ],
 				[ "item", "Diabolic Horns", 2 ]
+			],
+			"condition": [
+				[ "grind", "Karotto" ],
+				[ "or",
+					[ "grind", "Young Frobbit" ],
+					[ "grind", "White Frobbit" ]
+				]
 			]
 		},
 		"Heating the Hermit": {
@@ -475,7 +504,12 @@
 			"condition": [
 				[ "quest", "Fancy Tophat" ],
 				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Heat", 1 ]
+				[ "or", 
+					[ "item", "Heat" ],
+					[ "grind", "Carritrich" ],
+					[ "grind", "Kamikatze" ],
+					[ "grind", "Digmo" ]
+				]
 			],
 			"reward": [
 				[ "item", "Rusty Bits", 6 ],
@@ -584,7 +618,10 @@
 				"open": "open4.1"
 			},
 			"condition": [
-				[ "item", "Heat", 1 ]
+				[ "or",
+					[ "item", "Heat", 1 ],
+					[ "grind", "Fleazer" ]
+				]
 			]
 		},
 		"Pushing Bases": {
@@ -623,7 +660,7 @@
 				[ "quest", "Bergen Trailblazing" ],
 				[ "quest", "Maroon Valley Trailblazing" ],
 				[ "quest", "Gaia's Garden Trailblazing" ],
-				[ "item", "Shock" ]
+				[ "defeat", "Henry" ]
 			],
 			"reward": [
 				[ "item", "Circuit Override", 1 ]
@@ -637,7 +674,8 @@
 			},
 			"condition": [
 				[ "item", "Meteor Shade", 1 ],
-				[ "item", "Guild Pass", 1 ]
+				[ "item", "Guild Pass", 1 ],
+				[ "defeat", "Sun Beetle", "Moon Beetle" ]
 			]
 		},
 		"An Unfortunate Series of Features": {
@@ -650,7 +688,8 @@
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
 				[ "item", "Wave", 1 ],
-				[ "item", "Shock", 1 ]
+				[ "item", "Shock", 1 ],
+				[ "defeat", "DON'T USE THIS" ]
 			],
 			"reward": [
 				[ "item", "Lunatic Paws", 1 ]
@@ -683,7 +722,7 @@
 				"open": "open5"
 			},
 			"condition": [
-				[ "item", "Heat"]
+				[ "grind", "Pinceron", "Sharkster", "Vulturbine", "Tim" ]
 			]
 		},
 		"Maroon Valley Landmarks": {
@@ -709,6 +748,9 @@
 			"reward": [
 				[ "item", "Pepper Night Tea", 2 ],
 				[ "item", "Old Bones", 10 ]
+			],
+			"condition": [
+				[ "defeat", "Chillertoise" ]
 			]
 		},
 		"Hot Trail": {
@@ -721,7 +763,8 @@
 				[ "quest", "Blasting Shells" ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Cold" ],
-				[ "item", "Heat", 1 ]
+				[ "item", "Heat", 1 ],
+				[ "defeat", "Wowturbine" ]
 			],
 			"reward": [
 				[ "item", "Laser Eyes", 2 ]
@@ -736,7 +779,8 @@
 			"condition": [
 				[ "quest", "Hot Trail" ],
 				[ "item", "Wave", 1 ],
-				[ "item", "Meteor Shade", 1 ]
+				[ "item", "Meteor Shade", 1 ],
+				[ "defeat", "Sandamoth" ]
 			],
 			"reward": [
 				[ "item", "Pepper Night Tea", 5 ],
@@ -752,6 +796,9 @@
 			"reward": [
 				[ "item", "Glaring Rock", 6 ],
 				[ "item", "Maroon Chestnut", 2 ]
+			],
+			"condition": [
+				[ "defeat", "Legionary Turret v1", "Legionary Leader v1" ]
 			]
 		},
 		"Just Deserts": {
@@ -764,7 +811,8 @@
 				[ "quest", "Shady Thief" ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Cold", 1 ],
+				[ "defeat", "Legionary Turret v2", "Guard Billston" ]
 			],
 			"reward": [
 				[ "item", "Lucid Shard", 6 ],
@@ -780,6 +828,9 @@
 			"reward": [
 				[ "item", "Cactone Fruit", 11 ],
 				[ "item", "Ancient Earth", 3 ]
+			],
+			"condition": [
+				[ "defeat", "Sharkster" ]
 			]
 		},
 		"Steamy Booze": {
@@ -828,7 +879,10 @@
 				"linear": "23",
 				"open": "open10"
 			},
-			"condition": [[ "region", "open", "open10.Grove" ]],
+			"condition": [
+				[ "region", "open", "open10.Grove" ],
+				[ "defeat", "Tunnel Gelleric", "Tunnel Argeby", "Tunnel Angler" ]
+			],
 			"reward": [
 				[ "item", "Virus Root", 4 ],
 				[ "item", "Stout Backplate", 2 ]
@@ -845,7 +899,8 @@
 				[ "item", "Azure Drop Shade", 1 ],
 				[ "item", "Shock", 1 ],
 				[ "item", "Wave", 1 ],
-				[ "quest", "Turret Defense" ]
+				[ "quest", "Turret Defense" ],
+				[ "defeat", "Tunnel Wiccat", "Tunnel Shockcat", "Tunnel Teslabovine" ]
 			],
 			"reward": [
 				[ "item", "Living Bolt", 2 ],
@@ -861,6 +916,9 @@
 			"reward": [
 				[ "item", "Chili Dog", 4 ],
 				[ "item", "Star Fruit", 5 ]
+			],
+			"condition": [
+				[ "defeat", "Papagangster Softhat" ]
 			]
 		},
 		"High Crating": {
@@ -874,7 +932,8 @@
 				[ "item", "Azure Drop Shade", 1 ],
 				[ "item", "Shock", 1 ],
 				[ "item", "Wave", 1 ],
-				[ "quest", "Hostage Situation" ]
+				[ "quest", "Hostage Situation" ],
+				[ "defeat", "Papagangster Muscle" ]
 			],
 			"reward": [
 				[ "item", "Plain Cube", 3 ],
@@ -890,7 +949,8 @@
 			"condition": [
 				[ "item", "Cold" ],
 				[ "item", "Heat" ],
-				[ "region", "open", "open10.Right" ]
+				[ "region", "open", "open10.Right" ],
+				[ "defeat", "Shokat", "Tourist Karotto" ]
 			],
 			"reward": [
 				[ "item", "Moon Fruit", 5 ],
@@ -909,7 +969,8 @@
 				[ "item", "Azure Drop Shade", 1 ],
 				[ "item", "Shock", 1 ],
 				[ "item", "Wave", 1 ],
-				[ "quest", "Tropical Chill" ]
+				[ "quest", "Tropical Chill" ],
+				[ "defeat", "Karotto Fruitseeker" ]
 			],
 			"reward": [
 				[ "item", "Climate Cowl", 1 ]
@@ -921,7 +982,10 @@
 				"linear": "23",
 				"open": "open10"
 			},
-			"condition": [[ "region", "open", "open10.Grove" ]],
+			"condition": [
+				[ "region", "open", "open10.Grove" ],
+				[ "defeat", "Angler", "Gelleric" ]
+			],
 			"reward": [
 				[ "item", "Green Risotto", 3 ],
 				[ "item", "Wrap Roll", 3 ],
@@ -937,8 +1001,8 @@
 			"condition": [
 				[ "item", "Purple Bolt Shade", 1 ],
 				[ "item", "Azure Drop Shade", 1 ],
-				[ "item", "Wave" ],
-				[ "quest", "Lakeside Escort" ]
+				[ "quest", "Lakeside Escort" ],
+				[ "defeat", "Ampery" ]
 			],
 			"reward": [
 				[ "item", "Echo Roll", 5 ],
@@ -963,7 +1027,10 @@
 				"linear": "23",
 				"open": "open10"
 			},
-			"condition": [[ "region", "open", "open10.Infested" ]],
+			"condition": [
+				[ "region", "open", "open10.Infested" ],
+				[ "defeat", "Jack'On'Fire", "Flamezer" ]
+			],
 			"reward": [
 				[ "item", "Scarecrown", 1 ]
 			]
@@ -1009,7 +1076,8 @@
 				"open": "open10.Right"
 			},
 			"condition": [
-				[ "region", "open", "open10.Left" ]
+				[ "region", "open", "open10.Left" ],
+				[ "grind", "Gelleric", "Papagun", "Shokat", "Behesloth" ]
 			]
 		},
 		"Gaia's Garden Landmarks": {
@@ -1150,6 +1218,9 @@
 			},
 			"reward": [
 				[ "item", "Bronze Edge", 1 ]
+			],
+			"condition": [
+				[ "defeat", "Rockin' Hillkat" ]
 			]
 		},
 		"It Can Dig But It Can't Hide": {
@@ -1159,7 +1230,8 @@
 				"open": "open3"
 			},
 			"condition": [
-				[ "quest", "Digging for Data" ]
+				[ "quest", "Digging for Data" ],
+				[ "defeat", "Flamin' Hillkat", "Hillkat Bandleader" ]
 			],
 			"reward": [
 				[ "item", "Swiftspike", 1 ],
@@ -1176,7 +1248,8 @@
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
-				[ "quest", "It Can Dig But It Can't Hide" ]
+				[ "quest", "It Can Dig But It Can't Hide" ],
+				[ "defeat", "Radical Hedgehag", "Chillin' Hillkat", "Fallfly" ]
 			],
 			"reward": [
 				[ "item", "Twilight Dew", 9 ],
@@ -1192,6 +1265,9 @@
 			"reward": [
 				[ "item", "Hi-Sandwich", 3 ],
 				[ "item", "Just Water", 3 ]
+			],
+			"condition": [
+				[ "defeat", "Hedgehag" ]
 			]
 		},
 		"Smuggle Trouble": {
@@ -1201,7 +1277,8 @@
 				"open": "open3"
 			},
 			"condition": [
-				[ "quest", "Petty Crime Hunter" ]
+				[ "quest", "Petty Crime Hunter" ],
+				[ "defeat", "Illegal Rhombus Turret" ]
 			],
 			"reward": [
 				[ "item", "Battered Fist", 1 ],
@@ -1218,7 +1295,8 @@
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
-				[ "quest", "Smuggle Trouble" ]
+				[ "quest", "Smuggle Trouble" ],
+				[ "defeat", "Illegal Floating Turret", "Illegal Floating Bomber" ]
 			],
 			"reward": [
 				[ "item", "Hunter's Bolt", 1 ],
@@ -1243,7 +1321,8 @@
 				"open": "open3"
 			},
 			"condition": [
-				[ "quest", "Small Time Delivery" ]
+				[ "quest", "Small Time Delivery" ],
+				[ "defeat", "Red Eyed Bovine", "Old Hedgehag", "Flamin' Hillkat" ]
 			],
 			"reward": [
 				[ "item", "Flaming Bun", 3 ],
@@ -1262,7 +1341,8 @@
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
 				[ "region", "open", "open4.5" ],
-				[ "quest", "Bull Grab" ]
+				[ "quest", "Bull Grab" ],
+				[ "defeat", "Smelter Digmo", "Experienced Fleazer" ]
 			],
 			"reward": [
 				[ "item", "Refined Metal", 5 ],
@@ -1287,7 +1367,8 @@
 				"open": "open3"
 			},
 			"condition": [
-				[ "quest", "Sickly Trees" ]
+				[ "quest", "Sickly Trees" ],
+				[ "defeat", "Red Eyed Bovine", "Old Hedgehag" ]
 			],
 			"reward": [
 				[ "item", "Autumn Leaves", 13 ],
@@ -1304,7 +1385,8 @@
 			"condition": [
 				[ "quest", "Intensive Tree Care" ],
 				[ "item", "Heat" ],
-				[ "item", "Cold" ]
+				[ "item", "Cold" ],
+				[ "defeat", "Fallfly", "Blazehoof" ]
 			],
 			"reward": [
 				[ "item", "Ginger Tom. Salad", 4 ],
@@ -1331,6 +1413,14 @@
 			"reward": [
 				[ "item", "Hi-Sandwich", 5 ],
 				[ "item", "Chili Con Carne", 2 ]
+			],
+			"condition": [
+				[ "or",
+					[ "grind", "Mad Bovine" ],
+					[ "grind", "Red Eyed Bovine" ],
+					[ "grind", "Ivory Bovine" ],
+					[ "grind", "Horny Goat" ]
+				]
 			]
 		},
 		"Meating Expectations": {
