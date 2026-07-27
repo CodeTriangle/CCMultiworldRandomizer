@@ -280,8 +280,7 @@
 					"from": "open4.1",
 					"to": "open4.2",
 					"condition": [
-						[ "item", "Mine Key", 1 ],
-						[ "defeat", "Carritrich" ]
+						[ "item", "Mine Key", 1 ]
 					]
 				},
 				{
@@ -296,7 +295,6 @@
 					"to": "open4.4",
 					"condition": [
 						[ "item", "Mine Key", 3 ]
-						[ "defeat", "Digmo"]
 					]
 				},
 				{
@@ -315,13 +313,6 @@
 				},
 				{
 					"from": "open4.6",
-					"to": "open4.6.5",
-					"condition": [
-						[ "defeat", "Kamikatze", "Fleazer"]
-					]
-				},
-				{
-					"from": "open4.6.5",
 					"to": "open4.7",
 					"condition": [
 						[ "item", "Mine Key", 5 ]
@@ -331,8 +322,7 @@
 					"from": "open4.1",
 					"to": "open4.8",
 					"condition": [
-						[ "item", "Mine Master Key", 1 ],
-						[ "defeat", "X01 Driller H.F.S." ]
+						[ "item", "Mine Master Key", 1 ]
 					]
 				},
 				{
@@ -376,17 +366,9 @@
 				},
 				{
 					"from": "open7.1",
-					"to": "open7.1.5",
-					"condition": [
-						[ "item", "Faj'ro Key", 1 ],
-						[ "defeat", "Trijelly" ]
-					]
-				},
-				{
-					"from": "open7.1.5",
 					"to": "open7.2",
 					"condition": [
-						[ "defeat", "Pada Moth" ]
+						[ "item", "Faj'ro Key", 1 ]
 					]
 				},
 				{
@@ -405,25 +387,16 @@
 				},
 				{
 					"from": "open7.4",
-					"to": "open7.4.5",
-					"condition": [
-						[ "item", "Cold", 1 ]
-						[ "defeat", "Pinzo'jrahrrrn" ]
-					]
-				},
-				{
-					"from": "open7.4.5",
 					"to": "open7.5",
 					"condition": [
-						[ "defeat", "Magmanizer" ]
+						[ "item", "Cold", 1 ]
 					]
 				},
 				{
 					"from": "open7.5",
 					"to": "open7.6",
 					"condition": [
-						[ "item", "White Key", 1 ],
-						[ "defeat", "Darth Moth" ]
+						[ "item", "White Key", 1 ]
 					]
 				},
 				{
@@ -437,8 +410,7 @@
 					"from": "open7.6",
 					"to": "open7.8",
 					"condition": [
-						[ "item", "Faj'ro Master Key", 1 ],
-						[ "defeat", "Master Magmoth" ]
+						[ "item", "Faj'ro Master Key", 1 ]
 					]
 				},
 				{
@@ -541,34 +513,15 @@
 					"from": "open10.Right",
 					"to": "open13.1",
 					"condition": [
-						[ "defeat", "Rob0ck" ]
+						[ "item", "Zir'vitar Key", 2 ],
+						[ "any_element" ]
 					]
+				},
 				{
 					"from": "open13.1",
 					"to": "open13.2",
 					"condition": [
-						[ "or", 
-							[ "any_element" ],
-							[ "and", [ "item", "Zir'vitar Key", 1 ], [ "defeat", "Shokat" ]]
-						],
-						[ "defeat", "Powerplant" ]
-					]
-				},
-				{
-					"from": "open13.2",
-					"to": "open13.3",
-					"condition": [
-						[ "item", "Zir'vitar Key", 2 ],
-						[ "defeat", "Ectovolt" ]
-					]
-				}
-				{
-					"from": "open13.3",
-					"to": "open13.4",
-					"condition": [
 						[ "item", "Wave", 1 ]
-						[ "defeat", "Papagun" ]
-						[ "defeat", "Plasma Phantom" ]
 					]
 				},
 				{
@@ -618,44 +571,21 @@
 						[ "item", "Heat", 1 ],
 						[ "item", "Cold", 1 ],
 						[ "item", "Wave", 1 ],
-						[ "item", "Shock", 1 ],
-						[ "defeat", "Rob0ck", "Angler", "Ectovolt", "Powerplant", "Ocubepus", "Blue Ray", "Son of the East" ]
+						[ "item", "Shock", 1 ]
 					]
 				},
 				{
 					"from": "open15.1",
 					"to": "open15.2",
 					"condition": [
-						[ "defeat", "Shokat" ]
+						[ "item", "Krys'kajo Key", 2 ]
 					]
 				},
 				{
-					"from": "open15.2",
+					"from": "open15.1",
 					"to": "open15.3",
 					"condition": [
-						[ "defeat", "Papagun" ]
-					]
-				},
-				{
-					"from": "open15.1",
-					"to": "open15.4",
-					"condition": [
-						[ "defeat", "Argeby" ]
-					]
-				},
-				{
-					"from": "open15.4",
-					"to": "open15.5",
-					"condition": [
-						[ "defeat", "Jelleric", "Behesloth" ]
-					]
-				},
-				{
-					"from": "open15.1",
-					"to": "open15.6",
-					"condition": [
-						[ "item", "Kajo Master Key", 1 ],
-						[ "defeat", "Ancient Guardian" ]
+						[ "item", "Kajo Master Key", 1 ]
 					]
 				},
 				{
@@ -699,20 +629,17 @@
 			"start": "open2",
 			"goals": {
 				"creator": {
-					"region": "open18",
+					"region": "open16.1",
 					"condition": [
 						[ "item", "Heat", 1 ],
 						[ "item", "Cold", 1 ],
 						[ "item", "Shock", 1 ],
 						[ "item", "Wave", 1 ],
-						[ "var", "vtShadeLock" ],
-						[ "defeat", "Neutral Virus", "Heat Virus", "Cold Virus", 
-							"Furious Security Brute", "Cool Security Brute", "Tense Security Brute", "Groovy Security Brute", 
-							"Arengee", "Failed Rhino", "Designer", "The Creator" ]
+						[ "var", "vtShadeLock" ]
 					]
 				},
 				"monkey": {
-					"region": "open15.6"
+					"region": "open15.3"
 				},
 				"observatory": {
 					"region": "open2",
