@@ -618,21 +618,44 @@
 						[ "item", "Heat", 1 ],
 						[ "item", "Cold", 1 ],
 						[ "item", "Wave", 1 ],
-						[ "item", "Shock", 1 ]
+						[ "item", "Shock", 1 ],
+						[ "defeat", "Rob0ck", "Angler", "Ectovolt", "Powerplant", "Ocubepus", "Blue Ray", "Son of the East" ]
 					]
 				},
 				{
 					"from": "open15.1",
 					"to": "open15.2",
 					"condition": [
-						[ "item", "Krys'kajo Key", 2 ]
+						[ "defeat", "Shokat" ]
+					]
+				},
+				{
+					"from": "open15.2",
+					"to": "open15.3",
+					"condition": [
+						[ "defeat", "Papagun" ]
 					]
 				},
 				{
 					"from": "open15.1",
-					"to": "open15.3",
+					"to": "open15.4",
 					"condition": [
-						[ "item", "Kajo Master Key", 1 ]
+						[ "defeat", "Argeby" ]
+					]
+				},
+				{
+					"from": "open15.4",
+					"to": "open15.5",
+					"condition": [
+						[ "defeat", "Jelleric", "Behesloth" ]
+					]
+				},
+				{
+					"from": "open15.1",
+					"to": "open15.6",
+					"condition": [
+						[ "item", "Kajo Master Key", 1 ],
+						[ "defeat", "Ancient Guardian" ]
 					]
 				},
 				{
@@ -676,17 +699,20 @@
 			"start": "open2",
 			"goals": {
 				"creator": {
-					"region": "open16.1",
+					"region": "open18",
 					"condition": [
 						[ "item", "Heat", 1 ],
 						[ "item", "Cold", 1 ],
 						[ "item", "Shock", 1 ],
 						[ "item", "Wave", 1 ],
-						[ "var", "vtShadeLock" ]
+						[ "var", "vtShadeLock" ],
+						[ "defeat", "Neutral Virus", "Heat Virus", "Cold Virus", 
+							"Furious Security Brute", "Cool Security Brute", "Tense Security Brute", "Groovy Security Brute", 
+							"Arengee", "Failed Rhino", "Designer", "The Creator" ]
 					]
 				},
 				"monkey": {
-					"region": "open15.3"
+					"region": "open15.6"
 				},
 				"observatory": {
 					"region": "open2",
