@@ -351,15 +351,15 @@
 					"from": "open5",
 					"to": "open7.1",
 					"condition": [
-						[ "item", "Yellow Sand Shade", 1 ],
-						[ "item", "Heat", 1 ]
+						[ "item", "Yellow Sand Shade", 1 ]
 					]
 				},
 				{
 					"from": "open7.1",
 					"to": "open7.2",
 					"condition": [
-						[ "item", "Faj'ro Key", 1 ]
+						[ "item", "Faj'ro Key", 1 ],
+						[ "item", "Heat" ]
 					]
 				},
 				{
@@ -370,14 +370,7 @@
 					]
 				},
 				{
-					"from": "open7.3",
-					"to": "open7.4",
-					"condition": [
-						[ "item", "Faj'ro Key", 4 ]
-					]
-				},
-				{
-					"from": "open7.4",
+					"from": "open7.1",
 					"to": "open7.5",
 					"condition": [
 						[ "item", "Cold", 1 ]
@@ -394,7 +387,7 @@
 					"from": "open7.6",
 					"to": "open7.7",
 					"condition": [
-						[ "item", "Faj'ro Key", 9 ]
+						[ "item", "Heat" ]
 					]
 				},
 				{
