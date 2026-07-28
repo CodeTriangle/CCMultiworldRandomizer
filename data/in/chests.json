@@ -4396,7 +4396,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "17",
-				"open": "open7.5"
+				"open": "open7.6"
 			},
 			"reward": [
 				[
@@ -4404,6 +4404,9 @@
 					"Dented Crown",
 					1
 				]
+			],
+			"condition": [
+				[ "item", "Heat" ]
 			]
 		},
 		"Faj'ro 4F: Test of Memory": {
@@ -4444,6 +4447,44 @@
 				]
 			]
 		},
+		"Faj'ro GF: Balance Room 1 Left": {
+			"location": {
+				"area": "heat-dng",
+				"map": "heat-dng.g.room-02-cross",
+				"mapId": 1276
+			},
+			"clearance": "Default",
+			"region": {
+				"linear": "14",
+				"open": "open7.3"
+			},
+			"reward": [
+				[
+					"item",
+					"Flaming Bun",
+					2
+				]
+			]
+		},
+		"Faj'ro GF: Balance Room 1 Right": {
+			"location": {
+				"area": "heat-dng",
+				"map": "heat-dng.g.room-02-cross",
+				"mapId": 1277
+			},
+			"clearance": "Default",
+			"region": {
+				"linear": "14",
+				"open": "open7.3"
+			},
+			"reward": [
+				[
+					"item",
+					"Salty Ice Cream",
+					2
+				]
+			]
+		},
 		"Faj'ro GF: Left Chamber 1": {
 			"location": {
 				"area": "heat-dng",
@@ -4461,6 +4502,9 @@
 					"Faj'ro Key",
 					1
 				]
+			],
+			"condition": [
+				[ "item", "Heat" ]
 			]
 		},
 		"Faj'ro GF: Fire and Sand 2": {
