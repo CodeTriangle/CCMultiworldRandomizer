@@ -6644,6 +6644,48 @@
 				]
 			]
 		},
+		"Kajo GF: Main Stream Left": {
+			"location": {
+				"area": "tree-dng",
+				"map": "tree-dng.g.center-02-connect",
+				"mapId": 1270
+			},
+			"clearance": "Bronze",
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Cold Platter",
+					2
+				]
+			]
+		},
+		"Kajo GF: Main Stream Right": {
+			"location": {
+				"area": "tree-dng",
+				"map": "tree-dng.g.center-02-connect",
+				"mapId": 1271
+			},
+			"clearance": "Bronze",
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Full Course",
+					1
+				]
+			],
+			"condition": [
+				[ "item", "Heat" ],
+				[ "item", "Cold" ]
+			]
+		},
 		"Kajo 3F: East Branch Lower": {
 			"location": {
 				"area": "tree-dng",
