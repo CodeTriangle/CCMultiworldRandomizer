@@ -7,7 +7,6 @@
 				"mapId": 45
 			},
 			"region": {
-				"linear": "8",
 				"open": "open4.5"
 			},
 			"reward": [
@@ -21,7 +20,6 @@
 				"mapId": 78
 			},
 			"region": {
-				"linear": "16",
 				"open": "open7.4"
 			},
 			"reward": [
@@ -35,7 +33,6 @@
 				"mapId": 248
 			},
 			"region": {
-				"linear": "27",
 				"open": "open14.4"
 			},
 			"reward": [
@@ -49,7 +46,6 @@
 				"mapId": 86
 			},
 			"region": {
-				"linear": "25",
 				"open": "open13.1"
 			},
 			"reward": [
