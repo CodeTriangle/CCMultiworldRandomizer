@@ -8,7 +8,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -27,7 +26,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -46,7 +44,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -61,7 +58,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -76,7 +72,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -91,7 +86,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -106,7 +100,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -121,7 +114,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -136,7 +128,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -151,7 +142,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -166,7 +156,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
@@ -181,7 +170,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -196,7 +184,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -211,7 +198,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -226,7 +212,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -241,7 +226,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -256,7 +240,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -271,7 +254,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -286,7 +268,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -301,7 +282,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -316,7 +296,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -331,7 +310,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -346,7 +324,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -361,7 +338,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -376,7 +352,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -391,7 +366,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -406,7 +380,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -421,7 +394,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -436,7 +408,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -451,7 +422,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -466,7 +436,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -481,7 +450,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -496,7 +464,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -511,7 +478,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -526,7 +492,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -541,7 +506,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -556,7 +520,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -571,7 +534,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -586,7 +548,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -601,7 +562,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -616,7 +576,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -631,7 +590,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -646,7 +604,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -661,7 +618,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -676,7 +632,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -691,7 +646,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -706,7 +660,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -721,7 +674,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -736,7 +688,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -751,7 +702,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -766,7 +716,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -781,7 +730,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -796,7 +744,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -811,7 +758,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -826,7 +772,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -841,7 +786,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -856,7 +800,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -871,7 +814,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -886,7 +828,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -901,7 +842,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -916,7 +856,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -931,7 +870,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -946,7 +884,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -961,7 +898,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -976,7 +912,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
@@ -991,7 +926,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1006,7 +940,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1021,7 +954,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1039,7 +971,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1057,7 +988,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1072,7 +1002,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1087,7 +1016,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1105,7 +1033,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1120,7 +1047,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1135,7 +1061,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1150,7 +1075,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1165,7 +1089,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1180,7 +1103,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1195,7 +1117,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1213,7 +1134,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1231,7 +1151,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1249,7 +1168,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1264,7 +1182,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1279,7 +1196,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1294,7 +1210,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1309,7 +1224,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1324,7 +1238,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1339,7 +1252,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1354,7 +1266,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1369,7 +1280,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1384,7 +1294,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1399,7 +1308,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1414,7 +1322,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1429,7 +1336,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1444,7 +1350,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1459,7 +1364,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1474,7 +1378,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1492,7 +1395,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1510,7 +1412,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1525,7 +1426,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1540,7 +1440,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1555,7 +1454,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1573,7 +1471,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1588,7 +1485,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
@@ -1603,7 +1499,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "5",
 				"open": "open4.2"
 			},
 			"reward": [
@@ -1618,7 +1513,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "5",
 				"open": "open4.2"
 			},
 			"reward": [
@@ -1636,7 +1530,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "5",
 				"open": "open4.2"
 			},
 			"reward": [
@@ -1654,7 +1547,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "5",
 				"open": "open4.2"
 			},
 			"reward": [
@@ -1669,7 +1561,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "5",
 				"open": "open4.2"
 			},
 			"reward": [
@@ -1684,7 +1575,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "6",
 				"open": "open4.3"
 			},
 			"reward": [
@@ -1699,7 +1589,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
@@ -1714,7 +1603,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
@@ -1729,7 +1617,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
@@ -1744,7 +1631,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
@@ -1759,7 +1645,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
@@ -1774,7 +1659,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
@@ -1789,7 +1673,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
@@ -1804,7 +1687,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
@@ -1819,7 +1701,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
@@ -1834,7 +1715,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
@@ -1849,7 +1729,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
@@ -1867,7 +1746,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "10",
 				"open": "open4.7"
 			},
 			"reward": [
@@ -1885,7 +1763,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
@@ -1903,7 +1780,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
@@ -1921,7 +1797,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
@@ -1939,7 +1814,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
@@ -1957,7 +1831,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
@@ -1975,7 +1848,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "4",
 				"open": "open4.1"
 			},
 			"reward": [
@@ -1993,7 +1865,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "4",
 				"open": "open4.1"
 			},
 			"reward": [
@@ -2008,7 +1879,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2026,7 +1896,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2045,7 +1914,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2060,7 +1928,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2075,7 +1942,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2090,7 +1956,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2105,7 +1970,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2120,7 +1984,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2135,7 +1998,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2150,7 +2012,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2165,7 +2026,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2180,7 +2040,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2195,7 +2054,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2210,7 +2068,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2225,7 +2082,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2240,7 +2096,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2255,7 +2110,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2270,7 +2124,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2285,7 +2138,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2300,7 +2152,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2315,7 +2166,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2330,7 +2180,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2345,7 +2194,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2360,7 +2208,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2375,7 +2222,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2390,7 +2236,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2405,7 +2250,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2420,7 +2264,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2435,7 +2278,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2450,7 +2292,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2465,7 +2306,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2480,7 +2320,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2498,7 +2337,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2516,7 +2354,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2534,7 +2371,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2552,7 +2388,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2567,7 +2402,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2582,7 +2416,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2597,7 +2430,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "33",
 				"open": "open16.1"
 			},
 			"reward": [
@@ -2612,7 +2444,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "33",
 				"open": "open16.1"
 			},
 			"reward": [
@@ -2630,7 +2461,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "33",
 				"open": "open16.1"
 			},
 			"reward": [
@@ -2648,7 +2478,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "33",
 				"open": "open16.1"
 			},
 			"reward": [
@@ -2666,7 +2495,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
@@ -2681,7 +2509,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2696,7 +2523,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2711,7 +2537,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2731,7 +2556,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2751,7 +2575,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2771,7 +2594,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "12",
 				"open": "open6"
 			},
 			"reward": [
@@ -2789,7 +2611,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2804,7 +2625,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2819,7 +2639,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2834,7 +2653,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2849,7 +2667,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2864,7 +2681,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2879,7 +2695,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2894,7 +2709,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2909,7 +2723,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2924,7 +2737,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2939,7 +2751,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2954,7 +2765,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2969,7 +2779,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2984,7 +2793,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -2999,7 +2807,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3014,7 +2821,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3029,7 +2835,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3044,7 +2849,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3059,7 +2863,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3074,7 +2877,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3089,7 +2891,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3104,7 +2905,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3119,7 +2919,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3134,7 +2933,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3149,7 +2947,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3164,7 +2961,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3179,7 +2975,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3194,7 +2989,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3209,7 +3003,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3224,7 +3017,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "15",
 				"open": "open7.3"
 			},
 			"reward": [
@@ -3239,7 +3031,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "17",
 				"open": "open7.5"
 			},
 			"reward": [
@@ -3299,7 +3090,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "17",
 				"open": "open7.5"
 			},
 			"reward": [
@@ -3314,7 +3104,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "17",
 				"open": "open7.5"
 			},
 			"reward": [
@@ -3359,7 +3148,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "17",
 				"open": "open7.5"
 			},
 			"reward": [
@@ -3389,7 +3177,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "18",
 				"open": "open7.7"
 			},
 			"reward": [
@@ -3404,7 +3191,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "13",
 				"open": "open7.1"
 			},
 			"reward": [
@@ -3419,7 +3205,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
@@ -3434,7 +3219,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
@@ -3449,7 +3233,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
@@ -3464,7 +3247,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
@@ -3479,7 +3261,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
@@ -3494,7 +3275,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
@@ -3509,7 +3289,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
@@ -3524,7 +3303,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3539,7 +3317,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3554,7 +3331,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3569,7 +3345,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3584,7 +3359,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
@@ -3599,7 +3373,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3617,7 +3390,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3635,7 +3407,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -3650,7 +3421,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -3665,7 +3435,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -3680,7 +3449,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -3695,7 +3463,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -3713,7 +3480,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -3731,7 +3497,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -3746,7 +3511,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -3761,7 +3525,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -3776,7 +3539,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -3794,7 +3556,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "28",
 				"open": "open10.Mid"
 			},
 			"condition": [
@@ -3814,7 +3575,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
@@ -3829,7 +3589,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3844,7 +3603,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3859,7 +3617,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3874,7 +3631,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3889,7 +3645,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3904,7 +3659,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3919,7 +3673,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3934,7 +3687,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3949,7 +3701,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3968,7 +3719,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "28",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -3987,7 +3737,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "28",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -4006,7 +3755,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4021,7 +3769,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4036,7 +3783,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4054,7 +3800,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4069,7 +3814,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4084,7 +3828,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4099,7 +3842,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4117,7 +3859,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4132,7 +3873,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4147,7 +3887,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4162,7 +3901,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4177,7 +3915,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4192,7 +3929,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
@@ -4207,7 +3943,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
@@ -4225,7 +3960,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
@@ -4244,7 +3978,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
@@ -4263,7 +3996,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
@@ -4278,7 +4010,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
@@ -4293,7 +4024,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -4311,7 +4041,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -4326,7 +4055,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Mid"
 			},
 			"reward": [
@@ -4344,7 +4072,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
@@ -4359,7 +4086,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"reward": [
@@ -4374,7 +4100,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"reward": [
@@ -4389,7 +4114,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -4404,7 +4128,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -4419,7 +4142,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Mid"
 			},
 			"reward": [
@@ -4434,7 +4156,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Mid"
 			},
 			"reward": [
@@ -4449,7 +4170,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Mid"
 			},
 			"reward": [
@@ -4467,7 +4187,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Mid"
 			},
 			"reward": [
@@ -4482,7 +4201,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -4500,7 +4218,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -4515,7 +4232,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -4530,7 +4246,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"condition": [
@@ -4548,7 +4263,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"condition": [
@@ -4566,7 +4280,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"condition": [
@@ -4584,7 +4297,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"condition": [
@@ -4602,7 +4314,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "24",
 				"open": "open11"
 			},
 			"reward": [
@@ -4617,7 +4328,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "24",
 				"open": "open11"
 			},
 			"reward": [
@@ -4632,7 +4342,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "24",
 				"open": "open11"
 			},
 			"reward": [
@@ -4647,7 +4356,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "24",
 				"open": "open11"
 			},
 			"reward": [
@@ -4662,7 +4370,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"reward": [
@@ -4677,7 +4384,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"reward": [
@@ -4692,7 +4398,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"reward": [
@@ -4707,7 +4412,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
@@ -4722,7 +4426,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
@@ -4740,7 +4443,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
@@ -4755,7 +4457,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
@@ -4770,7 +4471,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
@@ -4785,7 +4485,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
@@ -4800,7 +4499,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
@@ -4815,7 +4513,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
@@ -4830,7 +4527,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"reward": [
@@ -4845,7 +4541,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "2",
 				"open": "open8"
 			},
 			"reward": [
@@ -4863,7 +4558,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "19",
 				"open": "open8"
 			},
 			"reward": [
@@ -4878,7 +4572,6 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "19",
 				"open": "open8"
 			},
 			"reward": [
@@ -4893,7 +4586,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"reward": [
@@ -4908,7 +4600,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"reward": [
@@ -4923,7 +4614,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"reward": [
@@ -4938,7 +4628,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
@@ -4953,7 +4642,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "25",
 				"open": "open13.1"
 			},
 			"reward": [
@@ -4968,7 +4656,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "25",
 				"open": "open13.1"
 			},
 			"reward": [
@@ -4986,7 +4673,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"condition": [
@@ -5004,7 +4690,6 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "25",
 				"open": "open13.1"
 			},
 			"reward": [
@@ -5022,7 +4707,6 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
@@ -5037,7 +4721,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
@@ -5052,7 +4735,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
@@ -5067,7 +4749,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
@@ -5082,7 +4763,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
@@ -5097,7 +4777,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "29",
 				"open": "open15.2"
 			},
 			"reward": [
@@ -5112,7 +4791,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
@@ -5127,7 +4805,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
@@ -5142,7 +4819,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
@@ -5157,7 +4833,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
@@ -5202,7 +4877,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
@@ -5247,7 +4921,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
 				"open": "open14.1"
 			},
 			"reward": [
@@ -5262,7 +4935,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
 				"open": "open10.Left"
 			},
 			"condition": [
@@ -5280,7 +4952,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
 				"open": "open14.1"
 			},
 			"reward": [
@@ -5310,7 +4981,6 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
 				"open": "open14.1"
 			},
 			"reward": [
