@@ -63,7 +63,7 @@
 				"alwaysQuest": true
 			},
 			"reward": [
-				[ "item", "Mine Detector", 1]
+				[ "item", "Mine Detector", 1 ]
 			]
 		},
 		"Temple Mine Shade Statue": {
@@ -78,7 +78,7 @@
 				"open": "open4.1" 
 			},
 			"condition": [
-				["item", "Mine Master Key", 1]
+				[ "item", "Mine Master Key", 1 ]
 			],
 			"reward": [
 				[ "item", "Blue Ice Shade", 1 ]
