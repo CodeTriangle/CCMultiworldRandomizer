@@ -2015,11 +2015,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Trail: Windy Climb": {
@@ -2069,7 +2065,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "5",
-				"open": "open4.2"
+				"open": "mine.2"
 			},
 			"reward": [
 				[
@@ -2088,7 +2084,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "5",
-				"open": "open4.2"
+				"open": "mine.3"
 			},
 			"reward": [
 				[
@@ -2098,11 +2094,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Mine U1: Old Shaft 1": {
@@ -2114,7 +2106,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "5",
-				"open": "open4.2"
+				"open": "mine.2"
 			},
 			"reward": [
 				[
@@ -2124,11 +2116,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Mine U1: Old Shaft 2": {
@@ -2140,7 +2128,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "5",
-				"open": "open4.2"
+				"open": "mine.3"
 			},
 			"reward": [
 				[
@@ -2159,7 +2147,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "5",
-				"open": "open4.2"
+				"open": "mine.3"
 			},
 			"reward": [
 				[
@@ -2167,6 +2155,9 @@
 					"Mine Key",
 					1
 				]
+			],
+			"condition": [
+				[ "defeat", "Fleazer" ]
 			]
 		},
 		"Mine U1: Old Chamber": {
@@ -2178,7 +2169,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "6",
-				"open": "open4.3"
+				"open": "mine.2"
 			},
 			"reward": [
 				[
@@ -2186,6 +2177,9 @@
 					"Mine Key",
 					1
 				]
+			],
+			"condition": [
+				[ "item", "Mine Key", 2 ]
 			]
 		},
 		"Mine U2: Storage Room 1": {
@@ -2197,7 +2191,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.4"
 			},
 			"reward": [
 				[
@@ -2216,7 +2210,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.5"
 			},
 			"reward": [
 				[
@@ -2235,7 +2229,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.6"
 			},
 			"reward": [
 				[
@@ -2254,7 +2248,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.6"
 			},
 			"reward": [
 				[
@@ -2273,7 +2267,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.4"
 			},
 			"reward": [
 				[
@@ -2292,7 +2286,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.4"
 			},
 			"reward": [
 				[
@@ -2311,7 +2305,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.5"
 			},
 			"reward": [
 				[
@@ -2330,7 +2324,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.5"
 			},
 			"reward": [
 				[
@@ -2349,7 +2343,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.5"
 			},
 			"reward": [
 				[
@@ -2357,6 +2351,9 @@
 					"Mine Key",
 					1
 				]
+			],
+			"condition": [
+				[ "defeat", "Fleazer" ]
 			]
 		},
 		"Mine U3: Overrun Chamber Lower": {
@@ -2368,7 +2365,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.5"
 			},
 			"reward": [
 				[
@@ -2376,6 +2373,9 @@
 					"Vanilla Ice Cream",
 					2
 				]
+			],
+			"condition": [
+				[ "defeat", "Fleazer" ]
 			]
 		},
 		"Mine U4: Elevator": {
@@ -2387,19 +2387,12 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Winterclaw",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2413,7 +2406,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "10",
-				"open": "open4.7"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
@@ -2423,11 +2416,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Thief's Key",
-					1
-				]
+				[ "item", "Mine Key", 5 ]
 			]
 		},
 		"Mine U4: Forgotten Shaft 1": {
@@ -2439,19 +2428,12 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Mine Key",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2465,19 +2447,12 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Ancient Sandals",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2491,19 +2466,12 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Mine Key",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2517,19 +2485,12 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Mine Key",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2543,19 +2504,12 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Mine Key",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2569,7 +2523,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "4",
-				"open": "open4.1"
+				"open": "mine.1"
 			},
 			"reward": [
 				[
@@ -2579,11 +2533,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Mine GF: Temple Chamber 2": {
@@ -2595,7 +2545,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "4",
-				"open": "open4.1"
+				"open": "mine.1"
 			},
 			"reward": [
 				[
