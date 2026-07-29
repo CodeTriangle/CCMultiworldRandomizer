@@ -19,6 +19,17 @@
 					"dlc": true
 				}
 			}
+		},
+		"regions": {
+			"*": {
+				"connections": {
+					"*": {
+						"metadata": {
+							"dlc": true
+						}
+					}
+				}
+			}
 		}
 	}
 }
