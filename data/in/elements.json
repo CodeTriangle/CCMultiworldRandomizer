@@ -8,10 +8,13 @@
 			},
 			"region": {
 				"linear": "8",
-				"open": "open4.5"
+				"open": "mine.4"
 			},
 			"reward": [
 				["element", "Heat"]
+			],
+			"condition": [
+				[ "item", "Mine Key", 5]
 			]
 		},
 		"Cold Pedestal": {
