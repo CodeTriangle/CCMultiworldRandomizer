@@ -11,7 +11,7 @@
 				"open": "open4.5"
 			},
 			"reward": [
-				["element", "Heat"]
+				[ "element", "Heat" ]
 			]
 		},
 		"Cold Pedestal": {
@@ -25,7 +25,7 @@
 				"open": "open7.4"
 			},
 			"reward": [
-				["element", "Cold"]
+				[ "element", "Cold" ]
 			]
 		},
 		"Shock Pedestal": {
@@ -39,7 +39,7 @@
 				"open": "open14.4"
 			},
 			"reward": [
-				["element", "Shock"]
+				[ "element", "Shock" ]
 			]
 		},
 		"Wave Pedestal": {
@@ -53,7 +53,7 @@
 				"open": "open13.1"
 			},
 			"reward": [
-				["element", "Wave"]
+				[ "element", "Wave" ]
 			]
 		}
 	}
