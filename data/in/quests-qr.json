@@ -79,7 +79,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "4",
-				"open": "open4.1"
+				"open": "mine.1"
 			},
 			"condition": [
 				[ "or", 
@@ -396,7 +396,7 @@
 			"questid": "bergen-mining_tools",
 			"region": {
 				"linear": "10",
-				"open": "open4.7"
+				"open": "mine.7"
 			},
 			"condition": [
 				[ "item", "Heat", 1 ],
@@ -499,7 +499,7 @@
 			"questid": "bergtraders-2-hermit_materials",
 			"region": {
 				"linear": "3.1",
-				"open": "open4.1"
+				"open": "mine.1"
 			},
 			"condition": [
 				[ "quest", "Fancy Tophat" ],
@@ -615,7 +615,7 @@
 			"questid": "omni-1",
 			"region": {
 				"linear": "4",
-				"open": "open4.1"
+				"open": "mine.1"
 			},
 			"condition": [
 				[ "or",
@@ -628,7 +628,7 @@
 			"questid": "omni-2",
 			"region": {
 				"linear": "4",
-				"open": "open4.1"
+				"open": "mine.1"
 			},
 			"condition": [
 				[ "quest", "Building a Base" ],
@@ -1340,7 +1340,8 @@
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
-				[ "region", "open", "open4.5" ],
+				[ "region", "open", "mine.4" ],
+				[ "item", "Mine Key", 5 ],
 				[ "quest", "Bull Grab" ],
 				[ "defeat", "Smelter Digmo", "Experienced Fleazer" ]
 			],
