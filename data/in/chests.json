@@ -2254,7 +2254,6 @@
 				"map": "cold-dng.b2.room5",
 				"mapId": 66
 			},
-			"clearance": "Bronze",
 			"region": {
 				"linear": "9",
 				"open": "open4.6"
@@ -4279,7 +4278,6 @@
 				"map": "heat-dng.f3.room-05",
 				"mapId": 79
 			},
-			"clearance": "Silver",
 			"region": {
 				"linear": "17.5",
 				"open": "open7.6"
@@ -6958,7 +6956,6 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 671
 			},
-			"clearance": "Gold",
 			"region": {
 				"linear": "26.5",
 				"open": "open14.3"
