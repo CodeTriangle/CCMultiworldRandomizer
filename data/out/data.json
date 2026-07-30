@@ -1890,6 +1890,22 @@
 				}
 			}
 		},
+		"heat-dng.g.room-02-cross": {
+			"chests": {
+				"1276": {
+					"name": "Faj'ro GF: Balance Room 1 Left",
+					"mwids": [
+						3235825016
+					]
+				},
+				"1277": {
+					"name": "Faj'ro GF: Balance Room 1 Right",
+					"mwids": [
+						3235825017
+					]
+				}
+			}
+		},
 		"heat-dng.g.room-03": {
 			"chests": {
 				"71": {
@@ -2770,6 +2786,22 @@
 					"name": "Zir'vitar GF: Spinning Transmit",
 					"mwids": [
 						3235824323
+					]
+				}
+			}
+		},
+		"tree-dng.g.center-02-connect": {
+			"chests": {
+				"1270": {
+					"name": "Kajo GF: Main Stream Left",
+					"mwids": [
+						3235825018
+					]
+				},
+				"1271": {
+					"name": "Kajo GF: Main Stream Right",
+					"mwids": [
+						3235825019
 					]
 				}
 			}
@@ -7654,7 +7686,7 @@
 				"map": "cold-dng.b2.room5",
 				"mwid": 3235824114,
 				"settings": {
-					"defaultClearance": "Bronze"
+					"defaultClearance": "Default"
 				}
 			},
 			{
@@ -8736,7 +8768,7 @@
 				"map": "heat-dng.f3.room-05",
 				"mwid": 3235824211,
 				"settings": {
-					"defaultClearance": "Silver"
+					"defaultClearance": "Default"
 				}
 			},
 			{
@@ -10327,7 +10359,7 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824338,
 				"settings": {
-					"defaultClearance": "Gold"
+					"defaultClearance": "Default"
 				}
 			},
 			{
