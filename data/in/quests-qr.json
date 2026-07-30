@@ -615,7 +615,7 @@
 			"questid": "trailblaze-forest",
 			"region": {
 				"linear": "31",
-				"open": "open9"
+				"open": "open16"
 			},
 			"condition": [
 				[ "item", "Meteor Shade" ],
