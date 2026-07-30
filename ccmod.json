@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"marquee": ">=0.1.0",
-		"open-world": ">=0.5.1-pre1",
+		"open-world": ">=0.5.6",
 		"nax-ccuilib": ">=1.5.1",
 		"tips-and-tricks": ">=0.1.0",
 		"ccmodmanager": ">=1.0.4",
