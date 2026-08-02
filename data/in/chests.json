@@ -19,16 +19,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				]
+				["defeat", "Neutral Virus", "Heat Virus", "Cold Virus"]
 			]
 		},
 		"Wasteland: Spiral Cliff Upper": {
@@ -50,16 +41,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				]
+				["defeat", "Neutral Virus", "Heat Virus", "Cold Virus"]
 			]
 		},
 		"Wasteland: Storage Basement": {
@@ -383,6 +365,9 @@
 					"Broken Gauntlet",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Hedgehag", "Old Hedgehag", "Blue Hedgehag"]
 			]
 		},
 		"Rise: Pathway 1": {
@@ -782,6 +767,9 @@
 					"Tremor Engine",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Chillin' Hillkat"]
 			]
 		},
 		"Fall: Lake Cave 3": {
@@ -795,6 +783,9 @@
 				"linear": "20",
 				"open": "open9"
 			},
+			"condition": [
+				["defeat", "Chillin' Hillkat", "Radical Hedgehag"]
+			],
 			"reward": [
 				[
 					"item",
@@ -1219,6 +1210,9 @@
 					"Portrait of Ruin",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Aranetarda"]
 			]
 		},
 		"Fall: Villa of Terror Left": {
@@ -1238,6 +1232,9 @@
 					"Golden Ticket",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Aranetarda"]
 			]
 		},
 		"Fall: Para Island 1": {
@@ -1590,17 +1587,14 @@
 				"linear": "3",
 				"open": "open3"
 			},
+			"condition": [
+				["item", "Heat", 1],
+				["defeat", "Pengpeng", "Peng King Dakara"]
+			],
 			"reward": [
 				[
 					"item",
 					"Broken Shield",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Heat",
 					1
 				]
 			]
@@ -1978,6 +1972,9 @@
 					"Perforated Tophat",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Karotto"]
 			]
 		},
 		"Trail: Rising Path 4 Lower": {
@@ -2018,11 +2015,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Trail: Windy Climb": {
@@ -2072,7 +2065,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "5",
-				"open": "open4.2"
+				"open": "mine.2"
 			},
 			"reward": [
 				[
@@ -2091,7 +2084,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "5",
-				"open": "open4.2"
+				"open": "mine.3"
 			},
 			"reward": [
 				[
@@ -2101,11 +2094,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Mine U1: Old Shaft 1": {
@@ -2117,7 +2106,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "5",
-				"open": "open4.2"
+				"open": "mine.2"
 			},
 			"reward": [
 				[
@@ -2127,11 +2116,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Mine U1: Old Shaft 2": {
@@ -2143,7 +2128,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "5",
-				"open": "open4.2"
+				"open": "mine.3"
 			},
 			"reward": [
 				[
@@ -2162,7 +2147,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "5",
-				"open": "open4.2"
+				"open": "mine.3"
 			},
 			"reward": [
 				[
@@ -2170,6 +2155,9 @@
 					"Mine Key",
 					1
 				]
+			],
+			"condition": [
+				[ "defeat", "Fleazer" ]
 			]
 		},
 		"Mine U1: Old Chamber": {
@@ -2181,7 +2169,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "6",
-				"open": "open4.3"
+				"open": "mine.2"
 			},
 			"reward": [
 				[
@@ -2189,6 +2177,9 @@
 					"Mine Key",
 					1
 				]
+			],
+			"condition": [
+				[ "item", "Mine Key", 2 ]
 			]
 		},
 		"Mine U2: Storage Room 1": {
@@ -2200,7 +2191,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.4"
 			},
 			"reward": [
 				[
@@ -2219,7 +2210,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.5"
 			},
 			"reward": [
 				[
@@ -2238,7 +2229,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.6"
 			},
 			"reward": [
 				[
@@ -2257,7 +2248,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.6"
 			},
 			"reward": [
 				[
@@ -2276,7 +2267,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.4"
 			},
 			"reward": [
 				[
@@ -2295,7 +2286,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.4"
 			},
 			"reward": [
 				[
@@ -2314,7 +2305,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.5"
 			},
 			"reward": [
 				[
@@ -2333,7 +2324,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.5"
 			},
 			"reward": [
 				[
@@ -2352,7 +2343,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.5"
 			},
 			"reward": [
 				[
@@ -2360,6 +2351,9 @@
 					"Mine Key",
 					1
 				]
+			],
+			"condition": [
+				[ "defeat", "Fleazer" ]
 			]
 		},
 		"Mine U3: Overrun Chamber Lower": {
@@ -2371,7 +2365,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "7",
-				"open": "open4.4"
+				"open": "mine.5"
 			},
 			"reward": [
 				[
@@ -2379,6 +2373,9 @@
 					"Vanilla Ice Cream",
 					2
 				]
+			],
+			"condition": [
+				[ "defeat", "Fleazer" ]
 			]
 		},
 		"Mine U4: Elevator": {
@@ -2390,19 +2387,12 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Winterclaw",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2416,7 +2406,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "10",
-				"open": "open4.7"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
@@ -2426,11 +2416,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Thief's Key",
-					1
-				]
+				[ "item", "Mine Key", 5 ]
 			]
 		},
 		"Mine U4: Forgotten Shaft 1": {
@@ -2442,19 +2428,12 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Mine Key",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2468,19 +2447,12 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Ancient Sandals",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2494,19 +2466,12 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Mine Key",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2520,19 +2485,12 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Mine Key",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2546,19 +2504,12 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "9",
-				"open": "open4.6"
+				"open": "mine.7"
 			},
 			"reward": [
 				[
 					"item",
 					"Mine Key",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Thief's Key",
 					1
 				]
 			]
@@ -2572,7 +2523,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "4",
-				"open": "open4.1"
+				"open": "mine.1"
 			},
 			"reward": [
 				[
@@ -2582,11 +2533,7 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Mine GF: Temple Chamber 2": {
@@ -2598,7 +2545,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "4",
-				"open": "open4.1"
+				"open": "mine.1"
 			},
 			"reward": [
 				[
@@ -2653,16 +2600,9 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				],
-				[
-					"item",
-					"Wave",
-					1
-				]
+				["item", "Shock", 1],
+				["item", "Wave", 1],
+				["defeat", "Aranetarda", "War Webster", "Pandza Mk. II"]
 			]
 		},
 		"Ridge: Sapphire Tunnel": {
@@ -2701,6 +2641,9 @@
 					"Cobalt Crystal",
 					4
 				]
+			],
+			"condition": [
+				["defeat", "Aranetarda"]
 			]
 		},
 		"Ridge: Eroded Passage Upper": {
@@ -2777,6 +2720,9 @@
 					"Wrap Roll",
 					5
 				]
+			],
+			"condition": [
+				["defeat", "Aranetarda", "Moon Beetle"]
 			]
 		},
 		"Ridge: Narrow Passage Right": {
@@ -2796,6 +2742,9 @@
 					"Spark Tin",
 					8
 				]
+			],
+			"condition": [
+				["defeat", "Aranetarda", "Moon Beetle"]
 			]
 		},
 		"Ridge: Wheel Passage Lower": {
@@ -3235,11 +3184,8 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				]
+				["item", "Shock", 1],
+				["defeat", "Aranetarda"]
 			]
 		},
 		"Ridge: Carved Pathway Upper": {
@@ -3261,11 +3207,8 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				]
+				["item", "Shock", 1],
+				["defeat", "Aranetarda"]
 			]
 		},
 		"Ridge: High Ground Lower": {
@@ -3375,6 +3318,9 @@
 					"Warkeeper",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Moon Beetle", "Sun Beetle"]
 			]
 		},
 		"Ridge: Dream Pond": {
@@ -3586,6 +3532,9 @@
 					"Broken Sword",
 					1
 				]
+			],
+			"condition": [
+				["defeat", "Cursed Sharkster"]
 			]
 		},
 		"Maroon: Maroon Cave 1": {
@@ -4068,6 +4017,9 @@
 					"Shrimp Risotto",
 					5
 				]
+			],
+			"condition": [
+				["defeat", "Sharkster"]
 			]
 		},
 		"Maroon: Torn Road Center": {
@@ -4837,6 +4789,9 @@
 					"Precious Metal",
 					2
 				]
+			],
+			"condition": [
+				["defeat", "Wiccat"]
 			]
 		},
 		"Garden: Chief's Den Center": {
@@ -4856,6 +4811,9 @@
 					"Golden Bars",
 					3
 				]
+			],
+			"condition": [
+				["defeat", "Wiccat"]
 			]
 		},
 		"Garden: Chief's Den Upper": {
@@ -4875,6 +4833,9 @@
 					"Prime Pistachios",
 					2
 				]
+			],
+			"condition": [
+				["defeat", "Wiccat"]
 			]
 		},
 		"Garden: Chief's Den Lower": {
@@ -4896,11 +4857,8 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				["item", "Wave", 1],
+				["defeat", "Wiccat"]
 			]
 		},
 		"Garden: Grand Krys'kajo Entrance": {
@@ -5191,16 +5149,9 @@
 				]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				],
-				[
-					"item",
-					"Shock",
-					1
-				]
+				["item", "Wave", 1],
+				["item", "Shock", 1],
+				["defeat", "Tiefsee Angler"]
 			]
 		},
 		"Garden: Lost Lookout Center": {

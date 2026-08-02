@@ -8,8 +8,7 @@
 				"open": "open9" 
 			},
 			"condition": [
-				[ "item", "Heat" ],
-				[ "item", "Cold" ]
+				[ "defeat", "Radical Hedgehag", "Chillin' Hillkat", "Ivory Bovine", "Fallfly", "Hologram Frobbit" ]
 			],
 			"properties": {
 				"alwaysQuest": true
@@ -42,7 +41,7 @@
 			},
 			"condition": [
 				[ "item", "Maroon Cave Pass", 1 ],
-				[ "item", "Heat", 1 ]
+				[ "defeat", "Tim", "Ti'im" ]
 			],
 			"properties": {
 				"alwaysQuest": true
@@ -62,6 +61,9 @@
 			},
 			"reward": [
 				[ "item", "Old Dojo Key", 1 ]
+			],
+			"condition": [
+				[ "defeat", "Aranetarda" ]
 			]
 		}
 	}

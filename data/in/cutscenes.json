@@ -42,7 +42,7 @@
 			},
 			"region": {
 				"linear": "4",
-				"open": "open4.1" 
+				"open": "mine.1" 
 			},
 			"reward": [
 				[ "item", "Just Water", 2 ]
@@ -75,11 +75,8 @@
 			},
 			"region": {
 				"linear": "10",
-				"open": "open4.1" 
+				"open": "mine.8" 
 			},
-			"condition": [
-				["item", "Mine Master Key", 1]
-			],
 			"reward": [
 				[ "item", "Blue Ice Shade", 1 ]
 			]
@@ -255,7 +252,7 @@
 			},
 			"region": {
 				"linear": "11",
-				"open": "open4.8" 
+				"open": "mine.8" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 1 ]

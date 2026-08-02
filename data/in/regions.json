@@ -264,7 +264,7 @@
 				},
 				{
 					"from": "open3",
-					"to": "open4.1",
+					"to": "mine.1",
 					"condition": [
 						[ "item", "Mine Pass", 1 ]
 					]
@@ -277,52 +277,56 @@
 					]
 				},
 				{
-					"from": "open4.1",
-					"to": "open4.2",
+					"from": "mine.1",
+					"to": "mine.2",
 					"condition": [
-						[ "item", "Mine Key", 1 ]
+						[ "item", "Mine Key", 1 ],
+						[ "defeat", "Carritrich" ]
 					]
 				},
 				{
-					"from": "open4.2",
-					"to": "open4.3",
+					"from": "mine.2",
+					"to": "mine.3",
 					"condition": [
-						[ "item", "Mine Key", 2 ]
+						[ "defeat", "Kamikatze" ]
 					]
 				},
 				{
-					"from": "open4.3",
-					"to": "open4.4",
+					"from": "mine.2",
+					"to": "mine.4",
 					"condition": [
-						[ "item", "Mine Key", 3 ]
+						[ "item", "Mine Key", 3 ],
+						[ "defeat", "Digmo" ]
 					]
 				},
 				{
-					"from": "open4.4",
-					"to": "open4.5",
+					"from": "mine.4",
+					"to": "mine.5",
 					"condition": [
-						[ "item", "Mine Key", 5 ]
+						[ "defeat", "Kamikatze" ]
 					]
 				},
 				{
-					"from": "open4.4",
-					"to": "open4.6",
+					"from": "mine.5",
+					"to": "mine.6",
 					"condition": [
 						[ "item", "Heat", 1 ]
 					]
 				},
 				{
-					"from": "open4.6",
-					"to": "open4.7",
+					"from": "mine.6",
+					"to": "mine.7",
 					"condition": [
-						[ "item", "Mine Key", 5 ]
+						[ "item", "Thief's Key" ],
+						[ "defeat", "Fleazer" ]
 					]
 				},
 				{
-					"from": "open4.1",
-					"to": "open4.8",
+					"from": "mine.1",
+					"to": "mine.8",
 					"condition": [
-						[ "item", "Mine Master Key", 1 ]
+						[ "item", "Mine Master Key", 1 ],
+						[ "defeat", "X01 Driller H.F.S." ]
 					]
 				},
 				{

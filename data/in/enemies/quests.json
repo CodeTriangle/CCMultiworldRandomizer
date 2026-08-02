@@ -1,0 +1,88 @@
+{
+	"enemies": {
+		"Tunnel Gelleric": {
+			"name": "Tunnel Gelleric",
+			"id": "jungle.special.quest_td_blob_1",
+			"level": 38,
+			"firstEncounter": {
+				"region": {
+					"open10.Right"
+				}
+			},
+			"area": "jungle",
+			"condition": {
+				[ "quest", "Tower Defense" ]
+			}
+		},
+		"Tunnel Argeby": {
+			"name": "Tunnel Argeby",
+			"id": "jungle.special.quest_td_plant_1",
+			"level": 39,
+			"firstEncounter": {
+				"region": {
+					"open10.Right"
+				}
+			},
+			"area": "jungle",
+			"condition": {
+				[ "quest", "Tower Defense" ]
+			}
+		},
+		"Tunnel Angler": {
+			"name": "Tunnel Angler",
+			"id": "jungle.special.quest_td_fish_1",
+			"level": 40,
+			"firstEncounter": {
+				"region": {
+					"open10.Right"
+				}
+			},
+			"area": "jungle",
+			"condition": {
+				[ "quest", "Tower Defense" ]
+			}
+		},
+		"Tunnel Wiccat": {
+			"name": "Tunnel Wiccat",
+			"id": "jungle.special.quest_td_shockcat_1",
+			"level": 45,
+			"firstEncounter": {
+				"region": {
+					"open10.Right"
+				}
+			},
+			"area": "jungle",
+			"condition": {
+				[ "quest", "An Original Idea" ]
+			}
+		},
+		"Tunnel Shockcat": {
+			"name": "Tunnel Shockcat",
+			"id": "jungle.special.quest_td_shockcat_2",
+			"level": 46,
+			"firstEncounter": {
+				"region": {
+					"open10.Right"
+				}
+			},
+			"area": "jungle",
+			"condition": {
+				[ "quest", "An Original Idea" ]
+			}
+		},
+		"Tunnel Teslabovine": {
+			"name": "Tunnel Teslabovine",
+			"id": "jungle.special.quest_td_buffel_1",
+			"level": 47,
+			"firstEncounter": {
+				"region": {
+					"open10.Right"
+				}
+			},
+			"area": "jungle",
+			"condition": {
+				[ "quest", "An Original Idea" ]
+			}
+		}
+	}
+}
