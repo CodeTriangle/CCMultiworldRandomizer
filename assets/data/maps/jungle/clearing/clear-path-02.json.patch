@@ -1,0 +1,43 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Change the Birds to their second state and not hate you",
+        "keyword": "__INDEX__",
+        "values": [497,653],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings", "npcStates"]
+            },
+            {
+                "type": "ENTER",
+                "index": 0
+            },{
+                "type": "SET_KEY",
+                "index": "condition",
+                "content": "false"
+            },{
+                "type": "EXIT"
+            },{
+                "type": "ENTER",
+                "index": 1
+            },{
+                "type": "SET_KEY",
+                "index": "condition"
+            },{
+                "type": "EXIT"
+            },{
+                "type": "EXIT",
+                "count": 3
+            }]  
+    },
+    
+    {
+        "type": "EXIT",
+        "count": 1
+    }   
+]

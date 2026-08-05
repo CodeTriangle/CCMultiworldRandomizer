@@ -1,0 +1,90 @@
+[{
+    "type": "ENTER",
+    "index": "entities"
+  },
+
+  {
+    "type": "FOR_IN",
+    "_comment": "Disable all guildies from entrance cutscene",
+    "keyword": "__INDEX__",
+    "values": [796,797,798,799,800,801,802,803,804],
+    "body": [{
+      "type": "ENTER",
+      "index": ["__INDEX__", "settings"]
+    },{
+      "type": "SET_KEY",
+      "index": "npcStates",
+      "content": [
+        {
+            "reactType": "FIXED_POS",
+            "face": "WEST",
+            "showFx": {
+                "sheet": "teleport",
+                "name": "showDefault"
+            },
+            "hidden": true,
+            "condition": "",
+            "config": "",
+            "event": []
+        }]
+    },{
+        "type": "EXIT",
+        "count": 2
+    }]  
+  },
+
+  {
+    "type": "ENTER",
+    "index": [794, "settings"],
+    "_comment": "Make dungeon door only accesible with ancient shade and DLC active"
+  },
+  
+  {
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "extension.post-game.active && item.627.amount >= 1"
+  },
+
+  { "type": "EXIT", "count": 2 },
+
+
+  {
+    "type": "FOR_IN",
+    "_comment": "Disable all NPCs -blocking- entrance when DLC is active",
+    "keyword": "__INDEX__",
+    "values": [679,680,681,682,683,684,685,686,687,688,689,690,691,692],
+    "body": [{
+      "type": "ENTER",
+      "index": ["__INDEX__", "settings","npcStates",2]
+    },{
+      "type": "SET_KEY",
+      "index": "condition",
+      "content": "extension.post-game.active && open-world.dlcActive"
+    },{
+        "type": "EXIT",
+        "count": 4
+    }]  
+  },
+
+  {
+    "type": "ENTER",
+    "_comment": "Disable pre-dlc xenodialog",
+    "index": [693, "settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "spawnCondition",
+    "content": "!(extension.post-game.active && open-world.dlcActive)"
+  },
+  {
+      "type": "EXIT",
+      "count": 2
+  },
+  {
+      "type": "ADD_ARRAY_ELEMENT",
+      "_comment": "Show Ancient Shade icon at the dungeon entry",
+      "content": { "type": "Prop", "x": 636, "y": 372, "level": 2, "settings": { "name": "ancientShadeIcon", "mapId": 3942, "propType": { "sheet": "final-dng-outer", "name": "barrierSign" }, "propAnim": "off", "condAnims": [ { "0": " ", "condition": "item.627.amount >= 1", "anim": "on" } ], "spawnCondition": "extension.post-game.active && open-world.dlcActive" } }
+  },
+
+  { "type": "EXIT" }
+]

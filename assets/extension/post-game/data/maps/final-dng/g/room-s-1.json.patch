@@ -1,0 +1,225 @@
+[
+	{ "type": "ENTER", "index": [ "entities" ] },
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add ball changer for easier elemental access",
+		"content": {
+			"type": "BallChanger",
+			"x": 360,
+			"y": 388,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 1215,
+				"name": "ballChangerW",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "WAVE"
+					}
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add ball changer for easier elemental access",
+		"content": {
+			"type": "BallChanger",
+			"x": 304,
+			"y": 388,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 1216,
+				"name": "ballChangerW-UL",
+				"changerType": {
+					"type": "CHANGE_DIR",
+					"settings": {
+						"dir": "NORTH_WEST",
+						"factor": 0.2
+					}
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add ball changer for easier elemental access",
+		"content": {
+			"type": "BallChanger",
+			"x": 388,
+			"y": 360,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 1217,
+				"name": "ballChangerC",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "COLD"
+					}
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add ball changer for easier elemental access",
+		"content": {
+			"type": "BallChanger",
+			"x": 416,
+			"y": 388,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 1218,
+				"name": "ballChangerS",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "SHOCK"
+					}
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add ball changer for easier elemental access",
+		"content": {
+			"type": "BallChanger",
+			"x": 388,
+			"y": 416,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 1219,
+				"name": "ballChangerH",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "HEAT"
+					}
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add ball changer for easier elemental access",
+		"content": {
+			"type": "BallChanger",
+			"x": 504,
+			"y": 388,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 1220,
+				"name": "ballChangerS-U",
+				"changerType": {
+					"type": "CHANGE_DIR",
+					"settings": {
+						"dir": "NORTH",
+						"factor": 0.2
+					}
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add ball changer for easier elemental access",
+		"content": {
+			"type": "BallChanger",
+			"x": 388,
+			"y": 320,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 1221,
+				"name": "ballChangerC-UL",
+				"changerType": {
+					"type": "CHANGE_DIR",
+					"settings": {
+						"dir": "NORTH_WEST",
+						"factor": 0.2
+					}
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add ball changer for easier elemental access",
+		"content": {
+			"type": "BallChanger",
+			"x": 388,
+			"y": 456,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 1222,
+				"name": "ballChangerH-DL",
+				"changerType": {
+					"type": "CHANGE_DIR",
+					"settings": {
+						"dir": "SOUTH_WEST",
+						"factor": 0.2
+					}
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add ball changer for easier elemental access",
+		"content": {
+			"type": "BallChanger",
+			"x": 388,
+			"y": 640,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 1223,
+				"name": "ballChangerH-UR",
+				"changerType": {
+					"type": "CHANGE_DIR",
+					"settings": {
+						"dir": "NORTH_EAST",
+						"factor": 0.2
+					}
+				}
+			}
+		}
+	},
+	{ "type": "EXIT" }
+]

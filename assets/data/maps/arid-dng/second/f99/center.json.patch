@@ -1,0 +1,460 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities"]
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "TeleportField",
+			"x": 356,
+			"y": 498,
+			"level": 1,
+			"settings": {
+				"name": "exit",
+				"central": {
+					"global": true,
+					"name": ""
+				},
+				"dir": "SOUTH",
+				"map": "arid-dng.second.f99.pre-creator",
+				"marker": "BossEntrance",
+				"teleportLabel": {
+					"en_US": "\\i[arrow-s] Down",
+					"de_DE": "\\i[arrow-s] Runter",
+					"fr_FR": "fr_FR",
+					"langUid": 1,
+					"zh_CN": "\\i[arrow-s]\u4e0b",
+					"ko_KR": "\\i[arrow-s] \uc544\ub798\ub85c",
+					"ja_JP": "\\i[arrow-s] \u4e0b",
+					"zh_TW": "\\i[arrow-s]\u4e0b"
+				},
+				"longTelCond": "false",
+				"gfxType": "AR",
+				"mapId": 1723,
+				"blockEventCondition": "",
+				"spawnCondition": "map.designerDead"
+			}
+		}
+	},
+
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "Prop",
+			"x": 356,
+			"y": 846,
+			"level": "1",
+			"settings": {
+				"name": "barrier1BossB",
+				"mapId": 741,
+				"propType": {
+					"sheet": "bossshades",
+					"name": "barrierSignDriller"
+				},
+				"propAnim": "off",
+				"condAnims": [
+					{
+						"0": " ",
+						"condition": "map.barrier1Open",
+						"anim": "on"
+					}
+				],
+				"spawnCondition": "(open-world.shadeLock > 0 && open-world.shadeLock != 2)"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "Prop",
+			"x": 318,
+			"y": 884,
+			"level": "1",
+			"settings": {
+				"name": "barrier2BossA",
+				"mapId": 711,
+				"propType": {
+					"sheet": "bossshades",
+					"name": "barrierSignBlob"
+				},
+				"propAnim": "off",
+				"condAnims": [
+					{
+						"0": " ",
+						"condition": "map.barrier1Open",
+						"anim": "on"
+					}
+				],
+				"spawnCondition": "(open-world.shadeLock > 0 && open-world.shadeLock != 2)"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "Prop",
+			"x": 396,
+			"y": 884,
+			"level": "1",
+			"settings": {
+				"name": "barrier2BossB",
+				"mapId": 743,
+				"propType": {
+					"sheet": "bossshades",
+					"name": "barrierSignPhantom"
+				},
+				"propAnim": "off",
+				"condAnims": [
+					{
+						"0": " ",
+						"condition": "map.barrier1Open",
+						"anim": "on"
+					}
+				],
+				"spawnCondition": "(open-world.shadeLock > 0 && open-world.shadeLock != 2)"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "Prop",
+			"x": 356,
+			"y": 924,
+			"level": "1",
+			"settings": {
+				"name": "barrier1BossA",
+				"mapId": 745,
+				"propType": {
+					"sheet": "bossshades",
+					"name": "barrierSignMoth"
+				},
+				"propAnim": "off",
+				"condAnims": [
+					{
+						"0": " ",
+						"condition": "map.barrier1Open",
+						"anim": "on"
+					}
+				],
+				"spawnCondition": "(open-world.shadeLock > 0 && open-world.shadeLock != 2)"
+			}
+		}
+	},
+		{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "Prop",
+			"x": 356,
+			"y": 732,
+			"level": "1",
+			"settings": {
+				"name": "barrier1SignA",
+				"mapId": 744,
+				"propType": {
+					"sheet": "autumn",
+					"name": "barrierSignFlame"
+				},
+				"propAnim": "off",
+				"condAnims": [
+					{
+						"0": " ",
+						"condition": "map.barrier2Open",
+						"anim": "on"
+					}
+				],
+				"spawnCondition": "open-world.shadeLock >= 2"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "Prop",
+			"x": 356,
+			"y": 654,
+			"level": "1",
+			"settings": {
+				"name": "barrier1SignB",
+				"mapId": 747,
+				"propType": {
+					"sheet": "bergen-trail",
+					"name": "barrierSign"
+				},
+				"propAnim": "off",
+				"condAnims": [
+					{
+						"0": " ",
+						"condition": "map.barrier2Open",
+						"anim": "on"
+					}
+				],
+				"spawnCondition": "open-world.shadeLock >= 2"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "Prop",
+			"x": 396,
+			"y": 692,
+			"level": "1",
+			"settings": {
+				"name": "barrier2SignB",
+				"mapId": 750,
+				"propType": {
+					"sheet": "autumn",
+					"name": "barrierSignLightning"
+				},
+				"propAnim": "off",
+				"condAnims": [
+					{
+						"0": " ",
+						"condition": "map.barrier2Open",
+						"anim": "on"
+					}
+				],
+				"spawnCondition": "open-world.shadeLock >= 2"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "Prop",
+			"x": 316,
+			"y": 692,
+			"level": "1",
+			"settings": {
+				"name": "barrier2SignA",
+				"mapId": 749,
+				"propType": {
+					"sheet": "jungle",
+					"name": "barrierSignWave"
+				},
+				"propAnim": "off",
+				"condAnims": [
+					{
+						"0": " ",
+						"condition": "map.barrier2Open",
+						"anim": "on"
+					}
+				],
+				"spawnCondition": "open-world.shadeLock >= 2)"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "HiddenBlock",
+			"x": 245,
+			"y": 813,
+			"level": 1,
+			"settings": {
+				"shape": "RECTANGLE",
+				"heightShape": "NONE",
+				"zHeight": 128,
+				"terrain": "NORMAL",
+				"spawnCondition": "!map.barrier1Open && (open-world.shadeLock > 0 && open-world.shadeLock != 2)",
+				"collType": "BLOCK",
+				"mapId": 751,
+				"size": {
+					"x": 256,
+					"y": 16
+				},
+				"name": "barrier1"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "ScalableProp",
+			"x": 336,
+			"y": 826,
+			"level": 1,
+			"settings": {
+				"propConfig": {
+					"sheet": "dungeon-ar",
+					"name": "barrierH"
+				},
+				"patternOffset": {
+					"x": 0,
+					"y": 0
+				},
+				"spawnCondition": "!map.barrier1Open && (open-world.shadeLock > 0 && open-world.shadeLock != 2)",
+				"mapId": 752,
+				"size": {
+					"x": 64,
+					"y": 8
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "ScalableProp",
+			"x": 336,
+			"y": 648,
+			"level": 1,
+			"settings": {
+				"propConfig": {
+					"sheet": "dungeon-ar",
+					"name": "barrierH"
+				},
+				"patternOffset": {
+					"x": 0,
+					"y": 0
+				},
+				"spawnCondition": "!map.barrier2Open && open-world.shadeLock >= 2",
+				"mapId": 753,
+				"size": {
+					"x": 64,
+					"y": 8
+				},
+				"name": "barrier2"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "HiddenBlock",
+			"x": 241,
+			"y": 636,
+			"level": 1,
+			"settings": {
+				"shape": "RECTANGLE",
+				"heightShape": "NONE",
+				"zHeight": 128,
+				"terrain": "NORMAL",
+				"spawnCondition": "!map.barrier2Open && open-world.shadeLock >= 2",
+				"collType": "BLOCK",
+				"mapId": 754,
+				"size": {
+					"x": 256,
+					"y": 16
+				},
+				"name": "barrier2"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "TouchTrigger",
+			"x": 244,
+			"y": 1085,
+			"level": 1,
+			"settings": {
+				"startCondition": "item.225.amount >= 1 && item.230.amount >= 1  && item.286.amount >= 1 && item.231.amount >= 1 ",
+				"variable": "map.barrier2Open",
+				"type": "SET_TRUE",
+				"zHeight": 64,
+				"shape": "RECTANGLE",
+				"mapId": 755,
+				"size": {
+					"x": 256,
+					"y": 64
+				},
+				"name": "barrier2Trigger"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "TouchTrigger",
+			"x": 244,
+			"y": 1085,
+			"level": 1,
+			"settings": {
+				"startCondition": "plot.cold-dng-end  && plot.heat-dng-end && plot.wave-dng-end  && plot.shock-dng-end",
+				"variable": "map.barrier1Open",
+				"type": "SET_TRUE",
+				"zHeight": 64,
+				"shape": "RECTANGLE",
+				"mapId": 756,
+				"size": {
+					"x": 256,
+					"y": 64
+				},
+				"name": "barrier1Trigger"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "Prop",
+			"x": 352,
+			"y": 895,
+			"level": 1,
+			"settings": {
+				"propType": {
+					"sheet": "autumn",
+					"name": "arSignCenter"
+				},
+				"condAnims": [ { "0": " ", "interact": { "icon": "INFO", "hoverText": { "en_US": "Bosses", "de_DE": "Bosses", "fr_FR": "Bosses", "langUid": 423, "zh_CN": "Bosses", "ja_JP": "Bosses", "ko_KR": "Bosses", "zh_TW": "Bosses" }, "event": [ { "text": { "en_US": "Missing Bosses:", "de_DE": "Missing Bosses:", "fr_FR": "Missing Bosses:", "langUid": 427, "zh_CN": "Missing Bosses:", "ja_JP": "Missing Bosses:", "ko_KR": "Missing Bosses:", "zh_TW": "Missing Bosses:" }, "center": false, "type": "SHOW_BOARD_MSG" }, { "withElse": false, "type": "IF", "condition": "!plot.cold-dng-end", "thenStep": [ { "text": { "en_US": "X01-Driller", "de_DE": "X01-Driller", "fr_FR": "X01-Driller", "langUid": 427, "zh_CN": "X01-Driller", "ja_JP": "X01-Driller", "ko_KR": "X01-Driller", "zh_TW": "X01-Driller" }, "center": false, "type": "SHOW_BOARD_MSG" } ] }, { "withElse": false, "type": "IF", "condition": "!plot.heat-dng-end", "thenStep": [ { "text": { "en_US": "Master Magmoth", "de_DE": "Master Magmoth", "fr_FR": "Master Magmoth", "langUid": 427, "zh_CN": "Master Magmoth", "ja_JP": "Master Magmoth", "ko_KR": "Master Magmoth", "zh_TW": "Master Magmoth" }, "center": false, "type": "SHOW_BOARD_MSG" } ] }, { "withElse": false, "type": "IF", "condition": "!plot.wave-dng-end", "thenStep": [ { "text": { "en_US": "Sir Blobus Starnikus", "de_DE": "Sir Blobus Starnikus", "fr_FR": "Sir Blobus Starnikus", "langUid": 427, "zh_CN": "Sir Blobus Starnikus", "ja_JP": "Sir Blobus Starnikus", "ko_KR": "Sir Blobus Starnikus", "zh_TW": "Sir Blobus Starnikus" }, "center": false, "type": "SHOW_BOARD_MSG" } ] }, { "withElse": false, "type": "IF", "condition": "!plot.shock-dng-end", "thenStep": [ { "text": { "en_US": "Plasma Phantom", "de_DE": "Plasma Phantom", "fr_FR": "Plasma Phantom", "langUid": 427, "zh_CN": "Plasma Phantom", "ja_JP": "Plasma Phantom", "ko_KR": "Plasma Phantom", "zh_TW": "Plasma Phantom" }, "center": false, "type": "SHOW_BOARD_MSG" } ] }, { "text": { "en_US": "Interact with the dungeon shade statues after defeating them", "de_DE": "Interact with the dungeon shade statues after defeating them", "fr_FR": "Interact with the dungeon shade statues after defeating them", "langUid": 427, "zh_CN": "Interact with the dungeon shade statues after defeating them", "ja_JP": "Interact with the dungeon shade statues after defeating them", "ko_KR": "Interact with the dungeon shade statues after defeating them", "zh_TW": "Interact with the dungeon shade statues after defeating them" }, "center": false, "type": "SHOW_BOARD_MSG" } ] }, "condition": "!map.barrier1Open", "anim": "news" } ],
+				"propAnim": "default",
+				"spawnCondition": "(open-world.shadeLock > 0 && open-world.shadeLock != 2) && !map.barrier1Open",
+				"interact": {
+					"icon": "INFO",
+					"hoverText": {
+						"en_US": "Bosses",
+						"de_DE": "Bosses",
+						"fr_FR": "Bosses",
+						"langUid": 3427,
+						"zh_CN": "Bosses",
+						"ko_KR": "Bosses",
+						"ja_JP": "Bosses",
+						"zh_TW": "Bosses"
+					}
+				},
+				"mapId": 757,
+				"name": "infoSign1"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"type": "Prop",
+			"x": 353,
+			"y": 700,
+			"level": 1,
+			"settings": {
+				"propType": {
+					"sheet": "autumn",
+					"name": "arSignCenter"
+				},
+				"condAnims": [ { "0": " ", "interact": { "icon": "INFO", "hoverText": { "en_US": "Shades", "de_DE": "Shades", "fr_FR": "Shades", "langUid": 423, "zh_CN": "Shades", "ja_JP": "Shades", "ko_KR": "Shades", "zh_TW": "Shades" }, "event": [ { "text": { "en_US": "Missing Shades:", "de_DE": "Missing Shades:", "fr_FR": "Missing Shades:", "langUid": 427, "zh_CN": "Missing Shades:", "ja_JP": "Missing Shades:", "ko_KR": "Missing Shades:", "zh_TW": "Missing Shades:" }, "center": false, "type": "SHOW_BOARD_MSG" }, { "withElse": false, "type": "IF", "condition": "item.225.amount < 1", "thenStep": [ { "text": { "en_US": "Blue Ice Shade", "de_DE": "Blue Ice Shade", "fr_FR": "Blue Ice Shade", "langUid": 427, "zh_CN": "Blue Ice Shade", "ja_JP": "Blue Ice Shade", "ko_KR": "Blue Ice Shade", "zh_TW": "Blue Ice Shade" }, "center": false, "type": "SHOW_BOARD_MSG" } ] }, { "withElse": false, "type": "IF", "condition": "item.230.amount < 1", "thenStep": [ { "text": { "en_US": "Red Flame Shade", "de_DE": "Red Flame Shade", "fr_FR": "Red Flame Shade", "langUid": 427, "zh_CN": "Red Flame Shade", "ja_JP": "Red Flame Shade", "ko_KR": "Red Flame Shade", "zh_TW": "Red Flame Shade" }, "center": false, "type": "SHOW_BOARD_MSG" } ] }, { "withElse": false, "type": "IF", "condition": "item.286.amount < 1", "thenStep": [ { "text": { "en_US": "Azure Drop Shade", "de_DE": "Azure Drop Shade", "fr_FR": "Azure Drop Shade", "langUid": 427, "zh_CN": "Azure Drop Shade", "ja_JP": "Azure Drop Shade", "ko_KR": "Azure Drop Shade", "zh_TW": "Azure Drop Shade" }, "center": false, "type": "SHOW_BOARD_MSG" } ] }, { "withElse": false, "type": "IF", "condition": "item.231.amount < 1", "thenStep": [ { "text": { "en_US": "Purple Bolt Shade", "de_DE": "Purple Bolt Shade", "fr_FR": "Purple Bolt Shade", "langUid": 427, "zh_CN": "Purple Bolt Shade", "ja_JP": "Purple Bolt Shade", "ko_KR": "Purple Bolt Shade", "zh_TW": "Purple Bolt Shade" }, "center": false, "type": "SHOW_BOARD_MSG" } ] } ] }, "condition": "!map.barrier2Open", "anim": "news" } ],
+				"propAnim": "default",
+				"spawnCondition": "open-world.shadeLock >= 2 && !map.barrier2Open",
+				"interact": {
+					"icon": "INFO",
+					"hoverText": {
+						"en_US": "Shades",
+						"de_DE": "Shades",
+						"fr_FR": "Shades",
+						"langUid": 3427,
+						"zh_CN": "Shades",
+						"ko_KR": "Shades",
+						"ja_JP": "Shades",
+						"zh_TW": "Shades"
+					}
+				},
+				"mapId": 758,
+				"name": "infoSign2"
+			}
+		}
+	},
+
+	{
+		"type": "EXIT"
+	}
+]

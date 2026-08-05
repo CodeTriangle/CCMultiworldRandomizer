@@ -1,0 +1,10 @@
+[
+    { "type": "ENTER", "index": ["entities", 12, "settings", "npcStates", 1] },
+    {
+       "_comment": "Replace DLC completion for quest",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "!quest.tremor-1.started && open-world.dlcActive && item.626.amount >= 1"
+    },
+    { "type": "EXIT", "count": 5 }
+]

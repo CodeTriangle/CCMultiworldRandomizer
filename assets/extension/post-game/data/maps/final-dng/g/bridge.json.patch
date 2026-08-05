@@ -1,0 +1,68 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+    {
+        "type": "ENTER",
+        "_comment": "Add reward on left puzzle completion",
+        "index": [91, "settings","event", 0, "thenStep"]
+    },
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+            "type": "GIVE_ITEM",
+            "item": "40",
+            "amount": 3
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 5
+    },    
+    {
+        "type": "ENTER",
+        "_comment": "Add reward on right puzzle completion",
+        "index": [92, "settings","event", 0, "thenStep"]
+    },
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+            "type": "GIVE_ITEM",
+            "item": "40",
+            "amount": 3
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 5
+    },    
+    {
+        "type": "ENTER",
+        "index": [99, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "Open Elevator door by default on one puzzle",
+        "index": "startCondition",
+        "content": "map.poleUp1 || map.poleUp2"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },    
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Enable elevator signs",
+        "keyword": "__INDEX__",
+        "values": [93, 94, 95, 96, 97],
+        "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition" },{ "type": "EXIT", "count": 2 }]
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }    
+    
+]

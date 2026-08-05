@@ -1,0 +1,13 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [45,"settings", "npcStates", 0] },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "_comment": "Change Dkar to not need prerequisites"
+    },
+    { "type": "EXIT", "count": 4 },    
+
+    { "type": "EXIT" }    
+]

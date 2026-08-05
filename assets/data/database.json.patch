@@ -1,4 +1,59 @@
 [
+    {
+        "type": "ENTER",
+        "index": "commonEvents"
+    },
+    {
+        "type": "INCLUDE",
+        "src": "mod:patches/database/enable-party-shizuka.json"
+    },{
+        "type": "INCLUDE",
+        "src": "mod:patches/database/remove-save-fixes.json"
+    },
+    {
+        "type": "INCLUDE",
+        "src": "mod:patches/database/extra-commonEvents.json"
+    },
+    { 
+        "type": "IF", 
+        "_comment": "Adds corresponding patch if DLC is active", 
+        "cond": "ig.vars.get('extension.post-game.active') >= 1", 
+        "thenSteps": [
+        {
+        "type": "INCLUDE",
+        "src": "mod:patches/database/dlc/remove-party-blocks.json"
+        }] 
+    },
+    {
+        "type": "EXIT"
+    },
+    {
+        "type": "INCLUDE",
+        "src": "mod:patches/database/quest-fixes.json"
+    },
+    {
+        "type": "INCLUDE",
+        "src": "mod:patches/database/dlc/quest-fixes.json"
+    },
+    {
+        "type": "INCLUDE",
+        "src": "mod:extra-patches/extra-quests/database/quests.json.patch"
+    },
+    {
+        "type": "ENTER",
+        "index": "shops"
+    },
+    {
+        "type": "INCLUDE",
+        "src": "mod:patches/database/shop-conditions.json"
+    },
+        {
+        "type": "INCLUDE",
+        "src": "mod:patches/database/dlc/shop-conditions.json"
+    },
+    {
+        "type": "EXIT"
+    },
     { "type": "ENTER", "index": ["traders"] },
 
     {

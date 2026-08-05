@@ -1,0 +1,54 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+  
+    {
+        "type": "FOR_IN",
+        "_comment": "Make the teleport accessible only with Blue Ice Shade",
+        "keyword": {"index": "__INDEX__", "marker": "__MARKER__"},
+        "values": [{ "index": 18, "marker": "off1" }, { "index": 211, "marker": "off2" }, { "index": 212, "marker": "off3" }],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "spawnCondition",
+            "content": "item.225.amount >= 1"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+
+    {
+      "type": "ADD_ARRAY_ELEMENT",
+      "_comment": "Add floor shade icons",
+      "content": { "type": "Prop", "x": 517, "y": 245, "level": 1, "settings": { "name": "shadeIconA", "mapId": 1297, "propType": { "sheet": "bergen-trail", "name": "barrierSign" }, "propAnim": "off", "spawnCondition": "item.225.amount < 1" } }
+    },
+    {
+      "type": "ADD_ARRAY_ELEMENT",
+      "_comment": "Add floor shade icons",
+      "content": { "type": "Prop", "x": 485, "y": 373, "level": 1, "settings": { "name": "shadeIconB", "mapId": 1298, "propType": { "sheet": "bergen-trail", "name": "barrierSign" }, "propAnim": "off", "spawnCondition": "item.225.amount < 1" } }
+    },
+    {
+      "type": "ADD_ARRAY_ELEMENT",
+      "_comment": "Add floor shade icons",
+      "content": { "type": "Prop", "x": 516, "y": 501, "level": 1, "settings": { "name": "shadeIconC", "mapId": 1299, "propType": { "sheet": "bergen-trail", "name": "barrierSign" }, "propAnim": "off", "spawnCondition": "item.225.amount < 1" } }
+    },
+
+
+    { "type": "ENTER", "_comment": "Remove barrier block event", "index": [218,  "settings"] },{ "type": "SET_KEY", "index": "startCondition", "content": "false" },{ "type": "EXIT", "count": 2 },
+    { "type": "ENTER", "_comment": "Remove barrier block event", "index": [220,  "settings"] },{ "type": "SET_KEY", "index": "startCondition", "content": "false" },{ "type": "EXIT", "count": 2 },
+
+    { "type": "ENTER", "_comment": "Remove barrier block event", "index": [215,  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition", "content": "false" },{ "type": "EXIT", "count": 2 },
+    { "type": "ENTER", "_comment": "Remove barrier block event", "index": [216,  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition", "content": "false" },{ "type": "EXIT", "count": 2 },
+    { "type": "ENTER", "_comment": "Remove barrier block event", "index": [217,  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition", "content": "false" },{ "type": "EXIT", "count": 2 },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

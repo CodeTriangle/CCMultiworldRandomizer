@@ -1,0 +1,23 @@
+[
+    { "type": "ENTER", "index": "entities" },
+
+    {
+      "type": "FOR_IN",
+      "_comment": "Remove rocks on the top side to open access to Meteor Shade barrier",
+      "keyword": "__INDEX__",
+      "values": [491, 490],
+      "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__", "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "spawnCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },  
+    
+    { "type": "EXIT" }    
+]

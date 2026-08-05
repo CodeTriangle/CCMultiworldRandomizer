@@ -1,0 +1,26 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [21, "settings"]
+    },
+    {
+        "_comment": "Remove the entry plot event",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

@@ -1,0 +1,19 @@
+[
+    { "type": "ENTER", "index": "entities" },
+
+    {
+        "type": "ENTER",
+        "index": [196, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+    
+    { "type": "EXIT" }    
+]

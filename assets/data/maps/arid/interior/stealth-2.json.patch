@@ -1,0 +1,49 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Deactivates the plot door and exit elevator",
+        "keyword": "__INDEX__",
+        "values": [42, 76],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Deactivate some story events",
+        "keyword": "__INDEX__",
+        "values": [91,125],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    { "_comment": "Hide Schneider", "type": "ENTER", "index": [90, "settings"] }, { "type": "SET_KEY", "index": "npcStates", "content": [ { "reactType": "FIXED_POS", "face": "WEST", "showFx": { "sheet": "teleport", "name": "showDefault" }, "hidden": true, "condition": "", "config": "", "event": [] } ] },{ "type": "EXIT", "count": 2 },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

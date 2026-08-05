@@ -1,0 +1,43 @@
+WARNING: If you're just here to try to install the mod, you're in the wrong place!
+This page is technical documentation for the backend of the mod
+Please use https://github.com/CodeTriangle/CCMultiworldRandomizer/wiki/Setup#how-to-join-a-multiworld-with-crosscode-seeds[this page]
+for setup instructions.
+
+This page lists the dependencies of the mod, in case you want to do a manual installation.
+It also serves to honor those without whom this project would not be possible.
+
+This table was last updated 29 Aug 2024 and is accurate as of version 0.6.1 of the mod.
+
+[cols="1,1,1,1"]
+|===
+| Name | Required by | Minimum Version | Releases
+
+| https://github.com/buanjautista/cc-open-world[CC-Open-World]
+| CCMultiworldRandomizer
+| 0.3.2
+| https://github.com/buanjautista/cc-open-world/releases[Click]
+
+| https://github.com/naxane/nax-ccuilib[CCUILib]
+| CCMultiworldRandomizer
+| 1.2.4
+| https://github.com/naxane/nax-ccuilib/releases[Click]
+
+| https://github.com/naxane/nax-module-cache[CCUILib]
+| CCUILib
+| 1.0.2
+| https://github.com/naxane/nax-module-cache/releases[Click]
+
+| https://github.com/CCDirectLink/CCModManager[CCModManager]
+| CCUILib
+| 0.9.21
+| https://github.com/CCDirectLink/CCModManager/releases[Click]
+|===
+
+== Manual installation
+
+Install https://wiki.c2dl.info/CCLoader[CCLoader 2], then download the *most recent*
+https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest[CCMultiworldRandomizer release] and place it
+into the `assets/mods` directory. Then, download a compliant version (probably the most recent) of all of the mods
+listed above. **Make sure you get the `.ccmod` file and not the source code zip for all mods downloaded.**
+
+Continue with the setup process as outlined in the link:Setup[setup guide].

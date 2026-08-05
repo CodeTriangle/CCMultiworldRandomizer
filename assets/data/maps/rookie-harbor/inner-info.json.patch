@@ -1,0 +1,361 @@
+[
+  {
+    "type": "ENTER",
+    "index": [
+      "entities"
+    ]
+  },
+  {
+    "_comment": "Add anti-party softlock NPC",
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "NPC",
+      "x": 648,
+      "y": 292,
+      "level": 0,
+      "settings": {
+        "size": {
+          "x": 16,
+          "y": 16
+        },
+        "mapId": 139,
+        "npcStates": [
+          {
+            "reactType": "",
+            "face": "WEST",
+            "action": [],
+            "hidden": false,
+            "condition": "",
+            "config": "normal",
+            "event": [
+              {
+                "person": {
+                  "person": "misc.blank",
+                  "expression": "GLASS"
+                },
+                "type": "ADD_MSG_PERSON",
+                "side": "RIGHT",
+                "order": 0,
+                "clearSide": true
+              },
+              {
+                "person": {
+                  "person": "main.lea",
+                  "expression": "SURPRISED"
+                },
+                "type": "ADD_MSG_PERSON",
+                "side": "LEFT",
+                "order": 5,
+                "clearSide": true
+              },
+              {
+                "0": [{
+                "person": {
+                  "person": "misc.blank",
+                  "expression": "GLASS"
+                },
+                "message": {
+                  "en_US": "Would you like to fix any party-locked members?",
+                  "de_DE": "Would you like to fix any party-locked members?",
+                  "ja_JP": "Would you like to fix any party-locked members?",
+                  "ko_KR": "Would you like to fix any party-locked members?",
+                  "zh_CN": "Would you like to fix any party-locked members?",
+                  "zh_TW": "Would you like to fix any party-locked members?",
+                  "langUid": 8867
+                },
+                "type": "SHOW_MSG"
+              },
+              {
+                "person": {
+                  "person": "misc.blank",
+                  "expression": "GLASS"
+                },
+                "message": {
+                  "en_US": "Only use in case of emergency",
+                  "de_DE": "Only use in case of emergency",
+                  "ja_JP": "Only use in case of emergency",
+                  "ko_KR": "Only use in case of emergency",
+                  "zh_CN": "Only use in case of emergency",
+                  "zh_TW": "Only use in case of emergency",
+                  "langUid": 8868
+                },
+                "type": "SHOW_MSG"
+              },
+              {
+                "0": [
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "NOD"
+                    },
+                    "message": {
+                      "en_US": "*nods*",
+                      "de_DE": "*nods*",
+                      "ja_JP": "*nods*",
+                      "ko_KR": "*nods*",
+                      "zh_CN": "*nods*",
+                      "zh_TW": "*nods*",
+                      "langUid": 8869
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "type": "SET_MEMBER_LOCKED",
+                    "locked": false,
+                    "member": "Emilie"
+                  },
+                  {
+                    "type": "SET_MEMBER_LOCKED",
+                    "locked": false,
+                    "member": "Glasses"
+                  },
+                  {
+                    "type": "SET_MEMBER_LOCKED",
+                    "locked": false,
+                    "member": "Apollo"
+                  },
+                  {
+                    "type": "SET_MEMBER_LOCKED",
+                    "locked": false,
+                    "member": "Joern"
+                  },
+                  {
+                    "type": "SET_MEMBER_LOCKED",
+                    "locked": false,
+                    "member": "Shizuka"
+                  },
+                  {
+                    "type": "SET_MEMBER_LOCKED",
+                    "locked": false,
+                    "member": "Schneider2"
+                  },
+                  {
+                    "type": "SHOW_CENTER_MSG",
+                    "text": {
+                      "en_US": "have been removed",
+                      "de_DE": "have been removed",
+                      "ja_JP": "have been removed",
+                      "ko_KR": "have been removed",
+                      "zh_CN": "have been removed",
+                      "zh_TW": "have been removed",
+                      "langUid": 8486
+                    },
+                    "titleText": {
+                      "en_US": "Party locks",
+                      "de_DE": "Party locks",
+                      "ja_JP": "Party locks",
+                      "ko_KR": "Party locks",
+                      "zh_CN": "Party locks",
+                      "zh_TW": "Party locks",
+                      "langUid": 9496
+                    }
+                  },
+                  {
+                    "person": {
+                      "person": "misc.blank",
+                      "expression": "GLASS"
+                    },
+                    "message": {
+                      "en_US": "Alright, there you go.",
+                      "de_DE": "Alright, there you go.",
+                      "ja_JP": "Alright, there you go.",
+                      "ko_KR": "Alright, there you go.",
+                      "zh_CN": "Alright, there you go.",
+                      "zh_TW": "Alright, there you go.",
+                      "langUid": 8868
+                    },
+                    "type": "SHOW_MSG"
+                  }
+                ],
+                "1": [
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "SHAKE"
+                    },
+                    "message": {
+                      "en_US": "*shake*",
+                      "de_DE": "*shake*",
+                      "ja_JP": "*shake*",
+                      "ko_KR": "*shake*",
+                      "zh_CN": "*shake*",
+                      "zh_TW": "*shake*",
+                      "langUid": 8865
+                    },
+                    "type": "SHOW_MSG"
+                  }
+                ],
+                "type": "SHOW_CHOICE",
+                "person": {
+                  "person": "main.lea",
+                  "expression": "THINKING"
+                },
+                "options": [
+                  {
+                    "0": " ",
+                    "label": {
+                      "en_US": "[Yes]",
+                      "de_DE": "[Yes]",
+                      "fr_FR": "fr_FR",
+                      "langUid": 120,
+                      "zh_CN": "[Yes]",
+                      "ja_JP": "[Yes]",
+                      "ko_KR": "[Yes]",
+                      "zh_TW": "[Yes]"
+                    }
+                  },
+                  {
+                    "0": " ",
+                    "label": {
+                      "en_US": "[Not now]",
+                      "de_DE": "[Nicht jetzt]",
+                      "fr_FR": "fr_FR",
+                      "langUid": 121,
+                      "zh_CN": "[现在不行]",
+                      "ja_JP": "[今はやめておく]",
+                      "ko_KR": "[다음에]",
+                      "zh_TW": "[現在不行]"
+                    }
+                  }
+                ]
+              }
+            ],
+            "1": [
+              {
+              "person": {
+                "person": "misc.blank",
+                "expression": "GLASS"
+              },
+              "message": {
+                "en_US": "Are you a time-traveller that got stuck going back?",
+                "de_DE": "Are you a time-traveller that got stuck going back?",
+                "ja_JP": "Are you a time-traveller that got stuck going back?",
+                "ko_KR": "Are you a time-traveller that got stuck going back?",
+                "zh_CN": "Are you a time-traveller that got stuck going back?",
+                "zh_TW": "Are you a time-traveller that got stuck going back?",
+                "langUid": 8867
+              },
+              "type": "SHOW_MSG"
+            },
+              {
+              "person": {
+                "person": "misc.blank",
+                "expression": "GLASS"
+              },
+              "message": {
+                "en_US": "Don't worry i've got your back.",
+                "de_DE": "Don't worry i've got your back.",
+                "ja_JP": "Don't worry i've got your back.",
+                "ko_KR": "Don't worry i've got your back.",
+                "zh_CN": "Don't worry i've got your back.",
+                "zh_TW": "Don't worry i've got your back.",
+                "langUid": 8867
+              },
+              "type": "SHOW_MSG"
+            },
+            {
+              "type": "SET_MOBILITY_BLOCK",
+              "value": "none"
+            },
+            {
+              "type": "SHOW_CENTER_MSG",
+              "text": {
+                "en_US": "have been removed",
+                "de_DE": "have been removed",
+                "ja_JP": "have been removed",
+                "ko_KR": "have been removed",
+                "zh_CN": "have been removed",
+                "zh_TW": "have been removed",
+                "langUid": 8486
+              },
+              "titleText": {
+                "en_US": "Menu locks",
+                "de_DE": "Menu locks",
+                "ja_JP": "Menu locks",
+                "ko_KR": "Menu locks",
+                "zh_CN": "Menu locks",
+                "zh_TW": "Menu locks",
+                "langUid": 9496
+              }
+            },
+            {
+              "person": {
+                "person": "misc.blank",
+                "expression": "GLASS"
+              },
+              "message": {
+                "en_US": "Alright, there you go.",
+                "de_DE": "Alright, there you go.",
+                "ja_JP": "Alright, there you go.",
+                "ko_KR": "Alright, there you go.",
+                "zh_CN": "Alright, there you go.",
+                "zh_TW": "Alright, there you go.",
+                "langUid": 8868
+              },
+              "type": "SHOW_MSG"
+            }
+          ],
+            "type": "SHOW_CHOICE",
+            "person": {
+              "person": "main.lea",
+              "expression": "THINKING"
+            },
+            "options": [
+              {
+                "0": " ",
+                "label": {
+                  "en_US": "Remove party locks",
+                  "de_DE": "Remove party locks",
+                  "fr_FR": "fr_FR",
+                  "langUid": 120,
+                  "zh_CN": "Remove party locks",
+                  "ja_JP": "Remove party locks",
+                  "ko_KR": "Remove party locks",
+                  "zh_TW": "Remove party locks"
+                }
+              },
+              {
+                "0": " ",
+                "label": {
+                  "en_US": "Fix menu locks",
+                  "de_DE": "Fix menu locks",
+                  "fr_FR": "fr_FR",
+                  "langUid": 121,
+                  "zh_CN": "Fix menu locks",
+                  "ja_JP": "Fix menu locks",
+                  "ko_KR": "Fix menu locks",
+                  "zh_TW": "Fix menu locks"
+                }
+              },
+              {
+                "0": " ",
+                "label": {
+                  "en_US": "[Not now]",
+                  "de_DE": "[Nicht jetzt]",
+                  "fr_FR": "fr_FR",
+                  "langUid": 121,
+                  "zh_CN": "[现在不行]",
+                  "ja_JP": "[今はやめておく]",
+                  "ko_KR": "[다음에]",
+                  "zh_TW": "[現在不行]"
+                }
+              }
+            ]
+          },
+              {
+                "type": "CLEAR_MSG",
+                "side": "ALL"
+              }
+            ]
+          }
+        ],
+        "characterName": "misc.blank",
+        "name": "PartyFixer"
+      }
+    }
+  },
+  {
+    "type": "EXIT",
+    "count": 1
+  }
+]

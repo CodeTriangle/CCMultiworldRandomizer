@@ -1,0 +1,835 @@
+[
+	{ "type": "ENTER", "index": "entities" },
+	{ "type": "ENTER", "index": 843 },
+	{
+		"_comment": "Post expo scene not linked with story, also fixes party members",
+		"type": "SET_KEY",
+		"index": "settings",
+		"content": {
+			"name": "PostExpoScene",
+			"eventType": "CUTSCENE",
+			"endCondition": "plot.heatLine >= 505",
+			"event": [
+				{
+					"changeType": "set",
+					"type": "CHANGE_VAR_NUMBER",
+					"varName": "plot.heatLine",
+					"value": 505
+				},
+				{
+					"volume": 1,
+					"name": "",
+					"loop": false,
+					"offset": 0,
+					"startTime": 0,
+					"type": "PLAY_SOUND",
+					"sound": "media/sound/scenes/swoosh-fall-long.ogg"
+				},
+				{
+					"mode": "MEDIUM",
+					"delayed": false,
+					"type": "RESUME_DEFAULT_BGM"
+				},
+				{
+					"entity": {
+						"party": "Member2"
+					},
+					"position": {
+						"x": 448,
+						"y": 572,
+						"lvl": "1"
+					},
+					"type": "SET_ENTITY_POS"
+				},
+				{
+					"entity": {
+						"party": "Member3"
+					},
+					"position": {
+						"x": 400,
+						"y": 572,
+						"lvl": "1"
+					},
+					"type": "SET_ENTITY_POS"
+				},
+				{
+					"entity": {
+						"party": "Member3"
+					},
+					"action": [
+						{
+							"face": "NORTH",
+							"rotate": true,
+							"rotateSpeed": 3,
+							"type": "SET_FACE"
+						}
+					],
+					"repeating": false,
+					"wait": false,
+					"keepState": false,
+					"immediately": false,
+					"type": "DO_ACTION"
+				},
+				{
+					"entity": {
+						"party": "Member2"
+					},
+					"action": [
+						{
+							"face": "NORTH",
+							"rotate": true,
+							"rotateSpeed": 3,
+							"type": "SET_FACE"
+						}
+					],
+					"repeating": false,
+					"wait": false,
+					"keepState": false,
+					"immediately": false,
+					"type": "DO_ACTION"
+				},
+				{
+					"alpha": 1,
+					"time": 0,
+					"lighter": true,
+					"type": "SET_OVERLAY",
+					"color": "WHITE"
+				},
+				{
+					"ignoreSlowDown": false,
+					"type": "WAIT",
+					"time": 0.1
+				},
+				{
+					"pos": {
+						"x": 424,
+						"y": 424
+					},
+					"speed": "IMMEDIATELY",
+					"transition": "EASE_IN_OUT",
+					"wait": true,
+					"waitSkip": 0,
+					"zoom": 2,
+					"type": "SET_CAMERA_POS"
+				},
+				{
+					"zoom": 1,
+					"duration": 2,
+					"transition": "EASE_OUT",
+					"type": "SET_CAMERA_ZOOM"
+				},
+				{
+					"alpha": 0,
+					"time": 2,
+					"lighter": true,
+					"type": "SET_OVERLAY",
+					"color": "WHITE"
+				},
+				{
+					"ignoreSlowDown": false,
+					"type": "WAIT",
+					"time": 2
+				},
+				{
+					"pos": {
+						"x": 424,
+						"y": 576
+					},
+					"speed": "NORMAL",
+					"transition": "EASE_IN_OUT",
+					"wait": true,
+					"waitSkip": 0,
+					"zoom": 1,
+					"type": "SET_CAMERA_POS"
+				},
+				{
+					"entity": {
+						"player": true
+					},
+					"action": [
+						{
+							"face": "SOUTH",
+							"rotate": true,
+							"rotateSpeed": 3,
+							"type": "SET_FACE"
+						}
+					],
+					"repeating": false,
+					"wait": false,
+					"keepState": false,
+					"immediately": false,
+					"type": "DO_ACTION"
+				},
+				{
+					"entity": {
+						"party": "Member3"
+					},
+					"action": [
+						{
+							"entity": {
+								"player": true
+							},
+							"rotate": true,
+							"rotateSpeed": 3,
+							"type": "SET_FACE_TO_ENTITY"
+						}
+					],
+					"repeating": false,
+					"wait": false,
+					"keepState": false,
+					"immediately": false,
+					"type": "DO_ACTION"
+				},
+				{
+					"entity": {
+						"party": "Member2"
+					},
+					"action": [
+						{
+							"entity": {
+								"player": true
+							},
+							"rotate": true,
+							"rotateSpeed": 3,
+							"type": "SET_FACE_TO_ENTITY"
+						}
+					],
+					"repeating": false,
+					"wait": false,
+					"keepState": false,
+					"immediately": false,
+					"type": "DO_ACTION"
+				},
+				{
+					"side": "LEFT",
+					"order": 0,
+					"clearSide": false,
+					"type": "ADD_MSG_PERSON",
+					"person": {
+						"person": "main.glasses",
+						"expression": "DEFAULT"
+					}
+				},
+				{
+					"side": "RIGHT",
+					"order": 5,
+					"clearSide": false,
+					"type": "ADD_MSG_PERSON",
+					"person": {
+						"person": "main.emilie",
+						"expression": "DEFAULT"
+					}
+				},
+				{
+					"side": "RIGHT",
+					"order": 0,
+					"clearSide": false,
+					"type": "ADD_MSG_PERSON",
+					"person": {
+						"person": "main.lea",
+						"expression": "DEFAULT"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Okey-dokey! Got the Sand Shade.",
+						"de_DE": "Okey-dokey! Sandform erhalten.",
+						"fr_FR": "fr_FR",
+						"zh_CN": "好嘞！拿到黄沙证印了。",
+						"ja_JP": "やったあ！サンドシェードが手に入りましたね！<<A<<[CHANGED 2017/08/03]",
+						"langUid": 947,
+						"ko_KR": "오키 도키! 모래 셰이드를 얻었어.",
+						"zh_TW": "好了！拿到黃沙證印了。"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.glasses",
+						"expression": "DEFAULT"
+					}
+				},
+				{
+					"message": {
+						"en_US": "I wonder if we ever get to fight those huge space birds.",
+						"de_DE": "Ich frage mich, ob wir irgendwann mal gegen diese riesigen Weltraumvögel kämpfen werden.",
+						"fr_FR": "fr_FR",
+						"zh_CN": "不知道以后会不会还要打那些鸟。",
+						"ja_JP": "あの大きな宇宙の鳥人間とは、いつか\n戦うことになるのかなあ。<<A<<[CHANGED 2017/08/03]",
+						"langUid": 945,
+						"ko_KR": "대체 언제쯤 저 커다란 우주 새와 싸울 수 있을지 궁금해.",
+						"zh_TW": "不知道以後會不會還要打那些鳥。"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.emilie",
+						"expression": "SUSPICIOUS"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Eh...\\. I haven't heard of that, yet.",
+						"de_DE": "Öhm...\\. Davon hab ich noch nichts gehört.",
+						"fr_FR": "fr_FR",
+						"zh_CN": "呃...\\.不会吧。",
+						"ja_JP": "えっと...\\.そういうのはまだ聞いたことないですね。<<A<<[CHANGED 2017/08/03]",
+						"langUid": 946,
+						"ko_KR": "에...\\. 그런 얘기 난 아직 들어본 적 없는데.",
+						"zh_TW": "呃...\\.不會吧。"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.glasses",
+						"expression": "EMBARRASSED"
+					}
+				},
+				{
+					"message": {
+						"en_US": "So this is your first time playing CrossWorlds, too?",
+						"de_DE": "Ach so, du spielst CrossWorlds auch zum ersten Mal?",
+						"fr_FR": "fr_FR",
+						"zh_CN": "对了，你也是第一次玩远星世界吗？",
+						"ja_JP": "ってことは、あなたもクロスワールドを\nプレイするのは初めてなの？<<A<<[CHANGED 2017/08/03]",
+						"langUid": 25,
+						"ko_KR": "너도 이번에 크로스월드를 처음 플레이하는 거니?",
+						"zh_TW": "對了，你也是第一次玩遠星世界嗎？<<A<<[CHANGED 2017/07/07]"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.emilie",
+						"expression": "DEFAULT"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Pretty much. But I know some people who've played longer.",
+						"de_DE": "So ziemlich. Aber ich kenne einige Leute, die schon länger spielen.",
+						"fr_FR": "fr_FR",
+						"zh_CN": "嗯。不过我认识一些老玩家。",
+						"ja_JP": "そんなところですね。でも、\n長くプレイしてる人たちと知り合いなので。<<A<<[CHANGED 2017/08/03]",
+						"langUid": 948,
+						"ko_KR": "그렇지. 하지만 더 긴 시간 동안 플레이 한 사람들을 알아.",
+						"zh_TW": "嗯。不過我認識一些資深玩家。"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.glasses",
+						"expression": "DEFAULT"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Oh, like the other guild members?",
+						"de_DE": "Meinst du die anderen Gildenmitglieder?",
+						"fr_FR": "fr_FR",
+						"zh_CN": "哦？是公会里其他人吗？",
+						"ja_JP": "ああ、他のギルドメンバーとか？<<A<<[CHANGED 2017/08/03]",
+						"langUid": 949,
+						"ko_KR": "다른 길드 멤버 중에 말이야?",
+						"zh_TW": "哦？是公會裡其他人嗎？"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.emilie",
+						"expression": "DEFAULT"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Ah, no. Not them. I don't know them personally.",
+						"de_DE": "Nein, die meine ich nicht. Die Leute, die ich meine, kenne ich nicht persönlich.",
+						"fr_FR": "fr_FR",
+						"zh_CN": "不是。我之前也不认识他们。",
+						"ja_JP": "ああ、いや、彼らじゃないです。\n個人的な付き合いはないですし。<<A<<[CHANGED 2017/08/03]",
+						"langUid": 950,
+						"ko_KR": "아, 아니, 길드 멤버는 아니고. 난 그들을 개인적으로 아는 건 아니거든.",
+						"zh_TW": "不是。我之前也不認識他們。"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.glasses",
+						"expression": "TOWARD"
+					}
+				},
+				{
+					"message": {
+						"en_US": "I just joined the First Scholars because they seemed like fun.",
+						"de_DE": "Den Ersten Gelehrten bin ich übrigens deshalb beigetreten, weil ich glaube, dass man mit ihnen eine Menge Spaß haben kann.",
+						"fr_FR": "fr_FR",
+						"zh_CN": "我加入第一学者是因为他们看上去是一伙有意思的家伙。",
+						"ja_JP": "僕がファーストスカラーに参加したのは、\n単に楽しそうだったからですよ。<<A<<[CHANGED 2017/08/03]",
+						"langUid": 951,
+						"ko_KR": "난 그냥 최초의 학자들이 재미있어 보여서 가입한 거야.",
+						"zh_TW": "我加入第一學者是因為他們看上去是一夥有意思的傢伙。<<A<<[CHANGED 2017/07/07]"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.glasses",
+						"expression": "SMILE"
+					}
+				},
+				{
+					"message": {
+						"en_US": "I like that they're not all about the gameplay.\\. It's funny how Hlin tries to get the most out of the lore and all.",
+						"de_DE": "Mir gefällt, dass sie nicht so versessen auf das Gameplay sind.\\. Und auch, wie Hlin versucht, so viel wie möglich über die Hintergrundgeschichte und das alles zu erfahren.",
+						"fr_FR": "fr_FR",
+						"zh_CN": "他们不光注重游戏内容这点我很喜欢。\\.尤其是希尔琳这么执着于游戏剧情。",
+						"ja_JP": "ゲームプレイ一辺倒じゃないところが好きなん\nです。\\.フリーンがゲーム内の伝承を\n解き明かそうとしてるのも面白いですしね。<<A<<[CHANGED 2017/08/03]",
+						"langUid": 952,
+						"ko_KR": "난 그들이 게임플레이만 하는 게 아니라 좋아서 말이야.\\. 흐린이 지식을 최대한 활용하려고 하는 게 얼마나 웃기는데.",
+						"zh_TW": "他們不光注重遊戲內容，這點我很喜歡。\\.尤其是希爾琳這麼執著於遊戲劇情。<<A<<[CHANGED 2017/07/07]"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.glasses",
+						"expression": "EMBARRASSED"
+					}
+				},
+				{
+					"message": {
+						"en_US": "[nods]",
+						"de_DE": "[nickt]",
+						"fr_FR": "fr_FR",
+						"zh_CN": "[点头]",
+						"ja_JP": "[うなずく]<<A<<[CHANGED 2017/08/03]",
+						"langUid": 953,
+						"ko_KR": "[끄덕]",
+						"zh_TW": "[點頭]"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.lea",
+						"expression": "NOD"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Oui, I noticed that.",
+						"de_DE": "Oui, das habe ich bemerkt.",
+						"fr_FR": "fr_FR",
+						"zh_CN": "嗯，是哦。",
+						"ja_JP": "うん、それ、わかる。<<A<<[CHANGED 2017/08/03]",
+						"langUid": 26,
+						"ko_KR": "그래, 그건 알고 있었지.",
+						"zh_TW": "嗯，是哦。"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.emilie",
+						"expression": "SMILE"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Man, I can't wait to reach the level of Lukas and the others.",
+						"de_DE": "Mann, ich kann's kaum erwarten, dasselbe Level wie Lukas und die anderen zu erreichen.",
+						"fr_FR": "fr_FR",
+						"zh_CN": "哈，我已经等不及要追上卢卡斯他们的等级和他们一起玩了。",
+						"ja_JP": "ああ、ルーカスたちと同じレベルになるのが\n待ちきれないなあ。<<A<<[CHANGED 2017/08/03]",
+						"langUid": 954,
+						"ko_KR": "대체 언제쯤 루카스랑 다른 사람들처럼 레벨이 오를까?",
+						"zh_TW": "哈哈，我已經等不及要追上盧卡斯他們的等級和他們一起玩了。"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.emilie",
+						"expression": "DETERMINED"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Then we can do all kinds of guild events!\\. Raids and all that!",
+						"de_DE": "Dann können wir endlich bei Raids und sowas mitmachen!",
+						"fr_FR": "fr_FR",
+						"zh_CN": "有各种公会活动可以玩！\\.团队副本什么的！",
+						"ja_JP": "そうすればどんなギルドイベントにも\n参加できるもん！\\.レイドとか色々さ！<<A<<[CHANGED 2017/08/03]",
+						"langUid": 955,
+						"ko_KR": "그러면 모든 길드 이벤트를 할 수 있잖아!\\. 레이드 같은 거 말이야!",
+						"zh_TW": "有各種公會活動可以玩！\\.團隊副本什麼的！<<A<<[CHANGED 2017/07/07]"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.emilie",
+						"expression": "UP"
+					}
+				},
+				{
+					"message": {
+						"en_US": "...!",
+						"de_DE": "...!",
+						"fr_FR": "fr_FR",
+						"zh_CN": "...!",
+						"ja_JP": "...！<<A<<[CHANGED 2017/08/03]",
+						"langUid": 956,
+						"ko_KR": "...!",
+						"zh_TW": "...!"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.lea",
+						"expression": "ASTONISHED"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Oh yes, that does sound like fun!",
+						"de_DE": "Oh ja, da hab ich auch richtig Lust drauf!",
+						"fr_FR": "fr_FR",
+						"zh_CN": "嗯，好像很有趣的样子！",
+						"ja_JP": "そうですね、それは楽しそうだ！<<A<<[CHANGED 2017/08/03]",
+						"langUid": 957,
+						"ko_KR": "맞아, 재미있을 거 같아!",
+						"zh_TW": "嗯，好像很有趣的樣子！"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.glasses",
+						"expression": "SMILE"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Anyway...\\. Next is Faj'ro Temple.",
+						"de_DE": "Also dann...\\. Auf zum Faj'ro-Tempel.",
+						"fr_FR": "fr_FR",
+						"zh_CN": "那么...\\.下一站就是法加罗神庙了。",
+						"ja_JP": "とにかく...\\.まずはファイロ神殿です。<<A<<[CHANGED 2017/08/03]",
+						"langUid": 958,
+						"ko_KR": "아무튼...\\. 다음은 파즈로 사원이야.",
+						"zh_TW": "那麼...\\.下一站就是法加羅神廟了。"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.glasses",
+						"expression": "TOWARD"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Also that duel...?",
+						"de_DE": "Und zum Duell...",
+						"fr_FR": "fr_FR",
+						"zh_CN": "还有那场决斗...?",
+						"ja_JP": "それから、決闘も...？<<A<<[CHANGED 2017/08/03]",
+						"langUid": 959,
+						"ko_KR": "결투도 그쪽이지...?",
+						"zh_TW": "還有那場決鬥...?"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.glasses",
+						"expression": "WORRIED"
+					}
+				},
+				{
+					"message": {
+						"en_US": "Oui, that's right!",
+						"de_DE": "Oui, richtig!",
+						"fr_FR": "fr_FR",
+						"zh_CN": "对哦！",
+						"ja_JP": "ああ、そうだった！<<A<<[CHANGED 2017/08/03]",
+						"langUid": 960,
+						"ko_KR": "응, 맞아!",
+						"zh_TW": "對哦！"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.emilie",
+						"expression": "ASTONISHED"
+					}
+				},
+				{
+					"side": "LEFT",
+					"order": 5,
+					"clearSide": false,
+					"type": "ADD_MSG_PERSON",
+					"person": {
+						"person": "main.emilie",
+						"expression": "DETERMINED"
+					}
+				},
+				{
+					"message": {
+						"en_US": "You've got to beat your name into that guy's head already, Lea!",
+						"de_DE": "Du musst deinen Namen endlich in sein Hirn prügeln, Lea!",
+						"fr_FR": "fr_FR",
+						"zh_CN": "莉亚，你要痛扁他一顿，然后把你的名字锤进他的脑袋里！",
+						"ja_JP": "あなたの名前をあいつの頭に\n刻み込んでやらなきゃ、レア！<<A<<[CHANGED 2018/09/19]",
+						"langUid": 961,
+						"ko_KR": "반드시 그 녀석의 머리에 네 이름을 각인시키라고, 레아!<<A<<[CHANGED 2018/09/19]",
+						"zh_TW": "莉亞，你要痛扁他一頓，然後把你的名字錘進他的腦袋裡！<<A<<[CHANGED 2018/09/19]"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.emilie",
+						"expression": "DETERMINED"
+					}
+				},
+				{
+					"message": {
+						"en_US": "...!",
+						"de_DE": "...!",
+						"fr_FR": "fr_FR",
+						"zh_CN": "...!",
+						"ja_JP": "...！<<A<<[CHANGED 2017/08/03]",
+						"langUid": 962,
+						"ko_KR": "...!",
+						"zh_TW": "...!"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.lea",
+						"expression": "DETERMINED"
+					}
+				},
+				{
+					"type": "IF",
+					"withElse": true,
+					"condition": "newgame.sergey-hax || player.paramAvg >= 150",
+					"thenStep": [
+						{
+							"message": {
+								"en_US": "Well, not that you'd need to prepare for that... really.",
+								"de_DE": "Nun ja... das dürfte dir wohl nicht allzu schwer fallen, oder?",
+								"zh_CN": "不过你也不需要准备了...",
+								"ja_JP": "まあ、あなたは別に準備する必要は\nないと思いますけど...実際のところ。<<A<<[CHANGED 2019/08/16]",
+								"ko_KR": "뭐, 그걸 위해 준비해야 할 건 없겠지만...<<A<<[CHANGED 2019/08/16]",
+								"langUid": 1086,
+								"zh_TW": "不過你也不需要準備了...<<A<<[CHANGED 2019/08/16]"
+							},
+							"autoContinue": false,
+							"type": "SHOW_MSG",
+							"person": {
+								"person": "main.glasses",
+								"expression": "EMBARRASSED"
+							}
+						},
+						{
+							"type": "IF",
+							"withElse": true,
+							"condition": "newgame.sergey-hax",
+							"thenStep": [
+								{
+									"message": {
+										"en_US": "...!",
+										"de_DE": "...!",
+										"zh_CN": "...!",
+										"ja_JP": "...！<<A<<[CHANGED 2019/08/16]",
+										"ko_KR": "...!<<A<<[CHANGED 2019/08/16]",
+										"langUid": 1084,
+										"zh_TW": "...!<<A<<[CHANGED 2019/08/16]"
+									},
+									"autoContinue": false,
+									"type": "SHOW_MSG",
+									"person": {
+										"person": "main.lea",
+										"expression": "INSANE_DOWN"
+									}
+								}
+							],
+							"elseStep": [
+								{
+									"message": {
+										"en_US": "...!",
+										"de_DE": "...!",
+										"zh_CN": "...!",
+										"ja_JP": "...！<<A<<[CHANGED 2019/08/16]",
+										"ko_KR": "...!<<A<<[CHANGED 2019/08/16]",
+										"langUid": 1087,
+										"zh_TW": "...!<<A<<[CHANGED 2019/08/16]"
+									},
+									"autoContinue": false,
+									"type": "SHOW_MSG",
+									"person": {
+										"person": "main.lea",
+										"expression": "SMUG"
+									}
+								}
+							]
+						},
+						{
+							"message": {
+								"en_US": "Still wouldn't hurt to do a few more quests, right?",
+								"de_DE": "Es kann aber nicht schaden, noch ein paar Quests zu machen, oder?",
+								"zh_CN": "不过再做几个任务也没问题，对吧？",
+								"ja_JP": "まだいくつかクエストをこなしても\nいいんじゃないですか？<<A<<[CHANGED 2019/08/16]",
+								"ko_KR": "아직 퀘스트 좀 더 해도 괜찮겠지?<<A<<[CHANGED 2019/08/16]",
+								"langUid": 1085,
+								"zh_TW": "不過再做幾個任務也沒問題，對吧？<<A<<[CHANGED 2019/08/16]"
+							},
+							"autoContinue": false,
+							"type": "SHOW_MSG",
+							"person": {
+								"person": "main.glasses",
+								"expression": "DEFAULT"
+							}
+						}
+					],
+					"elseStep": [
+						{
+							"message": {
+								"en_US": "You should make sure you're well prepared.",
+								"de_DE": "Du solltest dich gut vorbereiten, Lea.",
+								"fr_FR": "fr_FR",
+								"zh_CN": "可要准备充分。",
+								"ja_JP": "その前にしっかり準備したほうがいいでしょうね。<<A<<[CHANGED 2017/08/03]",
+								"langUid": 963,
+								"ko_KR": "준비는 충분히 하는게 좋을 거야.",
+								"zh_TW": "要準備的充分。"
+							},
+							"autoContinue": false,
+							"type": "SHOW_MSG",
+							"person": {
+								"person": "main.glasses",
+								"expression": "DOWN"
+							}
+						},
+						{
+							"message": {
+								"en_US": "You know...\\. solve some quests, upgrade your equipment and all that.",
+								"de_DE": "Du weißt schon...\\. Quests machen, deine Ausrüstung verbessern und so weiter.",
+								"fr_FR": "fr_FR",
+								"zh_CN": "你懂的...\\.做任务啊，升级装备啊什么的。",
+								"ja_JP": "具体的には...\\.クエストを解決するとか、\n装備をアップグレードするとかですかね。<<A<<[CHANGED 2017/08/03]",
+								"langUid": 964,
+								"ko_KR": "그런 거 말이야...\\. 퀘스트를 완료하고, 장비를 업그레이드하는 것들.",
+								"zh_TW": "你懂的...\\.做任務啊，升級裝備啊什麼的。"
+							},
+							"autoContinue": false,
+							"type": "SHOW_MSG",
+							"person": {
+								"person": "main.glasses",
+								"expression": "TOWARD"
+							}
+						}
+					]
+				},
+				{
+					"message": {
+						"en_US": "You heard him! Let's go!",
+						"de_DE": "Du hast's gehört! Los geht's!",
+						"fr_FR": "fr_FR",
+						"zh_CN": "没错，我们走吧!",
+						"ja_JP": "聞いたでしょ！行こう！<<A<<[CHANGED 2017/08/03]",
+						"langUid": 965,
+						"ko_KR": "들었지? 가자!<<A<<[CHANGED 2017/07/21]",
+						"zh_TW": "沒錯，我們走吧!<<A<<[CHANGED 2017/07/11]"
+					},
+					"autoContinue": false,
+					"type": "SHOW_MSG",
+					"person": {
+						"person": "main.emilie",
+						"expression": "SMILE"
+					}
+				},
+				{
+					"side": "ALL",
+					"type": "CLEAR_MSG"
+				},
+				{
+					"type": "SET_MEMBER_LOCKED",
+					"member": "Emilie",
+					"locked": false
+				},
+				{
+					"type": "SET_MEMBER_LOCKED",
+					"member": "Glasses",
+					"locked": false
+				},
+				{
+					"type": "SAVE"
+				}
+			],
+			"triggerType": "ALWAYS",
+			"mapId": 1222,
+			"startCondition": "plot.heatLine >= 500"
+		}
+	},
+	{ "type": "EXIT", "count": 1 },
+
+	{ "type": "ENTER", "index": [ 831, "settings" ] },
+	{
+		"_comment": "Remove meetup with Emilie / Apollo encounter",
+		"type": "SET_KEY",
+		"index": "startCondition",
+		"content": "false"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{
+		"type": "FOR_IN",
+		"_comment": "Removes other story events",
+		"keyword": "__INDEX__",
+		"values": [ 786, 829, 834 ],
+		"body": [ { "type": "ENTER", "index": [ "__INDEX__", "settings" ] }, { "type": "SET_KEY", "index": "startCondition", "content": "false" }, { "type": "EXIT", "count": 2 } ]
+	},
+
+	{ "_comment": "Hide Apollo and Joern", "type": "FOR_IN", "keyword": "__INDEX__", "values": [ 833, 832 ], "body": [ { "type": "ENTER", "index": [ "__INDEX__", "settings" ] }, { "type": "SET_KEY", "index": "npcStates", "content": [ { "reactType": "FIXED_POS", "face": "WEST", "showFx": { "sheet": "teleport", "name": "showDefault" }, "hidden": true, "condition": "", "config": "", "event": [] } ] }, { "type": "EXIT", "count": 2 } ] },
+
+	{ "type": "ENTER", "index": [835, "settings"] },
+	{
+		"_comment": "Remove Apollo touch trigger",
+		"type": "SET_KEY",
+		"index": "startCondition",
+		"content": "false"
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{
+		"type": "FOR_IN",
+		"_comment": "Changes start condition for shade grab cutscene events",
+		"keyword": "__INDEX__",
+		"values": [ 838, 839 ],
+		"body": [ { "type": "ENTER", "index": [ "__INDEX__", "settings" ] }, { "type": "SET_KEY", "index": "startCondition", "content": "(item.237.amount >= 1) && (plot.heatLine < 500) && (plot.heatLine > 300)" }, { "type": "EXIT", "count": 2 } ]
+	},
+
+	{ "type": "ENTER", "index": [ 841, "settings" ] },
+	{
+		"_comment": "NPC check for shade cutscene",
+		"type": "SET_KEY",
+		"index": "npcStates",
+		"content": [ { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": false, "condition": "item.237.amount >= 1", "config": "normal", "event": { "quest": [ { "mode": "SLOW", "type": "PAUSE_BGM" }, { "entity": { "party": "Member3" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 400, "y": 572, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "entity": { "party": "Member2" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 448, "y": 572, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 424, "y": 552, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": true, "keepState": false, "type": "DO_ACTION" }, { "pos": { "x": 424, "y": 428 }, "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "zoomType": "LIGHT", "fadeIn": 0.5, "duration": 2, "fadeOut": 0, "type": "SET_ZOOM_BLUR" }, { "alpha": 1, "time": 2, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "zoom": 2, "duration": 2, "transition": "EASE_IN", "type": "SET_CAMERA_ZOOM" }, { "volume": 0.8, "name": "", "loop": false, "offset": 0, "startTime": 0, "type": "PLAY_SOUND", "sound": "media/sound/scenes/swoosh-rise-long.ogg" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 2 }, { "lighter": true, "type": "SET_TELEPORT_COLOR", "color": "white" }, { "type": "TELEPORT", "map": "heat-village.special.expo-space", "marker": "start" } ] } }, { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": true, "condition": "plot.heatLine >= 500", "config": "normal", "event": [] } ]
+	},
+	{ "type": "EXIT", "count": 2 },
+
+	{
+		"type": "ENTER",
+		"index": [ 826, "settings", "npcStates" ]
+	},
+	{ "type": "ENTER", "index": 4 },
+	{
+		"_comment": "Replace fajro completion for flame shade for second quest",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content": "quest.bakiTrader-1-crate_defense_1.solved && (item.230.amount >= 1) && !quest.bakiTrader-2-brewing_fun_1.started"
+	},
+	{ "type": "EXIT", "count": 1 },
+	{ "type": "ENTER", "index": 7 },
+	{
+		"_comment": "Replace DLC completion for third quest",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content": "open-world.dlcActive && quest.bakiTrader-2-brewing_fun_1.solved && quest.bakiTrader-2-brewing_challenge_1.solved && !quest.bakiTrader-3-brewing_ghosts_1.started && item.626.amount >= 1"
+	},
+	{ "type": "EXIT", "count": 4 },
+
+	{ "type": "EXIT" }
+]

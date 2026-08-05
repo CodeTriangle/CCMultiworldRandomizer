@@ -1,0 +1,45 @@
+[
+	{ "type": "ENTER", "index": ["entities"] },
+    
+    { "type": "ENTER", "_comment": "Changing Grumpy", "index": [941, "settings", "npcStates"] },
+	{
+		"type": "FOR_IN",
+		"keyword": { "indexid": "__INDEX__", "value": "__VAR__" },
+		"values": [
+			{ "indexid": "0", "value": "plot.guildEntry >= 80" },
+			{ "indexid": "1", "value": "plot.shareholder >= 2000" }
+		],
+		"body": [ { "type": "ENTER", "index": "__INDEX__" }, { "type": "SET_KEY", "index": "condition", "content": "__VAR__" }, { "type": "EXIT", "count": 1 } ]
+	},
+    { "type": "ENTER", "index": [0, "event"] }, 
+    { 
+        "type": "SET_KEY", 
+        "index": 111, 
+        "content": { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.shareholder", "value": "2000" } 
+    }, 
+    { "type": "EXIT", "count": 2 },
+    { "type": "EXIT", "count": 3 },
+
+	{ "type": "ENTER", "_comment": "Changing investor", "index": [942, "settings", "npcStates"] },
+	{
+		"type": "FOR_IN",
+		"keyword": { "index": "__INDEX__", "variable": "__VAR__" },
+		"values": [
+			{ "index": "0", "variable": "plot.guildEntry >= 80" },
+			{ "index": "1", "variable": "plot.shareholder >= 2000" }
+		],
+		"body": [ { "type": "ENTER", "index": "__INDEX__" }, { "type": "SET_KEY", "index": "condition", "content": "__VAR__" }, { "type": "EXIT", "count": 1 } ]
+	},
+	{ "type": "EXIT", "count": 3 },
+	
+	{ 
+    "type": "IF", 
+    "_comment": "Adds corresponding patch if Extra Sandwich is on", 
+    "cond": "ig.vars.get('open-world.extra-sandwich') >= 1", 
+    "thenSteps": [{ 
+        "_comment": "Extra Sandwich", "type": "ADD_ARRAY_ELEMENT", "content": {"type":"Chest","x":608,"y":618,"level":3,"settings":{"name":"","chestType":"Silver","item":"1","amount":2,"mapId":5000}} 
+ 	 }]
+	},
+
+	{ "type": "EXIT", "count": 1 }
+]

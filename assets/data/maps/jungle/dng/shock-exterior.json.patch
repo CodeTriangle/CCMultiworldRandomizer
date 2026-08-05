@@ -1,0 +1,51 @@
+[
+  { "type": "ENTER", "index": ["entities"] },
+  
+  {
+    "type": "ENTER",
+    "_comment": "Door not locked through story events",
+    "index": [318,"settings"]
+  },
+  { "type": "SET_KEY", "index": "blockEventCondition" },
+  { "type": "SET_KEY", "index": "blockEvent" },
+  { "type": "EXIT", "count": 2 },
+
+  {
+    "type": "ENTER",
+    "_comment": "Dr Cretia door locked unless extra quests is on",
+    "index": [464,"settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "open-world.extraQuests"
+  },
+  { "type": "EXIT", "count": 2 },
+  
+  {
+    "type": "ENTER",
+    "_comment": "Remove the barrier blocking the dungeon during Sephisloth events",
+    "index": [471,"settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "spawnCondition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  {
+    "type": "FOR_IN",
+    "keyword": "__INDEX__",
+    "values": [465, 469, 473, 478, 480, 491, 506],
+    "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "startCondition", "content": "false" },{ "type": "EXIT", "count": 2 }]
+  },
+
+  { "type": "ENTER", "index": [466, "settings"] },
+  {
+    "type": "SET_KEY",
+    "index": "npcStates",
+    "content": [ { "reactType": "FIXED_POS", "face": "WEST", "showFx": { "sheet": "teleport", "name": "showDefault" }, "hidden": true, "condition": "", "config": "", "event": [] }]
+  },
+  { "type": "EXIT", "count": 3 }    
+]

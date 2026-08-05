@@ -1,0 +1,168 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    {
+        "type": "ENTER",
+        "index": [58, "settings", "npcStates"]
+    },
+    {
+        "type": "FOR_IN",
+        "_comment": "Change conditions in Schneider",
+        "keyword": { "eventIndex": "__INDEX__", "variable": "__VAR__" },
+        "values": [{ "eventIndex": 1, "variable": "false"}, { "eventIndex": 2, "variable": "false"}, { "eventIndex": 3, "variable": "false"}],
+        "body": [
+            { "type": "ENTER", "index": "__INDEX__" },
+            { "type": "SET_KEY", "index": "condition", "content": "__VAR__" },
+            { "type": "EXIT", "count": 1 }
+        ]
+    },
+    {
+        "type": "FOR_IN",
+        "_comment": "Make sure no plot interaction happens, for no despawn softlock mostly",
+        "keyword": "__INDEX__",
+        "values": [4,5,6,7,8,9,10],
+        "body": [
+            { "type": "ENTER", "index": "__INDEX__" },
+            { "type": "SET_KEY", "index": "condition", "content": "false" },
+            { "type": "EXIT", "count": 1 }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [57, "settings", "npcStates"]
+    },
+    {
+        "type": "FOR_IN",
+        "_comment": "Change conditions in Buggy",
+        "keyword": { "eventIndex": "__INDEX__", "variable": "__VAR__" },
+        "values": [{ "eventIndex": "1", "variable": "false"}, { "eventIndex": "2", "variable": "false"}, { "eventIndex": "3", "variable": "false"}],
+        "body": [
+            { "type": "ENTER", "index": "__INDEX__" },
+            { "type": "SET_KEY", "index": "condition", "content": "__VAR__" },
+            { "type": "EXIT", "count": 1 }
+        ]
+    },
+    {
+        "type": "FOR_IN",
+        "_comment": "Make sure no plot interaction happens, for no despawn softlock mostly",
+        "keyword": "__INDEX__",
+        "values": [4,5,6,7,8,9,10],
+        "body": [
+            { "type": "ENTER", "index": "__INDEX__" },
+            { "type": "SET_KEY", "index": "condition", "content": "false" },
+            { "type": "EXIT", "count": 1 }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [59, "settings"]
+    },
+    {
+        "_comment": "Changing variables around for intro scene",
+        "type": "SET_KEY",
+        "index": "endCondition",
+        "content": "false"
+    },
+    {
+        "type": "FOR_IN",
+        "_comment": "Change multiple plot variables inside event",
+        "keyword": { "eventIndex": "__INDEX__", "value": "__VAL__"},
+        "values": [{ "eventIndex": "6", "value": "61" }, { "eventIndex": "16", "value": "63" }, { "eventIndex": "34", "value": "70" }],
+        "body": [
+            { "type": "ENTER", "index": "event" },
+            {
+                "type": "SET_KEY",
+                "index": "__INDEX__",
+                "content": { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.guildEntry", "value": "__VAL__" }
+            },
+            { "type": "EXIT" }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+
+    {
+        "type": "ENTER",
+        "index": [60, "settings", "npcStates"]
+    },
+    { "type": "ENTER", "index": 9 },
+    { 
+        "type": "SET_KEY", 
+        "_comment": "Change Hlin observatory condition to post-first meetup at guild",
+        "index": "condition", 
+        "content": "quest.observatory.started && !quest.observatory.solved && !tmp.hlinJustEntered" 
+    },
+    { "type": "EXIT", "count": 1 },
+    {
+        "type": "FOR_IN",
+        "_comment": "Make sure no plot interaction happens, for no despawn softlock mostly",
+        "keyword": "__INDEX__",
+        "values": [0,1,2,3,4,5,6,7,8],
+        "body": [
+            { "type": "ENTER", "index": "__INDEX__" },
+            { "type": "SET_KEY", "index": "condition", "content": "false" },
+            { "type": "EXIT", "count": 1 }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    }, 
+
+    { "type": "ENTER", "index": [79, "settings"] },
+    { "_comment": "Changing Albert Search conditions", "type": "SET_KEY", "index": "startCondition", "content": "plot.shareholder >= 2000" },
+    { "type": "SET_KEY", "index": "endCondition", "content": "plot.shareholder >= 2100" },
+    { "type": "ENTER", "index": "event" },
+    { "type": "SET_KEY", "index": 19, "content": { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.shareholder", "value": "2100" } },
+    { "type": "EXIT" },
+    { "type": "EXIT", "count": 2 },  
+
+    { "type": "ENTER", "index": [80, "settings"] },
+    { "_comment": "Changing Albert meeting conditions", "type": "SET_KEY", "index": "startCondition", "content": "plot.shareholder >= 2200" },
+    { "type": "SET_KEY", "index": "endCondition", "content": "plot.shareholder >= 2300" },
+    { "type": "ENTER", "index": "event" },
+    { "type": "SET_KEY", "index": 113, "content": { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.shareholder", "value": "2400" } },
+    { "type": "EXIT" },
+    { "type": "EXIT", "count": 2 },  
+
+    { "type": "ENTER", "index": [81, "settings"] },
+    { "_comment": "Changing post-login after Albert meetup conditions", "type": "SET_KEY", "index": "startCondition", "content": "plot.shareholder >= 2400" },
+    { "type": "SET_KEY", "index": "endCondition", "content": "plot.shareholder >= 2500" },
+    { "type": "ENTER", "index": "event" },
+    { "type": "SET_KEY", "index": 0, "content": { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.shareholder", "value": "2500" } },
+    { "type": "EXIT" },
+    { "type": "EXIT", "count": 2 },  
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Disable unnecessary story events",
+        "keyword": "__INDEX__",
+        "values": [59,61,64,67,68,69,70,71,72,74],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__", "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    { "type": "EXIT", "count": 1 }  
+]

@@ -1,0 +1,11 @@
+[
+  { "type": "ENTER", "index": ["floors"] },
+	{ "type": "ENTER", "index": ["1", "connections", 34] },
+  { 
+    "type": "SET_KEY", 
+    "_comment": "Show the hidden passage connection at all points",
+		"index": "condition"
+  },
+	{ "type": "EXIT", "count": 3 },	  
+	{ "type": "EXIT" }	  
+]

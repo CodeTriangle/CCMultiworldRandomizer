@@ -1,0 +1,28 @@
+[
+	{
+		"type": "ENTER",
+		"_comment": "Enable all elevator floors",
+		"index": ["entities", 0, "settings","destinations"]
+	},
+	{
+        "type": "FOR_IN",
+        "_comment": "Enable elevator floors",
+        "keyword": "__INDEX__",
+        "values": [1,2,3,4],
+        "body": [{ "type": "ENTER", "index": "__INDEX__" },{ "type": "SET_KEY", "index": "showCondition", "content": "true" },{ "type": "EXIT" }]
+    },
+	{
+		"type": "EXIT",
+		"count": 3
+	}, 
+	{
+		"type": "FOR_IN",
+		"_comment": "Enable elevator signs",
+		"keyword": "__INDEX__",
+		"values": [3,4,5,6,7],
+		"body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition" },{ "type": "EXIT", "count": 2 }]
+	},
+	{
+		"type": "EXIT"
+	}
+]

@@ -1,0 +1,153 @@
+[
+	{
+		"type": "ENTER",
+		"index": [
+			"entities"
+		]
+	},
+	{
+		"type": "ENTER",
+		"index": [
+			72,
+			"settings"
+		]
+	},
+	{
+		"_comment": "Make the middle barrier lower if you do the puzzle from the other side first",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content": "!map.barrierDown || (map.steam3 < 2)"
+	},
+	{
+		"type": "EXIT",
+		"count": 2
+	},
+	{
+		"type": "ENTER",
+		"index": [
+			70,
+			"settings",
+			"states",
+			1
+		]
+	},
+	{
+		"_comment": "Make the last platform lower if starting on reverse",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content": "(map.steam3 >= 2) || map.reverse"
+	},
+	{
+		"type": "EXIT",
+		"count": 4
+	},
+	{
+		"type": "ENTER",
+		"index": [
+			0,
+			"settings"
+		]
+	},
+	{
+		"type": "SET_KEY",
+		"_comment": "Make the top stairs react to reverse",
+		"index": "blockEvent",
+		"content": [
+			{
+				"changeType": "set",
+				"type": "CHANGE_VAR_BOOL",
+				"varName": "heat-dng.eastCorridorReverse",
+				"value": true
+			}
+		]
+	},
+	{
+		"_comment": "Set the variable from a blockEvent rather than a separate touch trigger",
+		"type": "SET_KEY",
+		"index": "blockEventCondition",
+		"content": "!heat-dng.f4.corridor-east && map.reverse && !heat-dng.eastCorridorReverse"
+	},
+	{
+		"type": "EXIT",
+		"count": 2
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add the barrier for anticheese at the top",
+		"content": {
+			"type": "ScalableProp",
+			"x": 144,
+			"y": 113,
+			"level": 1,
+			"settings": {
+				"name": "",
+				"size": {
+					"x": 32,
+					"y": 8
+				},
+				"patternOffset": {
+					"x": 0,
+					"y": 0
+				},
+				"timeOffset": 0,
+				"blockNavMap": false,
+				"mapId": 118,
+				"propConfig": {
+					"sheet": "dungeon-ar",
+					"name": "barrierH",
+					"ends": null
+				},
+				"spawnCondition": "map.reverse && !map.barrierDown"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add just in case a touch trigger, to reverse on the next map",
+		"content": {
+			"type": "TouchTrigger",
+			"x": 144,
+			"y": 60,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 32,
+					"y": 48
+				},
+				"mapId": 46,
+				"startCondition": "map.reverse",
+				"variable": "heat-dng.eastCorridorReverse",
+				"type": "SET_TRUE",
+				"zHeight": 32,
+				"shape": "RECTANGLE"
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add the touch trigger to start a l'inverse",
+		"content": {
+			"type": "TouchTrigger",
+			"x": 557,
+			"y": 588,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 64,
+					"y": 64
+				},
+				"mapId": 116,
+				"name": "reverseOrder",
+				"variable": "map.reverse",
+				"startCondition": "map.steam3 < 2",
+				"type": "SET_TRUE",
+				"zHeight": 32,
+				"shape": "RECTANGLE"
+			}
+		}
+	},
+	{
+		"type": "EXIT",
+		"count": 1
+	}
+]

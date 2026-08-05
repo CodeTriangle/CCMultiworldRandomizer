@@ -1,0 +1,432 @@
+[
+    { "type": "ENTER", "index": [ "entities" ] },
+    {
+        "type": "ENTER",
+        "index": [ 548, "settings", "npcStates", 0 ]
+    },
+    {
+        "_comment": "Separate quest from main quest",
+        "type": "SET_KEY",
+        "index": "event",
+        "content": {
+							"quest": [
+            {
+                "active": true,
+                "type": "SET_COMBAT_ACTIVE"
+            },
+            {
+                "entity": {
+                    "global": true,
+                    "name": "bug"
+                },
+                "duration": -1,
+                "align": "CENTER",
+                "group": "light",
+                "wait": false,
+                "waitSkip": 0,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                    "sheet": "npc",
+                    "name": "darken"
+                },
+                "offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "text": {
+                    "en_US": "...A Trial it is you seek, and a trial you shall receive... ",
+                    "langUid": 2,
+                    "ja_JP": "...\u3053\u308c\u306f\u304a\u524d\u304c\u63a2\u3057\u6c42\u3081\u3001\u305d\u3057\u3066\u53d7\u3051\u308b\u3079\u304d\u8a66\u7df4...<<A<<[CHANGED 2018\/05\/01]",
+                    "ko_KR": "...\ub2f9\uc2e0\uc774 \uc6d0\ud558\ub294 \uac74 \uc2dc\ud5d8, \uadf8\ub7ec\uba74 \uc2dc\ud5d8\uc744 \ubc1b\uc744 \uac83\uc785\ub2c8\ub2e4...<<A<<[CHANGED 2018\/05\/01]",
+                    "zh_CN": "...\u5bfb\u627e\u8bd5\u70bc\uff0c\u63a5\u53d7\u8bd5\u70bc...<<A<<[CHANGED 2018\/05\/01]",
+                    "de_DE": "... Du willst dich also pr\u00fcfen lassen, so wollen wir dich pr\u00fcfen...",
+                    "zh_TW": "...\u5c0b\u627e\u8a66\u7149\uff0c\u63a5\u53d7\u8a66\u7149...<<A<<[CHANGED 2018\/05\/01]"
+                },
+                "entity": {
+                    "global": true,
+                    "name": "bug"
+                },
+                "posType": "TOP",
+                "offset": {
+                    "x": 0,
+                    "y": 0
+                },
+                "type": "SHOW_DREAM_MSG"
+            },
+            {
+                "entity": {
+                    "global": true,
+                    "name": "bug"
+                },
+                "group": "light",
+                "type": "CLEAR_EFFECTS"
+            },
+            {
+                "entity": {
+                    "global": true,
+                    "name": "bug"
+                },
+                "action": [
+                    {
+                        "face": "EAST",
+                        "rotate": true,
+                        "rotateSpeed": 3,
+                        "type": "SET_FACE"
+                    }
+                ],
+                "repeating": false,
+                "wait": false,
+                "keepState": false,
+                "immediately": false,
+                "type": "DO_ACTION"
+            },
+            {
+                "entity": {
+                    "player": true
+                },
+                "action": [
+                    {
+                        "type": "WAIT",
+                        "time": 0.1
+                    },
+                    {
+                        "face": "EAST",
+                        "rotate": true,
+                        "rotateSpeed": 3,
+                        "type": "SET_FACE"
+                    }
+                ],
+                "repeating": false,
+                "wait": false,
+                "keepState": false,
+                "immediately": false,
+                "type": "DO_ACTION"
+            },
+            {
+                "pos": {
+                    "x": 720,
+                    "y": 132
+                },
+                "speed": "NORMAL",
+                "transition": "EASE_IN_OUT",
+                "wait": true,
+                "waitSkip": 0,
+                "zoom": 1,
+                "type": "SET_CAMERA_POS"
+            },
+            {
+                "entity": {
+                    "global": true,
+                    "name": "bug"
+                },
+                "duration": -1,
+                "align": "CENTER",
+                "group": "light",
+                "wait": false,
+                "waitSkip": 0,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                    "sheet": "npc",
+                    "name": "darken"
+                },
+                "offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "entity": {
+                    "global": true,
+                    "name": "fountain"
+                },
+                "duration": -1,
+                "align": "CENTER",
+                "group": "light",
+                "wait": false,
+                "waitSkip": 0,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                    "sheet": "npc",
+                    "name": "lightXL"
+                },
+                "offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "type": "OPEN_QUEST_DIALOG",
+                "quest": "bug-hunting-cold",
+                "npc": "",
+                "accepted": [
+                    {
+                        "text": {
+                            "en_US": "...Patience has become rare in this world..",
+                            "langUid": 6,
+                            "ja_JP": "...\u5fcd\u8010\u529b\u3092\u6301\u3064\u8005\u306f\u3001\u4eca\u3067\u306f\u73cd\u3057\u304f\u306a\u308a\u3064\u3064\u3042\u308b...<<A<<[CHANGED 2018\/09\/19]",
+                            "ko_KR": "...\uc778\ub0b4\ub294 \uc774 \uc138\uc0c1\uc5d0\uc11c \ub4dc\ubb38 \uac83\uc774 \ub418\uc5c8\uc2b5\ub2c8\ub2e4...<<A<<[CHANGED 2018\/09\/19]",
+                            "zh_CN": "...\u9759\u5fc3\u4ee5\u5f85\uff0c\u96be\u80fd\u53ef\u8d35...<<A<<[CHANGED 2018\/09\/19]",
+                            "de_DE": "... Geduld ist in dieser Welt ein seltenes Gut geworden...",
+                            "zh_TW": "...\u975c\u5fc3\u4ee5\u5f85\uff0c\u96e3\u80fd\u53ef\u8cb4...<<A<<[CHANGED 2018\/09\/19]"
+                        },
+                        "entity": {
+                            "global": true,
+                            "name": "bug"
+                        },
+                        "posType": "TOP",
+                        "offset": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "type": "SHOW_DREAM_MSG"
+                    },
+                    {
+                        "text": {
+                            "en_US": "...This trial will test your focus and will...",
+                            "langUid": 7,
+                            "ja_JP": "...\u3053\u306e\u8a66\u7df4\u306f\u304a\u524d\u306e\u96c6\u4e2d\u529b\u3068\u610f\u601d\u306e\u529b\u3092\u8a66\u3059\u3082\u306e\u3060...<<A<<[CHANGED 2018\/05\/01]",
+                            "ko_KR": "...\uc774 \uc2dc\ud5d8\uc740 \ub2f9\uc2e0\uc758 \uc9d1\uc911\ub825\uacfc \uc758\uc9c0\ub97c \uc2dc\ud5d8\ud560 \uac83\uc785\ub2c8\ub2e4...<<A<<[CHANGED 2018\/05\/01]",
+                            "zh_CN": "...\u6b64\u8bd5\u70bc\u5c06\u6d4b\u8bd5\u4f60\u7684\u4e13\u6ce8\u548c\u610f\u5fd7...<<A<<[CHANGED 2018\/05\/01]",
+                            "de_DE": "... Diese Pr\u00fcfung wird deine Konzentration und deinen Willen testen...",
+                            "zh_TW": "...\u6b64\u8a66\u7149\u5c07\u6e2c\u8a66\u4f60\u7684\u5c08\u6ce8\u548c\u610f\u5fd7...<<A<<[CHANGED 2018\/05\/01]"
+                        },
+                        "entity": {
+                            "global": true,
+                            "name": "bug"
+                        },
+                        "posType": "TOP",
+                        "offset": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "type": "SHOW_DREAM_MSG"
+                    },
+                    {
+                        "text": {
+                            "en_US": "...Watch the pipe, as water fills up and flows out...",
+                            "de_DE": "... Beobachte das Bambusrohr: Es f\u00fcllt sich mit Wasser, bis es wieder hinausflie\u00dft...",
+                            "zh_CN": "...\u6ce8\u610f\u89c2\u5bdf\u7af9\u7b52\u4e2d\u7684\u6c34...<<A<<[CHANGED 2018\/07\/09]",
+                            "ja_JP": "...\u3053\u306e\u7af9\u7b52\u3092\u898b\u308d\u3002\u6c34\u304c\u6e80\u305f\u3055\u308c\u3066\u306f\u6d41\u308c\u3066\u3086\u304f...<<A<<[CHANGED 2018\/07\/09]",
+                            "ko_KR": "...\ubb3c\uc774 \ucc44\uc6cc\uc9c0\uace0 \ud758\ub7ec\ub098\uac00\ub294 \ud30c\uc774\ud504\ub97c \uc798 \ubcf4\uc2ed\uc2dc\uc624...<<A<<[CHANGED 2018\/07\/09]",
+                            "langUid": 8,
+                            "zh_TW": "...\u6ce8\u610f\u89c0\u5bdf\u7af9\u7b52\u4e2d\u7684\u6c34...<<A<<[CHANGED 2018\/07\/09]"
+                        },
+                        "entity": {
+                            "global": true,
+                            "name": "bug"
+                        },
+                        "posType": "TOP",
+                        "offset": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "type": "SHOW_DREAM_MSG"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "fountain"
+                        },
+                        "group": "light",
+                        "type": "CLEAR_EFFECTS"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "bug"
+                        },
+                        "group": "light",
+                        "type": "CLEAR_EFFECTS"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "bug"
+                        },
+                        "action": [
+                            {
+                                "entity": {
+                                    "player": true
+                                },
+                                "rotate": true,
+                                "rotateSpeed": 3,
+                                "type": "SET_FACE_TO_ENTITY"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": false,
+                        "keepState": false,
+                        "immediately": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "entity": {
+                            "player": true
+                        },
+                        "action": [
+                            {
+                                "type": "WAIT",
+                                "time": 0.1
+                            },
+                            {
+                                "entity": {
+                                    "global": true,
+                                    "name": "bug"
+                                },
+                                "rotate": true,
+                                "rotateSpeed": 3,
+                                "type": "SET_FACE_TO_ENTITY"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": false,
+                        "keepState": false,
+                        "immediately": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "withElse": false,
+                        "type": "IF",
+                        "condition": "party.has.Emilie",
+                        "thenStep": [
+                            {
+                                "message": {
+                                    "en_US": "Y-You think that bug will go away while we wait patiently?",
+                                    "langUid": 82,
+                                    "zh_CN": "\u4f60-\u4f60\u662f\u8bf4\u53ea\u8981\u6211\u4eec\u8010\u5fc3\u7b49\u5f85\uff0c\u866b\u5b50\u5c31\u4f1a\u79bb\u5f00\uff1f<<A<<[CHANGED 2018\/07\/09]",
+                                    "ja_JP": "\u306d\u3001\u306d\u3048\u3001\u79c1\u305f\u3061\u304c\u8f9b\u62b1\u5f37\u304f\n\u5f85\u3063\u3066\u308b\u3042\u3044\u3060\u3001\u3042\u306e\u866b\u306f\n\u3069\u3053\u304b\u306b\u884c\u3063\u3066\u304f\u308c\u308b\u3068\u601d\u3046\uff1f<<A<<[CHANGED 2018\/07\/09]",
+                                    "ko_KR": "\uc6b0, \uc6b0\ub9ac\uac00 \uac00\ub9cc\ud788 \uae30\ub2e4\ub9ac\uace0 \uc788\uc73c\uba74 \uc800 \ubc8c\ub808\uac00 \ub2e4\ub978 \ub370\ub85c \uac08\uae4c?<<A<<[CHANGED 2018\/07\/09]",
+                                    "de_DE": "G-Glaubst du, der K\u00e4fer verschwindet, wenn wir geduldig warten?",
+                                    "zh_TW": "\u4f60-\u4f60\u662f\u8aaa\u53ea\u8981\u6211\u5011\u8010\u5fc3\u7b49\u5f85\uff0c\u87f2\u5b50\u5c31\u6703\u96e2\u958b\uff1f<<A<<[CHANGED 2018\/07\/09]"
+                                },
+                                "type": "SHOW_SIDE_MSG",
+                                "person": {
+                                    "person": "main.emilie",
+                                    "expression": "SWEATY_SMILE"
+                                }
+                            },
+                            {
+                                "message": {
+                                    "en_US": "[shakes head]",
+                                    "langUid": 83,
+                                    "zh_CN": "[\u6447\u5934]<<A<<[CHANGED 2018\/07\/09]",
+                                    "ja_JP": "[\u9996\u3092\u632f\u308b]<<A<<[CHANGED 2018\/07\/09]",
+                                    "ko_KR": "[\ub3c4\ub9ac\ub3c4\ub9ac]<<A<<[CHANGED 2018\/07\/09]",
+                                    "de_DE": "[sch\u00fcttelt Kopf]",
+                                    "zh_TW": "[\u6416\u982d]<<A<<[CHANGED 2018\/07\/09]"
+                                },
+                                "type": "SHOW_SIDE_MSG",
+                                "person": {
+                                    "person": "main.lea",
+                                    "expression": "SHAKE"
+                                }
+                            },
+                            {
+                                "message": {
+                                    "en_US": "Of course not. Why would it?",
+                                    "langUid": 84,
+                                    "zh_CN": "\u5f53\u7136\u4e0d\u4f1a\u3002\u6211\u5c31\u77e5\u9053\u3002<<A<<[CHANGED 2021\/05\/22]",
+                                    "ja_JP": "\u305d\u3093\u306a\u308f\u3051\u306a\u3044\u3088\u306d\u3002\n\u306a\u3093\u3067\u305d\u3046\u601d\u3063\u305f\u3093\u3060\u308d\u3002<<A<<[CHANGED 2021\/05\/22]",
+                                    "ko_KR": "\ub2f9\uc5f0\ud788 \uc548 \uadf8\ub7ec\uaca0\uc9c0. \uadf8\ub7f4 \uc774\uc720\uac00 \uc5c6\uc796\uc544.<<A<<[CHANGED 2021\/05\/07]",
+                                    "de_DE": "Nat\u00fcrlich nicht. Warum sollte er auch.<<A<<[CHANGED 2021\/05\/22]",
+                                    "zh_TW": "\u7576\u7136\u4e0d\u6703\u3002\u6211\u5c31\u77e5\u9053\u3002<<A<<[CHANGED 2021\/05\/22]"
+                                },
+                                "type": "SHOW_SIDE_MSG",
+                                "person": {
+                                    "person": "main.emilie",
+                                    "expression": "EXHAUSTED"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "map.bugTalk",
+                        "value": true
+                    }
+                ],
+                "declined": []
+            },
+            {
+                "speed": "FAST",
+                "transition": "EASE_IN_OUT",
+                "wait": true,
+                "waitSkip": 0,
+                "type": "RESET_CAMERA"
+            },
+            {
+                "entity": {
+                    "global": true,
+                    "name": "bug"
+                },
+                "duration": -1,
+                "align": "CENTER",
+                "group": "light",
+                "wait": false,
+                "waitSkip": 0,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                    "sheet": "npc",
+                    "name": "darken"
+                },
+                "offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "text": {
+                    "en_US": "...Speak to me again if you wish to begin the trial...",
+                    "langUid": 10,
+                    "ja_JP": "...\u8a66\u7df4\u3092\u59cb\u3081\u305f\u3051\u308c\u3070\u3001\u3082\u3046\u4e00\u5ea6\u79c1\u306b\u8a71\u3057\u304b\u3051\u308d...<<A<<[CHANGED 2018\/05\/01]",
+                    "ko_KR": "...\uc2dc\ud5d8\uc744 \uc2dc\uc791\ud558\uace0 \uc2f6\uac70\ub098 \ucde8\uc18c\ud558\uace0 \uc2f6\uc73c\uba74...<<A<<[CHANGED 2018\/05\/01]",
+                    "zh_CN": "...\u5982\u679c\u4f60\u60f3\u8981\u5f00\u59cb\u8bd5\u70bc\uff0c\u5c31\u8ddf\u6211\u8bf4...<<A<<[CHANGED 2018\/05\/01]",
+                    "de_DE": "... Sprich erneut mit mir, wenn du die Pr\u00fcfung zu beginnen w\u00fcnschst...",
+                    "zh_TW": "...\u5982\u679c\u4f60\u60f3\u8981\u958b\u59cb\u8a66\u7149\uff0c\u5c31\u8ddf\u6211\u8aaa...<<A<<[CHANGED 2018\/05\/01]"
+                },
+                "entity": {
+                    "global": true,
+                    "name": "bug"
+                },
+                "posType": "TOP",
+                "offset": {
+                    "x": 0,
+                    "y": 0
+                },
+                "type": "SHOW_DREAM_MSG"
+            },
+            {
+                "entity": {
+                    "global": true,
+                    "name": "bug"
+                },
+                "group": "light",
+                "type": "CLEAR_EFFECTS"
+            }
+            ]
+        }
+    },
+    {
+        "_comment": "Separate quest from main quest",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "!quest.bug-hunting-cold.solved"
+    },
+    { "type": "EXIT", "count": 1 },
+    { "type": "ENTER", "index": 4 },
+    {
+        "_comment": "Finish quest on dialog end",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "false"
+    },
+    { "type": "EXIT", "count": 4 },
+    { "type": "EXIT", "count": 1 }
+]

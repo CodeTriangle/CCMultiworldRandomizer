@@ -1,0 +1,22 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes story events",
+        "keyword": "__INDEX__",
+        "values": [898,902,908,911,913,914,915,918,924,925,928,929],
+        "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "startCondition", "content": "false" },{ "type": "EXIT", "count": 2 }]
+    },
+
+    { "type": "ENTER", "index": [4, "settings"] },
+
+    {
+        "type": "SET_KEY",
+        "_comment": "Remove story event blocking exit",
+        "index": "blockEventCondition",
+        "content": "false"
+    },
+
+    { "type": "EXIT", "count": 3 }  
+]
