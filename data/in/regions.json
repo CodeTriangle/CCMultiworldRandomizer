@@ -517,31 +517,23 @@
 					]
 				},
 				{
-					"from": "open10.Left",
+					"from": "open14.1",
 					"to": "open14.2",
 					"condition": [
-						[ "item", "So'najiz Key", 3 ],
-						[ "item", "Heat" ]
+						[ "item", "So'najiz Key", 3 ]
 					]
 				},
 				{
 					"from": "open14.2",
 					"to": "open14.3",
 					"condition": [
-						[ "item", "Cold" ]
-					]
-				},
-				{
-					"from": "open14.3",
-					"to": "open14.4",
-					"condition": [
 						[ "item", "So'najiz Key", 4 ],
 						[ "item", "Radiant Key", 1 ]
 					]
 				},
 				{
-					"from": "open14.4",
-					"to": "open14.5",
+					"from": "open14.3",
+					"to": "open14.4",
 					"condition": [
 						[ "item", "Shock" ]
 					]
