@@ -4299,7 +4299,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "17.5",
-				"open": "open7.6"
+				"open": "open7.5"
 			},
 			"reward": [
 				[
@@ -6883,7 +6883,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "26.5",
-				"open": "open14.3"
+				"open": "open14.2"
 			},
 			"reward": [
 				[
@@ -6940,7 +6940,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "26.5",
-				"open": "open14.3"
+				"open": "open14.2"
 			},
 			"reward": [
 				[
@@ -6958,7 +6958,7 @@
 			},
 			"region": {
 				"linear": "26.5",
-				"open": "open14.3"
+				"open": "open14.2"
 			},
 			"reward": [
 				[
