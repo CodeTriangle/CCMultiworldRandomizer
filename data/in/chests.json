@@ -2258,6 +2258,9 @@
 				"linear": "9",
 				"open": "open4.6"
 			},
+			"condition": [
+				[ "item", "Thief's Key" ]
+			],
 			"reward": [
 				[
 					"item",
@@ -4262,7 +4265,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "17.5",
-				"open": "open7.6"
+				"open": "open7.5"
 			},
 			"reward": [
 				[
@@ -6958,7 +6961,7 @@
 			},
 			"region": {
 				"linear": "26.5",
-				"open": "open14.2"
+				"open": "open14.3"
 			},
 			"reward": [
 				[
