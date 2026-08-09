@@ -362,14 +362,14 @@
 				},
 				{
 					"from": "open5",
-					"to": "open7.1",
+					"to": "fajro.1",
 					"condition": [
 						[ "item", "Yellow Sand Shade", 1 ]
 					]
 				},
 				{
-					"from": "open7.1",
-					"to": "open7.2",
+					"from": "fajro.1",
+					"to": "fajro.2",
 					"condition": [
 						[ "item", "Faj'ro Key", 1 ],
 						[ "item", "Heat" ],
@@ -377,57 +377,57 @@
 					]
 				},
 				{
-					"from": "open7.2",
-					"to": "open7.3",
+					"from": "fajro.2",
+					"to": "fajro.3",
 					"condition": [
 						[ "defeat", "Pada Moth" ]
 					]
 				},
 				{
-					"from": "open7.3",
-					"to": "open7.4",
+					"from": "fajro.3",
+					"to": "fajro.4",
 					"condition": [
 						[ "item", "Faj'ro Key", 3 ]
 					]
 				},
 				{
-					"from": "open7.1",
-					"to": "open7.5",
+					"from": "fajro.1",
+					"to": "fajro.5",
 					"condition": [
 						[ "defeat", "Pinzo'Jrahrrrn" ]
 					]
 				},
 				{
-					"from": "open7.5",
-					"to": "open7.6",
+					"from": "fajro.5",
+					"to": "fajro.6",
 					"condition": [
 						[ "item", "Cold" ]
 					]
 				{
-					"from": "open7.6",
-					"to": "open7.7",
+					"from": "fajro.6",
+					"to": "fajro.7",
 					"condition": [
 						[ "defeat", "Magmanizer" ]
 					]
 				},
 				{
-					"from": "open7.7",
-					"to": "open7.8",
+					"from": "fajro.7",
+					"to": "fajro.8",
 					"condition": [
 						[ "defeat", "Pada Moth" ]
 					]
 				},
 				{
-					"from": "open7.8",
-					"to": "open7.9",
+					"from": "fajro.8",
+					"to": "fajro.9",
 					"condition": [
 						[ "item", "White Key" ],
 						[ "defeat", "Darth Moth" ]
 					]
 				},
 				{
-					"from": "open7.6",
-					"to": "open7.10",
+					"from": "fajro.6",
+					"to": "fajro.10",
 					"condition": [
 						[ "item", "Faj'ro Master Key" ],
 						[ "defeat", "Master Magmoth" ]
