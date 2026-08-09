@@ -394,7 +394,6 @@
 					"from": "open7.1",
 					"to": "open7.5",
 					"condition": [
-						[ "item", "Cold", 1 ],
 						[ "defeat", "Pinzo'Jrahrrrn" ]
 					]
 				},
@@ -402,27 +401,33 @@
 					"from": "open7.5",
 					"to": "open7.6",
 					"condition": [
-						[ "defeat", "Magmanizer" ]
+						[ "item", "Cold" ]
 					]
-				},
 				{
 					"from": "open7.6",
 					"to": "open7.7",
 					"condition": [
-						[ "defeat", "Pada Moth" ]
+						[ "defeat", "Magmanizer" ]
 					]
 				},
 				{
 					"from": "open7.7",
 					"to": "open7.8",
 					"condition": [
+						[ "defeat", "Pada Moth" ]
+					]
+				},
+				{
+					"from": "open7.8",
+					"to": "open7.9",
+					"condition": [
 						[ "item", "White Key" ],
 						[ "defeat", "Darth Moth" ]
 					]
 				},
 				{
-					"from": "open7.5",
-					"to": "open7.9",
+					"from": "open7.6",
+					"to": "open7.10",
 					"condition": [
 						[ "item", "Faj'ro Master Key" ],
 						[ "defeat", "Master Magmoth" ]
