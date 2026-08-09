@@ -105,7 +105,7 @@
 			},
 			"region": {
 				"linear": "19",
-				"open": "open7.8" 
+				"open": "fajro.10"
 			},
 			"reward": [
 				[ "item", "Red Flame Shade", 1 ]
@@ -267,7 +267,7 @@
 			},
 			"region": {
 				"linear": "19",
-				"open": "open7.8" 
+				"open": "fajro.10" 
 			},
 			"reward": [
 				[ "item", "Circuit Override", 1 ]
@@ -330,7 +330,7 @@
 			},
 			"region": {
 				"linear": "19",
-				"open": "open7.8" 
+				"open": "fajro.10" 
 			},
 			"reward": [
 				[ "sp" ]
