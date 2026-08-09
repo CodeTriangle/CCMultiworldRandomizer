@@ -4361,6 +4361,44 @@
 				[ "defeat", "Darth Moth" ]
 			]
 		},
+		"Faj'ro GF: Balance Room 1 Left": {
+			"location": {
+				"area": "heat-dng",
+				"map": "heat-dng.g.room-02-cross",
+				"mapId": 1276
+			},
+			"clearance": "Default",
+			"region": {
+				"linear": "14",
+				"open": "fajro.4"
+			},
+			"reward": [
+				[
+					"item",
+					"Flaming Bun",
+					2
+				]
+			]
+		},
+		"Faj'ro GF: Balance Room 1 Right": {
+			"location": {
+				"area": "heat-dng",
+				"map": "heat-dng.g.room-02-cross",
+				"mapId": 1277
+			},
+			"clearance": "Default",
+			"region": {
+				"linear": "14",
+				"open": "fajro.4"
+			},
+			"reward": [
+				[
+					"item",
+					"Salty Ice Cream",
+					2
+				]
+			]
+		},
 		"Faj'ro GF: Left Chamber 1": {
 			"location": {
 				"area": "heat-dng",
