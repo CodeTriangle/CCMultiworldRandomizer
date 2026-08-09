@@ -25,7 +25,7 @@
 			},
 			"region": {
 				"linear": "16",
-				"open": "open7.4"
+				"open": "open7.5"
 			},
 			"reward": [
 				["element", "Cold"]
