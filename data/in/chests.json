@@ -4126,7 +4126,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "15",
-				"open": "open7.3"
+				"open": "fajro.4"
 			},
 			"reward": [
 				[
@@ -4145,7 +4145,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "17",
-				"open": "open7.5"
+				"open": "fajro.6"
 			},
 			"reward": [
 				[
@@ -4164,7 +4164,7 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "17.5",
-				"open": "open7.6"
+				"open": "fajro.8"
 			},
 			"reward": [
 				[
@@ -4183,7 +4183,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "17.5",
-				"open": "open7.6"
+				"open": "fajro.8"
 			},
 			"reward": [
 				[
@@ -4202,7 +4202,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "17.5",
-				"open": "open7.6"
+				"open": "fajro.7"
 			},
 			"reward": [
 				[
@@ -4210,6 +4210,9 @@
 					"Faj'ro Key",
 					1
 				]
+			],
+			"condition": [
+				[ "defeat", "Trijelly" ]
 			]
 		},
 		"Faj'ro 4F: West Pathway": {
@@ -4221,7 +4224,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "17",
-				"open": "open7.5"
+				"open": "fajro.7"
 			},
 			"reward": [
 				[
@@ -4240,7 +4243,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "17",
-				"open": "open7.5"
+				"open": "fajro.8"
 			},
 			"reward": [
 				[
@@ -4248,6 +4251,9 @@
 					"Faj'ro Key",
 					1
 				]
+			],
+			"condition": [
+				[ "defeat", "Trijelly" ]
 			]
 		},
 		"Faj'ro 4F: West Chamber 1": {
@@ -4259,7 +4265,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "17.5",
-				"open": "open7.6"
+				"open": "fajro.8"
 			},
 			"reward": [
 				[
@@ -4278,7 +4284,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "17.5",
-				"open": "open7.6"
+				"open": "fajro.9"
 			},
 			"reward": [
 				[
@@ -4297,7 +4303,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "17",
-				"open": "open7.5"
+				"open": "fajro.9"
 			},
 			"reward": [
 				[
@@ -4305,6 +4311,9 @@
 					"Dented Crown",
 					1
 				]
+			],
+			"condition": [
+				[ "item", "Heat" ]
 			]
 		},
 		"Faj'ro 4F: Test of Memory": {
@@ -4316,7 +4325,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "17.5",
-				"open": "open7.6"
+				"open": "fajro.9"
 			},
 			"reward": [
 				[
@@ -4324,6 +4333,9 @@
 					"Faj'ro Key",
 					1
 				]
+			],
+			"condition": [
+				[ "defeat", "Boss Pincer" ]
 			]
 		},
 		"Faj'ro 4F: Chamber of Prosperity": {
@@ -4335,7 +4347,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "18",
-				"open": "open7.7"
+				"open": "fajro.8"
 			},
 			"reward": [
 				[
@@ -4343,6 +4355,10 @@
 					"Faj'ro Master Key",
 					1
 				]
+			],
+			"condition": [
+				[ "item", "Heat" ],
+				[ "defeat", "Darth Moth" ]
 			]
 		},
 		"Faj'ro GF: Left Chamber 1": {
@@ -4354,7 +4370,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "13",
-				"open": "open7.1"
+				"open": "fajro.1"
 			},
 			"reward": [
 				[
@@ -4362,6 +4378,9 @@
 					"Faj'ro Key",
 					1
 				]
+			],
+			"condition": [
+				[ "item", "Heat" ]
 			]
 		},
 		"Faj'ro GF: Fire and Sand 2": {
@@ -4373,7 +4392,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "14",
-				"open": "open7.2"
+				"open": "fajro.2"
 			},
 			"reward": [
 				[
@@ -4392,7 +4411,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "14",
-				"open": "open7.2"
+				"open": "fajro.3"
 			},
 			"reward": [
 				[
@@ -4411,7 +4430,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "14",
-				"open": "open7.2"
+				"open": "fajro.3"
 			},
 			"reward": [
 				[
@@ -4430,7 +4449,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "14",
-				"open": "open7.2"
+				"open": "fajro.3"
 			},
 			"reward": [
 				[
@@ -4449,7 +4468,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "14",
-				"open": "open7.2"
+				"open": "fajro.3"
 			},
 			"reward": [
 				[
@@ -4468,7 +4487,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "14",
-				"open": "open7.2"
+				"open": "fajro.3"
 			},
 			"reward": [
 				[
@@ -4476,6 +4495,9 @@
 					"Faj'ro Key",
 					1
 				]
+			],
+			"condition": [
+				[ "defeat", "Tim" ]
 			]
 		},
 		"Faj'ro GF: Test of Memory Right": {
@@ -4487,7 +4509,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "14",
-				"open": "open7.2"
+				"open": "fajro.3"
 			},
 			"reward": [
 				[
@@ -4495,6 +4517,9 @@
 					"Faj'ro Key",
 					1
 				]
+			],
+			"condition": [
+				[ "defeat", "Sharkster" ]
 			]
 		},
 		"Ba'kii: Solar Farm Upper": {
