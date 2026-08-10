@@ -1,0 +1,88 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Enables the lower puzzle elements without Heat or Cold to solve with any element",
+        "keyword": "__INDEX__",
+        "values": [63, 55],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__", "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "condition"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Enables the lower wave teleports, same as above",
+        "keyword": "__INDEX__",
+        "values": [54,62],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__", "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "spawnCondition"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes the glowing lines from heat and cold interactions",
+        "keyword": "__INDEX__",
+        "values": [85,86,87,88,89,90,91],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__", "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "false"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+        { "type": "SET_KEY", "index": "x", "content": 0 },
+        { "type": "SET_KEY", "index": "y", "content": 700 },
+        {
+            "type": "EXIT",
+            "count": 1
+        }]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes the heat and cold element pole destinations",
+        "keyword": "__INDEX__",
+        "values": [64,65],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__", "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "group"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+        { "type": "SET_KEY", "index": "x", "content": 0 },
+        { "type": "SET_KEY", "index": "y", "content": 700 },
+        {
+            "type": "EXIT",
+            "count": 1
+        }]
+    },
+
+    { "type": "EXIT", "count": 1 }    
+]

@@ -1,0 +1,410 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [225, "settings"]
+    },
+    {
+        "_comment": "Disable Ctron call",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [226, "settings"]
+    },
+    {
+        "_comment": "Disable quiz block event",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+    
+    {
+        "type": "FOR_IN",
+        "_comment": "Make the teleport accessible without plot advance, also fancy teleporting unless something breaks",
+        "keyword": {"index": "__INDEX__", "marker": "__MARKER__"},
+        "values": [{ "index": 18, "marker": "off1" }, { "index": 211, "marker": "off2" }, { "index": 212, "marker": "off3" }],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "blockEvent",
+            "content": [
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "global.laserRail",
+                        "value": true
+                    },
+                    {
+                        "mode": "SLOW",
+                        "type": "PAUSE_BGM"
+                    },
+                    {
+                        "lighter": false,
+                        "type": "SET_TELEPORT_COLOR",
+                        "color": "white"
+                    },
+                    {
+                        "fadeIn": 1,
+                        "fadeOut": 1,
+                        "type": "SET_TELEPORT_TIME"
+                    },
+                    {
+                        "entity": {
+                            "party": "Member2"
+                        },
+                        "action": [
+                            {
+                                "value": "IGNORE",
+                                "type": "SET_COLL_TYPE"
+                            },
+                            {
+                                "value": 0.5,
+                                "type": "SET_RELATIVE_SPEED"
+                            },
+                            {
+                                "target": {
+                                    "x": 528,
+                                    "y": 512,
+                                    "lvl": "1"
+                                },
+                                "maxTime": 0,
+                                "distance": 0,
+                                "precise": false,
+                                "planOnly": false,
+                                "type": "NAVIGATE_TO_POINT"
+                            },
+                            {
+                                "face": "WEST",
+                                "rotate": true,
+                                "rotateSpeed": 3,
+                                "type": "SET_FACE"
+                            },
+                            {
+                                "duration": -1,
+                                "align": "BOTTOM",
+                                "rotateFace": 0,
+                                "flipLeftFace": false,
+                                "wait": false,
+                                "waitSkip": 0,
+                                "actionDetached": true,
+                                "type": "SHOW_EFFECT",
+                                "effect": {
+                                    "sheet": "map.laser-rails",
+                                    "name": "trainCube"
+                                },
+                                "offset": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 0
+                                }
+                            },
+                            {
+                                "time": -1,
+                                "type": "WAIT"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": false,
+                        "keepState": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "entity": {
+                            "party": "Member3"
+                        },
+                        "action": [
+                            {
+                                "value": "IGNORE",
+                                "type": "SET_COLL_TYPE"
+                            },
+                            {
+                                "value": 0.5,
+                                "type": "SET_RELATIVE_SPEED"
+                            },
+                            {
+                                "target": {
+                                    "x": 528,
+                                    "y": 256,
+                                    "lvl": "1"
+                                },
+                                "maxTime": 0,
+                                "distance": 0,
+                                "precise": false,
+                                "planOnly": false,
+                                "type": "NAVIGATE_TO_POINT"
+                            },
+                            {
+                                "face": "WEST",
+                                "rotate": true,
+                                "rotateSpeed": 3,
+                                "type": "SET_FACE"
+                            },
+                            {
+                                "duration": -1,
+                                "align": "BOTTOM",
+                                "rotateFace": 0,
+                                "flipLeftFace": false,
+                                "wait": false,
+                                "waitSkip": 0,
+                                "actionDetached": true,
+                                "type": "SHOW_EFFECT",
+                                "effect": {
+                                    "sheet": "map.laser-rails",
+                                    "name": "trainCube"
+                                },
+                                "offset": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 0
+                                }
+                            },
+                            {
+                                "time": -1,
+                                "type": "WAIT"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": false,
+                        "keepState": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "entity": {
+                            "player": true
+                        },
+                        "action": [
+                            {
+                                "value": 0.5,
+                                "type": "SET_RELATIVE_SPEED"
+                            },
+                            {
+                                "target": {
+                                    "x": 496,
+                                    "y": 388,
+                                    "lvl": {
+                                        "level": "1",
+                                        "offset": 4
+                                    }
+                                },
+                                "precise": true,
+                                "type": "MOVE_TO_POINT"
+                            },
+                            {
+                                "face": "WEST",
+                                "rotate": true,
+                                "rotateSpeed": 3,
+                                "type": "SET_FACE"
+                            },
+                            {
+                                "duration": -1,
+                                "align": "BOTTOM",
+                                "rotateFace": 0,
+                                "flipLeftFace": false,
+                                "wait": false,
+                                "waitSkip": 0,
+                                "actionDetached": true,
+                                "type": "SHOW_EFFECT",
+                                "effect": {
+                                    "sheet": "map.laser-rails",
+                                    "name": "trainCube"
+                                },
+                                "offset": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 0
+                                }
+                            },
+                            {
+                                "time": 0.7,
+                                "type": "WAIT"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": true,
+                        "keepState": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "alpha": 0.4,
+                        "type": "SET_SCREEN_BLUR"
+                    },
+                    {
+                        "entity": {
+                            "player": true
+                        },
+                        "action": [
+                            {
+                                "duration": -1,
+                                "align": "BOTTOM",
+                                "rotateFace": 0,
+                                "flipLeftFace": false,
+                                "wait": false,
+                                "waitSkip": 0,
+                                "actionDetached": true,
+                                "type": "SHOW_EFFECT",
+                                "effect": {
+                                    "sheet": "map.rhombus-sqr",
+                                    "name": "trainTrail"
+                                },
+                                "offset": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 0
+                                }
+                            },
+                            {
+                                "value": 1,
+                                "type": "SET_RELATIVE_SPEED"
+                            },
+                            {
+                                "value": 500,
+                                "type": "SET_SPEED"
+                            },
+                            {
+                                "value": 0,
+                                "type": "SET_Z_GRAVITY_FACTOR"
+                            },
+                            {
+                                "value": true,
+                                "type": "SET_SLIP_THROUGH"
+                            },
+                            {
+                                "wait": false,
+                                "viaWalkConfig": false,
+                                "type": "SHOW_ANIMATION",
+                                "anim": "idle"
+                            },
+                            {
+                                "newPos": {
+                                    "x": 404,
+                                    "y": 388,
+                                    "lvl": {
+                                        "level": "1",
+                                        "offset": 4
+                                    }
+                                },
+                                "duration": 0.03,
+                                "keySpline": "LINEAR",
+                                "timePerTile": true,
+                                "type": "INTERPOLATE_POSITION"
+                            },
+                            {
+                                "newPos": {
+                                    "x": 372,
+                                    "y": 356,
+                                    "lvl": {
+                                        "level": "1",
+                                        "offset": 4
+                                    }
+                                },
+                                "duration": 0.03,
+                                "keySpline": "LINEAR",
+                                "timePerTile": true,
+                                "type": "INTERPOLATE_POSITION"
+                            },
+                            {
+                                "newPos": {
+                                    "x": 260,
+                                    "y": 356,
+                                    "lvl": {
+                                        "level": "1",
+                                        "offset": 4
+                                    }
+                                },
+                                "duration": 0.03,
+                                "keySpline": "LINEAR",
+                                "timePerTile": true,
+                                "type": "INTERPOLATE_POSITION"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": true,
+                        "keepState": true,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "entity": {
+                            "player": true
+                        },
+                        "action": [
+                            {
+                                "newPos": {
+                                    "x": 0,
+                                    "y": 616,
+                                    "lvl": {
+                                        "level": "1",
+                                        "offset": 4
+                                    }
+                                },
+                                "duration": 0.03,
+                                "keySpline": "LINEAR",
+                                "timePerTile": true,
+                                "type": "INTERPOLATE_POSITION"
+                            },
+                            {
+                                "value": 0,
+                                "type": "SET_Z_GRAVITY_FACTOR"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": false,
+                        "keepState": true,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "alpha": 1,
+                        "time": 0.5,
+                        "lighter": false,
+                        "type": "SET_OVERLAY",
+                        "color": "white"
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.5
+                    },
+                    {
+                        "type": "CLEAR_SCREEN_BLUR"
+                    },
+                    {
+                        "type": "TELEPORT",
+                        "map": "heat.path-00",
+                        "marker": "__MARKER__"
+                    }
+            ]
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    },
+
+    { 
+        "type": "IF", 
+        "_comment": "Adds corresponding patch if Extra Barriers is on", 
+        "cond": "ig.vars.get('open-world.rhombusHubUnlock') >= 1", 
+        "thenSteps": [{ "type": "INCLUDE", "src": "mod:extra-patches/extra-barriers/bergen-elevator.json.patch" }] 
+    }
+]

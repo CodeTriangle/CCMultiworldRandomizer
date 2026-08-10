@@ -1,0 +1,88 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [54]
+    },
+    {
+        "_comment": "First entry with emilie event change",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content":  {
+                "name": "EnterWithEmilie", "eventType": "PARALLEL", "endCondition": "plot.autumnIntro >= 22", "event": [ { "entity": { "global": true, "name": "Emilie" }, "action": [ { "target": { "x": 668, "y": 360, "lvl": "0" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" } ], "repeating": false, "wait": true, "keepState": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "Emilie" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 456, "y": 340, "lvl": "0" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "type": "RESET_NPC" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "type": "CHANGE_VAR_NUMBER", "varName": "plot.autumnIntro", "changeType": "set", "value": 22 } ], "triggerType": "ALWAYS", "mapId": 117, "startCondition": "plot.autumnIntro >= 21"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },  
+
+
+    {
+        "type": "ENTER",
+        "index": [55]
+    },
+    {
+        "_comment": "Change Expo Start cutscene",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+                "name": "ExpositionStart", "eventType": "CUTSCENE", "endCondition": "map.expoDone", "event": [ { "pos": { "x": 480, "y": 312 }, "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 496, "y": 356, "lvl": "0" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "target": { "x": 500, "y": 312, "lvl": "0" }, "precise": true, "type": "MOVE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "side": "RIGHT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "ASTONISHED" } }, { "message": { "en_US": "Mon Dieu, look at this!", "de_DE": "Mon Dieu, schau dir das an!", "fr_FR": "fr_FR", "langUid": 3, "zh_CN": "哇，快看！", "ko_KR": "세상에, 이것 좀 봐!", "ja_JP": "わお、あれ見てよ！", "zh_TW": "哇，快看！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "ASTONISHED" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "mode": "SLOW", "type": "PAUSE_BGM" }, { "pos": { "x": 480, "y": 200 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "zoomType": "LIGHT", "fadeIn": 0.5, "duration": 2, "fadeOut": 0, "type": "SET_ZOOM_BLUR" }, { "alpha": 1, "time": 2, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "zoom": 2, "duration": 2, "transition": "EASE_IN", "type": "SET_CAMERA_ZOOM" }, { "volume": 0.8, "name": "", "loop": false, "offset": 0, "startTime": 0, "type": "PLAY_SOUND", "sound": "media/sound/scenes/swoosh-rise-long.ogg" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 2 }, { "lighter": true, "type": "SET_TELEPORT_COLOR", "color": "white" }, { "value": "SAVE", "type": "SET_MOBILITY_BLOCK" }, { "type": "CHANGE_VAR_BOOL", "varName": "plot.firstShade", "changeType": "set", "value": true, "map": "" }, { "type": "TELEPORT", "map": "rookie-harbor.expo-space", "marker": "start" } ], "triggerType": "ALWAYS", "mapId": 118, "startCondition": "tmp.theZone && plot.autumnIntro >= 22"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },  
+
+
+    {
+        "type": "ENTER",
+        "index": [57]
+    },
+    {
+        "_comment": "Change Expo End cutscene",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content":  {
+                "name": "ExpositionEnd",
+                "eventType": "CUTSCENE",
+                "endCondition": "map.loreDone",
+                "event": [ { "volume": 1, "name": "", "loop": false, "offset": 0, "startTime": 0, "type": "PLAY_SOUND", "sound": "media/sound/scenes/swoosh-fall-long.ogg" }, { "mode": "MEDIUM", "delayed": false, "type": "RESUME_DEFAULT_BGM" }, { "alpha": 1, "time": 0, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.1 }, { "pos": { "x": 480, "y": 200 }, "speed": "IMMEDIATELY", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 2, "type": "SET_CAMERA_POS" }, { "zoom": 1, "duration": 2, "transition": "EASE_OUT", "type": "SET_CAMERA_ZOOM" }, { "alpha": 0, "time": 2, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 2 }, { "pos": { "x": 480, "y": 312 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "action": [ { "face": "WEST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "Emilie" }, "action": [ { "face": "EAST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "side": "LEFT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "SHOCKED" } }, { "message": { "en_US": "Wow, now that was funky!\n", "de_DE": "Boah, das war ja mal abgefahren!", "fr_FR": "fr_FR", "langUid": 4, "zh_CN": "哇哦，有点诡异！", "ko_KR": "우와, 정말 굉장했어!", "ja_JP": "うわあ、すっごくいかしてた！", "zh_TW": "哇哦，有點詭異！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SHOCKED" } }, { "message": { "en_US": "Suddenly I was in the middle of space and this old geezer kept talking to me.", "de_DE": "Auf einmal war ich mitten im Weltall und dieser alte Knacker hat mit mir gesprochen.", "fr_FR": "fr_FR", "langUid": 5, "zh_CN": "我突然就出现在了太空中，然后那老头就一直跟我讲东讲西。", "ko_KR": "갑자기 내가 우주 한가운데 있더니 어떤 늙은 괴짜가 말을 하기 시작했어.", "ja_JP": "いきなり宇宙の真ん中に移動したと思ったら、\nヘンなおじいさんが話しかけてきたの。", "zh_TW": "我突然就出現在了太空中，然後那老頭就一直跟我講東講西。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SUSPICIOUS" } }, { "message": { "en_US": "Same for you?", "de_DE": "War's bei dir auch so?", "fr_FR": "fr_FR", "langUid": 6, "zh_CN": "你也一样吗？", "ko_KR": "너도 같아?", "ja_JP": "あなたもそうだったの？", "zh_TW": "你也一樣嗎？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SUSPICIOUS" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "langUid": 7, "zh_CN": "[点头]", "ko_KR": "[끄덕]", "ja_JP": "[うなずく]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "I suppose they wanted to pep up the boring introduction, non?", "de_DE": "Wahrscheinlich wollten sie die langweilige Einführung mal etwas aufpeppen, non?", "fr_FR": "fr_FR", "langUid": 8, "zh_CN": "我觉得他们是想让枯燥的介绍变得激情点，对吧？", "ko_KR": "이 지루한 도입부를 뭔가 재미있게 만들고 싶었나 봐.", "ja_JP": "たぶん、つまんない説明を面白くしようって工夫\nだったんじゃない？", "zh_TW": "我覺得他們是想讓枯燥的介紹變得激情點，對吧？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "WATCH_OUT_BADASS" } }, { "message": { "en_US": "Oui, oui! \\c[3]Track of the Ancients\\c[0] it is!", "de_DE": "Oui, oui! Auf zum \\c[3]Pfad der Ahnen\\c[0]!", "fr_FR": "fr_FR", "langUid": 9, "zh_CN": "嗯！这就是\\c[3]先祖之路\\c[0]了！", "ko_KR": "그래, 그래! 그래야 \\c[3]고대인의 길\\c[0]이지!", "ja_JP": "さてさて！\\c[3]いにしえの軌跡\\c[0]ね！", "zh_TW": "嗯！這就是\\c[3]先祖之路\\c[0]了！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "Let's go back.\\. Lukas is waiting.", "de_DE": "Lass uns wieder zurück.\\. Lukas wartet.", "fr_FR": "fr_FR", "langUid": 10, "zh_CN": "我们回去吧。\\.卢卡斯还等着呢。", "ko_KR": "이제 돌아가자.\\. 루카스가 기다리고 있어.", "ja_JP": "さ、戻りましょ。\\. ルーカスが待ってる。", "zh_TW": "我們回去吧。\\.盧卡斯還等著呢。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" }, { "entity": { "global": true, "name": "Emilie" }, "action": [ { "target": { "x": 480, "y": 356, "lvl": "0" }, "precise": false, "type": "MOVE_TO_POINT" }, { "target": { "x": 656, "y": 356, "lvl": "0" }, "precise": false, "type": "MOVE_TO_POINT" }, { "type": "RESET_NPC" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "time": 0.4, "type": "WAIT" }, { "value": 0.3, "type": "SET_RELATIVE_SPEED" }, { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" }, { "time": 0.5, "type": "MOVE_FORWARD" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "side": "LEFT", "order": 5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.sergey", "expression": "DEFAULT" } }, { "message": { "en_US": "By the way, Lea.\\. I took the liberty of adding a few more entries to your \\c[3]encyclopedia\\c[0].", "de_DE": "Übrigens, Lea.\\. Ich habe mir erlaubt, deiner \\c[3]Enzyklopädie\\c[0] noch ein paar Einträge hinzuzufügen.", "fr_FR": "fr_FR", "langUid": 101, "zh_CN": "对了，莉亚。\\.我刚才自作主张地，在你的\\c[3]百科\\c[0]中添加了一些条目。", "ko_KR": "한 가지 더, 레아.\\. 내멋대로 \\c[3]백과사전\\c[0]에 지식 몇 가지를 추가했어.", "ja_JP": "そうだ、レア。\\. 勝手ながら、君が見られる\\c[3]辞典\\c[0]に\nいくつか項目を追加しておいたよ。", "zh_TW": "對了，莉亞。\\.我剛才自作主張地，在你的\\c[3]百科\\c[0]中添加了一些條目。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.sergey", "expression": "DEFAULT" } }, { "message": { "en_US": "For example... all past events and people we have met so far.\n", "de_DE": "Zum Beispiel... alle bisherigen Ereignisse und Menschen, die wir bisher getroffen haben.", "fr_FR": "fr_FR", "langUid": 102, "zh_CN": "例如…到目前为止所发生的事件，以及所见到过的人。", "ko_KR": "예를 들어... 과거에 있었던 모든 일과 지금까지 만난 사람들 같은 거.", "ja_JP": "たとえば...今まで出会った物事や人のこととか。", "zh_TW": "例如…到目前為止所發生的事件，以及所見到過的人。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.sergey", "expression": "THINKING" } }, { "message": { "en_US": "And a few insights on the technology, of course.", "de_DE": "Und natürlich ein paar Einblicke in die Technologie.", "fr_FR": "fr_FR", "langUid": 103, "zh_CN": "当然还有对一些科技的见解。", "ko_KR": "그리고 물론 기술에 관한 정보도 추가했지.", "ja_JP": "もちろん、技術に関することもいくつか\n追加しておいたよ。", "zh_TW": "當然還有對一些科技的見解。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.sergey", "expression": "JOKING" } }, { "message": { "en_US": "...", "de_DE": "...", "fr_FR": "fr_FR", "langUid": 104, "zh_CN": "…", "ko_KR": "...", "ja_JP": "...", "zh_TW": "…" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NERVOUS" } }, { "message": { "en_US": "What?\\. I just like to organize things.", "de_DE": "Was denn?\\. Ich organisiere nun mal gerne.", "fr_FR": "fr_FR", "langUid": 105, "zh_CN": "别这么瞪我！\\.我只是喜欢整理资料而已。", "ko_KR": "왜?\\. 난 정리하는 걸 좋아한다고.", "ja_JP": "なんだい？\\.僕はただ整理するのが好きなだけだよ。", "zh_TW": "不要這麼瞪我！\\.我只是喜歡整理資料而已。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.sergey", "expression": "WHISTLING" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "task": { "en_US": "Meet up again with \\c[3]Schneider\\c[0] and \\c[3]Emilie\\c[0] to continue your tour through Rookie Harbor.", "de_DE": "Triff dich wieder mit \\c[3]Schneider\\c[0] und \\c[3]Emilie\\c[0], um die Führung durch Rookie Harbor fortzusetzen.", "fr_FR": "fr_FR", "langUid": 60, "zh_CN": "再次与\\c[3]剪刀手\\c[0]和\\c[3]艾米莉\\c[0]碰面，继续你的新手港旅途。", "ko_KR": "\\c[3]슈나이더\\c[0]와 \\c[3]에밀리\\c[0]를 만나서 초보자 항구를 계속 둘러보세요.", "ja_JP": "\\c[3]シュナイダー\\c[0]、\\c[3]エミリー\\c[0]と合流してルーキーハーバーを回ろう。", "zh_TW": "再次與\\c[3]剪刀手\\c[0]和\\c[3]艾米莉\\c[0]碰面，繼續你的新手港旅途。" }, "type": "SET_PERMA_TASK" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "lea", "entry": "page-01-02" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "carla", "entry": "page-02-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "sergey", "entry": "page-02-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "cap-jet", "entry": "page-02-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "designer", "entry": "page-02-02" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "emilie", "entry": "page-02-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "schneider", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "apollo", "entry": "page-01-02" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "joern", "entry": "page-01-02" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "track-of-ancients", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "operation-trackwalker", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "planet", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "seeker", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "rhombus-square", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "newcomers-bridge", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "rookie-dungeon", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "cross-central", "entry": "page-01-02" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "rookie-harbor", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "human-government", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "cross-worlds", "entry": "page-01-02" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "dev-company", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "playground", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "player", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "balls", "entry": "para-1" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "avatars", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "instant-matter", "entry": "page-01-02" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "com-tech", "entry": "page-01-02" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "cross-gear", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "solar-fist", "entry": "p1" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "insta-matter-bomb", "entry": "page-01-01" }, { "notify": false, "type": "UNLOCK_LORE_ENTRY", "lore": "cargo-ship", "entry": "page-01-01" }, { "type": "UNLOCK_LORE_FIRST_TIME" }, { "type": "CHANGE_VAR_BOOL", "varName": "map.loreDone", "value": true, "changeType": "set" }, { "type": "CHANGE_VAR_NUMBER", "varName": "plot.autumnIntro", "changeType": "set", "value": 30 } ],
+                "triggerType": "ALWAYS",
+                "mapId": 120,
+                "startCondition": "map.expoDone"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [53,"settings"]
+    },
+    {
+        "_comment": "Change Emilie action conditions",
+        "type": "SET_KEY",
+        "index": "npcStates",
+        "content": [
+                    { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": false, "condition": "plot.autumnIntro >= 21", "config": "normal", "event": [] }, { "position": { "x": 456, "y": 316, "lvl": "0" }, "reactType": "FIXED_POS", "face": "NORTH", "action": [], "hidden": false, "condition": "plot.autumnIntro >= 22", "config": "running", "event": [] }, { "position": { "x": 736, "y": 168, "lvl": "0" }, "reactType": "FIXED_POS", "face": "NORTH", "action": [], "hidden": true, "door": { "global": true, "name": "downwards" }, "condition": "plot.autumnIntro >= 30", "config": "running", "event": [] }
+                ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

@@ -1,0 +1,81 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    {
+        "type": "ENTER",
+        "index": [180, "settings", "npcStates", 1]
+    },
+    {
+        "_comment": "Schneider hidden",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT"
+    },  
+    {
+        "type": "ENTER",
+        "index": [0]
+    },
+    {
+        "_comment": "Schneider hidden",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    },  
+    
+    {
+        "type": "ENTER",
+        "index": [181, "settings"]
+    },
+    {
+        "_comment": "Make sure you don't skip the previous cutscene losing the pickup",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "false"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "endCondition",
+        "content": "false"
+    },
+    {
+        "type": "ENTER",
+        "index": ["event"]
+    },
+    {
+        "_comment": "Changing variables around",
+        "type": "SET_KEY",
+        "index": 1,
+        "content": {
+						"changeType": "set",
+						"type": "CHANGE_VAR_NUMBER",
+						"varName": "plot.guildEntry",
+						"value": 41
+				}
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    },  
+    { 
+    "type": "IF", 
+    "_comment": "Adds corresponding patch if Extra Sandwich is on", 
+    "cond": "ig.vars.get('open-world.extra-sandwich') >= 1", 
+    "thenSteps": [{ 
+        "_comment": "Extra Sandwich", "type": "ADD_ARRAY_ELEMENT", "content": {"type":"Chest","x":164,"y":288,"level":2,"settings":{"name":"","chestType":"Silver","item":"1","amount":2,"mapId":5000}} 
+    }]},
+    { 
+    "type": "IF", 
+    "_comment": "Adds corresponding patch if Extra Sandwich is on", 
+    "cond": "ig.vars.get('open-world.extra-sandwich') >= 1", 
+    "thenSteps": [{ 
+        "_comment": "Extra Sandwich", "type": "ADD_ARRAY_ELEMENT", "content": {"type":"Chest","x":277,"y":89,"level":2,"settings":{"name":"","chestType":"Gold","item":"1","amount":2,"mapId":5001}} 
+    }]},
+    { "type": "EXIT", "count": 1 }  
+]

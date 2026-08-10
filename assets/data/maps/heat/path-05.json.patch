@@ -1,0 +1,89 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [243,"settings","event",1]
+    },
+    {
+        "_comment": "Change condition for Kit quest to be doable on party",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "party.size > 3"
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    },  
+    
+    {
+        "type": "ENTER",
+        "index": [244,"settings"]
+    },
+    {
+        "_comment": "Change condition for Kit quest to be doable on party",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "quest.dekay-quest.currentTask == 2"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [256,"settings"]
+    },
+    {
+        "_comment": "Change condition for Kit quest to be doable on party",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [241,"settings","npcStates",2]
+    },
+    {
+        "_comment": "Make sure Kit doesnt hide if more than 1 party members are there",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [255,"settings"]
+    },
+    {
+        "_comment": "Make sure teleport is accessible with more than 1 member",
+        "type": "SET_KEY",
+        "index": "blockEvent"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEventCondition"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

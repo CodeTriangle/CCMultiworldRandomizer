@@ -1,0 +1,95 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+    {
+        "type": "FOR_IN",
+        "_comment": "Hide all the NPCs from the raid sequence",
+        "keyword": "__INDEX__",
+        "values": [208, 209, 210, 211, 212, 213, 214],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "npcStates",
+                "content": [
+                                {
+                                    "reactType": "FIXED_POS",
+                                    "face": "WEST",
+                                    "showFx": {
+                                        "sheet": "teleport",
+                                        "name": "showDefault"
+                                    },
+                                    "hidden": true,
+                                    "condition": "",
+                                    "config": "",
+                                    "event": []
+                                }]
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Hide all the object layers hiding the passage",
+        "keyword": "__INDEX__",
+        "values": [217, 218, 219, 220, 221, 222],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "spawnCondition",
+                "content": "false"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes story events",
+        "keyword": "__INDEX__",
+        "values": [1, 215],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [216, "settings"]
+    },
+    {
+        "_comment": "Make the door accessible without advancing plot or asking",
+        "type": "SET_KEY",
+        "index": "blockEventCondition"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEvent"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

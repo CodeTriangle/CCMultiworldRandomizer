@@ -1,0 +1,41 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [8,"settings", "npcStates", 3] },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "_comment": "Change Vagabond to trigger dialogue after Meteor Shade cutscene",
+        "content": "plot.meteorShade >= 3"
+    },
+    { "type": "EXIT", "count": 4 },    
+
+    { "type": "ENTER", "index": [9,"settings","event"] },
+    {
+        "type": "SET_KEY",
+        "index": 29,
+        "_comment": "Disable solve quest condition for bug quest",
+        "content": { "ignoreSlowDown": false, "type": "WAIT", "time": 0.1 }
+    },
+    { "type": "EXIT", "count": 3 },    
+
+    { "type": "ENTER", "index": [25,"settings","event"] },
+    {
+        "type": "SET_KEY",
+        "index": 49,
+        "_comment": "Disable solve quest condition for bug quest",
+        "content": { "ignoreSlowDown": false, "type": "WAIT", "time": 0.1 }
+    },
+    { "type": "EXIT", "count": 3 },    
+
+    { "type": "ENTER", "index": [30,"settings","event"] },
+    {
+        "type": "SET_KEY",
+        "index": 43,
+        "_comment": "Disable solve quest condition for bug quest",
+        "content": { "ignoreSlowDown": false, "type": "WAIT", "time": 0.1 }
+    },
+    { "type": "EXIT", "count": 3 },    
+
+    { "type": "EXIT" }    
+]

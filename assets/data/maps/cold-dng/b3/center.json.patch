@@ -1,0 +1,50 @@
+[
+  {
+    "type": "ENTER",
+    "index": "entities"
+  },
+  {
+    "type": "FOR_IN",
+    "_comment": "Remove 1st and 2nd set of key pillars",
+    "keyword": "__INDEX__",
+    "values": [ 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "body": [
+      { "type": "ENTER", "index": [ "__INDEX__", "settings" ] },
+      { "type": "SET_KEY", "index": "spawnCondition", "content": "false" },
+      { "type": "EXIT", "count": 2 }
+    ]
+  },
+  {
+    "type": "FOR_IN",
+    "_comment": "Unstuck doors when combat is off",
+    "keyword": "__INDEX__",
+    "values": [
+      9,
+      10,
+      13
+    ],
+    "body": [
+      {
+        "type": "ENTER",
+        "index": [
+          "__INDEX__",
+          "settings"
+        ]
+      },
+      {
+        "type": "SET_KEY",
+        "_comment": "Make doors only open once the fight is finished (walls not raised)",
+        "index": "condition",
+        "content": "!map.wallUp"
+      },
+      {
+        "type": "EXIT",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "type": "EXIT",
+    "count": 1
+  }
+]

@@ -1,0 +1,80 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [428,  "settings"] },
+    { "type": "SET_KEY", "index": "startCondition", "content": "!map.passGiven" },
+    { "type": "SET_KEY", "index": "endCondition", "content": "map.passGiven" },
+    {
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [
+            { "type": "START_PRIVATE_MSG" },
+            {
+                "person": { "person": "main.sergey", "expression": "DEFAULT" },
+                "type": "ADD_MSG_PERSON",
+                "side": "LEFT"
+            },
+            {
+                "person": { "person": "main.lea", "expression": "DEFAULT" },
+                "type": "ADD_MSG_PERSON",
+                "side": "RIGHT"
+            },
+            {
+                "person": { "person": "main.sergey", "expression": "DEFAULT" },
+                "message": {
+                    "en_US": "Hello, Lea.",
+                    "de_DE": "Hello, Lea.",
+                    "ja_JP": "Hello, Lea.",
+                    "ko_KR": "Hello, Lea.",
+                    "zh_CN": "Hello, Lea.",
+                    "zh_TW": "Hello, Lea.",
+                    "langUid": 23360
+                },
+                "type": "SHOW_MSG"
+            },
+            {
+                "person": { "person": "main.sergey", "expression": "NOTIFYING" },
+                "message": {
+                    "en_US": "It seems someone has forgotten to give you this.",
+                    "de_DE": "It seems someone has forgotten to give you this.",
+                    "ja_JP": "It seems someone has forgotten to give you this.",
+                    "ko_KR": "It seems someone has forgotten to give you this.",
+                    "zh_CN": "It seems someone has forgotten to give you this.",
+                    "zh_TW": "It seems someone has forgotten to give you this.",
+                    "langUid": 23361
+                },
+                "type": "SHOW_MSG"
+            },
+            {
+                "item": "626",
+                "amount": 1,
+                "skip": true,
+                "type": "GIVE_ITEM"
+            },
+            {
+                "changeType": "set",
+                "type": "CHANGE_VAR_BOOL",
+                "varName": "map.passGiven",
+                "value": true
+            },
+            {
+                "person": { "person": "main.sergey", "expression": "DEFAULT" },
+                "message": {
+                    "en_US": "I hope it's useful.",
+                    "de_DE": "I hope it's useful.",
+                    "ja_JP": "I hope it's useful.",
+                    "ko_KR": "I hope it's useful.",
+                    "zh_CN": "I hope it's useful.",
+                    "zh_TW": "I hope it's useful.",
+                    "langUid": 23362
+                },
+                "type": "SHOW_MSG"
+            },
+            { "type": "REMOVE_MSG_PERSON", "person": "main.sergey" },
+            { "type": "REMOVE_MSG_PERSON", "person": "main.lea" }
+        ]
+    },
+    { "type": "EXIT", "count": 2 },
+
+    { "type": "EXIT", "count": 1 }  
+]

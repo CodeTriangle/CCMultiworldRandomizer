@@ -1,0 +1,44 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [371, "settings"]
+    },
+    {
+        "_comment": "Make the exit door accessible at any point",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": ""
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes story events",
+        "keyword": "__INDEX__",
+        "values": [372, 436],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

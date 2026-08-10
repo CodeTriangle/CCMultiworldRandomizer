@@ -8,6 +8,16 @@
         "content": {
             "changeType": "set",
             "type": "CHANGE_VAR_BOOL",
+            "varName": "g.firstApeDefeat",
+            "value": true
+        }
+    },
+    {
+        "_comment": "Circumvent a visual issue when skipping f3",
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+            "changeType": "set",
+            "type": "CHANGE_VAR_BOOL",
             "varName": "maps.treeDng/f3/branchMiddle._mw_dummy_value",
             "value": true
         }
@@ -16,4 +26,3 @@
 
     { "type": "EXIT", "count": 1 }
 ]
-

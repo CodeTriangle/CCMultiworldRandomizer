@@ -1,0 +1,22 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [292,"settings"] },
+    {
+        "type": "SET_KEY",
+        "index": "spawnCondition",
+        "_comment": "Change Henry quest trigger to not have prerequisites",
+        "content": "!quest.trailblaze-bergen.started"
+    },
+    { "type": "EXIT", "count": 2 },
+
+    { "type": "ENTER", "index": [293,"settings", "npcStates", 0] },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "_comment": "Make Henry appear without prerequisites"
+    },
+    { "type": "EXIT", "count": 4 },    
+
+    { "type": "EXIT" }    
+]

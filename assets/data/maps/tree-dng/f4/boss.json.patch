@@ -1,0 +1,38 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [26, "settings"] },
+    {
+        "_comment": "Remove condition so the star shade cutscene handles the SP upgrade!!! (Change conditions for spUpgrade tied to finishing the bossfight/dungeon instead of just having the star shade)",
+        "type": "SET_KEY",
+        "index": "endCondition",
+        "content": "map.upgradeObtained || player.maxSp >= 16"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "false"
+    },
+    { "type": "ENTER", "index": "event" },
+    {
+        "_comment": "Make SP upgrade incremental/progressive instead of a set value",
+        "type": "SET_KEY",
+        "index": "10",
+        "content": {
+            "type": "INCREASE_PLAYER_SP_LEVEL"
+        }
+    },
+    {
+        "_comment": "Make SP upgrade incremental/progressive instead of a set value",
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+            "changeType": "set",
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "map.upgradeObtained",
+            "value": true
+        }
+    },
+    { "type": "EXIT", "count": 3 },
+
+    { "type": "EXIT", "count": 1 }
+]

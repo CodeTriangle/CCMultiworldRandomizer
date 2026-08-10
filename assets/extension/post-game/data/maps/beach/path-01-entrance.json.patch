@@ -1,0 +1,50 @@
+[
+    { "type": "ENTER", "index": [ "entities"] },
+    { "type": "ENTER", "index": [ 704, "settings", "npcStates", 0 ] },
+
+    {
+        "_comment": "Replace DLC completion for quest",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "!quest.ape-battle.started && open-world.dlcActive && g.firstApeDefeat && item.626.amount >= 1"
+    },
+
+
+    { "type": "EXIT", "count": 4 },
+    {
+        "_comment": "Replace DLC completion for quest",
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+			"type": "Prop",
+			"x": 1632,
+			"y": 622,
+			"level": 2,
+			"settings": {
+				"size": {
+					"x": 16,
+					"y": 16
+				},
+				"mapId": 1060,
+				"interact": {
+					"icon": "INFO",
+					"hoverText": {
+						"en_US": "Come back after completing the Trial of the West",
+						"de_DE": "Come back after completing the Trial of the West",
+						"fr_FR": "Come back after completing the Trial of the West",
+						"langUid": 27,
+						"zh_CN": "Come back after completing the Trial of the West",
+						"ko_KR": "Come back after completing the Trial of the West",
+						"ja_JP": "Come back after completing the Trial of the West",
+						"zh_TW": "Come back after completing the Trial of the West"
+					}
+				},
+				"propType": {
+					"sheet": "sao",
+					"name": "challenge-note"
+				},
+				"spawnCondition": "!quest.ape-battle.started && !g.firstApeDefeat"
+			}
+		}
+    },
+    { "type": "EXIT", "count": 1 }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+  
+    {
+        "type": "FOR_IN",
+        "_comment": "Spawn teleports only with Green Leaf Shade",
+        "keyword": {"index": "__INDEX__", "marker": "__MARKER__"},
+        "values": [{ "index": 276, "marker": "off1" }, { "index": 259, "marker": "off2" }, { "index": 275, "marker": "off3" }],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "spawnCondition",
+            "content": "item.145.amount >= 1"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+
+    {
+      "type": "ADD_ARRAY_ELEMENT",
+      "_comment": "Add floor shade icons",
+      "content": { "type": "Prop", "x": 676, "y": 356, "level": 3, "settings": { "name": "shadeIconA", "mapId": 1297, "propType": { "sheet": "autumn", "name": "barrierSign" }, "propAnim": "leafOff", "spawnCondition": "item.145.amount < 1" } }
+    },
+    {
+      "type": "ADD_ARRAY_ELEMENT",
+      "_comment": "Add floor shade icons",
+      "content": { "type": "Prop", "x": 741, "y": 484, "level": 3, "settings": { "name": "shadeIconB", "mapId": 1298, "propType": { "sheet": "autumn", "name": "barrierSign" }, "propAnim": "leafOff", "spawnCondition": "item.145.amount < 1" } }
+    },
+    {
+      "type": "ADD_ARRAY_ELEMENT",
+      "_comment": "Add floor shade icons",
+      "content": { "type": "Prop", "x": 676, "y": 612, "level": 3, "settings": { "name": "shadeIconC", "mapId": 1299, "propType": { "sheet": "autumn", "name": "barrierSign" }, "propAnim": "leafOff", "spawnCondition": "item.145.amount < 1" } }
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

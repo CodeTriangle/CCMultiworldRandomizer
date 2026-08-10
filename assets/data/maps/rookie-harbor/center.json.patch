@@ -1,0 +1,384 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [622]
+    },
+    {
+        "_comment": "Change Schneider postexpo",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content":  {
+                "name": "SchneiderPostExpo", "eventType": "CUTSCENE", "endCondition": "plot.autumnIntro >= 40", "event": [ { "pos": { "x": 960, "y": 488 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 960, "y": 524, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "entity": { "global": true, "name": "Schneider" }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": true, "keepState": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 4, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "So, how was it, Lea?\\. Enjoyed being in space?", "de_DE": "Na, wie war's, Lea?\\. Hattest du Spaß im Weltall?<<A<<[CHANGED 2021/05/22]", "fr_FR": "fr_FR", "langUid": 248, "zh_CN": "怎么样，莉亚？\\.身处太空的感觉还行吗？<<A<<[CHANGED 2021/05/22]", "ja_JP": "それで、どうだった、レア？\\.\n宇宙は楽しめたか？<<A<<[CHANGED 2021/05/22]", "ko_KR": "그래서, 어땠어, 레아?\\. 우주에 있는 기분이?", "zh_TW": "怎麼樣，莉亞？\\.身處太空的感覺還行嗎？<<A<<[CHANGED 2021/05/22]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "SKEPTICAL" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "langUid": 276, "zh_CN": "[点头]", "ja_JP": "[うなずく]", "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "Well, now you should understand your task, being part of Track Walker and all.", "de_DE": "Gut, jetzt solltet ihr eure Aufgabe kennen, als Teil von Pfadläufer und dem ganzen Drumherum.", "fr_FR": "fr_FR", "langUid": 277, "zh_CN": "现在，你们应该明白自己的任务了吧，成为寻路者的一员什么的。", "ja_JP": "さて、これでいにしえの軌跡をたどる者に\nなるという使命について理解したはずだ。", "ko_KR": "그렇다면 이제 트랙 워커로서 네가 해야 할 일을 알겠지?", "zh_TW": "現在，你們應該明白自己的任務了吧，成為尋路者的一員什麼的。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "Let's go to the \\c[3]west\\c[0] now.", "de_DE": "Lasst uns jetzt nach \\c[3]Westen\\c[0] gehen.", "fr_FR": "fr_FR", "langUid": 278, "zh_CN": "现在我们去\\c[3]西边\\c[0]吧。", "ja_JP": "それじゃ、今度は\\c[3]西\\c[0]に行こう。", "ko_KR": "그럼 이제 \\c[3]서쪽\\c[0]으로 가자.", "zh_TW": "現在我們去\\c[3]西邊\\c[0]吧。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" }, { "entity": { "global": true, "name": "Emilie" }, "action": [ { "target": { "x": 984, "y": 552, "lvl": "1" }, "precise": false, "type": "MOVE_TO_POINT" } ], "repeating": true, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "entity": { "global": true, "name": "Schneider" }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": true, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "Schneider" }, "action": [ { "target": { "x": 940, "y": 560, "lvl": "1" }, "precise": false, "type": "MOVE_TO_POINT" } ], "repeating": false, "wait": true, "keepState": false, "type": "DO_ACTION" }, { "type": "RESET_NPC", "npc": { "global": true, "name": "Schneider" } }, { "type": "RESET_NPC", "npc": { "global": true, "name": "Emilie" } }, { "entity": { "player": true }, "action": [ { "time": 0.1, "type": "WAIT" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "message": { "en_US": "By the way, Lea.\\. Spheromancer?\\. That's surprising.", "de_DE": "Übrigens, Lea.\\. Spheromancer?\\. Das ist überraschend.", "fr_FR": "fr_FR", "langUid": 251, "zh_CN": "对了，莉亚。\\.气圆使者？\\.真是让人惊讶啊。", "ja_JP": "ところで、レア。\\.スフィロマンサーなのか？\\.驚きだな。", "ko_KR": "근데, 레아.\\. 원술사였어?\\. 놀랍네.", "zh_TW": "對了，莉亞。\\.氣圓使者？\\.真是讓人驚訝啊。" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "...?", "de_DE": "...?", "fr_FR": "fr_FR", "langUid": 256, "zh_CN": "…？", "ja_JP": "...？", "ko_KR": "...?", "zh_TW": "…？" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.lea", "expression": "SURPRISED_AWAY" } }, { "message": { "en_US": "They're pretty unpopular.\\. Don't ask me why - they're fine balance wise.", "de_DE": "Die sind ziemlich unbeliebt.\\. Frag mich nicht warum - obwohl sie ziemlich ausgewogen sind.", "fr_FR": "fr_FR", "langUid": 253, "zh_CN": "没什么人愿意选这个职业。\\.别问我为什么，不是因为平衡性的问题。", "ja_JP": "全然見ないクラスだからさ。\\.理由は聞かないで\nくれ...バランスはいいはずなんだけどな。", "ko_KR": "원술사는 인기가 없거든.\\. 왜인지는 묻지 마, 그래도 밸런스는 좋은 클래스니까.", "zh_TW": "沒什麼人願意選這個職業。\\.別問我為什麼，不是因為平衡性的問題。" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.schneider", "expression": "WONDERING" } }, { "message": { "en_US": "What about Pentafist?\\. They're awesome, right?", "de_DE": "Was ist mit Pentafists?\\. Die sind großartig, stimmt's?", "fr_FR": "fr_FR", "langUid": 254, "zh_CN": "武星拳手呢？\\.很厉害，对不对？", "ja_JP": "ペンタフィストはどう？\\. \nこのクラスは最高でしょ？", "ko_KR": "오권사는 어때?\\. 정말 멋있지 않니?", "zh_TW": "武星拳手呢？\\.很厲害，對不對？" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.emilie", "expression": "TAUNTING" } }, { "message": { "en_US": "Japp!\\. And I couldn't imagine you in any other class.", "de_DE": "Jepp!\\. Und ich kann mir dich in keiner anderen Klasse vorstellen.", "fr_FR": "fr_FR", "langUid": 255, "zh_CN": "对！\\.而且我想不到你还能适合什么别的职业了。<<A<<[CHANGED 2018/09/19]", "ja_JP": "そうだな！\\. それに、おまえが他のクラスを選ぶなんて想像つかないしな。<<A<<[CHANGED 2018/09/19]", "ko_KR": "응!\\. 게다가 네가 다른 클래스를 선택하는 건 상상조차 할 수 없어.<<A<<[CHANGED 2018/09/19]", "zh_TW": "對！\\.而且我想不到你還能適合什麼別的職業了。<<A<<[CHANGED 2018/09/19]" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.schneider", "expression": "EYES_CLOSED" } }, { "type": "CHANGE_VAR_NUMBER", "varName": "plot.autumnIntro", "changeType": "set", "value": 40 } ], "triggerType": "ALWAYS", "mapId": 748, "startCondition": "tmp.centerEntered && plot.autumnIntro >= 30"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },  
+
+
+    {
+        "type": "ENTER",
+        "index": [619]
+    },
+    {
+        "_comment": "Change first Schneider explanation",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+                "name": "SchneiderExplainsQuests", "eventType": "CUTSCENE", "endCondition": "plot.autumnIntro >= 20", "event": [ { "pos": { "x": 960, "y": 488 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 932, "y": 532, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "Emilie" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 988, "y": 532, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "Schneider" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 960, "y": 488, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "type": "NAVIGATE_TO_POINT" }, { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "type": "WAIT_UNTIL_ACTION_DONE" }, { "entity": { "player": true }, "action": [ { "entity": { "global": true, "name": "Schneider" }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": true, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "Schneider" }, "type": "WAIT_UNTIL_ACTION_DONE" }, { "entity": { "global": true, "name": "Emilie" }, "type": "WAIT_UNTIL_ACTION_DONE" }, { "entity": { "player": true }, "action": [ { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 4, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "See that building up there?", "de_DE": "Seht ihr das Gebäude dort oben?", "fr_FR": "fr_FR", "langUid": 231, "zh_CN": "看见那边那栋大楼了吗？", "ja_JP": "あそこにある建物が見えるか？", "ko_KR": "저쪽에 있는 건물 보여?", "zh_TW": "看見那邊那棟大樓了嗎？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "pos": { "x": 960, "y": 184 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.2, "zoom": 1, "type": "SET_CAMERA_POS" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "That's the \\c[3]Seeker Hub\\c[0] or \\c[3]Quest Hub\\c[0].", "de_DE": "Das ist der \\c[3]Seeker Hub\\c[0] oder \\c[3]Quest Hub\\c[0].", "fr_FR": "fr_FR", "langUid": 232, "zh_CN": "那就是\\c[3]探索者中心\\c[0]，或者说\\c[3]任务中心\\c[0]。", "ja_JP": "あそこが\\c[3]探索者ハブ\\c[0]、または\\c[3]クエストハブ\\c[0]だ。", "ko_KR": "저곳이 바로 \\c[3]시커 허브\\c[0] 또는 \\c[3]퀘스트 허브\\c[0]야.", "zh_TW": "那就是\\c[3]探索者中心\\c[0]，或者說\\c[3]任務中心\\c[0]。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "UP" } }, { "message": { "en_US": "Surprise, you'll find a lot of \\c[3]quests\\c[0] there!", "de_DE": "Dort findet ihr - wer hätt's gedacht? - eine Menge \\c[3]Quests\\c[0]!", "fr_FR": "fr_FR", "langUid": 233, "zh_CN": "惊讶吧，你们可以在那里找到大量的\\c[3]任务\\c[0]！", "ja_JP": "驚くなよ、あそこにはたくさんの\\c[3]クエスト\\c[0]が\n用意されてるんだ！", "ko_KR": "저곳에서 다양한 \\c[3]퀘스트\\c[0]를 받을 수 있어!", "zh_TW": "驚訝吧，你們可以在那裡找到大量的\\c[3]任務\\c[0]！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "SKEPTICAL" } }, { "message": { "en_US": "... Just like in many other places in town and elsewhere.", "de_DE": "... So wie überall hier in der Stadt und darüber hinaus.", "fr_FR": "fr_FR", "langUid": 234, "zh_CN": "…跟在城镇其他地方接任务差不多。", "ja_JP": "...街や他の場所で見つかるクエストと同じような\nやつがな。", "ko_KR": "... 마을이나 다른 곳에서 받을 수 있는 것처럼 말이야.", "zh_TW": "…跟在城鎮其他地方接任務差不多。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "message": { "en_US": "All those quests are optional, but the rewards usually make it worthwhile.", "de_DE": "All diese Quests sind optional, aber die Belohnungen sind die Mühe meistens wert.", "fr_FR": "fr_FR", "langUid": 235, "zh_CN": "所有这些任务都不是必做的，但是其奖励通常很值得一试。", "ja_JP": "どのクエストも受けるかどうかは自分次第だが、\n報酬は役に立つものばかりだぞ。", "ko_KR": "필수 퀘스트는 아니지만 그래도 보상은 노려볼 만하지.", "zh_TW": "所有這些任務都不是必做的，但是其獎勵通常很值得一試。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "pos": { "x": 960, "y": 488 }, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.3, "zoom": 1, "type": "SET_CAMERA_POS" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 4, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "Hey Lea, are you still with us?", "de_DE": "Hey, Lea, kommst du noch mit?", "fr_FR": "fr_FR", "langUid": 243, "zh_CN": "嘿，莉亚，还听着吗？", "ja_JP": "なあレア、ちゃんと聞いてるか？", "ko_KR": "레아, 제대로 듣고 있는 거지?", "zh_TW": "嘿，莉亞，還聽著嗎？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "langUid": 244, "zh_CN": "[点头]", "ja_JP": "[うなずく]", "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "Oui, she's a quiet one. ", "de_DE": "Oui, sie ist etwas schüchtern.", "fr_FR": "fr_FR", "langUid": 245, "zh_CN": "是啊，她不太喜欢讲话。", "ja_JP": "そうだ、この子ったら無口なの。", "ko_KR": "레아는 말수가 별로 없어.", "zh_TW": "是啊，她不太喜歡講話。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "EMBARRASSED" } }, { "message": { "en_US": "But she was really fast at the tutorial, almost beat me to it!", "de_DE": "Aber sie war richtig schnell im Tutorial. Sie hat mich fast geschlagen!", "fr_FR": "fr_FR", "langUid": 246, "zh_CN": "不过她通过教程的速度真的很快，就比我差那么一点点！", "ja_JP": "でも、すごく早くチュートリアルを抜けてきたんだ。\nあとちょっとで追い越されるところだったもん！", "ko_KR": "하지만 튜토리얼은 굉장히 빨리 끝냈지. 거의 내가 질뻔했어!", "zh_TW": "不過她通過教程的速度真的很快，就比我差那麼一點點！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DETERMINED" } }, { "message": { "en_US": "Well like they say -\\. still waters run deep, right?", "de_DE": "Tja, wie sagt man?\\. Stille Wasser sind tief, was?", "fr_FR": "fr_FR", "langUid": 247, "zh_CN": "嗯，就像他们说的-\\.水静则深，对吧？<<A<<[CHANGED 2018/01/06]", "ja_JP": "要するに...\\. 能ある鷹は爪を隠す、ってことだろ？<<A<<[CHANGED 2018/01/06]", "ko_KR": "옛 속담처럼\\. 물이 깊을수록 소리가 없는 법이지.<<A<<[CHANGED 2018/01/05]", "zh_TW": "嗯，就像他們說的-\\.水靜則深，對吧？<<A<<[CHANGED 2018/01/06]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "WONDERING" } }, { "type": "IF", "withElse": true, "condition": "player.level > 10", "thenStep": [ { "message": { "en_US": "Uhm...\\. wait a moment.", "de_DE": "Öhm...\\. einen Moment mal.", "zh_CN": "嗯...\\.等一下。<<A<<[CHANGED 2019/08/16]", "ja_JP": "うーん...\\.\nちょっと待ってくれよ。<<A<<[CHANGED 2019/08/16]", "ko_KR": "음...\\. 잠시만.<<A<<[CHANGED 2019/08/16]", "langUid": 554, "zh_TW": "嗯...\\.等一下。<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "NORM_SERIOUS" } }, { "message": { "en_US": "You are... \\c[1]level \\v[player.level]\\c[0]?", "de_DE": "Du hast... \\c[1]Level \\v[player.level]\\c[0]?", "zh_CN": "你现在是...\\c[1]\\v[player.level]级\\c[0]?<<A<<[CHANGED 2019/08/16]", "ja_JP": "お前...\\c[1]レベル\\v[player.level]\\c[0]なのか？<<A<<[CHANGED 2019/08/16]", "ko_KR": "너는... \\c[1]레벨 \\v[player.level]\\c[0](이)구나?<<A<<[CHANGED 2019/08/16]", "langUid": 544, "zh_TW": "你現在是...\\c[1]\\v[player.level]級\\c[0]?<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "SURPRISED" } }, { "message": { "en_US": "...!!", "de_DE": "...!!", "zh_CN": "...!!<<A<<[CHANGED 2019/08/16]", "ja_JP": "...！！<<A<<[CHANGED 2019/08/16]", "ko_KR": "...!!<<A<<[CHANGED 2019/08/16]", "langUid": 545, "zh_TW": "...!!<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "PROUD" } }, { "message": { "en_US": "Yeah...\\. her level is strange.", "de_DE": "Ja...\\. ihr hohes Level ist etwas seltsam.", "zh_CN": "是啊...\\.她的等级有点奇怪。<<A<<[CHANGED 2019/08/16]", "ja_JP": "そうだよ...\\.\n彼女のレベル、ヘンなの。<<A<<[CHANGED 2019/08/16]", "ko_KR": "응...\\. 레벨이 이상하더라고.<<A<<[CHANGED 2019/08/16]", "langUid": 546, "zh_TW": "是啊...\\.她的等級有點奇怪。<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SWEATY_SMILE" } }, { "message": { "en_US": "Are you sure she just started the game as well?", "de_DE": "Bist du sicher, dass sie auch gerade erst angefangen hat?", "zh_CN": "你确定她是刚玩的游戏？<<A<<[CHANGED 2019/08/16]", "ja_JP": "お前たち、本当に同じタイミングで\nゲームを始めたんだよな？<<A<<[CHANGED 2019/08/16]", "ko_KR": "레아도 너처럼 게임을 시작한 지 얼마 안 된 거 맞지?<<A<<[CHANGED 2019/08/16]", "langUid": 547, "zh_TW": "你確定她是剛玩的遊戲？<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "WHISTLING" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "zh_CN": "[点头]<<A<<[CHANGED 2019/08/16]", "ja_JP": "[うなずく]<<A<<[CHANGED 2019/08/16]", "ko_KR": "[끄덕]<<A<<[CHANGED 2019/08/16]", "langUid": 548, "zh_TW": "[點頭]<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "Oui.\\. I saw her on Newcomer's Bridge, between the dungeons.", "de_DE": "Oui.\\. Ich habe sie auf der Neulingsbrücke gesehen, zwischen den Dungeons.", "zh_CN": "是呀。\\.我是在迎新桥的新手副本之间遇到她的。<<A<<[CHANGED 2020/07/08]", "ja_JP": "そうだよ。\\.レアとは、\nニューカマーズブリッジと\nダンジョンの間で会ったの。<<A<<[CHANGED 2020/07/08]", "ko_KR": "응.\\. 던전들 사이에 있는 초심자의 다리에서 봤어.<<A<<[CHANGED 2020/07/08]", "langUid": 549, "zh_TW": "是呀。\\.我是在迎新橋的新手副本之間遇到她的。<<A<<[CHANGED 2020/07/09]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "Gotta be honest, this sounds \\c[1]kinda fishy\\c[0].", "de_DE": "Ich sag's mal frei heraus: Da scheint \\c[1]irgendwas faul zu sein\\c[0].", "zh_CN": "老实说，听上去有些\\c[1]可疑\\c[0]。<<A<<[CHANGED 2019/08/16]", "ja_JP": "正直言って、それって\n\\c[1]なんだか怪しい\\c[0]ぞ。<<A<<[CHANGED 2019/08/16]", "ko_KR": "솔직히 말하자면, 뭔가 \\c[1]수상한\\c[0] 점이 있어서 말이야.<<A<<[CHANGED 2019/08/16]", "langUid": 550, "zh_TW": "說真的，聽上去有些\\c[1]可疑\\c[0]。<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "WORRIED" } }, { "message": { "en_US": "...", "de_DE": "...", "zh_CN": "...<<A<<[CHANGED 2019/08/16]", "ja_JP": "...<<A<<[CHANGED 2019/08/16]", "ko_KR": "...<<A<<[CHANGED 2019/08/16]", "langUid": 551, "zh_TW": "...<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NERVOUS" } }, { "message": { "en_US": "Come on! You always worry too much about the details!", "de_DE": "Ach was! Du machst dir immer um Kleinigkeiten 'nen Kopf!", "zh_CN": "哈哈！你老是这样疑神疑鬼的！<<A<<[CHANGED 2019/08/16]", "ja_JP": "ちょっと！あなたいっつも\n細かいことにこだわりすぎだよ！<<A<<[CHANGED 2019/08/16]", "ko_KR": "하여간! 맨날 사소한 일에 너무 많은 신경을 쓴다니까!<<A<<[CHANGED 2019/08/16]", "langUid": 552, "zh_TW": "哈哈！你老是這樣疑神疑鬼的！<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "message": { "en_US": "Anyway!\\. What about that main quest?", "de_DE": "Egal!\\. Was ist jetzt mit der Hauptquest?", "zh_CN": "那算了。\\.说回来，我们的主线任务呢？<<A<<[CHANGED 2019/08/16]", "ja_JP": "そうそう。\\. そうだ、メインクエストは？<<A<<[CHANGED 2019/08/16]", "ko_KR": "아무튼!\\. 그럼 메인 퀘스트는 어디서 받아?<<A<<[CHANGED 2019/08/16]", "langUid": 553, "zh_TW": "那算了。\\.說回來，我們的主線任務呢？<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } } ], "elseStep": [ { "message": { "en_US": "Oui, oui.\\. What about that main quest? ", "de_DE": "Oui, oui.\\. Was ist jetzt mit der Hauptquest?", "fr_FR": "fr_FR", "langUid": 236, "zh_CN": "没错，没错。\\.那主线任务呢？", "ja_JP": "そうそう。\\. そうだ、メインクエストは？", "ko_KR": "맞아, 맞아.\\. 그럼 메인 퀘스트는 어디서 받아?", "zh_TW": "沒錯，沒錯。\\.那主線任務呢？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } } ] }, { "message": { "en_US": "They kept talking about the \\c[3]Track of the Ancients\\c[0].", "de_DE": "Die haben ständig was vom \\c[3]Pfad der Ahnen\\c[0] erzählt.", "fr_FR": "fr_FR", "langUid": 237, "zh_CN": "他们一直在讲\\c[3]先祖之路\\c[0]的事情。", "ja_JP": "ずっと\\c[3]いにしえの軌跡\\c[0]について\n聞かされてきたんだけど。", "ko_KR": "자꾸 \\c[3]고대인의 길\\c[0] 어쩌고 하던데.", "zh_TW": "他們一直在講\\c[3]先祖之路\\c[0]的事情。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "AWAY" } }, { "message": { "en_US": "Oh right, I almost forgot about that.", "de_DE": "Oh, richtig, hätte ich fast vergessen.", "fr_FR": "fr_FR", "langUid": 238, "zh_CN": "哦对，我差点忘记了。", "ja_JP": "ああそうだ、忘れるところだった。", "ko_KR": "아, 맞다. 잊어버릴 뻔했네.", "zh_TW": "哦對，我差點忘記了。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "WONDERING" } }, { "message": { "en_US": "You'll have to enter the Quest Hub, anyway.", "de_DE": "Ihr müsst so oder so ins \\c[3]Quest Hub\\c[0].", "fr_FR": "fr_FR", "langUid": 270, "zh_CN": "总之，你们必须得先进任务中心。", "ja_JP": "説明を聞くにはクエストハブに入らなきゃな。", "ko_KR": "어쨌든 퀘스트 허브에는 들어가 봐야 해.", "zh_TW": "總之，你們必須得先進任務中心。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "There is a mandatory introduction for all new players.", "de_DE": "Dort gibt es eine Einführung, die für alle neuen Spieler Pflicht ist.", "fr_FR": "fr_FR", "langUid": 271, "zh_CN": "那里有一项针对全部新手玩家的强制介绍。", "ja_JP": "新規プレイヤーは全員、あそこで\n説明を受けることになってるんだ。", "ko_KR": "모든 신규 플레이어를 위한 필수 입문 퀘스트가 있거든.", "zh_TW": "那裡有一項針對全部新手玩家的強制介紹。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "TOWARDS" } }, { "message": { "en_US": "They'll explain all about it there.", "de_DE": "Da wird alles Weitere erklärt.", "fr_FR": "fr_FR", "langUid": 272, "zh_CN": "里面会全部解释到的。", "ja_JP": "ぜんぶあそこで説明してもらえるよ。", "ko_KR": "그곳에서 다 설명해줄 거야.", "zh_TW": "裡面會全部解釋到的。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "I suggest you go in right away and just get it over with.", "de_DE": "Ich schlage vor, ihr geht am besten gleich rein, damit ihr es hinter euch habt.", "fr_FR": "fr_FR", "langUid": 273, "zh_CN": "我建议你们赶紧进去，然后好好听完。", "ja_JP": "今行って聞いてきたらどうだ。", "ko_KR": "바로 들어가서 끝내버리는 게 좋을 것 같아.", "zh_TW": "我建議你們快點進去，然後好好聽完。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "WHISTLING" } }, { "message": { "en_US": "I'll just wait here.", "de_DE": "Ich werde einfach hier warten.", "fr_FR": "fr_FR", "langUid": 274, "zh_CN": "我就在这里等着。", "ja_JP": "俺はここで待ってるからさ。", "ko_KR": "난 여기 있을게.", "zh_TW": "我就在這裡等著。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "D'accord!\\. Let's go, Lea!", "de_DE": "D'accord!\\. Los geht's, Lea!", "fr_FR": "fr_FR", "langUid": 275, "zh_CN": "同意！\\.我们走吧，莉亚！<<A<<[CHANGED 2018/09/19]", "ja_JP": "OK！\\. 行こう、レア！<<A<<[CHANGED 2018/09/19]", "ko_KR": "그래!\\. 가자, 레아!<<A<<[CHANGED 2018/09/19]", "zh_TW": "同意！\\.我們走吧，莉亞！<<A<<[CHANGED 2018/09/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.autumnIntro", "value": 20 }, { "npc": { "global": true, "name": "Schneider" }, "type": "RESET_NPC" }, { "npc": { "global": true, "name": "Emilie" }, "type": "RESET_NPC" }, { "task": { "en_US": "Listen to the \\c[3]Mandatory Introduction\\c[0] inside the \\c[3]Quest Hub\\c[0] of Rookie Harbor. It's mandatory.", "de_DE": "Höre dir die \\c[3]Pflichteinführung\\c[0] im \\c[3]Quest Hub\\c[0] von Rookie Harbor an. Sie ist wirklich Pflicht.", "fr_FR": "fr_FR", "langUid": 60, "zh_CN": "聆听新手港\\c[3]任务中心\\c[0]里面的\\c[3]强制介绍\\c[0]。就是必听的。", "ja_JP": "ルーキーハーバーの\\c[3]クエストハブ\\c[0]へ\n\\c[3]必要な説明\\c[0]を受けに行こう。\nこれは全プレイヤー必須だ。", "ko_KR": "초보자 항구에 있는 \\c[3]퀘스트 허브\\c[0]에서 \\c[3]필수 입문 퀘스트\\c[0]를 들어보세요. 필수입니다.", "zh_TW": "聆聽新手港\\c[3]任務中心\\c[0]裡面的\\c[3]強制介紹\\c[0]。就是必聽的。" }, "type": "SET_PERMA_TASK" } ], "triggerType": "ALWAYS", "mapId": 743, "startCondition": "tmp.centerEntered"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [617]
+    },
+    {
+        "_comment": "Intro explanation",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+                "name": "LukasExpains1", "eventType": "CUTSCENE", "endCondition": "plot.autumnIntro >= 10", "event": [ { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.autumnIntro", "value": 10 }, { "entity1": { "player": true }, "entity2": { "global": true, "name": "Emilie" }, "speed": "IMMEDIATELY", "transition": "EASE", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_BETWEEN" }, { "alpha": 1, "time": 0, "lighter": false, "type": "SET_OVERLAY", "color": "black" }, { "entity": { "player": true }, "position": { "x": 936, "y": 1396, "lvl": "1" }, "type": "SET_ENTITY_POS" }, { "entity": { "global": true, "name": "Emilie" }, "position": { "x": 984, "y": 1380, "lvl": "1" }, "type": "SET_ENTITY_POS" }, { "entity": { "global": true, "name": "Schneider" }, "position": { "x": 960, "y": 1304, "lvl": "1" }, "type": "SET_ENTITY_POS" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.1 }, { "alpha": 0, "time": 1, "lighter": false, "type": "SET_OVERLAY", "color": "black" }, { "entity": { "global": true, "name": "Schneider" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 960, "y": 1148, "lvl": "1" }, "precise": false, "type": "MOVE_TO_POINT" }, { "value": 0.3, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 960, "y": 1132, "lvl": "1" }, "precise": true, "type": "MOVE_TO_POINT" }, { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "Emilie" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 984, "y": 1176, "lvl": "1" }, "precise": false, "type": "MOVE_TO_POINT" }, { "value": 0.3, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 984, "y": 1160, "lvl": "1" }, "precise": true, "type": "MOVE_TO_POINT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 936, "y": 1176, "lvl": "1" }, "precise": false, "type": "MOVE_TO_POINT" }, { "value": 0.3, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 936, "y": 1160, "lvl": "1" }, "precise": true, "type": "MOVE_TO_POINT" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "Schneider" }, "type": "WAIT_UNTIL_ACTION_DONE" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 4, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "Alright, next stop, the town center!", "de_DE": "Okay, nächster Halt: Das Stadtzentrum!", "fr_FR": "fr_FR", "langUid": 222, "zh_CN": "好了，下一站，城镇中心！", "ja_JP": "よし、お次は街の中心部だ！", "ko_KR": "좋아, 다음 목적지는 시내다!", "zh_TW": "好了，下一站，城鎮中心！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "pos": { "x": 960, "y": 604 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.4, "zoom": 1, "type": "SET_CAMERA_POS" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "ASTONISHED" } }, { "message": { "en_US": "Oh, is that a market over there?", "de_DE": "Oh, ist das dort drüben ein Markt?", "fr_FR": "fr_FR", "langUid": 223, "zh_CN": "哦，那里是市场吗？", "ja_JP": "わあ、ここには市場があるんだね。", "ko_KR": "오, 저쪽이 시장이야?", "zh_TW": "哦，那裡是市場嗎？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "ASTONISHED" } }, { "side": "RIGHT", "order": 4, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "Japp!\\. You'll find most of the \\c[3]traders\\c[0] around here.", "de_DE": "Jepp!\\. Hier findet ihr die meisten \\c[3]Händler\\c[0].", "fr_FR": "fr_FR", "langUid": 224, "zh_CN": "没错！\\.大多数的\\c[3]商人\\c[0]都可以在这里找到。<<A<<[CHANGED 2018/09/19]", "ja_JP": "そうさ！\\. だいたいの\\c[3]トレーダー\\c[0]は\nこのあたりにいるのさ。<<A<<[CHANGED 2018/09/19]", "ko_KR": "맞아!\\. 이곳에서 다양한 \\c[3]상인\\c[0]을 만날 수 있지.<<A<<[CHANGED 2018/09/19]", "zh_TW": "沒錯！\\.大多數的\\c[3]商人\\c[0]都可以在這裡找到。<<A<<[CHANGED 2018/09/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "...Well, they're all over the place to be frank.", "de_DE": "... Wobei sie eigentlich über die ganze Stadt verteilt sind.", "fr_FR": "fr_FR", "langUid": 225, "zh_CN": "…嗯，坦白地说，各个地方都有他们的身影。", "ja_JP": "...実際のところ、トレーダーはそこら中に\nいるんだがね。", "ko_KR": "...뭐, 사실 상인은 어디에나 있긴 해.", "zh_TW": "…嗯，坦白地說，各個地方都有他們的身影。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "WONDERING" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "entity": { "global": true, "name": "Schneider" }, "offsetX": 0, "offsetY": 0, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.2, "zoom": 1, "type": "SET_CAMERA_TARGET" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 4, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "Those traders offer \\c[3]pretty good equipment\\c[3].", "de_DE": "Diese Händler haben \\c[3]richtig gute Ausrüstung\\c[0] im Angebot.", "fr_FR": "fr_FR", "langUid": 226, "zh_CN": "这些商人会提供\\c[3]优质的装备\\c[3]。", "ja_JP": "ここのトレーダーたちは\\c[3]とてもいい装備\\c[3]を\n売ってるんだ。", "ko_KR": "상인은 \\c[3]꽤나 좋은 장비\\c[0]를 가지고 있다고.", "zh_TW": "這些商人會提供\\c[3]優質的裝備\\c[3]。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "message": { "en_US": "The catch: you first need to collect all the \\c[3]required trade items\\c[0] in the wild. ", "de_DE": "Der Haken: Ihr müsst zuerst alle \\c[3]benötigten Handelsitems\\c[0] in der Wildnis sammeln.", "fr_FR": "fr_FR", "langUid": 227, "zh_CN": "但是前提是你需要先在野外收集到全部\\c[3]所需的交易物品\\c[0]。", "ja_JP": "ただし、取引するには\\c[3]必要なトレードアイテム\\c[0]を\nフィールドで集める必要がある。", "ko_KR": "일단 밖에서 \\c[3]필요한 거래 아이템\\c[0]을 모두 모아야 거래가 돼.", "zh_TW": "但是前提是你需要先在野外收集到全部\\c[3]所需的交易物品\\c[0]。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "WINK" } }, { "message": { "en_US": "It takes time, but it's worth it.", "de_DE": "Das dauert zwar etwas, lohnt sich aber wirklich.", "fr_FR": "fr_FR", "langUid": 228, "zh_CN": "这需要花时间，不过肯定是值得的。", "ja_JP": "時間はかかるが、それだけの価値はあるぜ。", "ko_KR": "시간은 좀 걸리지만 그럴만한 가치가 있지.", "zh_TW": "這需要花時間，不過肯定是值得的。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "EYES_CLOSED" } }, { "message": { "en_US": "Further up is another important building.", "de_DE": "Weiter hinten ist noch ein wichtiges Gebäude.", "fr_FR": "fr_FR", "langUid": 229, "zh_CN": "接下来是另一栋重要建筑了。", "ja_JP": "それじゃ、次に行こうか。", "ko_KR": "조금 더 가면 다른 중요한 건물이 있어.", "zh_TW": "接下來是另一棟重要建築了。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "UP" } }, { "message": { "en_US": "This way!", "de_DE": "Hier entlang!", "fr_FR": "fr_FR", "langUid": 230, "zh_CN": "这边！", "ja_JP": "こっちだ！", "ko_KR": "이쪽이야!", "zh_TW": "這邊！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.schneider", "expression": "DEFAULT" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.autumnIntro", "value": 15 }, { "type": "IF", "withElse": false, "condition": "newgame.keep-equipment", "thenStep": [ { "message": { "en_US": "Well you pretty much already have \\c[1]all the equipment\\c[0], so....", "langUid": 543, "ja_JP": "まあ、君はもうすでに\n\\c[1]装備品をたくさん\\c[0]持ってるけどね...<<A<<[CHANGED 2019/08/16]", "zh_CN": "毕竟你该有的装备已经都有了....<<A<<[CHANGED 2019/08/16]", "de_DE": "Na ja, du hast ja schon so ziemlich \\c[1]alles an Ausrüstung\\c[0], von daher....", "ko_KR": "뭐, 넌 이미 거의 \\c[1]모든 장비들\\c[0]을 가지고 있으니...<<A<<[CHANGED 2019/08/16]", "zh_TW": "畢竟你該有的裝備已經都有了....<<A<<[CHANGED 2019/08/16]" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.sergey", "expression": "ROLL_EYES" } } ] }, { "npc": { "global": true, "name": "Schneider" }, "type": "RESET_NPC" }, { "npc": { "global": true, "name": "Emilie" }, "type": "RESET_NPC" } ], "triggerType": "ALWAYS", "mapId": 741, "startCondition": "plot.autumnIntro >= 0"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [618, "settings"]
+    },
+    {
+        "_comment": "Change center touch trigger variables",
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "plot.autumnIntro >= 15"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Hide all the barriers based on Flame Shade",
+        "keyword": "__INDEX__",
+        "values": [655, 656],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "spawnCondition",
+                "content": "item.230.amount < 1"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+    {
+        "type": "ENTER",
+        "index": [562, "settings"]
+    },
+    {
+        "_comment": "Hide left barrier NPC",
+        "type": "SET_KEY",
+        "index": "npcStates",
+        "content": [
+                    { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": false, "condition": "item.230.amount < 1", "config": "normal", "event": [ { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "advisors.man-tall-gray", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "I'm sorry, the northern part is currently under construction.", "de_DE": "Tut mir leid, aber der Nordbezirk ist wegen Bauarbeiten gesperrt.", "fr_FR": "fr_FR", "langUid": 16, "zh_CN": "很抱歉，北部区域目前正在建造中。", "ja_JP": "申し訳ありません、街の北部は現在建築作業中です。", "ko_KR": "미안하지만 북쪽은 지금 공사 중이야.", "zh_TW": "很抱歉，北部區域目前正在建造中。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "advisors.man-tall-gray", "expression": "DEFAULT" } }, { "message": { "en_US": "It will open up to the public with the \\c[3]\\v[item.230.name]\\c[0]!", "de_DE": "Er wird mit dem nächsten Update wieder freigegeben!", "fr_FR": "fr_FR", "langUid": 93, "zh_CN": "在下个内容补丁中就会对外开放了！", "ja_JP": "次回のコンテンツアップデートで一般公開されますので、それまでお待ちください！", "ko_KR": "다음 콘텐츠 업데이트에서 공개될 거야!", "zh_TW": "在下個內容補丁中就會對外開放了！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "advisors.man-tall-gray", "expression": "DEFAULT" } }, { "message": { "en_US": "...!", "de_DE": "...!", "fr_FR": "fr_FR", "langUid": 17, "zh_CN": "…！", "ja_JP": "...！", "ko_KR": "...!", "zh_TW": "…！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "side": "ALL", "type": "CLEAR_MSG" } ] }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [563, "settings"]
+    },
+    {
+        "_comment": "Hide right barrier NPC",
+        "type": "SET_KEY",
+        "index": "npcStates",
+        "content": [
+                    { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": false, "condition": "item.230.amount < 1", "config": "normal", "event": [ { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "advisors.female-tall-blond", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "Sorry, the northern part of the town is blocked due to construction.", "de_DE": "Tut mir leid, aber der Nordbezirk ist wegen Bauarbeiten gesperrt.", "fr_FR": "fr_FR", "langUid": 94, "zh_CN": "抱歉，城镇的北部区域因为施工被封锁了。", "ja_JP": "申し訳ありません、町の北部は現在建築作業により封鎖中です。", "ko_KR": "미안, 마을의 북쪽은 공사 중이어서 갈 수 없어.", "zh_TW": "抱歉，城鎮的北部區域因為施工被封鎖了。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "advisors.female-tall-blond", "expression": "DEFAULT" } }, { "message": { "en_US": "It will be open again when you obtain the \\c[3]\\v[item.230.name]\\c[0]!\n", "de_DE": "Mit einem der nächsten Updates wird er wieder freigegeben!", "fr_FR": "fr_FR", "langUid": 95, "zh_CN": "以后更新了就会重新开放的！", "ja_JP": "将来のアップデートにご期待ください！", "ko_KR": "다음 업데이트에서 다시 열릴 거야!", "zh_TW": "以後更新了就會重新開放的！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "advisors.female-tall-blond", "expression": "DEFAULT" } }, { "message": { "en_US": "...!", "de_DE": "...!", "fr_FR": "fr_FR", "langUid": 96, "zh_CN": "…！", "ja_JP": "...！", "ko_KR": "...!", "zh_TW": "…！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "side": "ALL", "type": "CLEAR_MSG" } ] }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [621]
+    },
+    {
+        "_comment": "Emilie and Schneider walk offscreen event",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+                "name": "SchneiderEmilieContinue",
+                "eventType": "INTERRUPTABLE",
+                "endCondition": "false",
+                "event": [
+                    { "entity": { "global": true, "name": "Schneider" }, "stat": "BOTTOM_POS", "type": "SET_VAR_ENTITY_STAT", "varName": "tmp.schneiderPos" }, { "type": "IF", "withElse": false, "condition": "tmp.schneiderPos.x < 220", "thenStep": [ { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.autumnIntro", "value": 50 } ] }
+                ],
+                "triggerType": "ALWAYS",
+                "mapId": 747,
+                "startCondition": "tmp.closeToWest && plot.autumnIntro < 50 && !msg.hasSideMsg"
+            }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },  
+
+
+
+    {
+        "type": "ENTER",
+        "index": [615,"settings"]
+    },
+    {
+        "_comment": "Change Emilie action conditions",
+        "type": "SET_KEY",
+        "index": "npcStates",
+        "content": [
+                    { "reactType": "FIXED_POS", "face": "NORTH", "action": [], "hidden": false, "condition": "plot.autumnIntro >= 10", "config": "normal", "event": [] }, { "position": { "x": 960, "y": 248, "lvl": "2" }, "reactType": "FIXED_POS", "face": "NORTH", "action": [], "hidden": true, "door": { "global": true, "name": "questHUBEntrance" }, "condition": "plot.autumnIntro >= 20", "config": "running", "event": [] }, { "position": { "x": 984, "y": 500, "lvl": "1" }, "reactType": "FIXED_POS", "face": "WEST", "action": [ { "entity": { "player": true }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "hidden": false, "condition": "plot.autumnIntro >= 30", "config": "normal", "event": [] }, { "position": { "x": 160, "y": 824, "lvl": "1" }, "reactType": "FIXED_POS", "face": "EAST", "action": [], "hidden": false, "condition": "plot.autumnIntro >= 40", "config": "normal", "event": [] }, { "position": { "x": 16, "y": 824, "lvl": "1" }, "reactType": "FIXED_POS", "face": "WEST", "action": [], "hidden": true, "door": { "global": true, "name": "left" }, "condition": "plot.autumnIntro >= 50", "config": "normal", "event": [] }, { "position": { "x": 1080, "y": 832, "lvl": "1" }, "reactType": "FIXED_FACE", "face": "EAST", "action": [], "hidden": false, "condition": "map.postFajro", "config": "normal", "event": { "quest": [ { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.emilieCtronMeetup", "value": true } ] } }, { "position": { "x": 1080, "y": 836, "lvl": "1" }, "reactType": "FIXED_POS", "face": "EAST", "action": [], "hidden": true, "condition": "map.afterMeetup", "config": "normal", "event": [] }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [616,"settings"]
+    },
+    {
+        "_comment": "Change Schneider action conditions",
+        "type": "SET_KEY",
+        "index": "npcStates",
+        "content": [
+                    { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": false, "condition": "plot.autumnIntro >= 10", "config": "normal", "event": [] }, { "position": { "x": 932, "y": 500, "lvl": "1" }, "reactType": "FIXED_POS", "face": "SOUTH", "action": [ { "entity": { "player": true }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "hidden": false, "condition": "plot.autumnIntro >= 20", "config": "normal", "event": [] }, { "position": { "x": 160, "y": 800, "lvl": "1" }, "reactType": "FIXED_POS", "face": "EAST", "action": [], "hidden": false, "condition": "plot.autumnIntro >= 40", "config": "normal", "event": [] }, { "position": { "x": 16, "y": 800, "lvl": "1" }, "reactType": "FIXED_POS", "face": "WEST", "action": [], "hidden": true, "door": { "global": true, "name": "left" }, "condition": "plot.autumnIntro >= 50", "config": "normal", "event": [] }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },  
+
+    {
+        "type": "ENTER",
+        "index": [574, "settings"]
+    },
+    {
+        "_comment": "Make the quest hub door accessible, since plot event changes",
+        "type": "SET_KEY",
+        "index": "blockEventCondition",
+        "content": "plot.autumnIntro < 20"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEvent",
+        "content": [
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "Emilie"
+                        },
+                        "action": [
+                            {
+                                "entity": {
+                                    "player": true
+                                },
+                                "rotate": true,
+                                "rotateSpeed": 3,
+                                "type": "SET_FACE_TO_ENTITY"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": true,
+                        "keepState": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "Emilie"
+                        },
+                        "offsetX": 0,
+                        "offsetY": 0,
+                        "speed": "FASTEST",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0.2,
+                        "zoom": 1,
+                        "type": "SET_CAMERA_TARGET"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "Emilie"
+                        },
+                        "action": [
+                            {
+                                "entity": {
+                                    "player": true
+                                },
+                                "rotate": true,
+                                "rotateSpeed": 3,
+                                "type": "SET_FACE_TO_ENTITY"
+                            },
+                            {
+                                "jumpHeight": "L",
+                                "wait": true,
+                                "ignoreSounds": false,
+                                "type": "JUMP"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": true,
+                        "keepState": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "side": "RIGHT",
+                        "order": 0,
+                        "clearSide": false,
+                        "type": "ADD_MSG_PERSON",
+                        "person": {
+                            "person": "main.emilie",
+                            "expression": "SUSPICIOUS"
+                        }
+                    },
+                    {
+                        "message": {
+                            "en_US": "Where are you going Lea?\\. We're over here!",
+                            "de_DE": "Wo willst du hin, Lea?\\. Wir sind hier drüben!",
+                            "fr_FR": "fr_FR",
+                            "langUid": 280,
+                            "zh_CN": "你要去哪里，莉亚？\\.我们在这里！",
+                            "ja_JP": "レア、そんなふうに走って行かないでよ。\\.私たちはこっちだよ！",
+                            "ko_KR": "어디 가는 거야, 레아?\\. 우린 여기 있어!",
+                            "zh_TW": "你要去哪裡，莉亞？\\.我們在這裡！"
+                        },
+                        "autoContinue": false,
+                        "type": "SHOW_MSG",
+                        "person": {
+                            "person": "main.emilie",
+                            "expression": "SUSPICIOUS"
+                        }
+                    },
+                    {
+                        "side": "ALL",
+                        "type": "CLEAR_MSG"
+                    },
+                    {
+                        "type": "RESET_NPC",
+                        "npc": {
+                            "global": true,
+                            "name": "Emilie"
+                        }
+                    },
+                    {
+                        "speed": "FASTEST",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0.2,
+                        "type": "RESET_CAMERA"
+                    },
+                    {
+                        "entity": {
+                            "player": true
+                        },
+                        "action": [
+                            {
+                                "value": 0.5,
+                                "type": "SET_RELATIVE_SPEED"
+                            },
+                            {
+                                "face": "SOUTH",
+                                "rotate": true,
+                                "rotateSpeed": 3,
+                                "type": "SET_FACE"
+                            },
+                            {
+                                "time": 0.2,
+                                "type": "MOVE_FORWARD"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": true,
+                        "keepState": false,
+                        "type": "DO_ACTION"
+                    }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "_comment": "Replace states for trader quest NPC",
+        "index": [636, "settings", "npcStates"]
+    },
+
+        {
+            "type": "ENTER",
+            "index": 6
+        },
+        {
+            "_comment": "Remove meet apollo plot condition from NPC for second quest",
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "quest.rftc-1-collect_trade.solved && !quest.bull-arena-1.started"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+
+        {
+            "type": "ENTER",
+            "index": 9
+        },
+        {
+            "_comment": "Replace fajro completion for obtain flame shade for third quest",
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "quest.rftc-1-collect_trade.solved && (item.230.amount >= 1) && quest.bull-arena-1.solved && !quest.rftc-3-metalstuff.started"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

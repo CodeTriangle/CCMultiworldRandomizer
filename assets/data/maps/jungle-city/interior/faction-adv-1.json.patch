@@ -1,0 +1,37 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [67, "settings", "npcStates"]
+    },
+
+        {
+            "type": "ENTER",
+            "index": 5
+        },
+        {
+            "_comment": "Replace zirvitar and sonajiz completion, for their shades for the second quest",
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "quest.jungleAdv-1-turret_defense_1.solved && (item.231.amount >= 1) && (item.286.amount >= 1) && !quest.jungleAdv-2-turret_defense_2.started"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+
+]

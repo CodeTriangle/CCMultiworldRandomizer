@@ -1,0 +1,16 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities"]
+	},
+	{
+		"type": "FOR_IN",
+		"_comment": "Enable elevator signs",
+		"keyword": "__INDEX__",
+		"values": [379, 380, 381, 382, 383],
+		"body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition" },{ "type": "EXIT", "count": 2 }]
+	},
+	{
+		"type": "EXIT"
+	}
+]

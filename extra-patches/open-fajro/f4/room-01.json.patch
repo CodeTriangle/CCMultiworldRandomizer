@@ -1,0 +1,28 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+
+  {
+        "type": "FOR_IN",
+        "_comment": "Enable all side doors automatically",
+        "keyword": "__INDEX__",
+        "values": [3,4],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "condition"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+  {
+    "type": "EXIT",
+    "count": 1
+  } 
+]

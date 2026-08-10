@@ -1,0 +1,48 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+        
+    {
+            "type": "ENTER",
+            "_comment": "Activates the door at any time",
+            "index": [2,  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "blockEventCondition"
+        },{
+            "type": "SET_KEY",
+            "index": "blockEvent"
+        },{
+            "type": "SET_KEY",
+            "index": "condition"
+        },{
+            "type": "EXIT",
+            "count": 2
+        },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Deactivate story events",
+        "keyword": "__INDEX__",
+        "values": [31,32,33,34,35,36,37,39,40,43,44,45,47],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

@@ -1,0 +1,24 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities"]
+	},
+
+	{
+			"type": "ENTER",
+			"index": [1, "settings"]
+	},
+	{
+			"type": "SET_KEY",
+			"_comment": "Enable exit door by default",
+			"index": "condition"
+	},
+	{
+			"type": "EXIT",
+			"count": 2
+	},    
+
+	{
+		"type": "EXIT"
+	}    
+]

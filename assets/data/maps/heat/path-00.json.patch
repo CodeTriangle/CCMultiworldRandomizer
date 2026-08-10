@@ -1,0 +1,8 @@
+[
+  { 
+    "type": "IF", 
+    "_comment": "Adds corresponding patch if Extra Barriers is on", 
+    "cond": "ig.vars.get('open-world.rhombusHubUnlock') >= 1", 
+    "thenSteps": [{ "type": "INCLUDE", "src": "mod:extra-patches/extra-barriers/maroon-path-00.json.patch" }] 
+  }
+]

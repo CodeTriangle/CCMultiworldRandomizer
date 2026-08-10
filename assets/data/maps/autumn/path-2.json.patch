@@ -1,0 +1,75 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [256, "settings","npcStates"]
+    },
+    { "type": "ENTER", "index": 0 },
+    {
+        "_comment": "Change Apollo appearance event",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "!party.has.Apollo && party.has.Emilie"
+    },
+    { "type": "EXIT", "count": 1 },
+    { "type": "ENTER", "index": 1 },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "party.has.Apollo || plot.apolloFight >= 3100"
+    },
+    { "type": "EXIT", "count": 1 },
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+    
+    {
+        "type": "ENTER",
+        "index": [257, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "startCondition",
+        "content": "party.has.Emilie && !party.has.Apollo"
+    },
+    {
+        "_comment": "Dont meet Apollo out of time",
+        "type": "SET_KEY",
+        "index": "endCondition",
+        "content": "plot.apolloFight >= 3100"
+    },
+    {
+        "type": "ENTER",
+        "index": ["event"]
+    },
+    {
+        "_comment": "Change the message to meet in Gaia",
+        "type": "SET_KEY",
+        "index": 57,
+        "content": { "message": { "en_US": "Let's have our duel at the \\c[3]entrance of Gaia's Garden\\c[0]!", "de_DE": "Lass uns das Duell am \\c[3]Eingang vom Gaia's Garden\\c[0] austragen!", "fr_FR": "fr_FR", "langUid": 113, "zh_CN": "\u5c31\u5b9a\u5728\\c[3]\u4ffe\u5c14\u6839\u4e4b\u8def\u7684\u5165\u53e3\\c[0]\u51b3\u6597\u5427\uff01<<A<<[CHANGED 2017/10/13]", "ja_JP": "\u6c7a\u95d8\u306e\u5834\u6240\u306f\\c[3]\u30d9\u30eb\u30b2\u30f3\u306e\u5c71\u9053\u3078\u306e\u5165\u308a\u53e3\\c[0]\u306b\u3057\u3088\u3046\uff01<<A<<[CHANGED 2017/11/04]", "ko_KR": "\\c[3]\ubca0\ub974\uac90 \uc0b0\uae38 \uc785\uad6c\\c[0]\uc5d0\uc11c \uacb0\ud22c\ub97c \uc9c4\ud589\ud55c\ub2e4!<<A<<[CHANGED 2017/10/17]", "zh_TW": "\u5c31\u5b9a\u5728\\c[3]\u4ffe\u723e\u6839\u4e4b\u8def\u7684\u5165\u53e3\\c[0]\u6c7a\u9b25\u5427\uff01<<A<<[CHANGED 2017/10/13]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "ANGRY" } }
+    },
+    {
+        "_comment": "Remove Perma Task",
+        "type": "SET_KEY",
+        "index": 82,
+        "content": { "type": "WAIT", "time": 0.1 }
+    },
+    {
+        "_comment": "Dont meet Apollo out of time",
+        "type": "SET_KEY",
+        "index": 83,
+        "content": { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.apolloFight", "value": 3100 }
+    },
+    { "type": "EXIT", "count": 1 },
+    { "type": "EXIT", "count": 2 },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

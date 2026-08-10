@@ -1,0 +1,39 @@
+[
+	{ "type": "ENTER", "index": "items" },
+	{
+		"_comment": "Add Fall's data probe",
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": {
+			"order": 3500,
+			"customItem": "fall-data-probe",
+			"name": {
+				"en_US": "Fall Probe",
+				"de_DE": "Fall-Sonde",
+				"langUid": 393,
+				"zh_CN": "\u79cb\u8272\u63a2\u9488",
+				"ko_KR": "\uac00\uc744 \ud0d0\uc0ac\uae30",
+				"ja_JP": "\u30aa\u30fc\u30bf\u30e0\u306e\u30d7\u30ed\u30fc\u30d6",
+				"zh_TW": "\u79cb\u8272\u63a2\u91dd"
+			},
+			"description": {
+				"en_US": "A lost and found data probe installed by Henry the Researcher.",
+				"de_DE": "Eine verlorene und wiedergefundene Datensonde, installiert von Henry dem Forscher.",
+				"fr_FR": "undefined",
+				"langUid": 595,
+				"zh_CN": "\u4e00\u4e2a\u5931\u800c\u590d\u5f97\u7684\u63a2\u9488\uff0c\u7531\u7814\u7a76\u9662\u4ea8\u5229\u5b89\u88c5\u3002",
+				"ko_KR": "\uc5f0\uad6c\uc6d0 \ud5e8\ub9ac\uac00 \uc124\uce58\ud55c \ubd84\uc2e4 \ub370\uc774\ud130 \ud0d0\uc0ac\uae30\uc785\ub2c8\ub2e4.",
+				"ja_JP": "\u7814\u7a76\u8005\u30d8\u30f3\u30ea\u30fc\u306b\u3088\u3063\u3066\u8a2d\u7f6e\u3055\u308c\u305f\u30c7\u30fc\u30bf\u30d7\u30ed\u30fc\u30d6\u3002\u5931\u308f\u308c\u305f\u5f8c\u3001\u767a\u898b\u3055\u308c\u305f\u3002",
+				"zh_TW": "\u4e00\u500b\u5931\u800c\u5fa9\u5f97\u7684\u63a2\u91dd\uff0c\u7531\u7814\u7a76\u9662\u4ea8\u5229\u5b89\u88dd\u3002"
+			},
+			"type": "KEY",
+			"rarity": 0,
+			"level": 1,
+			"icon": "item-key",
+			"effect": {
+				"sheet": "",
+				"name": null
+			}
+		}
+	},
+	{ "type": "EXIT" }
+]

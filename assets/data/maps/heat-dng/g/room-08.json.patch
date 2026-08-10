@@ -1,0 +1,16 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities", 1, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "map.coldActive && !map.barrierUp"
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    }    
+    
+]

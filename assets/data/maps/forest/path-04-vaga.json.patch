@@ -1,0 +1,38 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [384, "settings", "npcStates",2,"event","quest"]
+    },
+    {
+        "_comment": "Solve last quest condition (new in db patch)",
+        "type": "SET_KEY",
+        "index": 12,
+        "content": { "type": "SOLVE_QUEST_CONDITION", "quest": { "quest": "bug-hunting", "label": "returnToVaga" } }
+    },
+    {
+        "_comment": "Finish quest on dialog end",
+        "type": "SET_KEY",
+        "index": 24,
+        "content": { "type": "RESOLVE_FINISHED_QUESTS" }
+    },
+    { "type": "EXIT", "count": 6 },
+
+    {
+        "type": "ENTER",
+        "index": [385, "settings", "event", 21, "accepted"]
+    },
+    {
+        "_comment": "Remove perma task",
+        "type": "SET_KEY",
+        "index": 16,
+        "content": { "type": "WAIT", "time": 0.1 }
+    },
+    { "type": "EXIT", "count": 5 },
+
+    { "type": "EXIT", "count": 1 }
+]

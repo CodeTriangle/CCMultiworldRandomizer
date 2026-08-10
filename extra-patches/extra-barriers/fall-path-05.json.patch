@@ -1,0 +1,36 @@
+[
+    {
+        "type": "ENTER",
+        "index": "entities"
+    },
+
+    { "type": "ENTER", "_comment": "Edit barrier block event", "index": [132,  "settings"] },
+    { "type": "SET_KEY", "index": "event", "content": [ { "entity": { "player": true }, "text": { "en_US": "Missing Shades", "de_DE": "Kein Pass", "zh_CN": "\u7f3a\u5c11\u901a\u884c\u8bc1<<A<<[CHANGED 2018\/07\/09]", "ja_JP": "\u901a\u884c\u8a3c\u304c\u5fc5\u8981\u3067\u3059<<A<<[CHANGED 2018\/07\/09]", "ko_KR": "\ud1b5\ud589\uc99d \uc5c6\uc74c<<A<<[CHANGED 2018\/07\/09]", "langUid": 52, "zh_TW": "\u7f3a\u5c11\u901a\u884c\u8b49<<A<<[CHANGED 2018\/07\/09]" }, "mode": "NO_LINE", "color": "RED", "hideOutsideOfScreen": false, "time": 1.2, "type": "SHOW_AR_MSG" }, { "entity": { "player": true }, "action": [ { "value": "IGNORE", "type": "SET_COLL_TYPE" }, { "duration": -1, "align": "BOTTOM", "rotateFace": 0, "flipLeftFace": false, "wait": false, "waitSkip": 0, "actionDetached": false, "fixPos": false, "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "entryBlockedHover" }, "offset": { "x": 0, "y": 0, "z": 0 } }, { "value": 16, "type": "SET_FLOAT_HEIGHT" }, { "value": true, "type": "SET_FACE_FIX" }, { "value": 0.8, "type": "SET_RELATIVE_SPEED" }, { "wait": false, "type": "SHOW_EXTERN_ANIM", "anim": { "sheet": "player", "name": "hover" } }, { "time": 0.3, "type": "WAIT" }, { "time": 0.3, "stopBeforeEdge": false, "type": "MOVE_BACKWARD" }, { "time": 0.3, "type": "WAIT" }, { "value": 0, "type": "SET_FLOAT_HEIGHT" }, { "type": "WAIT_UNTIL_ON_GROUND" }, { "wait": false, "type": "SHOW_EXTERN_ANIM", "anim": { "sheet": "player-poses", "name": "landOnGround" } } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.barrierBlock", "value": false } ] },
+    { "type": "EXIT", "count": 2 },
+
+
+    { "type": "ENTER", "_comment": "Move teleport ground for a little more wiggle space", "index": 2 },{ "type": "SET_KEY", "index": "y", "content": 16 },{ "type": "EXIT" },
+
+    { "type": "ENTER", "_comment": "Make trigger require both shades", "index": 584 },
+    { "type": "SET_KEY", "index": "y", "content": 72 },
+        { "type": "ENTER", "_comment": "Make trigger require both shades", "index": "settings" },
+        { "type": "SET_KEY", "index": "startCondition", "content": "(item.376.amount >= 1) && (item.230.amount >= 1)" },
+            { "type": "ENTER", "index": "size", "_comment": "Enlarge trigger question mark" },
+            { "type": "SET_KEY", "index": "y", "content": 144 },
+    { "type": "EXIT", "count": 3 },
+
+    { "type": "ENTER", "_comment": "Change right shade", "index": [580, "settings", "propType"] }, { "type": "SET_KEY", "index": "name", "content": "barrierSignFlame" }, { "type": "EXIT", "count": 3 },
+
+    { "type": "ENTER", "_comment": "Change barrier event left shade effect", "index": [585, "settings", "event"] },
+    { "type": "SET_KEY", "index": 0, "content": { "entity": { "player": true }, "duration": -1, "align": "TOP", "group": "shade", "wait": false, "waitSkip": 0, "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "greenSeed" }, "offset": { "x": -16, "y": 0, "z": 12 } } },
+    { "type": "SET_KEY", "index": 4, "content": { "ignoreSlowDown": false, "type": "WAIT", "time": 0 } },
+    { "type": "EXIT", "count": 3 },
+
+    { 
+        "type": "ADD_ARRAY_ELEMENT", 
+        "_comment": "Add barrier event right shade effect",
+        "content": { "type": "EventTrigger", "x": 612, "y": 112, "level": 2, "settings": { "name": "BarrierOpen2", "eventType": "PARALLEL", "endCondition": "map.barrierOpen", "event": [ { "entity": { "player": true }, "duration": -1, "align": "TOP", "group": "shadeR", "wait": false, "waitSkip": 0, "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "redFlame" }, "offset": { "x": 16, "y": 0, "z": 12 } }, { "pos": { "x": 496, "y": 156 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "group": "shadeR", "type": "CLEAR_EFFECTS" },  { "entity": { "global": true, "name": "barrierSignB" }, "duration": 0, "align": "TOP", "group": "shadeR", "wait": false, "waitSkip": 0, "target2": { "player": true }, "target2Offset": { "x": 0, "y": 0, "z": 12 }, "target2Align": "TOP", "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "barrierHoming" }, "offset": { "x": 0, "y": 0, "z": 0 } }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.8 }, { "zoomType": "LIGHT", "fadeIn": 0.2, "duration": 0.1, "fadeOut": 0.2, "type": "SET_ZOOM_BLUR" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 }, { "ignoreSlowDown": false, "type": "WAIT", "time": 1 }, { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" } ], "triggerType": "ALWAYS", "mapId": 1719, "startCondition": "map.barrierOpenZone" } }
+    },
+
+    { "type": "EXIT" }
+]

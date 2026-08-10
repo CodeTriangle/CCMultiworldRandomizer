@@ -1,0 +1,15 @@
+[
+	{
+		"type": "ENTER",
+		"_comment": "Add reward on bird fight end",
+		"index": ["entities", 205, "settings","event"]
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"content": { "type": "GIVE_ITEM", "item": "40", "amount": 3 }
+	},
+	{
+		"type": "EXIT",
+		"count": 4
+	}  
+]

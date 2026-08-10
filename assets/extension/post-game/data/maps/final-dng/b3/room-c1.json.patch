@@ -1,0 +1,26 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities"]
+	},
+
+	{ "type": "ENTER", "index": [62, "settings"] },
+	{
+		"_comment": "Open barrier by default",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content": "tmp.barrier"
+	},
+	{ "type": "EXIT", "count": 2 },    
+
+	{ "type": "ENTER", "index": [1, "settings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Open right door by default",
+		"index": "condition"
+	},
+	{ "type": "EXIT", "count": 2 },    
+	{
+		"type": "EXIT"
+	}    
+]

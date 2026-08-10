@@ -1,0 +1,92 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [46] },
+    {
+        "_comment": "Change first entry event for variables and stuff",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content":  {
+                "name": "first-scene", "eventType": "CUTSCENE", "endCondition": "plot.autumnIntro >= 21", "event": [ { "pos": { "x": 480, "y": 116 }, "speed": "IMMEDIATELY", "transition": "EASE", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "global": true, "name": "Emilie" }, "action": [ { "value": 0.3, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 480, "y": 304, "lvl": "0" }, "precise": false, "type": "MOVE_TO_POINT" }, { "face": "WEST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" }, { "time": 0.6, "type": "WAIT" }, { "face": "EAST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" }, { "time": 0.6, "type": "WAIT" }, { "type": "RESET_NPC" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "speed": "NORMAL", "transition": "EASE_OUT", "wait": true, "waitSkip": 1, "type": "RESET_CAMERA" }, { "message": { "en_US": "Whoa... such a crowded place.", "de_DE": "Wow... Hier ist aber viel los!", "fr_FR": "fr_FR", "langUid": 158, "zh_CN": "哇啊…真是个热闹的地方。", "ja_JP": "うわあ... 人でいっぱい。", "ko_KR": "와... 사람이 정말 많네.", "zh_TW": "哇啊…真是個熱鬧的地方。" }, "type": "SHOW_SIDE_MSG", "person": { "person": "main.emilie", "expression": "ASTONISHED" } }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.autumnIntro", "value": 21 }, { "type": "RESUME_DEFAULT_BGM", "mode": "MEDIUM_OUT" } ], "triggerType": "ALWAYS", "mapId": 99, "startCondition": ""
+        }
+    },
+    { "type": "EXIT", "count": 1 },  
+
+
+    { "type": "ENTER", "index": [90] },
+    {
+        "_comment": "Make board quest spawn with the plot.autumnIntro instead of plot.line",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+                "name": "",
+                "size": {
+                    "x": 264,
+                    "y": 152
+                },
+                "type": "SET_TRUE",
+                "zHeight": 64,
+                "reactToParty": false,
+                "mapId": 144,
+                "variable": "tmp.boardSceneStart",
+                "startCondition": "plot.autumnIntro >= 30"
+            }
+    },
+    { "type": "EXIT", "count": 1 },  
+
+    { "type": "ENTER", "index": [45,"settings"] },
+    {
+        "_comment": "Change Emilie action conditions",
+        "type": "SET_KEY",
+        "index": "npcStates",
+        "content": [
+                    { "reactType": "FIXED_POS", "face": "NORTH", "action": [], "hidden": false, "condition": "", "config": "normal", "event": [] }, { "position": { "x": 688, "y": 168, "lvl": "0" }, "reactType": "FIXED_POS", "face": "NORTH", "action": [], "hidden": true, "door": { "global": true, "name": "upwards" }, "condition": "plot.autumnIntro >= 21", "config": "running", "event": [] }
+        ]
+    },
+    { "type": "EXIT", "count": 2 },  
+
+    { "type": "ENTER", "index": [89,"settings","npcStates", 1] },
+    {
+        "_comment": "Change training NPC conditions",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "plot.autumnIntro >= 30"
+    },
+    { "type": "EXIT", "count": 4 },  
+
+    {
+        "type": "ENTER",
+        "index": [55,"settings","npcStates", 1]
+    },
+    {
+        "_comment": "Change faction quest NPC conditions",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "plot.autumnIntro >= 30"
+    },
+    { "type": "EXIT", "count": 4 },  
+
+    { 
+        "type": "IF", 
+        "_comment": "Adds corresponding patch if full Quest Hub is on", 
+        "cond": "sc.options.get('openworld-fullQuestHub')", 
+        "thenSteps": [
+            {
+                "type": "ENTER",
+                "index": [32,"settings","interact", "event"]
+            },
+            { 
+                "_comment": "Replace Quest Hub", 
+                "type": "SET_KEY", 
+                "index": 3,
+                "content": {
+                    "hub": "rookieHarbor",
+                    "type": "OPEN_QUEST_HUB_FULL"
+                }
+            },
+            { "type": "EXIT", "count": 4 }
+        ]
+    },
+
+    { "type": "EXIT", "count": 1 }  
+]
