@@ -70,8 +70,8 @@ declare global {
 			list: sc.APMessageList;
 
 			scroll(this: this, amount: number): void;
-			scrollToBottom(this: this): void;
-			scrollToTop(this: this): void;
+			scrollToBottom(this: this, skip?: boolean): void;
+			scrollToTop(this: this, skip?: boolean): void;
 
 			addMessage(this: this, message: ap.MessageNode[]): sc.APMessageList.MessageEntry;
 		}
@@ -278,6 +278,10 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		recalculateRenderWindow(direction, startIndex) {
+			if (this.allMessages.length == 0) {
+				return;
+			}
+
 			if (direction == undefined) {
 				direction = 1;
 			}
@@ -355,15 +359,15 @@ export function patch(plugin: MwRandomizer) {
 			this.list.scroll(amount);
 		},
 
-		scrollToBottom() {
+		scrollToBottom(skip) {
 			let target = this.list.hook.size.y - this.list.viewportHeight;
-			this.scrollBox.setScrollY(target);
+			this.scrollBox.setScrollY(target, skip);
 			this.list.viewportPos = target;
 			this.list.recalculateRenderWindow(-1);
 		},
 
-		scrollToTop() {
-			this.scrollBox.setScrollY(0);
+		scrollToTop(skip) {
+			this.scrollBox.setScrollY(0, skip);
 			this.list.viewportPos = 0;
 			this.list.recalculateRenderWindow(1);
 		},
@@ -419,6 +423,7 @@ export function patch(plugin: MwRandomizer) {
 			this.console = new sc.APConsole(400, 260, this.list);
 			this.console.hook.pos.x = 15;
 			this.console.hook.pos.y = 30;
+			this.console.scrollToBottom(true);
 			this.addChildGui(this.console);
 
 			this.console.doStateTransition("HIDDEN", true);
@@ -504,10 +509,10 @@ export function patch(plugin: MwRandomizer) {
 				this.console.scroll(-this.list.viewportHeight + 10);
 			} else if (ig.input.pressed("pgdn")) {
 				this.console.scroll(this.list.viewportHeight - 10);
-			} else if (ig.input.pressed("home")) {
-				this.console.scrollToTop();
-			} else if (ig.input.pressed("end")) {
-				this.console.scrollToBottom();
+			} else if (ig.input.pressed("home") || ig.gamepad.isButtonPressed(ig.BUTTONS.LEFT_SHOULDER)) {
+				this.console.scrollToTop(true);
+			} else if (ig.input.pressed("end") || ig.gamepad.isButtonPressed(ig.BUTTONS.RIGHT_SHOULDER)) {
+				this.console.scrollToBottom(true);
 			}
 
 			if (sc.control.menuScrollUp()) {
@@ -516,9 +521,10 @@ export function patch(plugin: MwRandomizer) {
 				this.console.scroll(40);
 			}
 
-			let axes = ig.gamepad.getAxesValue(ig.AXES.RIGHT_STICK_Y, true)
+			let speedup = ig.gamepad.isButtonDown(ig.BUTTONS.RIGHT_TRIGGER);
+			let axes = ig.gamepad.getAxesValue(ig.AXES.RIGHT_STICK_Y, true);
 			if (Math.abs(axes) != 0) {
-				this.console.scroll(600 * axes * ig.system.tick);
+				this.console.scroll(600 * axes * ig.system.tick * (speedup ? 3 : 1));
 			}
 		},
 
