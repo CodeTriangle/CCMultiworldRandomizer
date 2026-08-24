@@ -995,6 +995,7 @@
 			"id": 322
 		},
 		"Infinity Spiral Drill": {
+			"providesLevels": false,
 			"id": 323
 		},
 		"Stone of Truth": {
@@ -1013,9 +1014,11 @@
 			"id": 328
 		},
 		"Burglar's Rope": {
+			"providesLevels": false,
 			"id": 329
 		},
 		"Excalibro": {
+			"providesLevels": false,
 			"id": 330
 		},
 		"Snack Mix": {
@@ -1908,6 +1911,7 @@
 			"id": 633
 		},
 		"Singularity Drill": {
+			"providesLevels": false,
 			"id": 634
 		},
 		"Rift Spore": {
@@ -1995,6 +1999,7 @@
 			"id": 664
 		},
 		"Lis'mita Cap": {
+			"providesLevels": false,
 			"id": 665
 		},
 		"Enlightened Halo": {

@@ -331,13 +331,22 @@
 					"condition": [
 						[ "item", "Blue Ice Shade", 1 ]
 					]
-				},				
+				},
 				{
 					"from": "open2",
 					"to": "open5",
 					"condition": [
 						[ "item", "Blue Ice Shade", 1 ],
 						[ "var", "rhombusHubUnlock" ]
+					]
+				},
+				{
+					"from": "open5",
+					"to": "openCursedTemple",
+					"condition": [
+						[ "item", "Heat", 1 ],
+						[ "item", "Cold", 1 ],
+						[ "item", "Cursed Coin", 1 ]
 					]
 				},
 				{
