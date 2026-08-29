@@ -177,7 +177,7 @@
 				"name": "Cold-Dng-1"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Beta Egg Pot": {
@@ -186,7 +186,7 @@
 				"name": "Cold-Dng-2"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Gamma Egg Pot": {
@@ -195,7 +195,7 @@
 				"name": "Cold-Dng-3"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Delta Egg Pot": {
@@ -204,7 +204,7 @@
 				"name": "Cold-Dng-4"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Omega Egg Pot A": {
@@ -213,7 +213,7 @@
 				"name": "Cold-Dng-Special-1"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Omega Egg Pot B": {
@@ -222,7 +222,7 @@
 				"name": "Cold-Dng-Special-2"
 			},
 			"region": {
-				"open": "open4.4"
+				"open": "mine.4"
 			}
 		},
 		"Alpha Dry Cactone": {

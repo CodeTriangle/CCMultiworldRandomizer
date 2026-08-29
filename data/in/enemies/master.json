@@ -1,6 +1,7 @@
 {
 	"_includes": [
 		"grind.json",
+		"quests.json",
 		"bosses.json"
 	]
 }
