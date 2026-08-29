@@ -128,16 +128,6 @@ export function patch(plugin: MwRandomizer) {
 						this.buttonGroup.stepRight();
 					}
 				}
-			} else if (event.ctrlKey && event.key == "v") {
-					navigator.clipboard.readText().then(text => {
-						this.setText(text.substring(0, this.maxLength));
-					})
-						.catch(err => {
-							console.error("Could not read from clipboard:");
-							console.error(err);
-						});
-			} else if (event.ctrlKey && event.key == "u") {
-				this.setText("");
 			} else {
 				this.parent(event);
 			}
