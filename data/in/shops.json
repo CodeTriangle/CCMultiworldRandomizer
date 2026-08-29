@@ -6,7 +6,6 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"condition": [
@@ -29,7 +28,6 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"condition": [
@@ -47,7 +45,6 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"condition": [
@@ -65,7 +62,6 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"condition": [
@@ -84,7 +80,6 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"condition": [
@@ -107,7 +102,6 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"condition": [
@@ -127,7 +121,6 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "19",
 				"open": "open8"
 			},
 			"slots": [
@@ -147,7 +140,6 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"condition": [
@@ -163,7 +155,6 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "19",
 				"open": "open8"
 			},
 			"slots": [
@@ -187,7 +178,6 @@
 				"area": "bergen"
 			},
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"slots": [
@@ -207,7 +197,6 @@
 				"area": "bergen"
 			},
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"condition": [
@@ -224,7 +213,6 @@
 				"area": "bergen"
 			},
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"condition": [
@@ -241,7 +229,6 @@
 				"area": "bergen"
 			},
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"condition": [
@@ -259,7 +246,6 @@
 				"area": "bergen"
 			},
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"slots": [
@@ -275,7 +261,6 @@
 				"area": "bergen-trails"
 			},
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"slots": [
@@ -290,7 +275,6 @@
 				"area": "heat-village"
 			},
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"slots": [
@@ -312,7 +296,6 @@
 				"area": "heat-village"
 			},
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"condition": [
@@ -329,7 +312,6 @@
 				"area": "heat-village"
 			},
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"condition": [
@@ -347,7 +329,6 @@
 				"area": "heat-village"
 			},
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"slots": [
@@ -367,7 +348,6 @@
 				"area": "jungle-city"
 			},
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"slots": [
@@ -394,7 +374,6 @@
 				"area": "jungle-city"
 			},
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"slots": [
@@ -421,7 +400,6 @@
 				"area": "jungle-city"
 			},
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"slots": [
@@ -441,7 +419,6 @@
 				"area": "jungle-city"
 			},
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"condition": [
@@ -457,7 +434,6 @@
 				"area": "forest"
 			},
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"slots": [
@@ -477,7 +453,6 @@
 				"area": "forest"
 			},
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"slots": [
@@ -504,7 +479,6 @@
 				"area": "rhombus-sqr"
 			},
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"condition": [
@@ -527,7 +501,6 @@
 				"area": "rhombus-sqr"
 			},
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"condition": [
@@ -557,7 +530,6 @@
 				"area": "rhombus-sqr"
 			},
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"condition": [
@@ -573,7 +545,6 @@
 				"area": "rhombus-sqr"
 			},
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"condition": [
@@ -600,7 +571,6 @@
 				"area": "arid"
 			},
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"slots": [
@@ -620,7 +590,6 @@
 				"area": "arid"
 			},
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"slots": [

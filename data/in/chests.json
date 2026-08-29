@@ -8,27 +8,14 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Precious Metal",
-					2
-				]
+				[ "item", "Precious Metal", 2 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				]
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ]
 			]
 		},
 		"Wasteland: Spiral Cliff Upper": {
@@ -39,27 +26,14 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Elemental DNA",
-					4
-				]
+				[ "item", "Elemental DNA", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				]
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ]
 			]
 		},
 		"Wasteland: Storage Basement": {
@@ -70,15 +44,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Pepper Night Tea",
-					4
-				]
+				[ "item", "Pepper Night Tea", 4 ]
 			]
 		},
 		"Wasteland: Crimson Lake Upper": {
@@ -89,15 +58,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Chef Sandwich",
-					6
-				]
+				[ "item", "Chef Sandwich", 6 ]
 			]
 		},
 		"Wasteland: Crimson Lake Lower": {
@@ -108,15 +72,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Infected Cell",
-					5
-				]
+				[ "item", "Infected Cell", 5 ]
 			]
 		},
 		"Wasteland: East Town Left": {
@@ -127,15 +86,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Vermillion Mantle",
-					1
-				]
+				[ "item", "Vermillion Mantle", 1 ]
 			]
 		},
 		"Wasteland: East Town Center": {
@@ -146,15 +100,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Full Course",
-					2
-				]
+				[ "item", "Full Course", 2 ]
 			]
 		},
 		"Wasteland: East Town Lower": {
@@ -165,15 +114,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Echo Roll",
-					3
-				]
+				[ "item", "Echo Roll", 3 ]
 			]
 		},
 		"Wasteland: West Town Upper Right": {
@@ -184,15 +128,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Precious Metal",
-					2
-				]
+				[ "item", "Precious Metal", 2 ]
 			]
 		},
 		"Wasteland: West Town Upper Left": {
@@ -203,15 +142,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Bars",
-					3
-				]
+				[ "item", "Golden Bars", 3 ]
 			]
 		},
 		"Wasteland: West Town Lower": {
@@ -222,15 +156,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "22",
 				"open": "open18"
 			},
 			"reward": [
-				[
-					"item",
-					"Refined Metal",
-					3
-				]
+				[ "item", "Refined Metal", 3 ]
 			]
 		},
 		"Rise: Drippy Den": {
@@ -241,15 +170,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Halcyon Droplet",
-					1
-				]
+				[ "item", "Halcyon Droplet", 1 ]
 			]
 		},
 		"Rise: Normal Clearing Lower": {
@@ -260,15 +184,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Hi-Sandwich",
-					5
-				]
+				[ "item", "Hi-Sandwich", 5 ]
 			]
 		},
 		"Rise: Normal Clearing Left": {
@@ -279,15 +198,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Masterball",
-					1
-				]
+				[ "item", "Masterball", 1 ]
 			]
 		},
 		"Rise: Entrance": {
@@ -298,15 +212,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Sandwich",
-					5
-				]
+				[ "item", "Sandwich", 5 ]
 			]
 		},
 		"Rise: Old Observatory": {
@@ -317,15 +226,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Dungeon Heart",
-					1
-				]
+				[ "item", "Dungeon Heart", 1 ]
 			]
 		},
 		"Rise: Quiet Passage 1": {
@@ -336,15 +240,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Tofu Cracker",
-					3
-				]
+				[ "item", "Tofu Cracker", 3 ]
 			]
 		},
 		"Rise: Quiet Passage 2": {
@@ -355,15 +254,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Metal Needles",
-					4
-				]
+				[ "item", "Metal Needles", 4 ]
 			]
 		},
 		"Rise: Hedgehag's Den": {
@@ -374,15 +268,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Broken Gauntlet",
-					1
-				]
+				[ "item", "Broken Gauntlet", 1 ]
 			]
 		},
 		"Rise: Pathway 1": {
@@ -393,15 +282,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Gold Beetle",
-					3
-				]
+				[ "item", "Gold Beetle", 3 ]
 			]
 		},
 		"Rise: Pathway 2": {
@@ -412,15 +296,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Flaming Bun",
-					3
-				]
+				[ "item", "Flaming Bun", 3 ]
 			]
 		},
 		"Rise: Pathway 3 Upper": {
@@ -431,15 +310,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Fruit Salad",
-					3
-				]
+				[ "item", "Fruit Salad", 3 ]
 			]
 		},
 		"Rise: Off Road 1 Right": {
@@ -450,15 +324,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Veggie Wraps",
-					3
-				]
+				[ "item", "Veggie Wraps", 3 ]
 			]
 		},
 		"Rise: Off Road 2": {
@@ -469,15 +338,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Cooling Veil",
-					1
-				]
+				[ "item", "Cooling Veil", 1 ]
 			]
 		},
 		"Rise: Pathway 6 Left": {
@@ -488,15 +352,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Assault Vest",
-					1
-				]
+				[ "item", "Assault Vest", 1 ]
 			]
 		},
 		"Rise: Pathway 6 Right": {
@@ -507,15 +366,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Headphone Scraps",
-					6
-				]
+				[ "item", "Headphone Scraps", 6 ]
 			]
 		},
 		"Rise: Pathway 6 Center": {
@@ -526,15 +380,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Azure Dragonfly",
-					3
-				]
+				[ "item", "Azure Dragonfly", 3 ]
 			]
 		},
 		"Rise: Pathway 7 Left": {
@@ -545,15 +394,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Sweet Lemonjuice",
-					3
-				]
+				[ "item", "Sweet Lemonjuice", 3 ]
 			]
 		},
 		"Rise: Pathway 7 Upper": {
@@ -564,15 +408,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Chef Sandwich",
-					2
-				]
+				[ "item", "Chef Sandwich", 2 ]
 			]
 		},
 		"Rise: Ending Pathway Lower": {
@@ -583,15 +422,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Satchel",
-					3
-				]
+				[ "item", "Golden Satchel", 3 ]
 			]
 		},
 		"Rise: Obelisk Lake Upper": {
@@ -602,15 +436,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Triangle",
-					1
-				]
+				[ "item", "Golden Triangle", 1 ]
 			]
 		},
 		"Rise: Obelisk Lake Lower": {
@@ -621,15 +450,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Green Leaf Tea",
-					4
-				]
+				[ "item", "Green Leaf Tea", 4 ]
 			]
 		},
 		"Rise: Pathway 4 Upper": {
@@ -640,15 +464,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Bovine Skin",
-					4
-				]
+				[ "item", "Bovine Skin", 4 ]
 			]
 		},
 		"Rise: Pathway 4 Center": {
@@ -659,15 +478,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Bear Cicada",
-					3
-				]
+				[ "item", "Bear Cicada", 3 ]
 			]
 		},
 		"Rise: Pathway 4 Lower": {
@@ -678,15 +492,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Twilight Dew",
-					6
-				]
+				[ "item", "Twilight Dew", 6 ]
 			]
 		},
 		"Rise: Pathway 5 Upper": {
@@ -697,15 +506,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Blue Shell",
-					1
-				]
+				[ "item", "Blue Shell", 1 ]
 			]
 		},
 		"Rise: Pathway 5 Lower": {
@@ -716,15 +520,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Daikon",
-					1
-				]
+				[ "item", "Daikon", 1 ]
 			]
 		},
 		"Fall: Ruby Tunnel": {
@@ -735,15 +534,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Epic Metal",
-					2
-				]
+				[ "item", "Epic Metal", 2 ]
 			]
 		},
 		"Fall: Lake Cave 1": {
@@ -754,15 +548,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Shrimp Risotto",
-					4
-				]
+				[ "item", "Shrimp Risotto", 4 ]
 			]
 		},
 		"Fall: Lake Cave 2": {
@@ -773,15 +562,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Tremor Engine",
-					1
-				]
+				[ "item", "Tremor Engine", 1 ]
 			]
 		},
 		"Fall: Lake Cave 3": {
@@ -792,15 +576,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Humming Razor",
-					1
-				]
+				[ "item", "Humming Razor", 1 ]
 			]
 		},
 		"Fall: Lake Cave 4": {
@@ -811,15 +590,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Cold Platter",
-					5
-				]
+				[ "item", "Cold Platter", 5 ]
 			]
 		},
 		"Fall: Southern Exit Center": {
@@ -830,15 +604,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Chili Dog",
-					3
-				]
+				[ "item", "Chili Dog", 3 ]
 			]
 		},
 		"Fall: Southern Exit Upper": {
@@ -849,15 +618,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Raw Meat",
-					4
-				]
+				[ "item", "Raw Meat", 4 ]
 			]
 		},
 		"Fall: Southern Exit Lower": {
@@ -868,15 +632,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Cross Sandwich",
-					4
-				]
+				[ "item", "Cross Sandwich", 4 ]
 			]
 		},
 		"Fall: Ruined Path Upper": {
@@ -887,15 +646,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Sunset Dew",
-					8
-				]
+				[ "item", "Sunset Dew", 8 ]
 			]
 		},
 		"Fall: Ruined Path Lower": {
@@ -906,15 +660,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Epic Metal",
-					2
-				]
+				[ "item", "Epic Metal", 2 ]
 			]
 		},
 		"Fall: Eastern Exit Center": {
@@ -925,15 +674,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Sunset Claw",
-					1
-				]
+				[ "item", "Sunset Claw", 1 ]
 			]
 		},
 		"Fall: Eastern Exit Right": {
@@ -944,15 +688,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Ripe Apples",
-					7
-				]
+				[ "item", "Ripe Apples", 7 ]
 			]
 		},
 		"Fall: Ancient Center Upper": {
@@ -963,15 +702,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Cheese Spaetzle",
-					3
-				]
+				[ "item", "Cheese Spaetzle", 3 ]
 			]
 		},
 		"Fall: Ancient Center Left": {
@@ -982,15 +716,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"King's Ring",
-					1
-				]
+				[ "item", "King's Ring", 1 ]
 			]
 		},
 		"Fall: Northern Exit Lower": {
@@ -1001,15 +730,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Pepper Night Tea",
-					4
-				]
+				[ "item", "Pepper Night Tea", 4 ]
 			]
 		},
 		"Fall: Northern Exit Upper": {
@@ -1020,15 +744,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Fruit Pie",
-					3
-				]
+				[ "item", "Fruit Pie", 3 ]
 			]
 		},
 		"Fall: Pillar Isle Upper": {
@@ -1039,15 +758,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Mega-Sandwich",
-					6
-				]
+				[ "item", "Mega-Sandwich", 6 ]
 			]
 		},
 		"Fall: Pillar Isle Right": {
@@ -1058,15 +772,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Wolf Cicada",
-					7
-				]
+				[ "item", "Wolf Cicada", 7 ]
 			]
 		},
 		"Fall: Pillar Isle Left": {
@@ -1077,15 +786,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Sweet Berry Tea",
-					7
-				]
+				[ "item", "Sweet Berry Tea", 7 ]
 			]
 		},
 		"Fall: Village Remains Left": {
@@ -1096,15 +800,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Crimson Dragonfly",
-					7
-				]
+				[ "item", "Crimson Dragonfly", 7 ]
 			]
 		},
 		"Fall: Village Remains Upper": {
@@ -1115,15 +814,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Full Course",
-					4
-				]
+				[ "item", "Full Course", 4 ]
 			]
 		},
 		"Fall: Village Remains Right": {
@@ -1134,15 +828,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Bars",
-					3
-				]
+				[ "item", "Golden Bars", 3 ]
 			]
 		},
 		"Fall: Secluded Path Upper": {
@@ -1153,15 +842,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Mysterious Box",
-					1
-				]
+				[ "item", "Mysterious Box", 1 ]
 			]
 		},
 		"Fall: Secluded Path Left": {
@@ -1172,15 +856,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Wrap Roll",
-					4
-				]
+				[ "item", "Wrap Roll", 4 ]
 			]
 		},
 		"Fall: Secluded Path Right": {
@@ -1191,15 +870,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Green Risotto",
-					3
-				]
+				[ "item", "Green Risotto", 3 ]
 			]
 		},
 		"Fall: Villa of Terror Right": {
@@ -1210,15 +884,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Portrait of Ruin",
-					1
-				]
+				[ "item", "Portrait of Ruin", 1 ]
 			]
 		},
 		"Fall: Villa of Terror Left": {
@@ -1229,15 +898,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Ticket",
-					1
-				]
+				[ "item", "Golden Ticket", 1 ]
 			]
 		},
 		"Fall: Para Island 1": {
@@ -1248,15 +912,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "20",
 				"open": "open9"
 			},
 			"reward": [
-				[
-					"item",
-					"Chef Sandwich",
-					6
-				]
+				[ "item", "Chef Sandwich", 6 ]
 			]
 		},
 		"Bergen South: Storage Room": {
@@ -1267,15 +926,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Just Water",
-					6
-				]
+				[ "item", "Just Water", 6 ]
 			]
 		},
 		"Bergen South: On Top Of Bergen Bar": {
@@ -1286,15 +940,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Sweet Lemonjuice",
-					3
-				]
+				[ "item", "Sweet Lemonjuice", 3 ]
 			]
 		},
 		"Bergen South: Behind Ice In East": {
@@ -1305,22 +954,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Copper Gull",
-					1
-				]
+				[ "item", "Copper Gull", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Bergen South: Behind Ice In South": {
@@ -1331,22 +971,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Metal Gears",
-					3
-				]
+				[ "item", "Metal Gears", 3 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Bergen South: Top West Roof": {
@@ -1357,15 +988,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Chest Plate",
-					1
-				]
+				[ "item", "Golden Chest Plate", 1 ]
 			]
 		},
 		"Bergen North: On Ledge Near Trader Den": {
@@ -1376,15 +1002,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Bug Shell",
-					2
-				]
+				[ "item", "Bug Shell", 2 ]
 			]
 		},
 		"Bergen North: Hidden Cave In West": {
@@ -1395,22 +1016,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Mega-Sandwich",
-					4
-				]
+				[ "item", "Mega-Sandwich", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Bergen North: On Ledge In Lower East": {
@@ -1421,15 +1033,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Cross Sandwich",
-					3
-				]
+				[ "item", "Cross Sandwich", 3 ]
 			]
 		},
 		"Bergen North: Roof Of Eastern Archway": {
@@ -1440,15 +1047,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Ginger Tom. Salad",
-					2
-				]
+				[ "item", "Ginger Tom. Salad", 2 ]
 			]
 		},
 		"Bergen: Diving Railway": {
@@ -1459,15 +1061,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Vanilla Ice Cream",
-					4
-				]
+				[ "item", "Vanilla Ice Cream", 4 ]
 			]
 		},
 		"Bergen: Seeker Hub Cellar Left": {
@@ -1478,15 +1075,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Pass",
-					1
-				]
+				[ "item", "Mine Pass", 1 ]
 			]
 		},
 		"Bergen: Seeker Hub Cellar Right": {
@@ -1497,15 +1089,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Bronze Chest Plate",
-					1
-				]
+				[ "item", "Bronze Chest Plate", 1 ]
 			]
 		},
 		"Trail: Abandoned Cave": {
@@ -1516,15 +1103,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Refined Metal",
-					2
-				]
+				[ "item", "Refined Metal", 2 ]
 			]
 		},
 		"Trail: Frozen Cave": {
@@ -1535,22 +1117,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Refined Metal",
-					2
-				]
+				[ "item", "Refined Metal", 2 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Trail: Abandoned Ground": {
@@ -1561,22 +1134,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Precious Metal",
-					2
-				]
+				[ "item", "Precious Metal", 2 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Trail: Pengpeng Den": {
@@ -1587,22 +1151,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Broken Shield",
-					1
-				]
+				[ "item", "Broken Shield", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Trail: Entrance Left": {
@@ -1613,15 +1168,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Raw Meat",
-					3
-				]
+				[ "item", "Raw Meat", 3 ]
 			]
 		},
 		"Trail: Entrance Right": {
@@ -1632,15 +1182,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Veggie Burger",
-					4
-				]
+				[ "item", "Veggie Burger", 4 ]
 			]
 		},
 		"Trail: Rising Path 1": {
@@ -1651,15 +1196,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Sweet Berry Tea",
-					5
-				]
+				[ "item", "Sweet Berry Tea", 5 ]
 			]
 		},
 		"Trail: Off Road 1 Lower": {
@@ -1670,15 +1210,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Blazing Bun",
-					4
-				]
+				[ "item", "Blazing Bun", 4 ]
 			]
 		},
 		"Trail: Off Road 1 Upper": {
@@ -1689,15 +1224,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Pike Wood",
-					6
-				]
+				[ "item", "Pike Wood", 6 ]
 			]
 		},
 		"Trail: Off Road 2 Center": {
@@ -1708,15 +1238,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Purple Ore Lump",
-					5
-				]
+				[ "item", "Purple Ore Lump", 5 ]
 			]
 		},
 		"Trail: Off Road 2 Lower": {
@@ -1727,15 +1252,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Cheese Cracker",
-					4
-				]
+				[ "item", "Cheese Cracker", 4 ]
 			]
 		},
 		"Trail: Off Road 2 Upper": {
@@ -1746,15 +1266,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Satchel",
-					3
-				]
+				[ "item", "Golden Satchel", 3 ]
 			]
 		},
 		"Trail: Off Road 3 Upper": {
@@ -1765,15 +1280,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Dropped Mic",
-					3
-				]
+				[ "item", "Dropped Mic", 3 ]
 			]
 		},
 		"Trail: Off Road 3 Lower": {
@@ -1784,15 +1294,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Winter Thorn",
-					4
-				]
+				[ "item", "Winter Thorn", 4 ]
 			]
 		},
 		"Trail: Old Plateau": {
@@ -1803,15 +1308,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Echo Roll",
-					5
-				]
+				[ "item", "Echo Roll", 5 ]
 			]
 		},
 		"Trail: Rising Path 2": {
@@ -1822,15 +1322,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Veggie Set",
-					5
-				]
+				[ "item", "Veggie Set", 5 ]
 			]
 		},
 		"Trail: Rising Path 3 Left": {
@@ -1841,15 +1336,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Winter Thorn",
-					3
-				]
+				[ "item", "Winter Thorn", 3 ]
 			]
 		},
 		"Trail: Rising Path 3 Right": {
@@ -1860,15 +1350,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Rusty Bits",
-					6
-				]
+				[ "item", "Rusty Bits", 6 ]
 			]
 		},
 		"Trail: Spike Heights Upper": {
@@ -1879,15 +1364,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Fruit Pie",
-					4
-				]
+				[ "item", "Fruit Pie", 4 ]
 			]
 		},
 		"Trail: Spike Heights Lower": {
@@ -1898,22 +1378,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Ginger Tom. Salad",
-					5
-				]
+				[ "item", "Ginger Tom. Salad", 5 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Trail: Icy Cauldron": {
@@ -1924,22 +1395,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Bars",
-					4
-				]
+				[ "item", "Golden Bars", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Trail: Bergen Waterfalls": {
@@ -1950,15 +1412,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Triangle",
-					1
-				]
+				[ "item", "Golden Triangle", 1 ]
 			]
 		},
 		"Trail: Rising Path 4 Upper": {
@@ -1969,15 +1426,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Perforated Tophat",
-					1
-				]
+				[ "item", "Perforated Tophat", 1 ]
 			]
 		},
 		"Trail: Rising Path 4 Lower": {
@@ -1988,15 +1440,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Chef Sandwich",
-					6
-				]
+				[ "item", "Chef Sandwich", 6 ]
 			]
 		},
 		"Trail: Lofty Heights": {
@@ -2007,22 +1454,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Heaven's Seed",
-					1
-				]
+				[ "item", "Heaven's Seed", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Trail: Windy Climb": {
@@ -2033,15 +1471,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Diabolic Horns",
-					4
-				]
+				[ "item", "Diabolic Horns", 4 ]
 			]
 		},
 		"Trail: Rising Path 5": {
@@ -2052,15 +1485,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"reward": [
-				[
-					"item",
-					"Rocksplitter",
-					1
-				]
+				[ "item", "Rocksplitter", 1 ]
 			]
 		},
 		"Mine U1: Elevator": {
@@ -2071,15 +1499,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "5",
 				"open": "open4.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Bug Shell",
-					3
-				]
+				[ "item", "Bug Shell", 3 ]
 			]
 		},
 		"Mine U1: Crossing Funnel": {
@@ -2090,22 +1513,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "5",
 				"open": "open4.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Frosted Carrot",
-					3
-				]
+				[ "item", "Frosted Carrot", 3 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Mine U1: Old Shaft 1": {
@@ -2116,22 +1530,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "5",
 				"open": "open4.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Dropped Mic",
-					2
-				]
+				[ "item", "Dropped Mic", 2 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Mine U1: Old Shaft 2": {
@@ -2142,15 +1547,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "5",
 				"open": "open4.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Satchel",
-					6
-				]
+				[ "item", "Golden Satchel", 6 ]
 			]
 		},
 		"Mine U1: Testing Chamber": {
@@ -2161,15 +1561,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "5",
 				"open": "open4.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Key",
-					1
-				]
+				[ "item", "Mine Key", 1 ]
 			]
 		},
 		"Mine U1: Old Chamber": {
@@ -2180,15 +1575,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "6",
 				"open": "open4.3"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Key",
-					1
-				]
+				[ "item", "Mine Key", 1 ]
 			]
 		},
 		"Mine U2: Storage Room 1": {
@@ -2199,15 +1589,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
-				[
-					"item",
-					"Blue Orb",
-					2
-				]
+				[ "item", "Blue Orb", 2 ]
 			]
 		},
 		"Mine U2: Frozen Chamber 1": {
@@ -2218,15 +1603,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Key",
-					1
-				]
+				[ "item", "Mine Key", 1 ]
 			]
 		},
 		"Mine U2: Frozen Chamber 2 Left": {
@@ -2237,15 +1617,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Thief's Key",
-					1
-				]
+				[ "item", "Thief's Key", 1 ]
 			]
 		},
 		"Mine U2: Frozen Chamber 2 Right": {
@@ -2255,18 +1630,13 @@
 				"mapId": 66
 			},
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"condition": [
 				[ "item", "Thief's Key" ]
 			],
 			"reward": [
-				[
-					"item",
-					"Refined Metal",
-					2
-				]
+				[ "item", "Refined Metal", 2 ]
 			]
 		},
 		"Mine U3: Frozen Shaft 1": {
@@ -2277,15 +1647,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
-				[
-					"item",
-					"Sweet Lemonjuice",
-					7
-				]
+				[ "item", "Sweet Lemonjuice", 7 ]
 			]
 		},
 		"Mine U3: Frozen Shaft 2": {
@@ -2296,15 +1661,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
-				[
-					"item",
-					"Furry Cap",
-					1
-				]
+				[ "item", "Furry Cap", 1 ]
 			]
 		},
 		"Mine U3: Frozen Shaft 3 Right": {
@@ -2315,15 +1675,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Key",
-					1
-				]
+				[ "item", "Mine Key", 1 ]
 			]
 		},
 		"Mine U3: Frozen Shaft 3 Left": {
@@ -2334,15 +1689,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
-				[
-					"item",
-					"Crystal Water",
-					4
-				]
+				[ "item", "Crystal Water", 4 ]
 			]
 		},
 		"Mine U3: Overrun Chamber Upper": {
@@ -2353,15 +1703,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Key",
-					1
-				]
+				[ "item", "Mine Key", 1 ]
 			]
 		},
 		"Mine U3: Overrun Chamber Lower": {
@@ -2372,15 +1717,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "7",
 				"open": "open4.4"
 			},
 			"reward": [
-				[
-					"item",
-					"Vanilla Ice Cream",
-					2
-				]
+				[ "item", "Vanilla Ice Cream", 2 ]
 			]
 		},
 		"Mine U4: Elevator": {
@@ -2391,22 +1731,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Winterclaw",
-					1
-				]
+				[ "item", "Winterclaw", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Thief's Key",
-					1
-				]
+				[ "item", "Thief's Key", 1 ]
 			]
 		},
 		"Mine U4: Infested Chamber": {
@@ -2417,22 +1748,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "10",
 				"open": "open4.7"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Master Key",
-					1
-				]
+				[ "item", "Mine Master Key", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Thief's Key",
-					1
-				]
+				[ "item", "Thief's Key", 1 ]
 			]
 		},
 		"Mine U4: Forgotten Shaft 1": {
@@ -2443,22 +1765,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Key",
-					1
-				]
+				[ "item", "Mine Key", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Thief's Key",
-					1
-				]
+				[ "item", "Thief's Key", 1 ]
 			]
 		},
 		"Mine U4: Forgotten Shaft 2": {
@@ -2469,22 +1782,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Ancient Sandals",
-					1
-				]
+				[ "item", "Ancient Sandals", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Thief's Key",
-					1
-				]
+				[ "item", "Thief's Key", 1 ]
 			]
 		},
 		"Mine U4: Forgotten Shaft 3": {
@@ -2495,22 +1799,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Key",
-					1
-				]
+				[ "item", "Mine Key", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Thief's Key",
-					1
-				]
+				[ "item", "Thief's Key", 1 ]
 			]
 		},
 		"Mine U4: Forgotten Shaft 4": {
@@ -2521,22 +1816,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Key",
-					1
-				]
+				[ "item", "Mine Key", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Thief's Key",
-					1
-				]
+				[ "item", "Thief's Key", 1 ]
 			]
 		},
 		"Mine U4: Forgotten Shaft 5": {
@@ -2547,22 +1833,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "9",
 				"open": "open4.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Key",
-					1
-				]
+				[ "item", "Mine Key", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Thief's Key",
-					1
-				]
+				[ "item", "Thief's Key", 1 ]
 			]
 		},
 		"Mine GF: Elevator": {
@@ -2573,22 +1850,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "4",
 				"open": "open4.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Triangle",
-					1
-				]
+				[ "item", "Golden Triangle", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Mine GF: Temple Chamber 2": {
@@ -2599,15 +1867,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "4",
 				"open": "open4.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Mine Key",
-					1
-				]
+				[ "item", "Mine Key", 1 ]
 			]
 		},
 		"Ridge: The Barracks": {
@@ -2618,22 +1881,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Energy Espresso",
-					4
-				]
+				[ "item", "Energy Espresso", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				]
+				[ "item", "Shock", 1 ]
 			]
 		},
 		"Ridge: The Bellow": {
@@ -2644,27 +1898,14 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Broken Chakrams",
-					1
-				]
+				[ "item", "Broken Chakrams", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				],
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Shock", 1 ],
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Ridge: Sapphire Tunnel": {
@@ -2675,15 +1916,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Precious Metal",
-					3
-				]
+				[ "item", "Precious Metal", 3 ]
 			]
 		},
 		"Ridge: Eroded Passage Lower": {
@@ -2694,15 +1930,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Cobalt Crystal",
-					4
-				]
+				[ "item", "Cobalt Crystal", 4 ]
 			]
 		},
 		"Ridge: Eroded Passage Upper": {
@@ -2713,15 +1944,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Hotsauce",
-					6
-				]
+				[ "item", "Hotsauce", 6 ]
 			]
 		},
 		"Ridge: Spider Chasm Lower": {
@@ -2732,15 +1958,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Sticky Web",
-					6
-				]
+				[ "item", "Sticky Web", 6 ]
 			]
 		},
 		"Ridge: Spider Chasm Upper": {
@@ -2751,15 +1972,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Tremor Engine",
-					1
-				]
+				[ "item", "Tremor Engine", 1 ]
 			]
 		},
 		"Ridge: Narrow Passage Left": {
@@ -2770,15 +1986,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Wrap Roll",
-					5
-				]
+				[ "item", "Wrap Roll", 5 ]
 			]
 		},
 		"Ridge: Narrow Passage Right": {
@@ -2789,15 +2000,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Spark Tin",
-					8
-				]
+				[ "item", "Spark Tin", 8 ]
 			]
 		},
 		"Ridge: Wheel Passage Lower": {
@@ -2808,15 +2014,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Shining Bracer",
-					1
-				]
+				[ "item", "Shining Bracer", 1 ]
 			]
 		},
 		"Ridge: Wheel Passage Upper": {
@@ -2827,15 +2028,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Sweet Berry Tea",
-					7
-				]
+				[ "item", "Sweet Berry Tea", 7 ]
 			]
 		},
 		"Ridge: Cave Inn Interior 1F": {
@@ -2846,15 +2042,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Sticky Web",
-					2
-				]
+				[ "item", "Sticky Web", 2 ]
 			]
 		},
 		"Ridge: Cave Inn Interior Storage": {
@@ -2865,15 +2056,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Old Blueprint",
-					1
-				]
+				[ "item", "Old Blueprint", 1 ]
 			]
 		},
 		"Ridge: Western Exit Upper": {
@@ -2884,15 +2070,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Vanilla Ice Cream",
-					4
-				]
+				[ "item", "Vanilla Ice Cream", 4 ]
 			]
 		},
 		"Ridge: Western Exit Lower": {
@@ -2903,15 +2084,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Pepper Night Tea",
-					6
-				]
+				[ "item", "Pepper Night Tea", 6 ]
 			]
 		},
 		"Ridge: North West Path Lower": {
@@ -2922,15 +2098,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Samurai Shell",
-					4
-				]
+				[ "item", "Samurai Shell", 4 ]
 			]
 		},
 		"Ridge: North West Path Upper": {
@@ -2941,15 +2112,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Bars",
-					3
-				]
+				[ "item", "Golden Bars", 3 ]
 			]
 		},
 		"Ridge: River Road Upper": {
@@ -2960,15 +2126,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Steel Bamboo",
-					4
-				]
+				[ "item", "Steel Bamboo", 4 ]
 			]
 		},
 		"Ridge: River Road Center": {
@@ -2979,15 +2140,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Tremor Engine",
-					1
-				]
+				[ "item", "Tremor Engine", 1 ]
 			]
 		},
 		"Ridge: River Road Lower": {
@@ -2998,15 +2154,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Shrimp Risotto",
-					5
-				]
+				[ "item", "Shrimp Risotto", 5 ]
 			]
 		},
 		"Ridge: Cave Inn Exterior Upper": {
@@ -3017,15 +2168,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Raw Meat",
-					6
-				]
+				[ "item", "Raw Meat", 6 ]
 			]
 		},
 		"Ridge: Cave Inn Exterior Lower": {
@@ -3036,15 +2182,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Cross Sandwich",
-					4
-				]
+				[ "item", "Cross Sandwich", 4 ]
 			]
 		},
 		"Ridge: Tranquil Bamboo Lower": {
@@ -3055,15 +2196,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Hoverpad",
-					3
-				]
+				[ "item", "Hoverpad", 3 ]
 			]
 		},
 		"Ridge: Tranquil Bamboo Upper": {
@@ -3074,15 +2210,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Veggie Set",
-					2
-				]
+				[ "item", "Veggie Set", 2 ]
 			]
 		},
 		"Ridge: Bamboo Thicket Upper": {
@@ -3093,15 +2224,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Sharp Splitter",
-					2
-				]
+				[ "item", "Sharp Splitter", 2 ]
 			]
 		},
 		"Ridge: Bamboo Thicket Center": {
@@ -3112,15 +2238,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Tengu Mask",
-					1
-				]
+				[ "item", "Tengu Mask", 1 ]
 			]
 		},
 		"Ridge: North East Path Upper": {
@@ -3131,15 +2252,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Ronin Shell",
-					4
-				]
+				[ "item", "Ronin Shell", 4 ]
 			]
 		},
 		"Ridge: North East Path Lower": {
@@ -3150,15 +2266,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Bluefiber Robe",
-					1
-				]
+				[ "item", "Bluefiber Robe", 1 ]
 			]
 		},
 		"Ridge: Flower Lake Left": {
@@ -3169,15 +2280,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Omni Lock",
-					1
-				]
+				[ "item", "Omni Lock", 1 ]
 			]
 		},
 		"Ridge: Flower Lake Right": {
@@ -3188,15 +2294,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Sonic Spike",
-					1
-				]
+				[ "item", "Sonic Spike", 1 ]
 			]
 		},
 		"Ridge: Carved Pathway Center": {
@@ -3207,15 +2308,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Full Course",
-					4
-				]
+				[ "item", "Full Course", 4 ]
 			]
 		},
 		"Ridge: Carved Pathway Lower": {
@@ -3226,22 +2322,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Echo Roll",
-					4
-				]
+				[ "item", "Echo Roll", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				]
+				[ "item", "Shock", 1 ]
 			]
 		},
 		"Ridge: Carved Pathway Upper": {
@@ -3252,22 +2339,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Catalop Pellet",
-					8
-				]
+				[ "item", "Catalop Pellet", 8 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				]
+				[ "item", "Shock", 1 ]
 			]
 		},
 		"Ridge: High Ground Lower": {
@@ -3278,22 +2356,13 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Burglar's Rope",
-					1
-				]
+				[ "item", "Burglar's Rope", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				]
+				[ "item", "Shock", 1 ]
 			]
 		},
 		"Ridge: High Ground Upper": {
@@ -3304,22 +2373,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Mystery Grape",
-					5
-				]
+				[ "item", "Mystery Grape", 5 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				]
+				[ "item", "Shock", 1 ]
 			]
 		},
 		"Ridge: Old Dojo Lower": {
@@ -3330,15 +2390,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Green Risotto",
-					3
-				]
+				[ "item", "Green Risotto", 3 ]
 			]
 		},
 		"Ridge: Old Dojo Left": {
@@ -3349,15 +2404,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Lead Boots",
-					1
-				]
+				[ "item", "Lead Boots", 1 ]
 			]
 		},
 		"Ridge: Old Dojo Upper": {
@@ -3368,15 +2418,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Warkeeper",
-					1
-				]
+				[ "item", "Warkeeper", 1 ]
 			]
 		},
 		"Ridge: Dream Pond": {
@@ -3387,15 +2432,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "33",
 				"open": "open16.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Dream Globe",
-					1
-				]
+				[ "item", "Dream Globe", 1 ]
 			]
 		},
 		"Ridge: Ascension Temple Upper Left": {
@@ -3406,22 +2446,13 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "33",
 				"open": "open16.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Antique Token",
-					1
-				]
+				[ "item", "Antique Token", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Ridge: Ascension Temple Upper Right": {
@@ -3432,22 +2463,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "33",
 				"open": "open16.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Epic Metal",
-					2
-				]
+				[ "item", "Epic Metal", 2 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Ridge: Ascension Temple Lower": {
@@ -3458,22 +2480,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "33",
 				"open": "open16.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Ticket",
-					3
-				]
+				[ "item", "Golden Ticket", 3 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Ridge: Baton Pond": {
@@ -3484,15 +2497,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "31",
 				"open": "open16"
 			},
 			"reward": [
-				[
-					"item",
-					"Vanilla Ice Cream",
-					4
-				]
+				[ "item", "Vanilla Ice Cream", 4 ]
 			]
 		},
 		"Maroon: Mystery Cave Lower": {
@@ -3503,15 +2511,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Everlasting Amber",
-					1
-				]
+				[ "item", "Everlasting Amber", 1 ]
 			]
 		},
 		"Maroon: Mystery Cave Upper": {
@@ -3522,15 +2525,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Lucid Shard",
-					3
-				]
+				[ "item", "Lucid Shard", 3 ]
 			]
 		},
 		"Maroon: Cursed Temple Upper": {
@@ -3541,32 +2539,15 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Ancient Earth",
-					4
-				]
+				[ "item", "Ancient Earth", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				],
-				[
-					"item",
-					"Cursed Coin",
-					1
-				]
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ],
+				[ "item", "Cursed Coin", 1 ]
 			]
 		},
 		"Maroon: Cursed Temple Lower": {
@@ -3577,32 +2558,15 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Bright Bracer",
-					1
-				]
+				[ "item", "Bright Bracer", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				],
-				[
-					"item",
-					"Cursed Coin",
-					1
-				]
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ],
+				[ "item", "Cursed Coin", 1 ]
 			]
 		},
 		"Maroon: Cursed Temple Treasure Room": {
@@ -3613,32 +2577,15 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Broken Sword",
-					1
-				]
+				[ "item", "Broken Sword", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				],
-				[
-					"item",
-					"Cold",
-					1
-				],
-				[
-					"item",
-					"Cursed Coin",
-					1
-				]
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ],
+				[ "item", "Cursed Coin", 1 ]
 			]
 		},
 		"Maroon: Maroon Cave 1": {
@@ -3649,22 +2596,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "12",
 				"open": "open6"
 			},
 			"reward": [
-				[
-					"item",
-					"Kebab Roll",
-					6
-				]
+				[ "item", "Kebab Roll", 6 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Heat",
-					1
-				]
+				[ "item", "Heat", 1 ]
 			]
 		},
 		"Maroon: River Cliff Right": {
@@ -3675,15 +2613,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Mighty Strand",
-					1
-				]
+				[ "item", "Mighty Strand", 1 ]
 			]
 		},
 		"Maroon: River Cliff Left": {
@@ -3694,15 +2627,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Crystal Leek",
-					6
-				]
+				[ "item", "Crystal Leek", 6 ]
 			]
 		},
 		"Maroon: Endless Pit Center": {
@@ -3713,15 +2641,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Lucid Shard",
-					2
-				]
+				[ "item", "Lucid Shard", 2 ]
 			]
 		},
 		"Maroon: Endless Pit Right": {
@@ -3732,15 +2655,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Old Bones",
-					5
-				]
+				[ "item", "Old Bones", 5 ]
 			]
 		},
 		"Maroon: Endless Pit Left": {
@@ -3751,15 +2669,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Ancient Earth",
-					3
-				]
+				[ "item", "Ancient Earth", 3 ]
 			]
 		},
 		"Maroon: Vivid Path Lower": {
@@ -3770,15 +2683,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Palmapple Seed",
-					2
-				]
+				[ "item", "Palmapple Seed", 2 ]
 			]
 		},
 		"Maroon: Vivid Path Upper": {
@@ -3789,15 +2697,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Vivid Water",
-					7
-				]
+				[ "item", "Vivid Water", 7 ]
 			]
 		},
 		"Maroon: Maroon Oasis Center": {
@@ -3808,15 +2711,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Maroon Chestnut",
-					2
-				]
+				[ "item", "Maroon Chestnut", 2 ]
 			]
 		},
 		"Maroon: Maroon Oasis Upper": {
@@ -3827,15 +2725,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Fruit Salad",
-					6
-				]
+				[ "item", "Fruit Salad", 6 ]
 			]
 		},
 		"Maroon: Bright Path": {
@@ -3846,15 +2739,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Hidden Blade",
-					1
-				]
+				[ "item", "Hidden Blade", 1 ]
 			]
 		},
 		"Maroon: Rising Railway": {
@@ -3865,15 +2753,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Frosted Carrot",
-					3
-				]
+				[ "item", "Frosted Carrot", 3 ]
 			]
 		},
 		"Maroon: East Entrance": {
@@ -3884,15 +2767,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Satchel",
-					6
-				]
+				[ "item", "Golden Satchel", 6 ]
 			]
 		},
 		"Maroon: Dusty Path Center": {
@@ -3903,15 +2781,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Thief's Band",
-					1
-				]
+				[ "item", "Thief's Band", 1 ]
 			]
 		},
 		"Maroon: Dusty Path Upper": {
@@ -3922,15 +2795,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Arid Lumber",
-					4
-				]
+				[ "item", "Arid Lumber", 4 ]
 			]
 		},
 		"Maroon: Crossroad Center": {
@@ -3941,15 +2809,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Vanilla Ice Cream",
-					2
-				]
+				[ "item", "Vanilla Ice Cream", 2 ]
 			]
 		},
 		"Maroon: Crossroad Left": {
@@ -3960,15 +2823,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Bars",
-					2
-				]
+				[ "item", "Golden Bars", 2 ]
 			]
 		},
 		"Maroon: Long Piece": {
@@ -3979,15 +2837,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Pepper Night Tea",
-					4
-				]
+				[ "item", "Pepper Night Tea", 4 ]
 			]
 		},
 		"Maroon: Barren Arcs Center": {
@@ -3998,15 +2851,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Squishy Teeth",
-					3
-				]
+				[ "item", "Squishy Teeth", 3 ]
 			]
 		},
 		"Maroon: Barren Arcs Left": {
@@ -4017,15 +2865,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Glaring Rock",
-					7
-				]
+				[ "item", "Glaring Rock", 7 ]
 			]
 		},
 		"Maroon: Barren Land": {
@@ -4036,15 +2879,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Chili Dog",
-					3
-				]
+				[ "item", "Chili Dog", 3 ]
 			]
 		},
 		"Maroon: Overpass Upper": {
@@ -4055,15 +2893,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Phoenix Feather",
-					4
-				]
+				[ "item", "Phoenix Feather", 4 ]
 			]
 		},
 		"Maroon: Overpass Left": {
@@ -4074,15 +2907,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Blazing Bun",
-					2
-				]
+				[ "item", "Blazing Bun", 2 ]
 			]
 		},
 		"Maroon: Paw Cliffs Lower": {
@@ -4093,15 +2921,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Drill Stone",
-					3
-				]
+				[ "item", "Drill Stone", 3 ]
 			]
 		},
 		"Maroon: Paw Cliffs Upper": {
@@ -4112,15 +2935,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Shrimp Risotto",
-					5
-				]
+				[ "item", "Shrimp Risotto", 5 ]
 			]
 		},
 		"Maroon: Torn Road Center": {
@@ -4131,15 +2949,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Satchel",
-					3
-				]
+				[ "item", "Golden Satchel", 3 ]
 			]
 		},
 		"Maroon: Torn Road Right": {
@@ -4150,15 +2963,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Flaming Bun",
-					4
-				]
+				[ "item", "Flaming Bun", 4 ]
 			]
 		},
 		"Maroon: West Entrance": {
@@ -4169,15 +2977,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Hardened Liver",
-					2
-				]
+				[ "item", "Hardened Liver", 2 ]
 			]
 		},
 		"Maroon: Fractured Path Upper": {
@@ -4188,15 +2991,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Chef Sandwich",
-					6
-				]
+				[ "item", "Chef Sandwich", 6 ]
 			]
 		},
 		"Maroon: Fractured Path Right": {
@@ -4207,15 +3005,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Rainbow Gem",
-					2
-				]
+				[ "item", "Rainbow Gem", 2 ]
 			]
 		},
 		"Faj'ro 1F: Right Chamber 1": {
@@ -4226,15 +3019,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "15",
 				"open": "open7.3"
 			},
 			"reward": [
-				[
-					"item",
-					"Butter Silk",
-					4
-				]
+				[ "item", "Butter Silk", 4 ]
 			]
 		},
 		"Faj'ro 3F: Bottom Chamber": {
@@ -4245,15 +3033,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "17",
 				"open": "open7.5"
 			},
 			"reward": [
-				[
-					"item",
-					"Magma Residue",
-					2
-				]
+				[ "item", "Magma Residue", 2 ]
 			]
 		},
 		"Faj'ro 3F: Large Fire Chamber Left": {
@@ -4268,11 +3051,7 @@
 				"open": "open7.5"
 			},
 			"reward": [
-				[
-					"item",
-					"White Key",
-					1
-				]
+				[ "item", "White Key", 1 ]
 			]
 		},
 		"Faj'ro 3F: Large Fire Chamber Right": {
@@ -4286,11 +3065,7 @@
 				"open": "open7.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Precious Metal",
-					2
-				]
+				[ "item", "Precious Metal", 2 ]
 			]
 		},
 		"Faj'ro 3F: Test of Wisdom": {
@@ -4305,11 +3080,7 @@
 				"open": "open7.5"
 			},
 			"reward": [
-				[
-					"item",
-					"Faj'ro Key",
-					1
-				]
+				[ "item", "Faj'ro Key", 1 ]
 			]
 		},
 		"Faj'ro 4F: West Pathway": {
@@ -4320,15 +3091,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "17",
 				"open": "open7.5"
 			},
 			"reward": [
-				[
-					"item",
-					"Laser Eyes",
-					1
-				]
+				[ "item", "Laser Eyes", 1 ]
 			]
 		},
 		"Faj'ro 4F: Test of Surprise": {
@@ -4339,15 +3105,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "17",
 				"open": "open7.5"
 			},
 			"reward": [
-				[
-					"item",
-					"Faj'ro Key",
-					1
-				]
+				[ "item", "Faj'ro Key", 1 ]
 			]
 		},
 		"Faj'ro 4F: West Chamber 1": {
@@ -4362,11 +3123,7 @@
 				"open": "open7.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Faj'ro Key",
-					1
-				]
+				[ "item", "Faj'ro Key", 1 ]
 			]
 		},
 		"Faj'ro 4F: East Chamber 1": {
@@ -4381,11 +3138,7 @@
 				"open": "open7.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Faj'ro Key",
-					1
-				]
+				[ "item", "Faj'ro Key", 1 ]
 			]
 		},
 		"Faj'ro 4F: East Pathway": {
@@ -4400,11 +3153,7 @@
 				"open": "open7.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Dented Crown",
-					1
-				]
+				[ "item", "Dented Crown", 1 ]
 			],
 			"condition": [
 				[ "item", "Heat" ]
@@ -4422,11 +3171,7 @@
 				"open": "open7.6"
 			},
 			"reward": [
-				[
-					"item",
-					"Faj'ro Key",
-					1
-				]
+				[ "item", "Faj'ro Key", 1 ]
 			]
 		},
 		"Faj'ro 4F: Chamber of Prosperity": {
@@ -4437,15 +3182,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "18",
 				"open": "open7.7"
 			},
 			"reward": [
-				[
-					"item",
-					"Faj'ro Master Key",
-					1
-				]
+				[ "item", "Faj'ro Master Key", 1 ]
 			]
 		},
 		"Faj'ro GF: Balance Room 1 Left": {
@@ -4494,15 +3234,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "13",
 				"open": "open7.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Faj'ro Key",
-					1
-				]
+				[ "item", "Faj'ro Key", 1 ]
 			],
 			"condition": [
 				[ "item", "Heat" ]
@@ -4516,15 +3251,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Jelly Extract",
-					3
-				]
+				[ "item", "Jelly Extract", 3 ]
 			]
 		},
 		"Faj'ro GF: Balance Room 2 Right": {
@@ -4535,15 +3265,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Crystal Water",
-					3
-				]
+				[ "item", "Crystal Water", 3 ]
 			]
 		},
 		"Faj'ro GF: Balance Room 2 Left": {
@@ -4554,15 +3279,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Vanilla Ice Cream",
-					4
-				]
+				[ "item", "Vanilla Ice Cream", 4 ]
 			]
 		},
 		"Faj'ro GF: Right Chamber 1": {
@@ -4573,15 +3293,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Chef Sandwich",
-					5
-				]
+				[ "item", "Chef Sandwich", 5 ]
 			]
 		},
 		"Faj'ro GF: Right Chamber 2": {
@@ -4592,15 +3307,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Faj'ro Key",
-					1
-				]
+				[ "item", "Faj'ro Key", 1 ]
 			]
 		},
 		"Faj'ro GF: Test of Memory Left": {
@@ -4611,15 +3321,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Faj'ro Key",
-					1
-				]
+				[ "item", "Faj'ro Key", 1 ]
 			]
 		},
 		"Faj'ro GF: Test of Memory Right": {
@@ -4630,15 +3335,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "14",
 				"open": "open7.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Faj'ro Key",
-					1
-				]
+				[ "item", "Faj'ro Key", 1 ]
 			]
 		},
 		"Ba'kii: Solar Farm Upper": {
@@ -4649,15 +3349,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Ancient Earth",
-					3
-				]
+				[ "item", "Ancient Earth", 3 ]
 			]
 		},
 		"Ba'kii: Solar Farm Lower": {
@@ -4668,15 +3363,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Ancient Earth",
-					2
-				]
+				[ "item", "Ancient Earth", 2 ]
 			]
 		},
 		"Ba'kii: Market East": {
@@ -4687,15 +3377,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Phoenix Feather",
-					2
-				]
+				[ "item", "Phoenix Feather", 2 ]
 			]
 		},
 		"Ba'kii: Market West": {
@@ -4706,15 +3391,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Tattered Satchel",
-					1
-				]
+				[ "item", "Tattered Satchel", 1 ]
 			]
 		},
 		"Ba'kii: Bazaar House": {
@@ -4725,15 +3405,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "11",
 				"open": "open5"
 			},
 			"reward": [
-				[
-					"item",
-					"Silver Chest Plate",
-					1
-				]
+				[ "item", "Silver Chest Plate", 1 ]
 			]
 		},
 		"Garden: Dripping Cave": {
@@ -4744,22 +3419,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Bars",
-					6
-				]
+				[ "item", "Golden Bars", 6 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: Tranquility Pond": {
@@ -4770,22 +3436,13 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Galaxy Berry",
-					1
-				]
+				[ "item", "Galaxy Berry", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: V'rda Vil West Lower Left": {
@@ -4796,15 +3453,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Star Fruit",
-					5
-				]
+				[ "item", "Star Fruit", 5 ]
 			]
 		},
 		"Garden: V'rda Vil West Upper": {
@@ -4815,15 +3467,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Plain Cube",
-					2
-				]
+				[ "item", "Plain Cube", 2 ]
 			]
 		},
 		"Garden: V'rda Vil West Lower Right": {
@@ -4834,15 +3481,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Metal Down",
-					2
-				]
+				[ "item", "Metal Down", 2 ]
 			]
 		},
 		"Garden: V'rda Vil East Right": {
@@ -4853,15 +3495,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Snack Mix",
-					4
-				]
+				[ "item", "Snack Mix", 4 ]
 			]
 		},
 		"Garden: V'rda Vil East Lower": {
@@ -4872,22 +3509,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Elder Wood",
-					5
-				]
+				[ "item", "Elder Wood", 5 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: V'rda Vil North Right": {
@@ -4898,22 +3526,13 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Star Fruit",
-					3
-				]
+				[ "item", "Star Fruit", 3 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: V'rda Vil North Left": {
@@ -4924,15 +3543,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Precious Metal",
-					2
-				]
+				[ "item", "Precious Metal", 2 ]
 			]
 		},
 		"Garden: Chief's Den Center": {
@@ -4943,15 +3557,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Bars",
-					3
-				]
+				[ "item", "Golden Bars", 3 ]
 			]
 		},
 		"Garden: Chief's Den Upper": {
@@ -4962,15 +3571,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Prime Pistachios",
-					2
-				]
+				[ "item", "Prime Pistachios", 2 ]
 			]
 		},
 		"Garden: Chief's Den Lower": {
@@ -4981,22 +3585,13 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Geta Straps",
-					1
-				]
+				[ "item", "Geta Straps", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: Grand Krys'kajo Entrance": {
@@ -5007,32 +3602,15 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "28",
 				"open": "open10.Mid"
 			},
 			"condition": [
-				[
-					"item",
-					"Azure Drop Shade",
-					1
-				],
-				[
-					"item",
-					"Purple Bolt Shade",
-					1
-				],
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Azure Drop Shade", 1 ],
+				[ "item", "Purple Bolt Shade", 1 ],
+				[ "item", "Wave", 1 ]
 			],
 			"reward": [
-				[
-					"item",
-					"Crystal Water",
-					4
-				]
+				[ "item", "Crystal Water", 4 ]
 			]
 		},
 		"Garden: So'najiz Temple Entrance": {
@@ -5043,15 +3621,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Bars",
-					2
-				]
+				[ "item", "Golden Bars", 2 ]
 			]
 		},
 		"Garden: Covert Path Lower": {
@@ -5062,15 +3635,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Moon Fruit",
-					4
-				]
+				[ "item", "Moon Fruit", 4 ]
 			]
 		},
 		"Garden: Covert Path Upper": {
@@ -5081,15 +3649,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Flaming Bun",
-					4
-				]
+				[ "item", "Flaming Bun", 4 ]
 			]
 		},
 		"Garden: Royal Grove Lower Right": {
@@ -5100,15 +3663,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Metal Down",
-					3
-				]
+				[ "item", "Metal Down", 3 ]
 			]
 		},
 		"Garden: Royal Grove Lower Left": {
@@ -5119,15 +3677,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Salted Peanuts",
-					7
-				]
+				[ "item", "Salted Peanuts", 7 ]
 			]
 		},
 		"Garden: Royal Grove Upper Right": {
@@ -5138,15 +3691,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Common Planter",
-					8
-				]
+				[ "item", "Common Planter", 8 ]
 			]
 		},
 		"Garden: Royal Grove Upper Left": {
@@ -5157,15 +3705,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Glow Pear",
-					3
-				]
+				[ "item", "Glow Pear", 3 ]
 			]
 		},
 		"Garden: Calm Backyard Left": {
@@ -5176,15 +3719,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Maultasche",
-					4
-				]
+				[ "item", "Maultasche", 4 ]
 			]
 		},
 		"Garden: Calm Backyard Right": {
@@ -5195,15 +3733,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Cup o' Coffee",
-					6
-				]
+				[ "item", "Cup o' Coffee", 6 ]
 			]
 		},
 		"Garden: Lost Shrine GF": {
@@ -5214,27 +3747,14 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Energy Espresso",
-					2
-				]
+				[ "item", "Energy Espresso", 2 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				],
-				[
-					"item",
-					"Shock",
-					1
-				]
+				[ "item", "Wave", 1 ],
+				[ "item", "Shock", 1 ]
 			]
 		},
 		"Garden: Lost Shrine B1": {
@@ -5245,27 +3765,14 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "28",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Geta Glue",
-					3
-				]
+				[ "item", "Geta Glue", 3 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				],
-				[
-					"item",
-					"Shock",
-					1
-				]
+				[ "item", "Wave", 1 ],
+				[ "item", "Shock", 1 ]
 			]
 		},
 		"Garden: Lost Shrine B2": {
@@ -5276,27 +3783,14 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "28",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Broken Deck",
-					1
-				]
+				[ "item", "Broken Deck", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				],
-				[
-					"item",
-					"Shock",
-					1
-				]
+				[ "item", "Wave", 1 ],
+				[ "item", "Shock", 1 ]
 			]
 		},
 		"Garden: Lost Lookout Center": {
@@ -5307,15 +3801,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Veggie Wraps",
-					5
-				]
+				[ "item", "Veggie Wraps", 5 ]
 			]
 		},
 		"Garden: Lost Lookout Lower": {
@@ -5326,15 +3815,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Werewolf Stick",
-					4
-				]
+				[ "item", "Werewolf Stick", 4 ]
 			]
 		},
 		"Garden: Lost Lookout Upper": {
@@ -5345,22 +3829,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Energy Espresso",
-					3
-				]
+				[ "item", "Energy Espresso", 3 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: Seared Lake Right": {
@@ -5371,15 +3846,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Blazing Bun",
-					2
-				]
+				[ "item", "Blazing Bun", 2 ]
 			]
 		},
 		"Garden: Seared Lake Left": {
@@ -5390,15 +3860,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Fruit Pie",
-					2
-				]
+				[ "item", "Fruit Pie", 2 ]
 			]
 		},
 		"Garden: Infested Marshes South Lower Left": {
@@ -5409,15 +3874,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Lazy Claw",
-					3
-				]
+				[ "item", "Lazy Claw", 3 ]
 			]
 		},
 		"Garden: Infested Marshes South Lower Right": {
@@ -5428,22 +3888,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Stout Backplate",
-					2
-				]
+				[ "item", "Stout Backplate", 2 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: Infested Marshes South Upper Left": {
@@ -5454,15 +3905,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Venom Shroom",
-					9
-				]
+				[ "item", "Venom Shroom", 9 ]
 			]
 		},
 		"Garden: Infested Marshes South Upper Right": {
@@ -5473,15 +3919,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Mega-Sandwich",
-					2
-				]
+				[ "item", "Mega-Sandwich", 2 ]
 			]
 		},
 		"Garden: Infested Marshes North Lower Left": {
@@ -5492,15 +3933,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Ginger Tom. Salad",
-					3
-				]
+				[ "item", "Ginger Tom. Salad", 3 ]
 			]
 		},
 		"Garden: Infested Marshes North Upper Center": {
@@ -5511,15 +3947,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Spicy Beat-0-Type",
-					3
-				]
+				[ "item", "Spicy Beat-0-Type", 3 ]
 			]
 		},
 		"Garden: Infested Marshes North Lower Right": {
@@ -5530,15 +3961,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Virus Root",
-					5
-				]
+				[ "item", "Virus Root", 5 ]
 			]
 		},
 		"Garden: Infested Marshes North Upper Right": {
@@ -5549,15 +3975,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Bars",
-					5
-				]
+				[ "item", "Golden Bars", 5 ]
 			]
 		},
 		"Garden: Overgrown Path Left": {
@@ -5568,22 +3989,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
-				[
-					"item",
-					"Huge Nut",
-					4
-				]
+				[ "item", "Huge Nut", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: Overgrown Path Right": {
@@ -5594,27 +4006,14 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
-				[
-					"item",
-					"Cheese Cracker",
-					5
-				]
+				[ "item", "Cheese Cracker", 5 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				],
-				[
-					"region",
-					"open",
-					"open10.Right"
-				]
+				[ "item", "Wave", 1 ],
+				[ "region", "open", "open10.Right" ]
 			]
 		},
 		"Garden: Drizzle Bosk Right": {
@@ -5625,27 +4024,14 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
-				[
-					"item",
-					"Rough Branch",
-					1
-				]
+				[ "item", "Rough Branch", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				],
-				[
-					"region",
-					"open",
-					"open10.Right"
-				]
+				[ "item", "Wave", 1 ],
+				[ "region", "open", "open10.Right" ]
 			]
 		},
 		"Garden: Drizzle Bosk Lower": {
@@ -5656,15 +4042,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
-				[
-					"item",
-					"Spiky Nut",
-					6
-				]
+				[ "item", "Spiky Nut", 6 ]
 			]
 		},
 		"Garden: Drizzle Bosk Center": {
@@ -5675,15 +4056,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
-				[
-					"item",
-					"Sweet Berry Tea",
-					4
-				]
+				[ "item", "Sweet Berry Tea", 4 ]
 			]
 		},
 		"Garden: Wet Passage Lower": {
@@ -5694,22 +4070,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Chili Dog",
-					4
-				]
+				[ "item", "Chili Dog", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: Wet Passage Upper": {
@@ -5720,15 +4087,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Slime Drop",
-					5
-				]
+				[ "item", "Slime Drop", 5 ]
 			]
 		},
 		"Garden: River's Bed Right": {
@@ -5739,22 +4101,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Mid"
 			},
 			"reward": [
-				[
-					"item",
-					"Pepper Night Tea",
-					4
-				]
+				[ "item", "Pepper Night Tea", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: River's Bed Left": {
@@ -5765,15 +4118,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Grove"
 			},
 			"reward": [
-				[
-					"item",
-					"Fruit Salad",
-					7
-				]
+				[ "item", "Fruit Salad", 7 ]
 			]
 		},
 		"Garden: Jungle Entrance Left": {
@@ -5784,15 +4132,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"reward": [
-				[
-					"item",
-					"Chef Sandwich",
-					8
-				]
+				[ "item", "Chef Sandwich", 8 ]
 			]
 		},
 		"Garden: Jungle Entrance Lower": {
@@ -5803,15 +4146,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"reward": [
-				[
-					"item",
-					"Salted Peanuts",
-					4
-				]
+				[ "item", "Salted Peanuts", 4 ]
 			]
 		},
 		"Garden: Crossroad Left": {
@@ -5822,15 +4160,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Epic Metal",
-					2
-				]
+				[ "item", "Epic Metal", 2 ]
 			]
 		},
 		"Garden: Crossroad Right": {
@@ -5841,15 +4174,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Elder Wood",
-					6
-				]
+				[ "item", "Elder Wood", 6 ]
 			]
 		},
 		"Garden: Tying Greens Lower": {
@@ -5860,15 +4188,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Mid"
 			},
 			"reward": [
-				[
-					"item",
-					"Palette Blossom",
-					4
-				]
+				[ "item", "Palette Blossom", 4 ]
 			]
 		},
 		"Garden: Tying Greens Upper": {
@@ -5879,15 +4202,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Mid"
 			},
 			"reward": [
-				[
-					"item",
-					"Prime Pistachios",
-					6
-				]
+				[ "item", "Prime Pistachios", 6 ]
 			]
 		},
 		"Garden: Peridot Approach Lower": {
@@ -5898,22 +4216,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Mid"
 			},
 			"reward": [
-				[
-					"item",
-					"Aehre",
-					1
-				]
+				[ "item", "Aehre", 1 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: Peridot Approach Upper": {
@@ -5924,15 +4233,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Mid"
 			},
 			"reward": [
-				[
-					"item",
-					"Energy Espresso",
-					4
-				]
+				[ "item", "Energy Espresso", 4 ]
 			]
 		},
 		"Garden: Splitting Stumps Upper": {
@@ -5943,22 +4247,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Royal Hive",
-					4
-				]
+				[ "item", "Royal Hive", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Garden: Splitting Stumps Lower": {
@@ -5969,15 +4264,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Cup o' Coffee",
-					6
-				]
+				[ "item", "Cup o' Coffee", 6 ]
 			]
 		},
 		"Garden: Clinging River Right": {
@@ -5988,15 +4278,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Durian",
-					4
-				]
+				[ "item", "Durian", 4 ]
 			]
 		},
 		"Garden: Clinging River Left": {
@@ -6007,18 +4292,13 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"condition": [
 				[ "item", "Wave" ]
 			],
 			"reward": [
-				[
-					"item",
-					"Rough Branch",
-					1
-				]
+				[ "item", "Rough Branch", 1 ]
 			]
 		},
 		"Garden: Ringing River Lower": {
@@ -6029,22 +4309,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			],
 			"reward": [
-				[
-					"item",
-					"Lazy Claw",
-					2
-				]
+				[ "item", "Lazy Claw", 2 ]
 			]
 		},
 		"Garden: Ringing River Upper": {
@@ -6055,22 +4326,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			],
 			"reward": [
-				[
-					"item",
-					"Static Furball",
-					6
-				]
+				[ "item", "Static Furball", 6 ]
 			]
 		},
 		"Garden: Old Timber": {
@@ -6081,22 +4343,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			],
 			"reward": [
-				[
-					"item",
-					"Glowing Sphere",
-					7
-				]
+				[ "item", "Glowing Sphere", 7 ]
 			]
 		},
 		"Basin: Centrum": {
@@ -6107,15 +4360,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "24",
 				"open": "open11"
 			},
 			"reward": [
-				[
-					"item",
-					"Geta Wood",
-					1
-				]
+				[ "item", "Geta Wood", 1 ]
 			]
 		},
 		"Basin: Pond Slums Lower": {
@@ -6126,15 +4374,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "24",
 				"open": "open11"
 			},
 			"reward": [
-				[
-					"item",
-					"One Up",
-					1
-				]
+				[ "item", "One Up", 1 ]
 			]
 		},
 		"Basin: Pond Slums Center": {
@@ -6145,15 +4388,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "24",
 				"open": "open11"
 			},
 			"reward": [
-				[
-					"item",
-					"Epic Metal",
-					1
-				]
+				[ "item", "Epic Metal", 1 ]
 			]
 		},
 		"Basin: Pond Slums Upper": {
@@ -6164,15 +4402,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "24",
 				"open": "open11"
 			},
 			"reward": [
-				[
-					"item",
-					"Tremor Engine",
-					1
-				]
+				[ "item", "Tremor Engine", 1 ]
 			]
 		},
 		"Garden: Basin Keep Entrance": {
@@ -6183,15 +4416,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"reward": [
-				[
-					"item",
-					"Steel Comb",
-					5
-				]
+				[ "item", "Steel Comb", 5 ]
 			]
 		},
 		"Basin: Police HQ": {
@@ -6202,15 +4430,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"reward": [
-				[
-					"item",
-					"Final Dinner",
-					1
-				]
+				[ "item", "Final Dinner", 1 ]
 			]
 		},
 		"Basin: Seeker Hub GF": {
@@ -6221,15 +4444,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "23",
 				"open": "open10"
 			},
 			"reward": [
-				[
-					"item",
-					"Precious Metal",
-					3
-				]
+				[ "item", "Precious Metal", 3 ]
 			]
 		},
 		"Rhombus: Arena Plaza East": {
@@ -6240,15 +4458,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
-				[
-					"item",
-					"Diamond",
-					2
-				]
+				[ "item", "Diamond", 2 ]
 			]
 		},
 		"Rhombus: Arena Plaza West": {
@@ -6259,22 +4472,13 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
-				[
-					"item",
-					"Topaz",
-					2
-				]
+				[ "item", "Topaz", 2 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Rhombus: Garden Boulevard North": {
@@ -6285,15 +4489,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
-				[
-					"item",
-					"Ruby",
-					2
-				]
+				[ "item", "Ruby", 2 ]
 			]
 		},
 		"Rhombus: Garden Boulevard South": {
@@ -6304,15 +4503,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
-				[
-					"item",
-					"Emerald",
-					2
-				]
+				[ "item", "Emerald", 2 ]
 			]
 		},
 		"Rhombus: South Arch": {
@@ -6323,15 +4517,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
-				[
-					"item",
-					"Very Large Ember",
-					1
-				]
+				[ "item", "Very Large Ember", 1 ]
 			]
 		},
 		"Rhombus: Lloyd Passage": {
@@ -6342,15 +4531,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Ticket",
-					3
-				]
+				[ "item", "Golden Ticket", 3 ]
 			]
 		},
 		"Rhombus: Residential District North": {
@@ -6361,15 +4545,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
-				[
-					"item",
-					"Antique Token",
-					1
-				]
+				[ "item", "Antique Token", 1 ]
 			]
 		},
 		"Rhombus: Residential District South": {
@@ -6380,15 +4559,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "33",
 				"open": "open20"
 			},
 			"reward": [
-				[
-					"item",
-					"Moonstone",
-					1
-				]
+				[ "item", "Moonstone", 1 ]
 			]
 		},
 		"Harbor: Marketplace": {
@@ -6399,15 +4573,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"reward": [
-				[
-					"item",
-					"Rice Cracker",
-					6
-				]
+				[ "item", "Rice Cracker", 6 ]
 			]
 		},
 		"Harbor: Falling Exit": {
@@ -6418,22 +4587,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "2",
 				"open": "open8"
 			},
 			"reward": [
-				[
-					"item",
-					"Refined Metal",
-					5
-				]
+				[ "item", "Refined Metal", 5 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Red Flame Shade",
-					1
-				]
+				[ "item", "Red Flame Shade", 1 ]
 			]
 		},
 		"Harbor: Weapon & Backer Shop": {
@@ -6444,15 +4604,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "19",
 				"open": "open8"
 			},
 			"reward": [
-				[
-					"item",
-					"Golden Bars",
-					4
-				]
+				[ "item", "Golden Bars", 4 ]
 			]
 		},
 		"Harbor: Dusty Storage": {
@@ -6463,15 +4618,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "19",
 				"open": "open8"
 			},
 			"reward": [
-				[
-					"item",
-					"Precious Metal",
-					2
-				]
+				[ "item", "Precious Metal", 2 ]
 			]
 		},
 		"Harbor: South Harbor": {
@@ -6482,15 +4632,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"reward": [
-				[
-					"item",
-					"Hungry Salmon",
-					1
-				]
+				[ "item", "Hungry Salmon", 1 ]
 			]
 		},
 		"Harbor: Beginner's Arc Upper": {
@@ -6501,15 +4646,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"reward": [
-				[
-					"item",
-					"Spicy Bun",
-					6
-				]
+				[ "item", "Spicy Bun", 6 ]
 			]
 		},
 		"Harbor: Beginner's Arc Lower": {
@@ -6520,15 +4660,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "2",
 				"open": "open2"
 			},
 			"reward": [
-				[
-					"item",
-					"Fruit Drink",
-					6
-				]
+				[ "item", "Fruit Drink", 6 ]
 			]
 		},
 		"Zir'vitar 1F: Moving Transmit Left": {
@@ -6539,15 +4674,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"reward": [
-				[
-					"item",
-					"Prime Pistachios",
-					4
-				]
+				[ "item", "Prime Pistachios", 4 ]
 			]
 		},
 		"Zir'vitar 1F: Moving Transmit Right": {
@@ -6558,15 +4688,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "25",
 				"open": "open13.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Zir'vitar Key",
-					1
-				]
+				[ "item", "Zir'vitar Key", 1 ]
 			]
 		},
 		"Zir'vitar 1F: Haunted Waves": {
@@ -6577,22 +4702,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "25",
 				"open": "open13.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Plain Cube",
-					3
-				]
+				[ "item", "Plain Cube", 3 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Zir'vitar GF: Hoodwink": {
@@ -6603,20 +4719,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Right"
 			},
 			"condition": [
-				[
-					"any_element"
-				]
+				[ "any_element" ]
 			],
 			"reward": [
-				[
-					"item",
-					"Zir'vitar Key",
-					1
-				]
+				[ "item", "Zir'vitar Key", 1 ]
 			]
 		},
 		"Zir'vitar GF: Spinning Transmit": {
@@ -6627,22 +4736,13 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "25",
 				"open": "open13.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Power Spinach",
-					4
-				]
+				[ "item", "Power Spinach", 4 ]
 			],
 			"condition": [
-				[
-					"item",
-					"Wave",
-					1
-				]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Kajo GF: Main Stream Left": {
@@ -6695,15 +4795,10 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Timeworn Belt",
-					1
-				]
+				[ "item", "Timeworn Belt", 1 ]
 			]
 		},
 		"Kajo 3F: East Branch Upper": {
@@ -6714,15 +4809,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Prime Pistachios",
-					2
-				]
+				[ "item", "Prime Pistachios", 2 ]
 			]
 		},
 		"Kajo 3F: East Branch Right": {
@@ -6733,15 +4823,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Energy Espresso",
-					2
-				]
+				[ "item", "Energy Espresso", 2 ]
 			]
 		},
 		"Kajo 3F: West Branch Upper": {
@@ -6752,15 +4837,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Chef Sandwich",
-					4
-				]
+				[ "item", "Chef Sandwich", 4 ]
 			]
 		},
 		"Kajo 3F: West Branch Lower": {
@@ -6771,15 +4851,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Werewolf Stick",
-					3
-				]
+				[ "item", "Werewolf Stick", 3 ]
 			]
 		},
 		"Kajo 3F: Falling Leaves": {
@@ -6790,15 +4865,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "29",
 				"open": "open15.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Kajo Master Key",
-					1
-				]
+				[ "item", "Kajo Master Key", 1 ]
 			]
 		},
 		"Kajo 3F: Branch Conveyance": {
@@ -6809,15 +4879,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Krys'kajo Key",
-					1
-				]
+				[ "item", "Krys'kajo Key", 1 ]
 			]
 		},
 		"Kajo 3F: Branch Transmit Right": {
@@ -6828,15 +4893,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Krys'kajo Key",
-					1
-				]
+				[ "item", "Krys'kajo Key", 1 ]
 			]
 		},
 		"Kajo 3F: Branch Transmit Left": {
@@ -6847,15 +4907,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "28",
 				"open": "open15.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Pepper Night Tea",
-					3
-				]
+				[ "item", "Pepper Night Tea", 3 ]
 			]
 		},
 		"So'najiz U1: Principle of Conveyance": {
@@ -6866,15 +4921,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
-				[
-					"item",
-					"Energy Espresso",
-					4
-				]
+				[ "item", "Energy Espresso", 4 ]
 			]
 		},
 		"So'najiz U1: Trial of Persistence Lower Right": {
@@ -6889,11 +4939,7 @@
 				"open": "open14.2"
 			},
 			"reward": [
-				[
-					"item",
-					"So'najiz Key",
-					1
-				]
+				[ "item", "So'najiz Key", 1 ]
 			]
 		},
 		"So'najiz U1: Trial of Persistence Upper Right": {
@@ -6908,11 +4954,7 @@
 				"open": "open14.2"
 			},
 			"reward": [
-				[
-					"item",
-					"So'najiz Key",
-					1
-				]
+				[ "item", "So'najiz Key", 1 ]
 			]
 		},
 		"So'najiz U1: Trial of Persistence Rightmost": {
@@ -6923,15 +4965,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "23",
 				"open": "open10.Left"
 			},
 			"reward": [
-				[
-					"item",
-					"So'najiz Key",
-					1
-				]
+				[ "item", "So'najiz Key", 1 ]
 			]
 		},
 		"So'najiz U1: Trial of Persistence Upper Left": {
@@ -6946,11 +4983,7 @@
 				"open": "open14.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Radiant Key",
-					1
-				]
+				[ "item", "Radiant Key", 1 ]
 			]
 		},
 		"So'najiz U1: Trial of Persistence Lower Left": {
@@ -6964,11 +4997,7 @@
 				"open": "open14.3"
 			},
 			"reward": [
-				[
-					"item",
-					"Epic Metal",
-					1
-				]
+				[ "item", "Epic Metal", 1 ]
 			]
 		},
 		"So'najiz U1: Moving Attraction": {
@@ -6979,15 +5008,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
 				"open": "open14.1"
 			},
 			"reward": [
-				[
-					"item",
-					"So'najiz Key",
-					1
-				]
+				[ "item", "So'najiz Key", 1 ]
 			]
 		},
 		"So'najiz U1: Slowing Attraction": {
@@ -6998,22 +5022,13 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
 				"open": "open10.Left"
 			},
 			"condition": [
-				[
-					"item",
-					"So'najiz Key",
-					3
-				]
+				[ "item", "So'najiz Key", 3 ]
 			],
 			"reward": [
-				[
-					"item",
-					"Snack Mix",
-					6
-				]
+				[ "item", "Snack Mix", 6 ]
 			]
 		},
 		"So'najiz U1: Standing Attraction": {
@@ -7024,15 +5039,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
 				"open": "open14.1"
 			},
 			"reward": [
-				[
-					"item",
-					"Sneaky Shiv",
-					1
-				]
+				[ "item", "Sneaky Shiv", 1 ]
 			]
 		},
 		"So'najiz U1: Attracting Conveyance": {
@@ -7047,11 +5057,7 @@
 				"open": "open14.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Sea Disc",
-					3
-				]
+				[ "item", "Sea Disc", 3 ]
 			]
 		},
 		"So'najiz U1: Fast Conveyance": {
@@ -7062,15 +5068,10 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
 				"open": "open14.1"
 			},
 			"reward": [
-				[
-					"item",
-					"So'najiz Key",
-					1
-				]
+				[ "item", "So'najiz Key", 1 ]
 			]
 		},
 		"So'najiz U1: Flaming Conveyance": {
@@ -7085,11 +5086,7 @@
 				"open": "open14.2"
 			},
 			"reward": [
-				[
-					"item",
-					"Living Bolt",
-					3
-				]
+				[ "item", "Living Bolt", 3 ]
 			]
 		}
 	}

@@ -8,7 +8,6 @@
 				"path": ".settings.event.21.accepted.6" 
 			},
 			"region": {
-				"linear": "3",
 				"open": "open3" 
 			},
 			"properties": {
@@ -26,7 +25,6 @@
 				"path": ".settings.npcStates.1.event.10" 
 			},
 			"region": {
-				"linear": "3.1",
 				"open": "open3.1" 
 			},
 			"reward": [
@@ -41,7 +39,6 @@
 				"path": ".settings.npcStates.0.event.quest.2.thenStep.17" 
 			},
 			"region": {
-				"linear": "4",
 				"open": "open4.1" 
 			},
 			"reward": [
@@ -56,14 +53,13 @@
 				"path": ".settings.npcStates.1.event.quest.5"
 			},
 			"region": {
-				"linear": "3",
 				"open": "open3"
 			},
 			"properties": {
 				"alwaysQuest": true
 			},
 			"reward": [
-				[ "item", "Mine Detector", 1]
+				[ "item", "Mine Detector", 1 ]
 			]
 		},
 		"Temple Mine Shade Statue": {
@@ -74,11 +70,10 @@
 				"path": ".settings.event.20" 
 			},
 			"region": {
-				"linear": "10",
 				"open": "open4.1" 
 			},
 			"condition": [
-				["item", "Mine Master Key", 1]
+				[ "item", "Mine Master Key", 1 ]
 			],
 			"reward": [
 				[ "item", "Blue Ice Shade", 1 ]
@@ -92,7 +87,6 @@
 				"path": ".settings.event.19" 
 			},
 			"region": {
-				"linear": "32",
 				"open": "open17" 
 			},
 			"reward": [
@@ -107,7 +101,6 @@
 				"path": ".settings.event.20" 
 			},
 			"region": {
-				"linear": "19",
 				"open": "open7.8" 
 			},
 			"reward": [
@@ -122,7 +115,6 @@
 				"path": ".settings.npcStates.0.event.4.0.9" 
 			},
 			"region": {
-				"linear": "11",
 				"open": "open5" 
 			},
 			"condition": [
@@ -140,7 +132,6 @@
 				"path": ".settings.npcStates.1.event.quest.3.accepted.3" 
 			},
 			"region": {
-				"linear": "11",
 				"open": "open5" 
 			},
 			"reward": [
@@ -155,7 +146,6 @@
 				"path": ".settings.event.17" 
 			},
 			"region": {
-				"linear": "12",
 				"open": "open6" 
 			},
 			"condition": [
@@ -176,7 +166,6 @@
 				"path": ".settings.event.20" 
 			},
 			"region": {
-				"linear": "25",
 				"open": "open13.2" 
 			},
 			"condition": [
@@ -194,7 +183,6 @@
 				"path": ".settings.event.25" 
 			},
 			"region": {
-				"linear": "30",
 				"open": "open15.3" 
 			},
 			"reward": [
@@ -224,7 +212,6 @@
 				"path": ".settings.event.74" 
 			},
 			"region": {
-				"linear": "2",
 				"open": "open2" 
 			},
 			"reward": [
@@ -239,7 +226,6 @@
 				"path": ".settings.event.90" 
 			},
 			"region": {
-				"linear": "2",
 				"open": "open2" 
 			},
 			"reward": [
@@ -254,7 +240,6 @@
 				"path": ".settings.event.36" 
 			},
 			"region": {
-				"linear": "11",
 				"open": "open4.8" 
 			},
 			"reward": [
@@ -269,7 +254,6 @@
 				"path": ".settings.event.35" 
 			},
 			"region": {
-				"linear": "19",
 				"open": "open7.8" 
 			},
 			"reward": [
@@ -284,7 +268,6 @@
 				"path": ".settings.event.36" 
 			},
 			"region": {
-				"linear": "30",
 				"open": "open15.3" 
 			},
 			"reward": [
@@ -299,7 +282,6 @@
 				"path": ".settings.event.14" 
 			},
 			"region": {
-				"linear": "27",
 				"open": "open14.4"
 			},
 			"reward": [
@@ -314,7 +296,6 @@
 				"path": ".settings.event.14" 
 			},
 			"region": {
-				"linear": "25",
 				"open": "open13.2" 
 			},
 			"condition": [
@@ -332,7 +313,6 @@
 				"path": ".settings.event.38" 
 			},
 			"region": {
-				"linear": "19",
 				"open": "open7.8" 
 			},
 			"reward": [
@@ -347,7 +327,6 @@
 				"path": ".settings.event.44" 
 			},
 			"region": {
-				"linear": "30",
 				"open": "open15.3" 
 			},
 			"reward": [
@@ -362,7 +341,6 @@
 				"path": ".settings.event.49" 
 			},
 			"region": {
-				"linear": "30",
 				"open": "open10" 
 			},
 			"reward": [
@@ -377,7 +355,6 @@
 				"path": ".settings.event.48" 
 			},
 			"region": {
-				"linear": "30",
 				"open": "open10" 
 			},
 			"reward": [

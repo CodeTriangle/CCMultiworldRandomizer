@@ -4,7 +4,6 @@
 		"Chase the Hologram Frobbit": {
 			"questid": "daft-frobbit",
 			"region": {
-				"linear": "20",
 				"open": "open9" 
 			},
 			"condition": [
@@ -21,7 +20,6 @@
 		"Mushroom Kingdom": {
 			"questid": "basin-mush-2",
 			"region": {
-				"linear": "23",
 				"open": "open10.Infested"
 			},
 			"condition": [ 
@@ -37,7 +35,6 @@
 		"Maroon Tree Defender": {
 			"questid": "maroon-tree-defend",
 			"region": {
-				"linear": "12",
 				"open": "open6"
 			},
 			"condition": [
@@ -54,7 +51,6 @@
 		"Trials of the Golden Bugs": {
 			"questid": "bug-hunting",
 			"region": {
-				"linear": "31",
 				"open": "open16" 
 			},
 			"properties": {
