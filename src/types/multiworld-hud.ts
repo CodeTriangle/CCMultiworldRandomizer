@@ -59,6 +59,7 @@ declare global {
 			hideRewards: boolean;
 			includeAllRewards: boolean;
 			quest: sc.Quest;
+			finished: boolean;
 
 			setQuest(this: this, mwQuest: RawQuest): void;
 		}
@@ -70,7 +71,8 @@ declare global {
 				quest: sc.Quest,
 				mwQuest: RawQuest,
 				showRewardAnyway: boolean,
-				includeAllRewards: boolean
+				includeAllRewards: boolean,
+				finished: boolean,
 			): MultiWorldQuestItemBox;
 		}
 
