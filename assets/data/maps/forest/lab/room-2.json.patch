@@ -1,0 +1,17 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities", 80, "settings", "event"]
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"index": 18,
+		"content": {
+			"type": "MW_GOAL_COMPLETED",
+			"goal": "facility_x"
+		}
+	},
+	{
+		"type": "EXIT", "count": 4
+	}
+]

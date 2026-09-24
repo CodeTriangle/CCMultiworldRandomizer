@@ -1,0 +1,37 @@
+[   
+    {
+			"type": "SET_KEY",
+			"index": "level",
+			"content": 45
+    },  
+    {
+			"type": "ENTER",
+			"index": "params"
+    },
+		{
+			"type": "SET_KEY",
+			"index": "hp",
+			"content": 45000
+    },  
+		{
+			"type": "SET_KEY",
+			"index": "attack",
+			"content": 227
+    },  
+		{
+			"type": "SET_KEY",
+			"index": "defense",
+			"content": 218
+    },  
+		{
+			"type": "SET_KEY",
+			"index": "focus",
+			"content": 227
+    },  
+		{
+			"type": "EXIT"
+    }
+]
+
+
+

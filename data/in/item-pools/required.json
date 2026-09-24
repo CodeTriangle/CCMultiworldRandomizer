@@ -20,10 +20,6 @@
 					"quantity": 1
 				},
 				{
-					"item": ["item", "SP Upgrade"],
-					"quantity": 2
-				},
-				{
 					"item": ["item", "Disc of Flora"],
 					"quantity": 1
 				},
@@ -234,6 +230,10 @@
 				{
 					"item": ["item", "King's Ring"],
 					"quantity": 1
+				},
+				{
+					"item": ["item", "Encrypted Key"],
+					"quantity": 4
 				}
 			]
 		}

@@ -367,6 +367,16 @@
 					"condition": [
 						[ "location", "The Observatory" ]
 					]
+				},
+				"facility_x": {
+					"region": "open16.1",
+					"condition": [
+						[ "item", "Encrypted Key", 4 ],
+						[ "region", "open", "open3" ],
+						[ "region", "open", "open5" ],
+						[ "region", "open", "open9" ],
+						[ "region", "open", "open10.Right" ]
+					]
 				}
 			}
 		}
