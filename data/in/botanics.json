@@ -492,7 +492,7 @@
 				"name": "jungle-rain-1"
 			},
 			"region": {
-				"open": "garden.west"
+				"open": "garden.mid"
 			}
 		},
 		"Beta Open Baraleles": {
@@ -501,7 +501,7 @@
 				"name": "jungle-rain-2"
 			},
 			"region": {
-				"open": "garden.west"
+				"open": "garden.mid"
 			}
 		},
 		"Omega Open Baraleles": {
