@@ -2516,7 +2516,7 @@
 				[ "item", "Vanilla Ice Cream", 4 ]
 			]
 		},
-		"Maroon: Mystery Cave Lower": {
+		"Valley: Mystery Cave Lower": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.caves.cliff-cave-01",
@@ -2530,7 +2530,7 @@
 				[ "item", "Everlasting Amber", 1 ]
 			]
 		},
-		"Maroon: Mystery Cave Upper": {
+		"Valley: Mystery Cave Upper": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.caves.cliff-cave-01",
@@ -2544,7 +2544,7 @@
 				[ "item", "Lucid Shard", 3 ]
 			]
 		},
-		"Maroon: Cursed Temple Upper": {
+		"Valley: Cursed Temple Upper": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.caves.cliffs-temple-02",
@@ -2563,7 +2563,7 @@
 				[ "item", "Cursed Coin", 1 ]
 			]
 		},
-		"Maroon: Cursed Temple Lower": {
+		"Valley: Cursed Temple Lower": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.caves.cliffs-temple-02",
@@ -2582,7 +2582,7 @@
 				[ "item", "Cursed Coin", 1 ]
 			]
 		},
-		"Maroon: Cursed Temple Treasure Room": {
+		"Valley: Cursed Temple Treasure Room": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.caves.cliffs-temple-03",
@@ -2601,7 +2601,7 @@
 				[ "item", "Cursed Coin", 1 ]
 			]
 		},
-		"Maroon: Maroon Cave 1": {
+		"Valley: Maroon Cave 1": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.caves.maroon-cave-01",
@@ -2619,7 +2619,7 @@
 				[ "item", "Heat", 1 ]
 			]
 		},
-		"Maroon: River Cliff Right": {
+		"Valley: River Cliff Right": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.cliffs.cliffs-path-01",
@@ -2633,7 +2633,7 @@
 				[ "item", "Mighty Strand", 1 ]
 			]
 		},
-		"Maroon: River Cliff Left": {
+		"Valley: River Cliff Left": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.cliffs.cliffs-path-01",
@@ -2647,7 +2647,7 @@
 				[ "item", "Crystal Leek", 6 ]
 			]
 		},
-		"Maroon: Endless Pit Center": {
+		"Valley: Endless Pit Center": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.cliffs.cliffs-path-02",
@@ -2661,7 +2661,7 @@
 				[ "item", "Lucid Shard", 2 ]
 			]
 		},
-		"Maroon: Endless Pit Right": {
+		"Valley: Endless Pit Right": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.cliffs.cliffs-path-02",
@@ -2675,7 +2675,7 @@
 				[ "item", "Old Bones", 5 ]
 			]
 		},
-		"Maroon: Endless Pit Left": {
+		"Valley: Endless Pit Left": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.cliffs.cliffs-path-02",
@@ -2689,7 +2689,7 @@
 				[ "item", "Ancient Earth", 3 ]
 			]
 		},
-		"Maroon: Vivid Path Lower": {
+		"Valley: Vivid Path Lower": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.oasis.oasis-path-01",
@@ -2703,7 +2703,7 @@
 				[ "item", "Palmapple Seed", 2 ]
 			]
 		},
-		"Maroon: Vivid Path Upper": {
+		"Valley: Vivid Path Upper": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.oasis.oasis-path-01",
@@ -2717,7 +2717,7 @@
 				[ "item", "Vivid Water", 7 ]
 			]
 		},
-		"Maroon: Maroon Oasis Center": {
+		"Valley: Maroon Oasis Center": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.oasis.oasis-path-02",
@@ -2731,7 +2731,7 @@
 				[ "item", "Maroon Chestnut", 2 ]
 			]
 		},
-		"Maroon: Maroon Oasis Upper": {
+		"Valley: Maroon Oasis Upper": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.oasis.oasis-path-02",
@@ -2745,7 +2745,7 @@
 				[ "item", "Fruit Salad", 6 ]
 			]
 		},
-		"Maroon: Bright Path": {
+		"Valley: Bright Path": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.oasis.oasis-path-03",
@@ -2759,7 +2759,7 @@
 				[ "item", "Hidden Blade", 1 ]
 			]
 		},
-		"Maroon: Rising Railway": {
+		"Valley: Rising Railway": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-00",
@@ -2773,7 +2773,7 @@
 				[ "item", "Frosted Carrot", 3 ]
 			]
 		},
-		"Maroon: East Entrance": {
+		"Valley: East Entrance": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-01-entrance",
@@ -2787,7 +2787,7 @@
 				[ "item", "Golden Satchel", 6 ]
 			]
 		},
-		"Maroon: Dusty Path Center": {
+		"Valley: Dusty Path Center": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-02",
@@ -2801,7 +2801,7 @@
 				[ "item", "Thief's Band", 1 ]
 			]
 		},
-		"Maroon: Dusty Path Upper": {
+		"Valley: Dusty Path Upper": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-02",
@@ -2815,7 +2815,7 @@
 				[ "item", "Arid Lumber", 4 ]
 			]
 		},
-		"Maroon: Crossroad Center": {
+		"Valley: Crossroad Center": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-03",
@@ -2829,7 +2829,7 @@
 				[ "item", "Vanilla Ice Cream", 2 ]
 			]
 		},
-		"Maroon: Crossroad Left": {
+		"Valley: Crossroad Left": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-03",
@@ -2843,7 +2843,7 @@
 				[ "item", "Golden Bars", 2 ]
 			]
 		},
-		"Maroon: Long Piece": {
+		"Valley: Long Piece": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-04",
@@ -2857,7 +2857,7 @@
 				[ "item", "Pepper Night Tea", 4 ]
 			]
 		},
-		"Maroon: Barren Arcs Center": {
+		"Valley: Barren Arcs Center": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-05",
@@ -2871,7 +2871,7 @@
 				[ "item", "Squishy Teeth", 3 ]
 			]
 		},
-		"Maroon: Barren Arcs Left": {
+		"Valley: Barren Arcs Left": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-05",
@@ -2885,7 +2885,7 @@
 				[ "item", "Glaring Rock", 7 ]
 			]
 		},
-		"Maroon: Barren Land": {
+		"Valley: Barren Land": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-06",
@@ -2899,7 +2899,7 @@
 				[ "item", "Chili Dog", 3 ]
 			]
 		},
-		"Maroon: Overpass Upper": {
+		"Valley: Overpass Upper": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-07",
@@ -2913,7 +2913,7 @@
 				[ "item", "Phoenix Feather", 4 ]
 			]
 		},
-		"Maroon: Overpass Left": {
+		"Valley: Overpass Left": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-07",
@@ -2927,7 +2927,7 @@
 				[ "item", "Blazing Bun", 2 ]
 			]
 		},
-		"Maroon: Paw Cliffs Lower": {
+		"Valley: Paw Cliffs Lower": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-08",
@@ -2941,7 +2941,7 @@
 				[ "item", "Drill Stone", 3 ]
 			]
 		},
-		"Maroon: Paw Cliffs Upper": {
+		"Valley: Paw Cliffs Upper": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-08",
@@ -2955,7 +2955,7 @@
 				[ "item", "Shrimp Risotto", 5 ]
 			]
 		},
-		"Maroon: Torn Road Center": {
+		"Valley: Torn Road Center": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-09",
@@ -2969,7 +2969,7 @@
 				[ "item", "Golden Satchel", 3 ]
 			]
 		},
-		"Maroon: Torn Road Right": {
+		"Valley: Torn Road Right": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-09",
@@ -2983,7 +2983,7 @@
 				[ "item", "Flaming Bun", 4 ]
 			]
 		},
-		"Maroon: West Entrance": {
+		"Valley: West Entrance": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.path-11",
@@ -2997,7 +2997,7 @@
 				[ "item", "Hardened Liver", 2 ]
 			]
 		},
-		"Maroon: Fractured Path Upper": {
+		"Valley: Fractured Path Upper": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.shortcut-02-09",
@@ -3011,7 +3011,7 @@
 				[ "item", "Chef Sandwich", 6 ]
 			]
 		},
-		"Maroon: Fractured Path Right": {
+		"Valley: Fractured Path Right": {
 			"location": {
 				"area": "heat-area",
 				"map": "heat.shortcut-02-09",
