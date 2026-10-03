@@ -18,6 +18,14 @@
 					"to": "bergen"
 				},
 				{
+					"from": "harbor",
+					"to": "bergen",
+					"condition": [
+						[ "item", "Green Leaf Shade", 1 ],
+						[ "var", "rhombusHubUnlock" ]
+					]
+				},
+				{
 					"from": "bergen",
 					"to": "mine.1",
 					"condition": [
@@ -174,7 +182,7 @@
 				},
 				{
 					"from": "harbor",
-					"to": "garden",
+					"to": "basin",
 					"condition": [
 						[ "item", "Green Seed Shade", 1 ],
 						[ "var", "rhombusHubUnlock" ]

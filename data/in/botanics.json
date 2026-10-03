@@ -492,7 +492,7 @@
 				"name": "jungle-rain-1"
 			},
 			"region": {
-				"open": "garden.left"
+				"open": "garden.west"
 			}
 		},
 		"Beta Open Baraleles": {
@@ -501,7 +501,7 @@
 				"name": "jungle-rain-2"
 			},
 			"region": {
-				"open": "garden.left"
+				"open": "garden.west"
 			}
 		},
 		"Omega Open Baraleles": {
@@ -510,7 +510,7 @@
 				"name": "jungle-rain-special"
 			},
 			"region": {
-				"open": "garden.left"
+				"open": "garden.west"
 			},
 			"conditions": [
 				[ "or",
@@ -525,7 +525,7 @@
 				"name": "jungle-clearing-1"
 			},
 			"region": {
-				"open": "garden.right"
+				"open": "garden.east"
 			}
 		},
 		"Beta Vivid Puff Plant": {
@@ -534,7 +534,7 @@
 				"name": "jungle-clearing-2"
 			},
 			"region": {
-				"open": "garden.right"
+				"open": "garden.east"
 			}
 		},
 		"Omega Vivid Puff Plant": {
@@ -543,7 +543,7 @@
 				"name": "jungle-clearing-special"
 			},
 			"region": {
-				"open": "garden.right"
+				"open": "garden.east"
 			}
 		},
 		"Alpha Virus Shroom": {
