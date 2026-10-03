@@ -31,12 +31,10 @@ export function sendTrap(item: ap.Item){
       sc.model.player.resetSkillTree(4);
       break;
     case "Bomb Trap":
-      trapenemy = ig.game.spawnEntity(ig.ENTITY.Enemy, 0,0,0, {enemyInfo: trapenemy_settings});
-      trapenemy.doEnemyAction("Bombing", true);
+      ig.game.events.callEvent( new ig.Event( {name: "Bombing Trap", steps: [ { type: "WAIT", time: 0.1 }, { type: "SPAWN_ENEMY", "position": { "x": 0, "y": 0, "z": 2000 }, "enemyInfo": { "type": "trap-dummy" }, "targetPlayer": false, "name": "trap-master", "startAction": [ { "type": "DO_ENEMY_ACTION", "actionName": "Bombing" } ] }, { type: "WAIT", time: 0.1 } ] }), ig.EventRunType.PARALLEL);
       break;
     case "Laser Of Doom Trap":
-      trapenemy = ig.game.spawnEntity(ig.ENTITY.Enemy, 0,-0,0, {enemyInfo: trapenemy_settings});
-      trapenemy.doEnemyAction("Laser", true);
+      ig.game.events.callEvent( new ig.Event( { name: "Laser of Doom Trap", steps: [ { type: "WAIT", time: 0.1 }, { type: "SPAWN_ENEMY", "position": { "x": 0, "y": 0, "z": 12000 }, "enemyInfo": { "type": "trap-dummy" }, "targetPlayer": false, "name": "trap-master", "startAction": [ { "type": "DO_ENEMY_ACTION", "actionName": "Laser", "noStateReset": true } ] }, { type: "WAIT", time: 5 } ] }), ig.EventRunType.PARALLEL);
       break;
     case "Zoom Trap":
     case "Zoom Out Trap":
@@ -75,7 +73,7 @@ export function sendTrap(item: ap.Item){
       sc.model.increaseCombatRank(0);
       break;
     case "Ice Cage Trap":
-      
+      ig.game.events.callEvent(new ig.Event( {name: "Ice Cage Trap", steps: [ { type: "WAIT", time: 0.1 }, { type: "SPAWN_ICE_CAGE", "desType": "iceBlock", "time": 15 }, { type: "WAIT", time: 1 } ] }), ig.EventRunType.INTERRUPTABLE);
       break;
     case "Element Swap Trap":
       sc.model.player.scrollElementMode(Math.floor(Math.random()*3-1),false,false);
@@ -252,5 +250,54 @@ export function patch(plugin: MwRandomizer) {
         this.parent(args);
       }
     }
-  })
+  });
+  ig.EVENT_STEP.SPAWN_ICE_CAGE = ig.EventStepBase.extend({
+    time: 0,
+    _timer: 0,
+    destroyed: false,
+    ignoreSlowDown: true,
+    destructible: null,
+    _wm: new ig.Config({
+      attributes: {
+        // position: { _type: "Vec3", _info: "spawn point", _visualize: true, _pointSelect: true, },
+        desType: { _type: "String", _info: "Type of destructible object", _select: sc.DESTRUCTIBLE_TYPE, _withNull: true, },
+        onDestructIncrease: { _type: "VarName", _info: "Variable to increase by one when destroyed", _optional: true, },
+        onPreDestructIncrease: { _type: "VarName", _info: "Variable to increase by one when destroyed", _optional: true, },
+        effect: { _type: "Effect", _info: "Optional Effect", _optional: true, _popup: true, },
+        time: { _type: "NumberExpression", _info: "Time to wait in seconds" },
+      },
+    }),
+    init: function (a) {
+      assertContent(a, "time");
+      // this.position = a.position;
+      if (ig.game.playerEntity) { this.position = ig.game.playerEntity.getAlignedPos(); }
+      else { this.position = Vec3.create() }
+      this.desType = a.desType;
+      this.onDestructIncrease = a.onDestructIncrease;
+      this.onPreDestructIncrease = a.onPreDestructIncrease;
+      if (a.effect) this.effect = new ig.EffectHandle(a.effect);
+      this.time = a.time;
+      this.ignoreSlowDown = a.ignoreSlowDown || false;
+    },
+    start: function () {
+      var a = ig.Event.getVec3(this.position, Vec3.create()), a = ig.game.spawnEntity( ig.ENTITY.Destructible, a.x - 12+32, a.y - 12, 300, { desType: this.desType, permaDestruct: false, blockNavMap: true, onDestructIncrease: this.onDestructIncrease, onPreDestructIncrease: this.onPreDestructIncrease, }, false );
+      var b = ig.Event.getVec3(this.position, Vec3.create()), b = ig.game.spawnEntity( ig.ENTITY.Destructible, b.x - 12-32, b.y - 12, 300, { desType: this.desType, permaDestruct: false, blockNavMap: true, onDestructIncrease: this.onDestructIncrease, onPreDestructIncrease: this.onPreDestructIncrease, }, false );
+      var c = ig.Event.getVec3(this.position, Vec3.create()), c = ig.game.spawnEntity( ig.ENTITY.Destructible, c.x - 12, c.y - 12+32, 300, { desType: this.desType, permaDestruct: false, blockNavMap: true, onDestructIncrease: this.onDestructIncrease, onPreDestructIncrease: this.onPreDestructIncrease, }, false );
+      var d = ig.Event.getVec3(this.position, Vec3.create()), d = ig.game.spawnEntity( ig.ENTITY.Destructible, d.x - 12, d.y - 12-32, 300, { desType: this.desType, permaDestruct: false, blockNavMap: true, onDestructIncrease: this.onDestructIncrease, onPreDestructIncrease: this.onPreDestructIncrease, }, false );
+      this.effect && this.effect.spawnOnTarget(a) && this.effect.spawnOnTarget(b) && this.effect.spawnOnTarget(c) && this.effect.spawnOnTarget(d);
+      this.destructibles = [a,b,c,d];
+      this._timer = ig.Event.getExpressionValue(this.time); 
+    },
+    run: function (a) {
+      this._timer = this._timer - (this.ignoreSlowDown ? ig.system.actualTick : ig.system.tick);
+      return this._timer <= 0 && !this.destroyed && this.destroy();
+    },
+    destroy: function (a) {
+      this.destroyed = true;
+      for (let dest of this.destructibles) {
+        var c = ig.Event.getEntity(dest, Vec3.create());
+        c && c.startDestruction && c.startDestruction();
+      }
+    }
+  });
 }
