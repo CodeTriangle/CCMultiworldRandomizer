@@ -1483,13 +1483,13 @@
 		"heat.caves.cliff-cave-01": {
 			"chests": {
 				"42": {
-					"name": "Maroon: Mystery Cave Lower",
+					"name": "Valley: Mystery Cave Lower",
 					"mwids": [
 						3235824173
 					]
 				},
 				"43": {
-					"name": "Maroon: Mystery Cave Upper",
+					"name": "Valley: Mystery Cave Upper",
 					"mwids": [
 						3235824174
 					]
@@ -1499,13 +1499,13 @@
 		"heat.caves.cliffs-temple-02": {
 			"chests": {
 				"48": {
-					"name": "Maroon: Cursed Temple Upper",
+					"name": "Valley: Cursed Temple Upper",
 					"mwids": [
 						3235824175
 					]
 				},
 				"86": {
-					"name": "Maroon: Cursed Temple Lower",
+					"name": "Valley: Cursed Temple Lower",
 					"mwids": [
 						3235824176
 					]
@@ -1515,7 +1515,7 @@
 		"heat.caves.cliffs-temple-03": {
 			"chests": {
 				"107": {
-					"name": "Maroon: Cursed Temple Treasure Room",
+					"name": "Valley: Cursed Temple Treasure Room",
 					"mwids": [
 						3235824177
 					]
@@ -1525,7 +1525,7 @@
 		"heat.caves.maroon-cave-01": {
 			"chests": {
 				"404": {
-					"name": "Maroon: Maroon Cave 1",
+					"name": "Valley: Maroon Cave 1",
 					"mwids": [
 						3235824178
 					]
@@ -1535,13 +1535,13 @@
 		"heat.cliffs.cliffs-path-01": {
 			"chests": {
 				"105": {
-					"name": "Maroon: River Cliff Right",
+					"name": "Valley: River Cliff Right",
 					"mwids": [
 						3235824179
 					]
 				},
 				"197": {
-					"name": "Maroon: River Cliff Left",
+					"name": "Valley: River Cliff Left",
 					"mwids": [
 						3235824180
 					]
@@ -1551,19 +1551,19 @@
 		"heat.cliffs.cliffs-path-02": {
 			"chests": {
 				"29": {
-					"name": "Maroon: Endless Pit Center",
+					"name": "Valley: Endless Pit Center",
 					"mwids": [
 						3235824181
 					]
 				},
 				"30": {
-					"name": "Maroon: Endless Pit Right",
+					"name": "Valley: Endless Pit Right",
 					"mwids": [
 						3235824182
 					]
 				},
 				"32": {
-					"name": "Maroon: Endless Pit Left",
+					"name": "Valley: Endless Pit Left",
 					"mwids": [
 						3235824183
 					]
@@ -1573,13 +1573,13 @@
 		"heat.oasis.oasis-path-01": {
 			"chests": {
 				"8": {
-					"name": "Maroon: Vivid Path Lower",
+					"name": "Valley: Vivid Path Lower",
 					"mwids": [
 						3235824184
 					]
 				},
 				"9": {
-					"name": "Maroon: Vivid Path Upper",
+					"name": "Valley: Vivid Path Upper",
 					"mwids": [
 						3235824185
 					]
@@ -1589,13 +1589,13 @@
 		"heat.oasis.oasis-path-02": {
 			"chests": {
 				"80": {
-					"name": "Maroon: Maroon Oasis Center",
+					"name": "Valley: Maroon Oasis Center",
 					"mwids": [
 						3235824186
 					]
 				},
 				"97": {
-					"name": "Maroon: Maroon Oasis Upper",
+					"name": "Valley: Maroon Oasis Upper",
 					"mwids": [
 						3235824187
 					]
@@ -1605,7 +1605,7 @@
 		"heat.oasis.oasis-path-03": {
 			"chests": {
 				"34": {
-					"name": "Maroon: Bright Path",
+					"name": "Valley: Bright Path",
 					"mwids": [
 						3235824188
 					]
@@ -1615,7 +1615,7 @@
 		"heat.path-00": {
 			"chests": {
 				"6": {
-					"name": "Maroon: Rising Railway",
+					"name": "Valley: Rising Railway",
 					"mwids": [
 						3235824189
 					]
@@ -1625,7 +1625,7 @@
 		"heat.path-01-entrance": {
 			"chests": {
 				"55": {
-					"name": "Maroon: East Entrance",
+					"name": "Valley: East Entrance",
 					"mwids": [
 						3235824190
 					]
@@ -1635,13 +1635,13 @@
 		"heat.path-02": {
 			"chests": {
 				"7": {
-					"name": "Maroon: Dusty Path Center",
+					"name": "Valley: Dusty Path Center",
 					"mwids": [
 						3235824191
 					]
 				},
 				"14": {
-					"name": "Maroon: Dusty Path Upper",
+					"name": "Valley: Dusty Path Upper",
 					"mwids": [
 						3235824192
 					]
@@ -1651,13 +1651,13 @@
 		"heat.path-03": {
 			"chests": {
 				"23": {
-					"name": "Maroon: Crossroad Center",
+					"name": "Valley: Crossroad Center",
 					"mwids": [
 						3235824193
 					]
 				},
 				"25": {
-					"name": "Maroon: Crossroad Left",
+					"name": "Valley: Crossroad Left",
 					"mwids": [
 						3235824194
 					]
@@ -1667,7 +1667,7 @@
 		"heat.path-04": {
 			"chests": {
 				"34": {
-					"name": "Maroon: Long Piece",
+					"name": "Valley: Long Piece",
 					"mwids": [
 						3235824195
 					]
@@ -1677,13 +1677,13 @@
 		"heat.path-05": {
 			"chests": {
 				"2": {
-					"name": "Maroon: Barren Arcs Center",
+					"name": "Valley: Barren Arcs Center",
 					"mwids": [
 						3235824196
 					]
 				},
 				"14": {
-					"name": "Maroon: Barren Arcs Left",
+					"name": "Valley: Barren Arcs Left",
 					"mwids": [
 						3235824197
 					]
@@ -1693,7 +1693,7 @@
 		"heat.path-06": {
 			"chests": {
 				"16": {
-					"name": "Maroon: Barren Land",
+					"name": "Valley: Barren Land",
 					"mwids": [
 						3235824198
 					]
@@ -1703,13 +1703,13 @@
 		"heat.path-07": {
 			"chests": {
 				"7": {
-					"name": "Maroon: Overpass Upper",
+					"name": "Valley: Overpass Upper",
 					"mwids": [
 						3235824199
 					]
 				},
 				"78": {
-					"name": "Maroon: Overpass Left",
+					"name": "Valley: Overpass Left",
 					"mwids": [
 						3235824200
 					]
@@ -1719,13 +1719,13 @@
 		"heat.path-08": {
 			"chests": {
 				"1": {
-					"name": "Maroon: Paw Cliffs Lower",
+					"name": "Valley: Paw Cliffs Lower",
 					"mwids": [
 						3235824201
 					]
 				},
 				"4": {
-					"name": "Maroon: Paw Cliffs Upper",
+					"name": "Valley: Paw Cliffs Upper",
 					"mwids": [
 						3235824202
 					]
@@ -1735,13 +1735,13 @@
 		"heat.path-09": {
 			"chests": {
 				"8": {
-					"name": "Maroon: Torn Road Center",
+					"name": "Valley: Torn Road Center",
 					"mwids": [
 						3235824203
 					]
 				},
 				"41": {
-					"name": "Maroon: Torn Road Right",
+					"name": "Valley: Torn Road Right",
 					"mwids": [
 						3235824204
 					]
@@ -1751,7 +1751,7 @@
 		"heat.path-11": {
 			"chests": {
 				"19": {
-					"name": "Maroon: West Entrance",
+					"name": "Valley: West Entrance",
 					"mwids": [
 						3235824205
 					]
@@ -1761,13 +1761,13 @@
 		"heat.shortcut-02-09": {
 			"chests": {
 				"17": {
-					"name": "Maroon: Fractured Path Upper",
+					"name": "Valley: Fractured Path Upper",
 					"mwids": [
 						3235824206
 					]
 				},
 				"19": {
-					"name": "Maroon: Fractured Path Right",
+					"name": "Valley: Fractured Path Right",
 					"mwids": [
 						3235824207
 					]
