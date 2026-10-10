@@ -22,7 +22,7 @@
 					"to": "bergen",
 					"condition": [
 						[ "item", "Green Leaf Shade", 1 ],
-						[ "var", "rhombusHubUnlock" ]
+						[ "option", "rhombus_hub_unlock" ]
 					]
 				},
 				{
@@ -98,7 +98,7 @@
 					"to": "bakii",
 					"condition": [
 						[ "item", "Blue Ice Shade", 1 ],
-						[ "var", "rhombusHubUnlock" ]
+						[ "option", "rhombus_hub_unlock" ]
 					]
 				},
 				{
@@ -185,7 +185,7 @@
 					"to": "basin",
 					"condition": [
 						[ "item", "Green Seed Shade", 1 ],
-						[ "var", "rhombusHubUnlock" ]
+						[ "option", "rhombus_hub_unlock" ]
 					]
 				},
 				{
@@ -203,9 +203,9 @@
 					"from": "garden",
 					"to": "garden.west",
 					"condition": [
-							[ "or", 
-								[ "var", "closedGaia", "on", false ], 
-								[ "and", [ "item", "West Gaia Pass", 1 ], [ "var", "closedGaia", "on" ]]
+							[ "or",
+								[ "option", "closed_gaia", false ],
+								[ "and", [ "item", "West Gaia Pass", 1 ], [ "option", "closed_gaia" ]]
 							]
 						]
 				},
@@ -213,9 +213,9 @@
 					"from": "garden",
 					"to": "garden.east",
 					"condition": [
-						[ "or", 
-							[ "var", "closedGaia", "on", false ], 
-							[ "and", [ "item", "East Gaia Pass", 1 ], [ "var", "closedGaia", "on" ]]
+						[ "or",
+							[ "option", "closed_gaia", false ],
+							[ "and", [ "item", "East Gaia Pass", 1 ], [ "option", "closed_gaia" ]]
 						]
 					]
 				},
@@ -223,12 +223,12 @@
 					"from": "garden",
 					"to": "garden.mid",
 					"condition": [
-						[ "or", 
-							[ "and", 
+						[ "or",
+							[ "and",
 								[ "or", [ "item", "East Gaia Pass", 1 ], [ "item", "West Gaia Pass", 1 ]],
-								[ "var", "closedGaia", "on" ]
+								[ "option", "closed_gaia" ]
 							],
-							[ "var", "closedGaia", "on", false ] 
+							[ "option", "closed_gaia", false ]
 						]
 					]
 				},
@@ -236,9 +236,9 @@
 					"from": "garden.west",
 					"to": "garden.grove",
 					"condition": [
-						[ "or", 
-							[ "var", "closedGaia", "full", false ], 
-							[ "and", [ "item", "Azure Drop Shade", 1 ], [ "var", "closedGaia", "full" ]]
+						[ "or",
+							[ "option", "closed_gaia", "<", 2 ],
+							[ "and", [ "item", "Azure Drop Shade", 1 ], [ "option", "closed_gaia", ">=", 2 ]]
 						]
 					]
 				},
@@ -246,9 +246,9 @@
 					"from": "garden.east",
 					"to": "garden.infested",
 					"condition": [
-						[ "or", 
-							[ "var", "closedGaia", "full", false ], 
-							[ "and", [ "item", "Purple Bolt Shade", 1 ], [ "var", "closedGaia", "full"  ]]
+						[ "or",
+							[ "option", "closed_gaia", "<", 2 ],
+							[ "and", [ "item", "Purple Bolt Shade", 1 ], [ "option", "closed_gaia", ">=", 2  ]]
 						]
 					]
 				},
@@ -334,7 +334,7 @@
 					"to": "ridge",
 					"condition": [
 						[ "item", "Star Shade", 1 ],
-						[ "var", "rhombusHubUnlock" ]
+						[ "option", "rhombus_hub_unlock" ]
 					]
 				},
 				{
