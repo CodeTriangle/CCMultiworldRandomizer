@@ -98,9 +98,9 @@ New Game+**.
 
 ## Poptracker Pack
 
-Courtesy of Lurch9229, you can have a fancier interface for tracking your progress. This is optional but extremely
-helpful, especially if you don't have a solid mental model of the world. [See here for
-information](https://github.com/FuyumiSogeki/CrossCode-Poptracker-AP/releases/tag/latest).
+Courtesy of @Lurch9229 and @FuyumiSogeki, you can have a fancier interface for tracking your progress. This is optional
+but extremely helpful, especially if you don't have a solid mental model of the world. [See here for
+information](https://github.com/FuyumiSogeki/CrossCode-Poptracker-AP/releases/latest).
 
 Other tracking solutions are available, but the poptracker pack is developed by a trusted member and moderator of the
 community, and is therefore more likely to give accurate results.
