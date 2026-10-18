@@ -3,14 +3,14 @@
 		"armsAllPurpose": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 2] },
@@ -29,112 +29,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Edge o' All", 2] },
-						{ "item": ["item", "Bronze Edge", 2] },
-						{ "item": ["item", "Iron Edge", 1] },
-						{ "item": ["item", "Steel Edge", 1] },
-						{ "item": ["item", "Silver Edge", 1] },
-						{ "item": ["item", "Titan Edge", 1] },
-						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Cross Edge", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Edge o' All", 2] },
-						{ "item": ["item", "Bronze Edge", 2] },
-						{ "item": ["item", "Core Drill", 1] },
-						{ "item": ["item", "Iron Edge", 1] },
-						{ "item": ["item", "Steel Edge", 1] },
-						{ "item": ["item", "Giga Spiral Drill", 1] },
-						{ "item": ["item", "Silver Edge", 1] },
-						{ "item": ["item", "Titan Edge", 1] },
-						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Galaxy Spiral Drill", 1] },
-						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Cross Edge", 1] },
-						{ "item": ["item", "Singularity Drill", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Edge o' All", 2] },
-						{ "item": ["item", "Bronze Edge", 2] },
-						{ "item": ["item", "Core Drill", 1] },
-						{ "item": ["item", "Iron Edge", 1] },
-						{ "item": ["item", "Steel Edge", 1] },
-						{ "item": ["item", "Giga Spiral Drill", 1] },
-						{ "item": ["item", "Silver Edge", 1] },
-						{ "item": ["item", "Titan Edge", 1] },
-						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Galaxy Spiral Drill", 1] },
-						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Cross Edge", 1] },
-						{ "item": ["item", "Singularity Drill", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Bronze Edge", 1] },
-						{ "item": ["item", "Core Drill", 1] },
-						{ "item": ["item", "Iron Edge", 1] },
-						{ "item": ["item", "Steel Edge", 1] },
-						{ "item": ["item", "Giga Spiral Drill", 1] },
-						{ "item": ["item", "Silver Edge", 1] },
-						{ "item": ["item", "Titan Edge", 1] },
-						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Galaxy Spiral Drill", 1] },
-						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Cross Edge", 1] },
-						{ "item": ["item", "Singularity Drill", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 2] },
@@ -148,34 +50,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Bronze Edge", 1] },
-						{ "item": ["item", "Iron Edge", 1] },
-						{ "item": ["item", "Steel Edge", 1] },
-						{ "item": ["item", "Silver Edge", 1] },
-						{ "item": ["item", "Titan Edge", 1] },
-						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Cross Edge", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 2] },
@@ -194,14 +76,40 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 2] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Core Drill", 1] },
@@ -219,39 +127,35 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
-						{ "item": ["item", "Bronze Edge", 1] },
-						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 2] },
 						{ "item": ["item", "Iron Edge", 1] },
 						{ "item": ["item", "Steel Edge", 1] },
-						{ "item": ["item", "Giga Spiral Drill", 1] },
 						{ "item": ["item", "Silver Edge", 1] },
 						{ "item": ["item", "Titan Edge", 1] },
 						{ "item": ["item", "Cobalt Edge", 1] },
-						{ "item": ["item", "Galaxy Spiral Drill", 1] },
 						{ "item": ["item", "Laser Edge", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Cross Edge", 1] },
-						{ "item": ["item", "Singularity Drill", 1] }
+						{ "item": ["item", "Cross Edge", 1] }
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Iron Edge", 1] },
@@ -264,14 +168,110 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 2] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Cross Edge", 1] },
+						{ "item": ["item", "Singularity Drill", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Cross Edge", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Core Drill", 1] },
@@ -293,14 +293,14 @@
 		"armsDefensive": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 2] },
 						{ "item": ["item", "Battered Fist", 2] },
@@ -322,14 +322,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 2] },
 						{ "item": ["item", "Battered Fist", 2] },
@@ -351,14 +351,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 2] },
 						{ "item": ["item", "Battered Fist", 2] },
@@ -378,14 +378,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 2] },
@@ -407,14 +407,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 2] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -434,14 +434,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 2] },
 						{ "item": ["item", "Battered Fist", 2] },
@@ -461,14 +461,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 2] },
@@ -490,14 +490,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 2] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -517,14 +517,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 2] },
@@ -544,14 +544,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 2] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -569,14 +569,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -596,14 +596,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 2] },
@@ -623,14 +623,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 2] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -648,14 +648,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -675,14 +675,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -700,14 +700,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -729,14 +729,14 @@
 		"armsMelee": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -757,14 +757,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -785,14 +785,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -813,14 +813,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -839,14 +839,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -866,14 +866,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -894,14 +894,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -920,14 +920,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -947,14 +947,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -973,14 +973,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -1000,14 +1000,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -1025,14 +1025,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -1051,14 +1051,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -1078,14 +1078,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -1103,14 +1103,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -1128,14 +1128,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Mugger's Blade", 1] },
 						{ "item": ["item", "Hardwood Stave", 1] },
@@ -1157,14 +1157,14 @@
 		"armsRanged": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 2] },
@@ -1185,14 +1185,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 2] },
@@ -1213,14 +1213,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 2] },
@@ -1237,14 +1237,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -1264,14 +1264,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 2] },
@@ -1292,14 +1292,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 2] },
@@ -1316,14 +1316,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -1343,14 +1343,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 2] },
@@ -1371,14 +1371,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -1394,14 +1394,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 2] },
@@ -1418,14 +1418,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -1445,14 +1445,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -1468,14 +1468,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 2] },
@@ -1492,14 +1492,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -1519,14 +1519,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -1542,14 +1542,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Civilian Trigger", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -1569,14 +1569,14 @@
 		"armsSpecial": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Swiftspike", 2] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -1597,14 +1597,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Rocksplitter", 1] },
@@ -1618,14 +1618,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 1] },
@@ -1653,14 +1653,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Swiftspike", 2] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -1681,14 +1681,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Swiftspike", 2] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -1707,14 +1707,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -1735,14 +1735,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 1] },
@@ -1758,14 +1758,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Rocksplitter", 1] },
@@ -1779,14 +1779,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Rocksplitter", 1] },
 						{ "item": ["item", "Prickly Bracer", 1] },
@@ -1799,14 +1799,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 1] },
@@ -1834,223 +1834,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Edge o' All", 2] },
-						{ "item": ["item", "Bronze Edge", 1] },
-						{ "item": ["item", "Core Drill", 1] },
-						{ "item": ["item", "Swiftspike", 2] },
-						{ "item": ["item", "Climbing Pick", 1] },
-						{ "item": ["item", "Rocksplitter", 1] },
-						{ "item": ["item", "Prickly Bracer", 1] },
-						{ "item": ["item", "Hidden Blade", 1] },
-						{ "item": ["item", "Giga Spiral Drill", 1] },
-						{ "item": ["item", "Bright Bracer", 1] },
-						{ "item": ["item", "Sneaky Shiv", 1] },
-						{ "item": ["item", "Sparkling Bracer", 1] },
-						{ "item": ["item", "Galaxy Spiral Drill", 1] },
-						{ "item": ["item", "Shining Bracer", 1] },
-						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] },
-						{ "item": ["item", "Singularity Drill", 1] },
-						{ "item": ["item", "Mantis Whip+", 1] },
-						{ "item": ["item", "Sunshine Bracer", 1] },
-						{ "item": ["item", "Nanopoint Needle", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Core Drill", 1] },
-						{ "item": ["item", "Swiftspike", 1] },
-						{ "item": ["item", "Climbing Pick", 1] },
-						{ "item": ["item", "Rocksplitter", 2] },
-						{ "item": ["item", "Prickly Bracer", 2] },
-						{ "item": ["item", "Hidden Blade", 2] },
-						{ "item": ["item", "Giga Spiral Drill", 1] },
-						{ "item": ["item", "Bright Bracer", 2] },
-						{ "item": ["item", "Sneaky Shiv", 2] },
-						{ "item": ["item", "Sparkling Bracer", 1] },
-						{ "item": ["item", "Galaxy Spiral Drill", 1] },
-						{ "item": ["item", "Sonic Spike", 1] },
-						{ "item": ["item", "Shining Bracer", 2] },
-						{ "item": ["item", "Warkeeper", 1] },
-						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Infinity Spiral Drill", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] },
-						{ "item": ["item", "Singularity Drill", 1] },
-						{ "item": ["item", "Mantis Whip+", 1] },
-						{ "item": ["item", "Sunshine Bracer", 1] },
-						{ "item": ["item", "Nanopoint Needle", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Swiftspike", 2] },
-						{ "item": ["item", "Climbing Pick", 1] },
-						{ "item": ["item", "Rocksplitter", 1] },
-						{ "item": ["item", "Prickly Bracer", 1] },
-						{ "item": ["item", "Hidden Blade", 1] },
-						{ "item": ["item", "Bright Bracer", 1] },
-						{ "item": ["item", "Sneaky Shiv", 1] },
-						{ "item": ["item", "Sparkling Bracer", 1] },
-						{ "item": ["item", "Shining Bracer", 1] },
-						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] },
-						{ "item": ["item", "Mantis Whip+", 1] },
-						{ "item": ["item", "Sunshine Bracer", 1] },
-						{ "item": ["item", "Nanopoint Needle", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Swiftspike", 1] },
-						{ "item": ["item", "Climbing Pick", 1] },
-						{ "item": ["item", "Rocksplitter", 2] },
-						{ "item": ["item", "Prickly Bracer", 2] },
-						{ "item": ["item", "Hidden Blade", 2] },
-						{ "item": ["item", "Bright Bracer", 2] },
-						{ "item": ["item", "Sneaky Shiv", 2] },
-						{ "item": ["item", "Sparkling Bracer", 1] },
-						{ "item": ["item", "Sonic Spike", 1] },
-						{ "item": ["item", "Shining Bracer", 2] },
-						{ "item": ["item", "Warkeeper", 1] },
-						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] },
-						{ "item": ["item", "Mantis Whip+", 1] },
-						{ "item": ["item", "Sunshine Bracer", 1] },
-						{ "item": ["item", "Nanopoint Needle", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Swiftspike", 1] },
-						{ "item": ["item", "Climbing Pick", 1] },
-						{ "item": ["item", "Rocksplitter", 1] },
-						{ "item": ["item", "Prickly Bracer", 1] },
-						{ "item": ["item", "Hidden Blade", 1] },
-						{ "item": ["item", "Bright Bracer", 1] },
-						{ "item": ["item", "Sneaky Shiv", 1] },
-						{ "item": ["item", "Sparkling Bracer", 1] },
-						{ "item": ["item", "Shining Bracer", 1] },
-						{ "item": ["item", "Mantis Whip", 1] },
-						{ "item": ["item", "Radiant Bracer", 1] },
-						{ "item": ["item", "Mantis Whip+", 1] },
-						{ "item": ["item", "Sunshine Bracer", 1] },
-						{ "item": ["item", "Nanopoint Needle", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Edge o' All", 2] },
-						{ "item": ["item", "Bronze Edge", 1] },
-						{ "item": ["item", "Swiftspike", 1] },
-						{ "item": ["item", "Rocksplitter", 1] },
-						{ "item": ["item", "Prickly Bracer", 1] },
-						{ "item": ["item", "Hidden Blade", 1] },
-						{ "item": ["item", "Bright Bracer", 1] },
-						{ "item": ["item", "Sneaky Shiv", 1] },
-						{ "item": ["item", "Sonic Spike", 1] },
-						{ "item": ["item", "Shining Bracer", 1] },
-						{ "item": ["item", "Warkeeper", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Rocksplitter", 1] },
-						{ "item": ["item", "Prickly Bracer", 1] },
-						{ "item": ["item", "Hidden Blade", 1] },
-						{ "item": ["item", "Bright Bracer", 1] },
-						{ "item": ["item", "Sneaky Shiv", 1] },
-						{ "item": ["item", "Sonic Spike", 1] },
-						{ "item": ["item", "Shining Bracer", 1] },
-						{ "item": ["item", "Warkeeper", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Rocksplitter", 1] },
-						{ "item": ["item", "Prickly Bracer", 1] },
-						{ "item": ["item", "Hidden Blade", 1] },
-						{ "item": ["item", "Bright Bracer", 1] },
-						{ "item": ["item", "Sneaky Shiv", 1] },
-						{ "item": ["item", "Sonic Spike", 1] },
-						{ "item": ["item", "Shining Bracer", 1] },
-						{ "item": ["item", "Warkeeper", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 1] },
@@ -2076,14 +1867,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
@@ -2109,14 +1900,223 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
+					"content": [
+						{ "item": ["item", "Swiftspike", 2] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 2] },
+						{ "item": ["item", "Prickly Bracer", 2] },
+						{ "item": ["item", "Hidden Blade", 2] },
+						{ "item": ["item", "Bright Bracer", 2] },
+						{ "item": ["item", "Sneaky Shiv", 2] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 2] },
+						{ "item": ["item", "Warkeeper", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Swiftspike", 2] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Singularity Drill", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 2] },
+						{ "item": ["item", "Prickly Bracer", 2] },
+						{ "item": ["item", "Hidden Blade", 2] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Bright Bracer", 2] },
+						{ "item": ["item", "Sneaky Shiv", 2] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 2] },
+						{ "item": ["item", "Warkeeper", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] },
+						{ "item": ["item", "Singularity Drill", 1] },
+						{ "item": ["item", "Mantis Whip+", 1] },
+						{ "item": ["item", "Sunshine Bracer", 1] },
+						{ "item": ["item", "Nanopoint Needle", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
@@ -2140,14 +2140,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -2166,14 +2166,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
@@ -2201,14 +2201,14 @@
 		"armsClassBased": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -2231,14 +2231,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -2261,14 +2261,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -2285,14 +2285,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -2310,14 +2310,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -2334,14 +2334,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -2359,14 +2359,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -2382,14 +2382,14 @@
 		"arms": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 2] },
@@ -2415,14 +2415,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 1] },
@@ -2441,14 +2441,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 2] },
@@ -2468,14 +2468,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Iron Edge", 1] },
@@ -2494,14 +2494,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 1] },
@@ -2514,14 +2514,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Daikon", 1] },
 						{ "item": ["item", "Copper Gull", 1] },
@@ -2541,14 +2541,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Eternal Salami", 1] },
 						{ "item": ["item", "Knocking One", 1] },
@@ -2559,14 +2559,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Iron Edge", 1] },

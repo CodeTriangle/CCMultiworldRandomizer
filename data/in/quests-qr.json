@@ -3,9 +3,9 @@
 	"_global": {
 		"/cutscenes|chests|quests/": {
 			"*": {
-				"metadata": {
-					"quest": true
-				}
+				"includeCondition": [
+					[ "option", "quest_rando", true ]
+				]
 			}
 		}
 	},
