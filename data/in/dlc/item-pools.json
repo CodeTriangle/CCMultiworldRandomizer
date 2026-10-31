@@ -41,23 +41,38 @@
 				},
 				{
 					"item": ["item", "Champion's Towel"],
-					"quantity": 1
+					"quantity": 1,
+					"includeCondition": [
+						[ "option", "quest_rando" ]
+					]
 				},
 				{
 					"item": ["item", "Light Gem"],
-					"quantity": 1
+					"quantity": 1,
+					"includeCondition": [
+						[ "option", "quest_rando" ]
+					]
 				},
 				{
 					"item": ["item", "The Last Straw"],
-					"quantity": 1
+					"quantity": 1,
+					"includeCondition": [
+						[ "option", "quest_rando" ]
+					]
 				},
 				{
 					"item": ["item", "Asteroid Chunk"],
-					"quantity": 1
+					"quantity": 1,
+					"includeCondition": [
+						[ "option", "quest_rando" ]
+					]
 				},
 				{
 					"item": ["item", "Moon Chunk"],
-					"quantity": 1
+					"quantity": 1,
+					"includeCondition": [
+						[ "option", "quest_rando" ]
+					]
 				},
 				{
 					"item": ["item", "Meteor Chunk"],
