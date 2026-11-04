@@ -16,14 +16,14 @@
 			"classification": "progression",
 			"items": [
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Bronze Mail", 1] },
@@ -40,14 +40,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Bronze Mail", 1] },
@@ -64,14 +64,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Bronze Mail", 1] },
@@ -85,14 +85,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Mail", 1] },
 						{ "item": ["item", "Iron Mail", 1] },
@@ -108,14 +108,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Bronze Mail", 1] },
@@ -129,14 +129,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Mail", 1] },
 						{ "item": ["item", "Iron Mail", 1] },
@@ -152,14 +152,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Mail", 1] },
 						{ "item": ["item", "Iron Mail", 1] },
@@ -172,27 +172,27 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Plate of Chests", 1] }
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Mail", 1] },
 						{ "item": ["item", "Iron Mail", 1] },
@@ -215,14 +215,14 @@
 			"classification": "progression",
 			"items": [
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Spiky Jacket", 1] },
@@ -238,14 +238,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Spiky Jacket", 1] },
@@ -261,14 +261,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Spiky Jacket", 1] },
@@ -283,81 +283,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Scrappy Plate", 1] },
-						{ "item": ["item", "Spiky Jacket", 1] },
-						{ "item": ["item", "Hardrock Plate", 1] },
-						{ "item": ["item", "Magic Robe", 1] },
-						{ "item": ["item", "Crystal Plate", 1] },
-						{ "item": ["item", "Ramming Shell", 1] },
-						{ "item": ["item", "Vermillion Mantle", 1] },
-						{ "item": ["item", "Survival Plate", 1] },
-						{ "item": ["item", "Timeworn Belt", 1] },
-						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Scrappy Plate", 1] },
-						{ "item": ["item", "Spiky Jacket", 1] },
-						{ "item": ["item", "Hardrock Plate", 1] },
-						{ "item": ["item", "Magic Robe", 1] },
-						{ "item": ["item", "Crystal Plate", 1] },
-						{ "item": ["item", "Ramming Shell", 1] },
-						{ "item": ["item", "Vermillion Mantle", 1] },
-						{ "item": ["item", "Survival Plate", 1] },
-						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Scrappy Plate", 1] },
-						{ "item": ["item", "Spiky Jacket", 1] },
-						{ "item": ["item", "Hardrock Plate", 1] },
-						{ "item": ["item", "Magic Robe", 1] },
-						{ "item": ["item", "Crystal Plate", 1] },
-						{ "item": ["item", "Ramming Shell", 1] },
-						{ "item": ["item", "Vermillion Mantle", 1] },
-						{ "item": ["item", "Survival Plate", 1] },
-						{ "item": ["item", "Plated Plate", 1] },
-						{ "item": ["item", "Reactive Plate", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Spiky Jacket", 1] },
@@ -373,14 +306,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Spiky Jacket", 1] },
@@ -395,14 +328,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Spiky Jacket", 1] },
@@ -417,14 +350,37 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Scrappy Plate", 1] },
+						{ "item": ["item", "Spiky Jacket", 1] },
+						{ "item": ["item", "Hardrock Plate", 1] },
+						{ "item": ["item", "Magic Robe", 1] },
+						{ "item": ["item", "Crystal Plate", 1] },
+						{ "item": ["item", "Ramming Shell", 1] },
+						{ "item": ["item", "Vermillion Mantle", 1] },
+						{ "item": ["item", "Survival Plate", 1] },
+						{ "item": ["item", "Timeworn Belt", 1] },
+						{ "item": ["item", "Plated Plate", 1] },
+						{ "item": ["item", "Reactive Plate", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Spiky Jacket", 1] },
@@ -439,14 +395,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Spiky Jacket", 1] },
@@ -461,14 +417,58 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Scrappy Plate", 1] },
+						{ "item": ["item", "Spiky Jacket", 1] },
+						{ "item": ["item", "Hardrock Plate", 1] },
+						{ "item": ["item", "Magic Robe", 1] },
+						{ "item": ["item", "Crystal Plate", 1] },
+						{ "item": ["item", "Ramming Shell", 1] },
+						{ "item": ["item", "Vermillion Mantle", 1] },
+						{ "item": ["item", "Survival Plate", 1] },
+						{ "item": ["item", "Plated Plate", 1] },
+						{ "item": ["item", "Reactive Plate", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Scrappy Plate", 1] },
+						{ "item": ["item", "Spiky Jacket", 1] },
+						{ "item": ["item", "Hardrock Plate", 1] },
+						{ "item": ["item", "Magic Robe", 1] },
+						{ "item": ["item", "Crystal Plate", 1] },
+						{ "item": ["item", "Ramming Shell", 1] },
+						{ "item": ["item", "Vermillion Mantle", 1] },
+						{ "item": ["item", "Survival Plate", 1] },
+						{ "item": ["item", "Plated Plate", 1] },
+						{ "item": ["item", "Reactive Plate", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Spiky Jacket", 1] },
@@ -493,14 +493,14 @@
 			"classification": "progression",
 			"items": [
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -516,14 +516,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Leaf Cape", 1] },
@@ -544,14 +544,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -567,14 +567,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -589,14 +589,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -612,14 +612,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Leaf Cape", 1] },
@@ -640,14 +640,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Leaf Cape", 1] },
@@ -664,14 +664,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -691,14 +691,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -713,14 +713,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -736,14 +736,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -758,14 +758,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Leaf Cape", 1] },
@@ -782,14 +782,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -809,14 +809,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -831,14 +831,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -853,14 +853,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Leaf Cape", 1] },
 						{ "item": ["item", "Bubblebelt", 1] },
@@ -886,14 +886,14 @@
 			"classification": "progression",
 			"items": [
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -908,14 +908,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -928,14 +928,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -950,14 +950,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -972,14 +972,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -994,14 +994,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1014,14 +1014,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1034,14 +1034,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1056,14 +1056,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1076,14 +1076,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1098,14 +1098,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1118,14 +1118,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bovine Armor", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1148,14 +1148,14 @@
 			"classification": "progression",
 			"items": [
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Bronze Mail", 1] },
@@ -1178,14 +1178,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1201,14 +1201,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Bronze Mail", 1] },
@@ -1229,14 +1229,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Bronze Mail", 1] },
@@ -1251,14 +1251,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Mail", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1280,14 +1280,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1301,14 +1301,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Assault Harness", 1] },
@@ -1316,14 +1316,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Assault Vest", 1] },
 						{ "item": ["item", "Bronze Chest Plate", 1] },
@@ -1338,14 +1338,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
 						{ "item": ["item", "Bronze Mail", 1] },
@@ -1358,14 +1358,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Mail", 1] },
 						{ "item": ["item", "Assault Vest", 1] },
@@ -1385,14 +1385,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Mail", 1] },
 						{ "item": ["item", "Iron Mail", 1] },
@@ -1406,27 +1406,27 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Second Hide", 1] }
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Assault Vest", 1] },
 						{ "item": ["item", "Bronze Chest Plate", 1] },
@@ -1439,28 +1439,28 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Assault Harness", 1] },
 						{ "item": ["item", "Killing Dress", 1] }
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Mail", 1] },
 						{ "item": ["item", "Iron Mail", 1] },
@@ -1482,14 +1482,14 @@
 			"classification": "progression",
 			"items": [
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Bovine Armor", 1] },
@@ -1515,14 +1515,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Bovine Armor", 1] },
@@ -1546,14 +1546,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Bovine Armor", 1] },
@@ -1579,14 +1579,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Scrappy Plate", 1] },
 						{ "item": ["item", "Bovine Armor", 1] },

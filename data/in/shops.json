@@ -1,4 +1,13 @@
 {
+	"_global": {
+		"/shops/": {
+			"*": {
+				"includeCondition": [
+					[ "option", "shop_rando", true ]
+				]
+			}
+		}
+	},
 	"shops": {
 		"Harbor Items": {
 			"location": {
