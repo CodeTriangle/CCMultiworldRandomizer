@@ -18,7 +18,7 @@ const HintStatuses = {
 
 const VanillaChapterMap = {
     "arid": 7,
-    "autumn-area": 2,
+    "autumn-area": 3,
     "autumn-fall": 6,
     "bergen": 4,
     "bergen-trails": 4,
