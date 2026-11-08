@@ -5,6 +5,7 @@ export interface WorldData {
 	botanics: Record<string, number>;
 	descriptions: { [itemId: number]: { [locale: string]: string } };
 	markers: { [area: string]: MarkerInfo<any>[] }
+	areas: Record<string, MultiworldArea | null>
 }
 
 export type RawItems = { [mapName: string]: RawMapItems };
@@ -81,3 +82,25 @@ export interface MarkerInfo<Type extends keyof MarkerTypeSpecificSettings> {
 	mwid: number;
 	settings: MarkerTypeSpecificSettings[Type];
 }
+
+export type MultiworldArea =
+	"arid" |
+	"autumn-area" |
+	"autumn-fall" |
+	"bergen" |
+	"bergen-trails" |
+	"cold-dng" |
+	"forest" |
+	"heat-area" |
+	"heat-dng" |
+	"heat-village" |
+	"jungle" |
+	"jungle-city" |
+	"rhombus-sqr" |
+	"rookie-harbor" |
+	"shock-dng" |
+	"tree-dng" |
+	"wave-dng" |
+	"evo-village" |
+	"beach" |
+	"final-dng";

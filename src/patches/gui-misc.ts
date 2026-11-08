@@ -23,6 +23,7 @@ declare global {
 
 		enum MENU_SUBMENU {
 			AP_CONNECTION,
+			AP_REQUEST_NEW_HINT
 		}
 
 		interface APUpDownInputField extends modmanager.gui.InputField {
