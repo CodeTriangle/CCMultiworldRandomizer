@@ -3,7 +3,7 @@ import type MwRandomizer from '../plugin';
 import {MultiworldArea} from "../item-data.model";
 
 // HACK: This should be in archipelago.js but it is not exported
-const HintStatuses = {
+export const HintStatuses = {
     /** The receiving player has not set a status. */
     unspecified: 0,
     /** The receiving player has specified this item is unnecessary. */
