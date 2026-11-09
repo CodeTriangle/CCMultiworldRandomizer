@@ -539,8 +539,8 @@ export function patch(plugin: MwRandomizer) {
         },
         onAddHotkeys(b) {
             sc.menu.buttonInteract.addGlobalButton(this.hotkeyHelp, () => sc.control.menuHotkeyHelp())
-            sc.menu.buttonInteract.addGlobalButton(this.hotkeySort, () => sc.control.menuHotkeyHelp2())
-            sc.menu.buttonInteract.addGlobalButton(this.hotkeyRequestHint, () => sc.control.menuHotkeyHelp3())
+            sc.menu.buttonInteract.addGlobalButton(this.hotkeySort, () => sc.control.menuHotkeyHelp3())
+            sc.menu.buttonInteract.addGlobalButton(this.hotkeyRequestHint, () => sc.control.menuHotkeyHelp2())
             this.commitHotKeysToTopBar(b)
         },
         commitHotKeysToTopBar(b) {
