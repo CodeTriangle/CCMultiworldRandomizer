@@ -434,10 +434,13 @@ export function patch(plugin: MwRandomizer) {
 				return false;
 			}
 
+			this.hook.size.x = 127;
 			const hint = chest.hint!;
 			this.itemGui.setText(`Item: \\c[6]${hint.item.name}\\c[0]`);
+			this.hook.size.x = Math.max(this.hook.size.x, this.itemGui.hook.size.x + 17)
 			this.hook.size.y = this.hook.size.y + this.itemGui.hook.size.y + 2;
 			this.receiverGui.setText(`Receiver: \\c[6]${hint.item.receiver.alias}\\c[0]`);
+			this.hook.size.x = Math.max(this.hook.size.x, this.receiverGui.hook.size.x + 17)
 			this.hook.size.y = this.hook.size.y + this.receiverGui.hook.size.y + 2;
 
 			const hintStatus = ({
@@ -448,7 +451,14 @@ export function patch(plugin: MwRandomizer) {
 				[HintStatuses.found]: "\\c[4]Found",
 			} as const)[hint.status] ?? "Unspecified"
 			this.statusGui.setText(`Hint Status: ${hintStatus}\\c[0]`);
+			this.hook.size.x = Math.max(this.hook.size.x, this.statusGui.hook.size.x + 17)
 			this.hook.size.y = this.hook.size.y + this.statusGui.hook.size.y + 2;
+
+			if (this.clearance.text?.toString()) {
+				this.line.hook.size.x = this.hook.size.x - 16 - this.clearance.hook.size.x;
+			} else {
+				this.line.hook.size.x = this.hook.size.x - 13;
+			}
 			return true;
 		},
 	});
