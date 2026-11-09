@@ -661,7 +661,12 @@ export function patch(plugin: MwRandomizer) {
 			},
 
 			async dummyLogin(mw, listener) {
-					listener.onLoginProgress(`Unpacking cached multiworld details.`);
+				if (mw.locationInfo && jQuery.isEmptyObject(mw.locationInfo)) {
+					listener.onLoginError(ig.lang.get("sc.gui.mw.login.failures.location-cache"));
+				}
+
+				listener.onLoginProgress(`Unpacking cached multiworld details.`);
+
 				this.mode = mw.mode;
 				this.options = mw.options;
 				this.connectionInfo = mw.connectionInfo;

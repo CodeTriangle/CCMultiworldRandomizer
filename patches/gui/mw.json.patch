@@ -40,7 +40,8 @@
 				"failures": {
 					"gen-version": "Cannot connect to this slot because APWorld version is greater than mod version.",
 					"seed": "Cannot connect to this multiworld because this save was previously connected to a different multiworld.",
-					"slot": "Cannot connect to this slot because this save was previously connected to a different slot in this multiworld."
+					"slot": "Cannot connect to this slot because this save was previously connected to a different slot in this multiworld.",
+					"location-cache": "Cannot play offline as there are no locations cached on the save file. Please connect to the server at least once to cache these details."
 				}
 			},
 			"text-client": {
