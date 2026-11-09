@@ -39,6 +39,7 @@ declare global {
 			onEditButtonPress(this: this): void;
 			onLoginButtonPress(this: this): void;
 			onOfflineButtonPress(this: this): void;
+			onConfirmOfflinePlay(this: this): void;
 		}
 
 		interface MultiworldLoginListenerGuiConstructor extends ImpactClass<MultiworldLoginListenerGui> {
@@ -71,7 +72,7 @@ export function patch(plugin: MwRandomizer) {
 			this.parent();
 
 			this.setSize(ig.system.width, ig.system.height);
-			this.hook.zIndex = 99999999;
+			this.hook.zIndex = 9999998;
 			this.hook.localAlpha = 0.8;
 			this.hook.temporary = true;
 			this.hook.pauseGui = true;
@@ -114,7 +115,7 @@ export function patch(plugin: MwRandomizer) {
 				this.buttonGroup.addFocusGui(this.editButton, 0, 1);
 				this.msgBox.addChildGui(this.editButton);
 
-				this.offlineButton = new sc.ButtonGui("Play Offine", 128);
+				this.offlineButton = new sc.ButtonGui("Play Offline", 128);
 				this.offlineButton.setPos(67, -55);
 				this.offlineButton.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
 				this.offlineButton.onButtonPress = this.onOfflineButtonPress.bind(this);
@@ -156,7 +157,7 @@ export function patch(plugin: MwRandomizer) {
 				this.textChild.setText(
 					`Connect to the server?\n` +
 					`\\c[3]URL:\\c[0] ${this.connectionInfo?.url}\n` +
-					`\\c[3]Slot:\\c[0] ${this.connectionInfo.name}\n`
+					`\\c[3]Slot:\\c[0] ${this.connectionInfo.name}`
 				);
 			}
 		},
@@ -208,6 +209,13 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		onOfflineButtonPress() {
+			sc.Dialogs.showYesNoDialog(ig.lang.get("sc.gui.mw.warnings.offline"), sc.DIALOG_INFO_ICON.INFO, (button) => {
+				if (button.data == 0) {
+					if (this.mw) {
+						sc.multiworld.dummyLogin(this.mw, this);
+					}
+				}
+			});
 		},
 
 		onLoginProgress(message) {

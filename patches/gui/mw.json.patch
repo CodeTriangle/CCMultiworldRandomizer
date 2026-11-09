@@ -20,7 +20,8 @@
 		"mw": {
 			"warnings": {
 				"no-new-game-plus": "It appears that you haven't completed the game before. It is \\c[3]highly recommended\\c[0] to do so before attempting CrossCode randomized. See the CCMultiworldRandomizer setup guide for more information.",
-				"unplanned-disconnect": "You were unexpectedly disconnected from the server. Would you like to reconnect?"
+				"unplanned-disconnect": "You were unexpectedly disconnected from the server. Would you like to reconnect?",
+				"offline": "When playing offline, you can make progress in the game but you won't send or receive items until you are connected again. Do you want to play offline?"
 			},
 			"connection-menu": {
 				"url": "The URL to connect to, (i.e. 'archipelago.gg:38281').",

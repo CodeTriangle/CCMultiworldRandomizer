@@ -405,8 +405,7 @@ export function patch(plugin: MwRandomizer) {
 				ig.vars.setDefault("mw.mode", this.mode);
 				ig.vars.setDefault("mw.options", this.options);
 				ig.vars.setDefault("mw.dataPackageChecksums", this.dataPackageChecksums);
-				ig.vars.setDefault("mw.seed", this.client.room.seedName)
-				ig.vars.setDefault("mw.slot", this.client.players.self.slot)
+				ig.vars.setDefault("mw.seed", this.client.room.seedName);
 				ig.vars.set("mw.connectionInfo", this.connectionInfo);
 
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
@@ -418,6 +417,7 @@ export function patch(plugin: MwRandomizer) {
 					const mapName = ig.game.mapName;
 					const team = this.client.players.self.team;
 					const slot = this.client.players.self.slot;
+					ig.vars.setDefault("mw.slot", slot);
 
 					this.client.storage.prepare(`CrossCode_${team}_${slot}_mapName`, "rookie-harbor")
 						.replace(mapName)
@@ -450,6 +450,7 @@ export function patch(plugin: MwRandomizer) {
 
 			onStorageSave(savefile) {
 				savefile.vars.storage.mw.localCheckedLocations = Array.from(this.localCheckedLocations.values());
+				savefile.vars.storage.mw.locationInfo = this.slimLocationInfo;
 				savefile.vars.storage.mw.seenChests = Array.from(this.seenChests.values());
 				savefile.vars.storage.mw.trapsReceived = this.trapsReceived;
 			},
@@ -657,6 +658,18 @@ export function patch(plugin: MwRandomizer) {
 				ig.gui.addGuiElement(listenerGui);
 				listenerGui.show();
 				listenerGui.startLogin(connectionInfo, mw);
+			},
+
+			async dummyLogin(mw, listener) {
+					listener.onLoginProgress(`Unpacking cached multiworld details.`);
+				this.mode = mw.mode;
+				this.options = mw.options;
+				this.connectionInfo = mw.connectionInfo;
+				this.localCheckedLocations = new Set(mw.localCheckedLocations);
+				this.slimLocationInfo = mw.locationInfo;
+				this.storeAllLocationInfo();
+
+				listener.onLoginSuccess(`Playing offline.`);
 			},
 
 			disconnect(planned) {

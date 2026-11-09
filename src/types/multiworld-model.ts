@@ -190,6 +190,11 @@ declare global {
 				successCallback: () => void,
 				postEditCallback?: () => void,
 			): void;
+			dummyLogin(
+				this: this,
+				mw: sc.MultiWorldModel.MultiworldVars,
+				listener: sc.MultiWorldModel.LoginListener,
+			): Promise<void>;
 			disconnect(this: this, planned?: boolean): void;
 		}
 
