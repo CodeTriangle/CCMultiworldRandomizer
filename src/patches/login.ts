@@ -7,11 +7,15 @@ declare global {
 			content: ig.GuiElementBase;
 			textChild: sc.TextGui; 
 
+			automaticMode: boolean;
+
 			buttonGroup: sc.ButtonGroup;
 			buttonInteract: ig.ButtonInteractEntry;
 
 			backButton: sc.ButtonGui;
-			editButton: sc.ButtonGui;
+			loginButton?: sc.ButtonGui;
+			editButton?: sc.ButtonGui;
+			offlineButton?: sc.ButtonGui;
 
 			connectionInfo: Optional<sc.MultiWorldModel.AnyConnectionInformation>;
 
@@ -29,8 +33,12 @@ declare global {
 				mw: Optional<sc.MultiWorldModel.MultiworldVars>
 			): void;
 
+			doLogin(this: this): void;
+
 			onBackButtonPress(this: this): void;
 			onEditButtonPress(this: this): void;
+			onLoginButtonPress(this: this): void;
+			onOfflineButtonPress(this: this): void;
 		}
 
 		interface MultiworldLoginListenerGuiConstructor extends ImpactClass<MultiworldLoginListenerGui> {
@@ -75,37 +83,47 @@ export function patch(plugin: MwRandomizer) {
 			this.content = new ig.GuiElementBase();
 			this.content.setSize(259, 80);
 
-			let hideEditOptions = sc.model.isGame() || sc.multiworld.postEditCallback;
-
-			this.backButton = new sc.ButtonGui("\\i[back]Back", 128)
-			this.backButton.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
-			this.backButton.setPos(hideEditOptions ? 0 : 67, -27);
-			this.backButton.onButtonPress = this.onBackButtonPress.bind(this);
-			this.backButton.submitSound = sc.BUTTON_SOUND.back;
-			this.buttonGroup.addFocusGui(this.backButton, hideEditOptions ? 0 : 1, 0);
-			this.buttonInteract.addGlobalButton(this.backButton, sc.control.menuBack);
-
-			if (!hideEditOptions) {
-				this.editButton = new sc.ButtonGui("Edit Options", 128);
-				this.editButton.setPos(-67, -27);
-				this.editButton.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
-				this.editButton.onButtonPress = this.onEditButtonPress.bind(this);
-				this.buttonGroup.addFocusGui(this.editButton, 0, 0);
-			}
-
-			this.textChild = new sc.TextGui("Logging in.", { maxWidth: 240 });
-			this.content.addChildGui(this.textChild);
+			this.automaticMode = sc.model.isGame() || !!sc.multiworld.postEditCallback;
 
 			this.msgBox = new sc.CenterBoxGui(this.content);
 			this.msgBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
 			this.msgBox.hook.pos.y = -14;
+			this.addChildGui(this.msgBox);
 
+			this.backButton = new sc.ButtonGui("\\i[back]Back", 128)
+			this.backButton.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
+			this.backButton.setPos(this.automaticMode ? 0 : 67, -27);
+			this.backButton.onButtonPress = this.onBackButtonPress.bind(this);
+			this.backButton.submitSound = sc.BUTTON_SOUND.back;
+			this.buttonGroup.addFocusGui(this.backButton, this.automaticMode ? 0 : 1, 0);
+			this.buttonInteract.addGlobalButton(this.backButton, sc.control.menuBack);
 			this.msgBox.addChildGui(this.backButton);
-			if (this.editButton) {
+
+			if (!this.automaticMode) {
+				this.loginButton = new sc.ButtonGui("Login", 128);
+				this.loginButton.setPos(-67, -27);
+				this.loginButton.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
+				this.loginButton.onButtonPress = this.onLoginButtonPress.bind(this);
+				this.buttonGroup.addFocusGui(this.loginButton, 0, 0);
+				this.msgBox.addChildGui(this.loginButton);
+
+				this.editButton = new sc.ButtonGui("Edit Options", 128);
+				this.editButton.setPos(-67, -55);
+				this.editButton.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
+				this.editButton.onButtonPress = this.onEditButtonPress.bind(this);
+				this.buttonGroup.addFocusGui(this.editButton, 0, 1);
 				this.msgBox.addChildGui(this.editButton);
+
+				this.offlineButton = new sc.ButtonGui("Play Offine", 128);
+				this.offlineButton.setPos(67, -55);
+				this.offlineButton.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
+				this.offlineButton.onButtonPress = this.onOfflineButtonPress.bind(this);
+				this.buttonGroup.addFocusGui(this.offlineButton, 1, 1);
+				this.msgBox.addChildGui(this.offlineButton);
 			}
 
-			this.addChildGui(this.msgBox);
+			this.textChild = new sc.TextGui("Logging in.", { maxWidth: 240 });
+			this.content.addChildGui(this.textChild);
 
 			this.successCallback = successCallback;
 			this.postEditCallback = postEditCallback;
@@ -130,9 +148,24 @@ export function patch(plugin: MwRandomizer) {
 
 		startLogin(connectionInfo, mw) {
 			this.mw = mw;
-			sc.multiworld.login(connectionInfo, mw, this);
 			this.connectionInfo = connectionInfo;
+
+			if (this.automaticMode) {
+				this.doLogin();
+			} else {
+				this.textChild.setText(
+					`Connect to the server?\n` +
+					`\\c[3]URL:\\c[0] ${this.connectionInfo?.url}\n` +
+					`\\c[3]Slot:\\c[0] ${this.connectionInfo.name}\n`
+				);
+			}
+		},
+
+		doLogin() {
+			sc.multiworld.login(this.connectionInfo, this.mw, this);
 			this.editButton?.setActive(false);
+			this.loginButton?.setActive(false);
+			this.offlineButton?.setActive(false);
 		},
 
 		updateDrawables(renderer) {
@@ -170,6 +203,13 @@ export function patch(plugin: MwRandomizer) {
 			this.hide(false);
 		},
 
+		onLoginButtonPress() {
+			this.doLogin();
+		},
+
+		onOfflineButtonPress() {
+		},
+
 		onLoginProgress(message) {
 			this.textChild.setText(message);
 		},
@@ -177,6 +217,8 @@ export function patch(plugin: MwRandomizer) {
 		onLoginError(message) {
 			this.textChild.setText(`\\c[1]${message}`);
 			this.editButton?.setActive(true);
+			this.loginButton?.setActive(true);
+			this.offlineButton?.setActive(true);
 		},
 
 		onLoginSuccess(message) {
