@@ -155,27 +155,6 @@ enum HINT_CATEGORY_TYPES {
 }
 
 export function patch(plugin: MwRandomizer) {
-    sc.AP_COLOR_MAPPING = {
-        bold: "white",
-        underline: "white",
-        black: "white",
-        red: "red",
-        green: "green",
-        yellow: "yellow",
-        blue: "blue",
-        magenta: "fuchsia",
-        cyan: "teal",
-        white: "white",
-        black_bg: "white",
-        red_bg: "red",
-        green_bg: "green",
-        yellow_bg: "yellow",
-        blue_bg: "blue",
-        purple_bg: "fuchsia",
-        cyan_bg: "teal",
-        white_bg: "white",
-    };
-
     sc.APHintClientEntryLocation = ig.BoxGui.extend({
         ninepatch: new ig.NinePatch('media/gui/menu.png', {
             width: 4,

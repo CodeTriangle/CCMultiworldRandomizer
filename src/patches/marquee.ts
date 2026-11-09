@@ -25,9 +25,9 @@ export function patch(plugin: MwRandomizer) {
 				this.worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
 				this.worldGui.setPos(17, this.iconGui.hook.size.y - 2);
 				this.addChildGui(this.worldGui);
-			}
 
-			this.hook.size.y += 4;
+				this.hook.size.y += 4;
+			}
 		}
 	});
 }
