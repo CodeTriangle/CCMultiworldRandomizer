@@ -557,8 +557,11 @@ export function patch(plugin: MwRandomizer) {
             sc.menu.commitHotkeys(b)
         },
         onRequestHintButtonPressed() {
-            const dialog = new sc.APHintClientRequestHintDialog()
+            const dialog = new sc.APHintClientRequestHintDialog(hintItem => {
+
+            })
             ig.gui.addGuiElement(dialog)
+            dialog.show()
         },
         createHelpGui() {
             if (!this.helpGui) {
@@ -670,9 +673,8 @@ export function patch(plugin: MwRandomizer) {
         },
         msgBox/*: sc.CenterBoxGui*/: null,
         textGui/*: sc.TextGui*/: null,
-        textDone/*: boolean*/: false,
         screenInteract/*: sc.ScreenInteractEntry*/: null,
-        init() {
+        init(callback) {
             this.parent()
             this.hook.zIndex = 9999999
             this.hook.localAlpha = 0.8
@@ -681,19 +683,21 @@ export function patch(plugin: MwRandomizer) {
             this.hook.size.x = ig.system.width
             this.hook.size.y = ig.system.height
 
-            this.buttongroup = new sc.ButtonGroup();
-            this.buttongroup.addPressCallback(() => {});
+            this.callback = callback;
+
             this.buttonInteract = new ig.ButtonInteractEntry();
+            this.buttongroup = new sc.ButtonGroup();
             this.buttonInteract.pushButtonGroup(this.buttongroup);
+            this.buttongroup.addPressCallback(() => {});
 
             const baseDialog = new ig.GuiElementBase()
-            baseDialog.setSize(200, 100)
+            baseDialog.setSize(270, 90)
 
             this.textGui = new sc.TextGui("What do you want to hint for?", { maxWidth: 300 })
             baseDialog.addChildGui(this.textGui)
 
             this.inputGui = new sc.APUpDownInputField(
-                190,
+                264,
                 this.textGui.hook.size.y + 3,
                 modmanager.gui.INPUT_FIELD_TYPE.DEFAULT,
                 false
@@ -702,13 +706,30 @@ export function patch(plugin: MwRandomizer) {
             this.buttongroup.addFocusGui(this.inputGui, 0, 0);
             baseDialog.addChildGui(this.inputGui)
 
-            this.backButton = new sc.ButtonGui("\\i[back]Back", 128)
-            this.backButton.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
-            this.backButton.setPos(67, -27);
+            this.hintCostGui = new sc.TextGui(`\\c[4]Hint cost: \\c[0]${sc.multiworld.client.room.hintCost}`, { maxWidth: 300, font: sc.fontsystem.tinyFont })
+            this.hintCostGui.hook.pos.y = this.inputGui.hook.pos.y + this.inputGui.hook.size.y + 3;
+            baseDialog.addChildGui(this.hintCostGui)
+
+            this.hintPointsGui = new sc.TextGui(`\\c[4]Available Hint points: \\c[0]${sc.multiworld.client.room.hintPoints}`, { maxWidth: 300, font: sc.fontsystem.tinyFont })
+            this.hintPointsGui.hook.pos.y = this.hintCostGui.hook.pos.y + this.hintCostGui.hook.size.y + 3;
+            baseDialog.addChildGui(this.hintPointsGui)
+
+            this.backButton = new sc.ButtonGui("Cancel", 128)
+            this.backButton.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
+            this.backButton.setPos(5, 0);
             this.backButton.onButtonPress = this.onBackButtonPress.bind(this);
             this.backButton.submitSound = sc.BUTTON_SOUND.back;
-            this.buttongroup.addFocusGui(this.backButton, 1, 0);
+            this.buttongroup.addFocusGui(this.backButton, 2, 0);
             this.buttonInteract.addGlobalButton(this.backButton, sc.control.menuBack);
+            baseDialog.addChildGui(this.backButton)
+
+            this.requestButton = new sc.ButtonGui("Request Hint", 128)
+            this.requestButton.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_BOTTOM);
+            this.requestButton.setPos(5, 0);
+            this.requestButton.onButtonPress = this.onRequestHint.bind(this);
+            this.requestButton.submitSound = sc.BUTTON_SOUND.back;
+            this.buttongroup.addFocusGui(this.requestButton, 1, 0);
+            baseDialog.addChildGui(this.requestButton)
 
             this.msgBox = new sc.CenterBoxGui(baseDialog)
             this.msgBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER)
@@ -718,17 +739,20 @@ export function patch(plugin: MwRandomizer) {
             this.textGui.textBlock.onFinish = this._onTextFinish.bind(this)
             this.textDone = this.textGui.textBlock.isFinished()
             this.screenInteract = new sc.ScreenInteractEntry(this)
-            ig.system.skipMode || ig.interact.addEntry(this.screenInteract)
         },
         show() {
             ig.interact.addEntry(this.buttonInteract);
             ig.interact.setBlockDelay(0.2);
+            this.msgBox.doStateTransition('DEFAULT')
             this.doStateTransition("DEFAULT");
+            sc.model.addChoiceGui(this)
         },
         hide() {
             ig.interact.removeEntry(this.buttonInteract);
             ig.interact.setBlockDelay(0.2);
+            this.msgBox.doStateTransition('HIDDEN')
             this.doStateTransition("HIDDEN", false, true);
+            sc.model.addChoiceGui(this)
         },
         update()/*: void*/ {
             !this.hook.removeAfterTransition && this.textDone && ig.system.skipMode && this._close()
@@ -738,10 +762,37 @@ export function patch(plugin: MwRandomizer) {
             renderer.addColor('#000', 0, 0, this.hook.size.x, this.hook.size.y)
         },
         _onTextFinish()/*: void*/ {
-            this.textDone = true
+
         },
         onBackButtonPress() {
             this.hide();
+        },
+
+        onRequestHint() {
+            const callbacks: {
+                messageCallback: (...messages: ap.MessageEvents["userCommand"]) => void,
+                hintCallback: (...messages: ap.MessageEvents["itemHinted"]) => void
+            } = {
+                messageCallback: null!,
+                hintCallback: null!,
+            };
+
+            callbacks.messageCallback = message => {
+                sc.multiworld.client.messages.off("userCommand", callbacks.messageCallback);
+                sc.multiworld.client.messages.off("itemHinted", callbacks.hintCallback);
+                sc.Dialogs.showErrorDialog(message, true);
+            };
+            callbacks.hintCallback = (text, item) => {
+                sc.multiworld.client.messages.off("userCommand", callbacks.messageCallback);
+                sc.multiworld.client.messages.off("itemHinted", callbacks.hintCallback);
+                this.hide();
+
+                callback(item)
+            };
+            sc.multiworld.client.messages.on("userCommand", callbacks.messageCallback);
+            sc.multiworld.client.messages.on("itemHinted", callbacks.hintCallback);
+
+            sc.multiworld.client.messages.say(`!hint ${this.inputGui.value.join("")}`);
         },
         _close()/*: void*/ {
             this.msgBox.doStateTransition('HIDDEN')
@@ -749,10 +800,7 @@ export function patch(plugin: MwRandomizer) {
             this.callback && this.callback()
         },
         onInteraction()/*: void*/ {
-            if (this.textDone) {
-                ig.interact.removeEntry(this.screenInteract)
-                this._close()
-            } else this.textGui.finish()
+            this._close()
         },
     })
 
