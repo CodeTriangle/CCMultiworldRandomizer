@@ -325,7 +325,6 @@ export function patch(plugin: MwRandomizer) {
             this.parent(true)
             this.setSize(400, 216)
             this.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_TOP)
-            this.setPivot(0, 216)
             this.setPanelSize(400, 216)
             this.hook.transitions = {
                 DEFAULT: {state: {}, time: 0.2, timeFunction: KEY_SPLINES.LINEAR},
@@ -493,7 +492,7 @@ export function patch(plugin: MwRandomizer) {
             if (this.list) {
                 this.list.hook.pos.x = 0
                 this.list.bg.hook.pos.y = this.list.bg.hook.pos.y - 5
-                this.list.bg.hook.size.x = 216
+                this.list.bg.hook.size.x = 400
                 this.list.bg.hook.size.y = this.list.bg.hook.size.y + 5
             }
 
