@@ -388,7 +388,7 @@ export function patch(plugin: MwRandomizer) {
             const c = new sc.ItemTabbedBox.TabButton(
                 ig.lang.get(`sc.gui.mw.hint-client.tabs.${key}`),
                 index == 0 ? "quest-elite" : "quest-fav",
-                105
+                120
             );
             c.textChild.setPos(7, 1)
             c.setPos(0, 2)
@@ -423,8 +423,10 @@ export function patch(plugin: MwRandomizer) {
             const hints = sc.multiworld.client.items.hints.filter(hint => {
                 switch (tabIndex) {
                     case HINT_CATEGORY_TYPES.OUTGOING:
-                        return hint.item.receiver.slot == sc.multiworld.client.players.self.slot && hint.item.receiver.team == sc.multiworld.client.players.self.team;
+                        // Outgoing hint: the sender is offworld
+                        return hint.item.sender.slot != sc.multiworld.client.players.self.slot || hint.item.sender.team != sc.multiworld.client.players.self.team;
                     case HINT_CATEGORY_TYPES.INCOMING:
+                        // Incoming hint: we are the sender
                         return hint.item.sender.slot == sc.multiworld.client.players.self.slot && hint.item.sender.team == sc.multiworld.client.players.self.team;
                 }
             });
@@ -556,7 +558,8 @@ export function patch(plugin: MwRandomizer) {
             sc.menu.commitHotkeys(b)
         },
         onRequestHintButtonPressed() {
-
+            const dialog = new sc.APHintClientRequestHintDialog()
+            ig.gui.addGuiElement(dialog)
         },
         createHelpGui() {
             if (!this.helpGui) {
@@ -659,6 +662,101 @@ export function patch(plugin: MwRandomizer) {
             }
         },
     });
+
+    sc.APHintClientRequestHintDialog = ig.GuiElementBase.extend({
+        gfx/*: ig.Image*/: new ig.Image('media/gui/menu.png'),
+        transitions: {
+            DEFAULT: { state: { alpha: 1 }, time: 0.2, timeFunction: KEY_SPLINES.EASE_OUT },
+            HIDDEN: { state: { alpha: 0 }, time: 0.3, timeFunction: KEY_SPLINES.EASE_IN },
+        },
+        msgBox/*: sc.CenterBoxGui*/: null,
+        textGui/*: sc.TextGui*/: null,
+        textDone/*: boolean*/: false,
+        screenInteract/*: sc.ScreenInteractEntry*/: null,
+        init() {
+            this.parent()
+            this.hook.zIndex = 9999999
+            this.hook.localAlpha = 0.8
+            this.hook.temporary = true
+            this.hook.pauseGui = true
+            this.hook.size.x = ig.system.width
+            this.hook.size.y = ig.system.height
+
+            this.buttongroup = new sc.ButtonGroup();
+            this.buttongroup.addPressCallback(() => {});
+            this.buttonInteract = new ig.ButtonInteractEntry();
+            this.buttonInteract.pushButtonGroup(this.buttongroup);
+
+            const baseDialog = new ig.GuiElementBase()
+            baseDialog.setSize(200, 100)
+
+            this.textGui = new sc.TextGui("What do you want to hint for?", { maxWidth: 300 })
+            baseDialog.addChildGui(this.textGui)
+
+            this.inputGui = new sc.APUpDownInputField(
+                190,
+                this.textGui.hook.size.y + 3,
+                modmanager.gui.INPUT_FIELD_TYPE.DEFAULT,
+                false
+            );
+            this.inputGui.hook.pos.y = this.textGui.hook.size.y + 3;
+            this.buttongroup.addFocusGui(this.inputGui, 0, 0);
+            baseDialog.addChildGui(this.inputGui)
+
+            this.backButton = new sc.ButtonGui("\\i[back]Back", 128)
+            this.backButton.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
+            this.backButton.setPos(67, -27);
+            this.backButton.onButtonPress = this.onBackButtonPress.bind(this);
+            this.backButton.submitSound = sc.BUTTON_SOUND.back;
+            this.buttongroup.addFocusGui(this.backButton, 1, 0);
+            this.buttonInteract.addGlobalButton(this.backButton, sc.control.menuBack);
+
+            this.msgBox = new sc.CenterBoxGui(baseDialog)
+            this.msgBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER)
+            this.addChildGui(this.msgBox)
+            this.doStateTransition('HIDDEN', true)
+            this.doStateTransition('DEFAULT')
+            this.textGui.textBlock.onFinish = this._onTextFinish.bind(this)
+            this.textDone = this.textGui.textBlock.isFinished()
+            this.screenInteract = new sc.ScreenInteractEntry(this)
+            ig.system.skipMode || ig.interact.addEntry(this.screenInteract)
+        },
+        show() {
+            ig.interact.addEntry(this.buttonInteract);
+            ig.interact.setBlockDelay(0.2);
+            this.doStateTransition("DEFAULT");
+        },
+        hide() {
+            ig.interact.removeEntry(this.buttonInteract);
+            ig.interact.setBlockDelay(0.2);
+            this.doStateTransition("HIDDEN", false, true);
+        },
+        update()/*: void*/ {
+            !this.hook.removeAfterTransition && this.textDone && ig.system.skipMode && this._close()
+            this.parent()
+        },
+        updateDrawables(renderer/*: ig.GuiRenderer*/)/*: void*/ {
+            renderer.addColor('#000', 0, 0, this.hook.size.x, this.hook.size.y)
+        },
+        _onTextFinish()/*: void*/ {
+            this.textDone = true
+        },
+        onBackButtonPress() {
+            this.hide();
+        },
+        _close()/*: void*/ {
+            this.msgBox.doStateTransition('HIDDEN')
+            this.doStateTransition('HIDDEN', false, true)
+            this.callback && this.callback()
+        },
+        onInteraction()/*: void*/ {
+            if (this.textDone) {
+                ig.interact.removeEntry(this.screenInteract)
+                this._close()
+            } else this.textGui.finish()
+        },
+    })
+
 
 // @ts-expect-error
     sc.MENU_SUBMENU.AP_HINT_CLIENT = 300003;

@@ -67,8 +67,8 @@
 			},
 			"hint-client": {
 				"tabs": {
-					"incoming": "Incoming",
-					"outgoing": "Outgoing"
+					"incoming": "In this world",
+					"outgoing": "Offworld"
 				},
 				"hint": {
 					"sender": "Sender",
