@@ -645,7 +645,7 @@ export function patch(plugin: MwRandomizer) {
                 if (a.found == b.found) {
                     return 0;
                 } else {
-                    return a.found ? -1 : 1;
+                    return a.found ? 1 : -1;
                 }
             })
         },

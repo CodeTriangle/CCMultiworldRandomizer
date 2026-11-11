@@ -87,19 +87,19 @@
 								"......",
 								"This menu allows you to see hints sent from Archipelago. Hints may contain items from your world, or items from other worlds.",
 								"....",
-								"Hints are separated by 2 categories: \\c[3]Incoming\\c[0] and \\c[3]Outgoing\\c[0]. Use \\i[circle-right] and \\i[circle-left] to navigate through the tabs."
+								"Hints are separated by 2 categories: \\c[3]In this world\\c[0] and \\c[3]Offworld\\c[0]. Use \\i[circle-right] and \\i[circle-left] to navigate through the tabs."
 							]
 						},
 						{
 							"content": [
-								"Incoming hints show items \\c[3]locked in your world\\c[0], requested by other people or yourself.",
+								"Hints in this world show items \\c[3]locked in your world\\c[0], requested by other people or yourself.",
 								"....",
 								"Browse through the hints and note the \\c[3]location\\c[0] that you need to visit to unlock the item for them. Once the item is found, it will automatically move to the bottom of the list."
 							]
 						},
 						{
 							"content": [
-								"Outgoing hints show items that \\c[3]you have hinted for\\c[0].",
+								"Offworld hints show items that \\c[3]you have hinted for\\c[0], located in other peoples' worlds.",
 								"....",
 								"Select a hint to change its \\c[3]status\\c[0]. You can change the status to signal to other people which items you need to progress in the game, and which items are not yet important.",
 								"You can also \\c[3]copy\\c[0] a textual representation of a hint to send to the other player."
