@@ -113,6 +113,7 @@ declare global {
         interface APHintClientMenu extends sc.ListInfoMenu {
             hintList: sc.APHintClientList;
             options: sc.SortMenu;
+            simpleOptions: sc.SortMenu;
             hotkeyRequestHint: sc.ButtonGui;
 
             onBackButtonPress(): void;
@@ -675,6 +676,11 @@ export function patch(plugin: MwRandomizer) {
             this.options.addButton('avoid', 2, 2)
             this.options.addButton('copy', 3, 3)
 
+            this.simpleOptions = new sc.SortMenu(this.onOptionsExecute.bind(this), this.onOptionsBack.bind(this), 126);
+            this.simpleOptions.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_TOP)
+            this.simpleOptions.setPivot(this.simpleOptions.hook.size.x / 2, 0)
+            this.simpleOptions.addButton('copy', 3, 0)
+
             this.hotkeyRequestHint = new sc.ButtonGui(
                 `\\i[help2]${ig.lang.get('sc.gui.menu.menu-titles.requestNewHint')}`,
                 void 0,
@@ -764,7 +770,8 @@ export function patch(plugin: MwRandomizer) {
         openOptionsMenu(button) {
             this.hotkeySort.setActive(false)
             this.hotkeyRequestHint.setActive(false)
-            const optionsMenu = this.options;
+            const isOurHint = button.hint.item.receiver.slot == sc.multiworld.client.players.self.slot && button.hint.item.receiver.team == sc.multiworld.client.players.self.team
+            const optionsMenu = isOurHint ? this.options : this.simpleOptions;
             ig.gui.addGuiElement(optionsMenu)
             const buttonCoordinates = button.hook.screenCoords!;
             const buttonLeft = buttonCoordinates.x;
@@ -775,11 +782,6 @@ export function patch(plugin: MwRandomizer) {
                 optionsMenu.setPivot(optionsHook.size.x / 2, optionsHook.size.y)
             } else optionsMenu.setPivot(optionsHook.size.x / 2, 0)
 
-            const isOurHint = button.hint.item.receiver.slot == sc.multiworld.client.players.self.slot && button.hint.item.receiver.team == sc.multiworld.client.players.self.team
-            optionsMenu.buttons[0].setActive(isOurHint)
-            optionsMenu.buttons[1].setActive(isOurHint)
-            optionsMenu.buttons[2].setActive(isOurHint)
-            optionsMenu.buttons[3].setActive(true)
             button.keepButtonPressed()
             this._keepButtonFocused = button
             optionsMenu.showSortMenuAt(buttonLeft, buttonBottom)
@@ -817,6 +819,7 @@ export function patch(plugin: MwRandomizer) {
                 }
             }
             this.options.hideSortMenu()
+            this.simpleOptions.hideSortMenu();
             ig.interact.setBlockDelay(0.2)
             this.onOptionsBack()
         },
