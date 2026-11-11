@@ -53,10 +53,15 @@ declare global {
 
         interface APHintClientList extends sc.ListTabbedPane {
             marqueeGroup: codetriangle.marquee.MarqueeGroup;
+            buttons: sc.APHintClientEntry[];
+            blockHint: ap.Hint | null;
 
             sortList(list: ap.Hint[], sortType: HINT_SORT_TYPES): void;
             modelChanged(this: this, model: any, message: any, data: any): void;
             getCurrentSortText(this: APHintClientList): string;
+            newHintReceived(this: this, hint: ap.Hint): void;
+            loadHints(this: this, tabIndex: number): ap.Hint[];
+            hintCategory(hint: ap.Hint): HINT_CATEGORY_TYPES[];
         }
 
         interface APHintClientListConstructor extends ImpactClass<sc.APHintClientList> {
@@ -74,7 +79,7 @@ declare global {
         }
 
         interface APHintClientEntryLocationConstructor extends ImpactClass<sc.APHintClientEntryLocation> {
-            new(hint: ap.Hint, marqueeGroup: codetriangle.marquee.MarqueeGroup): APHintClientEntryLocation;
+            new(marqueeGroup: codetriangle.marquee.MarqueeGroup): APHintClientEntryLocation;
         }
 
         var APHintClientEntryLocation: APHintClientEntryLocationConstructor;
@@ -92,6 +97,18 @@ declare global {
         }
 
         var APHintClientChapter: APHintClientChapterConstructor;
+
+        interface APHintClientHintUpdateEffect extends ig.GuiElementBase {
+            ninepatch: ig.NinePatch;
+
+            playNew(this: this, callback: () => void): void;
+        }
+
+        interface APHintClientHintUpdateEffectConstructor extends ImpactClass<sc.APHintClientHintUpdateEffect> {
+            new(): APHintClientHintUpdateEffect
+        }
+
+        var APHintClientHintUpdateEffect: APHintClientHintUpdateEffectConstructor;
 
         interface APHintClientMenu extends sc.ListInfoMenu {
             hintList: sc.APHintClientList;
@@ -119,6 +136,9 @@ declare global {
             ninepatch: ig.NinePatch;
             gfx: ig.Image;
 
+            wrapper: ig.GuiElementBase,
+            effect: sc.APHintClientHintUpdateEffect;
+
             title: sc.TextGui;
             chapter: sc.APHintClientChapter;
             player: sc.TextGui;
@@ -126,8 +146,14 @@ declare global {
 
             hint: ap.Hint;
 
+            addObservers(this: this): void;
+            removeObservers(this: this): void;
+
             keepButtonPressed(this: this): void;
             unPressButton(this: this): void;
+            hintUpdated(this: this, hint: ap.Hint): void;
+            setHint(this: this, hint: ap.Hint): void;
+            doNewEffect(this: this): void;
         }
 
         interface APHintClientEntryConstructor extends ImpactClass<sc.APHintClientEntry> {
@@ -135,6 +161,30 @@ declare global {
         }
 
         var APHintClientEntry: APHintClientEntryConstructor;
+
+        interface APHintClientRequestHintDialog extends ig.GuiElementBase {
+            ninepatch: ig.NinePatch;
+            gfx: ig.Image;
+
+            msgBox: sc.CenterBoxGui;
+            textGui: sc.TextGui;
+            buttonInteract: ig.ButtonInteractEntry;
+            buttongroup: sc.ButtonGroup;
+            inputGui: modmanager.gui.InputField;
+            hintCostGui: sc.TextGui;
+            hintPointsGui: sc.TextGui;
+            backButton: sc.ButtonGui;
+            requestButton: sc.ButtonGui;
+
+            onBackButtonPress(this: this): void;
+            onRequestHint(this: this): void;
+        }
+
+        interface APHintClientRequestHintDialogConstructor extends ImpactClass<sc.APHintClientRequestHintDialog> {
+            new(): APHintClientRequestHintDialog
+        }
+
+        var APHintClientRequestHintDialog: APHintClientRequestHintDialogConstructor;
     }
 
     interface Window {
@@ -165,7 +215,7 @@ export function patch(plugin: MwRandomizer) {
             bottom: 0,
             offsets: { default: { x: 459, y: 224 } },
         }),
-        init(hint, marqueeGroup) {
+        init(marqueeGroup) {
             this.parent(335, 13)
             this.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_BOTTOM)
             this.setPos(3, 3)
@@ -178,8 +228,6 @@ export function patch(plugin: MwRandomizer) {
             this.status.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_CENTER)
             this.status.setPos(5, 1)
             this.addChildGui(this.status)
-
-            this.setHint(hint)
         },
         setHint(hint: ap.Hint) {
             const hintStatus = ({
@@ -237,6 +285,50 @@ export function patch(plugin: MwRandomizer) {
         },
     })
 
+    sc.APHintClientHintUpdateEffect = ig.GuiElementBase.extend({
+        ninepatch: new ig.NinePatch('media/gui/buttons.png', {
+            width: 28,
+            height: 10,
+            left: 8,
+            top: 15,
+            right: 8,
+            bottom: 15,
+            offsets: { default: { x: 175, y: 114 } },
+        }),
+        transitions: {
+            DEFAULT: { state: { alpha: 1 }, time: 0.5, timeFunction: KEY_SPLINES.EASE },
+            HIDDEN: { state: { alpha: 0, scaleY: 0 }, time: 0.5, timeFunction: KEY_SPLINES.EASE },
+            HIDDEN_UPDATE: { state: { alpha: 0 }, time: 0.3, timeFunction: KEY_SPLINES.EASE },
+            DEFAULT_UPDATE: { state: { alpha: 1 }, time: 0.3, timeFunction: KEY_SPLINES.EASE },
+            NEW_HIDDEN: { state: { alpha: 0.5, scaleX: 0 }, time: 0.5, timeFunction: KEY_SPLINES.EASE },
+            NEW_HIDDEN_END: { state: { alpha: 0 }, time: 0.3, timeFunction: KEY_SPLINES.EASE },
+        },
+        init() {
+            this.parent()
+            this.setSize(395, 50)
+            this.setPivot(0, 20)
+            this.doStateTransition('HIDDEN', true)
+        },
+        playNew(callback) {
+            this.doStateTransition('NEW_HIDDEN', true)
+            this.setPivot(0, 20)
+            this.doStateTransition(
+                'DEFAULT',
+                false,
+                false,
+                () => {
+                    this.setPivot(395, 20)
+                    callback && callback()
+                    this.doStateTransition('NEW_HIDDEN_END', false, false, null, 0.05)
+                },
+                0.2
+            )
+        },
+        updateDrawables(renderer) {
+            this.ninepatch.drawComposite(renderer, this.hook.size.x, this.hook.size.y, 'default', 'lighter')
+        },
+    })
+
     sc.APHintClientEntry = ig.FocusGui.extend({
         transitions: {
             DEFAULT: { state: {}, time: 0.2, timeFunction: KEY_SPLINES.LINEAR },
@@ -262,11 +354,18 @@ export function patch(plugin: MwRandomizer) {
             this.parent()
             this.setSize(395, 50)
 
-            this.hint = hint;
+            this.wrapper = new ig.GuiElementBase();
+            this.wrapper.setSize(395, 50);
+            this.wrapper.hook.transitions = {
+                DEFAULT: { state: {}, time: 0.2, timeFunction: KEY_SPLINES.LINEAR },
+                HIDDEN: { state: { alpha: 0 }, time: 0.2, timeFunction: KEY_SPLINES.LINEAR },
+            }
+            this.wrapper.doStateTransition('DEFAULT', true)
+
             const marqueeGroup = new codetriangle.marquee.MarqueeGroup(true);
 
             this.chapter = new sc.APHintClientChapter(hint)
-            this.addChildGui(this.chapter)
+            this.wrapper.addChildGui(this.chapter)
 
             const itemInfo = sc.multiworld.getItemInfo(hint.item);
             const marqueeGui = new sc.MultiWorldItemMarqueeGui(itemInfo, 384, false);
@@ -284,7 +383,7 @@ export function patch(plugin: MwRandomizer) {
 
             marqueeGui.addToGroup(marqueeGroup);
             marqueeGui.setPos(5, 1);
-            this.addChildGui(marqueeGui);
+            this.wrapper.addChildGui(marqueeGui);
 
             const rightLabels = new ig.GuiElementBase();
             rightLabels.setPos(145, 5)
@@ -293,18 +392,42 @@ export function patch(plugin: MwRandomizer) {
             player.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_TOP)
             player.setPos(0, 20)
             rightLabels.addChildGui(player)
-            this.addChildGui(rightLabels)
+            this.wrapper.addChildGui(rightLabels)
 
             this.player = new sc.TextGui(tabIndex == 0 ? hint.item.receiver.alias : hint.item.sender.alias, { font: sc.fontsystem.smallFont });
             this.player.setPos(195, 21);
-            this.addChildGui(this.player)
+            this.wrapper.addChildGui(this.player)
 
-            this.location = new sc.APHintClientEntryLocation(hint, marqueeGroup)
-            this.addChildGui(this.location)
+            this.location = new sc.APHintClientEntryLocation(marqueeGroup)
+            this.wrapper.addChildGui(this.location)
+
+            this.addChildGui(this.wrapper);
+
+            this.effect = new sc.APHintClientHintUpdateEffect();
+            this.addChildGui(this.effect);
+
+            this.setHint(hint);
+        },
+        addObservers() {
+            sc.multiworld.client.items.on("hintUpdated", this.hintUpdated.bind(this))
+        },
+        removeObservers() {
+            sc.multiworld.client.items.off("hintUpdated", this.hintUpdated.bind(this))
+        },
+        hintUpdated(hint) {
+            if (this.hint.item.sender.slot == hint.item.sender.slot && this.hint.item.sender.team == hint.item.sender.team && this.hint.item.locationId == hint.item.locationId) {
+                this.setHint(hint)
+            }
+        },
+        setHint(hint) {
+            this.hint = hint;
+            this.location.setHint(hint)
         },
         updateDrawables(renderer) {
-            this.ninepatch.draw(renderer, this.hook.size.x, this.hook.size.y, this.focus ? 'focus' : 'default')
-            this.ninepatch.draw(renderer, this.hook.size.x, this.hook.size.y, this.focus ? 'hfocus' : 'hdefault', 1)
+            if (this.wrapper.hook.currentStateName != 'HIDDEN') {
+                this.ninepatch.draw(renderer, this.hook.size.x, this.hook.size.y, this.focus ? 'focus' : 'default')
+                this.ninepatch.draw(renderer, this.hook.size.x, this.hook.size.y, this.focus ? 'hfocus' : 'hdefault', 1)
+            }
         },
         keepButtonPressed() {
             this.keepPressed = true
@@ -314,6 +437,12 @@ export function patch(plugin: MwRandomizer) {
             this.keepPressed = false
             this.setPressed(false)
         },
+        doNewEffect() {
+            this.wrapper.doStateTransition('HIDDEN', true)
+            this.effect.playNew(() => {
+                this.wrapper.doStateTransition('DEFAULT', true)
+            })
+        }
     })
 
     sc.APHintClientList = sc.ListTabbedPane.extend({
@@ -321,6 +450,8 @@ export function patch(plugin: MwRandomizer) {
         listPosOffset: -6,
         listHeightOffset: 6,
         listPageSize: 25,
+        buttons: [],
+        blockHint: null,
         init() {
             this.parent(true)
             this.setSize(400, 216)
@@ -333,12 +464,35 @@ export function patch(plugin: MwRandomizer) {
             }
             this.addTab('incoming', 0, {type: HINT_CATEGORY_TYPES.INCOMING})
             this.addTab('outgoing', 1, {type: HINT_CATEGORY_TYPES.OUTGOING})
+
+            window.x = () => {
+                this.newHintReceived(sc.multiworld.client.items.hints.find(h => h.item.name == "Cold"))
+            }
         },
         addObservers() {
             sc.Model.addObserver(sc.menu, this)
+            sc.multiworld.client.items.on("hintReceived", this.newHintReceived.bind(this))
         },
         removeObservers() {
             sc.Model.removeObserver(sc.menu, this)
+            sc.multiworld.client.items.off("hintReceived", this.newHintReceived.bind(this))
+        },
+        newHintReceived(hint) {
+            // Find out where this hint goes
+            const hintCategories = this.hintCategory(hint);
+            if (!hintCategories.includes(this.currentTabIndex)) {
+                this.blockHint = hint;
+                this.switchTab(hintCategories[0]);
+                this.blockHint = null;
+            }
+
+            const index = 0;
+            const entry = new sc.APHintClientEntry(hint, this.currentTabIndex);
+            entry.addObservers();
+            this.buttons.splice(index, 0, entry);
+            this.currentList.insertButton(entry, index, 0.2);
+            this.currentList.setScrollY(0, false);
+            entry.doNewEffect();
         },
         show(){
             this.parent()
@@ -384,16 +538,16 @@ export function patch(plugin: MwRandomizer) {
             sc.BUTTON_SOUND.submit.play()
         },
         onTabButtonCreation(key, index, settings) {
-            const c = new sc.ItemTabbedBox.TabButton(
+            const button = new sc.ItemTabbedBox.TabButton(
                 ig.lang.get(`sc.gui.mw.hint-client.tabs.${key}`),
                 index == 0 ? "quest-elite" : "quest-fav",
                 120
             );
-            c.textChild.setPos(7, 1)
-            c.setPos(0, 2)
-            c.setData({type: settings.type})
-            this.addChildGui(c)
-            return c
+            button.textChild.setPos(7, 1)
+            button.setPos(0, 2)
+            button.setData({type: settings.type})
+            this.addChildGui(button)
+            return button
         },
         onTabPressed(button, wasSame) {
             if (!wasSame) {
@@ -414,25 +568,45 @@ export function patch(plugin: MwRandomizer) {
             sc.menu.setInfoText('', true)
         },
         onCreateListEntries(list, buttonGroup, tabIndex, sort) {
+            for (const button of this.buttons) {
+                button.removeObservers();
+            }
             list.setSize(400, 203);
             list.clear();
-            list.clear();
+            this.buttons = [];
             buttonGroup.clear();
 
-            const hints = sc.multiworld.client.items.hints.filter(hint => {
-                switch (tabIndex) {
-                    case HINT_CATEGORY_TYPES.OUTGOING:
-                        // Outgoing hint: the sender is offworld
-                        return hint.item.sender.slot != sc.multiworld.client.players.self.slot || hint.item.sender.team != sc.multiworld.client.players.self.team;
-                    case HINT_CATEGORY_TYPES.INCOMING:
-                        // Incoming hint: we are the sender
-                        return hint.item.sender.slot == sc.multiworld.client.players.self.slot && hint.item.sender.team == sc.multiworld.client.players.self.team;
-                }
-            });
+            const hints = this.loadHints(tabIndex);
             this.sortList(hints, sort);
             for (const hint of hints) {
-                list.addButton(new sc.APHintClientEntry(hint, tabIndex))
+                const entry = new sc.APHintClientEntry(hint, tabIndex);
+                entry.addObservers();
+                this.buttons.push(entry);
+                list.addButton(entry)
             }
+        },
+        loadHints(tabIndex) {
+            return sc.multiworld.client.items.hints.filter(hint => {
+                if (this.blockHint) {
+                    if (this.blockHint.item.sender.slot == hint.item.sender.slot && this.blockHint.item.sender.team == hint.item.sender.team && this.blockHint.item.locationId == hint.item.locationId) {
+                        // Block this hint, it will probably be added as part of an animation
+                        return false;
+                    }
+                }
+                return this.hintCategory(hint).includes(tabIndex);
+            });
+        },
+        hintCategory(hint) {
+            const categories = [];
+            if (hint.item.sender.slot != sc.multiworld.client.players.self.slot || hint.item.sender.team != sc.multiworld.client.players.self.team) {
+                // Outgoing hint: the sender is offworld
+                categories.push(HINT_CATEGORY_TYPES.OUTGOING);
+            }
+            if (hint.item.sender.slot == sc.multiworld.client.players.self.slot && hint.item.sender.team == sc.multiworld.client.players.self.team) {
+                // Incoming hint: we are the sender
+                categories.push(HINT_CATEGORY_TYPES.INCOMING);
+            }
+            return categories;
         },
         onListEntryPressed(button: sc.ListBoxButton) {
             sc.BUTTON_SOUND.submit.play()
@@ -557,9 +731,7 @@ export function patch(plugin: MwRandomizer) {
             sc.menu.commitHotkeys(b)
         },
         onRequestHintButtonPressed() {
-            const dialog = new sc.APHintClientRequestHintDialog(hintItem => {
-
-            })
+            const dialog = new sc.APHintClientRequestHintDialog()
             ig.gui.addGuiElement(dialog)
             dialog.show()
         },
@@ -666,15 +838,12 @@ export function patch(plugin: MwRandomizer) {
     });
 
     sc.APHintClientRequestHintDialog = ig.GuiElementBase.extend({
-        gfx/*: ig.Image*/: new ig.Image('media/gui/menu.png'),
+        gfx: new ig.Image('media/gui/menu.png'),
         transitions: {
             DEFAULT: { state: { alpha: 1 }, time: 0.2, timeFunction: KEY_SPLINES.EASE_OUT },
             HIDDEN: { state: { alpha: 0 }, time: 0.3, timeFunction: KEY_SPLINES.EASE_IN },
         },
-        msgBox/*: sc.CenterBoxGui*/: null,
-        textGui/*: sc.TextGui*/: null,
-        screenInteract/*: sc.ScreenInteractEntry*/: null,
-        init(callback) {
+        init() {
             this.parent()
             this.hook.zIndex = 9999999
             this.hook.localAlpha = 0.8
@@ -682,8 +851,6 @@ export function patch(plugin: MwRandomizer) {
             this.hook.pauseGui = true
             this.hook.size.x = ig.system.width
             this.hook.size.y = ig.system.height
-
-            this.callback = callback;
 
             this.buttonInteract = new ig.ButtonInteractEntry();
             this.buttongroup = new sc.ButtonGroup();
@@ -736,9 +903,6 @@ export function patch(plugin: MwRandomizer) {
             this.addChildGui(this.msgBox)
             this.doStateTransition('HIDDEN', true)
             this.doStateTransition('DEFAULT')
-            this.textGui.textBlock.onFinish = this._onTextFinish.bind(this)
-            this.textDone = this.textGui.textBlock.isFinished()
-            this.screenInteract = new sc.ScreenInteractEntry(this)
         },
         show() {
             ig.interact.addEntry(this.buttonInteract);
@@ -754,20 +918,12 @@ export function patch(plugin: MwRandomizer) {
             this.doStateTransition("HIDDEN", false, true);
             sc.model.addChoiceGui(this)
         },
-        update()/*: void*/ {
-            !this.hook.removeAfterTransition && this.textDone && ig.system.skipMode && this._close()
-            this.parent()
-        },
-        updateDrawables(renderer/*: ig.GuiRenderer*/)/*: void*/ {
+        updateDrawables(renderer) {
             renderer.addColor('#000', 0, 0, this.hook.size.x, this.hook.size.y)
-        },
-        _onTextFinish()/*: void*/ {
-
         },
         onBackButtonPress() {
             this.hide();
         },
-
         onRequestHint() {
             const callbacks: {
                 messageCallback: (...messages: ap.MessageEvents["userCommand"]) => void,
@@ -777,30 +933,24 @@ export function patch(plugin: MwRandomizer) {
                 hintCallback: null!,
             };
 
+            this.requestButton.setActive(false);
+
             callbacks.messageCallback = message => {
                 sc.multiworld.client.messages.off("userCommand", callbacks.messageCallback);
                 sc.multiworld.client.messages.off("itemHinted", callbacks.hintCallback);
                 sc.Dialogs.showErrorDialog(message, true);
+                this.requestButton.setActive(true);
             };
             callbacks.hintCallback = (text, item) => {
                 sc.multiworld.client.messages.off("userCommand", callbacks.messageCallback);
                 sc.multiworld.client.messages.off("itemHinted", callbacks.hintCallback);
                 this.hide();
-
-                callback(item)
+                this.requestButton.setActive(true);
             };
             sc.multiworld.client.messages.on("userCommand", callbacks.messageCallback);
             sc.multiworld.client.messages.on("itemHinted", callbacks.hintCallback);
 
             sc.multiworld.client.messages.say(`!hint ${this.inputGui.value.join("")}`);
-        },
-        _close()/*: void*/ {
-            this.msgBox.doStateTransition('HIDDEN')
-            this.doStateTransition('HIDDEN', false, true)
-            this.callback && this.callback()
-        },
-        onInteraction()/*: void*/ {
-            this._close()
         },
     })
 
