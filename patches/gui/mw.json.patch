@@ -26,7 +26,11 @@
 				"des": {
 					"hintStatus": "Sorts the list by hint status, most important first",
 					"player": "Sorts the list alphabetically by the sender/receiver",
-					"itemName": "Sorts the list alphabetically by the item name"
+					"itemName": "Sorts the list alphabetically by the item name",
+					"priority": "Signal to other players that this item is needed",
+					"noPriority": "Signal to other players that this item is unneeded",
+					"avoid": "Signal to other players that this item is detrimental",
+					"copy": "Copy a textual representation of this hint"
 				}
 			}
 		},
