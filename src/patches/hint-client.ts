@@ -171,6 +171,7 @@ declare global {
             buttonInteract: ig.ButtonInteractEntry;
             buttongroup: sc.ButtonGroup;
             inputGui: modmanager.gui.InputField;
+            typeGui: sc.APOptionGroup;
             hintCostGui: sc.TextGui;
             hintPointsGui: sc.TextGui;
             backButton: sc.ButtonGui;
@@ -854,7 +855,7 @@ export function patch(plugin: MwRandomizer) {
             this.buttongroup.addPressCallback(() => {});
 
             const baseDialog = new ig.GuiElementBase()
-            baseDialog.setSize(270, 90)
+            baseDialog.setSize(270, 115)
 
             this.textGui = new sc.TextGui("What do you want to hint for?", { maxWidth: 300 })
             baseDialog.addChildGui(this.textGui)
@@ -869,8 +870,26 @@ export function patch(plugin: MwRandomizer) {
             this.buttongroup.addFocusGui(this.inputGui, 0, 0);
             baseDialog.addChildGui(this.inputGui)
 
+            this.typeGui = new sc.APOptionGroup(264, 21, [
+                {
+                    value: 0,
+                    key: "item",
+                    label: "Item",
+                },
+                {
+                    value: 1,
+                    key: "location",
+                    label: "Location",
+                },
+            ], this.buttongroup, 1, {
+                item: "Item",
+                location: "Location"
+            });
+            this.typeGui.hook.pos.y = this.inputGui.hook.pos.y + this.inputGui.hook.size.y + 3;
+            baseDialog.addChildGui(this.typeGui)
+
             this.hintCostGui = new sc.TextGui(`\\c[4]Hint cost: \\c[0]${sc.multiworld.client.room.hintCost}`, { maxWidth: 300, font: sc.fontsystem.tinyFont })
-            this.hintCostGui.hook.pos.y = this.inputGui.hook.pos.y + this.inputGui.hook.size.y + 3;
+            this.hintCostGui.hook.pos.y = this.typeGui.hook.pos.y + this.typeGui.hook.size.y + 3;
             baseDialog.addChildGui(this.hintCostGui)
 
             this.hintPointsGui = new sc.TextGui(`\\c[4]Available Hint points: \\c[0]${sc.multiworld.client.room.hintPoints}`, { maxWidth: 300, font: sc.fontsystem.tinyFont })
@@ -947,7 +966,11 @@ export function patch(plugin: MwRandomizer) {
             sc.multiworld.client.messages.on("userCommand", callbacks.messageCallback);
             sc.multiworld.client.messages.on("itemHinted", callbacks.hintCallback);
 
-            sc.multiworld.client.messages.say(`!hint ${this.inputGui.value.join("")}`);
+            if (this.typeGui.value == 0) {
+                sc.multiworld.client.messages.say(`!hint ${this.inputGui.value.join("")}`);
+            } else {
+                sc.multiworld.client.messages.say(`!hint_location ${this.inputGui.value.join("")}`);
+            }
         },
     })
 
