@@ -814,7 +814,21 @@ export function patch(plugin: MwRandomizer) {
                             locationName = `${hint.item.locationName} (${hint.entrance})`;
                         }
                         const hintText = `[Hint]: ${hint.item.receiver.alias}'s ${hint.item.name} is at ${locationName} in ${hint.item.sender.alias}'s World.`;
-                        void navigator.clipboard.writeText(hintText);
+                        navigator.clipboard.writeText(hintText).then(() => {
+                            const b = new sc.CenterMsgBoxGui(
+                                "Copied hint to clipboard",
+                                { maxWidth: 300, textAlign: ig.Font.ALIGN.CENTER, speed: ig.TextBlock.SPEED.FASTEST },
+                                'white',
+                                0.3,
+                                () => void 0,
+                                true
+                            );
+                            b.setBoxOffset(0, -64)
+                            ig.gui.addGuiElement(b)
+
+                            const abilityTrack = ig.bgm.loadTrack('ability-got') as ig.BgmTrack;
+                            ig.bgm.inbetween(abilityTrack, 1, ig.BGM_SWITCH_MODE.FAST)
+                        });
                     }
                 }
             }
