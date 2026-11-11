@@ -216,7 +216,7 @@ export function patch(plugin: MwRandomizer) {
             offsets: { default: { x: 459, y: 224 } },
         }),
         init(marqueeGroup) {
-            this.parent(335, 13)
+            this.parent(337, 13)
             this.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_BOTTOM)
             this.setPos(3, 3)
             this.marqueeGroup = marqueeGroup
@@ -278,9 +278,9 @@ export function patch(plugin: MwRandomizer) {
         updateDrawables(renderer) {
             const [vanilla, index] = this.chapter;
             if (vanilla) {
-                renderer.addGfx(this.gfx, 0, 0, (index % 2) * 147 + 5, Math.floor(index / 2) * 34, 142, 30)
+                renderer.addGfx(this.gfx, 0, 0, (index % 2) * 147 + 5, Math.floor(index / 2) * 34 + 2, 142, 30)
             } else {
-                renderer.addGfx(this.apGfx, 0, 0, (index % 2) * 147 + 5, Math.floor(index / 2) * 34, 142, 30)
+                renderer.addGfx(this.apGfx, 0, 0, (index % 2) * 147 + 5, Math.floor(index / 2) * 34 + 2, 142, 30)
             }
         },
     })
@@ -464,10 +464,6 @@ export function patch(plugin: MwRandomizer) {
             }
             this.addTab('incoming', 0, {type: HINT_CATEGORY_TYPES.INCOMING})
             this.addTab('outgoing', 1, {type: HINT_CATEGORY_TYPES.OUTGOING})
-
-            window.x = () => {
-                this.newHintReceived(sc.multiworld.client.items.hints.find(h => h.item.name == "Cold"))
-            }
         },
         addObservers() {
             sc.Model.addObserver(sc.menu, this)
@@ -946,6 +942,7 @@ export function patch(plugin: MwRandomizer) {
                 sc.multiworld.client.messages.off("itemHinted", callbacks.hintCallback);
                 this.hide();
                 this.requestButton.setActive(true);
+                sc.BUTTON_SOUND.shop_cash.play()
             };
             sc.multiworld.client.messages.on("userCommand", callbacks.messageCallback);
             sc.multiworld.client.messages.on("itemHinted", callbacks.hintCallback);
