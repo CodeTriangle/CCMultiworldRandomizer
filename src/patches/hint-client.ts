@@ -475,6 +475,9 @@ export function patch(plugin: MwRandomizer) {
             sc.Model.removeObserver(sc.menu, this)
             sc.multiworld.client.items.off("hintReceived", this.newHintReceived.bind(this))
         },
+        onInitSortType() {
+            return HINT_SORT_TYPES.STATUS
+        },
         newHintReceived(hint) {
             // Find out where this hint goes
             const hintCategories = this.hintCategory(hint);
@@ -509,8 +512,8 @@ export function patch(plugin: MwRandomizer) {
         },
         getCurrentSortText() {
             const sortType = this.tabContent[this.currentTabIndex]
-                ? this.tabContent[this.currentTabIndex].sort || HINT_SORT_TYPES.UNSPECIFIED
-                : HINT_SORT_TYPES.UNSPECIFIED;
+                ? this.tabContent[this.currentTabIndex].sort || HINT_SORT_TYPES.STATUS
+                : HINT_SORT_TYPES.STATUS;
 
             let key = 'unspecified';
             switch (sortType) {
