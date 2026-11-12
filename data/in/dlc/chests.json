@@ -136,7 +136,7 @@
 				"map": "beach.path-02",
 				"mapId": 50
 			},
-			"clearance": "Gold",
+			"clearance": "Silver",
 			"region": {
 				"open": "dlc_archipelago"
 			},
@@ -345,7 +345,7 @@
 				"map": "rhombus-sqr.center-nw",
 				"mapId": 251
 			},
-			"clearance": "Gold",
+			"clearance": "Silver",
 			"region": {
 				"open": "rhombus"
 			},
