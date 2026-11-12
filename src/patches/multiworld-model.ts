@@ -72,6 +72,24 @@ export function patch(plugin: MwRandomizer) {
 					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.PRINT_JSON, nodes);
 				});
 
+				const countdownPre = new ig.Sound("media/sound/misc/countdown-1.ogg");
+				const countdownDone = new ig.Sound("media/sound/misc/countdown-2.ogg");
+				this.client.messages.on("countdown", (_, remainingTime) => {
+					if (sc.timers.timers["archipelago-countdown"]) {
+						sc.timers.resetTimer("archipelago-countdown", sc.TIMER_TYPES.COUNTDOWN, remainingTime + 1);
+					} else {
+						sc.timers.addTimer("archipelago-countdown", sc.TIMER_TYPES.COUNTDOWN, remainingTime + 1, null, true, true, false, null, "Archipelago");
+						sc.timers.stopTimer("archipelago-countdown"); // Stop the timer from counting down automatically
+					}
+
+					if (remainingTime == 0) {
+						sc.timers.resumeTimer("archipelago-countdown");
+						countdownDone.play();
+					} else if (remainingTime <= 3) {
+						countdownPre.play();
+					}
+				});
+
 				this.client.socket.on("disconnected", () => {
 					this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
 
