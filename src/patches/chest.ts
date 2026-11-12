@@ -1,6 +1,7 @@
 import * as ap from "archipelago.js";
 import type MwRandomizer from "../plugin";
 import {RawChest} from "../item-data.model";
+import {HintStatuses} from "./hint-client";
 
 declare global {
 	namespace ig.ENTITY {
@@ -10,6 +11,7 @@ declare global {
 			analyzeLabel: string;
 			collectedLabel: string;
 			rawChest: ap.Item | undefined;
+			hint: ap.Hint | undefined;
 		}
 	}
 	namespace sc {
@@ -29,6 +31,21 @@ declare global {
 				): Chest;
 			}
 			var Chest: ChestConstructor;
+			namespace HintedChest {
+				interface Settings extends sc.QuickMenuTypesBaseSettings {
+					type: "HintedChest";
+					entity: ig.ENTITY.Chest;
+				}
+			}
+			interface HintedChest extends sc.QuickMenuTypesBase {}
+			interface HintedChestConstructor extends ImpactClass<HintedChest> {
+				new (
+					type: string,
+					settings: sc.QUICK_MENU_TYPES.HintedChest.Settings,
+					screen: sc.QuickFocusScreen
+				): HintedChest;
+			}
+			var HintedChest: HintedChestConstructor;
 		}
 		namespace QUICK_INFO_BOXES {
 			interface Chest extends ig.BoxGui {
@@ -50,6 +67,16 @@ declare global {
 				new (): Chest;
 			}
 			var Chest: ChestConstructor;
+			interface HintedChest extends Chest {
+				itemGui: sc.TextGui;
+				receiverGui: sc.TextGui;
+				statusGui: sc.TextGui;
+				setData(this: this, chest: ig.Entity): boolean;
+			}
+			interface HintedChestConstructor extends ImpactClass<HintedChest> {
+				new (): HintedChest;
+			}
+			var HintedChest: HintedChestConstructor;
 		}
 	}
 }
@@ -98,6 +125,11 @@ export function patch(plugin: MwRandomizer) {
 			let newOffX = 0;
 			let newOffY = 80;
 			this.rawChest = sc.multiworld.locationInfo[this.mwCheck.mwids[0]];
+			this.hint = sc.multiworld.client.items.hints.find(hint =>
+				hint.item.sender.slot == sc.multiworld.client.players.self.slot &&
+				hint.item.sender.team == sc.multiworld.client.players.self.team &&
+				hint.item.locationId == this.mwCheck?.mwids[0]
+			);
 
 			if (this.rawChest == undefined) {
 				return;
@@ -162,7 +194,12 @@ export function patch(plugin: MwRandomizer) {
 
 		getQuickMenuSettings() {
 			let disabled = this.isOpen || (this.hideManager && this.hideManager.hidden);
-			if (this.rawChest != undefined) {
+			if (this.hint != undefined) {
+				return {
+					type: "HintedChest",
+					disabled: disabled,
+				};
+			} else if (this.rawChest != undefined) {
 				return {
 					type: "Chest",
 					disabled: disabled,
@@ -363,6 +400,66 @@ export function patch(plugin: MwRandomizer) {
 			} else if (arrowY > hook.size.y - 15) {
 				this.arrow.bottomAnchor = true;
 			}
+		},
+	});
+
+	sc.QUICK_MENU_TYPES.HintedChest = sc.QuickMenuTypesBase.extend({
+		init(type, settings, screen) {
+			this.parent(type, settings, screen);
+			this.setIconColor(settings.entity.analyzeColor);
+		},
+	});
+
+	sc.QUICK_INFO_BOXES.HintedChest = sc.QUICK_INFO_BOXES.Chest.extend({
+		init() {
+			this.parent();
+
+			this.itemGui = new sc.TextGui("", {font: sc.fontsystem.tinyFont});
+			this.itemGui.setPos(8, 43);
+			this.itemGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
+			this.addChildGui(this.itemGui);
+			this.receiverGui = new sc.TextGui("", {font: sc.fontsystem.tinyFont});
+			this.receiverGui.setPos(8, 33);
+			this.receiverGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
+			this.addChildGui(this.receiverGui);
+			this.statusGui = new sc.TextGui("", {font: sc.fontsystem.tinyFont});
+			this.statusGui.setPos(8, 23);
+			this.statusGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
+			this.addChildGui(this.statusGui);
+		},
+
+		setData(chest) {
+			this.parent(chest)
+			if (!(chest instanceof ig.ENTITY.Chest) || !chest.mwCheck) {
+				return false;
+			}
+
+			this.hook.size.x = 127;
+			const hint = chest.hint!;
+			this.itemGui.setText(`Item: \\c[6]${hint.item.name}\\c[0]`);
+			this.hook.size.x = Math.max(this.hook.size.x, this.itemGui.hook.size.x + 17)
+			this.hook.size.y = this.hook.size.y + this.itemGui.hook.size.y + 2;
+			this.receiverGui.setText(`Receiver: \\c[6]${hint.item.receiver.alias}\\c[0]`);
+			this.hook.size.x = Math.max(this.hook.size.x, this.receiverGui.hook.size.x + 17)
+			this.hook.size.y = this.hook.size.y + this.receiverGui.hook.size.y + 2;
+
+			const hintStatus = ({
+				[HintStatuses.unspecified]: "Unspecified",
+				[HintStatuses.noPriority]: "\\c[4]No Priority",
+				[HintStatuses.avoid]: "\\c[1]Avoid",
+				[HintStatuses.priority]: "\\c[2]Priority",
+				[HintStatuses.found]: "\\c[4]Found",
+			} as const)[hint.status] ?? "Unspecified"
+			this.statusGui.setText(`Hint Status: ${hintStatus}\\c[0]`);
+			this.hook.size.x = Math.max(this.hook.size.x, this.statusGui.hook.size.x + 17)
+			this.hook.size.y = this.hook.size.y + this.statusGui.hook.size.y + 2;
+
+			if (this.clearance.text?.toString()) {
+				this.line.hook.size.x = this.hook.size.x - 16 - this.clearance.hook.size.x;
+			} else {
+				this.line.hook.size.x = this.hook.size.x - 13;
+			}
+			return true;
 		},
 	});
 }

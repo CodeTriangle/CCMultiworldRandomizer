@@ -13,6 +13,7 @@ import { patch as patchQuest } from "./quest";
 import { patch as patchQuestHub } from "./quest-hub";
 import { patch as patchShop } from "./shop";
 import { patch as patchNewGame } from "./new-game";
+import { patch as patchHintClient } from "./hint-client";
 import { patch as patchTextClient } from "./text-client";
 import { patch as patchMenus } from "./menus";
 import { patch as patchLogin } from "./login";
@@ -34,6 +35,7 @@ export function applyPatches(plugin: MwRandomizer) {
 	patchQuestHub(plugin);
 	patchShop(plugin);
 	patchNewGame(plugin);
+	patchHintClient(plugin);
 	patchTextClient(plugin);
 	patchMenus(plugin);
 	patchLogin(plugin);

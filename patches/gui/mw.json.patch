@@ -7,10 +7,31 @@
 			"menu-titles": {
 				"apConnection": "Connection Info",
 				"apTextClient": "AP Text Client",
-				"apGameInfoMenu": "AP Game Info"
+				"apHintClient": "Hints",
+				"apGameInfoMenu": "AP Game Info",
+				"requestNewHint": "Request New Hint"
 			},
 			"new-game": {
 				"modifyOptions": "Modify Options"
+			},
+			"sort": {
+				"priority": "Priority",
+				"noPriority": "No Priority",
+				"avoid": "Avoid",
+				"copy": "Copy",
+				"unspecified": "Auto",
+				"hintStatus": "Status",
+				"player": "Player",
+				"itemName": "Item Name",
+				"des": {
+					"hintStatus": "Sorts the list by hint status, most important first",
+					"player": "Sorts the list alphabetically by the sender/receiver",
+					"itemName": "Sorts the list alphabetically by the item name",
+					"priority": "Signal to other players that this item is needed",
+					"noPriority": "Signal to other players that this item is unneeded",
+					"avoid": "Signal to other players that this item is detrimental",
+					"copy": "Copy a textual representation of this hint"
+				}
 			}
 		},
 		"title-screen": {
@@ -30,7 +51,7 @@
 				"deathLinkMode": {
 					"death": "When death is received, you die.",
 					"hpCriticalBosses": "When death is recieved in boss fights, your HP becomes critical. You die otherwise.",
-					"hpCritical": "When death is recieved in combat, your HP becomes critical. You die otherwise.",
+					"hpCritical": "When death is recieved in combat, your HP becomes critical. You die otherwise."
 				},
 				"connect": "Connect to the multiworld using these details.",
 				"disconnect": "Disconnect from the multiworld if connected."
@@ -45,7 +66,49 @@
 			"text-client": {
 				"apConnection": "Modify connection details, disconnect, or reconnect.",
 				"apGameInfoMenu": "Check on important YAML options.",
-				"new-game": "View or tweak New Game+ options."
+				"new-game": "View or tweak New Game+ options.",
+				"apHintClient": "View and Manage Archipelago hints"
+			},
+			"hint-client": {
+				"tabs": {
+					"incoming": "In this world",
+					"outgoing": "Offworld"
+				},
+				"hint": {
+					"sender": "Sender",
+					"receiver": "Receiver"
+				},
+				"manual": {
+					"title": "\\i[ap-logo] \\c[3]Hints Menu\\c[0]",
+					"pages": [
+						{
+							"content": [
+								"Welcome to the Hints Menu!",
+								"......",
+								"This menu allows you to see hints sent from Archipelago. Hints may contain items from your world, or items from other worlds.",
+								"....",
+								"Hints are separated by 2 categories: \\c[3]In this world\\c[0] and \\c[3]Offworld\\c[0]. Use \\i[circle-right] and \\i[circle-left] to navigate through the tabs."
+							]
+						},
+						{
+							"content": [
+								"Hints in this world show items \\c[3]locked in your world\\c[0], requested by other people or yourself.",
+								"....",
+								"Browse through the hints and note the \\c[3]location\\c[0] that you need to visit to unlock the item for them. Once the item is found, it will automatically move to the bottom of the list."
+							]
+						},
+						{
+							"content": [
+								"Offworld hints show items that \\c[3]you have hinted for\\c[0], located in other peoples' worlds.",
+								"....",
+								"Select a hint to change its \\c[3]status\\c[0]. You can change the status to signal to other people which items you need to progress in the game, and which items are not yet important.",
+								"You can also \\c[3]copy\\c[0] a textual representation of a hint to send to the other player."
+							]
+						}
+					]
+				},
+				"nohint": "No Hint Selected",
+				"requestNewHint": "Request a new hint from Archipelago"
 			},
 			"game-info-menu": {
 				"randomized": {
@@ -72,7 +135,7 @@
 					"combined": "\\c[2]Progressive\\c[0], \\c[3]combined\\c[0]",
 					"split": "\\c[2]Progressive\\c[0], \\c[3]split\\c[0]",
 					"progressive": "\\c[2]Progressive\\c[0]",
-					"nonprog": "\\c[1]Not Progressive\\c[0]",
+					"nonprog": "\\c[1]Not Progressive\\c[0]"
 				},
 				"goals": {
 					"creator": "Ascend \\c[3]Vermillion Tower\\c[0] and defeat \\c[3]the Creator\\c[0].",
