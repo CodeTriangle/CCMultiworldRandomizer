@@ -7630,12 +7630,12 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 393.04,
-				"y": 319.8,
+				"x": 425.04,
+				"y": 324.8,
 				"map": "bergen-trail.path-4-1-1",
 				"mwid": 3235824092,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Gold"
 				}
 			},
 			{
@@ -7899,7 +7899,7 @@
 				"map": "cold-dng.b2.room5",
 				"mwid": 3235824113,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Bronze"
 				}
 			},
 			{
@@ -9001,7 +9001,7 @@
 				"map": "heat-dng.f3.room-05",
 				"mwid": 3235824210,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Bronze"
 				}
 			},
 			{
@@ -10280,7 +10280,7 @@
 				"map": "rhombus-sqr.center-nw",
 				"mwid": 3235824814,
 				"settings": {
-					"defaultClearance": "Gold"
+					"defaultClearance": "Silver"
 				}
 			},
 			{
@@ -10471,7 +10471,7 @@
 				"map": "tree-dng.g.center-02-connect",
 				"mwid": 3235825018,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Bronze"
 				}
 			},
 			{
@@ -10482,7 +10482,7 @@
 				"map": "tree-dng.g.center-02-connect",
 				"mwid": 3235825019,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Bronze"
 				}
 			},
 			{
@@ -10656,7 +10656,7 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824337,
 				"settings": {
-					"defaultClearance": "Default"
+					"defaultClearance": "Silver"
 				}
 			},
 			{
@@ -10854,7 +10854,7 @@
 				"map": "beach.path-02",
 				"mwid": 3235824800,
 				"settings": {
-					"defaultClearance": "Gold"
+					"defaultClearance": "Silver"
 				}
 			},
 			{
