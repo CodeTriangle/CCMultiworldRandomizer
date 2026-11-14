@@ -1,0 +1,9 @@
+[
+    { "type": "ENTER", "index": ["entities", 4, "settings", "event"] },
+    {
+        "type":"SET_KEY",
+        "index": 30,
+        "content": { "type": "CHANGE_VAR_BOOL", "varName": "plot.cold-dng-end", "changeType": "set", "value": true }
+    },
+    { "type": "EXIT", "count": 4 }    
+]

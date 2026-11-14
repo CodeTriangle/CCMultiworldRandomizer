@@ -1,0 +1,160 @@
+[
+  {
+    "type": "ENTER",
+    "index": "entities"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Add new ball changer to replace Heat requirement",
+    "content": {
+			"type": "BallChanger",
+			"x": 168,
+			"y": 608,
+			"level": 1,
+			"settings": {
+				"name": "BallChangerNew2",
+				"mapId": 1350,
+				"condition": "",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "COLD"
+					}
+				}
+			}
+		}
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Add new ball changer to replace Heat requirement",
+    "content": {
+			"type": "BallChanger",
+			"x": 136,
+			"y": 580,
+			"level": 1,
+			"settings": {
+				"name": "BallChangerNew1",
+				"mapId": 1351,
+				"condition": "",
+				"changerType": {
+					"type": "CHANGE_DIR",
+					"settings": {
+						"dir": "EAST"
+					}
+				}
+			}
+		}
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Add new ball changer to replace Heat requirement",
+    "content": {
+			"type": "BallChanger",
+			"x": 640,
+			"y": 608,
+			"level": 1,
+			"settings": {
+				"name": "BallChangerNew4",
+				"mapId": 1352,
+				"condition": "",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "HEAT"
+					}
+				}
+			}
+		}
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Add new ball changer to replace Heat requirement",
+    "content": {
+			"type": "BallChanger",
+			"x": 672,
+			"y": 580,
+			"level": 1,
+			"settings": {
+				"name": "BallChangerNew3",
+				"mapId": 1353,
+				"condition": "",
+				"changerType": {
+					"type": "CHANGE_DIR",
+					"settings": {
+						"dir": "WEST"
+					}
+				}
+			}
+		}
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Add new ball changer to replace Heat requirement",
+    "content": {
+			"type": "BallChanger",
+			"x": 644,
+			"y": 832,
+			"level": 1,
+			"settings": {
+				"name": "BallChangerNew5",
+				"mapId": 1354,
+				"condition": "",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "COLD"
+					}
+				}
+			}
+		}
+  },
+
+	{ 
+		"type": "SET_KEY", 
+		"_comment": "Move Shock ball changers",
+		"index": 24,
+		"content": {
+			"type": "BallChanger",
+			"x": 168,
+			"y": 552,
+			"level": 1,
+			"settings": {
+				"name": "BallChangerMoved1",
+				"mapId": 2188,
+				"condition": "",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "SHOCK"
+					}
+				}
+			}
+		}
+	}, 
+  { 
+		"type": "SET_KEY", 
+		"_comment": "Move Shock ball changers",
+		"index": 25,
+		"content": {
+			"type": "BallChanger",
+			"x": 640,
+			"y": 552,
+			"level": 1,
+			"settings": {
+				"name": "BallChangerMoved2",
+				"mapId": 2193,
+				"condition": "",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "SHOCK"
+					}
+				}
+			}
+		}
+	}, 
+  {
+    "type": "EXIT",
+    "count": 1
+  }
+]

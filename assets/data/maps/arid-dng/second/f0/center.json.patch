@@ -1,0 +1,5 @@
+[
+    { 
+        "type": "INCLUDE", "src": "mod:extra-patches/tower-skip/centerf0.json.patch" 
+    }
+]

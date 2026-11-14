@@ -1,0 +1,30 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Add a Heat ball changer to remove heat requirement in top Faj'ro",
+    "content": {
+			"type": "BallChanger",
+			"x": 348,
+			"y": 316,
+			"level": 1,
+			"settings": {
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "HEAT"
+					}
+				},
+				"mapId": 161,
+				"name": "BallChangerNew"
+			}
+		}
+  },
+  {
+    "type": "EXIT",
+    "count": 1
+  } 
+]

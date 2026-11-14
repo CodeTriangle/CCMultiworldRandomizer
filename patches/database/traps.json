@@ -1,0 +1,70 @@
+[
+  {
+    "type": "ENTER",
+		"index": "enemies"
+  },
+	{
+		"type": "SET_KEY",
+		"index": "trap-dummy",
+		"content": {
+			"name": {
+				"en_US": "Trap Master",
+				"de_DE": "Trap Master",
+				"zh_CN": "Trap Master",
+				"zh_TW": "Trap Master",
+				"ja_JP": "Trap Master",
+				"ko_KR": "Trap Master",
+				"langUid": 14209
+			},
+			"track": false,
+			"order": 5142,
+			"area": "rookie-harbor",
+			"kills": 1,
+			"anim": false,
+			"extra": false,
+			"category": "ABSTRACT",
+			"species": {
+				"en_US": "Trap Master",
+				"de_DE": "Trap Master",
+				"zh_CN": "Trap Master",
+				"zh_TW": "Trap Master",
+				"ja_JP": "Trap Master",
+				"ko_KR": "Trap Master",
+				"langUid": -1
+			},
+			"level": 47,
+			"boostedLevel": 0,
+			"params": {
+				"hp": 35000,
+				"attack": 252,
+				"defense": 228,
+				"focus": 249,
+				"elemFactor": [ 1.4, 0.25, 1.2, 1 ],
+				"statusInflict": [ 0.75, 0, 0.75, 1 ],
+				"statusEffect": [ 0.5, 1, 0.75, 1 ]
+			},
+			"credit": 2222,
+			"exp": 250,
+			"itemDrops": [],
+			"boss": true,
+			"descriptions": [
+				{
+					"text": {
+						"en_US": "Trap Master",
+						"de_DE": "Trap Master",
+						"zh_CN": "Trap Master",
+						"zh_TW": "Trap Master",
+						"ja_JP": "Trap Master",
+						"ko_KR": "Trap Master",
+						"langUid": -17
+					},
+					"condition": ""
+				}
+			]
+		}
+	},
+  {
+    "type": "EXIT"
+  }
+
+]

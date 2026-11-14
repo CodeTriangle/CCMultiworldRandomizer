@@ -6,8 +6,7 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -29,8 +28,7 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ],
@@ -47,8 +45,7 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ],
@@ -65,8 +62,7 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ],
@@ -84,8 +80,7 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -107,8 +102,7 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ],
@@ -127,8 +121,7 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "19",
-				"open": "open8"
+				"open": "harbor.north"
 			},
 			"slots": [
 				"Steel Goggles",
@@ -147,8 +140,7 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "2",
-				"open": "open2"
+				"open": "harbor"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -163,8 +155,7 @@
 				"area": "rookie-harbor"
 			},
 			"region": {
-				"linear": "19",
-				"open": "open8"
+				"open": "harbor.north"
 			},
 			"slots": [
 				"Rising Super Star",
@@ -187,8 +178,7 @@
 				"area": "bergen"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "bergen"
 			},
 			"slots": [
 				"Sandwich",
@@ -207,8 +197,7 @@
 				"area": "bergen"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "item", "Blue Ice Shade" ]
@@ -224,8 +213,7 @@
 				"area": "bergen"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "item", "Red Flame Shade" ]
@@ -241,8 +229,7 @@
 				"area": "bergen"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "item", "Green Seed Shade" ]
@@ -259,8 +246,7 @@
 				"area": "bergen"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "bergen"
 			},
 			"slots": [
 				"Iron Goggles",
@@ -275,8 +261,7 @@
 				"area": "bergen-trails"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "trail"
 			},
 			"slots": [
 				"Chili Con Carne",
@@ -290,8 +275,7 @@
 				"area": "heat-village"
 			},
 			"region": {
-				"linear": "11",
-				"open": "open5"
+				"open": "bakii"
 			},
 			"slots": [
 				"Sandwich",
@@ -312,8 +296,7 @@
 				"area": "heat-village"
 			},
 			"region": {
-				"linear": "11",
-				"open": "open5"
+				"open": "bakii"
 			},
 			"condition": [
 				[ "item", "Blue Ice Shade" ]
@@ -329,8 +312,7 @@
 				"area": "heat-village"
 			},
 			"region": {
-				"linear": "11",
-				"open": "open5"
+				"open": "bakii"
 			},
 			"condition": [
 				[ "item", "Green Seed Shade" ]
@@ -347,8 +329,7 @@
 				"area": "heat-village"
 			},
 			"region": {
-				"linear": "11",
-				"open": "open5"
+				"open": "bakii"
 			},
 			"slots": [
 				"Iron Goggles",
@@ -367,8 +348,7 @@
 				"area": "jungle-city"
 			},
 			"region": {
-				"linear": "23",
-				"open": "open10"
+				"open": "basin"
 			},
 			"slots": [
 				"Sandwich",
@@ -394,8 +374,7 @@
 				"area": "jungle-city"
 			},
 			"region": {
-				"linear": "23",
-				"open": "open10"
+				"open": "basin"
 			},
 			"slots": [
 				"Sandwich",
@@ -421,8 +400,7 @@
 				"area": "jungle-city"
 			},
 			"region": {
-				"linear": "23",
-				"open": "open10"
+				"open": "basin"
 			},
 			"slots": [
 				"Silver Goggles",
@@ -441,12 +419,8 @@
 				"area": "jungle-city"
 			},
 			"region": {
-				"linear": "23",
-				"open": "open10"
+				"open": "basin.slums"
 			},
-			"condition": [
-				[ "item", "Pond Slums Pass", 1 ]
-			],
 			"slots": [
 				"One Up"
 			]
@@ -457,8 +431,7 @@
 				"area": "forest"
 			},
 			"region": {
-				"linear": "31",
-				"open": "open16"
+				"open": "ridge"
 			},
 			"slots": [
 				"Titan Goggles",
@@ -477,8 +450,7 @@
 				"area": "forest"
 			},
 			"region": {
-				"linear": "31",
-				"open": "open16"
+				"open": "ridge"
 			},
 			"slots": [
 				"Sandwich",
@@ -504,8 +476,7 @@
 				"area": "rhombus-sqr"
 			},
 			"region": {
-				"linear": "33",
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -527,8 +498,7 @@
 				"area": "rhombus-sqr"
 			},
 			"region": {
-				"linear": "33",
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -557,8 +527,7 @@
 				"area": "rhombus-sqr"
 			},
 			"region": {
-				"linear": "33",
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -573,8 +542,7 @@
 				"area": "rhombus-sqr"
 			},
 			"region": {
-				"linear": "33",
-				"open": "open20"
+				"open": "rhombus"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -600,8 +568,7 @@
 				"area": "arid"
 			},
 			"region": {
-				"linear": "22",
-				"open": "open18"
+				"open": "wasteland"
 			},
 			"slots": [
 				"Steel Goggles",
@@ -620,8 +587,7 @@
 				"area": "arid"
 			},
 			"region": {
-				"linear": "22",
-				"open": "open18"
+				"open": "wasteland"
 			},
 			"slots": [
 				"Sandwich",

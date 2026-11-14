@@ -1,0 +1,18 @@
+[
+  { "type": "ENTER", "index": ["entities"] },
+  {
+    "type": "ENTER",
+    "index": [176,  "settings", "event"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": 48,
+    "content": { "ignoreSlowDown": false, "type": "WAIT", "time": 0.1 }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+
+  { "type": "EXIT", "count": 1 }
+]

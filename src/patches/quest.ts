@@ -123,7 +123,8 @@ export function patch(plugin: MwRandomizer) {
 				quest,
 				mwQuest,
 				finished,
-				false
+				false,
+				finished,
 			);
 
 			this.newItemsGui.setPos(124, finished ? 181 : 158);
@@ -146,13 +147,17 @@ export function patch(plugin: MwRandomizer) {
 		_setQuest(quest: sc.Quest) {
 			this.parent(quest);
 
-			let mwQuest = getRawQuestFromQuestId(quest.id);
-			if (mwQuest == undefined) return;
-
-			this.removeChildGui(this.itemsGui);
 			if (this.newItemsGui) {
 				this.removeChildGui(this.newItemsGui);
 			}
+
+			let mwQuest = getRawQuestFromQuestId(quest.id);
+			if (mwQuest == undefined) {
+				this.addChildGui(this.itemsGui);
+				return;
+			}
+
+			this.removeChildGui(this.itemsGui);
 			this.atCurLevelGui.doStateTransition("HIDDEN", true);
 
 			this.newItemsGui = new sc.MultiWorldQuestItemBox(
@@ -161,7 +166,8 @@ export function patch(plugin: MwRandomizer) {
 				quest,
 				mwQuest,
 				false,
-				true
+				true,
+				false,
 			);
 
 			let y = 160;
@@ -271,6 +277,7 @@ export function patch(plugin: MwRandomizer) {
 			mwQuest: RawQuest,
 			showRewardAnyway: boolean,
 			includeAllRewards: boolean,
+			finished: boolean,
 		) {
 			this.parent();
 
@@ -291,12 +298,15 @@ export function patch(plugin: MwRandomizer) {
 			this.includeAllRewards = includeAllRewards;
 
 			this.quest = quest;
+			this.finished = finished;
 
 			this.setQuest(mwQuest);
 		},
 
 		setQuest(mwQuest: RawQuest) {
-			if (sc.multiworld.options.questDialogHints && !this.hideRewards) {
+			// don't hint if we didn't ask for hints or rewards are hidden or if the quest is finished
+			// (the last two may seem redundant but they are not. hideRewards is always true when the quest is finished)
+			if (sc.multiworld.options.questDialogHints && !this.hideRewards && !this.finished) {
 				const toHint = mwQuest.mwids.filter(mwid =>
 					sc.multiworld.locationInfo[mwid] != undefined &&
 					sc.multiworld.locationInfo[mwid].progression

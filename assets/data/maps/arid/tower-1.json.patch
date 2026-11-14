@@ -1,0 +1,80 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes story events, and the barrier on the right-side",
+        "keyword": "__INDEX__",
+        "values": [240, 242, 258, 261, 269, 281, 282, 283, 284, 285, 286, 287, 288],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Makes the switches on the stealth section not work, to prevent sequence breaking in case of locked tower. Also hides the intro barrier",
+        "keyword": "__INDEX__",
+        "values": [84, 89, 90, 239],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "spawnCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [195, "settings"]
+    },
+    {
+        "_comment": "Make the lower exit not locked to plot",
+        "type": "SET_KEY",
+        "index": "blockEventCondition"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEvent"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "index": [273, "settings"]
+    },
+    {
+        "_comment": "Remove barrier from VT entrance",
+        "type": "SET_KEY",
+        "index": "spawnCondition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

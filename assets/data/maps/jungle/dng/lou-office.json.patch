@@ -1,0 +1,109 @@
+[
+  { "type": "ENTER", "index": [ "entities"] },
+
+  {
+    "type": "FOR_IN",
+    "keyword": "__INDEX__",
+    "_comment": "Remove both plot events",
+    "values": [ 27, 29 ],
+    "body": [ { "type": "ENTER", "index": [ "__INDEX__", "settings" ] }, { "type": "SET_KEY", "index": "startCondition", "content": "false" }, { "type": "EXIT", "count": 2 } ]
+  },
+
+  { "type": "ENTER", "index": [28, "settings", "npcStates"], "_comment": "Goodbye vince" },
+  { "type": "ENTER", "index": 0 },
+  { "type": "SET_KEY", "index": "hidden", "content": "true" },
+  { "type": "EXIT", "count": 1 },
+  { "type": "ENTER", "index": 1 },
+  { "type": "SET_KEY", "index": "position", "content": { "x": 672, "y": 312, "lvl": "0" } },
+  { "type": "SET_KEY", "index": "hidden", "content": "true" },
+  { "type": "EXIT", "count": 1 },
+  { "type": "ENTER", "index": 2 },
+  { "type": "SET_KEY", "index": "position", "content": { "x": 672, "y": 312, "lvl": "0" } },
+  { "type": "EXIT", "count": 4 },
+
+  { "type": "ENTER", "index": [26, "settings", "npcStates"], "_comment": "Change Dr. Lou Cretia to fit the edited quest" },
+  { "type": "ENTER", "index": 0 },
+  {
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "false"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "position",
+    "content": { "x": 448, "y": 312, "lvl": "0" }
+  },
+  { "type": "EXIT", "count": 1 },
+
+  { "type": "ENTER", "index": 1 },
+  {
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "!quest.ow-infestation.started"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "face",
+    "content": "SOUTH"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "event",
+    "content": {
+      "quest": [
+        {
+          "npc": "basin.sciene-lady",
+          "type": "OPEN_QUEST_DIALOG",
+          "quest": "ow-infestation",
+          "accepted": [{ "name": { "en_US": "Dr. Cretia", "langUid": 11, "ja_JP": "\u30c9\u30af\u30bf\u30fc\u30fb\u30af\u30ec\u30c4\u30a3\u30a2<<A<<[CHANGED 2017\/12\/11]", "ko_KR": "\ud06c\ub808\ud2f0\uc544 \ubc15\uc0ac<<A<<[CHANGED 2017\/12\/12]", "zh_CN": "\u514b\u96f7\u63d0\u4e9a\u535a\u58eb<<A<<[CHANGED 2017\/12\/12]", "de_DE": "Dr. Cretia", "zh_TW": "\u514b\u96f7\u63d0\u4e9e\u535a\u58eb<<A<<[CHANGED 2017\/12\/12]" }, "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "basin.sciene-lady", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "Follow me, Seeker", "langUid": 12, "ja_JP": "\u697d\u306b\u3057\u3066\u3044\u3044\u3088\u3001\u63a2\u7d22\u8005\u3055\u3093\u3002\n\u9577\u3044\u8a71\u306b\u306a\u308b\u304b\u3089\u306d\u3002<<A<<[CHANGED 2017\/12\/11]", "ko_KR": "\ud3b8\ud558\uac8c \uc788\uc5b4, \uc2dc\ucee4. \uc2dc\uac04\uc774 \uc880 \uac78\ub9ac\ub2c8\uae4c.<<A<<[CHANGED 2017\/12\/12]", "zh_CN": "\u4f11\u606f\u4e00\u4e0b\u5427\uff0c\u63a2\u7d22\u8005\u3002\u8fd9\u8981\u82b1\u70b9\u65f6\u95f4\u3002<<A<<[CHANGED 2017\/12\/12]", "de_DE": "Mach es dir bequem, Seeker. Das k\u00f6nnte eine Weile dauern.", "zh_TW": "\u4f11\u606f\u4e00\u4e0b\u5427\uff0c\u63a2\u7d22\u8005\u3002\u9019\u8981\u82b1\u9ede\u6642\u9593\u3002<<A<<[CHANGED 2017\/12\/12]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "basin.sciene-lady", "expression": "DEFAULT" } },{ "side": "ALL", "type": "CLEAR_MSG" }],
+          "declined": []
+        }
+      ]
+    }
+  },
+  { "type": "EXIT", "count": 1 },
+
+  { "type": "ENTER", "index": 2 },
+  { "type": "SET_KEY", "index": "condition", "content": "quest.ow-infestation.started" },
+  { "type": "ENTER", "index": ["event","quest"] },
+  { "type": "SET_KEY", "index": 42, "content": { "time": 0.2, "type": "WAIT" } },
+  { "type": "SET_KEY", "index": 44, "content": { "type": "SOLVE_QUEST_CONDITION", "quest": { "quest": "ow-infestation", "label": "followLouOffice" } } },
+  { "type": "EXIT", "count": 3 },
+
+  { "type": "ENTER", "index": 3 },
+  { "type": "SET_KEY", "index": "condition", "content": "false" },
+  { "type": "EXIT", "count": 1 },
+
+  { "type": "ENTER", "index": 4 },
+  { "type": "SET_KEY", "index": "condition", "content": "quest.ow-infestation.currentTask >= 1" },
+  { "type": "EXIT", "count": 1 },
+
+  { "type": "ENTER", "index": 5 },
+  { "type": "SET_KEY", "index": "condition", "content": "quest.ow-infestation.task.4" },
+  { "type": "ENTER", "index": ["event","quest"] },
+  {
+    "type": "FOR_IN",
+    "keyword": "__INDEX__",
+    "values": [ 3, 4, 5, 38, 40 ],
+    "body": [ { "type": "SET_KEY", "index": "__INDEX__", "content": { "time": 0.1, "type": "WAIT" } } ]
+  },
+  { "type": "SET_KEY", "index": 37, "content": { "entity": { "global": true, "name": "lou" }, "action": [ { "target": { "x": 448, "y": 332, "lvl": "0" }, "maxTime": 0, "distance": 0, "precise": false, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" } },
+  { "type": "SET_KEY", "index": 39, "content": { "type": "SOLVE_QUEST_CONDITION", "quest": { "quest": "ow-infestation", "label": "reportToDr" } } },
+  { "type": "EXIT", "count": 3 },
+
+  { "type": "ENTER", "index": 6 },
+  {
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "quest.ow-infestation.solved"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "event",
+    "content": [{ "name": { "en_US": "Dr. Cretia", "langUid": 1, "ja_JP": "\u30c9\u30af\u30bf\u30fc\u30fb\u30af\u30ec\u30c4\u30a3\u30a2<<A<<[CHANGED 2017\/12\/11]", "ko_KR": "\ud06c\ub808\ud2f0\uc544 \ubc15\uc0ac<<A<<[CHANGED 2017\/12\/12]", "zh_CN": "\u514b\u96f7\u63d0\u4e9a\u535a\u58eb<<A<<[CHANGED 2017\/12\/12]", "de_DE": "Dr. Cretia", "zh_TW": "\u514b\u96f7\u63d0\u4e9e\u535a\u58eb<<A<<[CHANGED 2017\/12\/12]" }, "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "basin.sciene-lady", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "The good Seeker, what can I do for you?", "langUid": 2, "ja_JP": "\u3084\u3042\u63a2\u7d22\u8005\u3055\u3093\u3001\n\u306a\u306b\u304b\u7528\u304b\u3044\uff1f<<A<<[CHANGED 2017\/12\/11]", "ko_KR": "\uc120\ub7c9\ud55c \uc2dc\ucee4, \ubb34\uc5c7\uc744 \ub3c4\uc640\uc904\uae4c?<<A<<[CHANGED 2017\/12\/12]", "zh_CN": "\u63a2\u7d22\u8005\uff0c\u4f60\u6709\u4ec0\u4e48\u9700\u8981\u5417\uff1f<<A<<[CHANGED 2017\/12\/12]", "de_DE": "Ah, der gute Seeker. Was kann ich f\u00fcr dich tun?", "zh_TW": "\u63a2\u7d22\u8005\uff0c\u4f60\u6709\u4ec0\u9ebc\u9700\u8981\u55ce\uff1f<<A<<[CHANGED 2017\/12\/12]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "basin.sciene-lady", "expression": "DEFAULT" } }, { "message": { "en_US": "...", "langUid": 3, "ja_JP": "...<<A<<[CHANGED 2017\/12\/11]", "ko_KR": "...<<A<<[CHANGED 2017\/12\/12]", "zh_CN": "...<<A<<[CHANGED 2017\/12\/12]", "de_DE": "...", "zh_TW": "...<<A<<[CHANGED 2017\/12\/12]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "SURPRISED_TOWARD" } }, { "message": { "en_US": "...Hi?", "langUid": 4, "ja_JP": "...\u3084\u3041\uff1f<<A<<[CHANGED 2017\/12\/11]", "ko_KR": "...\uc548\ub155?<<A<<[CHANGED 2017\/12\/12]", "zh_CN": "...\u4f60\u597d?<<A<<[CHANGED 2017\/12\/12]", "de_DE": "... Hi?", "zh_TW": "...\u4f60\u597d?<<A<<[CHANGED 2017\/12\/12]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ANNOYED" } }, { "message": { "en_US": "Ah yes, the power plant.", "langUid": 5, "ja_JP": "\u3042\u3042\u306a\u308b\u307b\u3069\u3001\n\u30d1\u30ef\u30fc\u30d7\u30e9\u30f3\u30c8\u306e\u3053\u3068\u304b\u3044\u3002<<A<<[CHANGED 2017\/12\/11]", "ko_KR": "\uc544, \uadf8\ub798. \ubc1c\uc804\uc18c.<<A<<[CHANGED 2017\/12\/12]", "zh_CN": "\u54e6\u5bf9\uff0c\u53d1\u7535\u7ad9\u7684\u4e8b\u3002<<A<<[CHANGED 2017\/12\/12]", "de_DE": "Ach ja, das Kraftwerk.", "zh_TW": "\u54e6\u5c0d\uff0c\u767c\u96fb\u7ad9\u7684\u4e8b\u3002<<A<<[CHANGED 2017\/12\/12]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "basin.sciene-lady", "expression": "DEFAULT" } }, { "message": { "en_US": "It was built pretty much at the same time we built the city.", "langUid": 6, "ja_JP": "\u30d7\u30e9\u30f3\u30c8\u306f\u8857\u3068\u307b\u3068\u3093\u3069\n\u540c\u6642\u671f\u306b\u5efa\u3066\u3089\u308c\u305f\u3093\u3060\u3002<<A<<[CHANGED 2018\/09\/19]", "ko_KR": "\ubc1c\uc804\uc18c\ub294 \uc774 \ub3c4\uc2dc\uac00 \uc138\uc6cc\uc9c0\ub358 \uc2dc\uae30\uc640 \ube44\uc2b7\ud55c \uc2dc\uae30\uc5d0 \uc9c0\uc5b4\uc84c\uc5b4.<<A<<[CHANGED 2018\/09\/19]", "zh_CN": "\u5b83\u662f\u548c\u57ce\u5e02\u540c\u671f\u5efa\u9020\u7684\u3002<<A<<[CHANGED 2018\/09\/19]", "de_DE": "Es wurde etwa zur gleichen Zeit gebaut wie die Stadt.", "zh_TW": "\u5b83\u662f\u548c\u57ce\u5e02\u540c\u671f\u5efa\u9020\u7684\u3002<<A<<[CHANGED 2018\/09\/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "basin.sciene-lady", "expression": "DEFAULT" } }, { "message": { "en_US": "We made sure not to interfere with the track at all.", "langUid": 7, "ja_JP": "\u8ecc\u8de1\u306b\u5e72\u6e09\u3059\u308b\u3053\u3068\u304c\u306a\u3044\u3088\u3046\u306b\n\u3057\u3063\u304b\u308a\u78ba\u8a8d\u3057\u3066\u306d\u3002<<A<<[CHANGED 2018\/09\/19]", "ko_KR": "\uc6b0\ub9ac\ub294 \uace0\ub300\uc778\uc758 \uae38\uc744 \uc808\ub300 \ubc29\ud574\ud558\uc9c0 \uc54a\ub3c4\ub85d \uace0\uc2ec\ud588\uc9c0.<<A<<[CHANGED 2018\/09\/19]", "zh_CN": "\u6211\u4eec\u518d\u4e09\u786e\u5b9a\u5b83\u6ca1\u6709\u5e72\u6270\u5230\u5148\u7956\u4e4b\u8def\u3002<<A<<[CHANGED 2018\/09\/19]", "de_DE": "Wir haben es so konzipiert, dass es den Pfad in keiner Weise beeintr\u00e4chtigt.", "zh_TW": "\u6211\u5011\u518d\u4e09\u78ba\u5b9a\u5b83\u6c92\u6709\u5e72\u64fe\u5230\u5148\u7956\u4e4b\u8def\u3002<<A<<[CHANGED 2018\/09\/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "basin.sciene-lady", "expression": "DEFAULT" } }, { "message": { "en_US": "To put it simply: The plant only absorbs energy that is naturally emitted by the temple.", "langUid": 8, "ja_JP": "\u7c21\u5358\u306b\u8a00\u3046\u3068\u3001\u30d7\u30e9\u30f3\u30c8\u306f\u795e\u6bbf\u304c\n\u81ea\u7136\u306b\u767a\u3059\u308b\u30a8\u30cd\u30eb\u30ae\u30fc\u3092\n\u5438\u53ce\u3057\u3066\u3044\u308b\u3060\u3051\u306a\u3093\u3060\u3002<<A<<[CHANGED 2018\/09\/19]", "ko_KR": "\uac04\ub2e8\ud788 \ub9d0\ud558\uc790\uba74, \ubc1c\uc804\uc18c\ub294 \uc0ac\uc6d0\uc5d0\uc11c \uc790\uc5f0\uc801\uc73c\ub85c \ubfdc\uc5b4\uc838 \ub098\uc624\ub294 \uc5d0\ub108\uc9c0\ub9cc\uc744 \ud761\uc218\ud574.<<A<<[CHANGED 2018\/09\/19]", "zh_CN": "\u7b80\u5355\u6765\u8bf4\uff1a\u53d1\u7535\u7ad9\u53ea\u4f1a\u5438\u6536\u795e\u5e99\u81ea\u7136\u6563\u53d1\u51fa\u7684\u80fd\u91cf\u3002<<A<<[CHANGED 2018\/09\/19]", "de_DE": "Hei\u00dft: Das Kraftwerk absorbiert lediglich die Energie, die nat\u00fcrlicherweise vom Tempel ausgestrahlt wird.", "zh_TW": "\u7c21\u55ae\u4f86\u8aaa\uff1a\u767c\u96fb\u7ad9\u53ea\u6703\u5438\u6536\u795e\u5edf\u81ea\u7136\u6563\u767c\u51fa\u7684\u80fd\u91cf\u3002<<A<<[CHANGED 2018\/09\/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "basin.sciene-lady", "expression": "DEFAULT" } }, { "message": { "en_US": "Simple and clean energy. Quite brilliant if I do say so myself.", "langUid": 9, "ja_JP": "\u30b7\u30f3\u30d7\u30eb\u3067\u30af\u30ea\u30fc\u30f3\u306a\u30a8\u30cd\u30eb\u30ae\u30fc\u3002\n\u81ea\u5206\u3067\u8a00\u3046\u306e\u3082\u306a\u3093\u3060\u3051\u3069\u3001\n\u3068\u3066\u3082\u898b\u4e8b\u306a\u30b7\u30b9\u30c6\u30e0\u3067\u306d\u3002<<A<<[CHANGED 2017\/12\/11]", "ko_KR": "\uac04\ub2e8\uba85\ub8cc\ud55c \uc5d0\ub108\uc9c0. \uc774\ub807\uac8c \ub9d0\ud558\ub2e4\ub2c8 \ub098 \ub108\ubb34 \ub611\ub611\ud55c \uac83 \uac19\uc544.<<A<<[CHANGED 2017\/12\/12]", "zh_CN": "\u6e05\u6d01\u800c\u6613\u83b7\u5f97\u7684\u80fd\u6e90\u3002\u6211\u81ea\u5df1\u90fd\u89c9\u5f97\u662f\u5929\u624d\u822c\u7684\u8bbe\u8ba1\u3002<<A<<[CHANGED 2017\/12\/12]", "de_DE": "Einfache und saubere Energie. Ziemlich brillant, wenn ich mich da mal selbst loben darf.", "zh_TW": "\u6e05\u6f54\u800c\u6613\u7372\u5f97\u7684\u80fd\u6e90\u3002\u6211\u81ea\u5df1\u90fd\u89ba\u5f97\u662f\u5929\u624d\u822c\u7684\u8a2d\u8a08\u3002<<A<<[CHANGED 2017\/12\/12]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "basin.sciene-lady", "expression": "DEFAULT" } }, { "message": { "en_US": "...", "langUid": 10, "ja_JP": "...<<A<<[CHANGED 2017\/12\/11]", "ko_KR": "...<<A<<[CHANGED 2017\/12\/12]", "zh_CN": "...<<A<<[CHANGED 2017\/12\/12]", "de_DE": "...", "zh_TW": "...<<A<<[CHANGED 2017\/12\/12]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "SMILE" } } ]
+  },
+  { "type": "EXIT", "count": 1 },
+  { "type": "EXIT", "count": 3 },
+
+  { "type": "EXIT", "count": 1 }
+]

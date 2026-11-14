@@ -12,11 +12,10 @@
 		"Beach Fight": {
 			"questid": "ape-battle",
 			"region": {
-				"linear": "23",
-				"open": "openDLC_Beach" 
+				"open": "dlc_archipelago" 
 			},
 			"condition": [
-				[ "region", "open", "open15.1" ],
+				[ "region", "open", "kajo.1" ],
 				[ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
@@ -28,10 +27,9 @@
 		"Trial of Ascension": {
 			"questid": "monks-3-jump_challenge_3",
 			"region": {
-				"linear": "23",
-				"open": "open3" 
+				"open": "bergen"
 			},
-			"condition": [ 
+			"condition": [
 				[ "quest", "Trial of Progression" ],
 				[ "item", "Wave", 1 ],
 				[ "item", "Heat", 1 ],
@@ -47,10 +45,9 @@
 		"Challenge of Ascension": {
 			"questid": "monks-jump_3_bonus",
 			"region": {
-				"linear": "23",
-				"open": "open3" 
+				"open": "bergen"
 			},
-			"condition": [ 
+			"condition": [
 				[ "quest", "Trial of Ascension" ]
 			],
 			"reward": [
@@ -60,8 +57,7 @@
 		"Ascension Timed Challenge": {
 			"questid": "monks-jump_3_time",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Challenge of Ascension" ]
@@ -70,8 +66,7 @@
 		"Ascension Frosty Challenge": {
 			"questid": "monks-jump_3_frosty",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "Challenge of Ascension" ]
@@ -80,14 +75,13 @@
 		"Spiritual Drinks": {
 			"questid": "bakiTrader-3-brewing_ghosts_1",
 			"region": {
-				"linear": "11",
-				"open": "open5" 
+				"open": "bakii" 
 			},
 			"condition": [ 
 				[ "quest", "Steamy Booze" ],
 				[ "quest", "Steamy Challenge" ],
 				[ "item", "Cold" ],
-				[ "region", "open", "openDLC_Beach" ],
+				[ "region", "open", "dlc_archipelago" ],
 				[ "or",
 					[ "var", "allowBoosterGrinding", "off" ],
 					[ "and",
@@ -95,11 +89,11 @@
 						[ "item", "Everlasting Amber" ],
 						[ "or",
 							[ "quest", "New Metal" ],
-							[ "region", "open", "open16" ],
-							[ "region", "open", "open10.Infested" ],
+							[ "region", "open", "ridge" ],
+							[ "region", "open", "garden.infested" ],
 							[ "and",
-								[ "region", "open", "open10.Right" ],
-								[ "region", "open", "open10.Left" ]
+								[ "region", "open", "garden.east" ],
+								[ "region", "open", "garden.west" ]
 							]
 						]
 					]
@@ -116,11 +110,12 @@
 		"Salty Detox": {
 			"questid": "jungleGreens-3-escort_2",
 			"region": {
-				"open": "open10"
+				"open": "basin"
 			},
 			"condition": [
 				[ "quest", "Rooting for Power" ],
-				[ "region", "open", "openDLC_Beach" ],
+				[ "region", "open", "dlc_archipelago" ],
+				[ "region", "open", "garden" ],
                 [ "item", "Cold", 1 ],
                 [ "item", "Wave", 1 ],
                 [ "item", "Azure Archipelago Pass", 1 ]
@@ -135,12 +130,11 @@
 		"Wrath of Goat": {
 			"questid": "bg-3-goat_final",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"open": "bergen"
 			},
 			"condition": [
 				[ "quest", "In Cawhoofs" ],
-				[ "region", "open", "open20" ],
+				[ "region", "open", "rhombus" ],
                 [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
@@ -153,22 +147,21 @@
 		"In Cawhoofs": {
 			"questid": "jungleGuard-3-papagang_goats_1",
 			"region": {
-				"linear": "23",
-				"open": "open10" 
+				"open": "basin"
 			},
-			"condition": [ 
+			"condition": [
 				[ "quest", "The Goatfather" ],
 				[ "quest", "High Crating" ],
 				[ "any_element" ],
-				[ "region", "open", "open3" ],
-				[ "region", "open", "open10.Right" ],
-				[ "region", "open", "open11" ],
+				[ "region", "open", "bergen" ],
+				[ "region", "open", "garden.east" ],
+				[ "region", "open", "basin.slums" ],
 				[ "or",
-					[ "region", "open", "open10.Left" ],
+					[ "region", "open", "garden.west" ],
 					[ "and",
-						[ "region", "open", "open5" ],
-						[ "region", "open", "open8" ],
-						[ "region", "open", "open10.Infested" ]
+						[ "region", "open", "valley" ],
+						[ "region", "open", "harbor.north" ],
+						[ "region", "open", "garden.infested" ]
 					]
 				],
                 [ "item", "Azure Archipelago Pass", 1 ]
@@ -183,15 +176,14 @@
 		"Riches with Fridges": {
 			"questid": "jungleTrader-3-shad_fridge_1",
 			"region": {
-				"linear": "23",
-				"open": "open10" 
+				"open": "basin"
 			},
 			"condition": [ 
 				[ "quest", "Melting this Cold Fiend" ],
 				[ "item", "Shock" ],
-				[ "region", "open", "open10.Right" ],
-				[ "region", "open", "open10.Infested" ],
-				[ "region", "open", "open16" ],
+				[ "region", "open", "garden.east" ],
+				[ "region", "open", "garden.infested" ],
+				[ "region", "open", "ridge" ],
                 [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
@@ -204,13 +196,12 @@
 		"Lost and On the Run": {
 			"questid": "seizui-quest",
 			"region": {
-				"linear": "23",
-				"open": "open20" 
+				"open": "rhombus" 
 			},
 			"condition": [
-				[ "region", "open", "open3" ],
-				[ "region", "open", "open5" ],
-				[ "region", "open", "open10.Infested" ],
+				[ "region", "open", "trail" ],
+				[ "region", "open", "valley" ],
+				[ "region", "open", "garden.infested" ],
 				[ "item", "Heat" ],
                 [ "item", "Azure Archipelago Pass", 1 ]
 			],
@@ -224,8 +215,7 @@
 		"Trouble on the Highway": {
 			"questid": "autobahn",
 			"region": {
-				"linear": "23",
-				"open": "open20" 
+				"open": "rhombus" 
 			},
 			"condition": [
 				[ "item", "Azure Archipelago Pass", 1 ]
@@ -240,15 +230,14 @@
 		"Tremors of the Past": {
 			"questid": "tremor-1",
 			"region": {
-				"linear": "23",
-				"open": "open20" 
+				"open": "rhombus" 
 			},
 			"condition": [
 				[ "item", "Tremor Engine", 4 ],
 				[ "item", "Humming Razor", 1 ],
 				[ "item", "Shock", 1 ],
-				[ "region", "open", "open10.Right" ],
-				[ "region", "open", "open16" ],
+				[ "region", "open", "garden.east" ],
+				[ "region", "open", "ridge" ],
                 [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
@@ -260,8 +249,7 @@
 		"Wetter Work": {
 			"questid": "rhg-4-maritime_smuggle_2",
 			"region": {
-				"linear": "23",
-				"open": "open2" 
+				"open": "harbor" 
 			},
 			"condition": [ 
 				[ "quest", "Wet Work" ],

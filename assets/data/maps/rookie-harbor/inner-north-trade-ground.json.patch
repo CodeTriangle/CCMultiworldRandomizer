@@ -1,0 +1,14 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+
+  {
+    "type": "INCLUDE",
+    "_comment": "Trader changes",
+    "src": "mod:patches/traders/rh-north-trade-ground.json"
+  },
+
+  { "type": "EXIT" }  
+]

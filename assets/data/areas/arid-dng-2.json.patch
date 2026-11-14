@@ -1,0 +1,27 @@
+[
+  { "type": "ENTER", "index": ["floors"] },
+	{ "type": "ENTER", "index": ["5", "maps"] },
+  { 
+    "type": "ADD_ARRAY_ELEMENT", 
+    "_comment": "Add middle checkpoint for VT",
+		"content": {
+					"path": "arid-dng.second.f99.pre-creator",
+					"offset": {
+						"x": 0,
+						"y": 0
+					},
+					"dungeon": "",
+					"name": {
+						"en_US": "???",
+						"langUid": 18,
+						"de_DE": "???",
+						"ja_JP": "\u30bb\u30f3\u30bf\u30fc\u30a8\u30ec\u30d9\u30fc\u30bf\u30fc ??\u968e<<A<<[CHANGED 2018\/08\/01]",
+						"ko_KR": "\uc911\uc559 \uc5d8\ub9ac\ubca0\uc774\ud130 ??\uce35<<A<<[CHANGED 2018\/08\/01]",
+						"zh_CN": "\u4e2d\u592e\u7535\u68af ??\u5c42<<A<<[CHANGED 2018\/08\/01]",
+						"zh_TW": "\u4e2d\u592e\u96fb\u68af ??\u5c64<<A<<[CHANGED 2018\/08\/01]"
+					}
+				}
+  },
+	{ "type": "EXIT", "count": 2 },	  
+	{ "type": "EXIT" }	  
+]

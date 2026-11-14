@@ -1,0 +1,33 @@
+[
+	{
+		"type": "ENTER",
+		"index": ["entities"]
+	},
+	{
+		"type": "ENTER",
+		"_comment": "Remove plotline and member locking from finishing the dungeon",
+		"index": [123, "settings","event"]
+	},
+	{
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "values": [292,293,294,295,296,297,298,299,300,302,303],
+        "body": [
+					{ 
+						"type": "SET_KEY", 
+						"index": "__INDEX__", 
+						"content": {
+							"ignoreSlowDown": false,
+							"type": "WAIT",
+							"time": 0
+						} 
+					}]
+    },
+	{
+		"type": "EXIT",
+		"count": 3
+	}, 
+	{
+		"type": "EXIT"
+	}
+]

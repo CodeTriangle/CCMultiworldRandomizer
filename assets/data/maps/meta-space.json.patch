@@ -23,7 +23,45 @@
 			}
 		}
 	},
-	{
-		"type": "EXIT"
-	}
+
+    { "type": "ENTER", "index": [4, "settings","event"] },
+    {
+        "type": "FOR_IN",
+        "_comment": "Replace events where party gets locked",
+        "keyword": "__INDEX__",
+        "values": [14, 15, 16, 17, 18, 19, 20, 21, 22],
+        "body": [{
+            "type": "SET_KEY",
+            "index": "__INDEX__",
+            "content": { "ignoreSlowDown": false, "type": "WAIT", "time": 0.1 }
+        }]
+    },
+    { "type": "EXIT", "count": 3 },
+
+    { "type": "ENTER", "index": [9, "settings","event",8,"0"] },
+    {
+        "_comment": "Reset shareholder events for good ending (replaces vermillion tp removal)",
+        "type": "SET_KEY",
+        "index": "14",
+        "content": { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.shareholder", "value": 0 }
+    },
+    {
+        "_comment": "Replace barrier getting closed to Vermillion with mobility block removal",
+        "type": "SET_KEY",
+        "index": "23",
+        "content": { "type": "SET_MOBILITY_BLOCK", "value": "NONE" }
+    },
+    {
+        "_comment": "Redirect teleport to guild to CrossCentral",
+        "type": "SET_KEY",
+        "index": "25",
+        "content": {
+            "type": "TELEPORT",
+            "map": "rhombus-sqr.central-inner",
+            "marker": "balconyExit"
+        }
+    },
+    { "type": "EXIT", "count": 5 },
+
+    { "type": "EXIT", "count": 1 }
 ]

@@ -1,0 +1,14 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [98, "settings"] },
+    {
+        "type": "SET_KEY",
+        "_comment": "Allow the element ball changer to be there by default",
+        "index": "condition",
+        "content": ""
+    },
+    { "type": "EXIT", "count": 2 },
+
+    { "type": "EXIT", "count": 1 }
+]

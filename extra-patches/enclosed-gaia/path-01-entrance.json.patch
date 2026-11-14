@@ -1,0 +1,23 @@
+[
+    {
+        "type": "ENTER",
+        "index": "entities"
+    },
+
+    {
+        "type": "ENTER",
+        "index": ["578", "settings", "event"]
+    },
+    {
+		"type": "SET_KEY",
+        "index": 48,
+		"content": { "type": "GIVE_ITEM", "item": "west-gaia-pass", "amount": 1 }
+	},
+    {
+		"type": "SET_KEY",
+        "index": 49,
+		"content": { "type": "GIVE_ITEM", "item": "east-gaia-pass", "amount": 1 }
+	},
+    { "type": "EXIT", "count": 3},
+    { "type": "EXIT" }
+]

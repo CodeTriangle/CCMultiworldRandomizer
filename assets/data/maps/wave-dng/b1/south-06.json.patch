@@ -1,0 +1,52 @@
+[
+  {
+    "type": "ENTER",
+    "index": "entities"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Add new ball changers to remove heat requirement",
+    "content": {
+			"type": "BallChanger",
+			"x": 404,
+			"y": 904,
+			"level": 1,
+			"settings": {
+				"name": "BallChangerNew1",
+				"mapId": 1278,
+				"condition": "",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "HEAT"
+					}
+				}
+			}
+		}
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Add new ball changers to remove heat requirement",
+    "content": {
+			"type": "BallChanger",
+			"x": 404,
+			"y": 620,
+			"level": 1,
+			"settings": {
+				"name": "BallChangerNew2",
+				"mapId": 1279,
+				"condition": "",
+				"changerType": {
+					"type": "CHANGE_ELEMENT",
+					"settings": {
+						"element": "HEAT"
+					}
+				}
+			}
+		}
+  },
+  {
+    "type": "EXIT",
+    "count": 1
+  }
+]

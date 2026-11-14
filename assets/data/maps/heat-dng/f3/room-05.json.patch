@@ -1,0 +1,323 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [46, "settings"]
+    },
+    {
+        "_comment": "Changing right barrier to barrier2 to separate it from the left one",
+        "type": "SET_KEY",
+        "index": "spawnCondition",
+        "content": "tmp.barrierUp2"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "index": [49, "settings"]
+    },
+    {
+        "_comment": "Change battle start event",
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [
+                    {
+                        "mode": "MEDIUM",
+                        "type": "PAUSE_BGM"
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.barrierUp",
+                        "value": true
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.barrierUp2",
+                        "value": true
+                    },
+                    {
+                        "pos": {
+                            "x": 728,
+                            "y": 296
+                        },
+                        "speed": "FAST",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0,
+                        "zoom": 1,
+                        "type": "SET_CAMERA_POS"
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.golem",
+                        "value": true
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.05
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "golem"
+                        },
+                        "action": [
+                            {
+                                "duration": -1,
+                                "align": "CENTER",
+                                "rotateFace": 0,
+                                "flipLeftFace": false,
+                                "wait": false,
+                                "waitSkip": 0,
+                                "actionDetached": false,
+                                "type": "SHOW_EFFECT",
+                                "effect": {
+                                    "sheet": "enemies.heat-dng",
+                                    "name": "heatGolemJumpWhirl"
+                                },
+                                "offset": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 0
+                                }
+                            },
+                            {
+                                "wait": false,
+                                "viaWalkConfig": false,
+                                "type": "SHOW_ANIMATION",
+                                "anim": "rotateMove"
+                            },
+                            {
+                                "value": 1,
+                                "type": "SET_RELATIVE_SPEED"
+                            },
+                            {
+                                "value": 500,
+                                "type": "SET_Z_VEL"
+                            },
+                            {
+                                "target": {
+                                    "x": 728,
+                                    "y": 344,
+                                    "lvl": "1"
+                                },
+                                "precise": true,
+                                "type": "MOVE_TO_POINT"
+                            },
+                            {
+                                "type": "WAIT_UNTIL_ON_GROUND"
+                            },
+                            {
+                                "face": "SOUTH",
+                                "rotate": false,
+                                "rotateSpeed": 3,
+                                "type": "SET_FACE"
+                            },
+                            {
+                                "wait": false,
+                                "viaWalkConfig": false,
+                                "type": "SHOW_ANIMATION",
+                                "anim": "preShoot"
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": false,
+                        "keepState": true,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "golem"
+                        },
+                        "offsetX": 0,
+                        "offsetY": 0,
+                        "speed": "FAST",
+                        "transition": "EASE_IN_OUT",
+                        "wait": false,
+                        "waitSkip": 0,
+                        "zoom": 1,
+                        "type": "SET_CAMERA_TARGET"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "golem"
+                        },
+                        "type": "WAIT_UNTIL_ACTION_DONE"
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.bubble",
+                        "value": true
+                    },
+                    {
+                        "target": {
+                            "player": true
+                        },
+                        "type": "SET_SCREEN_ENEMY_TARGET"
+                    },
+                    {
+                        "value": true,
+                        "type": "SET_FORCE_COMBAT"
+                    },
+                    {
+                        "mode": "MEDIUM",
+                        "type": "PAUSE_BGM"
+                    },
+                    {
+                        "enemy": {
+                            "global": true,
+                            "name": "golem"
+                        },
+                        "actionName": "HeatAuraLand",
+                        "type": "DO_ENEMY_ACTION"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "golem"
+                        },
+                        "type": "WAIT_UNTIL_ACTION_DONE"
+                    },
+                    {
+                        "bgm": "oldHideoutBattle",
+                        "volume": 1,
+                        "mode": "IMMEDIATELY",
+                        "type": "PUSH_BGM"
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "golem"
+                        },
+                        "type": "ADD_PLAYER_CAMERA_TARGET"
+                    },
+                    {
+                        "effectType": "LAST_ENEMY_ZOOM",
+                        "type": "SET_FINAL_DRAMATIC_EFFECT"
+                    },
+                    {
+                        "speed": "NORMAL",
+                        "transition": "EASE_IN_OUT",
+                        "wait": false,
+                        "waitSkip": 0,
+                        "type": "RESET_CAMERA"
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.5
+                    }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+
+    {
+        "type": "ENTER",
+        "index": [51, "settings"]
+    },
+    {
+        "_comment": "Change battle end event",
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [
+                    {
+                        "mode": "SLOW",
+                        "type": "RESUME_DEFAULT_BGM"
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.bubble",
+                        "value": false
+                    },
+                    {
+                        "entity": {
+                            "global": true,
+                            "name": "golem"
+                        },
+                        "type": "REMOVE_PLAYER_CAMERA_TARGET"
+                    },
+                    {
+                        "value": false,
+                        "type": "SET_FORCE_COMBAT"
+                    },
+                    {
+                        "type": "CALL_EVENT_FROM_SHEET",
+                        "eventCall": {
+                            "path": "puzzle",
+                            "name": "focusEnemyCounterQuick",
+                            "input": {
+                                "counterPos": {
+                                    "x": 728,
+                                    "y": 348
+                                },
+                                "targetPos": {
+                                    "x": 728,
+                                    "y": 264
+                                },
+                                "wait": 0.6,
+                                "postCondition": "map.postDone",
+                                "variable": "map.battleDone"
+                            }
+                        }
+                    },
+                    {
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.barrierUp",
+                        "changeType": "set",
+                        "value": false
+                    }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "index": [53, "settings"]
+    },
+    {
+        "_comment": "Change chest grab variable to only lower right barrier",
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "tmp.barrierUp2",
+                        "value": false
+                    }
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }    
+    
+]

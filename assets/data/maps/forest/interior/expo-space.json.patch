@@ -1,0 +1,15 @@
+[
+  { "type": "ENTER", "index": [ "entities", 4, "settings", "event" ] },
+  {
+    "type": "SET_KEY",
+    "_comment": "Change expo cutscene variables for meteor shade and RH expo space",
+    "index": 30,
+    "content":  { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.meteorShade", "value": 2 }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Change expo cutscene variables for meteor shade and RH expo space",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "plot.dojo-end", "changeType": "set", "value": true }
+  },
+  { "type": "EXIT", "count": 4 }
+]

@@ -1,0 +1,56 @@
+[
+  { "type": "ENTER", "index": ["entities"] },
+
+  { "type": "ENTER", "_comment": "Edit barrier block event", "index": [4,  "settings"] },
+  { "type": "SET_KEY", "index": "event", "content": [ { "entity": { "player": true }, "text": { "en_US": "Missing Shades", "de_DE": "Kein Pass", "zh_CN": "\u7f3a\u5c11\u901a\u884c\u8bc1<<A<<[CHANGED 2018\/07\/09]", "ja_JP": "\u901a\u884c\u8a3c\u304c\u5fc5\u8981\u3067\u3059<<A<<[CHANGED 2018\/07\/09]", "ko_KR": "\ud1b5\ud589\uc99d \uc5c6\uc74c<<A<<[CHANGED 2018\/07\/09]", "langUid": 52, "zh_TW": "\u7f3a\u5c11\u901a\u884c\u8b49<<A<<[CHANGED 2018\/07\/09]" }, "mode": "NO_LINE", "color": "RED", "hideOutsideOfScreen": false, "time": 1.2, "type": "SHOW_AR_MSG" }, { "entity": { "player": true }, "action": [ { "value": "IGNORE", "type": "SET_COLL_TYPE" }, { "duration": -1, "align": "BOTTOM", "rotateFace": 0, "flipLeftFace": false, "wait": false, "waitSkip": 0, "actionDetached": false, "fixPos": false, "type": "SHOW_EFFECT", "effect": { "sheet": "map.barrier", "name": "entryBlockedHover" }, "offset": { "x": 0, "y": 0, "z": 0 } }, { "value": 16, "type": "SET_FLOAT_HEIGHT" }, { "value": true, "type": "SET_FACE_FIX" }, { "value": 0.8, "type": "SET_RELATIVE_SPEED" }, { "wait": false, "type": "SHOW_EXTERN_ANIM", "anim": { "sheet": "player", "name": "hover" } }, { "time": 0.3, "type": "WAIT" }, { "time": 0.5, "stopBeforeEdge": false, "type": "MOVE_BACKWARD" }, { "time": 0.5, "type": "WAIT" }, { "value": 0, "type": "SET_FLOAT_HEIGHT" }, { "type": "WAIT_UNTIL_ON_GROUND" }, { "wait": false, "type": "SHOW_EXTERN_ANIM", "anim": { "sheet": "player-poses", "name": "landOnGround" } } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.barrierBlock", "value": false } ] },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": 3 },
+  { 
+    "type": "SET_KEY", 
+    "index": "settings",
+    "_comment": "Change lower barrier icon", 
+    "content": {
+      "name": "barrierSignB",
+      "mapId": 2842,
+      "propType": { "sheet": "autumn", "name": "barrierSignFlame" },
+      "propAnim": "off",
+      "condAnims": [{ "0": " ", "condition": "map.barrierOpen", "anim": "on" }],
+      "spawnCondition": ""
+    }
+  },
+  { "type": "EXIT", "count": 1 },
+
+  { "type": "ENTER", "index": 5 },
+  { "type": "SET_KEY", "index": "x", "_comment": "Move barrier block to inside the barrier", "content": 1516 },
+  { "type": "ENTER", "index": "settings" },
+  { "type": "SET_KEY", "index": "size", "content": { "x": 16, "y": 160 } },
+  { "type": "EXIT", "count": 2 },
+  
+  { "type": "ENTER", "index": 703 },
+  { "type": "SET_KEY", "index": "x", "_comment": "Move barrier open to the middle and activate with both shades", "content": 1438 },
+  { "type": "ENTER", "index": "settings" },
+  { "type": "SET_KEY", "index": "startCondition", "content": "item.410.amount >= 1 && item.230.amount >= 1" },
+  { "type": "EXIT", "count": 2 },
+  
+  { "type": "ENTER", "index": [702,"settings","event"] },
+  { 
+    "type": "ADD_ARRAY_ELEMENT", 
+    "index": 1, 
+    "_comment": "Add Flame Shade effect to barrier open", 
+    "content": {
+      "entity": { "player": true },
+      "duration": -1,
+      "align": "TOP",
+      "group": "shade",
+      "wait": false,
+      "waitSkip": 0,
+      "type": "SHOW_EFFECT",
+      "effect": { "sheet": "map.barrier", "name": "redFlame" },
+      "offset": { "x": 0, "y": 0, "z": -12 }
+    } 
+  },
+  { "type": "EXIT", "count": 3 },
+
+  { "type": "EXIT", "count": 1 }
+]

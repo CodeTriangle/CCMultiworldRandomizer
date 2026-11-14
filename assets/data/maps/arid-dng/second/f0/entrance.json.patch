@@ -1,0 +1,31 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    {
+        "type": "ENTER",
+        "_comment": "Remove the plotline at the start of the tower for the sake of other cutscenes and events",
+        "index": [44, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "endCondition",
+        "content": "map.firstEntry"
+    },
+    { "type": "ENTER", "index": ["event"] },
+    {
+        "type": "SET_KEY",
+        "index": 15,
+        "content": {
+                "changeType": "set",
+                "type": "CHANGE_VAR_BOOL",
+                "varName": "map.firstEntry",
+                "value": "true"
+            }
+    },
+    {
+        "type": "EXIT",
+        "count": 3
+    },  
+  
+    { "type": "EXIT", "count": 1 }  
+]

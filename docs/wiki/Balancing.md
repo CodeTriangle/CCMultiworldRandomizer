@@ -1,4 +1,4 @@
-This document contains the various current balancing proposals
+This document contains the various current balancing proposals.
 
 ## Zelda Mode
 

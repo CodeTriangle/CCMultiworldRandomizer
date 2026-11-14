@@ -1,0 +1,447 @@
+{
+	"level": 99,
+	"params": {
+		"hp": 999999,
+		"attack": 365,
+		"defense": 999,
+		"focus": 365,
+		"elemFactor": [1, 1, 1, 1]
+	},
+	"credit": 16,
+	"exp": 30,
+	"maxSp": 8,
+	"enduranceScale": 1,
+	"healDropRate": 0,
+	"boss": false,
+	"bossOrder": 0,
+	"padding": { "x": 2, "y": 2 },
+	"material": "METAL",
+	"aiGroup": "",
+	"aiLearnType": "IMMEDIATELY",
+	"ignoreTaunts": true,
+	"itemDrops": [],
+	"targetDetect": {
+		"detectDistance": 1060,
+		"loseDistance": 100000,
+		"notifyNeighbourRadius": 100
+	},
+	"hpBreaks": [],
+	"size": { "x": 2, "y": 2, "z": 2 },
+	"anims": "enemies.mega-laser",
+	"defaultState": "IDLE",
+	"walkConfigs": { "normal": { "idle": "idle", "move": "idle" } },
+	"_wm": null,
+	"walkAnims": "normal",
+	"groundConnect": "FIXED",
+	"weight": -1,
+	"maxVel": 180,
+	"jumpingEnabled": true,
+	"collType": "NONE",
+	"shadow": 0,
+	"damageFactor": 0,
+	"hitStable": "LIGHT",
+	"hitIgnore": true,
+	"annotate": {
+		"active": "NONE",
+		"passive": "IMMUNE",
+		"weapon": "ANY",
+		"element": "ANY",
+		"extra": []
+	},
+	"hpBar": "HIDDEN",
+	"DOCTYPE": "ENEMY",
+	"trackers": {
+	},
+	"states": {
+		"IDLE": {
+			"enabledReactions": [],
+			"choices": [
+				{ "action": "Idle" }
+			]
+		},
+		"DEFAULT": {
+			"choices": [
+				{ "action": "BattleIdle" }
+			]
+		},
+		"PASSIVE_INVIS": {
+			"weight": -1,
+			"hitIgnore": true,
+			"aggression": "PEACEFUL",
+			"annotate": {
+				"active": "NONE",
+				"passive": "IMMUNE",
+				"weapon": "ANY",
+				"element": "ANY",
+				"extra": []
+			},
+			"choices": []
+		}
+	},
+	"proxies": {
+		"actualMegaLaser": {
+			"copyOwnerAnims": false,
+			"breakType": "ACTION",
+			"action": [
+				{
+					"duration": -1,
+					"align": "BOTTOM",
+					"rotateFace": 0,
+					"flipLeftFace": false,
+					"wait": false,
+					"waitSkip": 0,
+					"actionDetached": false,
+					"group": "laser",
+					"target2": "SELF",
+					"target2Offset": { "x": 0, "y": 0, "z": 600 },
+					"fixPos": false,
+					"type": "SHOW_EFFECT",
+					"effect": { "sheet": "enemies.arid", "name": "mLaserImpact1" },
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				},
+				{ "value": -1500, "type": "SET_Z_VEL" },
+				{
+					"stopType": "LANDED",
+					"stopBeforeTime": 0,
+					"distance": 0,
+					"missileMode": 0,
+					"cancelIfBelowFall": true,
+					"type": "JUMP_TARGET_MOVEMENT"
+				},
+				{ "type": "CLEAR_EFFECTS" },
+				{ "type": "ADD_Z_POS_DELTA", "zDelta": 128 },
+				{ "value": 128, "type": "SET_FLY_HEIGHT" },
+				{ "value": 0, "type": "SET_Z_VEL" },
+				{
+					"attribName": "laserTime",
+					"changeType": "set",
+					"type": "SET_ATTRIB_NUMBER",
+					"value": 3
+				},
+				{ "name": "loop", "type": "LABEL" },
+				{
+					"withElse": false,
+					"type": "IF",
+					"condition": "!entity.attrib.init",
+					"thenStep": [
+						{ "name": "init", "type": "SET_ATTRIB_BOOL", "value": true },
+						{
+							"duration": -1,
+							"align": "BASE",
+							"rotateFace": 0,
+							"flipLeftFace": false,
+							"wait": false,
+							"waitSkip": 0,
+							"actionDetached": false,
+							"group": "laser",
+							"target2": "SELF",
+							"target2Offset": { "x": 0, "y": 0, "z": 600 },
+							"fixPos": false,
+							"type": "SHOW_EFFECT",
+							"effect": { "sheet": "enemies.arid", "name": "mLaserImpact2" },
+							"offset": { "x": 0, "y": 0, "z": 0 }
+						},
+						{
+							"zoomType": "LIGHT",
+							"fadeIn": 0.1,
+							"duration": -1,
+							"fadeOut": 0.1,
+							"name": "blur",
+							"type": "SET_ZOOM_BLUR"
+						},
+						{
+							"align": "BASE",
+							"radius": 64,
+							"yScale": 0,
+							"zHeight": 0,
+							"centralAngle": 0,
+							"duration": 0.2,
+							"expandRadius": 0,
+							"alwaysFull": true,
+							"clockwise": false,
+							"flipLeftFace": 0,
+							"rectangular": false,
+							"repeat": true,
+							"uniformHitDir": false,
+							"fixPos": false,
+							"checkCollision": false,
+							"type": "CIRCLE_ATTACK",
+							"attack": {
+								"type": "LIGHT",
+								"visualType": "HEAVY",
+								"element": "NEUTRAL",
+								"damageFactor": 0.33,
+								"fly": "LIGHT",
+								"reverse": false,
+								"guardable": "NEVER",
+								"skillBonus": "RANGED_DMG",
+								"limiter": ""
+							},
+							"offset": { "x": 0, "y": 0, "z": 0 }
+						},
+						{
+							"duration": -1,
+							"align": "BASE",
+							"rotateFace": 0,
+							"flipLeftFace": false,
+							"wait": false,
+							"waitSkip": 0,
+							"actionDetached": false,
+							"group": "ground",
+							"fixPos": false,
+							"type": "SHOW_EFFECT",
+							"effect": { "sheet": "enemies.arid", "name": "mLaserGroundHit" },
+							"offset": { "x": 0, "y": 0, "z": 0 }
+						},
+						{ "value": 200, "type": "SET_SPEED" }
+					]
+				},
+				{
+					"min": 0,
+					"max": 8,
+					"maxTime": 0.1,
+					"forceTime": true,
+					"rotateSpeed": 1,
+					"stopBeforeEdge": false,
+					"type": "MOVE_TO_DISTANCE"
+				},
+				{
+					"attribName": "laserTime",
+					"changeType": "sub",
+					"type": "SET_ATTRIB_NUMBER",
+					"value": 0.1
+				},
+				{
+					"withElse": false,
+					"type": "IF",
+					"condition": "entity.attrib.laserTime > 0",
+					"thenStep": [{ "name": "loop", "type": "GOTO_LABEL" }]
+				},
+				{ "name": "end", "type": "LABEL" },
+				{ "name": "blur", "fadeOut": 0.2, "type": "FADE_OUT_ZOOM_BLUR" },
+				{ "type": "STOP_REPEATING_FORCE" },
+				{ "type": "CLEAR_EFFECTS" }
+			],
+			"invisible": false,
+			"hp": 0,
+			"stickToSource": "NONE",
+			"stickFaceAlign": false,
+			"group": "",
+			"startAnim": "",
+			"size": { "x": 8, "y": 8, "z": 32 },
+			"config": {},
+			"type": "GENERIC"
+		},
+		"bombRain": {
+			"copyOwnerAnims": false,
+			"breakType": "ACTION",
+			"invisible": false,
+			"hp": 0,
+			"stickToSource": "NONE",
+			"stickFaceAlign": false,
+			"group": "",
+			"startAnim": "",
+			"size": { "x": 32, "y": 32, "z": 32 },
+			"config": {},
+			"type": "GENERIC",
+			"action": [{
+				"count": 8,
+				"align": "BOTTOM",
+				"area": { "x": 92, "y": 92 },
+				"zVary": 100,
+				"type": "RAIN_BOMB",
+				"offset": { "x": 0, "y": 0, "z": 500 }
+			}]
+		},
+		"iceCage": {
+			"copyOwnerAnims": false,
+			"breakType": "ACTION",
+			"invisible": false,
+			"hp": 0,
+			"stickToSource": "NONE",
+			"stickFaceAlign": false,
+			"group": "",
+			"startAnim": "",
+			"size": { "x": 32, "y": 32, "z": 32 },
+			"config": {},
+			"type": "GENERIC",
+			"action": [{
+				"align": "BOTTOM",
+				"area": { "x": 64, "y": 64 },
+				"zVary": 0,
+				"type": "ICE_CAGE",
+				"offset": { "x": 0, "y": 0, "z": 100 }
+			}]
+		}
+	},
+	"actions": {
+		"Idle": [{"type": "SET_Z_GRAVITY_FACTOR", "value": 0},{"type": "SET_FLOAT_HEIGHT", "value": 0},{ "time": 0.3, "type": "WAIT" }],
+		"Laser": [
+			{ "value": "MASSIVE", "type": "SET_HIT_STABLE" },
+			{ "kind": "PLAYER", "type": "SET_TEMP_TARGET", "key": { "player": true } },
+			{
+				"wait": true,
+				"viaWalkConfig": false,
+				"type": "SHOW_ANIMATION",
+				"anim": "preCharge"
+			},
+			{
+				"duration": 0,
+				"align": "BOTTOM",
+				"rotateFace": 0,
+				"flipLeftFace": false,
+				"wait": false,
+				"waitSkip": 0,
+				"actionDetached": false,
+				"fixPos": false,
+				"spriteFilter": [1, 4, 6, 8],
+				"type": "SHOW_EFFECT",
+				"effect": { "sheet": "enemies.arid", "name": "mLaserCharge1" },
+				"offset": { "x": 0, "y": 0, "z": 0 }
+			},
+			{
+				"duration": 4,
+				"align": "BOTTOM",
+				"rotateFace": 0,
+				"flipLeftFace": false,
+				"wait": false,
+				"waitSkip": 0,
+				"actionDetached": false,
+				"fixPos": false,
+				"spriteFilter": [1, 4, 6, 8],
+				"type": "SHOW_EFFECT",
+				"effect": { "sheet": "enemies.arid", "name": "mLaserCharge2" },
+				"offset": { "x": 0, "y": 0, "z": 72 }
+			},
+			{
+				"wait": false,
+				"viaWalkConfig": false,
+				"type": "SHOW_ANIMATION",
+				"anim": "charge"
+			},
+			{ "time": 1, "type": "WAIT" },
+			{
+				"wait": false,
+				"viaWalkConfig": false,
+				"type": "SHOW_ANIMATION",
+				"anim": "charge2"
+			},
+			{ "time": 2.8, "type": "WAIT" },
+			{ "type": "CLEAR_EFFECTS" },
+			{
+				"wait": false,
+				"viaWalkConfig": false,
+				"type": "SHOW_ANIMATION",
+				"anim": "shoot"
+			},
+			{
+				"duration": -1,
+				"align": "BOTTOM",
+				"rotateFace": 0,
+				"flipLeftFace": false,
+				"wait": false,
+				"waitSkip": 0,
+				"actionDetached": false,
+				"fixPos": false,
+				"spriteFilter": [1, 4, 6, 8],
+				"type": "SHOW_EFFECT",
+				"effect": { "sheet": "enemies.arid", "name": "mLaserShoot" },
+				"offset": { "x": 0, "y": 0, "z": 0 }
+			},
+			{
+				"duration": -1,
+				"align": "BOTTOM",
+				"rotateFace": 0,
+				"flipLeftFace": false,
+				"wait": false,
+				"waitSkip": 0,
+				"actionDetached": false,
+				"target2": "SELF",
+				"target2Offset": { "x": 0, "y": 0, "z": 2000 },
+				"fixPos": false,
+				"type": "SHOW_EFFECT",
+				"effect": { "sheet": "enemies.arid", "name": "mLaserShoot2" },
+				"offset": { "x": 0, "y": 0, "z": 72 }
+			},
+			{
+				"align": "BOTTOM",
+				"posType": "TARGET",
+				"type": "SHOOT_PROXY",
+				"proxy": "actualMegaLaser",
+				"offset": { "x": 0, "y": 0, "z": 1000 }
+			},
+			{ "type": "WAIT_UNTIL_PROXIES_DONE" },
+			{ "type": "CLEAR_EFFECTS" },
+			{ "time": 15, "type": "WAIT" },
+			{
+				"type": "SELF_DESTRUCT",
+				"noReward": true
+			}
+		],
+		"Bombing": [
+			{ "kind": "PLAYER", "type": "SET_TEMP_TARGET", "key": { "player": true } },
+			{
+				"align": "BOTTOM",
+				"posType": "TARGET",
+				"type": "SHOOT_PROXY",
+				"proxy": "bombRain",
+				"offset": { "x": 0, "y": 0, "z": 100 }
+			},
+			{ "type": "WAIT_UNTIL_PROXIES_DONE" },
+			{ "time": 5, "type": "WAIT" },
+			{ "time": 5, "type": "WAIT" },
+			{
+				"type": "SELF_DESTRUCT",
+				"noReward": true
+			}
+		],
+		"BattleIdle": [
+			{ "value": true, "type": "FACE_TO_TARGET" },
+			{ "minTime": 0.2, "maxTime": 0.4, "type": "WAIT_RANDOM" }
+		],
+		"IceCage": [
+			{ "kind": "PLAYER", "type": "SET_TEMP_TARGET", "key": { "player": true } },
+			{
+				"align": "BOTTOM",
+				"posType": "TARGET",
+				"type": "SHOOT_PROXY",
+				"proxy": "iceCage",
+				"offset": { "x": 0, "y": 0, "z": 100 }
+			},
+			{ "type": "WAIT_UNTIL_PROXIES_DONE" },
+			{ "time": 5, "type": "WAIT" },
+			{
+				"type": "SELF_DESTRUCT",
+				"noReward": true
+			}
+		]
+	},
+	"reactions": {
+	},
+	"meta": {
+		"species": {
+			"en_US": "Trap Master",
+			"de_DE": "Todesmaschine<<C<<Gepr\u00fcft: Minsu",
+			"zh_CN": "\u6b7b\u4ea1\u673a\u5668<<A<<[CHANGED 2017\/10\/10]",
+			"zh_TW": "\u6b7b\u4ea1\u6a5f\u5668<<A<<[CHANGED 2017\/10\/10]",
+			"ja_JP": "\u30c7\u30b9\u30de\u30b7\u30fc\u30f3<<A<<[CHANGED 2017\/11\/04]",
+			"ko_KR": "\uc8fd\uc74c\uc758 \uae30\uacc4<<A<<[CHANGED 2017\/10\/17]",
+			"langUid": 4
+		},
+		"category": "MECHA",
+		"descriptions": [
+			{
+				"text": {
+					"en_US": "Do not cross.",
+					"de_DE": "Nicht \u00fcberqueren.<<C<<Gepr\u00fcft: Minsu",
+					"zh_CN": "\u7981\u6b62\u901a\u884c<<A<<[CHANGED 2018\/08\/01]",
+					"zh_TW": "\u7981\u6b62\u901a\u884c<<A<<[CHANGED 2018\/08\/01]",
+					"ja_JP": "\u306a\u3081\u308b\u306a\u3088\u3002<<A<<[CHANGED 2018\/08\/01]",
+					"ko_KR": "\ub118\uc5b4\uac00\uc9c0 \ub9c8\uc2dc\uc624.<<A<<[CHANGED 2018\/08\/01]",
+					"langUid": 6
+				},
+				"condition": ""
+			}
+		]
+	}
+}

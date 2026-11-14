@@ -1,0 +1,56 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+
+  { "type": "ENTER", "index": [15, "settings"] },
+  {
+    "_comment": "Hide the pillar buttons",
+    "type": "SET_KEY",
+    "index": "spawnCondition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+  { "type": "ENTER", "index": [16, "settings"] },
+  {
+    "_comment": "Hide the pillar buttons",
+    "type": "SET_KEY",
+    "index": "spawnCondition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [8, "settings", "states", 1] },
+  {
+    "_comment": "Lower side pillar by default",
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "true"
+  },
+  { "type": "EXIT", "count": 4 },
+  { "type": "ENTER", "index": [9, "settings", "states", 1] },
+  {
+    "_comment": "Lower side pillar by default",
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "true"
+  },
+  { "type": "EXIT", "count": 4 },
+
+  {
+    "_comment": "Chest after finishing side",
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {"type":"Chest","x":216,"y":208,"level":4,"settings":{"name":"","chestType":"Bronze","item":"335","amount":2,"mapId":1270}}
+  },
+  {
+    "_comment": "Chest after finishing side",
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {"type":"Chest","x":568,"y":208,"level":4,"settings":{"name":"","chestType":"Bronze","item":"336","amount":1,"mapId":1271}}
+  },
+
+  {
+    "type": "EXIT",
+    "count": 1
+  }    
+]

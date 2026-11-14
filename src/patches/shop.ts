@@ -171,7 +171,6 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			if (
-				sc.multiworld.options.questDialogHints &&
 				sc.multiworld.options.shopDialogHints &&
 				toHint.length > 0 &&
 				sc.multiworld.client.authenticated

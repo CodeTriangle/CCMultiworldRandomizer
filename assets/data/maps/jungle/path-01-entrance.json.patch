@@ -1,0 +1,192 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [563,"settings"] },
+    {
+        "type": "SET_KEY",
+        "index": "variable",
+        "_comment": "Change Apollo intro trigger conditions from tmp to map",
+        "content": "map.apollo1"
+    },
+    { "type": "EXIT", "count": 2 },
+
+    { "type": "ENTER", "index": [564,"settings"] },
+    {
+        "type": "SET_KEY",
+        "_comment": "Change Apollo intro trigger conditions from tmp to map",
+        "index": "variable",
+        "content": "map.apollo2"
+    },
+    { "type": "EXIT", "count": 2 },
+
+    { "type": "ENTER", "index": [566,"settings"], "_comment": "Change Apollo intro cutscene" },
+    { "type": "SET_KEY", "index": "startCondition", "content": "map.apollo1 || map.apollo2" },
+    { "type": "SET_KEY", "index": "endCondition", "content": "plot.apolloFight >= 16400" },
+
+    { "type": "ENTER", "index": "event" },
+    { "type": "SET_KEY", "index": 2, "content": { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.apolloThere", "value": true } },
+    {
+        "type": "FOR_IN",
+        "_comment": "Exhausted expression",
+        "keyword": { "id": "__ID__", "value": "__VALUE__" },
+        "values": [{ "id": 3, "value": "0" },{ "id": 15, "value": "5" },{ "id": 28, "value": "0" }],
+        "body": [{ "type": "ENTER", "index": ["__ID__", "thenStep","__VALUE__","person"] },{ "type": "SET_KEY", "index": "expression", "content": "EXHAUSTED" },{ "type": "EXIT", "count": 4 }]
+    },  
+
+    { "type": "ENTER", "index": [4,"person"] },
+    { "type": "SET_KEY", "index": "expression", "content": "SURPRISED" },
+    { "type": "EXIT","count":2 },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Nods",
+        "keyword": "__INDEX__",
+        "values": [19,33],
+        "body": [{ "type": "ENTER", "index": ["__INDEX__", "person"] },{ "type": "SET_KEY", "index": "expression", "content": "EXHAUSTED" },{ "type": "EXIT", "count": 2 }]
+    },  
+    {
+        "type": "FOR_IN",
+        "_comment": "Exhausted expression",
+        "keyword": "__INDEX__",
+        "values": [30,32,46,49],
+        "body": [{ "type": "ENTER", "index": ["__INDEX__", "person"] },{ "type": "SET_KEY", "index": "expression", "content": "EXHAUSTED" },{ "type": "EXIT", "count": 2 }]
+    },  
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Change to map.apollo1",
+        "keyword": "__INDEX__",
+        "values": [3,12,15,28,44],
+        "body": [{ "type": "ENTER", "index": ["__INDEX__"] },{ "type": "SET_KEY", "index": "condition", "content": "map.apollo1" },{ "type": "EXIT" }]
+    },  
+    {
+        "type": "FOR_IN",
+        "_comment": "Change to plot.apollo",
+        "keyword": "__INDEX__",
+        "values": [40,51],
+        "body": [{ "type": "SET_KEY", "index": "__INDEX__", "content": { "type": "CHANGE_VAR_NUMBER", "varName": "plot.apolloFight", "value": 16400, "changeType": "set" } }]
+    },  
+
+    { "type": "ENTER", "index": [11,"action",1] },
+    { "type": "SET_KEY", "index": "condition", "content": "map.apollo1" },
+    { "type": "EXIT", "count": 3, "_comment": "Exit apollo event" },
+
+    { "type": "EXIT", "count": 3, "_comment": "Exit apollo event entity" },
+    
+    {
+        "type": "ENTER",
+        "_comment": "Replace PVP Event",
+        "index": [577,"settings","event"]
+    },
+    { "type": "ENTER", "index": [0,"thenStep",0,"thenStep",0,"thenStep",1,"person"] },
+    { "type": "SET_KEY", "index": "expression", "content": "WHISTLING" },
+    { "type": "EXIT", "count": 8 },
+
+    { "type": "ENTER", "index": [0,"elseStep",1,"thenStep",0,"person"] },
+    { "type": "SET_KEY", "index": "expression", "content": "MOPING" },
+    { "type": "EXIT", "count": 6 },
+
+    { "type": "ENTER", "index": [0,"elseStep",0,"thenStep",0,"elseStep",0,"elseStep",1,"person"] },
+    { "type": "SET_KEY", "index": "expression", "content": "EXHAUSTED" },
+    { "type": "EXIT", "count": 10 },
+
+    { "type": "ENTER", "index": [0,"thenStep",2,"thenStep",0,"thenStep",1,"person"] },
+    { "type": "SET_KEY", "index": "expression", "content": "SMUG" },
+    { "type": "EXIT", "count": 8 },
+
+    { "type": "EXIT", "count": 3 },
+
+    {
+        "type": "ENTER",
+        "_comment": "Replace Joern states",
+        "index": [576,"settings","npcStates"]
+    },
+    { "type": "ENTER", "index": 2 }, { "type": "SET_KEY", "index": "condition", "content": "plot.apolloFight >= 16500" }, { "type": "EXIT" },
+    { "type": "ENTER", "index": 3 }, { "type": "SET_KEY", "index": "condition", "content": "plot.apolloFight >= 16600" }, { "type": "EXIT" },
+    { "type": "EXIT", "count": 3 },
+
+    {
+        "type": "ENTER",
+        "_comment": "Replace Apollo states",
+        "index": [565,"settings","npcStates"]
+    },
+    { "type": "ENTER", "index": 0 }, { "type": "SET_KEY", "index": "condition", "content": "map.apolloThere" }, { "type": "EXIT" },
+    { "type": "ENTER", "index": 1 }, { "type": "SET_KEY", "index": "condition", "content": "plot.apolloFight >= 16400" }, { "type": "EXIT" },
+    { "type": "ENTER", "index": 2 }, { "type": "SET_KEY", "index": "condition", "content": "plot.apolloFight >= 16600" }, { "type": "EXIT" },
+    
+    { "type": "ENTER", "index": [1,"event"] }, 
+    { "type": "SET_KEY", "index": "quest", "content": [ { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 568, "y": 1608, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "self": true }, "action": [ { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "type": "IF", "withElse": true, "condition": "party.size >= 2", "thenStep": [ { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.fancyguy", "expression": "MOPING" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "I hope you're not thinking I'll fight a party of \\c[1]more than one member\\c[0].", "de_DE": "Wie ich sehe, sind deine Stats immer noch \\c[1]viel zu hoch für diesen Abschnitt\\c[0]!", "zh_CN": "看来你的属性\\c[1]依然远高于同场景水平\\c[0]!<<A<<[CHANGED 2019/08/25]", "ja_JP": "お前のステータスを見たが、いまだに\n\\c[1]今の時点で到達してるべき値を\nはるかに超えてる\\c[0]ぞ！<<A<<[CHANGED 2019/08/25]", "ko_KR": "네 스탯은 여전히 \\c[1]이 시점에서 예상되는 것보다 훨씬 높군\\c[0]!<<A<<[CHANGED 2019/08/25]", "langUid": 773, "zh_TW": "看來你的屬性\\c[1]依然遠高於同場景水平\\c[0]!<<A<<[CHANGED 2019/08/25]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "MOPING" } }, { "message": { "en_US": "Disband your party and let's start our duel.", "de_DE": "Obwohl der Unterschied bei weitem nicht mehr so drastisch ist wie früher einmal.", "zh_CN": "不过没有之前那么过分了。<<A<<[CHANGED 2019/08/16]", "ja_JP": "だがその違いは明らかに、\nかつてのような激しい差では\nなくなっているな。<<A<<[CHANGED 2019/08/16]", "ko_KR": "전처럼 극적으로 차이나지는 않지만.<<A<<[CHANGED 2019/08/16]", "langUid": 772, "zh_TW": "不過沒有之前那麼過分了。<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "...", "de_DE": "...", "zh_CN": "[点头]<<A<<[CHANGED 2018/03/14]", "ja_JP": "[うなずく]<<A<<[CHANGED 2018/03/14]", "ko_KR": "[끄덕]<<A<<[CHANGED 2018/03/14]", "langUid": 514, "zh_TW": "[點頭]<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ANNOYED" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "zh_CN": "[点头]<<A<<[CHANGED 2018/03/14]", "ja_JP": "[うなずく]<<A<<[CHANGED 2018/03/14]", "ko_KR": "[끄덕]<<A<<[CHANGED 2018/03/14]", "langUid": 514, "zh_TW": "[點頭]<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } } ], "elseStep": [ { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.fancyguy", "expression": "ANGRY" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "type": "IF", "withElse": true, "condition": "player.paramAvg >= 261", "thenStep": [ { "message": { "en_US": "I see your stats are still \\c[1]way above what would be expected at this point\\c[0]!", "de_DE": "Wie ich sehe, sind deine Stats immer noch \\c[1]viel zu hoch für diesen Abschnitt\\c[0]!", "zh_CN": "看来你的属性\\c[1]依然远高于同场景水平\\c[0]!<<A<<[CHANGED 2019/08/25]", "ja_JP": "お前のステータスを見たが、いまだに\n\\c[1]今の時点で到達してるべき値を\nはるかに超えてる\\c[0]ぞ！<<A<<[CHANGED 2019/08/25]", "ko_KR": "네 스탯은 여전히 \\c[1]이 시점에서 예상되는 것보다 훨씬 높군\\c[0]!<<A<<[CHANGED 2019/08/25]", "langUid": 773, "zh_TW": "看來你的屬性\\c[1]依然遠高於同場景水平\\c[0]!<<A<<[CHANGED 2019/08/25]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "SUSPICIOUS" } }, { "message": { "en_US": "Though the difference clearly isn't as dramatic as it used to be.", "de_DE": "Obwohl der Unterschied bei weitem nicht mehr so drastisch ist wie früher einmal.", "zh_CN": "不过没有之前那么过分了。<<A<<[CHANGED 2019/08/16]", "ja_JP": "だがその違いは明らかに、\nかつてのような激しい差では\nなくなっているな。<<A<<[CHANGED 2019/08/16]", "ko_KR": "전처럼 극적으로 차이나지는 않지만.<<A<<[CHANGED 2019/08/16]", "langUid": 772, "zh_TW": "不過沒有之前那麼過分了。<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } } ], "elseStep": [ { "type": "IF", "withElse": true, "condition": "player.paramAvg <= 146", "thenStep": [ { "message": { "en_US": "Hm...\\. Your \\c[3]stats seem rather low\\c[0]. I suggest you upgrade your \\c[3]circuits\\c[0] and \\c[3]equipment\\c[0] before the duel.", "de_DE": "Hm...\\. Deine \\c[3]Statuswerte sind ziemlich niedrig\\c[0]. Ich empfehle dir, deine \\c[3]Circuits\\c[0] und \\c[3]Ausrüstung\\c[0] vor dem Duell auszubauen.", "fr_FR": "fr_FR", "zh_CN": "嗯...\\.你的\\c[3]属性好像有点低\\c[0]。我建议你在决斗前升级\\c[3]电路\\c[0]和\\c[3]装备\\c[0]。<<A<<[CHANGED 2018/03/14]", "ja_JP": "ふむ...\\.お前のステータスは\\c[3]低すぎる\\c[0]ようだな。決闘の前に、\\c[3]サーキット\\c[0]や\\c[3]装備\\c[0]のアップグレードをしたほうがいいぞ。<<A<<[CHANGED 2018/03/14]", "langUid": 416, "ko_KR": "흠...\\. \\c[3]스탯이 너무 낮아\\c[0]. 결투 전에 \\c[3]회로\\c[0]랑 \\c[3]장비\\c[0]를 업그레이드하는 게 좋을 것 같아.<<A<<[CHANGED 2018/03/14]", "zh_TW": "嗯...\\.你的\\c[3]屬性好像有點低\\c[0]。我建議你在決鬥前升級\\c[3]電路\\c[0]和\\c[3]裝備\\c[0]。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "Unless you are very confident in your skills. But I don't want to hear any excuses!", "de_DE": "Es sei denn, du bist dir deiner Sache sicher. Aber dann will ich keine Ausreden hören!", "fr_FR": "fr_FR", "zh_CN": "除非你对自己的技术非常有自信。但是要是输了可别拿属性当借口。<<A<<[CHANGED 2018/03/14]", "ja_JP": "お前のスキルによほど自信がない限りな。どんな言い訳も聞くつもりはないぞ！<<A<<[CHANGED 2018/03/14]", "langUid": 506, "ko_KR": "스킬에 통달한 게 아니라면 말이야. 어떤 변명도 용납하지 않을 거야!<<A<<[CHANGED 2018/03/14]", "zh_TW": "除非你對自己的技術非常有自信。但是要是輸了不要拿屬性當藉口。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "SUSPICIOUS" } } ], "elseStep": [ { "message": { "en_US": "I see you are prepared.", "de_DE": "Ich sehe, du hast dich vorbereitet.", "fr_FR": "fr_FR", "zh_CN": "看来你已经准备好了。<<A<<[CHANGED 2018/03/14]", "ja_JP": "準備はできたようだな。<<A<<[CHANGED 2018/03/14]", "langUid": 568, "ko_KR": "이제 다 된 것 같네.<<A<<[CHANGED 2018/03/14]", "zh_TW": "看來你已經準備好了。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "DOWN" } } ] } ] }, { "message": { "en_US": "Are you ready for the duel?", "de_DE": "Bist du bereit für das Duell?", "fr_FR": "fr_FR", "langUid": 507, "zh_CN": "准备好决斗了吗？<<A<<[CHANGED 2018/03/14]", "ja_JP": "決闘をはじめるか？<<A<<[CHANGED 2018/03/14]", "ko_KR": "결투할 준비 됐어?<<A<<[CHANGED 2018/03/14]", "zh_TW": "準備好決鬥了嗎？<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "DEFAULT" } }, { "0": [ { "frequency": "", "type": "SET_NPC_RUNNERS" }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "zh_CN": "[点头]<<A<<[CHANGED 2018/03/14]", "ja_JP": "[うなずく]<<A<<[CHANGED 2018/03/14]", "ko_KR": "[끄덕]<<A<<[CHANGED 2018/03/14]", "langUid": 514, "zh_TW": "[點頭]<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "Alright then, let's go!", "de_DE": "Also dann, fangen wir an!", "fr_FR": "fr_FR", "zh_CN": "好，开始吧！<<A<<[CHANGED 2018/03/14]", "ja_JP": "よし、それじゃあはじめるぞ！<<A<<[CHANGED 2018/03/14]", "langUid": 571, "ko_KR": "좋아 그럼, 시작하지!<<A<<[CHANGED 2018/03/14]", "zh_TW": "好，開始吧！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "pos": { "x": 544, "y": 1600 }, "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 616, "y": 1600, "lvl": "1" }, "precise": true, "type": "MOVE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" }, { "time": 0.3, "type": "WAIT" }, { "face": "WEST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "global": true, "name": "apollo" }, "action": [ { "time": 0.1, "type": "WAIT" }, { "target": { "x": 472, "y": 1600, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "EAST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 1 }, { "pos": { "x": 568, "y": 1440 }, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.3, "zoom": 1, "type": "SET_CAMERA_POS" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.joernThere", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "pos": { "x": 512, "y": 1560 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "global": true, "name": "joern" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 496, "y": 1536, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": true, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.sidekick", "expression": "SURPRISED" } }, { "message": { "en_US": "Hey.", "langUid": 600, "zh_CN": "嘿。<<A<<[CHANGED 2018/03/14]", "ko_KR": "안녕.<<A<<[CHANGED 2018/03/14]", "ja_JP": "やあ。<<A<<[CHANGED 2018/03/14]", "de_DE": "Hey.", "zh_TW": "嘿。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.sidekick", "expression": "DEFAULT" } }, { "message": { "en_US": "Oh, I see. Having business with your girl again?", "langUid": 601, "zh_CN": "啊，我看到了。他又找你麻烦了？<<A<<[CHANGED 2018/03/14]", "ko_KR": "아, 또 그 여자애랑 노느라 바쁜 거냐?<<A<<[CHANGED 2018/03/14]", "ja_JP": "ああ、なるほど。\nまたいつもの女の子か？<<A<<[CHANGED 2018/03/14]", "de_DE": "Oh, ich seh' schon, du bist wieder mit deinem Mädchen beschäftigt?", "zh_TW": "啊，我看到了。他又找你麻煩了？<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.sidekick", "expression": "SUSPICIOUS" } }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.fancyguy", "expression": "DEFAULT" } }, { "entity": { "global": true, "name": "apollo" }, "action": [ { "entity": { "global": true, "name": "joern" }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "message": { "en_US": "Joern, you just arrived in time for some glorious Spheromancer action! ", "langUid": 602, "zh_CN": "乔恩，你来得正好，刚好可以目睹气圆使者决斗的风采！<<A<<[CHANGED 2018/09/19]", "ko_KR": "존, 안 그래도 이 원술사의 영광스러운 모습을 보여주려고 했는데 마침 잘 왔어!<<A<<[CHANGED 2018/09/19]", "ja_JP": "ジョアン、いいところに来たな。\nいまから輝かしいスフィロマンサーの\n所作を披露するところなんだ！<<A<<[CHANGED 2018/09/19]", "de_DE": "Joern, du kommst genau richtig für eine glorreiche Darbietung zweier Spheromancer!", "zh_TW": "喬恩，你來得正好，剛好可以目睹氣圓使者決鬥的風采！<<A<<[CHANGED 2018/09/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "DEFAULT" } }, { "message": { "en_US": "We're about to start our duel!", "langUid": 603, "zh_CN": "我们正要开始我们之间的第三次决斗！<<A<<[CHANGED 2018/03/14]", "ko_KR": "이제 세 번째 결투를 시작하려고 하거든!<<A<<[CHANGED 2018/03/14]", "ja_JP": "これから3度目の決闘を\nはじめるのさ！<<A<<[CHANGED 2018/03/14]", "de_DE": "Wir sind gerade dabei, unser drittes Duell auszutragen!", "zh_TW": "我們正要開始我們之間的第三次決鬥！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "CONTENT" } }, { "message": { "en_US": "Well, whoop-de-doo.", "langUid": 604, "zh_CN": "好吧，开始吧。<<A<<[CHANGED 2018/03/14]", "ko_KR": "요란스럽긴.<<A<<[CHANGED 2018/03/14]", "ja_JP": "やれやれ、\nそいつはすごいな。<<A<<[CHANGED 2018/03/14]", "de_DE": "Na großartig!", "zh_TW": "好吧，開始吧。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.sidekick", "expression": "SARCASTIC" } }, { "message": { "en_US": "Didn't we want to start exploring Gaia's Garden today?", "langUid": 605, "zh_CN": "我们今天不是要去探索盖亚花园吗？<<A<<[CHANGED 2018/03/14]", "ko_KR": "오늘 가이아의 정원 탐험하기로 한 거 아니었어?<<A<<[CHANGED 2018/03/14]", "ja_JP": "今日はガイアの園の探索を\nするんじゃなかったのか？<<A<<[CHANGED 2018/03/14]", "de_DE": "Ich dachte, wir wollten heute Gaias Garten erkunden?", "zh_TW": "我們今天不是要去探索蓋亞花園嗎？<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.sidekick", "expression": "TOWARD" } }, { "message": { "en_US": "Yes! Right after the duel! It won't take that long.", "langUid": 606, "zh_CN": "是的！但是先等我决斗完！用不了多久的。<<A<<[CHANGED 2018/03/14]", "ko_KR": "그렇지! 이 결투가 끝나고 나면 말이야! 오래 걸리진 않을 거야.<<A<<[CHANGED 2018/03/14]", "ja_JP": "するとも！決闘のあとにな！\nそう時間はかからないさ。<<A<<[CHANGED 2018/03/14]", "de_DE": "Ja! Gleich nach dem Duell! Wird nicht lange dauern.", "zh_TW": "是的！但是先等我決鬥完！用不了多久的。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "DOWN" } }, { "type": "IF", "withElse": false, "condition": "g.newgame.apolloHax", "thenStep": [ { "message": { "en_US": "It sure won't if she \\c[1]beats you up as fast\\c[0].", "de_DE": "Darauf kannst du wetten, wenn sie \\c[1]dich so schnell verhaut wie beim letzten Mal\\c[0].", "zh_CN": "要是她\\c[1]和上次一样秒杀你\\c[0]就没差了。<<A<<[CHANGED 2019/08/16]", "ja_JP": "もし\\c[1]彼女が前回と同じくらいの時間で\nお前を倒した\\c[0]ら、分からないけどな。<<A<<[CHANGED 2019/08/16]", "ko_KR": "\\c[1]지난번처럼 널 빠르게 쓰러뜨린다면\\c[0] 확실히 오래 걸리진 않겠네.<<A<<[CHANGED 2019/08/16]", "langUid": 774, "zh_TW": "要是她\\c[1]和上次一樣秒殺你\\c[0]就沒差了。<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.sidekick", "expression": "SARCASTIC" } }, { "message": { "en_US": "Yes, outing her as the \\c[1]disgraceful cheater\\c[0] she is.", "de_DE": "Ja, und sie sich damit als der \\c[1]schändliche Cheater\\c[0] outet, der sie ist.", "zh_CN": "是的，她上次暴露了自己是\\c[1]可耻的作弊者\\c[0]的事实。<<A<<[CHANGED 2019/08/16]", "ja_JP": "よし、あいつが\\c[1]恥ずべきチーター\\c[0]で\r\nあることを白日のもとにさらしてやる。<<A<<[CHANGED 2019/08/16]", "ko_KR": "그래, 그렇게 \\c[1]불명예스러운 치터\\c[0]라는 걸 만천하에 알리는 거지.<<A<<[CHANGED 2019/08/16]", "langUid": 775, "zh_TW": "是的，她上次暴露了自己是\\c[1]可恥的作弊者\\c[0]的事實。<<A<<[CHANGED 2019/08/16]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } } ] }, { "message": { "en_US": "Fine. I'll be cheering from the side, then.", "langUid": 607, "zh_CN": "好吧。我在旁边给你加油好了。<<A<<[CHANGED 2018/03/14]", "ko_KR": "좋아. 옆에서 응원해줄게.<<A<<[CHANGED 2018/03/14]", "ja_JP": "そうか。それじゃ、\n俺はわきから応援してるよ。<<A<<[CHANGED 2018/03/14]", "de_DE": "Wenn's sein muss. Dann mach' ich mal den Cheerleader an der Seitenlinie.", "zh_TW": "好吧。我在旁邊給你加油好了。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.sidekick", "expression": "SARCASTIC" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "entity": { "global": true, "name": "apollo" }, "action": [ { "face": "EAST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "pos": { "x": 600, "y": 1528 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "entity": { "global": true, "name": "joern" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 608, "y": 1472, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "pos": { "x": 544, "y": 1600 }, "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "Well then, let's start!", "langUid": 612, "zh_CN": "废话少说，开始吧！<<A<<[CHANGED 2018/03/14]", "ko_KR": "자, 그럼 시작해볼까?<<A<<[CHANGED 2018/03/14]", "ja_JP": "それじゃあ、はじめるぞ！<<A<<[CHANGED 2018/03/14]", "de_DE": "Also dann, lass uns anfangen!", "zh_TW": "廢話少說，開始吧！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "PVP Activate!", "langUid": 613, "zh_CN": "PVP已开启！<<A<<[CHANGED 2018/03/14]", "ko_KR": "PVP 활성화!<<A<<[CHANGED 2018/03/14]", "ja_JP": "PvP、起動！<<A<<[CHANGED 2018/03/14]", "de_DE": "PvP-Kampf AKTIVIEREN!", "zh_TW": "PVP已開啟！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "SHOUTING" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "mode": "SLOW", "type": "PAUSE_BGM" }, { "pos": { "x": 544, "y": 1504 }, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.pvpSign", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.3 }, { "pos": { "x": 368, "y": 1672 }, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.5, "zoom": 1, "type": "SET_CAMERA_POS" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.groupCWatch", "value": true }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.groupDWatch", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.2 }, { "pos": { "x": 696, "y": 1636 }, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.5, "zoom": 1, "type": "SET_CAMERA_POS" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.groupAWatch", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.2 }, { "pos": { "x": 680, "y": 1504 }, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.5, "zoom": 1, "type": "SET_CAMERA_POS" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.groupBWatch", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.2 }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.pvpArena", "value": true }, { "pos": { "x": 560, "y": 1600 }, "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "SAD" } }, { "message": { "en_US": "...", "de_DE": "...", "zh_CN": "...<<A<<[CHANGED 2018/03/14]", "ja_JP": "...<<A<<[CHANGED 2018/03/14]", "ko_KR": "...<<A<<[CHANGED 2018/03/14]", "langUid": 614, "zh_TW": "...<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "DOWN_EYE_CLOSED" } }, { "message": { "en_US": "...!!", "de_DE": "...!!", "zh_CN": "...！！<<A<<[CHANGED 2018/03/14]", "ja_JP": "...！！<<A<<[CHANGED 2018/03/14]", "ko_KR": "...!!<<A<<[CHANGED 2018/03/14]", "langUid": 615, "zh_TW": "...！！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "DETERMINED" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "entity": { "global": true, "name": "apollo" }, "action": [ { "face": "WEST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "pos": { "x": 464, "y": 1600 }, "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "zoom": 1.5, "type": "SET_CAMERA_POS" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.5 }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "Today we cross paths for a third time.", "de_DE": "Heute kreuzen sich unsere Wege zum dritten Mal.", "zh_CN": "今天，我们的道路再次相汇。<<A<<[CHANGED 2018/03/14]", "ja_JP": "俺たちの行く道が交わるのも、\n今日で3度目になった。<<A<<[CHANGED 2018/03/14]", "ko_KR": "오늘이 세 번째로 결투는 담판 짓는 날이군.<<A<<[CHANGED 2018/03/14]", "langUid": 436, "zh_TW": "今天，我們的道路再次相匯。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "Both of us possessing \\c[3]Heat\\c[0] and \\c[3]Cold\\c[0].", "de_DE": "Beide haben wir die Elemente \\c[3]Hitze\\c[0] und \\c[3]Kälte\\c[0] erlangt.", "zh_CN": "我们都已经开启了\\c[3]火\\c[0]和\\c[3]冰\\c[0]属性。<<A<<[CHANGED 2018/03/14]", "ja_JP": "俺たちは2人とも\n\\c[3]火炎\\c[0]と\\c[3]冷気\\c[0]を手に入れた。<<A<<[CHANGED 2018/03/14]", "ko_KR": "우리 둘 모두 \\c[3]열기\\c[0]와 \\c[3]냉기\\c[0] 속성을 가지고 있지.<<A<<[CHANGED 2018/03/14]", "langUid": 616, "zh_TW": "我們都已經開啟了\\c[3]火\\c[0]和\\c[3]冰\\c[0]屬性。<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "Once again it is time for me,\\. Apollo,\\. to lead you along the right path.", "de_DE": "Es ist also wieder an der Zeit für mich,\\. Apollo,\\. dich auf den rechten Weg zu führen.", "zh_CN": "我，阿波罗。\\.将再一次，\\.将你领回正道。<<A<<[CHANGED 2018/09/19]", "ja_JP": "今一度、時は来た。\\.この俺\nアポロが、\\.お前を正しい道に導こう。<<A<<[CHANGED 2018/09/19]", "ko_KR": "다시 한번,\\. 이 몸 아폴로가\\. 널 올바른 길로 인도해 주지.<<A<<[CHANGED 2018/09/19]", "langUid": 617, "zh_TW": "我，阿波羅。\\.將再一次，\\.將你領回正道。<<A<<[CHANGED 2018/09/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "The path of a \nproper Spheromancer!", "de_DE": "Den Weg eines wahren Spheromancers!", "zh_CN": "气圆使者的正道！<<A<<[CHANGED 2018/03/14]", "ja_JP": "スフィロマンサーとして \nふさわしい道をな！\\.<<A<<[CHANGED 2018/03/14]", "ko_KR": "바로 원술사의\n정석적인 길!<<A<<[CHANGED 2018/03/14]", "langUid": 438, "zh_TW": "氣圓使者的正道！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "LECTURING" } }, { "message": { "en_US": "The path... of Justice!", "de_DE": "Den Weg... der Gerechtigkeit!", "zh_CN": "既是...正义之道！<<A<<[CHANGED 2018/03/14]", "ja_JP": "正義の...道へと！<<A<<[CHANGED 2018/03/14]", "ko_KR": "정의의... 길 말이다!<<A<<[CHANGED 2018/03/14]", "langUid": 618, "zh_TW": "既是...正義之道！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "SHOUTING" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "entity": { "global": true, "name": "apollo" }, "action": [ { "face": "EAST", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" }, { "wait": false, "viaWalkConfig": false, "type": "SHOW_ANIMATION", "anim": "handUp" }, { "time": 0.3, "type": "WAIT" }, { "followUp": "pointing", "wait": false, "viaWalkConfig": false, "type": "SHOW_ANIMATION", "anim": "prePointing" }, { "time": 0.5, "type": "WAIT" } ], "repeating": false, "wait": false, "keepState": true, "immediately": false, "type": "DO_ACTION" }, { "alpha": 0.3, "type": "SET_SCREEN_BLUR" }, { "pos": { "x": 544, "y": 1600 }, "speed": "FASTEST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1.5, "type": "SET_CAMERA_POS" }, { "type": "CLEAR_SCREEN_BLUR" }, { "bgm": "apolloTheme", "volume": 1, "mode": "IMMEDIATELY", "type": "PLAY_BGM" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "antagonists.fancyguy", "expression": "POINTING" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DETERMINED" } }, { "message": { "en_US": "Let the duel begin!", "de_DE": "Lasst das Duell beginnen!", "fr_FR": "fr_FR", "langUid": 440, "zh_CN": "对决开始！<<A<<[CHANGED 2018/03/14]", "ja_JP": "さあ、決闘開始だ！<<A<<[CHANGED 2018/03/14]", "ko_KR": "결투를 시작하지!<<A<<[CHANGED 2018/03/14]", "zh_TW": "對決開始！<<A<<[CHANGED 2018/03/14]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "antagonists.fancyguy", "expression": "POINTING" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "entity": { "global": true, "name": "apollo" }, "type": "SWAP_ENTITY_WITH_ENEMY", "enemyInfo": { "group": "", "party": "", "face": "EAST", "targetOnSpawn": false, "disableNoScale": true, "type": "avatar.apollo-3", "attribs": {} } }, { "entity": { "global": true, "name": "apollo" }, "speed": "NORMAL", "type": "ADD_PLAYER_CAMERA_TARGET" }, { "zoom": 1, "duration": 1, "transition": "EASE_OUT", "type": "SET_CAMERA_ZOOM" }, { "winPoints": 5, "type": "START_PVP_BATTLE", "enemies": [{ "global": true, "name": "apollo" }] }, { "autoContinue": true, "type": "PREPARE_PVP_ROUND" }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.apolloFight", "value": 16500 } ], "1": [], "type": "SHOW_CHOICE", "person": { "person": "main.lea", "expression": "DEFAULT" }, "options": [ { "0": " ", "label": { "en_US": "[yes]", "de_DE": "[Ja]", "fr_FR": "fr_FR", "zh_CN": "[是]<<A<<[CHANGED 2018/03/14]", "ja_JP": "[はい]<<A<<[CHANGED 2018/03/14]", "langUid": 512, "ko_KR": "[예]<<A<<[CHANGED 2018/03/14]", "zh_TW": "[是]<<A<<[CHANGED 2018/03/14]" } }, { "0": " ", "label": { "en_US": "[no]", "de_DE": "[Nein]", "fr_FR": "fr_FR", "zh_CN": "[否]<<A<<[CHANGED 2018/03/14]", "ja_JP": "[いいえ]<<A<<[CHANGED 2018/03/14]", "langUid": 513, "ko_KR": "[아니요]<<A<<[CHANGED 2018/03/14]", "zh_TW": "[否]<<A<<[CHANGED 2018/03/14]" } } ] } ] } ] }, 
+    { "type": "EXIT", "count": 2 },
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+
+    { 
+        "type": "ENTER", 
+        "_comment": "Change PVP end event",
+        "index": [578,"settings"] 
+    }, 
+    { "type": "SET_KEY", "index": "endCondition", "content": "plot.apolloFight >= 16600" },
+    { "type": "ENTER", "index": "event" },
+    
+    { "type": "ENTER", "index": [23,"thenStep",5,"thenStep",2,"person"] }, { "type": "SET_KEY", "index": "expression", "content": "EXHAUSTED" }, { "type": "EXIT", "count": 2 },{ "type": "ENTER", "index": [3,"person"] }, { "type": "SET_KEY", "index": "expression", "content": "EXHAUSTED" }, { "type": "EXIT", "count": 6 },
+    { "type": "ENTER", "index": [24,"person"] }, { "type": "SET_KEY", "index": "expression", "content": "EXHAUSTED" }, { "type": "EXIT", "count": 2 },
+    { "type": "ENTER", "index": [25,"person"] }, { "type": "SET_KEY", "index": "expression", "content": "NOD" }, { "type": "EXIT", "count": 2 },
+    { "type": "ENTER", "index": [26,"person"] }, { "type": "SET_KEY", "index": "expression", "content": "DEFAULT" }, { "type": "EXIT", "count": 2 },
+    { "type": "ENTER", "index": 107 }, { "type": "SET_KEY", "index": "msgType", "content": "FRIENDSHIP" }, { "type": "EXIT", "count": 1 },
+    { "type": "ENTER", "index": 108 }, { "type": "SET_KEY", "index": "msgType", "content": "FRIENDSHIP" }, { "type": "EXIT", "count": 1 },
+    { "type": "SET_KEY", "index": 111, "content": { "type": "SET_CONTACT_TYPE", "member": "Apollo", "status": "FRIEND" } },
+    { "type": "SET_KEY", "index": 112, "content": { "type": "SET_CONTACT_TYPE", "member": "Joern", "status": "FRIEND" } },
+    { "type": "SET_KEY", "index": 115, "content": { "type": "SET_CONTACT_ONLINE", "member": "Apollo", "online": true } },
+    { "type": "SET_KEY", "index": 116, "content": { "type": "SET_CONTACT_ONLINE", "member": "Joern", "online": true } },
+    { "type": "SET_KEY", "index": 117, "content": { "member": "Apollo", "level": "2", "type": "SET_PARTY_MEMBER_SP_LEVEL" } },
+    { "type": "SET_KEY", "index": 118, "content": { "member": "Joern", "level": "2", "type": "SET_PARTY_MEMBER_SP_LEVEL" } },
+    { "type": "SET_KEY", "index": 119, "content": { "type": "CHANGE_VAR_NUMBER", "varName": "plot.apolloFight", "changeType": "set", "value": 16600 } },
+    { "type": "SET_KEY", "index": 120, "content": { "type": "SHOW_EFFECT", "effect": { "sheet": "teleport", "name": "hideDefault" }, "entity": { "global": true, "name": "apollo" }, "offset": { "x": 0, "y": 0, "z": 0 }, "align": "BOTTOM" } },
+    { "type": "SET_KEY", "index": 123, "content": { "type": "SHOW_AR_MSG", "entity": { "global": true, "name": "apollo" }, "text": { "en_US": "Logout", "de_DE": "Logout", "ja_JP": "Logout", "ko_KR": "Logout", "zh_CN": "Logout", "zh_TW": "Logout", "langUid": 503 }, "time": 0.8, "mode": "NO_LINE", "color": "RED" } },
+    { "type": "SET_KEY", "index": 124, "content": { "type": "SHOW_EFFECT", "effect": { "sheet": "teleport", "name": "hideDefault" }, "entity": { "global": true, "name": "joern" }, "align": "BOTTOM", "wait": false, "offset": { "x": 0, "y": 0, "z": 0 }} },
+    { "type": "SET_KEY", "index": 125, "content": { "type": "SHOW_AR_MSG", "entity": { "global": true, "name": "joern" }, "text": { "en_US": "Logout", "de_DE": "Logout", "ja_JP": "Logout", "ko_KR": "Logout", "zh_CN": "Logout", "zh_TW": "Logout", "langUid": 503 }, "time": 0.8, "mode": "NO_LINE", "color": "RED" } },
+    { "type": "SET_KEY", "index": 126, "content": { "type": "GIVE_ITEM", "item": "428", "amount": 1 } },
+    { "type": "SET_KEY", "index": 127, "content": { "type": "GIVE_ITEM", "item": "428", "amount": 1 } },
+    {
+        "type": "FOR_IN",
+        "_comment": "MASS REMOVAL OF SELF DESTRUCTION",
+        "keyword": "__INDEX__",
+        "values": [ 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103,104, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142 ],
+        "body": [{ "type": "SET_KEY", "index": "__INDEX__", "content": { "time": 0, "type": "WAIT" } }]
+    },  
+    {
+        "type": "EXIT",
+        "_comment": "Exit PVP end event",
+        "count": 3
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Remove touch triggers for escaping Apollo battle",
+        "keyword": "__INDEX__",
+        "values": [567, 568],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "variable"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]
+    },  
+
+    { "type": "EXIT", "count": 1 },
+    {
+        "type": "IF",
+        "_comment": "Adds corresponding patch if Closed Gaia is active",
+        "cond": "ig.vars.get('mw.options.closedGaia') >= 1",
+        "thenSteps": [{
+        "type": "INCLUDE",
+        "src": "mod:extra-patches/enclosed-gaia/path-01-entrance.json.patch"
+        }]
+    }
+]

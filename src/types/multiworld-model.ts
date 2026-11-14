@@ -146,6 +146,7 @@ declare global {
 			options: sc.MultiWorldModel.MultiworldOptions;
 			progressiveChainProgress: Record<number, number>;
 			seenChests: Set<number>;
+			trapsReceived: [];
 
 			dataPackageChecksums: Record<string, string>;
 			receivedItemMap: Record<number, number>;

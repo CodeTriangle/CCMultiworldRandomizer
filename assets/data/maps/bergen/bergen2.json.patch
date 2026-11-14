@@ -1,0 +1,18 @@
+[
+  {
+    "type": "ENTER",
+    "index": [ "entities" ]
+  },
+  {
+    "type": "ENTER",
+    "index": [ 882,"settings" ]
+  },
+  {
+    "_comment": "Change Schneider call event (now it shows through common events instead of Bergen North event)",
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+  { "type": "EXIT" }
+]

@@ -26,6 +26,10 @@ export function patch(plugin: MwRandomizer) {
 
 		incrementDropCount(drop, anim) {
 			this.parent(drop, anim);
+			let newDrop = this.drops[drop].link;
+			if (newDrop) {
+				drop = newDrop;
+			}
 			const completed = sc.menu.dropCounts[drop]?.completed ?? false;
 			const mwid = sc.randoData.botanics[drop];
 			if (completed && !sc.multiworld.localCheckedLocations.has(mwid)) {

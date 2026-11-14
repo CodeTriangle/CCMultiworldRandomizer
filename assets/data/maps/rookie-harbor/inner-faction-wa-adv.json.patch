@@ -1,0 +1,52 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [78, "settings", "npcStates"]
+    },
+
+        {
+            "type": "ENTER",
+            "index": 5
+        },
+        {
+            "_comment": "Remove meet apollo plot condition from NPC for second quest",
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "quest.wa-1-digging.solved && !quest.fd-2-meerkat-cave.started"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+
+        {
+            "type": "ENTER",
+            "index": 8
+        },
+        {
+            "_comment": "Replace fajro completion for obtain flame shade for third quest",
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "quest.fd-2-meerkat-cave.solved && (item.230.amount >= 1) && !fd-3-ball_egg_1.started"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+
+]

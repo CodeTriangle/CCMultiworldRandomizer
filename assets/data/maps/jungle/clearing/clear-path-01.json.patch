@@ -1,0 +1,61 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "_comment": "Hide the eldress NPC",
+        "index": [696]
+    },
+    { "type": "SET_KEY", "index": "x", "content": 1300 },
+    { "type": "SET_KEY", "index": "y", "content": 120 },
+    {
+        "type": "ENTER",
+        "_comment": "Hide the eldress NPC",
+        "index": ["settings", "npcStates", 0]
+    },
+    { "type": "SET_KEY", "index": "hidden", "content": "true" },
+    {
+        "type": "EXIT",
+        "count": 4
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Change the Birds to their second state and not hate you",
+        "keyword": "__INDEX__",
+        "values": [700,712,781,707,728],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings", "npcStates"]
+            },
+            {
+                "type": "ENTER",
+                "index": 0
+            },{
+                "type": "SET_KEY",
+                "index": "condition",
+                "content": "false"
+            },{
+                "type": "EXIT"
+            },{
+                "type": "ENTER",
+                "index": 1
+            },{
+                "type": "SET_KEY",
+                "index": "condition"
+            },{
+                "type": "EXIT"
+            },{
+                "type": "EXIT",
+                "count": 3
+            }]  
+    },
+    
+    {
+        "type": "EXIT",
+        "count": 1
+    }   
+]

@@ -1,0 +1,978 @@
+[
+    {
+        "type": "ENTER",
+        "index": [
+            "entities"
+        ]
+    },
+
+    {
+        "type": "ENTER",
+        "index": ["338"]
+    },
+    {
+        "_comment": "Dungeon end not tied to party members or plot",
+        "type": "SET_KEY",
+        "index": "settings",
+        "content": {
+            "name": "DungeonEnd",
+            "eventType": "CUTSCENE",
+            "endCondition": "plot.waveLine >= 600",
+            "event": [
+                {
+                    "alpha": 1,
+                    "time": 0,
+                    "lighter": false,
+                    "type": "SET_OVERLAY",
+                    "color": "white"
+                },
+                {
+                    "mode": "IMMEDIATELY",
+                    "type": "PAUSE_BGM"
+                },
+                {
+                    "changeType": "set",
+                    "type": "CHANGE_VAR_NUMBER",
+                    "varName": "plot.waveLine",
+                    "value": 600
+                },
+                {
+                    "entity": {
+                        "player": true
+                    },
+                    "skipEffects": true,
+                    "type": "HIDE_ENTITY"
+                },
+                {
+                    "pos": {
+                        "x": 864,
+                        "y": 1640
+                    },
+                    "speed": "IMMEDIATELY",
+                    "transition": "EASE_IN_OUT",
+                    "wait": true,
+                    "waitSkip": 0,
+                    "zoom": 1,
+                    "type": "SET_CAMERA_POS"
+                },
+                {
+                    "alpha": 0,
+                    "time": 1,
+                    "lighter": false,
+                    "type": "SET_OVERLAY",
+                    "color": "white"
+                },
+                {
+                    "pos": {
+                        "x": 864,
+                        "y": 1488
+                    },
+                    "speed": "SLOWER",
+                    "transition": "EASE_OUT",
+                    "wait": false,
+                    "waitSkip": 0,
+                    "zoom": 1,
+                    "type": "SET_CAMERA_POS"
+                },
+                {
+                    "ignoreSlowDown": false,
+                    "type": "WAIT",
+                    "time": 0.5
+                },
+                {
+                    "entity": {
+                        "player": true
+                    },
+                    "position": {
+                        "x": 1168,
+                        "y": 848,
+                        "lvl": "1"
+                    },
+                    "type": "SET_ENTITY_POS"
+                },
+                {
+                    "entity": {
+                        "player": true
+                    },
+                    "skipEffects": false,
+                    "type": "SHOW_ENTITY"
+                },
+                {
+                    "entity": {
+                        "player": true
+                    },
+                    "action": [
+                        {
+                            "face": "NORTH",
+                            "rotate": true,
+                            "rotateSpeed": 3,
+                            "type": "SET_FACE"
+                        },
+                        {
+                            "wait": false,
+                            "viaWalkConfig": false,
+                            "type": "SHOW_ANIMATION",
+                            "anim": "hover"
+                        },
+                        {
+                            "value": 24,
+                            "type": "SET_FLOAT_HEIGHT"
+                        },
+                        {
+                            "value": true,
+                            "type": "SET_SLIP_THROUGH"
+                        },
+                        {
+                            "newPos": {
+                                "x": 864,
+                                "y": 1488,
+                                "lvl": {
+                                    "level": "1",
+                                    "offset": -32
+                                }
+                            },
+                            "type": "SET_POS"
+                        },
+                        {
+                            "duration": -1,
+                            "align": "BOTTOM",
+                            "rotateFace": 0,
+                            "flipLeftFace": false,
+                            "wait": false,
+                            "waitSkip": 0,
+                            "actionDetached": false,
+                            "fixPos": false,
+                            "type": "SHOW_EFFECT",
+                            "effect": {
+                                "sheet": "puzzle.wave-teleport",
+                                "name": "panelFloatUpScene"
+                            },
+                            "offset": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            }
+                        },
+                        {
+                            "newPos": {
+                                "x": 864,
+                                "y": 1488,
+                                "lvl": {
+                                    "level": "1",
+                                    "offset": 24
+                                }
+                            },
+                            "duration": 1,
+                            "keySpline": "EASE_OUT",
+                            "timePerTile": false,
+                            "type": "INTERPOLATE_POSITION"
+                        },
+                        {
+                            "time": 0.5,
+                            "type": "WAIT"
+                        },
+                        {
+                            "type": "CLEAR_ANIMATION"
+                        },
+                        {
+                            "type": "CLEAR_EFFECTS"
+                        },
+                        {
+                            "value": 0,
+                            "type": "SET_FLOAT_HEIGHT"
+                        },
+                        {
+                            "type": "WAIT_UNTIL_ON_GROUND"
+                        },
+                        {
+                            "wait": false,
+                            "type": "SHOW_EXTERN_ANIM",
+                            "anim": {
+                                "sheet": "player-poses",
+                                "name": "landOnGround"
+                            }
+                        },
+                        {
+                            "type": "WAIT",
+                            "time": 0.4
+                        },
+                        {
+                            "type": "CLEAR_ANIMATION"
+                        },
+                        {
+                            "type": "WAIT",
+                            "time": 0.2
+                        }
+                    ],
+                    "repeating": false,
+                    "wait": true,
+                    "keepState": false,
+                    "immediately": false,
+                    "type": "DO_ACTION"
+                },
+                {
+                    "entity": {
+                        "player": true
+                    },
+                    "action": [
+                        {
+                            "value": true,
+                            "type": "SET_SLIP_THROUGH"
+                        },
+                        {
+                            "time": 1,
+                            "type": "WAIT"
+                        },
+                        {
+                            "value": 0.4,
+                            "type": "SET_RELATIVE_SPEED"
+                        },
+                        {
+                            "target": {
+                                "x": 864,
+                                "y": 1392,
+                                "lvl": "1"
+                            },
+                            "precise": true,
+                            "forceTime": false,
+                            "type": "MOVE_TO_POINT"
+                        }
+                    ],
+                    "repeating": false,
+                    "wait": false,
+                    "keepState": false,
+                    "immediately": false,
+                    "type": "DO_ACTION"
+                },
+                {
+                    "pos": {
+                        "x": 864,
+                        "y": 716
+                    },
+                    "speed": "NORMAL",
+                    "transition": "EASE_IN_OUT",
+                    "wait": true,
+                    "waitSkip": 0,
+                    "zoom": 1,
+                    "type": "SET_CAMERA_POS"
+                },
+                {
+                    "ignoreSlowDown": false,
+                    "type": "WAIT",
+                    "time": 0.5
+                },
+                {
+                    "mode": "SLOW",
+                    "delayed": false,
+                    "type": "RESUME_DEFAULT_BGM"
+                },
+                {
+                    "pos": {
+                        "x": 864,
+                        "y": 784
+                    },
+                    "speed": "SLOW",
+                    "transition": "EASE_IN_OUT",
+                    "wait": false,
+                    "waitSkip": 0,
+                    "zoom": 1,
+                    "type": "SET_CAMERA_POS"
+                },
+                {
+                    "entity": {
+                        "player": true
+                    },
+                    "action": [
+                        {
+                            "face": "NORTH",
+                            "rotate": true,
+                            "rotateSpeed": 3,
+                            "type": "SET_FACE"
+                        },
+                        {
+                            "value": 1,
+                            "type": "SET_RELATIVE_SPEED"
+                        },
+                        {
+                            "target": {
+                                "x": 864,
+                                "y": 896,
+                                "lvl": "2"
+                            },
+                            "maxTime": 0,
+                            "distance": 0,
+                            "precise": false,
+                            "planOnly": false,
+                            "teleportOnFail": false,
+                            "type": "NAVIGATE_TO_POINT"
+                        },
+                        {
+                            "value": 0.5,
+                            "type": "SET_RELATIVE_SPEED"
+                        },
+                        {
+                            "target": {
+                                "x": 864,
+                                "y": 832,
+                                "lvl": "3"
+                            },
+                            "maxTime": 0,
+                            "distance": 0,
+                            "precise": false,
+                            "planOnly": false,
+                            "teleportOnFail": false,
+                            "type": "NAVIGATE_TO_POINT"
+                        },
+                        {
+                            "face": "NORTH",
+                            "rotate": true,
+                            "rotateSpeed": 3,
+                            "type": "SET_FACE"
+                        }
+                    ],
+                    "repeating": false,
+                    "wait": false,
+                    "keepState": false,
+                    "immediately": false,
+                    "type": "DO_ACTION"
+                },
+                {
+                    "type": "IF",
+                    "condition": "party.has.Emilie",
+                    "thenStep": [
+                        {
+                            "entity": {
+                                "party": "Emilie"
+                            },
+                            "action": [
+                                {
+                                    "type": "WAIT",
+                                    "time": 0.4
+                                },
+                                {
+                                    "value": 1,
+                                    "type": "SET_RELATIVE_SPEED"
+                                },
+                                {
+                                    "target": {
+                                        "x": 880,
+                                        "y": 896,
+                                        "lvl": "2"
+                                    },
+                                    "maxTime": 0,
+                                    "distance": 0,
+                                    "precise": false,
+                                    "planOnly": false,
+                                    "teleportOnFail": false,
+                                    "type": "NAVIGATE_TO_POINT"
+                                },
+                                {
+                                    "value": 0.5,
+                                    "type": "SET_RELATIVE_SPEED"
+                                },
+                                {
+                                    "target": {
+                                        "x": 880,
+                                        "y": 848,
+                                        "lvl": "3"
+                                    },
+                                    "maxTime": 0,
+                                    "distance": 0,
+                                    "precise": false,
+                                    "planOnly": false,
+                                    "teleportOnFail": false,
+                                    "type": "NAVIGATE_TO_POINT"
+                                },
+                                {
+                                    "face": "NORTH",
+                                    "rotate": true,
+                                    "rotateSpeed": 3,
+                                    "type": "SET_FACE"
+                                }
+                            ],
+                            "repeating": false,
+                            "wait": false,
+                            "keepState": false,
+                            "immediately": false,
+                            "type": "DO_ACTION"
+                        },
+                        {
+                            "entity": {
+                                "party": "Emilie"
+                            },
+                            "type": "WAIT_UNTIL_ACTION_DONE"
+                        }
+                    ]
+                },
+                {
+                    "type": "IF",
+                    "condition": "party.has.Glasses",
+                    "thenStep": [
+                        {
+                            "entity": {
+                                "party": "Glasses"
+                            },
+                            "action": [
+                                {
+                                    "type": "WAIT",
+                                    "time": 0.2
+                                },
+                                {
+                                    "face": "NORTH",
+                                    "rotate": true,
+                                    "rotateSpeed": 3,
+                                    "type": "SET_FACE"
+                                },
+                                {
+                                    "value": 1,
+                                    "type": "SET_RELATIVE_SPEED"
+                                },
+                                {
+                                    "target": {
+                                        "x": 848,
+                                        "y": 896,
+                                        "lvl": "2"
+                                    },
+                                    "maxTime": 0,
+                                    "distance": 0,
+                                    "precise": false,
+                                    "planOnly": false,
+                                    "teleportOnFail": false,
+                                    "type": "NAVIGATE_TO_POINT"
+                                },
+                                {
+                                    "value": 0.5,
+                                    "type": "SET_RELATIVE_SPEED"
+                                },
+                                {
+                                    "target": {
+                                        "x": 848,
+                                        "y": 848,
+                                        "lvl": "3"
+                                    },
+                                    "maxTime": 0,
+                                    "distance": 0,
+                                    "precise": false,
+                                    "planOnly": false,
+                                    "teleportOnFail": false,
+                                    "type": "NAVIGATE_TO_POINT"
+                                },
+                                {
+                                    "face": "NORTH",
+                                    "rotate": true,
+                                    "rotateSpeed": 3,
+                                    "type": "SET_FACE"
+                                }
+                            ],
+                            "repeating": false,
+                            "wait": false,
+                            "keepState": false,
+                            "immediately": false,
+                            "type": "DO_ACTION"
+                        },
+                        {
+                            "entity": {
+                                "party": "Glasses"
+                            },
+                            "type": "WAIT_UNTIL_ACTION_DONE"
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "player": true
+                    },
+                    "type": "WAIT_UNTIL_ACTION_DONE"
+                },
+                {
+                    "pos": {
+                        "x": 864,
+                        "y": 680
+                    },
+                    "speed": "SLOW",
+                    "transition": "EASE_IN_OUT",
+                    "wait": true,
+                    "waitSkip": 0,
+                    "zoom": 1,
+                    "type": "SET_CAMERA_POS"
+                },
+                {
+                    "zoomType": "LIGHT",
+                    "fadeIn": 0.5,
+                    "duration": 2,
+                    "fadeOut": 0,
+                    "type": "SET_ZOOM_BLUR"
+                },
+                {
+                    "alpha": 1,
+                    "time": 2,
+                    "lighter": true,
+                    "type": "SET_OVERLAY",
+                    "color": "WHITE"
+                },
+                {
+                    "zoom": 2,
+                    "duration": 2,
+                    "transition": "EASE_IN",
+                    "type": "SET_CAMERA_ZOOM"
+                },
+                {
+                    "volume": 0.8,
+                    "name": "",
+                    "loop": false,
+                    "offset": 0,
+                    "startTime": 0,
+                    "type": "PLAY_SOUND",
+                    "sound": "media/sound/scenes/swoosh-rise-long.ogg"
+                },
+                {
+                    "ignoreSlowDown": false,
+                    "type": "WAIT",
+                    "time": 2
+                },
+                {
+                    "value": "SAVE",
+                    "type": "SET_MOBILITY_BLOCK"
+                },
+                {
+                    "lighter": true,
+                    "type": "SET_TELEPORT_COLOR",
+                    "color": "white"
+                },
+                {
+                    "type": "TELEPORT",
+                    "map": "jungle.dng.wave-expo-space",
+                    "marker": "start"
+                }
+            ],
+            "triggerType": "ALWAYS",
+            "mapId": 914,
+            "startCondition": ""
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },
+
+    {
+        "type": "ENTER",
+        "index": ["352"]
+    },
+    {
+        "_comment": "Dungeon end not tied to party members or plot",
+        "type": "SET_KEY",
+        "index": 352,
+        "content": {
+                "name": "PostExpoScene",
+                "eventType": "CUTSCENE",
+                "endCondition": "plot.waveLine >= 1000",
+                "event": [
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_NUMBER",
+                        "varName": "plot.waveLine",
+                        "value": 1000
+                    },
+                    {
+                        "changeType": "set",
+                        "type": "CHANGE_VAR_BOOL",
+                        "varName": "dungeons.wave.beaten",
+                        "value": true
+                    },
+                    {
+                        "entity": {
+                            "player": true
+                        },
+                        "position": {
+                            "x": 864,
+                            "y": 832,
+                            "lvl": "3"
+                        },
+                        "type": "SET_ENTITY_POS"
+                    },
+                    {
+                        "type": "IF",
+                        "condition": "party.has.Glasses",
+                        "thenStep": [
+                            {
+                                "entity": {
+                                    "party": "Glasses"
+                                },
+                                "position": {
+                                    "x": 848,
+                                    "y": 848,
+                                    "lvl": "3"
+                                },
+                                "type": "SET_ENTITY_POS"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "IF",
+                        "condition": "party.has.Emilie",
+                        "thenStep": [
+                            {
+                                "entity": {
+                                    "party": "Emilie"
+                                },
+                                "position": {
+                                    "x": 880,
+                                    "y": 848,
+                                    "lvl": "3"
+                                },
+                                "type": "SET_ENTITY_POS"
+                            }
+                        ]
+                    },
+                    {
+                        "volume": 1,
+                        "name": "",
+                        "loop": false,
+                        "offset": 0,
+                        "startTime": 0,
+                        "type": "PLAY_SOUND",
+                        "sound": "media/sound/scenes/swoosh-fall-long.ogg"
+                    },
+                    {
+                        "mode": "MEDIUM",
+                        "delayed": false,
+                        "type": "RESUME_DEFAULT_BGM"
+                    },
+                    {
+                        "alpha": 1,
+                        "time": 0,
+                        "lighter": true,
+                        "type": "SET_OVERLAY",
+                        "color": "WHITE"
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.1
+                    },
+                    {
+                        "pos": {
+                            "x": 864,
+                            "y": 632
+                        },
+                        "speed": "IMMEDIATELY",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0,
+                        "zoom": 2,
+                        "type": "SET_CAMERA_POS"
+                    },
+                    {
+                        "pos": {
+                            "x": 864,
+                            "y": 736
+                        },
+                        "speed": "SLOWEST",
+                        "transition": "EASE_OUT",
+                        "wait": false,
+                        "waitSkip": 0,
+                        "zoom": 2,
+                        "type": "SET_CAMERA_POS"
+                    },
+                    {
+                        "zoom": 1,
+                        "duration": 2,
+                        "transition": "EASE_OUT",
+                        "type": "SET_CAMERA_ZOOM"
+                    },
+                    {
+                        "alpha": 0,
+                        "time": 2,
+                        "lighter": true,
+                        "type": "SET_OVERLAY",
+                        "color": "WHITE"
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 1.5
+                    },
+                    {
+                        "entity": {
+                            "player": true
+                        },
+                        "action": [
+                            {
+                                "changeType": "add",
+                                "type": "CHANGE_VAR_NUMBER",
+                                "varName": "map.infoText",
+                                "value": 1
+                            },
+                            {
+                                "time": 0.3,
+                                "type": "WAIT"
+                            },
+                            {
+                                "changeType": "add",
+                                "type": "CHANGE_VAR_NUMBER",
+                                "varName": "map.infoText",
+                                "value": 1
+                            },
+                            {
+                                "time": 0.3,
+                                "type": "WAIT"
+                            },
+                            {
+                                "changeType": "add",
+                                "type": "CHANGE_VAR_NUMBER",
+                                "varName": "map.infoText",
+                                "value": 1
+                            },
+                            {
+                                "time": 0.3,
+                                "type": "WAIT"
+                            },
+                            {
+                                "changeType": "add",
+                                "type": "CHANGE_VAR_NUMBER",
+                                "varName": "map.infoText",
+                                "value": 1
+                            }
+                        ],
+                        "repeating": false,
+                        "wait": false,
+                        "keepState": false,
+                        "immediately": false,
+                        "type": "DO_ACTION"
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.7
+                    },
+                    {
+                        "pos": {
+                            "x": 864,
+                            "y": 320
+                        },
+                        "speed": "NORMAL",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0,
+                        "zoom": 1,
+                        "type": "SET_CAMERA_POS"
+                    },
+                    {
+                        "changeType": "add",
+                        "type": "CHANGE_VAR_NUMBER",
+                        "varName": "g.sonajizTeleport",
+                        "value": 1
+                    },
+                    {
+                        "ignoreSlowDown": false,
+                        "type": "WAIT",
+                        "time": 0.5
+                    },
+                    {
+                        "pos": {
+                            "x": 864,
+                            "y": 784
+                        },
+                        "speed": "FAST",
+                        "transition": "EASE_IN_OUT",
+                        "wait": true,
+                        "waitSkip": 0,
+                        "zoom": 1,
+                        "type": "SET_CAMERA_POS"
+                    },
+                    {
+                        "type": "IF",
+                        "condition": "party.has.Emilie && party.has.Glasses",
+                        "thenStep": [
+                            {
+                                "entity": {
+                                    "player": true
+                                },
+                                "action": [
+                                    {
+                                        "face": "SOUTH",
+                                        "rotate": true,
+                                        "rotateSpeed": 3,
+                                        "type": "SET_FACE"
+                                    }
+                                ],
+                                "repeating": false,
+                                "wait": false,
+                                "keepState": false,
+                                "immediately": false,
+                                "type": "DO_ACTION"
+                            },
+                            {
+                                "entity": {
+                                    "party": "Emilie"
+                                },
+                                "action": [
+                                    {
+                                        "face": "WEST",
+                                        "rotate": true,
+                                        "rotateSpeed": 3,
+                                        "type": "SET_FACE"
+                                    }
+                                ],
+                                "repeating": false,
+                                "wait": false,
+                                "keepState": false,
+                                "immediately": false,
+                                "type": "DO_ACTION"
+                            },
+                            {
+                                "entity": {
+                                    "party": "Glasses"
+                                },
+                                "action": [
+                                    {
+                                        "face": "EAST",
+                                        "rotate": true,
+                                        "rotateSpeed": 3,
+                                        "type": "SET_FACE"
+                                    }
+                                ],
+                                "repeating": false,
+                                "wait": false,
+                                "keepState": false,
+                                "immediately": false,
+                                "type": "DO_ACTION"
+                            },
+                            {
+                                "side": "LEFT",
+                                "order": 0,
+                                "clearSide": false,
+                                "type": "ADD_MSG_PERSON",
+                                "person": {
+                                    "person": "main.emilie",
+                                    "expression": "DEFAULT"
+                                }
+                            },
+                            {
+                                "side": "LEFT",
+                                "order": 5,
+                                "clearSide": false,
+                                "type": "ADD_MSG_PERSON",
+                                "person": {
+                                    "person": "main.glasses",
+                                    "expression": "DEFAULT"
+                                }
+                            },
+                            {
+                                "side": "RIGHT",
+                                "order": 0,
+                                "clearSide": false,
+                                "type": "ADD_MSG_PERSON",
+                                "person": {
+                                    "person": "main.lea",
+                                    "expression": "DEFAULT"
+                                }
+                            },
+                            {
+                                "message": {
+                                    "en_US": "And done!",
+                                    "de_DE": "Und fertig!",
+                                    "zh_CN": "好嘞！解决了。<<A<<[CHANGED 2018/03/14]",
+                                    "ja_JP": "はい、終わり！<<A<<[CHANGED 2018/03/14]",
+                                    "ko_KR": "그리고 끝!<<A<<[CHANGED 2018/03/14]",
+                                    "langUid": 25,
+                                    "zh_TW": "好了！解決了。<<A<<[CHANGED 2018/03/14]"
+                                },
+                                "autoContinue": false,
+                                "type": "SHOW_MSG",
+                                "person": {
+                                    "person": "main.glasses",
+                                    "expression": "SMILE"
+                                }
+                            },
+                            {
+                                "message": {
+                                    "en_US": "Well then...\\. let's go!",
+                                    "de_DE": "Na dann...\\. gehen wir!",
+                                    "zh_CN": "那好...\\.我们走！<<A<<[CHANGED 2018/03/14]",
+                                    "ja_JP": "それじゃあ...\\.\n行きましょ！<<A<<[CHANGED 2018/03/14]",
+                                    "ko_KR": "좋아 그럼...\\. 가자!<<A<<[CHANGED 2018/03/14]",
+                                    "langUid": 892,
+                                    "zh_TW": "那好...\\.我們走！<<A<<[CHANGED 2018/03/14]"
+                                },
+                                "autoContinue": false,
+                                "type": "SHOW_MSG",
+                                "person": {
+                                    "person": "main.emilie",
+                                    "expression": "SWEATY_SMILE"
+                                }
+                            },
+                            {
+                                "message": {
+                                    "en_US": "Honestly don't feel like staying here too long.",
+                                    "de_DE": "Ehrlich gesagt habe ich keine Lust, hier noch länger zu bleiben.",
+                                    "zh_CN": "说实话我不想继续呆在这了。<<A<<[CHANGED 2018/03/14]",
+                                    "ja_JP": "正直、ここには\n長居したくないし。<<A<<[CHANGED 2018/03/14]",
+                                    "ko_KR": "왠지 여긴 오래 있으면 안 될 것 같은 느낌이야.<<A<<[CHANGED 2018/03/14]",
+                                    "langUid": 180,
+                                    "zh_TW": "說實話我不想繼續呆在這裡了。<<A<<[CHANGED 2018/03/14]"
+                                },
+                                "autoContinue": false,
+                                "type": "SHOW_MSG",
+                                "person": {
+                                    "person": "main.emilie",
+                                    "expression": "EXHAUSTED"
+                                }
+                            },
+                            {
+                                "message": {
+                                    "en_US": "Yeah, the constant rain isn't all that comfortable, is it?",
+                                    "de_DE": "Ja, dieser permanente Regen ist nicht gerade angenehmen, oder?",
+                                    "zh_CN": "我也觉得，这儿一直下雨不怎么舒服。<<A<<[CHANGED 2018/03/14]",
+                                    "ja_JP": "ええ、降り続く雨は\nあんまり快適じゃないですからね。<<A<<[CHANGED 2018/03/14]",
+                                    "ko_KR": "맞아, 비가 계속 내리는 건 확실히 불편하지. 안 그래?<<A<<[CHANGED 2018/03/14]",
+                                    "langUid": 893,
+                                    "zh_TW": "我也覺得，這裡一直下雨，潮濕不怎麼舒服。<<A<<[CHANGED 2018/03/14]"
+                                },
+                                "autoContinue": false,
+                                "type": "SHOW_MSG",
+                                "person": {
+                                    "person": "main.glasses",
+                                    "expression": "EMBARRASSED"
+                                }
+                            },
+                            {
+                                "message": {
+                                    "en_US": "...",
+                                    "de_DE": "...",
+                                    "zh_CN": "...<<A<<[CHANGED 2018/03/14]",
+                                    "ja_JP": "...<<A<<[CHANGED 2018/03/14]",
+                                    "ko_KR": "...<<A<<[CHANGED 2018/03/14]",
+                                    "langUid": 27,
+                                    "zh_TW": "...<<A<<[CHANGED 2018/03/14]"
+                                },
+                                "autoContinue": false,
+                                "type": "SHOW_MSG",
+                                "person": {
+                                    "person": "main.lea",
+                                    "expression": "EXHAUSTED"
+                                }
+                            },
+                            {
+                                "side": "ALL",
+                                "type": "CLEAR_MSG"
+                            }
+                        ]
+                    }
+                ],
+                "triggerType": "ALWAYS",
+                "mapId": 928,
+                "startCondition": "plot.waveLine >= 700"
+            }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

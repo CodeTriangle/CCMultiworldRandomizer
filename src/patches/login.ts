@@ -227,6 +227,22 @@ export function patch(plugin: MwRandomizer) {
 				}
 			}
 		},
+
+		show() {
+			this.parent();
+
+			if (window.activeMods.map(x => x.name).includes("open-world")) {
+				this.namedButtons["start"].setActive(false);
+				this.namedButtons["continue"].setActive(false);
+				this.namedButtons["loadGame"].setActive(false);
+				simplify.options.reload();
+				sc.Dialogs.showDialog(
+					"You still have the Open World mod active. This mod is now incorporated into " +
+					"CCMultiworldRandomizer. Please disable it and restart the game.",
+					sc.DIALOG_INFO_ICON.ERROR,
+				);
+			}
+		},
 	});
 
 	sc.SaveList.inject({

@@ -1,0 +1,28 @@
+[
+  { "type": "ENTER", "index": ["entities"] },
+
+  { 
+    "type": "ADD_ARRAY_ELEMENT", 
+    "_comment": "Make barrier not softlock when wrong key",
+    "content": {
+			"type": "TouchTrigger",
+			"x": 336,
+			"y": 168,
+			"level": 1,
+			"settings": {
+				"size": {
+					"x": 64,
+					"y": 16
+				},
+				"mapId": 351,
+				"variable": "tmp.wallGone",
+				"type": "WHILE_TOUCH_TRUE",
+				"name": "antiWallWarriors",
+				"zHeight": 16,
+				"shape": "RECTANGLE"
+			}
+		}
+  },
+
+  { "type": "EXIT", "count": 1 }    
+]

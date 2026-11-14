@@ -1,0 +1,147 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [711,  "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "Disables meetup pre-raid",
+        "index": "startCondition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+
+    {
+        "type": "ENTER",
+        "index": [708]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "Shade discussion doesnt force you to go Guild HQ",
+        "index": "settings",
+        "content": {
+                "name": "ShadeDiscussion",
+                "eventType": "CUTSCENE",
+                "endCondition": "plot.autumnFall >= 7200",
+                "event": [ { "type": "IF", "withElse": true, "condition": "party.has.Emilie", "thenStep": [ { "entity": { "player": true }, "action": [ { "entity": { "party": "Emilie" }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "party": "Emilie" }, "action": [ { "entity": { "player": true }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "type": "IF", "withElse": false, "condition": "party.has.Glasses", "thenStep": [ { "side": "LEFT", "order": -5, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.glasses", "expression": "DEFAULT" } } ] }, { "message": { "en_US": "...!", "de_DE": "...!", "fr_FR": "fr_FR", "zh_CN": "...!", "ja_JP": "...！<<A<<[CHANGED 2017/08/03]", "langUid": 17, "ko_KR": "...!", "zh_TW": "...!" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "PROUD" } }, { "message": { "en_US": "You got the Shade? Alright!", "de_DE": "Du hast die Form gekriegt? Très bien!", "fr_FR": "fr_FR", "zh_CN": "你拿到证印了？很好！", "ja_JP": "シェードを手に入れたの？やったね！<<A<<[CHANGED 2017/08/03]", "langUid": 19, "ko_KR": "셰이드 받았어? 잘됐네!", "zh_TW": "你拿到證印了？很好！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "type": "IF", "withElse": false, "condition": "party.has.Glasses", "thenStep": [ { "message": { "en_US": "Nice!", "de_DE": "Gut gemacht!", "fr_FR": "fr_FR", "zh_CN": "漂亮！", "ja_JP": "やりましたね！<<A<<[CHANGED 2017/08/03]", "langUid": 20, "ko_KR": "좋아!", "zh_TW": "漂亮！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.glasses", "expression": "SMILE" } } ] } ], "elseStep": [ { "type": "IF", "withElse": true, "condition": "party.has.Glasses", "thenStep": [ { "entity": { "player": true }, "action": [ { "entity": { "party": "Glasses" }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "entity": { "party": "Glasses" }, "action": [ { "entity": { "player": true }, "rotate": true, "rotateSpeed": 3, "type": "SET_FACE_TO_ENTITY" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.glasses", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "...!", "de_DE": "...!", "fr_FR": "fr_FR", "zh_CN": "...!", "ja_JP": "...！<<A<<[CHANGED 2017/08/03]", "langUid": 21, "ko_KR": "...!", "zh_TW": "...!" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "PROUD" } }, { "message": { "en_US": "You got the Shade? Nice!", "de_DE": "Du hast die Form bekommen? Gut gemacht!", "fr_FR": "fr_FR", "zh_CN": "你拿到证印了？很好！", "ja_JP": "シェードを手に入れたんですか？やりましたね！<<A<<[CHANGED 2017/08/03]", "langUid": 22, "ko_KR": "셰이드 받았어? 좋아!", "zh_TW": "你拿到證印了？很好！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.glasses", "expression": "SMILE" } }, { "message": { "en_US": "You should tell Emilie via D-Link!", "de_DE": "Du solltest Emilie via D-Link davon erzählen!", "fr_FR": "fr_FR", "zh_CN": "你应该用直连告诉艾米莉一声！", "ja_JP": "エミリーにダイレクトリンクで教えてあげましょう！<<A<<[CHANGED 2017/08/03]", "langUid": 23, "ko_KR": "다이렉트 링크로 에밀리에게 말하는 게 좋겠어!", "zh_TW": "你應該用直連告訴艾米莉一聲！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.glasses", "expression": "TOWARD" } } ], "elseStep": [ { "entity": { "player": true }, "action": [ { "face": "SOUTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "immediately": false, "type": "DO_ACTION" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.sergey", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "I suppose you just got the Shade!", "de_DE": "Ich nehme an, du hast soeben die Form erhalten!", "fr_FR": "fr_FR", "zh_CN": "你刚拿到证印了吧！", "ja_JP": "シェードを手に入れたみたいだね！<<A<<[CHANGED 2017/08/03]", "langUid": 24, "ko_KR": "방금 네가 셰이드를 받았다고 들었어!", "zh_TW": "你剛拿到證印了吧！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.sergey", "expression": "SMILE" } }, { "message": { "en_US": "I think Emilie wanted you to contact her at this point, right?", "de_DE": "Ich glaube, Emilie wollte, dass du sie danach kontaktierst, richtig?", "fr_FR": "fr_FR", "zh_CN": "艾米莉不是让你拿到之后联系她吗？", "ja_JP": "エミリーは君からの報告を心待ちにしてるんじゃないかい？<<A<<[CHANGED 2017/08/03]", "langUid": 25, "ko_KR": "내 생각엔 에밀리가 자신에게 연락해 주었으면 좋겠다고 생각할 것 같은데?", "zh_TW": "艾米莉不是讓你拿到之後聯繫她嗎？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.sergey", "expression": "NOTIFYING" } } ] }, { "message": { "en_US": "...!", "de_DE": "...!", "fr_FR": "fr_FR", "zh_CN": "...!", "ja_JP": "...！<<A<<[CHANGED 2017/08/03]", "langUid": 26, "ko_KR": "...!", "zh_TW": "...!" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "side": "ALL", "type": "CLEAR_MSG" }, { "type": "START_PRIVATE_MSG" }, { "side": "LEFT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "RIGHT", "order": 0, "clearSide": false, "type": "ADD_MSG_PERSON", "person": { "person": "main.lea", "expression": "DEFAULT" } }, { "message": { "en_US": "Hi!", "de_DE": "Hi!", "fr_FR": "fr_FR", "zh_CN": "你好！", "ja_JP": "やぁ！<<A<<[CHANGED 2017/08/03]", "langUid": 27, "ko_KR": "안녕!", "zh_TW": "你好！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "PROUD" } }, { "message": { "en_US": "Bonjour Lea! How is it going? Did you collect the shade?", "de_DE": "Bonjour, Lea! Wie geht's dir? Hast du schon die Form?", "fr_FR": "fr_FR", "zh_CN": "你好啊莉亚！怎么样？拿到证印了吗？", "ja_JP": "ボンジュール、レア！どうだった？シェードは手に入った？<<A<<[CHANGED 2017/08/03]", "langUid": 28, "ko_KR": "안녕, 레아! 잘 지냈어? 셰이드는 받았고?", "zh_TW": "你好啊莉亞！怎麼樣？拿到證印了嗎？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "zh_CN": "[点头]", "ja_JP": "[うなずく]<<A<<[CHANGED 2017/08/03]", "langUid": 29, "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "Très bien!", "de_DE": "Très bien!", "fr_FR": "fr_FR", "zh_CN": "太好啦！", "ja_JP": "トレビアン！<<A<<[CHANGED 2017/08/03]", "langUid": 30, "ko_KR": "잘했어!", "zh_TW": "太好啦！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } } ] }, { "message": { "en_US": "You heard what the geezer in space said, right?", "de_DE": "Du weißt doch, was der Typ im Weltraum gesagt hat, oder?", "zh_CN": "你听到了那个太空老头说的话了吧？<<A<<[CHANGED 2018/07/09]", "ja_JP": "宇宙でおじさんが\nなんて言ってたか聞いた？<<A<<[CHANGED 2018/07/09]", "ko_KR": "저 노인네가 공중에서 말한 거 들었지?<<A<<[CHANGED 2018/07/09]", "langUid": 34, "zh_TW": "你聽到了那個太空老頭說的話了吧？<<A<<[CHANGED 2018/07/09]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "CURIOUS" } }, { "message": { "en_US": "With this new Shade you can now enter \\c[3]Gaia's Garden\\c[0].", "de_DE": "Dass wir mit dieser neuen Form nach \\c[3]Gaias Garten\\c[0] können.", "zh_CN": "那个证印会为你开启通往北方\\c[3]盖亚花园\\c[0]的通路。<<A<<[CHANGED 2018/07/09]", "ja_JP": "このシェードなんだけど...\\.これがあれば、\n北側にある\\c[3]ガイアの園\\c[0] に入れるの。<<A<<[CHANGED 2018/07/09]", "ko_KR": "이제 이 새로운 셰이드로 \\c[3]가이아의 정원\\c[0]에 들어갈 수 있대.<<A<<[CHANGED 2018/07/09]", "langUid": 735, "zh_TW": "那個證印會為你開啟通往北方\\c[3]蓋亞花園\\c[0]的通路。<<A<<[CHANGED 2018/07/09]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "UP" } }, { "message": { "en_US": "And well... that area is supposed to be a \\c[3]jungle\\c[0].", "de_DE": "Und...\\. na ja...\\. Gaias Garten ist eigentlich ein \\c[3]Dschungel\\c[0].", "zh_CN": "呃... 那个区域是个\\c[3]丛林\\c[0]。<<A<<[CHANGED 2018/07/09]", "ja_JP": "それで...\\.そのエリアは\\c[3]ジャングル\\c[0]が\nテーマなんだって。<<A<<[CHANGED 2018/07/09]", "ko_KR": "그리고 거긴 당연히... \\c[3]정글\\c[0]이겠지.<<A<<[CHANGED 2018/07/09]", "langUid": 35, "zh_TW": "呃... 那個區域是個\\c[3]叢林\\c[0]。<<A<<[CHANGED 2018/07/09]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "AWAY" } }, { "message": { "en_US": "...!", "de_DE": "...!", "fr_FR": "fr_FR", "zh_CN": "...!", "ja_JP": "...！<<A<<[CHANGED 2017/08/03]", "langUid": 36, "ko_KR": "...!", "zh_TW": "...!" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "ASTONISHED" } }, { "message": { "en_US": "You know what you usually find in jungles?", "de_DE": "Du weißt, auf was man so im Dschungel trifft, oder?", "fr_FR": "fr_FR", "zh_CN": "你知道丛林里有啥吧？", "ja_JP": "普通、ジャングルといったら\n出てくるものってなんだと思う？<<A<<[CHANGED 2017/08/03]", "langUid": 37, "ko_KR": "정글에는 보통 뭐가 있는지 알아?", "zh_TW": "你知道叢林裡有什麼吧？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SWEATY_SMILE" } }, { "message": { "en_US": "...?", "de_DE": "...?", "fr_FR": "fr_FR", "zh_CN": "...?", "ja_JP": "...？<<A<<[CHANGED 2017/08/03]", "langUid": 38, "ko_KR": "...?", "zh_TW": "...?" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NERVOUS" } }, { "message": { "en_US": "Insects...\\. like \\c[3]bugs\\c[0].", "de_DE": "Insekten...\\. wie zum Beispiel \\c[3]Käfer\\c[0].", "fr_FR": "fr_FR", "zh_CN": "虫子...\\.长满了翅膀和脚的\\c[3]虫子\\c[0]。", "ja_JP": "\\.\\c[3]虫\\c[0]だよ...\\.今までみたいなさ。<<A<<[CHANGED 2017/08/03]", "langUid": 39, "ko_KR": "곤충이지...\\. \\c[3]벌레\\c[0] 말이야.", "zh_TW": "蟲子...\\.長滿了翅膀和腳的\\c[3]蟲子\\c[0]。" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "EXHAUSTED" } }, { "message": { "en_US": "...", "de_DE": "...", "fr_FR": "fr_FR", "zh_CN": "...", "ja_JP": "...<<A<<[CHANGED 2017/08/03]", "langUid": 40, "ko_KR": "...", "zh_TW": "..." }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "SMILE" } }, { "message": { "en_US": "I really don't want to go there by myself.\\. So uhm...", "de_DE": "Ich will da wirklich nicht alleine reingehen.\\. Also, öhm...", "fr_FR": "fr_FR", "zh_CN": "我真的很不想自己一个人打。\\.所以...呃...<<A<<[CHANGED 2017/10/13]", "ja_JP": "だから私、1人では心底行きたくないの。\n\\.それで、その...<<A<<[CHANGED 2017/11/04]", "langUid": 41, "ko_KR": "거기에 나 혼자 가기는 싫어.\\. 그래서 말이지...<<A<<[CHANGED 2017/10/17]", "zh_TW": "我真的很不想自己一個人打。\\.所以...呃...<<A<<[CHANGED 2017/10/13]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SUSPICIOUS" } }, { "message": { "en_US": "It would be great if you could wait for me so we can enter the Jungle together, d'accord?", "de_DE": "... wär's echt toll, wenn du auf mich warten könntest, damit wir den Dschungel gemeinsam betreten können, d'accord?", "fr_FR": "fr_FR", "zh_CN": "能不能等等我然后我们一起进丛林？", "ja_JP": "もしよければなんだけど、私と一緒に入るまで、\nジャングルに行くのは待ってくれない？<<A<<[CHANGED 2017/08/03]", "langUid": 42, "ko_KR": "정글에 같이 갈 수 있게 날 기다려줬으면 좋겠는데. 어때?", "zh_TW": "能不能等等我然後我們一起進叢林？" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SWEATY_SMILE" } }, { "message": { "en_US": "[nods]", "de_DE": "[nickt]", "fr_FR": "fr_FR", "zh_CN": "[点头]", "ja_JP": "[うなずく]<<A<<[CHANGED 2017/08/03]", "langUid": 43, "ko_KR": "[끄덕]", "zh_TW": "[點頭]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.lea", "expression": "NOD" } }, { "message": { "en_US": "Merci! You're the best!", "de_DE": "Merci! Du bist die Beste!", "fr_FR": "fr_FR", "zh_CN": "太好啦！谢谢你！", "ja_JP": "メルシー！あなたって最高！<<A<<[CHANGED 2017/08/03]", "langUid": 44, "ko_KR": "고마워! 네가 최고야!", "zh_TW": "太好啦！謝謝你！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "SMILE" } }, { "type": "IF", "withElse": true, "condition": "party.has.Emilie", "thenStep": [ { "message": { "en_US": "Let's go!", "de_DE": "Auf geht's!", "fr_FR": "fr_FR", "zh_CN": "走吧！", "ja_JP": "さあ、行こう！<<A<<[CHANGED 2017/08/03]", "langUid": 50, "ko_KR": "가자!", "zh_TW": "走吧！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "side": "ALL", "type": "CLEAR_MSG" } ], "elseStep": [ { "message": { "en_US": "See you there!", "de_DE": "Wir sehen uns dort!", "fr_FR": "fr_FR", "zh_CN": "到那见喽！", "ja_JP": "じゃあ本部でね！<<A<<[CHANGED 2017/08/03]", "langUid": 51, "ko_KR": "거기서 보자!", "zh_TW": "到那見嘍！" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "main.emilie", "expression": "DEFAULT" } }, { "type": "END_PRIVATE_MSG" } ] }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.autumnFall", "value": 7200 }, { "type": "SAVE" } ],
+                "triggerType": "ALWAYS",
+                "mapId": 827,
+                "startCondition": "plot.autumnFall >= 7190"
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },
+    
+    {
+        "type": "ENTER",
+        "index": [707]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "Delayed cutscene conditions change",
+        "index": "settings",
+        "content":  {
+                "name": "DelayedStuff",
+                "eventType": "PARALLEL",
+                "endCondition": "plot.autumnFall >= 7190",
+                "event": [ { "ignoreSlowDown": false, "type": "WAIT", "time": 1 }, { "changeType": "set", "type": "CHANGE_VAR_NUMBER", "varName": "plot.autumnFall", "value": 7190 } ],
+                "triggerType": "ALWAYS",
+                "mapId": 826,
+                "startCondition": "tmp.delayedCutscene"
+            }
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    },
+
+    {
+        "type": "ENTER",
+        "index": [700, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "Quest mark npc changes",
+        "index": "npcStates",
+        "content":  [ 
+            { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": false, "condition": "!quest.daft-frobbit.started || quest.daft-frobbit.task.5", "config": "normal", "event": { "quest": [ { "mode": "SLOW", "type": "PAUSE_BGM" }, { "entity": { "party": "Member3" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 832, "y": 736, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "entity": { "party": "Member2" }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "target": { "x": 880, "y": 736, "lvl": "1" }, "maxTime": 0, "distance": 0, "precise": true, "planOnly": false, "teleportOnFail": false, "type": "NAVIGATE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": false, "keepState": false, "type": "DO_ACTION" }, { "entity": { "player": true }, "action": [ { "value": 0.5, "type": "SET_RELATIVE_SPEED" }, { "value": true, "type": "SET_SLIP_THROUGH" }, { "target": { "x": 856, "y": 712, "lvl": "1" }, "precise": true, "type": "MOVE_TO_POINT" }, { "face": "NORTH", "rotate": true, "rotateSpeed": 3, "type": "SET_FACE" } ], "repeating": false, "wait": true, "keepState": false, "type": "DO_ACTION" }, { "pos": { "x": 856, "y": 608 }, "speed": "SLOW", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0, "zoom": 1, "type": "SET_CAMERA_POS" }, { "zoomType": "LIGHT", "fadeIn": 0.5, "duration": 2, "fadeOut": 0, "type": "SET_ZOOM_BLUR" }, { "alpha": 1, "time": 2, "lighter": true, "type": "SET_OVERLAY", "color": "WHITE" }, { "zoom": 2, "duration": 2, "transition": "EASE_IN", "type": "SET_CAMERA_ZOOM" }, { "volume": 0.8, "name": "", "loop": false, "offset": 0, "startTime": 0, "type": "PLAY_SOUND", "sound": "media/sound/scenes/swoosh-rise-long.ogg" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 2 }, { "lighter": true, "type": "SET_TELEPORT_COLOR", "color": "white" }, { "type": "TELEPORT", "map": "autumn-fall.expo-space", "marker": "start" } ] } }, { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": true, "condition": "plot.autumnFall >= 7400", "config": "normal", "event": [] } 
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+            "type": "ENTER",
+            "index": [709, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "Emilie NPC edit",
+        "index": "npcStates",
+        "content": [ 
+            { "reactType": "FIXED_FACE", "face": "SOUTH", "action": [], "hidden": false, "condition": "plot.autumnFall >= 7400", "config": "normal", "event": { "quest": [ { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.meetup", "value": true } ] } }, { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": true, "condition": "plot.autumnFall >= 7500", "config": "normal", "event": [] } 
+        ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "index": [710, "settings"]
+    },
+    {
+            "type": "SET_KEY",
+            "_comment": "Ctron NPC edit",
+            "index": "npcStates",
+            "content": [
+                 { "reactType": "FIXED_FACE", "face": "SOUTH", "action": [], "hidden": false, "condition": "plot.autumnFall >= 7400", "config": "normal", "event": { "quest": [ { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.meetup", "value": true } ] } }, { "reactType": "FIXED_POS", "face": "SOUTH", "action": [], "hidden": true, "condition": "plot.autumnFall >= 7500", "config": "normal", "event": [] } 
+            ]
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    { "type": "ENTER", "index": [691, "settings","event"] },
+    {
+            "type": "ADD_ARRAY_ELEMENT",
+            "_comment": "All bunny steps in a row",
+            "index": "npcStates",
+            "content": { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.bunny2", "value": true }
+    },
+    { "type": "EXIT", "count": 3 },
+    { "type": "ENTER", "index": [693, "settings","event"] },
+    {
+            "type": "ADD_ARRAY_ELEMENT",
+            "_comment": "All bunny steps in a row",
+            "index": "npcStates",
+            "content": { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.bunny3", "value": true }
+    },
+    { "type": "EXIT", "count": 3 },
+
+    { "type": "ENTER", "index": [695, "settings","event"] },
+    {
+            "type": "ADD_ARRAY_ELEMENT",
+            "_comment": "All bunny steps in a row",
+            "index": "npcStates",
+            "content": { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "tmp.bunny4", "value": true }
+    },
+    { "type": "EXIT", "count": 3 },
+
+    { "type": "EXIT" }
+]

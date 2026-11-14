@@ -1,0 +1,28 @@
+[
+    {
+        "type": "ENTER",
+        "index": [ "entities", 4, "settings", "event" ]
+    },
+    {
+        "_comment": "Change the SP level to increase by 1 instead of setting to 2",
+        "type": "SET_KEY",
+        "index": "36",
+        "content": 
+        {
+            "type": "INCREASE_PLAYER_SP_LEVEL"
+        }
+    },
+    {
+        "_comment": "Completes expo scene in beach temple map",
+        "type": "SET_KEY",
+        "index": "56",
+        "content": 
+        { "type": "CHANGE_VAR_BOOL", "varName": "plot.ancientShadeFight", "changeType": "set", "value": true }
+    },
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "_comment": "Completes expo scene in beach temple map",
+        "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.expoDone", "changeType": "set", "value": true, "map": "beach.temple" }
+    },
+    { "type": "EXIT", "count": 4 }
+]

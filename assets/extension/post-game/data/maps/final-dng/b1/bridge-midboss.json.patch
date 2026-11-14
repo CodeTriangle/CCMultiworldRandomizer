@@ -1,0 +1,26 @@
+[
+	{
+		"type": "ENTER",
+		"_comment": "Add reward on Gynthar kill event",
+		"index": ["entities", 38, "settings","event"]
+	},
+	{
+		"type": "SET_KEY",
+		"index": 21,
+		"content": { "type": "GIVE_ITEM", "item": "428", "amount": 2 }
+	},
+	{
+		"type": "EXIT",
+		"count": 3
+	},
+	{
+		"type": "FOR_IN",
+		"_comment": "Enable elevator signs",
+		"keyword": "__INDEX__",
+		"values": [56, 57, 58, 59, 60],
+		"body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition" },{ "type": "EXIT", "count": 2 }]
+	},
+	{
+		"type": "EXIT"
+	}   
+]

@@ -1,0 +1,124 @@
+[
+    {
+        "type": "INCLUDE",
+        "src": "mod:extra-patches/extra-quests/database/items.json.patch"
+    },
+    {
+        "type": "ENTER",
+        "index": "items"
+    },
+
+    { "type": "ENTER", "index": 626 },
+    {
+        "type": "SET_KEY",
+        "index": "name",
+        "content": {
+            "en_US": "Azure Archi. Pass",
+            "de_DE": "Azur-Archip.-Pass",
+            "fr_FR": "Azure Archi. Pass",
+            "zh_CN": "Azure Archi. Pass",
+            "zh_TW": "Azure Archi. Pass",
+            "ja_JP": "アズール群島・パス",
+            "ko_KR": "Azure Archi. Pass",
+            "langUid": 2469
+        }
+    },
+    {
+        "type": "SET_KEY",
+        "index": "description",
+        "content": {
+            "en_US": "Grants access to Azure Archipelago.",
+            "de_DE": "Gewährt Zugang zum Azur-Archipel.",
+            "fr_FR": "Grants access to Azure Archipelago.",
+            "zh_CN": "Grants access to Azure Archipelago.",
+            "zh_TW": "Grants access to Azure Archipelago.",
+            "ja_JP": "アズール群島へのアクセス権が手に入る。",
+            "ko_KR": "Grants access to Azure Archipelago.",
+            "langUid": 2470
+        }
+    },
+    { "type": "EXIT" },
+
+    {
+        "_comment": "Add new keys",
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+                "order": 3434,
+                "customItem": "west-gaia-pass",
+                "name": {
+                    "en_US": "West Gaia Pass",
+                    "de_DE": "West Gaia Pass",
+                    "fr_FR": "West Gaia Pass",
+                    "zh_CN": "\u9707\u98a4\u5b9e\u9a8c\u5ba4\u94a5\u5319<<A<<[CHANGED 2021\/02\/19]",
+                    "zh_TW": "\u4e2d\u6027\u77f3<<A<<[CHANGED 2021\/02\/19]",
+                    "ja_JP": "\u632f\u52d5\u7814\u7a76\u6240\u306e\u9375<<A<<[CHANGED 2021\/02\/24]",
+                    "ko_KR": "\uc9c4\ub3d9 \uc5f0\uad6c\uc2e4 \uc5f4\uc1e0<<A<<[CHANGED 2021\/02\/24]",
+                    "langUid": 2527
+                },
+                "description": {
+                    "en_US": "Allows access to the \\c[3]Western\\c[0] side of \\c[3]\\v[area.jungle.name]\\c[0]",
+                    "de_DE": "Allows access to the \\c[3]Western\\c[0] side of \\c[3]\\v[area.jungle.name]\\c[0]",
+                    "fr_FR": "Allows access to the \\c[3]Western\\c[0] side of \\c[3]\\v[area.jungle.name]\\c[0]",
+                    "zh_CN": "\u5141\u8bb8\u8fdb\u5165\\c[3]\\v[area.jungle.name]\u60ac\u5d16\u89c2\u666f\u53f0\\c[0]\u4e1c\u90e8\u7684\\c[3]\u9707\u98a4\u5b9e\u9a8c\u5ba4\\c[0]<<A<<[CHANGED 2021\/02\/19]",
+                    "zh_TW": "\u4e00\u584a\u5e38\u898f\u5f62\u72c0\u7684\u5ca9\u77f3\uff0c\u975e\u5e38\u666e\u901a\u3002\u4e5f\u8a31\u6709\u4e00\u5929\u53ef\u4ee5\u70ba\u4f60\u958b\u901a\u4f60\u7684\u96fb\u8def\uff1f<<A<<[CHANGED 2021\/02\/19]",
+                    "ja_JP": "\\c[3]\\v[area.jungle.name]\u306e\u5d16\u306e\u30a8\u30ad\u30b7\u30d3\u30b8\u30e7\u30f3\\c[0]\u6771\u306b\u3042\u308b\u3001\\c[3]\u632f\u52d5\u7814\u7a76\u6240\\c[0]\u3078\u884c\u304f\u3053\u3068\u304c\u3067\u304d\u308b\u3002<<A<<[CHANGED 2021\/02\/24]",
+                    "ko_KR": "\\c[3]\\v[area.jungle.name]\uc758 \uc808\ubcbd \ud48d\uacbd\\c[0]\uc5d0 \uc788\ub294 \\c[3]\uc9c4\ub3d9 \uc5f0\uad6c\uc2e4\\c[0]\uc5d0 \ub4e4\uc5b4\uac00\ub294 \ub370 \uc0ac\uc6a9\ub429\ub2c8\ub2e4.<<A<<[CHANGED 2021\/02\/24]",
+                    "langUid": 2528
+                },
+                "type": "KEY",
+                "noTrack": true,
+                "rarity": 0,
+                "level": 1,
+                "icon": "item-key",
+                "effect": {
+                    "sheet": "",
+                    "name": null
+                },
+                "noCount": true,
+                "isScalable": false
+                }
+    },
+    {
+        "_comment": "Add new keys",
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+                "order": 3435,
+                "customItem": "east-gaia-pass",
+                "name": {
+                    "en_US": "East Gaia Pass",
+                    "de_DE": "East Gaia Pass",
+                    "fr_FR": "East Gaia Pass",
+                    "zh_CN": "\u9707\u98a4\u5b9e\u9a8c\u5ba4\u94a5\u5319<<A<<[CHANGED 2021\/02\/19]",
+                    "zh_TW": "\u4e2d\u6027\u77f3<<A<<[CHANGED 2021\/02\/19]",
+                    "ja_JP": "\u632f\u52d5\u7814\u7a76\u6240\u306e\u9375<<A<<[CHANGED 2021\/02\/24]",
+                    "ko_KR": "\uc9c4\ub3d9 \uc5f0\uad6c\uc2e4 \uc5f4\uc1e0<<A<<[CHANGED 2021\/02\/24]",
+                    "langUid": 2527
+                },
+                "description": {
+                    "en_US": "Allows access to the \\c[3]Eastern\\c[0] side of \\c[3]\\v[area.jungle.name]\\c[0]",
+                    "de_DE": "Allows access to the \\c[3]Eastern\\c[0] side of \\c[3]\\v[area.jungle.name]\\c[0]",
+                    "fr_FR": "Allows access to the \\c[3]Eastern\\c[0] side of \\c[3]\\v[area.jungle.name]\\c[0]",
+                    "zh_CN": "\u5141\u8bb8\u8fdb\u5165\\c[3]\\v[area.jungle.name]\u60ac\u5d16\u89c2\u666f\u53f0\\c[0]\u4e1c\u90e8\u7684\\c[3]\u9707\u98a4\u5b9e\u9a8c\u5ba4\\c[0]<<A<<[CHANGED 2021\/02\/19]",
+                    "zh_TW": "\u4e00\u584a\u5e38\u898f\u5f62\u72c0\u7684\u5ca9\u77f3\uff0c\u975e\u5e38\u666e\u901a\u3002\u4e5f\u8a31\u6709\u4e00\u5929\u53ef\u4ee5\u70ba\u4f60\u958b\u901a\u4f60\u7684\u96fb\u8def\uff1f<<A<<[CHANGED 2021\/02\/19]",
+                    "ja_JP": "\\c[3]\\v[area.jungle.name]\u306e\u5d16\u306e\u30a8\u30ad\u30b7\u30d3\u30b8\u30e7\u30f3\\c[0]\u6771\u306b\u3042\u308b\u3001\\c[3]\u632f\u52d5\u7814\u7a76\u6240\\c[0]\u3078\u884c\u304f\u3053\u3068\u304c\u3067\u304d\u308b\u3002<<A<<[CHANGED 2021\/02\/24]",
+                    "ko_KR": "\\c[3]\\v[area.jungle.name]\uc758 \uc808\ubcbd \ud48d\uacbd\\c[0]\uc5d0 \uc788\ub294 \\c[3]\uc9c4\ub3d9 \uc5f0\uad6c\uc2e4\\c[0]\uc5d0 \ub4e4\uc5b4\uac00\ub294 \ub370 \uc0ac\uc6a9\ub429\ub2c8\ub2e4.<<A<<[CHANGED 2021\/02\/24]",
+                    "langUid": 2528
+                },
+                "type": "KEY",
+                "noTrack": true,
+                "rarity": 0,
+                "level": 1,
+                "icon": "item-key",
+                "effect": {
+                    "sheet": "",
+                    "name": null
+                },
+                "noCount": true,
+                "isScalable": false
+                }
+    },
+
+    {
+        "type": "EXIT"
+    }
+]

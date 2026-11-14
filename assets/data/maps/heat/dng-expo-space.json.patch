@@ -1,0 +1,23 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities",4,"settings","event"]
+    },
+    {
+        "_comment": "Change the SP level to increase by 1 instead of setting to 2",
+        "type": "SET_KEY",
+        "index": 38,
+        "content": { "type": "INCREASE_PLAYER_SP_LEVEL" }
+    },
+    {
+        "_comment": "Change plot variables on the cutscene event",
+        "type": "SET_KEY",
+        "index": 54,
+        "content": { "type": "CHANGE_VAR_BOOL", "varName": "plot.heat-dng-end", "changeType": "set", "value": true, "map": "" }
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    }    
+    
+]

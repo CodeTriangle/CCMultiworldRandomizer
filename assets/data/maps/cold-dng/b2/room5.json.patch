@@ -1,0 +1,46 @@
+[{
+        "type": "ENTER",
+        "index": "entities"
+    },
+
+
+    {
+        "type": "ENTER",
+        "index": [7, "settings"],
+        "_comment": "Make barrier only be closed during battle, and not until thief key chest is open"
+        },
+    
+        {
+        "type": "SET_KEY",
+        "index": "spawnCondition",
+        "content": "map.barrierUp"
+        },
+        {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "index": [12, "settings"],
+        "_comment": "Make battle end open the first barrier"
+        },
+    
+        {
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [
+                    { "value": false, "type": "SET_FORCE_COMBAT" }, { "mode": "MEDIUM", "type": "RESUME_DEFAULT_BGM" }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.wave1", "value": false }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.wave2", "value": false }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.wave3", "value": false }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.4 }, { "entity": { "global": true, "name": "diggingbot" }, "type": "REMOVE_PLAYER_CAMERA_TARGET" }, { "pos": { "x": 320, "y": 368 }, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.4, "zoom": 1, "type": "SET_CAMERA_POS" }, { "type": "WAIT_UNTIL_TRUE", "condition": "map.battleDonePost" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.4 }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.chestHide", "value": false }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.6 }, { "pos": { "x": 544, "y": 364 }, "speed": "FAST", "transition": "EASE_IN_OUT", "wait": true, "waitSkip": 0.4, "zoom": 1, "type": "SET_CAMERA_POS" }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.4 }, { "changeType": "set", "type": "CHANGE_VAR_BOOL", "varName": "map.chestHide2", "value": true }, { "ignoreSlowDown": false, "type": "WAIT", "time": 0.6 }, { "speed": "NORMAL", "transition": "EASE_IN_OUT", "wait": false, "waitSkip": 0, "type": "RESET_CAMERA" }, { "type": "CHANGE_VAR_BOOL", "varName": "map.barrierUp", "changeType": "set", "value": false }
+            ]
+        },
+        {
+        "type": "EXIT",
+        "count": 2
+    },
+
+
+    {
+    "type": "EXIT",
+    "count": 1
+}
+]

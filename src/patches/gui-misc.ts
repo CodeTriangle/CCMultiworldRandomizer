@@ -25,6 +25,24 @@ declare global {
 			AP_CONNECTION,
 		}
 
+		interface APUpDownInputField extends modmanager.gui.InputField {
+			tabDirection: "right" | "down";
+			maxLength: number;
+			onEnterPressedCallback?: (this: this) => void;
+		}
+
+		interface APUpDownInputFieldConstructor extends ImpactClass<APUpDownInputField> {
+			new (
+				width: number,
+				height: number,
+				type?: modmanager.gui.InputFieldType,
+				obscure?: boolean,
+				obscureChar?: string
+			): modmanager.gui.InputField;
+		}
+
+		var APUpDownInputField: APUpDownInputFieldConstructor;
+
 		interface APOptionGroup extends ig.GuiElementBase {
 			value: string;
 			buttons: Array<sc.ButtonGui>,
@@ -83,6 +101,37 @@ export function patch(plugin: MwRandomizer) {
 			sc.quickmodel.cursor.x = sc.quickmodel.cursor.x.limit(0, ig.system.width);
 			sc.quickmodel.cursor.y = sc.quickmodel.cursor.y.limit(0, ig.system.height);
 		}
+	});
+
+	sc.APUpDownInputField = modmanager.gui.InputField.extend({
+		tabDirection: "down",
+		maxLength: 100,
+		processInput(event) {
+			event.preventDefault();
+			if (event.key == "Enter") {
+				this.onEnterPressedCallback?.();
+			} else if (event.key == "ArrowDown") {
+				this.buttonGroup.stepDown();
+			} else if (event.key == "ArrowUp") {
+				this.buttonGroup.stepUp();
+			} else if (event.key == "Tab") {
+				if (this.tabDirection == 'down') {
+					if (event.shiftKey) {
+						this.buttonGroup.stepUp();
+					} else {
+						this.buttonGroup.stepDown();
+					}
+				} else {
+					if (event.shiftKey) {
+						this.buttonGroup.stepLeft();
+					} else {
+						this.buttonGroup.stepRight();
+					}
+				}
+			} else {
+				this.parent(event);
+			}
+		},
 	});
 
 	sc.APOptionGroup = ig.GuiElementBase.extend({
@@ -311,9 +360,9 @@ export function patch(plugin: MwRandomizer) {
 				let inputGui;
 				switch (this.fields[i].type) {
 				case "INPUT":
-					inputGui = new modmanager.gui.InputField(
+					inputGui = new sc.APUpDownInputField(
 						200,
-						textGui.hook.size.y,
+						textGui.hook.size.y + 3,
 						modmanager.gui.INPUT_FIELD_TYPE.DEFAULT,
 						this.fields[i].obscure ?? false
 					);

@@ -1,0 +1,170 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [63,"settings", "npcStates", 0] },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "!quest.trailblaze-forest.started"
+    },
+    { "type": "EXIT" },    
+    { "type": "ENTER", "index": 2 },
+    {
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "quest.trailblaze-autumn.solved && quest.trailblaze-bergen.solved && quest.trailblaze-maroon.solved && quest.trailblaze-jungle.solved && quest.trailblaze-forest.currentTask >= 1"
+    },
+    { "type": "EXIT" },    
+    {   
+        "type": "ADD_ARRAY_ELEMENT", 
+        "content": {
+						"reactType": "FIXED_POS",
+						"face": "EAST",
+						"action": [],
+						"hidden": false,
+						"condition": "!(quest.trailblaze-autumn.solved && quest.trailblaze-bergen.solved && quest.trailblaze-maroon.solved && quest.trailblaze-jungle.solved) && quest.trailblaze-forest.currentTask >= 1 ",
+						"config": "normal",
+						"event": {
+							"quest": [
+								{
+									"name": {
+										"en_US": "Baxton",
+										"langUid": 480,
+										"ja_JP": "\u30d0\u30af\u30b9\u30c8\u30f3<<A<<[CHANGED 2018\/07\/09]",
+										"ko_KR": "\ubc31\uc2a4\ud134<<A<<[CHANGED 2018\/07\/09]",
+										"zh_CN": "\u5df4\u514b\u897f\u987f<<A<<[CHANGED 2018\/07\/09]",
+										"de_DE": "Baxton",
+										"zh_TW": "\u5df4\u514b\u897f\u9813<<A<<[CHANGED 2018\/07\/09]"
+									},
+									"side": "LEFT",
+									"order": 0,
+									"clearSide": false,
+									"type": "ADD_MSG_PERSON",
+									"person": {
+										"person": "misc.advisor-researcher",
+										"expression": "DEFAULT"
+									}
+								},
+								{
+									"side": "RIGHT",
+									"order": 0,
+									"clearSide": false,
+									"type": "ADD_MSG_PERSON",
+									"person": {
+										"person": "main.lea",
+										"expression": "DEFAULT"
+									}
+								},
+                {
+									"message": {
+										"en_US": "Lady Lea, I can see you've unlocked all of the landmarks!",
+										"de_DE": "Fr\u00e4ulein Lea, wie ich sehe, haben Sie alle Wegpunkte freigeschaltet!",
+										"zh_CN": "\u8389\u4e9a\u5c0f\u59d0\uff0c\u6211\u770b\u5230\u4f60\u5df2\u7ecf\u89e3\u9501\u4e86\u6240\u6709\u5730\u6807\uff01<<A<<[CHANGED 2018\/09\/19]",
+										"ja_JP": "\u30ec\u30a2\u3055\u3093\u3001\u3059\u3079\u3066\u306e\u30e9\u30f3\u30c9\u30de\u30fc\u30af\u3092\n\u30a2\u30f3\u30ed\u30c3\u30af\u3057\u3066\u304d\u305f\u3088\u3046\u3067\u3059\u306d\uff01<<A<<[CHANGED 2018\/09\/19]",
+										"ko_KR": "\ub808\uc544 \uc591, \ubaa8\ub4e0 \ub79c\ub4dc\ub9c8\ud06c\ub97c \ud574\uc81c\ud588\uad70\uc694!<<A<<[CHANGED 2018\/09\/19]",
+										"langUid": 481,
+										"zh_TW": "\u8389\u4e9e\u5c0f\u59d0\uff0c\u6211\u770b\u5230\u4f60\u5df2\u7d93\u89e3\u9396\u4e86\u6240\u6709\u5730\u6a19\uff01<<A<<[CHANGED 2018\/09\/19]"
+									},
+									"autoContinue": false,
+									"type": "SHOW_MSG",
+									"person": {
+										"person": "misc.advisor-researcher",
+										"expression": "DEFAULT"
+									}
+								},
+								{
+									"message": {
+										"en_US": "[nods]",
+										"de_DE": "[nickt]",
+										"zh_CN": "[\u70b9\u5934]<<A<<[CHANGED 2018\/07\/09]",
+										"ja_JP": "[\u3046\u306a\u305a\u304f]<<A<<[CHANGED 2018\/07\/09]",
+										"ko_KR": "[\ub044\ub355]<<A<<[CHANGED 2018\/07\/09]",
+										"langUid": 482,
+										"zh_TW": "[\u9ede\u982d]<<A<<[CHANGED 2018\/07\/09]"
+									},
+									"autoContinue": false,
+									"type": "SHOW_MSG",
+									"person": {
+										"person": "main.lea",
+										"expression": "NOD"
+									}
+								},
+								{
+									"message": {
+										"en_US": "Splendid work!",
+										"de_DE": "Hervorragende Arbeit!",
+										"zh_CN": "\u5e72\u5f97\u597d\uff01<<A<<[CHANGED 2018\/07\/09]",
+										"ja_JP": "\u3059\u3070\u3089\u3057\u3044\uff01<<A<<[CHANGED 2018\/07\/09]",
+										"ko_KR": "\uc544\uc8fc \uc798\ud588\uc2b5\ub2c8\ub2e4!<<A<<[CHANGED 2018\/07\/09]",
+										"langUid": 483,
+										"zh_TW": "\u5e79\u5f97\u597d\uff01<<A<<[CHANGED 2018\/07\/09]"
+									},
+									"autoContinue": false,
+									"type": "SHOW_MSG",
+									"person": {
+										"person": "misc.advisor-researcher",
+										"expression": "DEFAULT"
+									}
+								},
+								{
+									"message": {
+										"en_US": "I'm afraid we will need to gather more information.",
+										"de_DE": "I'm afraid we will need to gather more information.",
+										"zh_CN": "I'm afraid we will need to gather more information.",
+										"ja_JP": "I'm afraid we will need to gather more information.",
+										"ko_KR": "I'm afraid we will need to gather more information.",
+										"langUid": 481,
+										"zh_TW": "I'm afraid we will need to gather more informatio.n"
+									},
+									"autoContinue": false,
+									"type": "SHOW_MSG",
+									"person": {
+										"person": "misc.advisor-researcher",
+										"expression": "DEFAULT"
+									}
+								},
+                {
+									"message": {
+										"en_US": "...!",
+										"de_DE": "...!",
+										"zh_CN": "...\uff01<<A<<[CHANGED 2018\/07\/09]",
+										"ja_JP": "...\uff01<<A<<[CHANGED 2018\/07\/09]",
+										"ko_KR": "...!<<A<<[CHANGED 2018\/07\/09]",
+										"langUid": 484,
+										"zh_TW": "...\uff01<<A<<[CHANGED 2018\/07\/09]"
+									},
+									"autoContinue": false,
+									"type": "SHOW_MSG",
+									"person": {
+										"person": "main.lea",
+										"expression": "ANNOYED"
+									}
+								},
+								{
+									"side": "ALL",
+									"type": "CLEAR_MSG"
+								},
+                {
+                    "type": "SHOW_OW_AR_MSG",
+                    "entity": { "player": true },
+                    "text": { 
+                      "en_US": "Complete Trailblazing in Maroon, Bergen, Gaia and Autumn to continue.", 
+                      "de_DE": "Complete Trailblazing in Maroon, Bergen, Gaia and Autumn to continue.", 
+                      "ja_JP": "Complete Trailblazing in Maroon, Bergen, Gaia and Autumn to continue.", 
+                      "ko_KR": "Complete Trailblazing in Maroon, Bergen, Gaia and Autumn to continue.", 
+                      "zh_CN": "Complete Trailblazing in Maroon, Bergen, Gaia and Autumn to continue.", 
+                      "zh_TW": "Complete Trailblazing in Maroon, Bergen, Gaia and Autumn to continue.", "langUid": 23343 },
+                    "time": 6,
+                    "mode": "LINE_FILL",
+                    "color": "BLUE",
+                    "yOffset": 16,
+                    "hideOutsideOfScreen": false
+                }
+            ]
+        }
+      }   
+    },
+    { "type": "EXIT", "count": 3 },    
+
+    { "type": "EXIT" }    
+]

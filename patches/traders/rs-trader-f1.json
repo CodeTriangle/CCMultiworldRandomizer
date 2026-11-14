@@ -1,0 +1,52 @@
+[
+	{ "type": "ENTER", "index": [48,"settings","npcStates"] },
+	{ "type": "ENTER", "index": 0 },
+	{
+		"_comment": "Remove earlier trade options",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content":  "false"
+	},
+	{ "type": "EXIT", "count": 1 },  
+	{ "type": "ENTER", "index": 1 },
+	{
+		"_comment": "rhombusDlcLoot2 open by default with dlc (required Beach finish)",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content":  "extension.post-game.active"
+	},
+	{ "type": "EXIT", "count": 1 },  
+	{ "type": "EXIT", "count": 3 }, 
+
+	{ "type": "ENTER", "index": [45,"settings","npcStates"] },
+	{ "type": "ENTER", "index": 0 },
+	{
+		"_comment": "rhombusSpiceSets3 open by default with dlc",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content":  "extension.post-game.active"
+	},
+	{ "type": "EXIT", "count": 1 },  
+	{ "type": "EXIT", "count": 3 }, 
+	{ "type": "ENTER", "index": [42,"settings","npcStates"] },
+	{ "type": "ENTER", "index": 0 },
+	{
+		"_comment": "rhombusFruitSets3 open by default with dlc",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content":  "extension.post-game.active"
+	},
+	{ "type": "EXIT", "count": 1 },  
+	{ "type": "EXIT", "count": 3 }, 
+	{ "type": "ENTER", "index": [41,"settings","npcStates"] },
+	{ "type": "ENTER", "index": 0 },
+	{
+		"_comment": "rhombusVeggieSets3 open by default with dlc",
+		"type": "SET_KEY",
+		"index": "condition",
+		"content":  "extension.post-game.active"
+	},
+	{ "type": "EXIT", "count": 1 },  
+
+	{ "type": "EXIT", "count": 3 }
+]

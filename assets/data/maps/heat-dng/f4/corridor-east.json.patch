@@ -1,0 +1,13 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+  { "type": "ENTER", "_comment": "Make the east door require finishing East Chamber 2 puzzle","index": [ 1, "settings" ] },
+  { "type": "SET_KEY", "index": "condition", "content": "maps.heatDng/f4/room-07.steam" },
+  { "type": "EXIT", "count": 2 },
+  {
+    "type": "EXIT",
+    "count": 1
+  } 
+]

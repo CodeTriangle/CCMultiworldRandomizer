@@ -1,0 +1,297 @@
+[
+  {
+    "type": "ENTER",
+    "index": "entities"
+  },
+
+  {
+    "type": "ENTER",
+    "_comment": "Green Leaf Shade cutscene",
+    "index": [9, "settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "endCondition",
+    "content": "map.leafDone"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "plot.firstShade"
+  },
+  {
+    "type": "ENTER",
+    "index": "event"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "104",
+    "content":  { "type": "CHANGE_VAR_BOOL", "varName": "map.leafDone", "changeType": "set", "value": true }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.expoDone", "changeType": "set", "value": true, "map": "rookie-harbor.central-quest-hub-2" }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+
+  {
+    "type": "ENTER",
+    "_comment": "Post Temple Mine cutscene",
+    "index": [10, "settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "endCondition",
+    "content": "map.coldDone"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "plot.cold-dng-end"
+  },
+  {
+    "type": "ENTER",
+    "index": "event"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.expoDone", "changeType": "set", "value": true, "map": "cold-dng.g.shade-room" }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.coldDone", "changeType": "set", "value": true }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+
+  {
+    "type": "ENTER",
+    "_comment": "Post Fajro cutscene",
+    "index": [11, "settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "endCondition",
+    "content": "map.heatDone"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "plot.heat-dng-end"
+  },
+  {
+    "type": "ENTER",
+    "index": "event"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content":  { "type": "CHANGE_VAR_BOOL", "varName": "map.heatDone", "changeType": "set", "value": true }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.expoDone", "changeType": "set", "value": true, "map": "heat.dng-top" }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+
+  {
+    "type": "ENTER",
+    "_comment": "Post Autumns Fall cutscene",
+    "index": [12, "settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "endCondition",
+    "content": "map.frobbitDone"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "plot.daft-frobbit-kill"
+  },
+  {
+    "type": "ENTER",
+    "index": "event"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.expoDone", "changeType": "set", "value": true, "map": "autumn-fall.path-04" }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.frobbitDone", "changeType": "set", "value": true }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+
+  {
+    "type": "ENTER",
+    "_comment": "Post Kryskajo cutscene",
+    "index": [13, "settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "endCondition",
+    "content": "map.krysDone"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "plot.tree-dng-end"
+  },
+  {
+    "type": "ENTER",
+    "index": "event"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.expoDone", "changeType": "set", "value": true, "map": "jungle.dng.tree-expo-space" }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.krysDone", "changeType": "set", "value": true }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+  
+  {
+    "type": "ENTER",
+    "_comment": "Post Meteor Shade cutscene",
+    "index": [14, "settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "endCondition",
+    "content": "map.postMeteor"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "plot.meteorShade >= 2"
+  },
+  {
+    "type": "ENTER",
+    "index": "event"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.postMeteor", "changeType": "set", "value": true }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+
+  {
+    "type": "ENTER",
+    "_comment": "Post So'najiz cutscene",
+    "index": [15, "settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "endCondition",
+    "content": "map.waveDone"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "plot.wave-dng-end"
+  },
+  {
+    "type": "ENTER",
+    "index": "event"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content":  { "type": "CHANGE_VAR_BOOL", "varName": "map.expoDone", "changeType": "set", "value": true, "map": "jungle.dng.wave-exterior-end" }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.waveDone", "changeType": "set", "value": true }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+  
+  {
+    "type": "ENTER",
+    "_comment": "Post Zir'vitar cutscene",
+    "index": [16, "settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "endCondition",
+    "content": "map.shockDone"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "plot.shock-dng-end"
+  },
+  {
+    "type": "ENTER",
+    "index": "event"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content":  { "type": "CHANGE_VAR_BOOL", "varName": "map.expoDone", "changeType": "set", "value": true, "map": "jungle.dng.shock-exterior-end" }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.shockDone", "changeType": "set", "value": true }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+
+  {
+    "type": "ENTER",
+    "_comment": "Ancient Shade cutscene",
+    "index": [17, "settings"]
+  },
+  {
+    "type": "SET_KEY",
+    "index": "endCondition",
+    "content": "map.beachDone"
+  },
+  {
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "plot.ancientShadeFight"
+  },
+  {
+    "type": "ENTER",
+    "index": "event"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": { "type": "CHANGE_VAR_BOOL", "varName": "map.beachDone", "changeType": "set", "value": true }
+  },
+  {
+    "type": "EXIT",
+    "count": 3
+  },
+
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "_comment": "Emergency Exit interaction",
+    "content": { "type": "NPC", "x": 392, "y": 412, "level": 1, "settings": { "size": { "x": 16, "y": 16 }, "mapId": 700, "npcStates": [ { "reactType": "", "face": "SOUTH", "action": [], "hidden": false, "condition": "", "config": "normal", "event": [ { "person": { "person": "advisors.general", "expression": "OFFLINE" }, "type": "ADD_MSG_PERSON", "side": "RIGHT", "order": 0, "clearSide": true }, { "person": { "person": "main.lea", "expression": "SURPRISED" }, "type": "ADD_MSG_PERSON", "side": "LEFT", "order": 5, "clearSide": true }, { "person": { "person": "advisors.general", "expression": "OFFLINE" }, "message": { "en_US": "Would you like to exit the expo space?", "de_DE": "Would you like to exit the expo space?", "ja_JP": "Would you like to exit the expo space?", "ko_KR": "Would you like to exit the expo space?", "zh_CN": "Would you like to exit the expo space?", "zh_TW": "Would you like to exit the expo space?", "langUid": 8867 }, "type": "SHOW_MSG" }, { "person": { "person": "advisors.general", "expression": "OFFLINE" }, "message": { "en_US": "Only use in case of emergency", "de_DE": "Only use in case of emergency", "ja_JP": "Only use in case of emergency", "ko_KR": "Only use in case of emergency", "zh_CN": "Only use in case of emergency", "zh_TW": "Only use in case of emergency", "langUid": 8868 }, "type": "SHOW_MSG" }, { "0": [ { "person": { "person": "main.lea", "expression": "NOD" }, "message": { "en_US": "*nods*", "de_DE": "*nods*", "ja_JP": "*nods*", "ko_KR": "*nods*", "zh_CN": "*nods*", "zh_TW": "*nods*", "langUid": 8869 }, "type": "SHOW_MSG" },{ "type": "SET_MOBILITY_BLOCK", "value": "NONE" } ,{ "type": "TELEPORT", "map": "rookie-harbor.center", "marker": "" } ], "1": [ { "person": { "person": "main.lea", "expression": "SHAKE" }, "message": { "en_US": "*shake*", "de_DE": "*shake*", "ja_JP": "*shake*", "ko_KR": "*shake*", "zh_CN": "*shake*", "zh_TW": "*shake*", "langUid": 8865 }, "type": "SHOW_MSG" } ], "type": "SHOW_CHOICE", "person": { "person": "main.lea", "expression": "THINKING" }, "options": [ { "0": " ", "label": { "en_US": "[Yes]", "de_DE": "[Yes]", "fr_FR": "fr_FR", "langUid": 120, "zh_CN": "[Yes]", "ja_JP": "[Yes]", "ko_KR": "[Yes]", "zh_TW": "[Yes]" } }, { "0": " ", "label": { "en_US": "[Not now]", "de_DE": "[Nicht jetzt]", "fr_FR": "fr_FR", "langUid": 121, "zh_CN": "[现在不行]", "ja_JP": "[今はやめておく]", "ko_KR": "[다음에]", "zh_TW": "[現在不行]" } } ] }, { "type": "CLEAR_MSG", "side": "ALL" } ] } ], "characterName": "misc.hidden", "name": "EmergencyExit" } }
+  },
+
+  {
+    "type": "EXIT"
+  }
+]

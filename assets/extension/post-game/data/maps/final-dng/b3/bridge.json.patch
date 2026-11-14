@@ -1,0 +1,79 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+    {
+        "type": "ENTER",
+        "index": [37, "settings","event", 0, "thenStep"]
+    },
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "_comment": "Add reward for puzzle finish",
+        "content": {
+            "type": "GIVE_ITEM",
+            "item": "40",
+            "amount": 3
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 5
+    },    
+    {
+        "type": "ENTER",
+        "index": [38, "settings","event", 0, "thenStep"]
+    },
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "_comment": "Add reward for puzzle finish",
+        "content": {
+            "type": "GIVE_ITEM",
+            "item": "40",
+            "amount": 3
+        }
+    },
+    {
+        "type": "EXIT",
+        "count": 5
+    },    
+    {
+        "type": "ENTER",
+        "index": [41, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "-elevator access on one puzzle finish, not needed-",
+        "index": "startCondition",
+        "content": "map.poleUp1 || map.poleUp2"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },    
+    {
+        "type": "ENTER",
+        "index": [2, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "_comment": "Enable door by default",
+        "index": "condition"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },    
+    {
+        "type": "FOR_IN",
+        "_comment": "Enable elevator signs",
+        "keyword": "__INDEX__",
+        "values": [42, 43, 44, 45, 46],
+        "body": [{ "type": "ENTER", "index": ["__INDEX__",  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition" },{ "type": "EXIT", "count": 2 }]
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    }    
+    
+]

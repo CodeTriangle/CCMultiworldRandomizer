@@ -1,0 +1,23 @@
+{
+  "DOCTYPE": "PROP_SHEET",
+  "props": [
+    {
+      "name": "barrierSignRocky",
+      "size": { "x": 24, "y": 24, "z": 0 },
+      "collType": "NONE",
+      "anims": {
+        "sheet": {
+          "src": "media/map/customshades.png",
+          "width": 24,
+          "height": 24,
+          "offX": 0,
+          "offY": 96
+        },
+        "SUB": [
+          { "name": "off", "time": 1, "frames": [0], "repeat": true },
+          { "name": "on", "time": 1, "frames": [1], "repeat": true }
+        ]
+      }
+    }
+  ]
+}

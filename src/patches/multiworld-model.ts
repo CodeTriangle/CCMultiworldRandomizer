@@ -2,6 +2,7 @@ import { defineVarProperty } from "../utils";
 import { saveDataPackage, loadDataPackage } from "../package-utils";
 import * as ap from "archipelago.js";
 import MwRandomizer from "../plugin";
+import { sendTrap } from "./traps";
 import { ItemInfo } from "../item-data.model";
 
 export function patch(plugin: MwRandomizer) {
@@ -296,20 +297,32 @@ export function patch(plugin: MwRandomizer) {
 
 					displayMessage = false;
 				} else if (item.id < this.baseNormalItemId) {
-					switch (item.name) {
-						case "SP Upgrade":
-							sc.model.player.setSpLevel(Number(sc.model.player.spLevel) + 1);
-							sc.party.currentParty.forEach((name: string) => {
-								sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
-							});
-
-							break;
-						case "West Gaia Pass":
-							sc.model.player.addItem("west-gaia-pass", 1, foreign);
-							break;
-						case "East Gaia Pass":
-							sc.model.player.addItem("east-gaia-pass", 1, foreign);
-							break;
+					if (item.name.includes("Trap")) {
+						if(!this.trapsReceived.includes(index)) {
+							sendTrap(item)
+							this.trapsReceived.push(index);
+						}
+						else {
+							// console.log("Already sent trap: ", item.name);
+							displayMessage = false;
+						}
+					}
+					else {
+						switch (item.name) {
+							case "SP Upgrade":
+								sc.model.player.setSpLevel(Number(sc.model.player.spLevel) + 1);
+								sc.party.currentParty.forEach((name: string) => {
+									sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
+								});
+	
+								break;
+							case "West Gaia Pass":
+								sc.model.player.addItem("west-gaia-pass", 1, foreign);
+								break;
+							case "East Gaia Pass":
+								sc.model.player.addItem("east-gaia-pass", 1, foreign);
+								break;
+						}
 					}
 				} else if (item.id < this.baseDynamicItemId) {
 					let [itemId, quantity] = this.getItemDataFromComboId(item.id);
@@ -381,6 +394,10 @@ export function patch(plugin: MwRandomizer) {
 					this.seenChests = new Set();
 				}
 
+				if (!this.trapsReceived) {
+					this.trapsReceived = [];
+				}
+
 				if (ig.game.mapName == "newgame") {
 					return;
 				}
@@ -424,6 +441,7 @@ export function patch(plugin: MwRandomizer) {
 				this.questSettings = null as any;
 				this.receivedItemMap = null as any;
 				this.seenChests = null as any;
+				this.trapsReceived = null as any;
 			},
 
 			onLevelLoadStart() {
@@ -433,6 +451,7 @@ export function patch(plugin: MwRandomizer) {
 			onStorageSave(savefile) {
 				savefile.vars.storage.mw.localCheckedLocations = Array.from(this.localCheckedLocations.values());
 				savefile.vars.storage.mw.seenChests = Array.from(this.seenChests.values());
+				savefile.vars.storage.mw.trapsReceived = this.trapsReceived;
 			},
 
 			async reallyCheckLocation(mwid: number) {
@@ -650,3 +669,6 @@ export function patch(plugin: MwRandomizer) {
 			return (sc.multiworld = new sc.MultiWorldModel());
 		});
 }
+
+
+

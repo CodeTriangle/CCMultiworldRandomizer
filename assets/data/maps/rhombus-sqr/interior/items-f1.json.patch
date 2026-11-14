@@ -1,0 +1,14 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+    
+    {
+        "type": "INCLUDE",
+        "_comment": "Trader changes",
+        "src": "mod:patches/traders/rs-trader-f1.json"
+    },
+
+    { "type": "EXIT" }  
+]

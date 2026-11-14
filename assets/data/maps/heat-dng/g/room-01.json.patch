@@ -1,0 +1,30 @@
+[
+  {
+      "type": "ENTER",
+      "index": ["entities"]
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "BallChanger",
+      "x": 356,
+      "y": 372,
+      "level": 1,
+      "settings": {
+        "name": "",
+        "mapId": 1184,
+        "condition": "",
+        "changerType": {
+          "type": "CHANGE_ELEMENT",
+          "settings": {
+            "element": "HEAT"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "EXIT",
+    "count": 1
+  }    
+]

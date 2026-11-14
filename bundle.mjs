@@ -11,7 +11,9 @@ const files = [
 const directories = [
 	"assets",
 	"data/out",
-	"mw-rando"
+	"mw-rando",
+	"patches",
+	"extra-patches"
 ];
 
 const exclude = [

@@ -1,0 +1,46 @@
+[
+    {
+        "type": "ENTER",
+        "index": [ "entities" ]
+    },
+    {
+        "type": "ENTER",
+        "index": [ 632, "settings", "npcStates", 0]
+    },
+    {
+        "_comment": "Disable first Mick state",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "false"
+    },
+    { "type": "EXIT" },
+    { "type": "ENTER", "index": 1 },
+    {
+        "_comment": "Make Mick not require Wave, or speaking with Black Market NPC before giving the quest",
+        "type": "SET_KEY",
+        "index": "condition"
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    },
+
+    {
+        "type": "ENTER",
+        "index": [ 633, "settings"]
+    },
+    {
+        "_comment": "Remove Mick xenodialog so it doesn't collide with the quest",
+        "type": "SET_KEY",
+        "index": "spawnCondition",
+        "content": "false"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

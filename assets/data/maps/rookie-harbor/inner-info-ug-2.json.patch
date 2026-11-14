@@ -1,0 +1,33 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [8, "settings", "npcStates"]
+    },
+
+    { "type": "ENTER", "index": [0, "event"] },
+    {
+        "_comment": "Replace Heat and Cold text with shades",
+        "type": "SET_KEY",
+        "index": 4,
+        "content": { "message": { "en_US": "Come back when obtained both \\c[3]Flame\\c[0] and \\c[3]Ice\\c[0] Shades you have, yes yes.", "de_DE": "Komm wieder, wenn \\c[3]Flame\\c[0] und \\c[3]Ice\\c[0] Shades gemeistert du hast, m'jom m'jom.", "zh_CN": "\u638c\u63e1\u4e86\\c[3]\u706b\\c[0]\u548c\\c[3]\u51b0\\c[0]\u4e24\u79cd\u5143\u7d20\u4e4b\u540e\u518d\u6765\u7f62\u3002<<A<<[CHANGED 2018\/09\/19]", "ja_JP": "\u3088\u3057\u3088\u3057\u3001\\c[3]\u706b\u708e\\c[0]\u3068\\c[3]\u51b7\u6c17\\c[0]\u3092\n\u7fd2\u5f97\u3057\u305f\u3089\u623b\u3063\u3066\u6765\u308b\u304c\u3088\u3044\u3002<<A<<[CHANGED 2018\/09\/19]", "ko_KR": "\ub9c8\uc2a4\ud130\ud558\uba74 \ub3cc\uc544\uc624\ub3c4\ub85d, \\c[3]\uc5f4\uae30\\c[0]\uc640 \\c[3]\ub0c9\uae30\\c[0]\ub97c, \uadf8\ub7fc \uadf8\ub7fc.<<A<<[CHANGED 2018\/09\/19]", "langUid": 189, "zh_TW": "\u638c\u63e1\u4e86\\c[3]\u706b\\c[0]\u548c\\c[3]\u51b0\\c[0]\u5169\u7a2e\u5143\u7d20\u4e4b\u5f8c\u518d\u4f86\u7f77\u3002<<A<<[CHANGED 2018\/09\/19]" }, "autoContinue": false, "type": "SHOW_MSG", "person": { "person": "rookie-harbor.van-pummelson", "expression": "DEFAULT" } } 
+    },
+    { "type": "EXIT", "count": 2 },
+
+    { "type": "ENTER", "index": 1 },
+    {
+        "_comment": "Replace fajro completion for obtain flame shade and ice shade",
+        "type": "SET_KEY",
+        "index": "condition",
+        "content": "(item.225.amount >= 1) && (item.230.amount >= 1)"
+    },
+    { "type": "EXIT", "count": 1 },
+
+    { "type": "EXIT", "count": 3 },
+
+    { "type": "EXIT", "count": 1 }
+]

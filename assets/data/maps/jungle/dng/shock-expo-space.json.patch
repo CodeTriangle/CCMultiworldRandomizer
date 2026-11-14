@@ -1,0 +1,16 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities",4,"settings","event"]
+    },
+    {
+        "type": "ADD_ARRAY_ELEMENT",
+        "index": 31,
+        "content": { "type": "CHANGE_VAR_BOOL", "varName": "plot.shock-dng-end", "changeType": "set", "value": true }
+    },
+    {
+        "type": "EXIT",
+        "count": 4
+    }    
+    
+]

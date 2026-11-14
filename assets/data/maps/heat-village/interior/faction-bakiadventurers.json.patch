@@ -1,0 +1,37 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [62, "settings", "npcStates"]
+    },
+
+        {
+            "type": "ENTER",
+            "index": 4
+        },
+        {
+            "_comment": "Replace fajro completion for flame shade for second quest",
+            "type": "SET_KEY",
+            "index": "condition",
+            "content": "quest.nomadAdv-1-turtle_bombing_1.solved && (item.230.amount >= 1) && !quest.nomadAdv-2-tomb_raiding_2.started"
+        },
+        {
+            "type": "EXIT",
+            "count": 1
+        },
+
+    {
+        "type": "EXIT",
+        "count": 3
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+
+]

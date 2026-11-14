@@ -1,0 +1,327 @@
+[
+	{ "type": "ENTER", "index": ["entities"] },
+
+	{ "type": "ENTER", "index": [136, "settings","propConfig"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Remove fence for free puzzle access",
+		"index": "name",
+		"content": "blockLineH"
+	},
+	{
+		"type": "ENTER",
+		"index": "ends"
+	},
+	{
+		"type": "SET_KEY",
+		"index": "east",
+		"content": "EAST_END"
+	},
+	{ "type": "EXIT", "count": 4 }, 
+
+	{ "type": "ENTER", "index": [143, "settings","propType"] },
+	{
+		"type": "SET_KEY",
+		"index": "name",
+		"content": "slopeNWbottom"
+	},
+	{ "type": "EXIT", "count": 3 },    
+
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add Jump Panels to go back to the exit",
+		"content": {
+			"type": "JumpPanel",
+			"x": 272,
+			"y": 592,
+			"level": 1,
+			"settings": {
+				"name": "",
+				"jumpHeight": 8,
+				"mapId": 1238,
+				"condition": ""
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add Jump Panels to go back to the exit",
+		"content": {
+			"type": "JumpPanel",
+			"x": 288,
+			"y": 592,
+			"level": 1,	
+			"settings": {
+				"name": "",
+				"jumpHeight": 8,
+				"mapId": 1239,
+				"condition": ""
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add Jump Panels to go back to the exit",
+		"content": {
+			"type": "JumpPanel",
+			"x": 304,
+			"y": 592,
+			"level": 1,
+			"settings": {
+				"name": "",
+				"jumpHeight": 8,
+				"mapId": 1240,
+				"condition": ""
+			}
+		}
+	},
+
+	{ "type": "ENTER", "index": [122,"settings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Remove condition from top panels",
+		"index": "condition"
+	},
+	{ "type": "EXIT", "count": 2 }, 
+	{ "type": "ENTER", "index": [123,"settings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Remove condition from top panels",
+		"index": "condition"
+	},
+	{ "type": "EXIT", "count": 2 }, 
+
+	{ "type": "ENTER", "index": [43,"settings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Make bottom wall green for thru playerd",
+		"index": "collType",
+		"content": "PBLOCK"
+	},
+	{ "type": "EXIT", "count": 2 }, 
+
+	{ "type": "ENTER", "index": [1,"settings"] },
+	{
+		"type": "SET_KEY",
+		"_comment": "Remove condition from top door",
+		"index": "condition"
+	},
+	{ "type": "EXIT", "count": 2 }, 
+
+	{ "type": "ENTER", "index": 11 },
+	{
+		"type": "SET_KEY",
+		"_comment": "Move and resize south fence",
+		"index": "x",
+		"content": 328
+	},
+	{ "type": "ENTER", "index": "settings" },
+	{
+		"type": "SET_KEY",
+		"index": "size",
+		"content": {
+			"x": 256,
+			"y": 8
+		}
+	},
+	{ "type": "EXIT", "count": 2 }, 
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add vertical fence",
+		"content": {
+			"type": "ScalableProp",
+			"x": 264,
+			"y": 590,
+			"level": 1,
+			"settings": {
+				"name": "",
+				"size": {
+					"x": 8,
+					"y": 56
+				},
+				"patternOffset": {
+					"x": 0,
+					"y": 0
+				},
+				"timeOffset": 0,
+				"blockNavMap": false,
+				"mapId": 1212,
+				"propConfig": {
+					"sheet": "final-dng-inner",
+					"name": "fenceV",
+					"ends": {
+						"north": "NORTH_END",
+						"south": "SOUTH_WEST"
+					}
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add vertical fence",
+		"content": {
+			"type": "ScalableProp",
+			"x": 320,
+			"y": 590,
+			"level": 1,
+			"settings": {
+				"name": "",
+				"size": {
+					"x": 8,
+					"y": 56
+				},
+				"patternOffset": {
+					"x": 0,
+					"y": 0
+				},
+				"timeOffset": 0,
+				"blockNavMap": false,
+				"mapId": 1213,
+				"propConfig": {
+					"sheet": "final-dng-inner",
+					"name": "fenceV",
+					"ends": {
+						"north": "NORTH_END",
+						"south": "SOUTH_EAST"
+					}
+				}
+			}
+		}
+	},
+	{
+		"type": "ADD_ARRAY_ELEMENT",
+		"_comment": "Add south fence",
+		"content": {
+			"type": "ScalableProp",
+			"x": 208,
+			"y": 636,
+			"level": 1,
+			"settings": {
+				"name": "",
+				"size": {
+					"x": 56,
+					"y": 8
+				},
+				"patternOffset": {
+					"x": 0,
+					"y": 0
+				},
+				"timeOffset": 0,
+				"blockNavMap": false,
+				"mapId": 1214,
+				"propConfig": {
+					"sheet": "final-dng-inner",
+					"name": "fenceH",
+					"ends": {
+						"west": "WEST_END",
+						"east": ""
+					}
+				}
+			}
+		}
+	},
+
+	{ "type": "EXIT" },
+	{ "type": "ENTER", "index": ["layer"] },
+	
+	{ "type": "ENTER", "_comment": "Replace ground data", "index": [4, "data"]},
+	{ "type": "ENTER", "index": 36 },
+	{
+		"type": "FOR_IN",
+		"keyword": "__INDEX__",
+		"values": [17,18,19],
+		"body": [
+			{ "type": "REMOVE_ARRAY_ELEMENT", "index": "__INDEX__" },
+			{ "type": "ADD_ARRAY_ELEMENT", "index": "__INDEX__", "content": 0 }
+		]
+	},
+	{ "type": "EXIT", "count": 1 },
+	{ "type": "ENTER", "index": 37 },
+	{
+		"type": "FOR_IN",
+		"keyword": "__INDEX__",
+		"values": [17,18,19],
+		"body": [
+			{ "type": "REMOVE_ARRAY_ELEMENT", "index": "__INDEX__" },
+			{ "type": "ADD_ARRAY_ELEMENT", "index": "__INDEX__", "content": 130 }
+		]
+	},
+	{ "type": "EXIT", "count": 1 },
+	{ "type": "ENTER", "index": 38 },
+	{
+		"type": "FOR_IN",
+		"keyword": "__INDEX__",
+		"values": [17,18,19],
+		"body": [
+			{ "type": "REMOVE_ARRAY_ELEMENT", "index": "__INDEX__" },
+			{ "type": "ADD_ARRAY_ELEMENT", "index": "__INDEX__", "content": 1 }
+		]
+	},
+	{ "type": "EXIT", "count": 1 },
+	{ "type": "ENTER", "index": 39 },
+	{
+		"type": "FOR_IN",
+		"keyword": "__INDEX__",
+		"values": [17,18,19],
+		"body": [
+			{ "type": "REMOVE_ARRAY_ELEMENT", "index": "__INDEX__" },
+			{ "type": "ADD_ARRAY_ELEMENT", "index": "__INDEX__", "content": 1 }
+		]
+	},
+	{ "type": "EXIT", "count": 1 },
+	{ "type": "EXIT", "count": 2 },
+	{ "type": "ENTER", "_comment": "Replace ground detail data", "index": [5, "data"]},
+
+	{ "type": "ENTER", "index": 35 },
+	{
+		"type": "FOR_IN",
+		"keyword": "__INDEX__",
+		"values": [17,18,19],
+		"body": [
+			{ "type": "REMOVE_ARRAY_ELEMENT", "index": "__INDEX__" },
+			{ "type": "ADD_ARRAY_ELEMENT", "index": "__INDEX__", "content": 450 }
+		]
+	},
+	{ "type": "EXIT", "count": 1 },
+	{ "type": "ENTER", "index": 36 },
+	{
+		"type": "FOR_IN",
+		"keyword": "__INDEX__",
+		"values": [17,18,19],
+		"body": [
+			{ "type": "REMOVE_ARRAY_ELEMENT", "index": "__INDEX__" },
+			{ "type": "ADD_ARRAY_ELEMENT", "index": "__INDEX__", "content": 482 }
+		]
+	},
+	{ "type": "EXIT", "count": 1 },
+		{ "type": "ENTER", "index": 37 },
+	{
+		"type": "FOR_IN",
+		"keyword": "__INDEX__",
+		"values": [17,18,19],
+		"body": [
+			{ "type": "REMOVE_ARRAY_ELEMENT", "index": "__INDEX__" },
+			{ "type": "ADD_ARRAY_ELEMENT", "index": "__INDEX__", "content": 514 }
+		]
+	},
+	{ "type": "EXIT", "count": 1 },
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "ENTER", "_comment": "Replace collision data", "index": [8, "data"]},
+	{ "type": "ENTER", "index": 39 },
+	{
+		"type": "FOR_IN",
+		"keyword": "__INDEX__",
+		"values": [17,18,19],
+		"body": [
+			{ "type": "REMOVE_ARRAY_ELEMENT", "index": "__INDEX__" },
+			{ "type": "ADD_ARRAY_ELEMENT", "index": "__INDEX__", "content": 0 }
+		]
+	},
+	{ "type": "EXIT", "count": 1 },
+
+	{ "type": "EXIT", "count": 2 },
+
+	{ "type": "EXIT" }
+]

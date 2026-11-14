@@ -1,0 +1,11 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "_comment": "Removes the barriers in front of the dlc exits with dlc active", "index": [0,  "settings"] },
+    { "type": "SET_KEY", "index": "blockEventCondition", "content": "!extension.post-game.active" },
+    { "type": "EXIT", "count": 2 },
+  
+    { "type": "ENTER", "index": [67,  "settings"] },{ "type": "SET_KEY", "index": "spawnCondition", "content": "!extension.post-game.active" },{ "type": "EXIT", "count": 2 },
+
+    { "type": "EXIT", "count": 1 }  
+]

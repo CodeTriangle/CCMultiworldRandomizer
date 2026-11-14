@@ -1,0 +1,51 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Removes PVP events and dream events",
+        "keyword": "__INDEX__",
+        "values": [469, 473, 474, 486, 541, 548],
+        "body": [{
+            "type": "ENTER",
+            "index": ["__INDEX__",  "settings"]
+        },{
+            "type": "SET_KEY",
+            "index": "startCondition",
+            "content": "false"
+        },{
+            "type": "EXIT",
+            "count": 2
+        }]
+    },
+
+    { "_comment": "Hide Apollo", "type": "ENTER", "index": [470, "settings"] }, { "type": "SET_KEY", "index": "npcStates", "content": [ { "reactType": "FIXED_POS", "face": "WEST", "showFx": { "sheet": "teleport", "name": "showDefault" }, "hidden": true, "condition": "", "config": "", "event": [] } ] },{ "type": "EXIT", "count": 2 },
+    { "_comment": "Hide Emilie", "type": "ENTER", "index": [471, "settings"] }, { "type": "SET_KEY", "index": "npcStates", "content": [ { "reactType": "FIXED_POS", "face": "WEST", "showFx": { "sheet": "teleport", "name": "showDefault" }, "hidden": true, "condition": "", "config": "", "event": [] } ] },{ "type": "EXIT", "count": 2 },
+
+    {
+        "type": "FOR_IN",
+        "_comment": "Hide all the PVP stuff",
+        "keyword": "__INDEX__",
+        "values": [465, 466, 467, 468, 472],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "spawnCondition",
+                "content": "false"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]  
+    },
+
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }  
+]

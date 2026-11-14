@@ -1,0 +1,32 @@
+[
+    { "type": "ENTER", "index": ["entities"] },
+
+    { "type": "ENTER", "index": [21, "settings"] },
+    {
+        "type": "SET_KEY",
+        "_comment": "Allow the element ball changer to be there by default",
+        "index": "condition",
+        "content": ""
+    },
+    { "type": "EXIT", "count": 2 },
+
+    {
+        "type": "ENTER",
+        "_comment": "Door stuck",
+        "index": [57,"settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEventCondition"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEvent"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    }, 
+
+    { "type": "EXIT", "count": 1 }
+]

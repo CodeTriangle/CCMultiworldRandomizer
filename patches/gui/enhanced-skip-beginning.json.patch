@@ -1,0 +1,16 @@
+{
+    "labels": {
+        "menu": {
+            "new-game": {
+                "options": {
+                    "descriptions": {
+                        "rhombus-start": "Start directly at the Quest Hub in Rookie Harbor"
+                    },
+                    "names": {
+                        "rhombus-start": "Randomizer Start"
+                    }
+                }
+            }
+        }
+    }
+}

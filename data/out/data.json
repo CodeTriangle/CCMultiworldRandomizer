@@ -1483,13 +1483,13 @@
 		"heat.caves.cliff-cave-01": {
 			"chests": {
 				"42": {
-					"name": "Maroon: Mystery Cave Lower",
+					"name": "Valley: Mystery Cave Lower",
 					"mwids": [
 						3235824173
 					]
 				},
 				"43": {
-					"name": "Maroon: Mystery Cave Upper",
+					"name": "Valley: Mystery Cave Upper",
 					"mwids": [
 						3235824174
 					]
@@ -1499,13 +1499,13 @@
 		"heat.caves.cliffs-temple-02": {
 			"chests": {
 				"48": {
-					"name": "Maroon: Cursed Temple Upper",
+					"name": "Valley: Cursed Temple Upper",
 					"mwids": [
 						3235824175
 					]
 				},
 				"86": {
-					"name": "Maroon: Cursed Temple Lower",
+					"name": "Valley: Cursed Temple Lower",
 					"mwids": [
 						3235824176
 					]
@@ -1515,7 +1515,7 @@
 		"heat.caves.cliffs-temple-03": {
 			"chests": {
 				"107": {
-					"name": "Maroon: Cursed Temple Treasure Room",
+					"name": "Valley: Cursed Temple Treasure Room",
 					"mwids": [
 						3235824177
 					]
@@ -1525,7 +1525,7 @@
 		"heat.caves.maroon-cave-01": {
 			"chests": {
 				"404": {
-					"name": "Maroon: Maroon Cave 1",
+					"name": "Valley: Maroon Cave 1",
 					"mwids": [
 						3235824178
 					]
@@ -1535,13 +1535,13 @@
 		"heat.cliffs.cliffs-path-01": {
 			"chests": {
 				"105": {
-					"name": "Maroon: River Cliff Right",
+					"name": "Valley: River Cliff Right",
 					"mwids": [
 						3235824179
 					]
 				},
 				"197": {
-					"name": "Maroon: River Cliff Left",
+					"name": "Valley: River Cliff Left",
 					"mwids": [
 						3235824180
 					]
@@ -1551,19 +1551,19 @@
 		"heat.cliffs.cliffs-path-02": {
 			"chests": {
 				"29": {
-					"name": "Maroon: Endless Pit Center",
+					"name": "Valley: Endless Pit Center",
 					"mwids": [
 						3235824181
 					]
 				},
 				"30": {
-					"name": "Maroon: Endless Pit Right",
+					"name": "Valley: Endless Pit Right",
 					"mwids": [
 						3235824182
 					]
 				},
 				"32": {
-					"name": "Maroon: Endless Pit Left",
+					"name": "Valley: Endless Pit Left",
 					"mwids": [
 						3235824183
 					]
@@ -1573,13 +1573,13 @@
 		"heat.oasis.oasis-path-01": {
 			"chests": {
 				"8": {
-					"name": "Maroon: Vivid Path Lower",
+					"name": "Valley: Vivid Path Lower",
 					"mwids": [
 						3235824184
 					]
 				},
 				"9": {
-					"name": "Maroon: Vivid Path Upper",
+					"name": "Valley: Vivid Path Upper",
 					"mwids": [
 						3235824185
 					]
@@ -1589,13 +1589,13 @@
 		"heat.oasis.oasis-path-02": {
 			"chests": {
 				"80": {
-					"name": "Maroon: Maroon Oasis Center",
+					"name": "Valley: Maroon Oasis Center",
 					"mwids": [
 						3235824186
 					]
 				},
 				"97": {
-					"name": "Maroon: Maroon Oasis Upper",
+					"name": "Valley: Maroon Oasis Upper",
 					"mwids": [
 						3235824187
 					]
@@ -1605,7 +1605,7 @@
 		"heat.oasis.oasis-path-03": {
 			"chests": {
 				"34": {
-					"name": "Maroon: Bright Path",
+					"name": "Valley: Bright Path",
 					"mwids": [
 						3235824188
 					]
@@ -1615,7 +1615,7 @@
 		"heat.path-00": {
 			"chests": {
 				"6": {
-					"name": "Maroon: Rising Railway",
+					"name": "Valley: Rising Railway",
 					"mwids": [
 						3235824189
 					]
@@ -1625,7 +1625,7 @@
 		"heat.path-01-entrance": {
 			"chests": {
 				"55": {
-					"name": "Maroon: East Entrance",
+					"name": "Valley: East Entrance",
 					"mwids": [
 						3235824190
 					]
@@ -1635,13 +1635,13 @@
 		"heat.path-02": {
 			"chests": {
 				"7": {
-					"name": "Maroon: Dusty Path Center",
+					"name": "Valley: Dusty Path Center",
 					"mwids": [
 						3235824191
 					]
 				},
 				"14": {
-					"name": "Maroon: Dusty Path Upper",
+					"name": "Valley: Dusty Path Upper",
 					"mwids": [
 						3235824192
 					]
@@ -1651,13 +1651,13 @@
 		"heat.path-03": {
 			"chests": {
 				"23": {
-					"name": "Maroon: Crossroad Center",
+					"name": "Valley: Crossroad Center",
 					"mwids": [
 						3235824193
 					]
 				},
 				"25": {
-					"name": "Maroon: Crossroad Left",
+					"name": "Valley: Crossroad Left",
 					"mwids": [
 						3235824194
 					]
@@ -1667,7 +1667,7 @@
 		"heat.path-04": {
 			"chests": {
 				"34": {
-					"name": "Maroon: Long Piece",
+					"name": "Valley: Long Piece",
 					"mwids": [
 						3235824195
 					]
@@ -1677,13 +1677,13 @@
 		"heat.path-05": {
 			"chests": {
 				"2": {
-					"name": "Maroon: Barren Arcs Center",
+					"name": "Valley: Barren Arcs Center",
 					"mwids": [
 						3235824196
 					]
 				},
 				"14": {
-					"name": "Maroon: Barren Arcs Left",
+					"name": "Valley: Barren Arcs Left",
 					"mwids": [
 						3235824197
 					]
@@ -1693,7 +1693,7 @@
 		"heat.path-06": {
 			"chests": {
 				"16": {
-					"name": "Maroon: Barren Land",
+					"name": "Valley: Barren Land",
 					"mwids": [
 						3235824198
 					]
@@ -1703,13 +1703,13 @@
 		"heat.path-07": {
 			"chests": {
 				"7": {
-					"name": "Maroon: Overpass Upper",
+					"name": "Valley: Overpass Upper",
 					"mwids": [
 						3235824199
 					]
 				},
 				"78": {
-					"name": "Maroon: Overpass Left",
+					"name": "Valley: Overpass Left",
 					"mwids": [
 						3235824200
 					]
@@ -1719,13 +1719,13 @@
 		"heat.path-08": {
 			"chests": {
 				"1": {
-					"name": "Maroon: Paw Cliffs Lower",
+					"name": "Valley: Paw Cliffs Lower",
 					"mwids": [
 						3235824201
 					]
 				},
 				"4": {
-					"name": "Maroon: Paw Cliffs Upper",
+					"name": "Valley: Paw Cliffs Upper",
 					"mwids": [
 						3235824202
 					]
@@ -1735,13 +1735,13 @@
 		"heat.path-09": {
 			"chests": {
 				"8": {
-					"name": "Maroon: Torn Road Center",
+					"name": "Valley: Torn Road Center",
 					"mwids": [
 						3235824203
 					]
 				},
 				"41": {
-					"name": "Maroon: Torn Road Right",
+					"name": "Valley: Torn Road Right",
 					"mwids": [
 						3235824204
 					]
@@ -1751,7 +1751,7 @@
 		"heat.path-11": {
 			"chests": {
 				"19": {
-					"name": "Maroon: West Entrance",
+					"name": "Valley: West Entrance",
 					"mwids": [
 						3235824205
 					]
@@ -1761,13 +1761,13 @@
 		"heat.shortcut-02-09": {
 			"chests": {
 				"17": {
-					"name": "Maroon: Fractured Path Upper",
+					"name": "Valley: Fractured Path Upper",
 					"mwids": [
 						3235824206
 					]
 				},
 				"19": {
-					"name": "Maroon: Fractured Path Right",
+					"name": "Valley: Fractured Path Right",
 					"mwids": [
 						3235824207
 					]
@@ -1886,6 +1886,22 @@
 					"name": "Faj'ro 4F: Chamber of Prosperity",
 					"mwids": [
 						3235824219
+					]
+				}
+			}
+		},
+		"heat-dng.g.room-02-cross": {
+			"chests": {
+				"1276": {
+					"name": "Faj'ro GF: Balance Room 1 Left",
+					"mwids": [
+						3235825016
+					]
+				},
+				"1277": {
+					"name": "Faj'ro GF: Balance Room 1 Right",
+					"mwids": [
+						3235825017
 					]
 				}
 			}
@@ -2774,6 +2790,22 @@
 				}
 			}
 		},
+		"tree-dng.g.center-02-connect": {
+			"chests": {
+				"1270": {
+					"name": "Kajo GF: Main Stream Left",
+					"mwids": [
+						3235825018
+					]
+				},
+				"1271": {
+					"name": "Kajo GF: Main Stream Right",
+					"mwids": [
+						3235825019
+					]
+				}
+			}
+		},
 		"tree-dng.f3.branch-east": {
 			"chests": {
 				"166": {
@@ -2996,6 +3028,86 @@
 						3235824523
 					]
 				}
+			}
+		},
+		"autumn.lab.room-final": {
+			"chests": {
+				"55": {
+					"name": "Fall: Lead Office",
+					"mwids": [
+						3235825020
+					]
+				}
+			},
+			"cutscenes": {
+				"40": [
+					{
+						"mwids": [
+							3235825025
+						],
+						"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+					}
+				]
+			}
+		},
+		"heat.lab.room-final": {
+			"chests": {
+				"89": {
+					"name": "Valley: Lead Office",
+					"mwids": [
+						3235825021
+					]
+				}
+			},
+			"cutscenes": {
+				"141": [
+					{
+						"mwids": [
+							3235825026
+						],
+						"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+					}
+				]
+			}
+		},
+		"bergen-trail.lab.room-final": {
+			"chests": {
+				"54": {
+					"name": "Trail: Lead Office",
+					"mwids": [
+						3235825022
+					]
+				}
+			},
+			"cutscenes": {
+				"55": [
+					{
+						"mwids": [
+							3235825027
+						],
+						"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+					}
+				]
+			}
+		},
+		"jungle.lab.room-final": {
+			"chests": {
+				"59": {
+					"name": "Garden: Lead Office",
+					"mwids": [
+						3235825023
+					]
+				}
+			},
+			"cutscenes": {
+				"60": [
+					{
+						"mwids": [
+							3235825024
+						],
+						"path": ".settings.condAnims.0.interact.event.8.thenStep.0"
+					}
+				]
 			}
 		},
 		"evo-village.entrance": {
@@ -4279,6 +4391,26 @@
 				3235824521
 			]
 		},
+		"console-playstation-1": {
+			"mwids": [
+				3235825028
+			]
+		},
+		"console-switch-1": {
+			"mwids": [
+				3235825029
+			]
+		},
+		"console-xbox-1": {
+			"mwids": [
+				3235825030
+			]
+		},
+		"console-pc-1": {
+			"mwids": [
+				3235825031
+			]
+		},
 		"ape-battle": {
 			"mwids": [
 				3235824847,
@@ -4636,10 +4768,10 @@
 					"398": 3235824735,
 					"399": 3235824737,
 					"400": 3235824739,
-					"568": 3235824916,
-					"567": 3235824917,
-					"569": 3235824918,
-					"570": 3235824919
+					"568": 3235825012,
+					"567": 3235825013,
+					"569": 3235825014,
+					"570": 3235825015
 				},
 				"rhombusItems1": {
 					"1": 3235824741,
@@ -5031,10 +5163,10 @@
 					"398": 3235924453,
 					"399": 3235924455,
 					"400": 3235924457,
-					"568": 3235924552,
-					"567": 3235924553,
-					"569": 3235924554,
-					"570": 3235924555
+					"568": 3235924560,
+					"567": 3235924561,
+					"569": 3235924562,
+					"570": 3235924563
 				},
 				"rhombusItems1": {
 					"1": 3235924460,
@@ -5540,7 +5672,7 @@
 			"en_US": "The element of electricity, associated with the Focus stat and Dashing."
 		},
 		"3235824003": {
-			"en_US": "The element of ice, associated with Hit Points and Ranged combat."
+			"en_US": "The element of wave, associated with Hit Points and Ranged combat."
 		},
 		"3235824004": {
 			"en_US": "Boosts your combat capabilities, allowing you to perform more arts."
@@ -5550,6 +5682,90 @@
 		},
 		"3235824006": {
 			"en_US": "Grants access to the eastern regions of \\c[2]Gaia's Garden\\c[0]."
+		},
+		"3235824007": {
+			"en_US": "DOOM? DID YOU SAY DOOM?"
+		},
+		"3235824008": {
+			"en_US": "It's hard to aim straight."
+		},
+		"3235824009": {
+			"en_US": "Unequips your Lea."
+		},
+		"3235824010": {
+			"en_US": "Full circuit reset."
+		},
+		"3235824011": {
+			"en_US": "Level XP resets to 0."
+		},
+		"3235824012": {
+			"en_US": "Explodes"
+		},
+		"3235824013": {
+			"en_US": "Enter circuit overload."
+		},
+		"3235824014": {
+			"en_US": "Get stuck in an ice cage."
+		},
+		"3235824015": {
+			"en_US": "Your wallet feels lighter suddenly."
+		},
+		"3235824016": {
+			"en_US": "Elemental roulette."
+		},
+		"3235824017": {
+			"en_US": "Say goodbye to your combo streak."
+		},
+		"3235824018": {
+			"en_US": "Microscope simulator."
+		},
+		"3235824019": {
+			"en_US": "Telescope simulator."
+		},
+		"3235824020": {
+			"en_US": "Consumes all your SP."
+		},
+		"3235824021": {
+			"en_US": "Blocks all your landmarks."
+		},
+		"3235824022": {
+			"en_US": "Your SP Regen feels heavier."
+		},
+		"3235824023": {
+			"en_US": "You lost one of your dashes."
+		},
+		"3235824024": {
+			"en_US": "Forgot how to dash correctly."
+		},
+		"3235824025": {
+			"en_US": "Randomizer leveling experience."
+		},
+		"3235824026": {
+			"en_US": "Eating for ages."
+		},
+		"3235824027": {
+			"en_US": "Thank you Sergey."
+		},
+		"3235824028": {
+			"en_US": "Dies."
+		},
+		"3235824029": {
+			"en_US": "Maybe dies."
+		},
+		"3235824030": {
+			"en_US": "Stomps."
+		},
+		"3235824031": {
+			"en_US": "Get rotated."
+		},
+		"3235824032": {
+			"en_US": "Get more rotated."
+		},
+		"3235824033": {
+			"en_US": "Forgets how to jump."
+		},
+		"3235824034": {
+			"en_US": "Don't fall."
 		},
 		"3235924225": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rookie's Best\\c[0]."
@@ -6544,16 +6760,16 @@
 		"3235924551": {
 			"en_US": "Unlocks slots selling \\c[3]Goat Milk\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924552": {
+		"3235924560": {
 			"en_US": "Unlocks the slot selling \\c[3]Cross Goggles\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
 		},
-		"3235924553": {
+		"3235924561": {
 			"en_US": "Unlocks the slot selling \\c[3]Cross Edge\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
 		},
-		"3235924554": {
+		"3235924562": {
 			"en_US": "Unlocks the slot selling \\c[3]Cross Mail\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
 		},
-		"3235924555": {
+		"3235924563": {
 			"en_US": "Unlocks the slot selling \\c[3]Cross Boots\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
 		},
 		"3235824050": {
@@ -7057,6 +7273,15 @@
 				"map": "autumn.path-3-1",
 				"mwid": 3235824346,
 				"settings": {}
+			},
+			{
+				"type": "Prop",
+				"level": -2,
+				"x": 457.12,
+				"y": 165.8,
+				"map": "autumn.lab.room-final",
+				"mwid": 3235825025,
+				"settings": {}
 			}
 		],
 		"autumn-fall": [
@@ -7367,6 +7592,17 @@
 				"settings": {
 					"defaultClearance": "Default"
 				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 468.8,
+				"y": 176.4,
+				"map": "autumn.lab.room-final",
+				"mwid": 3235825020,
+				"settings": {
+					"defaultClearance": "Default"
+				}
 			}
 		],
 		"bergen": [
@@ -7556,7 +7792,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 402.51428571428573,
+				"x": 408.51428571428573,
 				"y": 328.08,
 				"map": "bergen-trail.cave.cave-4-1-1",
 				"mwid": 3235824079,
@@ -7699,7 +7935,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 401.04,
+				"x": 425.04,
 				"y": 324.8,
 				"map": "bergen-trail.path-4-1-1",
 				"mwid": 3235824092,
@@ -7849,6 +8085,26 @@
 				"settings": {
 					"defaultClearance": "Default"
 				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 314.6666666666667,
+				"y": 79.94285714285715,
+				"map": "bergen-trail.lab.room-final",
+				"mwid": 3235825022,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Prop",
+				"level": -2,
+				"x": 296.0,
+				"y": 68.97142857142858,
+				"map": "bergen-trail.lab.room-final",
+				"mwid": 3235825027,
+				"settings": {}
 			}
 		],
 		"cold-dng": [
@@ -7943,7 +8199,7 @@
 			{
 				"type": "Chest",
 				"level": -2,
-				"x": 148.48,
+				"x": 144.48,
 				"y": 179.67567567567568,
 				"map": "cold-dng.b2.room5",
 				"mwid": 3235824113,
@@ -8997,6 +9253,26 @@
 				"settings": {
 					"defaultClearance": "Default"
 				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 370.4,
+				"y": 454.3,
+				"map": "heat.lab.room-final",
+				"mwid": 3235825021,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Prop",
+				"level": -2,
+				"x": 359.9,
+				"y": 455.3,
+				"map": "heat.lab.room-final",
+				"mwid": 3235825026,
+				"settings": {}
 			}
 		],
 		"heat-dng": [
@@ -9025,7 +9301,7 @@
 			{
 				"type": "Chest",
 				"level": 3,
-				"x": 108.26666666666667,
+				"x": 104.26666666666667,
 				"y": 60.6,
 				"map": "heat-dng.f3.room-05",
 				"mwid": 3235824210,
@@ -9036,7 +9312,7 @@
 			{
 				"type": "Chest",
 				"level": 3,
-				"x": 115.73333333333333,
+				"x": 119.73333333333333,
 				"y": 60.6,
 				"map": "heat-dng.f3.room-05",
 				"mwid": 3235824211,
@@ -9128,6 +9404,28 @@
 				"y": 135.84615384615384,
 				"map": "heat-dng.f4.room-12",
 				"mwid": 3235824219,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 110.44444444444444,
+				"y": 159.5909090909091,
+				"map": "heat-dng.g.room-02-cross",
+				"mwid": 3235825016,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 122.66666666666667,
+				"y": 159.5909090909091,
+				"map": "heat-dng.g.room-02-cross",
+				"mwid": 3235825017,
 				"settings": {
 					"defaultClearance": "Default"
 				}
@@ -10042,6 +10340,17 @@
 				}
 			},
 			{
+				"type": "Chest",
+				"level": -2,
+				"x": 532.8,
+				"y": 412.6857142857143,
+				"map": "jungle.lab.room-final",
+				"mwid": 3235825023,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
 				"type": "EventTrigger",
 				"level": 0,
 				"x": 319.2,
@@ -10057,6 +10366,15 @@
 				"y": 732.0,
 				"map": "jungle.path-01-entrance",
 				"mwid": 3235824791,
+				"settings": {}
+			},
+			{
+				"type": "Prop",
+				"level": -2,
+				"x": 540.12,
+				"y": 405.65714285714284,
+				"map": "jungle.lab.room-final",
+				"mwid": 3235825024,
 				"settings": {}
 			}
 		],
@@ -10267,7 +10585,7 @@
 				"map": "rhombus-sqr.center-nw",
 				"mwid": 3235824814,
 				"settings": {
-					"defaultClearance": "Gold"
+					"defaultClearance": "Silver"
 				}
 			},
 			{
@@ -10452,6 +10770,28 @@
 		"tree-dng": [
 			{
 				"type": "Chest",
+				"level": 0,
+				"x": 140.96,
+				"y": 104.88888888888889,
+				"map": "tree-dng.g.center-02-connect",
+				"mwid": 3235825018,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 170.07999999999998,
+				"y": 104.88888888888889,
+				"map": "tree-dng.g.center-02-connect",
+				"mwid": 3235825019,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
 				"level": 3,
 				"x": 255.4,
 				"y": 130.82666666666665,
@@ -10583,8 +10923,8 @@
 			{
 				"type": "Chest",
 				"level": -1,
-				"x": 265.6,
-				"y": 147.45454545454544,
+				"x": 257.6,
+				"y": 155.45454545454544,
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824334,
 				"settings": {
@@ -10594,8 +10934,8 @@
 			{
 				"type": "Chest",
 				"level": -1,
-				"x": 265.6,
-				"y": 144.54545454545456,
+				"x": 257.6,
+				"y": 140.54545454545456,
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824335,
 				"settings": {
@@ -10605,7 +10945,7 @@
 			{
 				"type": "Chest",
 				"level": -1,
-				"x": 267.73333333333335,
+				"x": 271.73333333333335,
 				"y": 146.0,
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824336,
@@ -10617,7 +10957,7 @@
 				"type": "Chest",
 				"level": -1,
 				"x": 115.2,
-				"y": 143.8181818181818,
+				"y": 139.8181818181818,
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824337,
 				"settings": {
@@ -10628,7 +10968,7 @@
 				"type": "Chest",
 				"level": -1,
 				"x": 115.2,
-				"y": 148.1818181818182,
+				"y": 156.1818181818182,
 				"map": "wave-dng.b1.center-04-long",
 				"mwid": 3235824338,
 				"settings": {
@@ -10819,7 +11159,7 @@
 				"map": "beach.path-02",
 				"mwid": 3235824800,
 				"settings": {
-					"defaultClearance": "Gold"
+					"defaultClearance": "Silver"
 				}
 			},
 			{

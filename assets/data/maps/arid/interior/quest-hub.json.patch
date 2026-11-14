@@ -1,0 +1,139 @@
+[
+  { "type": "ENTER", "index": "entities" },
+  {
+    "type": "FOR_IN",
+    "_comment": "Deactivate story events",
+    "keyword": "__INDEX__",
+    "values": [ 52, 55, 57, 58, 59, 60, 61, 62, 63, 64, 65 ],
+    "body": [ { "type": "ENTER", "index": [ "__INDEX__", "settings" ] }, { "type": "SET_KEY", "index": "startCondition", "content": "false" }, { "type": "EXIT", "count": 2 } ]
+  },
+  {
+    "type": "IF",
+    "_comment": "Adds corresponding patch if Extra Quests is on",
+    "cond": "ig.vars.get('open-world.extraQuests') >= 1",
+    "thenSteps": [
+      { "type": "ENTER", "index": [ 45, "settings" ] },
+      {
+        "type": "SET_KEY",
+        "index": "interact",
+        "content": {
+          "icon": "INFO",
+          "hoverText": {
+            "en_US": "The Northern Trial",
+            "de_DE": "The Northern Trial",
+            "zh_CN": "战斗练习终端",
+            "ja_JP": "サーキットリセットターミナル",
+            "ko_KR": "전투 연습 단말기",
+            "langUid": 283,
+            "zh_TW": "戰鬥練習終端"
+          },
+          "event": [
+            {
+              "withElse": false,
+              "type": "IF",
+              "condition": "!quest.arid-quest2.started",
+              "thenStep": [
+              {
+                "npc": "advisors.general",
+                "type": "OPEN_QUEST_DIALOG",
+                "quest": "arid-quest2",
+                "accepted": [],
+                "declined": []
+              }],
+              "elseStep": []
+            }
+          ]
+        }
+      },
+      { "type": "EXIT", "count": 2 },
+      { "type": "ENTER", "index": [ 46, "settings" ] },
+      {
+        "type": "SET_KEY",
+        "index": "interact",
+        "content": {
+          "icon": "INFO",
+          "hoverText": {
+            "en_US": "The Southern Trial",
+            "de_DE": "The Southern Trial",
+            "zh_CN": "战斗练习终端",
+            "ja_JP": "サーキットリセットターミナル",
+            "ko_KR": "전투 연습 단말기",
+            "langUid": 283,
+            "zh_TW": "戰鬥練習終端"
+          },
+          "event": [
+            {
+              "withElse": false,
+              "type": "IF",
+              "condition": "!quest.arid-quest1.started",
+              "thenStep": [
+              {
+                "npc": "advisors.general",
+                "type": "OPEN_QUEST_DIALOG",
+                "quest": "arid-quest1",
+                "accepted": [],
+                "declined": []
+              }],
+              "elseStep": []
+            }
+          ]
+        }
+      },
+      { "type": "EXIT", "count": 2 },
+      { "type": "ENTER", "index": [ 49, "settings" ] },
+      {
+        "type": "SET_KEY",
+        "index": "interact",
+        "content": {
+          "icon": "INFO",
+          "hoverText": {
+            "en_US": "Snailing the Slain",
+            "de_DE": "Snailing the Slain",
+            "zh_CN": "Snailing the Slain",
+            "ja_JP": "Snailing the Slain",
+            "ko_KR": "Snailing the Slain",
+            "langUid": 283,
+            "zh_TW": "Snailing the Slain"
+          },
+          "event": [
+            {
+              "withElse": false,
+              "type": "IF",
+              "condition": "!quest.escargot-kill.started",
+              "thenStep": [
+              {
+                "npc": "advisors.general",
+                "type": "OPEN_QUEST_DIALOG",
+                "quest": "escargot-kill",
+                "accepted": [],
+                "declined": []
+              }],
+              "elseStep": []
+            }
+          ]
+        }
+      },
+      { "type": "EXIT", "count": 2 },
+      { "type": "ENTER", "index": [ 50, "settings" ] },
+      {
+        "type": "SET_KEY",
+        "index": "interact",
+        "content": {
+          "icon": "INFO",
+          "hoverText": {
+            "en_US": "Wasteland Survey",
+            "de_DE": "Wasteland Survey",
+            "zh_CN": "战斗练习终端",
+            "ja_JP": "サーキットリセットターミナル",
+            "ko_KR": "전투 연습 단말기",
+            "langUid": 283,
+            "zh_TW": "戰鬥練習終端"
+          },
+          "event": []
+        }
+      },
+      { "type": "EXIT", "count": 2 }
+    ]
+  },
+  { "type": "EXIT", "count": 1 }
+]

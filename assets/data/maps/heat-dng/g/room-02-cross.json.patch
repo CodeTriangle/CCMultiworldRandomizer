@@ -1,0 +1,110 @@
+[
+  {
+    "type": "ENTER",
+    "index": ["entities"]
+  },
+
+  { "type": "ENTER", "index": [74, "settings"] },
+  {
+    "_comment": "Disabling the intro cutscene, so people dont think they get softlock from entering other from other doors",
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [77, "settings"] },
+  {
+    "_comment": "Disabling the dlink cutscene midway",
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [72, "settings"] },
+  {
+    "_comment": "Disabling the barrier cutscene",
+    "type": "SET_KEY",
+    "index": "startCondition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [4, "settings"] },
+  {
+    "_comment": "Opening access to upper faj'ro by default",
+    "type": "SET_KEY",
+    "index": "condition"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [66, "settings"] },
+  {
+    "_comment": "Disabling the upper floor key panel",
+    "type": "SET_KEY",
+    "index": "spawnCondition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+  { "type": "ENTER", "index": [68, "settings"] },
+  {
+    "_comment": "Disabling the upper floor key lock",
+    "type": "SET_KEY",
+    "index": "spawnCondition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [46, "settings"] },
+  {
+    "_comment": "Disabling the upper floor barriers",
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+  { "type": "ENTER", "index": [47, "settings"] },
+  {
+    "_comment": "Disabling the upper floor barriers",
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "false"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [53, "settings"] },
+  {
+    "_comment": "Making the side ballchanger require completing respective side",
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "map.leftJump"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  { "type": "ENTER", "index": [71, "settings"] },
+  {
+    "_comment": "Making the side ballchanger require completing respective side",
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "map.rightJump"
+  },
+  { "type": "EXIT", "count": 2 },
+
+  {
+    "_comment": "Spawn a chest after finishing side",
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {"type":"Chest","x":368,"y":455,"level":3,"settings":{"name":"","chestType":"Default","item":"65","amount":2,"mapId":1276,"spawnCondition":"map.heatOn"}}
+  },
+  {
+    "_comment": "Spawn a chest after finishing side",
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {"type":"Chest","x":480,"y":455,"level":3,"settings":{"name":"","chestType":"Default","item":"76","amount":2,"mapId":1277,"spawnCondition":"map.coldOn"}}
+  },
+
+
+  {
+    "type": "EXIT",
+    "count": 1
+  }    
+]

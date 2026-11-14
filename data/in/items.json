@@ -36,7 +36,7 @@
 			"id": 3,
 			"classification": "progression",
 			"description": {
-				"en_US": "The element of ice, associated with Hit Points and Ranged combat."
+				"en_US": "The element of wave, associated with Hit Points and Ranged combat."
 			}
 		},
 		"SP Upgrade": {
@@ -61,6 +61,230 @@
 			"classification": "progression",
 			"description": {
 				"en_US": "Grants access to the eastern regions of \\c[2]Gaia's Garden\\c[0]."
+			}
+		},
+		"Laser Of Doom Trap": {
+			"reserved": true,
+			"id": 7,
+			"classification": "trap",
+			"description": {
+				"en_US": "DOOM? DID YOU SAY DOOM?"
+			}
+		},
+		"Drunk Trap": {
+			"reserved": true,
+			"id": 8,
+			"classification": "trap",
+			"description": {
+				"en_US": "It's hard to aim straight."
+			}
+		},
+		"Naked Trap": {
+			"reserved": true,
+			"id": 9,
+			"classification": "trap",
+			"description": {
+				"en_US": "Unequips your Lea."
+			}
+		},
+		"Override Trap": {
+			"reserved": true,
+			"id": 10,
+			"classification": "trap",
+			"description": {
+				"en_US": "Full circuit reset."
+			}
+		},
+		"Forgetfulness Trap": {
+			"reserved": true,
+			"id": 11,
+			"classification": "trap",
+			"description": {
+				"en_US": "Level XP resets to 0."
+			}
+		},
+		"Bomb Trap": {
+			"reserved": true,
+			"id": 12,
+			"classification": "trap",
+			"description": {
+				"en_US": "Explodes"
+			}
+		},
+		"Overload Trap": {
+			"reserved": true,
+			"id": 13,
+			"classification": "trap",
+			"description": {
+				"en_US": "Enter circuit overload."
+			}
+		},
+		"Ice Cage Trap": {
+			"reserved": true,
+			"id": 14,
+			"classification": "trap",
+			"description": {
+				"en_US": "Get stuck in an ice cage."
+			}
+		},
+		"Poverty Trap": {
+			"reserved": true,
+			"id": 15,
+			"classification": "trap",
+			"description": {
+				"en_US": "Your wallet feels lighter suddenly."
+			}
+		},
+		"Element Swap Trap": {
+			"reserved": true,
+			"id": 16,
+			"classification": "trap",
+			"description": {
+				"en_US": "Elemental roulette."
+			}
+		},
+		"Combo Breaker Trap": {
+			"reserved": true,
+			"id": 17,
+			"classification": "trap",
+			"description": {
+				"en_US": "Say goodbye to your combo streak."
+			}
+		},
+		"Zoom Trap": {
+			"reserved": true,
+			"id": 18,
+			"classification": "trap",
+			"description": {
+				"en_US": "Microscope simulator."
+			}
+		},
+		"Zoom Out Trap": {
+			"reserved": true,
+			"id": 19,
+			"classification": "trap",
+			"description": {
+				"en_US": "Telescope simulator."
+			}
+		},
+		"SP Trap": {
+			"reserved": true,
+			"id": 20,
+			"classification": "trap",
+			"description": {
+				"en_US": "Consumes all your SP."
+			}
+		},
+		"Landmark Trap": {
+			"reserved": true,
+			"id": 21,
+			"classification": "trap",
+			"description": {
+				"en_US": "Blocks all your landmarks."
+			}
+		},
+		"Artless Trap": {
+			"reserved": true,
+			"id": 22,
+			"classification": "trap",
+			"description": {
+				"en_US": "Your SP Regen feels heavier."
+			}
+		},
+		"Winded Trap": {
+			"reserved": true,
+			"id": 23,
+			"classification": "trap",
+			"description": {
+				"en_US": "You lost one of your dashes."
+			}
+		},
+		"Clumsy Trap": {
+			"reserved": true,
+			"id": 24,
+			"classification": "trap",
+			"description": {
+				"en_US": "Forgot how to dash correctly."
+			}
+		},
+		"Burglar's Rope Trap": {
+			"reserved": true,
+			"id": 25,
+			"classification": "trap",
+			"description": {
+				"en_US": "Randomizer leveling experience."
+			}
+		},
+		"Full Course Trap": {
+			"reserved": true,
+			"id": 26,
+			"classification": "trap",
+			"description": {
+				"en_US": "Eating for ages."
+			}
+		},
+		"Blocked Trap": {
+			"reserved": true,
+			"id": 27,
+			"classification": "trap",
+			"description": {
+				"en_US": "Thank you Sergey."
+			}
+		},
+		"Death Trap": {
+			"reserved": true,
+			"id": 28,
+			"classification": "trap",
+			"description": {
+				"en_US": "Dies."
+			}
+		},
+		"Prepare to Hi Trap": {
+			"reserved": true,
+			"id": 29,
+			"classification": "trap",
+			"description": {
+				"en_US": "Maybe dies."
+			}
+		},
+		"Failed Hack Trap": {
+			"reserved": true,
+			"id": 30,
+			"classification": "trap",
+			"description": {
+				"en_US": "Stomps."
+			}
+		},
+		"Rotate Trap": {
+			"reserved": true,
+			"id": 31,
+			"classification": "trap",
+			"description": {
+				"en_US": "Get rotated."
+			}
+		},
+		"Full Rotate Trap": {
+			"reserved": true,
+			"id": 32,
+			"classification": "trap",
+			"description": {
+				"en_US": "Get more rotated."
+			}
+		},
+		"Slip Trap": {
+			"reserved": true,
+			"id": 33,
+			"classification": "trap",
+			"description": {
+				"en_US": "Forgets how to jump."
+			}
+		},
+		"Voidout Trap": {
+			"reserved": true,
+			"id": 34,
+			"classification": "trap",
+			"description": {
+				"en_US": "Don't fall."
 			}
 		},
 		"Golden Triangle": {
@@ -1316,6 +1540,7 @@
 			"id": 427
 		},
 		"Circuit Override": {
+			"classification": "useful",
 			"id": 428
 		},
 		"F.A.I.R. Device": {

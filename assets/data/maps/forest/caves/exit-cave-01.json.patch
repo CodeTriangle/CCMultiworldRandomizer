@@ -1,0 +1,90 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["entities"]
+    },
+
+    {
+        "type": "ENTER",
+        "index": [152, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEventCondition"
+    },
+    {
+        "type": "SET_KEY",
+        "index": "blockEvent"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "ENTER",
+        "index": [151, "settings"]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "map",
+        "content": "forest.caves.exit-cave-03"
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "values": [160, 162, 164],
+        "body": [{
+                "type": "ENTER",
+                "index": ["__INDEX__", "settings"]
+            },{
+                "type": "SET_KEY",
+                "index": "startCondition",
+                "content": "false"
+            },{
+                "type": "EXIT",
+                "count": 2
+            }]
+    },  
+    
+
+     {
+        "type": "FOR_IN",
+        "keyword": "__INDEX__",
+        "values": [153, 154, 155, 156, 157, 158, 159],
+        "body": [{
+                    "type": "ENTER",
+                    "index": ["__INDEX__", "settings"]
+                },{
+                    "type": "SET_KEY",
+                    "index": "npcStates",
+                    "content": [
+                                {
+                                    "reactType": "FIXED_POS",
+                                    "face": "WEST",
+                                    "showFx": {
+                                        "sheet": "teleport",
+                                        "name": "showDefault"
+                                    },
+                                    "hidden": true,
+                                    "condition": "",
+                                    "config": "",
+                                    "event": []
+                                }]
+                },{
+                  "type": "EXIT",
+                 "count": 2
+             }]  
+    },
+
+    {
+        "type": "EXIT",
+        "count": 1
+    }    
+    
+]
