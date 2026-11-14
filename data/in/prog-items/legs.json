@@ -16,14 +16,14 @@
 			"classification": "progression",
 			"items": [
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Bronze Boots", 1] },
@@ -40,14 +40,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Bronze Boots", 1] },
@@ -64,14 +64,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Bronze Boots", 1] },
@@ -87,14 +87,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Boots", 1] },
 						{ "item": ["item", "Iron Boots", 1] },
@@ -110,14 +110,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Bronze Boots", 1] },
@@ -133,14 +133,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Boots", 1] },
 						{ "item": ["item", "Iron Boots", 1] },
@@ -156,14 +156,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Boots", 1] },
 						{ "item": ["item", "Iron Boots", 1] },
@@ -178,14 +178,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Boots", 1] },
 						{ "item": ["item", "Iron Boots", 1] },
@@ -210,14 +210,14 @@
 			"classification": "progression",
 			"items": [
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -237,14 +237,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -264,92 +264,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Rusty Anchors", 1] },
-						{ "item": ["item", "Bull Stompers", 1] },
-						{ "item": ["item", "Icewalkers", 1] },
-						{ "item": ["item", "Wooly Socks", 1] },
-						{ "item": ["item", "Ancient Sandals", 1] },
-						{ "item": ["item", "Curly Slippers", 1] },
-						{ "item": ["item", "Lavish Anchors", 1] },
-						{ "item": ["item", "Stable Footguard", 1] },
-						{ "item": ["item", "Pathfinders", 1] },
-						{ "item": ["item", "Hydraulic Anchors", 1] },
-						{ "item": ["item", "Bamboots", 1] },
-						{ "item": ["item", "Brave Anchors", 1] },
-						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Rusty Anchors", 1] },
-						{ "item": ["item", "Bull Stompers", 1] },
-						{ "item": ["item", "Icewalkers", 1] },
-						{ "item": ["item", "Wooly Socks", 1] },
-						{ "item": ["item", "Curly Slippers", 1] },
-						{ "item": ["item", "Lavish Anchors", 1] },
-						{ "item": ["item", "Stable Footguard", 1] },
-						{ "item": ["item", "Pathfinders", 1] },
-						{ "item": ["item", "Hydraulic Anchors", 1] },
-						{ "item": ["item", "Bamboots", 1] },
-						{ "item": ["item", "Brave Anchors", 1] },
-						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] },
-						{ "item": ["item", "Paedalos", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Rusty Anchors", 1] },
-						{ "item": ["item", "Bull Stompers", 1] },
-						{ "item": ["item", "Icewalkers", 1] },
-						{ "item": ["item", "Ancient Sandals", 1] },
-						{ "item": ["item", "Curly Slippers", 1] },
-						{ "item": ["item", "Lavish Anchors", 1] },
-						{ "item": ["item", "Stable Footguard", 1] },
-						{ "item": ["item", "Pathfinders", 1] },
-						{ "item": ["item", "Hydraulic Anchors", 1] },
-						{ "item": ["item", "Bamboots", 1] },
-						{ "item": ["item", "Brave Anchors", 1] },
-						{ "item": ["item", "Praetorian Anchors", 1] },
-						{ "item": ["item", "Mistwalkers", 1] },
-						{ "item": ["item", "Paedalos", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -368,14 +290,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -394,14 +316,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -420,14 +342,92 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Wooly Socks", 1] },
+						{ "item": ["item", "Ancient Sandals", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Wooly Socks", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Ancient Sandals", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -445,14 +445,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -470,14 +470,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -495,14 +495,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -520,14 +520,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -545,14 +545,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -570,14 +570,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -594,14 +594,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Rusty Anchors", 1] },
 						{ "item": ["item", "Bull Stompers", 1] },
@@ -628,14 +628,14 @@
 			"classification": "progression",
 			"items": [
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -652,14 +652,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Fleety Sandals", 1] },
@@ -681,14 +681,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -704,14 +704,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -728,14 +728,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -750,14 +750,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Fleety Sandals", 1] },
@@ -778,14 +778,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Fleety Sandals", 1] },
@@ -806,14 +806,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -832,14 +832,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -855,14 +855,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -876,14 +876,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -898,14 +898,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Fleety Sandals", 1] },
@@ -925,14 +925,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -950,14 +950,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -975,14 +975,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -996,14 +996,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Fleety Sandals", 1] },
 						{ "item": ["item", "Feline Paws", 1] },
@@ -1030,14 +1030,14 @@
 			"classification": "progression",
 			"items": [
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Bronze Boots", 1] },
@@ -1057,14 +1057,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Wooly Socks", 1] },
@@ -1077,14 +1077,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Bronze Boots", 1] },
@@ -1102,14 +1102,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Bronze Boots", 1] },
@@ -1127,14 +1127,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Boots", 1] },
 						{ "item": ["item", "Iron Boots", 1] },
@@ -1150,14 +1150,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Wooly Socks", 1] },
@@ -1168,14 +1168,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Wooly Socks", 1] },
@@ -1186,14 +1186,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Ancient Sandals", 1] },
 						{ "item": ["item", "Lead Boots", 1] },
@@ -1202,14 +1202,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Bronze Boots", 1] },
@@ -1225,14 +1225,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Boots", 1] },
 						{ "item": ["item", "Iron Boots", 1] },
@@ -1246,14 +1246,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Boots", 1] },
 						{ "item": ["item", "Iron Boots", 1] },
@@ -1267,14 +1267,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Grasswalkers", 1] },
 						{ "item": ["item", "Wooly Socks", 1] },
@@ -1283,42 +1283,42 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Ancient Sandals", 1] },
 						{ "item": ["item", "Lead Boots", 1] }
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Combat Skates", 1] },
 						{ "item": ["item", "Paedalos", 1] }
 					]
 				},
 				{
-					"metadata": {
-						"dlc": false,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", false ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Boots", 1] },
 						{ "item": ["item", "Iron Boots", 1] },
