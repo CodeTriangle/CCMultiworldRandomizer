@@ -3,14 +3,14 @@
 		"headsAllPurpose": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Bronze Goggles", 1] },
@@ -39,14 +39,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Bronze Goggles", 1] },
@@ -66,14 +66,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Thief's Band", 1] },
@@ -94,14 +94,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Bronze Goggles", 1] },
@@ -130,14 +130,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Bronze Goggles", 1] },
@@ -162,14 +162,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Goggles", 1] },
 						{ "item": ["item", "Iron Goggles", 1] },
@@ -191,14 +191,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Bronze Goggles", 1] },
@@ -218,14 +218,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Thief's Band", 1] },
@@ -246,14 +246,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Bronze Goggles", 1] },
@@ -278,14 +278,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Goggles", 1] },
 						{ "item": ["item", "Iron Goggles", 1] },
@@ -307,14 +307,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Goggles", 1] },
 						{ "item": ["item", "Iron Goggles", 1] },
@@ -333,14 +333,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Goggles", 1] },
 						{ "item": ["item", "Iron Goggles", 1] },
@@ -362,14 +362,14 @@
 		"headsDefensive": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -391,14 +391,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Furry Cap", 1] },
@@ -417,14 +417,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -446,14 +446,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -471,14 +471,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -499,14 +499,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -527,14 +527,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Furry Cap", 1] },
@@ -549,14 +549,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -574,14 +574,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -608,14 +608,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -640,14 +640,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -664,14 +664,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -688,14 +688,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -714,14 +714,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -744,14 +744,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -772,14 +772,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -804,14 +804,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -827,14 +827,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
@@ -859,14 +859,14 @@
 		"headsOffensive": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -888,14 +888,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -917,14 +917,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -946,14 +946,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -975,14 +975,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -1003,14 +1003,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -1032,14 +1032,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Recruit's Scope", 1] },
@@ -1067,14 +1067,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -1100,14 +1100,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -1129,14 +1129,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -1157,14 +1157,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -1185,14 +1185,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Recruit's Scope", 1] },
@@ -1220,14 +1220,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -1253,14 +1253,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -1281,14 +1281,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -1309,14 +1309,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": true,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", true ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Recruit's Scope", 1] },
 						{ "item": ["item", "Shady Monocle", 1] },
@@ -1341,14 +1341,14 @@
 		"heads": {
 			"items": [
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Cooling Veil", 1] },
@@ -1374,14 +1374,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Bronze Goggles", 1] },
@@ -1408,14 +1408,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Goggles", 1] },
 						{ "item": ["item", "Cooling Veil", 1] },
@@ -1439,14 +1439,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Cooling Veil", 1] },
@@ -1468,14 +1468,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Proper Tophat", 1] },
@@ -1494,14 +1494,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Furry Cap", 1] },
@@ -1517,14 +1517,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Bronze Goggles", 1] },
@@ -1547,14 +1547,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Goggles", 1] },
 						{ "item": ["item", "Cooling Veil", 1] },
@@ -1574,14 +1574,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Goggles", 1] },
 						{ "item": ["item", "Iron Goggles", 1] },
@@ -1598,14 +1598,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": false,
-						"quest": true
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", true ]
+					],
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Proper Tophat", 1] },
@@ -1620,14 +1620,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", true ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Furry Cap", 1] },
@@ -1639,14 +1639,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": false,
-						"arena": true,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", false ],
+						[ "option", "enable_arena", true ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Dragon's Bandana", 1] },
 						{ "item": ["item", "Tranquil Earmuffs", 1] },
@@ -1655,14 +1655,14 @@
 					]
 				},
 				{
-					"metadata": {
-						"dlc": true,
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": false,
-						"quest": false
-					},
+					"includeCondition": [
+						[ "option", "enable_dlc", true ],
+						[ "option", "trade_rando", false ],
+						[ "option", "shop_rando", true ],
+						[ "option", "enable_arena", false ],
+						[ "option", "chest_rando", false ],
+						[ "option", "quest_rando", false ]
+					],
 					"content": [
 						{ "item": ["item", "Bronze Goggles", 1] },
 						{ "item": ["item", "Iron Goggles", 1] },

@@ -137,11 +137,17 @@
 				},
 				{
 					"item": ["item", "East Gaia Pass"],
-					"quantity": 1
+					"quantity": 1,
+					"includeCondition": [
+						[ "option", "closed_gaia" ]
+					]
 				},
 				{
 					"item": ["item", "West Gaia Pass"],
-					"quantity": 1
+					"quantity": 1,
+					"includeCondition": [
+						[ "option", "closed_gaia" ]
+					]
 				},
 				{
 					"item": ["item", "Old Dojo Key"],
