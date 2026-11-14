@@ -1,0 +1,140 @@
+{
+	"enemies": {
+		"Echinoignis": {
+			"name": "Echinoignis",
+			"id": "beach.sea-star-heat",
+			"level": 66,
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"area": "beach"
+		},
+		"Echinonix": {
+			"name": "Echinonix",
+			"id": "beach.sea-star-cold",
+			"level": 66,
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"area": "beach"
+		},
+		"Echinofulgur": {
+			"name": "Echinofulgur",
+			"id": "beach.sea-star-shock",
+			"level": 66,
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"area": "beach"
+		},
+		"Echinofluctus": {
+			"name": "Echinofluctus",
+			"id": "beach.sea-star-wave",
+			"level": 66,
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"area": "beach"
+		},
+		"Salteric": {
+			"name": "Salteric",
+			"id": "beach.special.blob-salt",
+			"level": 67,
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"area": "beach"
+		},
+		"Balooneer": {
+			"name": "Balooneer",
+			"id": "beach.fish",
+			"level": 68,
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"area": "beach"
+		},
+		"K'im": {
+			"name": "K'im",
+			"id": "beach.worm",
+			"level": 70,
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"area": "beach"
+		},
+		"Trigenbu": {
+			"name": "Trigenbu",
+			"id": "beach.turtle-man",
+			"level": 71,
+			"region": {
+				"open": "openDLC_Beach"
+			},
+			"area": "beach"
+		},
+
+		"Heat Crystalid": {
+			"name": "Heat Crystalid",
+			"id": "final.crystal-heat",
+			"level": 71,
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			},
+			"area": "final-dng"
+		},
+		"Cold Crystalid": {
+			"name": "Cold Crystalid",
+			"id": "final.crystal-cold",
+			"level": 71,
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			},
+			"area": "final-dng"
+		},
+		"Shock Crystalid": {
+			"name": "Shock Crystalid",
+			"id": "final.crystal-shock",
+			"level": 71,
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			},
+			"area": "final-dng"
+		},
+		"Wave Crystalid": {
+			"name": "Wave Crystalid",
+			"id": "final.crystal-wave",
+			"level": 71,
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			},
+			"area": "final-dng"
+		},
+		"Hummagnum": {
+			"name": "Hummagnum",
+			"id": "final.colibri",
+			"level": 72,
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			},
+			"area": "final-dng"
+		},
+		"Mizree": {
+			"name": "Mizree",
+			"id": "guest.firespirit",
+			"level": 73,
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			},
+			"area": "final-dng"
+		},
+		"Beearbot": {
+			"name": "Beearbot",
+			"id": "guest.honeybear",
+			"level": 73,
+			"region": {
+				"open": "openDLC_DungeonEntry"
+			},
+			"area": "final-dng"
+		}
+	}
+}

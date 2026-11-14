@@ -4,6 +4,7 @@ import { patch as patchMwModel } from "./multiworld-model";
 import { patch as patchOptions } from "./options";
 import { patch as patchBotanics } from "./botanics";
 import { patch as patchChest } from "./chest";
+import { patch as patchEnemies } from "./enemy";
 import { patch as patchEntities } from "./entity";
 import { patch as patchEvent } from "./event";
 import { patch as patchMarquee } from "./marquee";
@@ -26,6 +27,7 @@ export function applyPatches(plugin: MwRandomizer) {
 	patchBotanics(plugin);
 	patchChest(plugin);
 	patchEntities(plugin);
+	patchEnemies(plugin);
 	patchEvent(plugin);
 	patchMarquee(plugin);
 	patchGui(plugin);

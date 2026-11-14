@@ -1,0 +1,723 @@
+{
+	"enemies": {
+		"Hedgehag": {
+			"name": "Hedgehag",
+			"id": "hedgehog",
+			"level": 4,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 55,
+				"booster": "Rise Booster"
+			},
+			"area": "autumn-area"
+		},
+		"Rockin' Hillkat": {
+			"name": "Rockin' Hillkat",
+			"id": "meerkat",
+			"level": 5,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 55,
+				"booster": "Rise Booster"
+			},
+			"area": "autumn-area"
+		},
+		"Mad Bovine": {
+			"name": "Mad Bovine",
+			"id": "buffalo",
+			"level": 6,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 56,
+				"booster": "Rise Booster"
+			},
+			"area": "autumn-area"
+		},
+		"Old Hedgehag": {
+			"name": "Old Hedgehag",
+			"id": "hedgehog-alt",
+			"level": 9,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 57,
+				"booster": "Rise Booster"
+			},
+			"area": "autumn-area"
+		},
+		"Flamin' Hillkat": {
+			"name": "Flamin' Hillkat",
+			"id": "meerkat-alt",
+			"level": 10,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 57,
+				"booster": "Rise Booster"
+			},
+			"area": "autumn-area"
+		},
+		"Red Eyed Bovine": {
+			"name": "Red Eyed Bovine",
+			"id": "buffalo-alt",
+			"level": 12,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 58,
+				"booster": "Rise Booster"
+			},
+			"area": "autumn-area"
+		},
+
+		"Young Frobbit": {
+			"name": "Young Frobbit",
+			"id": "gray-frobbit",
+			"level": 13,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 58,
+				"booster": "Trail Booster"
+			},
+			"area": "bergen-trails"
+		},
+		"White Frobbit": {
+			"name": "White Frobbit",
+			"id": "frobbit",
+			"level": 15,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 60,
+				"booster": "Trail Booster"
+			},
+			"area": "bergen-trails"
+		},
+		"Seafly": {
+			"name": "Seafly",
+			"id": "seahorse",
+			"level": 16,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 59,
+				"booster": "Trail Booster"
+			},
+			"area": "bergen-trails"
+		},
+		"Pengpeng": {
+			"name": "Pengpeng",
+			"id": "penguin",
+			"level": 17,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 59,
+				"booster": "Trail Booster"
+			},
+			"area": "bergen-trails"
+		},
+		"Horny Goat": {
+			"name": "Horny Goat",
+			"id": "goat",
+			"level": 17,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 60,
+				"booster": "Trail Booster"
+			},
+			"area": "bergen-trails"
+		},
+		"Karotto": {
+			"name": "Karotto",
+			"id": "snowman",
+			"level": 18,
+			"region": {
+				"open": "open3"
+			},
+			"boosted": {
+				"level": 60,
+				"booster": "Trail Booster"
+			},
+			"area": "bergen-trails"
+		},
+
+		"Fleazer": {
+			"name": "Fleazer",
+			"id": "mine-coldbug",
+			"level": 18,
+			"firstEncounter": {
+				"region": {
+					"open": "open4.2"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open4.4"
+				}
+			},
+			"boosted": {
+				"level": 60,
+				"booster": "Trail Booster"
+			},
+			"area": "cold-dng"
+		},
+		"Carritrich": {
+			"name": "Carritrich",
+			"id": "mine-runbot",
+			"level": 18,
+			"firstEncounter": {
+				"region": {
+					"open": "open4.2"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open4.4"
+				}
+			},
+			"boosted": {
+				"level": 60,
+				"booster": "Trail Booster"
+			},
+			"area": "cold-dng"
+		},
+		"Kamikatze": {
+			"name": "Kamikatze",
+			"id": "mine-kamikatze",
+			"level": 18,
+			"firstEncounter": {
+				"region": {
+					"open": "open4.2"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open4.4"
+				}
+			},
+			"boosted": {
+				"level": 60,
+				"booster": "Trail Booster"
+			},
+			"area": "cold-dng"
+		},
+		"Digmo": {
+			"name": "Digmo",
+			"id": "mine-diggingbot",
+			"level": 19,
+			"firstEncounter": {
+				"region": {
+					"open": "open4.4"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open4.6"
+				}
+			},
+			"boosted": {
+				"level": 60,
+				"booster": "Trail Booster"
+			},
+			"area": "cold-dng"
+		},
+
+		"Pinceron": {
+			"name": "Pinceron",
+			"id": "heat.scorpion",
+			"level": 23,
+			"region": {
+				"open": "open5"
+			},
+			"boosted": {
+				"level": 61,
+				"booster": "Valley Booster"
+			},
+			"area": "heat-area"
+		},
+		"Sharkster": {
+			"name": "Sharkster",
+			"id": "heat.sandshark",
+			"level": 24,
+			"region": {
+				"open": "open5"
+			},
+			"boosted": {
+				"level": 61,
+				"booster": "Valley Booster"
+			},
+			"area": "heat-area"
+		},
+		"Vulturbine": {
+			"name": "Vulturbine",
+			"id": "heat.volturbine",
+			"level": 24,
+			"region": {
+				"open": "open5"
+			},
+			"boosted": {
+				"level": 61,
+				"booster": "Valley Booster"
+			},
+			"area": "heat-area"
+		},
+		"Drillertoise": {
+			"name": "Drillertoise",
+			"id": "heat.drillertoise",
+			"level": 25,
+			"region": {
+				"open": "open5"
+			},
+			"boosted": {
+				"level": 61,
+				"booster": "Valley Booster"
+			},
+			"area": "heat-area"
+		},
+		"Tim": {
+			"name": "Tim",
+			"id": "heat.sandworm",
+			"level": 25,
+			"region": {
+				"open": "open5"
+			},
+			"boosted": {
+				"level": 62,
+				"booster": "Valley Booster"
+			},
+			"area": "heat-area"
+		},
+		"Boss Pincer": {
+			"name": "Boss Pincer",
+			"id": "heat.scorpion-alt",
+			"level": 26,
+			"region": {
+				"open": "open5"
+			},
+			"boosted": {
+				"level": 62,
+				"booster": "Valley Booster"
+			},
+			"area": "heat-area"
+		},
+
+		"Trijelly": {
+			"name": "Trijelly",
+			"id": "heat.jellyfish",
+			"level": 27,
+			"firstEncounter": {
+				"region": {
+					"open": "open7.2"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open7.6"
+				}
+			},
+			"boosted": {
+				"level": 62,
+				"booster": "Valley Booster"
+			},
+			"area": "heat-dng"
+		},
+		"Pada Moth": {
+			"name": "Pada Moth",
+			"id": "heat.moth",
+			"level": 27,
+			"firstEncounter": {
+				"region": {
+					"open": "open7.2"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open7.6"
+				}
+			},
+			"boosted": {
+				"level": 62,
+				"booster": "Valley Booster"
+			},
+			"area": "heat-dng"
+		},
+		"Darth Moth": {
+			"name": "Darth Moth",
+			"id": "heat.darth-moth",
+			"level": 28,
+			"firstEncounter": {
+				"region": {
+					"open": "open7.6"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open7.7"
+				}
+			},
+			"boosted": {
+				"level": 62,
+				"booster": "Valley Booster"
+			},
+			"area": "heat-dng"
+		},
+		"Magmanizer": {
+			"name": "Magmanizer",
+			"id": "heat.heat-golem",
+			"level": 28,
+			"firstEncounter": {
+				"region": {
+					"open": "open7.5"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open7.6"
+				}
+			},
+			"boosted": {
+				"level": 62,
+				"booster": "Valley Booster"
+			},
+			"area": "heat-dng"
+		},
+
+		"Radical Hedgehag": {
+			"name": "Radical Hedgehag",
+			"id": "autumn-fall.hedgehog-fall",
+			"level": 32,
+			"region": {
+				"open": "open8"
+			},
+			"boosted": {
+				"level": 62,
+				"booster": "Fall Booster"
+			},
+			"area": "autumn-fall"
+		},
+		"Chillin' Hillkat": {
+			"name": "Chillin' Hillkat",
+			"id": "autumn-fall.meerkat-fall",
+			"level": 34,
+			"region": {
+				"open": "open8"
+			},
+			"boosted": {
+				"level": 62,
+				"booster": "Fall Booster"
+			},
+			"area": "autumn-fall"
+		},
+		"Fallfly": {
+			"name": "Fallfly",
+			"id": "autumn-fall.seahorse-fall",
+			"level": 35,
+			"region": {
+				"open": "open8"
+			},
+			"boosted": {
+				"level": 62,
+				"booster": "Fall Booster"
+			},
+			"area": "autumn-fall"
+		},
+		"Ivory Bovine": {
+			"name": "Ivory Bovine",
+			"id": "autumn-fall.buffalo-fall",
+			"level": 36,
+			"region": {
+				"open": "open8"
+			},
+			"boosted": {
+				"level": 62,
+				"booster": "Fall Booster"
+			},
+			"area": "autumn-fall"
+		},
+
+		"Neutral Virus": {
+			"name": "Neutral Virus",
+			"id": "arid.virus-neutral",
+			"level": 38,
+			"region": {
+				"open": "open16"
+			},
+			"area": "arid"
+		},
+		"Heat Virus": {
+			"name": "Heat Virus",
+			"id": "arid.virus-heat",
+			"level": 38,
+			"region": {
+				"open": "open16"
+			},
+			"area": "arid"
+		},
+		"Cold Virus": {
+			"name": "Cold Virus",
+			"id": "arid.virus-cold",
+			"level": 38,
+			"region": {
+				"open": "open16"
+			},
+			"area": "arid"
+		},
+
+		"Argeby": {
+			"name": "Argeby",
+			"id": "jungle.plant",
+			"level": 37,
+			"region": {
+				"open": "open10"
+			},
+			"boosted": {
+				"level": 63,
+				"booster": "Garden Booster"
+			},
+			"area": "jungle"
+		},
+		"Gelleric": {
+			"name": "Gelleric",
+			"id": "jungle.blob",
+			"level": 38,
+			"region": {
+				"open": "open10"
+			},
+			"boosted": {
+				"level": 63,
+				"booster": "Garden Booster"
+			},
+			"area": "jungle"
+		},
+		"Papagun": {
+			"name": "Papagun",
+			"id": "jungle.parrot",
+			"level": 38,
+			"region": {
+				"open": "open10"
+			},
+			"boosted": {
+				"level": 63,
+				"booster": "Garden Booster"
+			},
+			"area": "jungle"
+		},
+		"Angler": {
+			"name": "Angler",
+			"id": "jungle.fish",
+			"level": 39,
+			"region": {
+				"open": "open10.Grove"
+			},
+			"boosted": {
+				"level": 63,
+				"booster": "Garden Booster"
+			},
+			"area": "jungle"
+		},
+		"Shokat": {
+			"name": "Shokat",
+			"id": "jungle.shockcat",
+			"level": 40,
+			"firstEncounter": {
+				"region": {
+					"open": "open10"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open10.Mid"
+				}
+			},
+			"boosted": {
+				"level": 63,
+				"booster": "Garden Booster"
+			},
+			"area": "jungle"
+		},
+		"Behesloth": {
+			"name": "Behesloth",
+			"id": "jungle.sloth",
+			"level": 42,
+			"region": {
+				"open": "open10.Infested"
+			},
+			"boosted": {
+				"level": 63,
+				"booster": "Garden Booster"
+			},
+			"area": "jungle"
+		},
+
+		"Jelleric": {
+			"name": "Jelleric",
+			"id": "jungle.blob-wave",
+			"level": 42,
+			"firstEncounter": {
+				"region": {
+					"open": "open10.Left"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open14.1"
+				}
+			},
+			"boosted": {
+				"level": 63,
+				"booster": "Garden Booster"
+			},
+			"area": "wave-dng"
+		},
+		"Ocubepus": {
+			"name": "Ocubepus",
+			"id": "jungle.octopus",
+			"level": 42,
+			"region": {
+				"open": "open14.1"
+			},
+			"boosted": {
+				"level": 63,
+				"booster": "Garden Booster"
+			},
+			"area": "wave-dng"
+		},
+		"Blue Ray": {
+			"name": "Blue Ray",
+			"id": "jungle.blueray",
+			"level": 44,
+			"region": {
+				"open": "open14.1"
+			},
+			"boosted": {
+				"level": 64,
+				"booster": "Garden Booster"
+			},
+			"area": "wave-dng"
+		},
+
+		"Rob0ck": {
+			"name": "Rob0ck",
+			"id": "jungle.chicken",
+			"level": 42,
+			"region": {
+				"open": "open10.Right"
+			},
+			"boosted": {
+				"level": 63,
+				"booster": "Garden Booster"
+			},
+			"area": "shock-dng"
+		},
+		"Powerplant": {
+			"name": "Powerplant",
+			"id": "jungle.powerplant",
+			"level": 43,
+			"firstEncounter": {
+				"region": {
+					"open": "open10.Right"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open13.1"
+				}
+			},
+			"boosted": {
+				"level": 64,
+				"booster": "Garden Booster"
+			},
+			"area": "shock-dng"
+		},
+		"Ectovolt": {
+			"name": "Ectovolt",
+			"id": "jungle.ghost",
+			"level": 44,
+			"firstEncounter": {
+				"region": {
+					"open": "open10.Right"
+				}
+			},
+			"grind": {
+				"region": {
+					"open": "open13.1"
+				}
+			},
+			"boosted": {
+				"level": 64,
+				"booster": "Garden Booster"
+			},
+			"area": "shock-dng"
+		},
+
+		"Sun Beetle": {
+			"name": "Sun Beetle",
+			"id": "forest.bug-samurai-heat",
+			"level": 51,
+			"region": {
+				"open": "open16"
+			},
+			"boosted": {
+				"level": 65,
+				"booster": "Ridge Booster"
+			},
+			"area": "forest"
+		},
+		"Moon Beetle": {
+			"name": "Moon Beetle",
+			"id": "forest.bug-samurai-shock",
+			"level": 51,
+			"region": {
+				"open": "open16"
+			},
+			"boosted": {
+				"level": 65,
+				"booster": "Ridge Booster"
+			},
+			"area": "forest"
+		},
+		"Pandza": {
+			"name": "Pandza",
+			"id": "forest.panda",
+			"level": 51,
+			"region": {
+				"open": "open16"
+			},
+			"boosted": {
+				"level": 65,
+				"booster": "Ridge Booster"
+			},
+			"area": "forest"
+		},
+		"Aranetarda": {
+			"name": "Aranetarda",
+			"id": "forest.spider",
+			"level": 52,
+			"region": {
+				"open": "open16"
+			},
+			"boosted": {
+				"level": 65,
+				"booster": "Ridge Booster"
+			},
+			"area": "forest"
+		}
+	}
+}

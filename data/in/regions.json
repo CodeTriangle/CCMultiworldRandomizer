@@ -103,6 +103,15 @@
 				},
 				{
 					"from": "valley",
+					"to": "cursedTemple",
+					"condition": [
+						[ "item", "Heat", 1 ],
+						[ "item", "Cold", 1 ],
+						[ "item", "Cursed Coin", 1 ]
+					]
+				},
+				{
+					"from": "valley",
 					"to": "fajro.1",
 					"condition": [
 						[ "item", "Yellow Sand Shade", 1 ]

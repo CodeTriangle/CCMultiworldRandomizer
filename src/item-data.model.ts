@@ -3,6 +3,7 @@ export interface WorldData {
 	quests: RawQuests;
 	shops: RawShops;
 	botanics: Record<string, number>;
+	enemies: Record<string, RawEnemy>;
 	descriptions: { [itemId: number]: { [locale: string]: string } };
 	markers: { [area: string]: MarkerInfo<any>[] }
 }
@@ -55,6 +56,10 @@ export interface RawShopUnlocks {
 export type RawShops = {
 	locations: RawShopLocations;
 	unlocks: RawShopUnlocks;
+}
+
+export interface RawEnemy {
+	kill: number;
 }
 
 export interface ItemInfo {
