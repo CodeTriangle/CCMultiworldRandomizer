@@ -79,9 +79,17 @@ export function sendTrap(item: ap.Item){
       sc.model.player.scrollElementMode(Math.floor(Math.random()*3-1),false,false);
       break;
     case "Landmark Trap":
-      for (let area of Object.keys(sc.map.activeLandmarks)) {
-        for (let landmark of Object.keys(sc.map.activeLandmarks[area])) {
-          if (sc.map.activeLandmarks[area][landmark].active) { sc.map.activeLandmarks[area][landmark].active = false; }
+      {
+        for (let i of Object.keys(sc.map.activeLandmarks)) {
+          if (Object.keys(sc.map.activeLandmarks[i]).length == 0) { delete sc.map.activeLandmarks[i] }
+        }
+        if (Object.keys(sc.map.activeLandmarks).length > 0) {
+          let r = Math.trunc(Math.random() * Object.keys(sc.map.activeLandmarks).length)
+          let area = Object.keys(sc.map.activeLandmarks)[r]
+          if (Object.keys(sc.map.activeLandmarks[area]).length > 0) {
+            let m = Math.trunc(Math.random() * Object.keys(sc.map.activeLandmarks[area]).length)
+            delete sc.map.activeLandmarks[area][Object.keys(sc.map.activeLandmarks[area])[m]]
+          }
         }
       }
       break;
