@@ -1,0 +1,15 @@
+[
+	{
+		"type": "ENTER",
+		"index":  ["entities", 123, "settings", "condAnims", 0, "interact", "event", 8]
+	},
+	{
+		"type": "SET_KEY",
+		"index": "condition",
+		"content": "true"
+	},
+	{
+		"type": "EXIT",
+		"count": 8
+	}
+]
