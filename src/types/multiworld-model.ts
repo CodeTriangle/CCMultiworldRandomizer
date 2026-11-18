@@ -146,7 +146,7 @@ declare global {
 			options: sc.MultiWorldModel.MultiworldOptions;
 			progressiveChainProgress: Record<number, number>;
 			seenChests: Set<number>;
-			trapsReceived: [];
+			trapsReceived: number[];
 
 			dataPackageChecksums: Record<string, string>;
 			receivedItemMap: Record<number, number>;
@@ -166,6 +166,7 @@ declare global {
 			notifyItemsSent(this: this, items: ap.Item[]): void;
 			updateConnectionStatus(this: this, status: sc.MULTIWORLD_CONNECTION_STATUS): void;
 			addMultiworldItem(this: this, itemInfo: ap.Item, index: number): void;
+			reallyAddMultiworldItem(this: this, itemInfo: ap.Item, index: number): void;
 			// getLocationInfo(
 			// 	this: this,
 			// 	mode: ap.CreateAsHintMode,

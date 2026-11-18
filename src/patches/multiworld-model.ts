@@ -444,7 +444,7 @@ export function patch(plugin: MwRandomizer) {
 				this.trapsReceived = null as any;
 			},
 
-			onLevelLoadStart() {
+			onLevelLoaded() {
 				this.setVars();
 			},
 
@@ -644,7 +644,7 @@ export function patch(plugin: MwRandomizer) {
 				// these functions are intended to complement each other but when login() is called from the title screen,
 				// it needs to wait to be in game before everything can initialize.
 				// but we can also work with this.
-				if (sc.model.isGame()) {
+				if (sc.model.isGame() && sc.model.isRunning()) {
 					this.setVars();
 				}
 
