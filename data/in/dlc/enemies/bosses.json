@@ -6,7 +6,6 @@
 			"level": 63,
 			"firstEncounter": {
 				"region": {
-					"linear": "23",
 					"open": "harbor" 
 				},
 				"condition": [ 
@@ -23,7 +22,6 @@
 			"level": 67,
 			"firstEncounter": {
 				"region": {
-					"linear": "23",
 					"open": "rhombus" 
 				},
 				"condition": [
@@ -43,7 +41,6 @@
 			"level": 67,
 			"firstEncounter": {
 				"region": {
-					"linear": "11",
 					"open": "maroon" 
 				},
 				"condition": [ 
@@ -96,7 +93,6 @@
 			"level": 69,
 			"firstEncounter": {
 				"region": {
-					"linear": "3",
 					"open": "basin"
 				},
 				"condition": [
@@ -113,7 +109,6 @@
 			"level": 72,
 			"firstEncounter": {
 				"region": {
-					"linear": "23",
 					"open": "rhombus" 
 				},
 				"condition": [
@@ -128,7 +123,6 @@
 			"level": 72,
 			"firstEncounter": {
 				"region": {
-					"linear": "3",
 					"open": "rhombus"
 				},
 				"condition": [
@@ -178,7 +172,6 @@
 			"level": 79,
 			"firstEncounter": {
 				"region": {
-					"linear": "23",
 					"open": "dlc_archipelago" 
 				},
 				"condition": [
