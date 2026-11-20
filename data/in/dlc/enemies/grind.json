@@ -5,7 +5,7 @@
 			"id": "beach.sea-star-heat",
 			"level": 66,
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			},
 			"area": "beach"
 		},
@@ -14,7 +14,7 @@
 			"id": "beach.sea-star-cold",
 			"level": 66,
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			},
 			"area": "beach"
 		},
@@ -23,7 +23,7 @@
 			"id": "beach.sea-star-shock",
 			"level": 66,
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			},
 			"area": "beach"
 		},
@@ -32,7 +32,7 @@
 			"id": "beach.sea-star-wave",
 			"level": 66,
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			},
 			"area": "beach"
 		},
@@ -41,7 +41,7 @@
 			"id": "beach.special.blob-salt",
 			"level": 67,
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			},
 			"area": "beach"
 		},
@@ -50,7 +50,7 @@
 			"id": "beach.fish",
 			"level": 68,
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			},
 			"area": "beach"
 		},
@@ -59,7 +59,7 @@
 			"id": "beach.worm",
 			"level": 70,
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			},
 			"area": "beach"
 		},
@@ -68,7 +68,7 @@
 			"id": "beach.turtle-man",
 			"level": 71,
 			"region": {
-				"open": "openDLC_Beach"
+				"open": "dlc_archipelago"
 			},
 			"area": "beach"
 		},
@@ -78,7 +78,7 @@
 			"id": "final.crystal-heat",
 			"level": 71,
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kuleroEntry"
 			},
 			"area": "final-dng"
 		},
@@ -87,7 +87,7 @@
 			"id": "final.crystal-cold",
 			"level": 71,
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kuleroEntry"
 			},
 			"area": "final-dng"
 		},
@@ -96,7 +96,7 @@
 			"id": "final.crystal-shock",
 			"level": 71,
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kuleroEntry"
 			},
 			"area": "final-dng"
 		},
@@ -105,7 +105,7 @@
 			"id": "final.crystal-wave",
 			"level": 71,
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kuleroEntry"
 			},
 			"area": "final-dng"
 		},
@@ -114,7 +114,7 @@
 			"id": "final.colibri",
 			"level": 72,
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kuleroEntry"
 			},
 			"area": "final-dng"
 		},
@@ -123,7 +123,7 @@
 			"id": "guest.firespirit",
 			"level": 73,
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kuleroEntry"
 			},
 			"area": "final-dng"
 		},
@@ -132,7 +132,7 @@
 			"id": "guest.honeybear",
 			"level": 73,
 			"region": {
-				"open": "openDLC_DungeonEntry"
+				"open": "dlc_kuleroEntry"
 			},
 			"area": "final-dng"
 		}

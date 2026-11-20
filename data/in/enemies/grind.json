@@ -5,7 +5,7 @@
 			"id": "hedgehog",
 			"level": 4,
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			},
 			"boosted": {
 				"level": 55,
@@ -18,7 +18,7 @@
 			"id": "meerkat",
 			"level": 5,
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			},
 			"boosted": {
 				"level": 55,
@@ -31,7 +31,7 @@
 			"id": "buffalo",
 			"level": 6,
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			},
 			"boosted": {
 				"level": 56,
@@ -44,7 +44,7 @@
 			"id": "hedgehog-alt",
 			"level": 9,
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			},
 			"boosted": {
 				"level": 57,
@@ -57,7 +57,7 @@
 			"id": "meerkat-alt",
 			"level": 10,
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			},
 			"boosted": {
 				"level": 57,
@@ -70,7 +70,7 @@
 			"id": "buffalo-alt",
 			"level": 12,
 			"region": {
-				"open": "open3"
+				"open": "rise"
 			},
 			"boosted": {
 				"level": 58,
@@ -84,7 +84,7 @@
 			"id": "gray-frobbit",
 			"level": 13,
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"boosted": {
 				"level": 58,
@@ -97,7 +97,7 @@
 			"id": "frobbit",
 			"level": 15,
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"boosted": {
 				"level": 60,
@@ -110,7 +110,7 @@
 			"id": "seahorse",
 			"level": 16,
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"boosted": {
 				"level": 59,
@@ -123,7 +123,7 @@
 			"id": "penguin",
 			"level": 17,
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"boosted": {
 				"level": 59,
@@ -136,7 +136,7 @@
 			"id": "goat",
 			"level": 17,
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"boosted": {
 				"level": 60,
@@ -149,7 +149,7 @@
 			"id": "snowman",
 			"level": 18,
 			"region": {
-				"open": "open3"
+				"open": "trail"
 			},
 			"boosted": {
 				"level": 60,
@@ -164,12 +164,12 @@
 			"level": 18,
 			"firstEncounter": {
 				"region": {
-					"open": "open4.2"
+					"open": "mine.2"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open4.4"
+					"open": "mine.4"
 				}
 			},
 			"boosted": {
@@ -184,12 +184,12 @@
 			"level": 18,
 			"firstEncounter": {
 				"region": {
-					"open": "open4.2"
+					"open": "mine.2"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open4.4"
+					"open": "mine.4"
 				}
 			},
 			"boosted": {
@@ -204,12 +204,12 @@
 			"level": 18,
 			"firstEncounter": {
 				"region": {
-					"open": "open4.2"
+					"open": "mine.2"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open4.4"
+					"open": "mine.4"
 				}
 			},
 			"boosted": {
@@ -224,12 +224,12 @@
 			"level": 19,
 			"firstEncounter": {
 				"region": {
-					"open": "open4.4"
+					"open": "mine.4"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open4.6"
+					"open": "mine.6"
 				}
 			},
 			"boosted": {
@@ -244,7 +244,7 @@
 			"id": "heat.scorpion",
 			"level": 23,
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			},
 			"boosted": {
 				"level": 61,
@@ -257,7 +257,7 @@
 			"id": "heat.sandshark",
 			"level": 24,
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			},
 			"boosted": {
 				"level": 61,
@@ -270,7 +270,7 @@
 			"id": "heat.volturbine",
 			"level": 24,
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			},
 			"boosted": {
 				"level": 61,
@@ -283,7 +283,7 @@
 			"id": "heat.drillertoise",
 			"level": 25,
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			},
 			"boosted": {
 				"level": 61,
@@ -296,7 +296,7 @@
 			"id": "heat.sandworm",
 			"level": 25,
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			},
 			"boosted": {
 				"level": 62,
@@ -309,7 +309,7 @@
 			"id": "heat.scorpion-alt",
 			"level": 26,
 			"region": {
-				"open": "open5"
+				"open": "maroon"
 			},
 			"boosted": {
 				"level": 62,
@@ -324,12 +324,12 @@
 			"level": 27,
 			"firstEncounter": {
 				"region": {
-					"open": "open7.2"
+					"open": "fajro.2"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open7.6"
+					"open": "fajro.6"
 				}
 			},
 			"boosted": {
@@ -344,12 +344,12 @@
 			"level": 27,
 			"firstEncounter": {
 				"region": {
-					"open": "open7.2"
+					"open": "fajro.2"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open7.6"
+					"open": "fajro.6"
 				}
 			},
 			"boosted": {
@@ -364,12 +364,12 @@
 			"level": 28,
 			"firstEncounter": {
 				"region": {
-					"open": "open7.6"
+					"open": "fajro.6"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open7.7"
+					"open": "fajro.7"
 				}
 			},
 			"boosted": {
@@ -384,12 +384,12 @@
 			"level": 28,
 			"firstEncounter": {
 				"region": {
-					"open": "open7.5"
+					"open": "fajro.5"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open7.6"
+					"open": "fajro.6"
 				}
 			},
 			"boosted": {
@@ -404,7 +404,7 @@
 			"id": "autumn-fall.hedgehog-fall",
 			"level": 32,
 			"region": {
-				"open": "open8"
+				"open": "fall"
 			},
 			"boosted": {
 				"level": 62,
@@ -417,7 +417,7 @@
 			"id": "autumn-fall.meerkat-fall",
 			"level": 34,
 			"region": {
-				"open": "open8"
+				"open": "fall"
 			},
 			"boosted": {
 				"level": 62,
@@ -430,7 +430,7 @@
 			"id": "autumn-fall.seahorse-fall",
 			"level": 35,
 			"region": {
-				"open": "open8"
+				"open": "fall"
 			},
 			"boosted": {
 				"level": 62,
@@ -443,7 +443,7 @@
 			"id": "autumn-fall.buffalo-fall",
 			"level": 36,
 			"region": {
-				"open": "open8"
+				"open": "fall"
 			},
 			"boosted": {
 				"level": 62,
@@ -457,7 +457,7 @@
 			"id": "arid.virus-neutral",
 			"level": 38,
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			},
 			"area": "arid"
 		},
@@ -466,7 +466,7 @@
 			"id": "arid.virus-heat",
 			"level": 38,
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			},
 			"area": "arid"
 		},
@@ -475,7 +475,7 @@
 			"id": "arid.virus-cold",
 			"level": 38,
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			},
 			"area": "arid"
 		},
@@ -485,7 +485,7 @@
 			"id": "jungle.plant",
 			"level": 37,
 			"region": {
-				"open": "open10"
+				"open": "garden"
 			},
 			"boosted": {
 				"level": 63,
@@ -498,7 +498,7 @@
 			"id": "jungle.blob",
 			"level": 38,
 			"region": {
-				"open": "open10"
+				"open": "garden"
 			},
 			"boosted": {
 				"level": 63,
@@ -511,7 +511,7 @@
 			"id": "jungle.parrot",
 			"level": 38,
 			"region": {
-				"open": "open10"
+				"open": "garden"
 			},
 			"boosted": {
 				"level": 63,
@@ -524,7 +524,7 @@
 			"id": "jungle.fish",
 			"level": 39,
 			"region": {
-				"open": "open10.Grove"
+				"open": "garden.grove"
 			},
 			"boosted": {
 				"level": 63,
@@ -538,12 +538,12 @@
 			"level": 40,
 			"firstEncounter": {
 				"region": {
-					"open": "open10"
+					"open": "garden"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open10.Mid"
+					"open": "garden.Mid"
 				}
 			},
 			"boosted": {
@@ -557,7 +557,7 @@
 			"id": "jungle.sloth",
 			"level": 42,
 			"region": {
-				"open": "open10.Infested"
+				"open": "garden.infested"
 			},
 			"boosted": {
 				"level": 63,
@@ -572,12 +572,12 @@
 			"level": 42,
 			"firstEncounter": {
 				"region": {
-					"open": "open10.Left"
+					"open": "garden.west"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open14.1"
+					"open": "sonajiz.1"
 				}
 			},
 			"boosted": {
@@ -591,7 +591,7 @@
 			"id": "jungle.octopus",
 			"level": 42,
 			"region": {
-				"open": "open14.1"
+				"open": "sonajiz.1"
 			},
 			"boosted": {
 				"level": 63,
@@ -604,7 +604,7 @@
 			"id": "jungle.blueray",
 			"level": 44,
 			"region": {
-				"open": "open14.1"
+				"open": "sonajiz.1"
 			},
 			"boosted": {
 				"level": 64,
@@ -618,7 +618,7 @@
 			"id": "jungle.chicken",
 			"level": 42,
 			"region": {
-				"open": "open10.Right"
+				"open": "garden.east"
 			},
 			"boosted": {
 				"level": 63,
@@ -632,12 +632,12 @@
 			"level": 43,
 			"firstEncounter": {
 				"region": {
-					"open": "open10.Right"
+					"open": "garden.east"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open13.1"
+					"open": "zirvitar.1"
 				}
 			},
 			"boosted": {
@@ -652,12 +652,12 @@
 			"level": 44,
 			"firstEncounter": {
 				"region": {
-					"open": "open10.Right"
+					"open": "garden.east"
 				}
 			},
 			"grind": {
 				"region": {
-					"open": "open13.1"
+					"open": "zirvitar.1"
 				}
 			},
 			"boosted": {
@@ -672,7 +672,7 @@
 			"id": "forest.bug-samurai-heat",
 			"level": 51,
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			},
 			"boosted": {
 				"level": 65,
@@ -685,7 +685,7 @@
 			"id": "forest.bug-samurai-shock",
 			"level": 51,
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			},
 			"boosted": {
 				"level": 65,
@@ -698,7 +698,7 @@
 			"id": "forest.panda",
 			"level": 51,
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			},
 			"boosted": {
 				"level": 65,
@@ -711,7 +711,7 @@
 			"id": "forest.spider",
 			"level": 52,
 			"region": {
-				"open": "open16"
+				"open": "ridge"
 			},
 			"boosted": {
 				"level": 65,

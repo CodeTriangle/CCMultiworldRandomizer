@@ -6,7 +6,7 @@
 			"level": 13,
 			"firstEncounter": {
 				"region": {
-					"open": "open3"
+					"open": "rise"
 				},
 				"condition": [
 					[ "quest", "Digging for Data" ]
@@ -20,7 +20,7 @@
 			"level": 15,
 			"firstEncounter": {
 				"region": {
-					"open": "open3"
+					"open": "rise"
 				}
 			},
 			"area": "autumn-area"
@@ -31,7 +31,7 @@
 			"level": 19,
 			"firstEncounter": {
 				"region": {
-					"open": "open4.5"
+					"open": "mine.5"
 				}
 			},
 			"area": "cold-dng"
@@ -42,7 +42,7 @@
 			"level": 21,
 			"firstEncounter": {
 				"region": {
-					"open": "open3"
+					"open": "trail"
 				},
 				"condition": [
 					[ "item", "Heat" ]
@@ -56,7 +56,7 @@
 			"level": 21,
 			"firstEncounter": {
 				"region": {
-					"open": "open4.8"
+					"open": "mine.8"
 				}
 			},
 			"area": "cold-dng"
@@ -89,7 +89,7 @@
 			"level": 28,
 			"firstEncounter": {
 				"region": {
-					"open": "open7.1"
+					"open": "fajro.1"
 				}
 			},
 			"area": "heat-dng"
@@ -100,7 +100,7 @@
 			"level": 30,
 			"firstEncounter": {
 				"region": {
-					"open": "open7.8"
+					"open": "fajro.8"
 				}
 			},
 			"area": "heat-dng"
@@ -111,7 +111,7 @@
 			"level": 33,
 			"firstEncounter": {
 				"region": {
-					"open": "open5"
+					"open": "maroon"
 				},
 				"condition": [
 					[ "quest", "Shady Thief" ],
@@ -129,7 +129,7 @@
 			"firstEncounter": {
 				"region": {
 					"linear": "20",
-					"open": "open9" 
+					"open": "fall" 
 				},
 				"condition": [
 					[ "item", "Heat" ],
@@ -145,13 +145,13 @@
 			"firstEncounter": {
 				"region": {
 					"linear": "20",
-					"open": "open9"
+					"open": "fall"
 				},
 				"condition": [
 					[ "item", "Red Flame Shade", 1 ],
 					[ "item", "Heat", 1 ],
 					[ "item", "Cold", 1 ],
-					[ "region", "open", "open4.5" ],
+					[ "region", "open", "mine.5" ],
 					[ "quest", "Bull Grab" ]
 				]
 			},
@@ -164,7 +164,7 @@
 			"firstEncounter": {
 				"region": {
 					"linear": "20",
-					"open": "open9"
+					"open": "fall"
 				},
 				"condition": [
 					[ "quest", "Intensive Tree Care" ],
@@ -180,7 +180,7 @@
 			"level": 44,
 			"firstEncounter": {
 				"region": {
-					"open": "open13.1"
+					"open": "zirvitar.1"
 				}
 			},
 			"area": "shock-dng"
@@ -191,7 +191,7 @@
 			"level": 44,
 			"firstEncounter": {
 				"region": {
-					"open": "open14.5"
+					"open": "sonajiz.5"
 				}
 			},
 			"area": "wave-dng"
@@ -202,7 +202,7 @@
 			"level": 46,
 			"firstEncounter": {
 				"region": {
-					"open": "open10.Grove"
+					"open": "garden.grove"
 				},
 				"condition": [
 					[ "item", "Wave", 1 ],
@@ -217,7 +217,7 @@
 			"level": 46,
 			"firstEncounter": {
 				"region": {
-					"open": "open15.1"
+					"open": "kajo.1"
 				}
 			},
 			"area": "tree-dng"
@@ -228,7 +228,7 @@
 			"level": 46,
 			"firstEncounter": {
 				"region": {
-					"open": "open15.3"
+					"open": "kajo.3"
 				}
 			},
 			"area": "tree-dng"
@@ -240,7 +240,7 @@
 			"firstEncounter": {
 				"region": {
 					"linear": "23",
-					"open": "open10"
+					"open": "garden"
 				},
 				"condition": [
 					[ "item", "Purple Bolt Shade", 1 ],
@@ -259,7 +259,7 @@
 			"firstEncounter": {
 				"region": {
 					"linear": "23",
-					"open": "open10"
+					"open": "garden"
 				},
 				"condition": [
 					[ "item", "Purple Bolt Shade", 1 ],
@@ -288,7 +288,7 @@
 			"firstEncounter": {
 				"region": {
 					"linear": "11",
-					"open": "open5"
+					"open": "maroon"
 				},
 				"condition": [
 					[ "quest", "Hot Trail" ],
@@ -305,7 +305,7 @@
 			"firstEncounter": {
 				"region": {
 					"linear": "31",
-					"open": "open16"
+					"open": "ridge"
 				},
 				"condition": [
 					[ "item", "Heat", 1 ],
@@ -322,7 +322,7 @@
 			"level": 60,
 			"firstEncounter": {
 				"region": {
-					"open": "open18"
+					"open": "wasteland"
 				}
 			},
 			"area": "arid"
@@ -333,7 +333,7 @@
 			"level": 60,
 			"firstEncounter": {
 				"region": {
-					"open": "open18"
+					"open": "wasteland"
 				}
 			},
 			"area": "arid-dng-2"
@@ -344,7 +344,7 @@
 			"level": 62,
 			"firstEncounter": {
 				"region": {
-					"open": "open20"
+					"open": "rhombus"
 				}
 			},
 			"area": "forest"
