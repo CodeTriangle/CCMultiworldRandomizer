@@ -18,18 +18,18 @@
 				"location": {
 					"extension": "post-game"
 				},
-				"metadata": {
-					"dlc": true
-				}
+				"includeCondition": [
+					[ "option", "enable_dlc", true ]
+				]
 			}
 		},
 		"regions": {
 			"*": {
 				"connections": {
 					"*": {
-						"metadata": {
-							"dlc": true
-						}
+						"includeCondition": [
+							[ "option", "enable_dlc", true ]
+						]
 					}
 				}
 			}
