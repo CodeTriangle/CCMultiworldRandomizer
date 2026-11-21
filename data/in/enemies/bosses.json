@@ -1,19 +1,5 @@
 {
 	"enemies": {
-		"Hillkat Bandleader": {
-			"name": "Hillkat Bandleader",
-			"id": "meerkat-special-command-1",
-			"level": 13,
-			"firstEncounter": {
-				"region": {
-					"open": "rise"
-				},
-				"condition": [
-					[ "quest", "Digging for Data" ]
-				]
-			},
-			"area": "autumn-area"
-		},
 		"Blue Hedgehag": {
 			"name": "Blue Hedgehag",
 			"id": "minibosses.blue-hedge",
@@ -24,17 +10,6 @@
 				}
 			},
 			"area": "autumn-area"
-		},
-		"Infected Digmo": {
-			"name": "Infected Digmo",
-			"id": "mine-diggingbot-cold",
-			"level": 19,
-			"firstEncounter": {
-				"region": {
-					"open": "mine.5"
-				}
-			},
-			"area": "cold-dng"
 		},
 		"Peng King Dakara": {
 			"name": "Peng King Dakara",
@@ -109,23 +84,6 @@
 			},
 			"area": "heat-dng"
 		},
-		"Guard Billston": {
-			"name": "Guard Billston",
-			"id": "heat.special.guard-hostile-mustache",
-			"level": 33,
-			"firstEncounter": {
-				"region": {
-					"open": "valley"
-				},
-				"condition": [
-					[ "quest", "Shady Thief" ],
-					[ "item", "Red Flame Shade" ],
-					[ "item", "Heat", 1 ],
-					[ "item", "Cold", 1 ]
-				]
-			},
-			"area": "heat-area"
-		},
 		"Hologram Frobbit": {
 			"name": "Hologram Frobbit",
 			"id": "daft-frobbit",
@@ -135,40 +93,6 @@
 					"open": "fall" 
 				},
 				"condition": [
-					[ "item", "Heat" ],
-					[ "item", "Cold" ]
-				]
-			},
-			"area": "autumn-fall"
-		},
-		"Smelter Digmo": {
-			"name": "Smelter Digmo",
-			"id": "cold.mine-diggingbot-quest",
-			"level": 36,
-			"firstEncounter": {
-				"region": {
-					"open": "fall"
-				},
-				"condition": [
-					[ "item", "Red Flame Shade", 1 ],
-					[ "item", "Heat", 1 ],
-					[ "item", "Cold", 1 ],
-					[ "region", "open", "mine.5" ],
-					[ "quest", "Bull Grab" ]
-				]
-			},
-			"area": "cold-dng"
-		},
-		"Blazehoof": {
-			"name": "Blazehoof",
-			"id": "autumn-fall.buffalo-fire-quest",
-			"level": 37,
-			"firstEncounter": {
-				"region": {
-					"open": "fall"
-				},
-				"condition": [
-					[ "quest", "Intensive Tree Care" ],
 					[ "item", "Heat" ],
 					[ "item", "Cold" ]
 				]
@@ -234,41 +158,6 @@
 			},
 			"area": "tree-dng"
 		},
-		"Karotto Fruitseeker": {
-			"name": "Karotto Fruitseeker",
-			"id": "jungle.special.snowman-jungle-boss",
-			"level": 47,
-			"firstEncounter": {
-				"region": {
-					"open": "garden"
-				},
-				"condition": [
-					[ "item", "Purple Bolt Shade", 1 ],
-					[ "item", "Azure Drop Shade", 1 ],
-					[ "item", "Shock", 1 ],
-					[ "item", "Wave", 1 ],
-					[ "quest", "Tropical Chill" ]
-				]
-			},
-			"area": "jungle"
-		},
-		"Buff Bloomy": {
-			"name": "Buff Bloomy",
-			"id": "jungle.special.powerplant-quest-1",
-			"level": 47,
-			"firstEncounter": {
-				"region": {
-					"open": "garden"
-				},
-				"condition": [
-					[ "item", "Purple Bolt Shade", 1 ],
-					[ "item", "Azure Drop Shade", 1 ],
-					[ "item", "Wave" ],
-					[ "quest", "Lakeside Escort" ]
-				]
-			},
-			"area": "jungle"
-		},
 		"Twilight Master": {
 			"name": "Twilight Master",
 			"id": "forest.samurai-boss",
@@ -282,39 +171,6 @@
 				]
 			},
 			"area": "forest"
-		},
-		"King Kaktorro": {
-			"name": "King Kaktorro",
-			"id": "heat.special.sandman-1",
-			"level": 57,
-			"firstEncounter": {
-				"region": {
-					"open": "valley"
-				},
-				"condition": [
-					[ "quest", "Hot Trail" ],
-					[ "item", "Wave", 1 ],
-					[ "item", "Meteor Shade", 1 ]
-				]
-			},
-			"area": "heat-area"
-		},
-		"DON'T USE THIS": {
-			"name": "DON'T USE THIS",
-			"id": "guest.glitch-boss",
-			"level": 58,
-			"firstEncounter": {
-				"region": {
-					"open": "ridge"
-				},
-				"condition": [
-					[ "item", "Heat", 1 ],
-					[ "item", "Cold", 1 ],
-					[ "item", "Wave", 1 ],
-					[ "item", "Shock", 1 ]
-				]
-			},
-			"area": "heat-area"
 		},
 		"Designer": {
 			"name": "Designer",

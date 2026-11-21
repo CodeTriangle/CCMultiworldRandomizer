@@ -5414,14 +5414,8 @@
 		"forest.spider": {
 			"kill": 3235825080
 		},
-		"meerkat-special-command-1": {
-			"kill": 3235825081
-		},
 		"minibosses.blue-hedge": {
 			"kill": 3235825082
-		},
-		"mine-diggingbot-cold": {
-			"kill": 3235825083
 		},
 		"minibosses.penguin-rapper": {
 			"kill": 3235825084
@@ -5441,17 +5435,8 @@
 		"heat.megamoth": {
 			"kill": 3235825089
 		},
-		"heat.special.guard-hostile-mustache": {
-			"kill": 3235825090
-		},
 		"daft-frobbit": {
 			"kill": 3235825091
-		},
-		"cold.mine-diggingbot-quest": {
-			"kill": 3235825092
-		},
-		"autumn-fall.buffalo-fire-quest": {
-			"kill": 3235825093
 		},
 		"jungle.shockboss": {
 			"kill": 3235825094
@@ -5468,20 +5453,8 @@
 		"jungle.whale-boss": {
 			"kill": 3235825098
 		},
-		"jungle.special.snowman-jungle-boss": {
-			"kill": 3235825099
-		},
-		"jungle.special.powerplant-quest-1": {
-			"kill": 3235825100
-		},
 		"forest.samurai-boss": {
 			"kill": 3235825101
-		},
-		"heat.special.sandman-1": {
-			"kill": 3235825102
-		},
-		"guest.glitch-boss": {
-			"kill": 3235825103
 		},
 		"boss.designer-2": {
 			"kill": 3235825104
@@ -5491,6 +5464,33 @@
 		},
 		"minibosses.panda-boss": {
 			"kill": 3235825106
+		},
+		"meerkat-special-command-1": {
+			"kill": 3235825081
+		},
+		"mine-diggingbot-cold": {
+			"kill": 3235825083
+		},
+		"heat.special.guard-hostile-mustache": {
+			"kill": 3235825090
+		},
+		"cold.mine-diggingbot-quest": {
+			"kill": 3235825092
+		},
+		"autumn-fall.buffalo-fire-quest": {
+			"kill": 3235825093
+		},
+		"jungle.special.snowman-jungle-boss": {
+			"kill": 3235825099
+		},
+		"heat.special.sandman-1": {
+			"kill": 3235825102
+		},
+		"jungle.special.powerplant-quest-1": {
+			"kill": 3235825100
+		},
+		"guest.glitch-boss": {
+			"kill": 3235825103
 		},
 		"beach.sea-star-heat": {
 			"kill": 3235825107
@@ -5537,6 +5537,15 @@
 		"guest.honeybear": {
 			"kill": 3235825121
 		},
+		"final.guardian": {
+			"kill": 3235825129
+		},
+		"final.gynthar": {
+			"kill": 3235825130
+		},
+		"final.god-neutral": {
+			"kill": 3235825131
+		},
 		"autumn-rh.turret_boss-quest_naval": {
 			"kill": 3235825122
 		},
@@ -5557,15 +5566,6 @@
 		},
 		"cold.goat-father-2": {
 			"kill": 3235825128
-		},
-		"final.guardian": {
-			"kill": 3235825129
-		},
-		"final.gynthar": {
-			"kill": 3235825130
-		},
-		"final.god-neutral": {
-			"kill": 3235825131
 		},
 		"beach.ape-beach": {
 			"kill": 3235825132
