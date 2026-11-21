@@ -26,12 +26,6 @@
 					[ "item", "Red Flame Shade" ]
 				]
 			]
-		},
-		"rhombusHubUnlock": "boolean",
-		"closedGaia": {
-			"minimal": [],
-			"full": []
-		},
-		"allowBoosterGrinding": "boolean"
+		}
 	}
 }

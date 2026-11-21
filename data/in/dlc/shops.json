@@ -94,9 +94,9 @@
                 "Goat Cheese",
                 "Goat Milk"
 			],
-            "metadata": {
-                "quest": true
-            }
+			"includeCondition": [
+					[ "option", "quest_rando", true ]
+			]
 		},
 		"Rhombus Weapons + Azure A. Pass": {
 			"location": {

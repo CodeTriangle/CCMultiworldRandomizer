@@ -2551,15 +2551,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "valley"
+				"open": "cursedTemple"
 			},
 			"reward": [
 				[ "item", "Ancient Earth", 4 ]
-			],
-			"condition": [
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ],
-				[ "item", "Cursed Coin", 1 ]
 			]
 		},
 		"Valley: Cursed Temple Lower": {
@@ -2570,15 +2565,10 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"open": "valley"
+				"open": "cursedTemple"
 			},
 			"reward": [
 				[ "item", "Bright Bracer", 1 ]
-			],
-			"condition": [
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ],
-				[ "item", "Cursed Coin", 1 ]
 			]
 		},
 		"Valley: Cursed Temple Treasure Room": {
@@ -2589,15 +2579,10 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"open": "valley"
+				"open": "cursedTemple"
 			},
 			"reward": [
 				[ "item", "Broken Sword", 1 ]
-			],
-			"condition": [
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ],
-				[ "item", "Cursed Coin", 1 ]
 			]
 		},
 		"Valley: Maroon Cave 1": {
