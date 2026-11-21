@@ -341,7 +341,7 @@ export function patch(plugin: MwRandomizer) {
 					}
 				}
 
-				const marqueeGui = new sc.MultiWorldItemMarqueeGui(itemInfo, this.hook.size.x);
+				const marqueeGui = new sc.MultiWorldItemMarqueeGui(itemInfo, this.hook.size.x, true);
 
 				if (itemInfo.level > 0) {
 					marqueeGui.iconGui.setDrawCallback((width: number, height: number) => {

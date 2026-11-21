@@ -91,6 +91,7 @@ declare global {
 				connection: sc.ButtonGui;
 				gameInfo: sc.ButtonGui;
 				newGamePlus: sc.ButtonGui;
+				hintClient: sc.ButtonGui;
 			};
 
 			onBackButtonPress(): void;
@@ -433,6 +434,7 @@ export function patch(plugin: MwRandomizer) {
 				connection: this._createButton("apConnection", 0, sc.MENU_SUBMENU.AP_CONNECTION),
 				gameInfo: this._createButton("apGameInfoMenu", 1, sc.MENU_SUBMENU.AP_GAME_INFO),
 				newGamePlus: this._createButton("new-game", 2, sc.MENU_SUBMENU.NEW_GAME),
+				hintClient: this._createButton("apHintClient", 3, sc.MENU_SUBMENU.AP_HINT_CLIENT),
 			};
 
 			this.buttons.newGamePlus.onButtonPress = () => {
@@ -456,6 +458,7 @@ export function patch(plugin: MwRandomizer) {
 			this.addChildGui(this.buttons.connection);
 			this.addChildGui(this.buttons.gameInfo);
 			this.addChildGui(this.buttons.newGamePlus);
+			this.addChildGui(this.buttons.hintClient);
 		},
 
 		addObservers() {
@@ -474,6 +477,7 @@ export function patch(plugin: MwRandomizer) {
 
 			this.buttons.gameInfo.setActive(!!sc.multiworld.options);
 			this.buttons.newGamePlus.setActive(!!sc.multiworld.options);
+			this.buttons.hintClient.setActive(!!sc.multiworld.options);
 
 			this.addObservers();
 
@@ -487,6 +491,7 @@ export function patch(plugin: MwRandomizer) {
 			this.buttons.connection.doStateTransition("DEFAULT");
 			this.buttons.gameInfo.doStateTransition("DEFAULT");
 			this.buttons.newGamePlus.doStateTransition("DEFAULT");
+			this.buttons.hintClient.doStateTransition("DEFAULT");
 		},
 
 		hideMenu() {
@@ -501,6 +506,7 @@ export function patch(plugin: MwRandomizer) {
 			this.buttons.connection.doStateTransition("HIDDEN");
 			this.buttons.gameInfo.doStateTransition("HIDDEN");
 			this.buttons.newGamePlus.doStateTransition("HIDDEN");
+			this.buttons.hintClient.doStateTransition("HIDDEN");
 		},
 
 		update() {
