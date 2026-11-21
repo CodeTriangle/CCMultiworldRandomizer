@@ -67,8 +67,12 @@
 			"level": 26,
 			"firstEncounter": {
 				"region": {
-					"open": "open6"
-				}
+					"open": "valley"
+				},
+				"condition": [
+					[ "item", "Maroon Cave Pass", 1 ],
+					[ "item", "Heat", 1 ]
+				]
 			},
 			"area": "heat-area"
 		},
@@ -78,7 +82,7 @@
 			"level": 30,
 			"firstEncounter": {
 				"region": {
-					"open": "openCursedTemple"
+					"open": "cursedTemple"
 				}
 			},
 			"area": "heat-area"
@@ -111,7 +115,7 @@
 			"level": 33,
 			"firstEncounter": {
 				"region": {
-					"open": "maroon"
+					"open": "valley"
 				},
 				"condition": [
 					[ "quest", "Shady Thief" ],
@@ -188,7 +192,7 @@
 			"level": 44,
 			"firstEncounter": {
 				"region": {
-					"open": "sonajiz.5"
+					"open": "sonajiz.4"
 				}
 			},
 			"area": "wave-dng"
@@ -271,8 +275,11 @@
 			"level": 51,
 			"firstEncounter": {
 				"region": {
-					"open": "open17"
-				}
+					"open": "ridge"
+				},
+				"condition": [
+					[ "item", "Old Dojo Key" ]
+				]
 			},
 			"area": "forest"
 		},
@@ -282,7 +289,7 @@
 			"level": 57,
 			"firstEncounter": {
 				"region": {
-					"open": "maroon"
+					"open": "valley"
 				},
 				"condition": [
 					[ "quest", "Hot Trail" ],

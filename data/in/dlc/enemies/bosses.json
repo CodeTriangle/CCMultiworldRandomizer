@@ -139,7 +139,7 @@
 			"level": 74,
 			"firstEncounter": {
 				"region": {
-					"open": "dlc_kuleroEntry"
+					"open": "dlc_kulero.entry"
 				}
 			},
 			"area": "final-dng"
@@ -150,7 +150,7 @@
 			"level": 75,
 			"firstEncounter": {
 				"region": {
-					"open": "dlc_kuleroB2_L"
+					"open": "dlc_kulero.B2_L"
 				}
 			},
 			"area": "final-dng"
@@ -161,7 +161,7 @@
 			"level": 77,
 			"firstEncounter": {
 				"region": {
-					"open": "dlc_kuleroBoss"
+					"open": "dlc_kulero.boss"
 				}
 			},
 			"area": "final-dng"

@@ -244,7 +244,7 @@
 			"id": "heat.scorpion",
 			"level": 23,
 			"region": {
-				"open": "maroon"
+				"open": "valley"
 			},
 			"boosted": {
 				"level": 61,
@@ -257,7 +257,7 @@
 			"id": "heat.sandshark",
 			"level": 24,
 			"region": {
-				"open": "maroon"
+				"open": "valley"
 			},
 			"boosted": {
 				"level": 61,
@@ -270,7 +270,7 @@
 			"id": "heat.volturbine",
 			"level": 24,
 			"region": {
-				"open": "maroon"
+				"open": "valley"
 			},
 			"boosted": {
 				"level": 61,
@@ -283,7 +283,7 @@
 			"id": "heat.drillertoise",
 			"level": 25,
 			"region": {
-				"open": "maroon"
+				"open": "valley"
 			},
 			"boosted": {
 				"level": 61,
@@ -296,7 +296,7 @@
 			"id": "heat.sandworm",
 			"level": 25,
 			"region": {
-				"open": "maroon"
+				"open": "valley"
 			},
 			"boosted": {
 				"level": 62,
@@ -309,7 +309,7 @@
 			"id": "heat.scorpion-alt",
 			"level": 26,
 			"region": {
-				"open": "maroon"
+				"open": "valley"
 			},
 			"boosted": {
 				"level": 62,
